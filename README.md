@@ -99,6 +99,8 @@ Python tests cover binary decoding, scale rejection, flat filtering, malformed d
 
 ## Vercel
 
+**Deployment blocked:** the connected Vercel integration returned 403 (no project-creation permission); the local CLI token is invalid and the browser is signed out. Source publication to GitHub succeeded, but no live deployment was created.
+
 Import [ianvdbrink3/QUANTT](https://github.com/ianvdbrink3/QUANTT) as a Next.js project, repository root, production branch `main`. `vercel.json` uses `npm ci` and `npm run build`. No environment variables or database are required. Git integration then redeploys exported data and source changes on every push to `main`. No raw `.bi5` files, virtual environments, dependencies, tokens, or build directories are committed.
 
 The deployment does not make ingestion complete: the visible coverage warning stays until source data is actually obtained and exports are regenerated. To replace the CFD with NQ/ES futures, add a contract-native licensed source adapter, exchange holiday/half-day calendar and explicit rollover/cost models before transferring research conclusions.

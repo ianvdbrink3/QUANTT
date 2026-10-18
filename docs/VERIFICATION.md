@@ -38,3 +38,10 @@ Target interval: 2024-01-01 inclusive to 2026-10-18 exclusive, 1,021 UTC days. T
 - Package locks, raw exclusion rules, code/config fingerprints, full manifest history, curated Parquet and versioned JSON exports are included.
 - CI repeats tests, artifact verification, dependency installation and the Next.js production build without external data ingestion.
 - The local Vercel CLI token was invalid. The connected Vercel integration is used for project/deployment setup where available. Never interpret a successful local build as proof of a live deployment.
+
+## Publication evidence
+
+- Published through the authenticated GitHub connector because the local Git/CLI keyring token was invalid. Remote source tree `823eefcdffe22ee8bee9285ae5260b7938564eb0` exactly matched the locally tested tree.
+- Initial complete-source commit on `main`: `faa5fa546fd462d9c91c1d5194094dd85db16f69`. Local and remote file trees were compared with no differences.
+- Vercel project creation for `quantt`, repository `ianvdbrink3/QUANTT`, team `team_9hWiWgRgntKUEwASNdTdpExK`, returned **403 forbidden: no permission to create the project**. The existing CLI token was invalid, and the browser was not signed in. No Vercel project or live deployment is claimed.
+- Required external remediation: authorized Dukascopy historical-data access and Vercel project-creation/import access. No secrets should be pasted into the chat or committed.
