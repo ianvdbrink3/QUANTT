@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-18T22:25:56.720456+00:00",
+  "execution_environment": "github-actions",
+  "sources": [
+    {
+      "name": "dukascopy_legacy_2024",
+      "url": "https://datafeed.dukascopy.com/datafeed/USATECHIDXUSD/2024/00/03/BID_candles_min_1.bi5",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='datafeed.dukascopy.com', port=443): Max retries exceeded with url: /datafeed/USATECHIDXUSD/2024/00/03/BID_candles_min_1.bi5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='datafeed.dukascopy.com', port=443) at 0x7f1d0e0c7750>, 'Connection to datafeed.dukascopy.com timed out. (connect timeout=10)'))"
+    },
+    {
+      "name": "dukascopy_legacy_2026",
+      "url": "https://datafeed.dukascopy.com/datafeed/USATECHIDXUSD/2026/09/15/BID_candles_min_1.bi5",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='datafeed.dukascopy.com', port=443): Max retries exceeded with url: /datafeed/USATECHIDXUSD/2026/09/15/BID_candles_min_1.bi5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='datafeed.dukascopy.com', port=443) at 0x7f1d0e0c7c50>, 'Connection to datafeed.dukascopy.com timed out. (connect timeout=10)'))"
+    },
+    {
+      "name": "dukascopy_api",
+      "url": "https://jetta.dukascopy.com/v1/candles/minute/USATECH.IDX-USD/BID/2024/1/3",
+      "status": 202,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "browser_challenge": true
+    },
+    {
+      "name": "histdata",
+      "url": "https://www.histdata.com/download-free-forex-historical-data/?/ascii/1-minute-bar-quotes/NSXUSD/2024",
+      "status": 200,
+      "bytes": 31541,
+      "sha256": "a08b670ef0a21b30987da6503788483a187e0021df8e5d06f9e1b9794a9ae70b",
+      "browser_challenge": false
+    },
+    {
+      "name": "yahoo_ndx_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENDX?period1=1704067200&period2=1792368000&interval=1d",
+      "status": 200,
+      "bytes": 69036,
+      "sha256": "232c030605cb8e56f25b79d2673aa587c732852cc07f0853d0af9e4565e13548",
+      "browser_challenge": false,
+      "observations": 701
+    }
+  ]
+}
