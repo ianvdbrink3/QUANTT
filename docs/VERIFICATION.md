@@ -43,5 +43,11 @@ Target interval: 2024-01-01 inclusive to 2026-10-18 exclusive, 1,021 UTC days. T
 
 - Published through the authenticated GitHub connector because the local Git/CLI keyring token was invalid. Remote source tree `823eefcdffe22ee8bee9285ae5260b7938564eb0` exactly matched the locally tested tree.
 - Initial complete-source commit on `main`: `faa5fa546fd462d9c91c1d5194094dd85db16f69`. Local and remote file trees were compared with no differences.
-- Vercel project creation for `quantt`, repository `ianvdbrink3/QUANTT`, team `team_9hWiWgRgntKUEwASNdTdpExK`, returned **403 forbidden: no permission to create the project**. The existing CLI token was invalid, and the browser was not signed in. No Vercel project or live deployment is claimed.
-- Required external remediation: authorized Dukascopy historical-data access and Vercel project-creation/import access. No secrets should be pasted into the chat or committed.
+- Vercel project creation for `quantt`, repository `ianvdbrink3/QUANTT`, team `team_9hWiWgRgntKUEwASNdTdpExK`, returned **403 forbidden: no permission to create the project**. The existing CLI token was invalid, and the browser was not signed in. This was the initial access result; the later user import and live verification are recorded below.
+- Remaining external remediation: authorized Dukascopy historical-data access. Vercel import was subsequently completed by the user. No secrets should be pasted into the chat or committed.
+
+## Live deployment verified — 19 October 2026
+
+The user imported the repository and supplied https://quantt-eight.vercel.app. GitHub reported the Vercel deployment check as successful. Direct checks returned HTTP 200 for `/`, `/quality`, `/sessions`, `/experiments`, and all seven published data files. The seven live files were compared with the local exports; all matched exactly, including per-shard SHA-256 checksums. Browser verification confirmed a rendered market chart and a working 1h → 15m switch (23 → 89 OHLC bars). Browser warning/error log was empty.
+
+The live quality report still honestly declares incomplete history: one observed UTC day (19 March 2025), 1,329 valid minute bars, and 111 excluded flat bars. The deployment requirement is satisfied; the complete 2024–2026 dataset and full-history analysis remain blocked on source access.
