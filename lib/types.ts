@@ -1,0 +1,177 @@
+export type Metrics = {
+  trades: number;
+  days: number;
+  net_points?: number;
+  mean_net_points?: number;
+  mean_net_bps?: number;
+  win_rate?: number;
+  sharpe_daily_trade?: number | null;
+  max_drawdown_points?: number;
+  profit_factor?: number | null;
+  ci_low?: number | null;
+  ci_high?: number | null;
+  p_value?: number | null;
+  start?: string;
+  end?: string;
+};
+export type Experiment = {
+  id: string;
+  name: string;
+  question: string;
+  status: string;
+  direction: string;
+  entry: string;
+  timezone: string;
+  horizon_minutes: number;
+  metrics: Metrics;
+  q_value: number;
+  significant_fdr_005: boolean;
+  splits: Record<string, Metrics>;
+  yearly: Record<string, Metrics>;
+  cost_scenarios: Record<string, Metrics & { round_trip_points: number }>;
+  limitations: string;
+  run_id: string;
+  data_version: string;
+  config_version: string;
+  baseline: string;
+  equity: { date: string; net_points: number }[];
+};
+export type Coverage = {
+  month: string;
+  requested_days: number;
+  weekday_days: number;
+  observed_weekdays: number;
+  observed_days: number;
+  weekday_coverage_pct: number;
+  bars: number;
+  flat_bars: number;
+  download_failures: number;
+  unattempted_days: number;
+};
+export type Quality = {
+  symbol: string;
+  instrument_type: string;
+  generated_at: string;
+  data_version: string;
+  requested_start: string;
+  requested_end_exclusive: string;
+  actual_first: string;
+  actual_last: string;
+  total_bars: number;
+  validated_bars: number;
+  flat_bars_filtered: number;
+  price_anomalies: number;
+  min_price: number;
+  max_price: number;
+  price_divisor: number;
+  duplicate_bars: number;
+  observed_days: number;
+  missing_weekdays: string[];
+  failed_days: string[];
+  unattempted_days: string[];
+  coverage: Coverage[];
+  years: {
+    year: number;
+    bars: number;
+    total_bars: number;
+    flat_bars: number;
+    price_anomalies: number;
+    first: string | null;
+    last: string | null;
+    observed_days: number;
+    weekday_days: number;
+    missing_weekdays: number;
+  }[];
+  dst_checks: {
+    date: string;
+    ny_open_utc: string;
+    london_open_utc: string;
+    observed_ny_open: boolean;
+    observed_london_open: boolean;
+  }[];
+  ingestion_status: string;
+  calendar_note: string;
+  flat_rule: string;
+  volume_note: string;
+  manifest: {
+    days: number;
+    statuses: Record<string, number>;
+    downloaded_bytes: number;
+    total_attempts: number;
+  };
+};
+export type Profile = {
+  hour: number;
+  bars: number;
+  mean_return_bps: number | null;
+  volatility_bps: number | null;
+  mean_range_points: number | null;
+  mean_activity: number | null;
+};
+export type Analytics = {
+  hourly: Record<string, Profile[]>;
+  sessions: {
+    name: string;
+    timezone: string;
+    start: string;
+    end: string;
+    bars: number;
+    days: number;
+    mean_return_bps: number | null;
+    volatility_bps: number | null;
+    mean_range_points: number | null;
+    mean_activity: number | null;
+  }[];
+  distributions: {
+    timeframe: string;
+    n: number;
+    mean_bps: number;
+    std_bps: number;
+    skewness: number;
+    excess_kurtosis: number;
+    tail_3sigma_fraction: number;
+    q01_bps: number;
+    q99_bps: number;
+    histogram_tail_count: number;
+    histogram: { return_bps: number; count: number }[];
+  }[];
+  autocorrelation: {
+    lag: number;
+    return_acf: number | null;
+    absolute_return_acf: number | null;
+  }[];
+  regimes: { date: string; prior_day_volatility_bps: number; regime: string }[];
+  regime_rule: string;
+  method: string;
+};
+export type DataIndex = {
+  schema_version: number;
+  generated_at: string;
+  data_version: string;
+  columns: string[];
+  exports: {
+    file: string;
+    timeframe: string;
+    year: number;
+    rows: number;
+    sha256: string;
+    bytes: number;
+  }[];
+};
+export type Bar = {
+  time: number;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+  minute_count: number;
+  drawdown_pct: number;
+  rolling_volatility_bps: number | null;
+};
+export type LabData = {
+  quality: Quality;
+  analytics: Analytics;
+  experiments: Experiment[];
+  index: DataIndex;
+};

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+node_modules/
+.next/
+out/
+.env*
+.vercel/
+data/raw/**/*.bi5
+data/raw/**/*.part
+data/curated/partitions/
+*.tsbuildinfo
+*.log
+.DS_Store

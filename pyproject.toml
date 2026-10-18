@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "quantt-research"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<4", "numpy>=2,<3", "pyarrow>=18,<27", "scipy>=1.14,<2", "PyYAML>=6,<7", "requests>=2.32,<3"]
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

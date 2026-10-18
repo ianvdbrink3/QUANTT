@@ -1,0 +1,5 @@
+# Preregistered before this pipeline's first analysis. No parameter selection.
+hypotheses:
+  - {id: HYP-CFD-001, name: NY opening drift, direction: long, timezone: America/New_York, entry: '09:30', horizon_minutes: 60, question: 'Is the 09:30–10:30 ET long return positive after scenario costs?'}
+  - {id: HYP-CFD-002, name: London opening drift, direction: long, timezone: Europe/London, entry: '08:00', horizon_minutes: 60, question: 'Is the 08:00–09:00 London long return positive after scenario costs?'}
+  - {id: HYP-CFD-003, name: NY opening reversal, direction: reverse_prior_hour, timezone: America/New_York, entry: '09:30', horizon_minutes: 60, question: 'Does fading the preceding complete hour outperform a zero-return net baseline?'}

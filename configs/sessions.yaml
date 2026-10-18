@@ -1,0 +1,7 @@
+# Research categories, not an exchange calendar. Half-open local intervals.
+sessions:
+  - {name: Asia, timezone: America/New_York, start: '18:00', end: '03:00'}
+  - {name: London, timezone: Europe/London, start: '08:00', end: '09:00'}
+  - {name: NY Open, timezone: America/New_York, start: '09:30', end: '10:30'}
+  - {name: London Close, timezone: Europe/London, start: '16:00', end: '17:00'}
+  - {name: NY Close, timezone: America/New_York, start: '15:00', end: '16:00'}

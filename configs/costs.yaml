@@ -1,0 +1,4 @@
+# Illustrative round-trip CFD point costs; no broker schedule was provided.
+# BID series does not measure ASK spread. Scenario costs, not observed fills.
+base: {spread_points: 1.5, slippage_per_side_points: 0.25, commission_round_trip_points: 0.0}
+stress: {spread_points: 3.0, slippage_per_side_points: 0.5, commission_round_trip_points: 0.0}

@@ -1,0 +1,12 @@
+USATECHIDXUSD:
+  venue: Dukascopy
+  type: index_cfd
+  label: USA 100 Technical Index
+  price_divisor: 1000
+  plausible_price_min: 5000
+  plausible_price_max: 100000
+  source_side: BID
+  volume_semantics: vendor_quote_activity_not_exchange_contract_volume
+  timestamp_semantics: bar_open_utc
+  contract_roll_policy: not_applicable_to_cfd
+  data_url: https://datafeed.dukascopy.com/datafeed
