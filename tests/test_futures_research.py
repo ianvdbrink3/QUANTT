@@ -32,13 +32,26 @@ def test_future_returns_do_not_cross_contract_roll():
     assert not y.complete.any()
 
 def test_london_cutoff_point_in_time():
-    # October New York daylight saving = UTC-4, London research cutoff 08:30 ET = 12:30Z
-    x=market(start='2026-10-19T12:28:00Z',count=4)
-    x.iloc[1,x.columns.get_loc('high')]=20005
-    y=session_context(x)
-    assert pd.isna(y.london_high.iloc[0])
-    assert y.london_high.iloc[1]==20001
-    assert y.london_high.iloc[2]==20005
+    # October NY daylight saving = UTC-4. 08:30 ET = 12:30 UTC.
+    x = market(start='2026-10-19T07:00:00Z', count=332)
+    x.loc[pd.Timestamp('2026-10-19T12:29:00Z'), 'high'] = 20005
+    y = session_context(x)
+    before = pd.Timestamp('2026-10-19T12:29:00Z')
+    cutoff = pd.Timestamp('2026-10-19T12:30:00Z')
+    assert y.loc[before, 'london_high'] == 20001
+    assert y.loc[cutoff, 'london_high'] == 20005
+
+def test_missing_london_start_invalidates_levels():
+    # Missing 03:00 ET bar must invalidate the entire day's London context.
+    x = market(start='2026-10-19T07:01:00Z', count=400)
+    y = session_context(x)
+    assert y.london_high.isna().all()
+
+def test_missing_internal_london_minute_invalidates_levels():
+    x = market()
+    x = x.drop(pd.Timestamp('2026-10-19T09:00:00Z'))
+    y = session_context(x)
+    assert y.london_low.isna().all()
 
 def test_no_timezone_naive_data():
     x=market()
