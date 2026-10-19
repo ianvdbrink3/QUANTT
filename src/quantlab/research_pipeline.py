@@ -57,7 +57,7 @@ def quality_gate(frame: pd.DataFrame) -> dict:
     fields=('open','high','low','close','volume')
     if any(f not in frame for f in fields) or 'contract_id' not in frame:
         raise ValueError('Missing required market columns')
-    if frame.empty or frame[fields].isna().any().any():
+    if frame.empty or frame[list(fields)].isna().any().any():
         raise ValueError('Empty data or null OHLCV')
     import numpy as np
     if not np.isfinite(frame[list(fields)].to_numpy(dtype=float)).all():
