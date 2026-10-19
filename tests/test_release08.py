@@ -72,3 +72,27 @@ def test_sealed_holdout_never_emits_forward_labels_or_execution(tmp_path):
     assert b['governance']['holdout_sealed'] and not b['governance']['holdout_scored']
     assert b['governance']['holdout_count_sealed']>=0
     assert all(v['trades']<=len(b['events']) for v in b['execution'].values())
+
+def test_matched_control_counts_never_exceed_visible_event_counts():
+    r=research_bundle(config('NQ',2400))
+    for family in r['forward'].values():
+        for outcome in family.values():
+            assert outcome['matched_events']+outcome['unmatched_events']==outcome['n']
+            assert outcome['matching_dimensions']==['hour_et','volatility_regime_prior20']
+            assert outcome['p_value'] is None
+            assert outcome['fdr_adjusted_p'] is None
+
+def test_asia_point_in_time_levels_require_complete_window():
+    from quantlab.release08 import asia_context
+    from quantlab.research_pipeline import fixture_frame
+    import pandas as pd
+    frame=fixture_frame(41,2400)
+    asia=asia_context(frame)
+    first=pd.Timestamp('2026-10-19T22:00:00Z')
+    after=first+pd.Timedelta(minutes=1)
+    assert pd.isna(asia.loc[first,'asia_high'])
+    assert asia.loc[after,'asia_high']==frame.loc[first,'high']
+    missing=frame.drop(first+pd.Timedelta(minutes=10))
+    broken=asia_context(missing)
+    midnight=pd.Timestamp('2026-10-20T04:00:00Z')
+    assert pd.isna(broken.loc[midnight,'asia_high'])
