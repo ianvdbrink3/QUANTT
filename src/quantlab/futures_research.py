@@ -25,18 +25,28 @@ def session_context(bars: pd.DataFrame) -> pd.DataFrame:
     result['london_high'] = float('nan')
     result['london_low'] = float('nan')
     result['known_at_utc'] = bars.index + pd.Timedelta(minutes=1)
-    for (_,contract), group in result.groupby(['ny_trade_date','contract_id'],sort=False):
-        minutes = group.index.tz_convert(NY).hour*60 + group.index.tz_convert(NY).minute
+    for (_, contract), group in result.groupby(['ny_trade_date','contract_id'], sort=False):
+        local_times = group.index.tz_convert(NY)
+        minutes = local_times.hour * 60 + local_times.minute
         inside = (minutes >= 180) & (minutes < 510)
-        prior_high = group['high'].where(inside).cummax().shift(1)
-        prior_low = group['low'].where(inside).cummin().shift(1)
-        # Opening values only become known at the NEXT bar open. At and
-        # after 08:30 ET the final London range is available.
-        complete_high = group['high'].where(inside).cummax()
-        complete_low = group['low'].where(inside).cummin()
-        idx = group.index
-        result.loc[idx,'london_high'] = complete_high.where(~inside,prior_high).to_numpy()
-        result.loc[idx,'london_low'] = complete_low.where(~inside,prior_low).to_numpy()
+        # Require the *entire* London 03:00-08:30 ET window with one-minute
+        # bars from this exact contract. Missing prefix or internal gaps
+        # invalidate the level rather than silently shrinking the range.
+        expected_minutes = pd.Series(range(180, 510))
+        observed_minutes = pd.Series(minutes[inside])
+        full_window = (len(observed_minutes) == 330
+                       and observed_minutes.reset_index(drop=True).equals(expected_minutes))
+        if not full_window:
+            continue
+        highs = group['high'].where(inside)
+        lows = group['low'].where(inside)
+        # A minute bar is only known at its CLOSE. Prior-bar cumulative
+        # levels are valid inside the window. After 08:30 ET the complete
+        # window may be used; never include highs/lows from a future bar.
+        high = highs.cummax().shift(1).where(inside, highs.cummax())
+        low = lows.cummin().shift(1).where(inside, lows.cummin())
+        result.loc[group.index, 'london_high'] = high.to_numpy()
+        result.loc[group.index, 'london_low'] = low.to_numpy()
     return result
 
 def evaluate_forward(bars: pd.DataFrame, event_times: pd.DatetimeIndex,
