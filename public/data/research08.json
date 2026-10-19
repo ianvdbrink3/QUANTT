@@ -1,16 +1,1505 @@
 {
-  "schema_version": "0.8",
-  "classification": "DETERMINISTIC SYNTHETIC REFERENCE - GENERATION PENDING",
+  "classification": "DETERMINISTIC SYNTHETIC REFERENCE",
   "edge_validated": false,
-  "runs": [],
+  "runs": [
+    {
+      "config_hash": "8eccfd9efacf1ccfdc8d5b34b0e01092e41c5253ed72cf7e926babbb5669817a",
+      "dataset_id": "eebda64b34bf22068c8161b727121c832c37e7a242face32146b3d7230938fd2",
+      "edge_validated": false,
+      "events": [
+        {
+          "15m": {
+            "forward_points": -0.25,
+            "mae_points": 0.75,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": 0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": 1.75,
+            "mae_points": 0.75,
+            "mfe_points": 2.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T13:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T13:46:00+00:00",
+          "vwap_prior": 20001.504958555353
+        },
+        {
+          "15m": {
+            "forward_points": -1.5,
+            "mae_points": 2.0,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": -2.25,
+            "mae_points": 2.75,
+            "mfe_points": 0.25
+          },
+          "60m": {
+            "forward_points": -0.75,
+            "mae_points": 2.75,
+            "mfe_points": 0.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T14:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T14:46:00+00:00",
+          "vwap_prior": 20002.743925625164
+        },
+        {
+          "15m": {
+            "forward_points": 0.75,
+            "mae_points": 0.5,
+            "mfe_points": 1.0
+          },
+          "30m": {
+            "forward_points": 1.0,
+            "mae_points": 0.5,
+            "mfe_points": 2.0
+          },
+          "60m": {
+            "forward_points": 1.5,
+            "mae_points": 0.5,
+            "mfe_points": 2.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T15:07:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T15:06:00+00:00",
+          "vwap_prior": 20002.9243852459
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": 0.0,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": 0.75,
+            "mae_points": 0.75,
+            "mfe_points": 1.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T15:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T15:46:00+00:00",
+          "vwap_prior": 20003.09377402776
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": 0.0,
+            "mae_points": 0.75,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -1.0,
+            "mae_points": 1.25,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T16:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T16:46:00+00:00",
+          "vwap_prior": 20003.46156474713
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "30m": {
+            "forward_points": 0.25,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "60m": {
+            "forward_points": 0.5,
+            "mae_points": 1.0,
+            "mfe_points": 1.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T17:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T17:46:00+00:00",
+          "vwap_prior": 20003.75887842749
+        },
+        {
+          "15m": {
+            "forward_points": 1.0,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "30m": {
+            "forward_points": -0.25,
+            "mae_points": 0.75,
+            "mfe_points": 1.5
+          },
+          "60m": {
+            "forward_points": 1.0,
+            "mae_points": 0.75,
+            "mfe_points": 1.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T17:59:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T17:58:00+00:00",
+          "vwap_prior": 20003.782952439076
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 0.5,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": -0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -1.5,
+            "mae_points": 2.25,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T18:47:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T18:46:00+00:00",
+          "vwap_prior": 20003.833567484256
+        },
+        {
+          "15m": {
+            "forward_points": 0.0,
+            "mae_points": 0.25,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": -1.0,
+            "mae_points": 1.5,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -3.0,
+            "mae_points": 3.25,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T19:09:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T19:08:00+00:00",
+          "vwap_prior": 20003.882111492945
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "30m": {
+            "forward_points": 1.25,
+            "mae_points": 0.25,
+            "mfe_points": 1.75
+          },
+          "60m": {
+            "forward_points": 1.5,
+            "mae_points": 0.25,
+            "mfe_points": 2.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T00:03:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T00:02:00+00:00",
+          "vwap_prior": 20002.940242447945
+        },
+        {
+          "15m": {
+            "forward_points": 0.0,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": 0.5,
+            "mae_points": 0.75,
+            "mfe_points": 1.0
+          },
+          "60m": {
+            "forward_points": 2.0,
+            "mae_points": 0.75,
+            "mfe_points": 2.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T01:03:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T01:02:00+00:00",
+          "vwap_prior": 20003.04345144394
+        },
+        {
+          "15m": {
+            "forward_points": 1.25,
+            "mae_points": 0.5,
+            "mfe_points": 1.5
+          },
+          "30m": {
+            "forward_points": 1.75,
+            "mae_points": 0.5,
+            "mfe_points": 2.0
+          },
+          "60m": {
+            "forward_points": 3.0,
+            "mae_points": 0.5,
+            "mfe_points": 3.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T02:03:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T02:02:00+00:00",
+          "vwap_prior": 20003.21747957078
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": 1.0,
+            "mae_points": 1.0,
+            "mfe_points": 1.5
+          },
+          "60m": {
+            "forward_points": 0.75,
+            "mae_points": 1.0,
+            "mfe_points": 1.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T03:03:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T03:02:00+00:00",
+          "vwap_prior": 20003.60107362449
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": 0.25,
+            "mae_points": 1.0,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": 0.5,
+            "mae_points": 1.0,
+            "mfe_points": 2.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T04:04:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T04:03:00+00:00",
+          "vwap_prior": 20010.304378531077
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": 0.0,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -0.5,
+            "mae_points": 1.5,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T05:05:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T05:04:00+00:00",
+          "vwap_prior": 20010.534582213266
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.5,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": -0.75,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -1.25,
+            "mae_points": 1.5,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T07:33:00+00:00",
+          "london_high": 20010.25,
+          "london_low": 20008.25,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T07:32:00+00:00",
+          "vwap_prior": 20009.816322989976
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": 2.5,
+            "mae_points": 0.75,
+            "mfe_points": 3.0
+          },
+          "60m": {
+            "forward_points": 1.75,
+            "mae_points": 0.75,
+            "mfe_points": 3.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T09:37:00+00:00",
+          "london_high": 20010.5,
+          "london_low": 20007.75,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T09:36:00+00:00",
+          "vwap_prior": 20009.51670895507
+        },
+        {
+          "15m": {
+            "forward_points": 0.75,
+            "mae_points": 0.5,
+            "mfe_points": 1.0
+          },
+          "30m": {
+            "forward_points": 0.5,
+            "mae_points": 0.5,
+            "mfe_points": 1.0
+          },
+          "60m": {
+            "forward_points": 1.5,
+            "mae_points": 0.5,
+            "mfe_points": 2.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T11:16:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T11:15:00+00:00",
+          "vwap_prior": 20009.89248799008
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "30m": {
+            "forward_points": 2.25,
+            "mae_points": 0.5,
+            "mfe_points": 2.75
+          },
+          "60m": {
+            "forward_points": 1.75,
+            "mae_points": 0.5,
+            "mfe_points": 2.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T13:57:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T13:56:00+00:00",
+          "vwap_prior": 20010.263217032327
+        },
+        {
+          "15m": {
+            "forward_points": 1.0,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "30m": {
+            "forward_points": 2.25,
+            "mae_points": 0.25,
+            "mfe_points": 3.0
+          },
+          "60m": {
+            "forward_points": 2.25,
+            "mae_points": 0.25,
+            "mfe_points": 3.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T13:58:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "London High/Low Sweep",
+          "signal_utc": "2026-10-20T13:57:00+00:00",
+          "vwap_prior": 20010.266981978988
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.25,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": 0.5,
+            "mae_points": 0.25,
+            "mfe_points": 1.0
+          },
+          "60m": {
+            "forward_points": -2.25,
+            "mae_points": 2.5,
+            "mfe_points": 1.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T14:57:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T14:56:00+00:00",
+          "vwap_prior": 20010.68361976583
+        },
+        {
+          "15m": {
+            "forward_points": -0.25,
+            "mae_points": 0.5,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": -1.0,
+            "mae_points": 1.25,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": -1.5,
+            "mae_points": 2.0,
+            "mfe_points": 0.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T15:54:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "London High/Low Sweep",
+          "signal_utc": "2026-10-20T15:53:00+00:00",
+          "vwap_prior": 20010.990822667398
+        },
+        {
+          "15m": {
+            "forward_points": -0.75,
+            "mae_points": 1.25,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": -1.5,
+            "mae_points": 1.75,
+            "mfe_points": 0.25
+          },
+          "60m": {
+            "forward_points": -1.5,
+            "mae_points": 2.25,
+            "mfe_points": 0.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T16:00:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T15:59:00+00:00",
+          "vwap_prior": 20010.998898739428
+        },
+        {
+          "15m": null,
+          "30m": null,
+          "60m": null,
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T17:11:00+00:00",
+          "london_high": 20013.25,
+          "london_low": 20007.75,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T17:10:00+00:00",
+          "vwap_prior": 20011.090419126118
+        }
+      ],
+      "execution": {
+        "base_optimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            100014.0,
+            99978.0,
+            99927.0,
+            99921.0,
+            99880.0,
+            99869.0,
+            99828.0,
+            99777.0,
+            99816.0,
+            99825.0,
+            99844.0,
+            99883.0,
+            99877.0,
+            99846.0,
+            99835.0,
+            99839.0,
+            99745.5,
+            99694.5,
+            99708.5,
+            99642.5,
+            99576.5,
+            99585.5,
+            99534.5
+          ],
+          "long_count": 13,
+          "max_drawdown_usd": 479.5,
+          "profit_factor": 0.24,
+          "short_count": 10,
+          "total_net_usd": -465.5,
+          "trades": 23,
+          "winrate": 0.34782608695652173
+        },
+        "base_pessimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            100014.0,
+            99978.0,
+            99927.0,
+            99921.0,
+            99880.0,
+            99869.0,
+            99828.0,
+            99777.0,
+            99816.0,
+            99825.0,
+            99844.0,
+            99883.0,
+            99877.0,
+            99846.0,
+            99835.0,
+            99839.0,
+            99745.5,
+            99694.5,
+            99708.5,
+            99642.5,
+            99576.5,
+            99585.5,
+            99534.5
+          ],
+          "long_count": 13,
+          "max_drawdown_usd": 479.5,
+          "profit_factor": 0.24,
+          "short_count": 10,
+          "total_net_usd": -465.5,
+          "trades": 23,
+          "winrate": 0.34782608695652173
+        },
+        "stress_optimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99969.0,
+            99853.0,
+            99757.0,
+            99706.0,
+            99620.0,
+            99564.0,
+            99478.0,
+            99382.0,
+            99376.0,
+            99340.0,
+            99314.0,
+            99308.0,
+            99257.0,
+            99181.0,
+            99125.0,
+            99084.0,
+            98968.0,
+            98872.0,
+            98841.0,
+            98725.0,
+            98609.0,
+            98573.0,
+            98477.0
+          ],
+          "long_count": 13,
+          "max_drawdown_usd": 1523.0,
+          "profit_factor": 0.0,
+          "short_count": 10,
+          "total_net_usd": -1523.0,
+          "trades": 23,
+          "winrate": 0.0
+        },
+        "stress_pessimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99969.0,
+            99853.0,
+            99757.0,
+            99706.0,
+            99620.0,
+            99564.0,
+            99478.0,
+            99382.0,
+            99376.0,
+            99340.0,
+            99314.0,
+            99308.0,
+            99257.0,
+            99181.0,
+            99125.0,
+            99084.0,
+            98968.0,
+            98872.0,
+            98841.0,
+            98725.0,
+            98609.0,
+            98573.0,
+            98477.0
+          ],
+          "long_count": 13,
+          "max_drawdown_usd": 1523.0,
+          "profit_factor": 0.0,
+          "short_count": 10,
+          "total_net_usd": -1523.0,
+          "trades": 23,
+          "winrate": 0.0
+        }
+      },
+      "feature_quality": {
+        "london_complete_segments": 619,
+        "opening_ranges": 2,
+        "vwap_known_at": true
+      },
+      "forward": {
+        "London High/Low Sweep": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.375,
+            "n": 2,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.625,
+            "n": 2,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.375,
+            "n": 2,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        },
+        "NY 09:30 Opening Range Breakout": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.019230769230769232,
+            "n": 13,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.28846153846153844,
+            "n": 13,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.38461538461538464,
+            "n": 13,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        },
+        "VWAP Mean Reversion": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.375,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.28125,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.1875,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        }
+      },
+      "governance": {
+        "embargo_minutes": 60,
+        "family_id": "release08-sandbox",
+        "holdout_count_sealed": 6,
+        "holdout_scored": false,
+        "holdout_sealed": true,
+        "multiple_testing": "WITHHELD \u2014 no real hypothesis p-values",
+        "note": "Chronological partitions on synthetic events; not independently certified",
+        "purged_or_embargoed": 3,
+        "train_count": 13,
+        "trial_budget": 3,
+        "trials_registered": 3,
+        "validation_count": 2
+      },
+      "instrument": "NQ",
+      "limitations": [
+        "Synthetic bars do not model CME futures liquidity",
+        "No historical NQ/ES instrument ingestion was performed",
+        "A 1-day Dukascopy CFD sample is not CME futures",
+        "Synthetic p-values and out-of-sample trading claims are prohibited"
+      ],
+      "provenance": "SYNTHETIC SANDBOX (DETERMINISTIC)",
+      "quality": {
+        "contract_ids": [
+          "NQZ26"
+        ],
+        "exchange_calendar_verified": false,
+        "observed_gaps": {
+          "calendar_reconciled": false,
+          "contracts": {
+            "NQZ26": {
+              "gap_count": 0,
+              "missing_minutes_between_observations": 0,
+              "observed_bars": 1700
+            }
+          },
+          "note": "Observed gaps include valid exchange closures until reconciled."
+        },
+        "real_market_data": false,
+        "rows": 1700,
+        "status": "PASS"
+      },
+      "run_id": "47941e469f2976ed55fe35206496ff2ed1f2729ea4f1f63366f8f3ad1178d93e",
+      "schema_version": "0.8",
+      "seed": 41,
+      "source_kind": "synthetic_fixture"
+    },
+    {
+      "config_hash": "1e51a7b222467e4763ab059013e6b2de584db0849dd6c2932cd396680c4f6a5a",
+      "dataset_id": "3d880d6819b5fefda8530475bb2e9b9b8e526d9fbe0de0350d2914894a1756a9",
+      "edge_validated": false,
+      "events": [
+        {
+          "15m": {
+            "forward_points": 1.0,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "30m": {
+            "forward_points": 1.25,
+            "mae_points": 0.5,
+            "mfe_points": 1.75
+          },
+          "60m": {
+            "forward_points": 3.0,
+            "mae_points": 0.5,
+            "mfe_points": 3.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T13:07:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T13:06:00+00:00",
+          "vwap_prior": 6000.02679528403
+        },
+        {
+          "15m": {
+            "forward_points": 1.0,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "30m": {
+            "forward_points": 0.25,
+            "mae_points": 0.5,
+            "mfe_points": 1.25
+          },
+          "60m": {
+            "forward_points": 2.0,
+            "mae_points": 0.5,
+            "mfe_points": 2.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T13:49:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T13:48:00+00:00",
+          "vwap_prior": 6000.848876892531
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": -0.75,
+            "mae_points": 1.0,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": -1.0,
+            "mae_points": 1.5,
+            "mfe_points": 0.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T14:49:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T14:48:00+00:00",
+          "vwap_prior": 6001.784517973857
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": -0.25,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": 0.75,
+            "mae_points": 1.0,
+            "mfe_points": 1.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T15:49:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T15:48:00+00:00",
+          "vwap_prior": 6002.388533622909
+        },
+        {
+          "15m": {
+            "forward_points": 1.0,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "30m": {
+            "forward_points": 1.0,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "60m": {
+            "forward_points": 1.5,
+            "mae_points": 0.25,
+            "mfe_points": 2.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T15:52:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T15:51:00+00:00",
+          "vwap_prior": 6002.392959512718
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": -1.75,
+            "mae_points": 2.0,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": -2.25,
+            "mae_points": 2.75,
+            "mfe_points": 0.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T16:49:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-19T16:48:00+00:00",
+          "vwap_prior": 6002.601690644185
+        },
+        {
+          "15m": {
+            "forward_points": -0.25,
+            "mae_points": 1.0,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": -1.0,
+            "mae_points": 1.5,
+            "mfe_points": 0.25
+          },
+          "60m": {
+            "forward_points": -2.25,
+            "mae_points": 2.5,
+            "mfe_points": 0.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-19T17:14:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-19T17:13:00+00:00",
+          "vwap_prior": 6002.68226820179
+        },
+        {
+          "15m": {
+            "forward_points": 0.75,
+            "mae_points": 0.25,
+            "mfe_points": 1.75
+          },
+          "30m": {
+            "forward_points": 0.75,
+            "mae_points": 0.5,
+            "mfe_points": 1.75
+          },
+          "60m": {
+            "forward_points": 2.75,
+            "mae_points": 0.5,
+            "mfe_points": 3.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T00:25:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T00:24:00+00:00",
+          "vwap_prior": 6000.727471339283
+        },
+        {
+          "15m": {
+            "forward_points": -1.75,
+            "mae_points": 2.0,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": -0.75,
+            "mae_points": 2.0,
+            "mfe_points": 0.25
+          },
+          "60m": {
+            "forward_points": 0.5,
+            "mae_points": 2.0,
+            "mfe_points": 1.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T00:34:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T00:33:00+00:00",
+          "vwap_prior": 6000.73057560238
+        },
+        {
+          "15m": {
+            "forward_points": 0.5,
+            "mae_points": 0.25,
+            "mfe_points": 1.0
+          },
+          "30m": {
+            "forward_points": 0.75,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "60m": {
+            "forward_points": 0.75,
+            "mae_points": 0.25,
+            "mfe_points": 1.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T01:34:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T01:33:00+00:00",
+          "vwap_prior": 6000.8013489991345
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.75,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": -0.5,
+            "mae_points": 1.0,
+            "mfe_points": 0.75
+          },
+          "60m": {
+            "forward_points": -0.25,
+            "mae_points": 1.75,
+            "mfe_points": 1.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T02:34:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T02:33:00+00:00",
+          "vwap_prior": 6000.945858629121
+        },
+        {
+          "15m": {
+            "forward_points": 0.0,
+            "mae_points": 0.25,
+            "mfe_points": 1.0
+          },
+          "30m": {
+            "forward_points": -0.75,
+            "mae_points": 1.25,
+            "mfe_points": 1.0
+          },
+          "60m": {
+            "forward_points": -1.0,
+            "mae_points": 1.25,
+            "mfe_points": 1.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T03:34:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "NY 09:30 Opening Range Breakout",
+          "signal_utc": "2026-10-20T03:33:00+00:00",
+          "vwap_prior": 6001.099070108472
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.5,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": -0.5,
+            "mae_points": 0.75,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": -0.75,
+            "mae_points": 1.25,
+            "mfe_points": 0.5
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T04:08:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T04:07:00+00:00",
+          "vwap_prior": 6002.336509715994
+        },
+        {
+          "15m": {
+            "forward_points": -0.5,
+            "mae_points": 1.25,
+            "mfe_points": 0.5
+          },
+          "30m": {
+            "forward_points": -0.75,
+            "mae_points": 1.75,
+            "mfe_points": 0.5
+          },
+          "60m": {
+            "forward_points": 0.5,
+            "mae_points": 1.75,
+            "mfe_points": 0.75
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T05:51:00+00:00",
+          "london_high": null,
+          "london_low": null,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T05:50:00+00:00",
+          "vwap_prior": 6001.542095934421
+        },
+        {
+          "15m": {
+            "forward_points": 0.25,
+            "mae_points": 0.75,
+            "mfe_points": 0.75
+          },
+          "30m": {
+            "forward_points": 1.75,
+            "mae_points": 0.75,
+            "mfe_points": 2.25
+          },
+          "60m": {
+            "forward_points": 2.25,
+            "mae_points": 0.75,
+            "mfe_points": 3.0
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T07:35:00+00:00",
+          "london_high": 6003.5,
+          "london_low": 6001.5,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T07:34:00+00:00",
+          "vwap_prior": 6001.619809961273
+        },
+        {
+          "15m": {
+            "forward_points": -1.0,
+            "mae_points": 1.25,
+            "mfe_points": 0.25
+          },
+          "30m": {
+            "forward_points": -0.5,
+            "mae_points": 1.25,
+            "mfe_points": 0.25
+          },
+          "60m": {
+            "forward_points": -3.0,
+            "mae_points": 3.25,
+            "mfe_points": 0.25
+          },
+          "event_type": "SYNTHETIC",
+          "known_at_utc": "2026-10-20T13:51:00+00:00",
+          "london_high": 6008.75,
+          "london_low": 6000.75,
+          "scenario": "VWAP Mean Reversion",
+          "signal_utc": "2026-10-20T13:50:00+00:00",
+          "vwap_prior": 6004.148449084833
+        }
+      ],
+      "execution": {
+        "base_optimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99806.5,
+            99863.0,
+            99769.5,
+            99763.5,
+            99645.0,
+            99489.0,
+            99558.0,
+            99377.0,
+            99358.5,
+            99352.5,
+            99296.5,
+            99203.0,
+            99197.0,
+            99128.5,
+            98972.5,
+            99079.0
+          ],
+          "long_count": 8,
+          "max_drawdown_usd": 1027.5,
+          "profit_factor": 0.20121422376409367,
+          "short_count": 8,
+          "total_net_usd": -921.0,
+          "trades": 16,
+          "winrate": 0.1875
+        },
+        "base_pessimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99806.5,
+            99863.0,
+            99769.5,
+            99763.5,
+            99645.0,
+            99489.0,
+            99558.0,
+            99377.0,
+            99358.5,
+            99352.5,
+            99296.5,
+            99203.0,
+            99197.0,
+            99128.5,
+            98972.5,
+            99079.0
+          ],
+          "long_count": 8,
+          "max_drawdown_usd": 1027.5,
+          "profit_factor": 0.20121422376409367,
+          "short_count": 8,
+          "total_net_usd": -921.0,
+          "trades": 16,
+          "winrate": 0.1875
+        },
+        "stress_optimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99719.0,
+            99663.0,
+            99457.0,
+            99338.5,
+            99107.5,
+            98826.5,
+            98783.0,
+            98502.0,
+            98371.0,
+            98252.5,
+            98084.0,
+            97878.0,
+            97759.5,
+            97578.5,
+            97297.5,
+            97291.5
+          ],
+          "long_count": 8,
+          "max_drawdown_usd": 2708.5,
+          "profit_factor": 0.0,
+          "short_count": 8,
+          "total_net_usd": -2708.5,
+          "trades": 16,
+          "winrate": 0.0
+        },
+        "stress_pessimistic": {
+          "ambiguity_count": 0,
+          "equity_curve_usd": [
+            100000.0,
+            99719.0,
+            99663.0,
+            99457.0,
+            99338.5,
+            99107.5,
+            98826.5,
+            98783.0,
+            98502.0,
+            98371.0,
+            98252.5,
+            98084.0,
+            97878.0,
+            97759.5,
+            97578.5,
+            97297.5,
+            97291.5
+          ],
+          "long_count": 8,
+          "max_drawdown_usd": 2708.5,
+          "profit_factor": 0.0,
+          "short_count": 8,
+          "total_net_usd": -2708.5,
+          "trades": 16,
+          "winrate": 0.0
+        }
+      },
+      "feature_quality": {
+        "london_complete_segments": 619,
+        "opening_ranges": 2,
+        "vwap_known_at": true
+      },
+      "forward": {
+        "London High/Low Sweep": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": null,
+            "n": 0,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": null,
+            "n": 0,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": null,
+            "n": 0,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        },
+        "NY 09:30 Opening Range Breakout": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": -0.0625,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": -0.46875,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": -0.0625,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        },
+        "VWAP Mean Reversion": {
+          "15": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.1875,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "30": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.25,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          },
+          "60": {
+            "bootstrap_ci": null,
+            "fdr_adjusted_p": null,
+            "mean_points": 0.5,
+            "n": 8,
+            "p_value": null,
+            "status": "NOT TESTED - SYNTHETIC ONLY"
+          }
+        }
+      },
+      "governance": {
+        "embargo_minutes": 60,
+        "family_id": "release08-sandbox",
+        "holdout_count_sealed": 1,
+        "holdout_scored": false,
+        "holdout_sealed": true,
+        "multiple_testing": "WITHHELD \u2014 no real hypothesis p-values",
+        "note": "Chronological partitions on synthetic events; not independently certified",
+        "purged_or_embargoed": 2,
+        "train_count": 12,
+        "trial_budget": 3,
+        "trials_registered": 3,
+        "validation_count": 1
+      },
+      "instrument": "ES",
+      "limitations": [
+        "Synthetic bars do not model CME futures liquidity",
+        "No historical NQ/ES instrument ingestion was performed",
+        "A 1-day Dukascopy CFD sample is not CME futures",
+        "Synthetic p-values and out-of-sample trading claims are prohibited"
+      ],
+      "provenance": "SYNTHETIC SANDBOX (DETERMINISTIC)",
+      "quality": {
+        "contract_ids": [
+          "ESZ26"
+        ],
+        "exchange_calendar_verified": false,
+        "observed_gaps": {
+          "calendar_reconciled": false,
+          "contracts": {
+            "ESZ26": {
+              "gap_count": 0,
+              "missing_minutes_between_observations": 0,
+              "observed_bars": 1700
+            }
+          },
+          "note": "Observed gaps include valid exchange closures until reconciled."
+        },
+        "real_market_data": false,
+        "rows": 1700,
+        "status": "PASS"
+      },
+      "run_id": "af0c84aded5eda38491d686458b788db22c514686e51b1da664099ed57f728d6",
+      "schema_version": "0.8",
+      "seed": 42,
+      "source_kind": "synthetic_fixture"
+    }
+  ],
+  "schema_version": "0.8",
   "sources": [
     {
+      "date": "2025-03-19",
       "id": "dukascopy_partial_2025_03_19",
       "label": "EMPIRICAL CFD (DUKASCOPY - 1 DAY)",
       "market_type": "index_cfd",
-      "date": "2025-03-19",
-      "verified_minute_bars": 1329,
-      "note": "Separate legacy partial observation"
+      "note": "Separate legacy partial observation; no synthetic backtest or CME future status",
+      "verified_minute_bars": 1329
     },
     {
       "id": "cme_futures_waiting",
