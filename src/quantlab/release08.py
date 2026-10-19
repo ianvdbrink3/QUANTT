@@ -21,6 +21,27 @@ from quantlab.validation_governance import purge_overlapping_events, ResearchFam
 HORIZONS=(15,30,60)
 SCENARIOS=('London High/Low Sweep','NY 09:30 Opening Range Breakout','VWAP Mean Reversion')
 
+def asia_context(frame:pd.DataFrame)->pd.DataFrame:
+    """Causal Asia 18:00–00:00 ET levels (research definition, not CME session).
+
+    Require a complete 360-minute contract-native window; prior-bar levels
+    inside the window and finalized levels from 00:00 ET onward.
+    """
+    local=frame.index.tz_convert('America/New_York')
+    offset=local-pd.Timedelta(hours=18)
+    result=pd.DataFrame(index=frame.index,data={'asia_high':np.nan,'asia_low':np.nan})
+    for (_,contract),group in frame.groupby([offset.date,frame.contract_id],sort=False):
+        minute=group.index.tz_convert('America/New_York')
+        minute=minute.hour*60+minute.minute
+        inside=(minute>=1080)&(minute<1440)
+        if list(minute[inside])!=list(range(1080,1440)):
+            continue
+        highs=group.high.where(inside)
+        lows=group.low.where(inside)
+        result.loc[group.index,'asia_high']=highs.cummax().shift(1).where(inside,highs.cummax().ffill()).to_numpy()
+        result.loc[group.index,'asia_low']=lows.cummin().shift(1).where(inside,lows.cummin().ffill()).to_numpy()
+    return result
+
 def research_bundle(config:dict)->dict:
     """Compute all visible numbers in Python, rather than invent frontend metrics."""
     if config.get('dataset',{}).get('source_kind')!='synthetic_fixture':
@@ -41,6 +62,7 @@ def research_bundle(config:dict)->dict:
     source_hash=dataset_fingerprint(validate_bars(canonical))
     run_hash=hashlib.sha256(canonical_json({'instrument':symbol,'config':config,'dataset_hash':source_hash}).encode()).hexdigest()
     context=session_context(frame)
+    asia=asia_context(frame)
     vwap=vwap_known_at(frame)
     o_range=opening_range(frame,minutes=15)
     local=frame.index.tz_convert('America/New_York')
@@ -92,7 +114,9 @@ def research_bundle(config:dict)->dict:
                 'known_at_utc':(at+pd.Timedelta(minutes=1)).isoformat(),
                 'vwap_prior':float(vwap.loc[at,'vwap_prior']) if pd.notna(vwap.loc[at,'vwap_prior']) else None,
                 'london_high':float(context.loc[at,'london_high']) if pd.notna(context.loc[at,'london_high']) else None,
-                'london_low':float(context.loc[at,'london_low']) if pd.notna(context.loc[at,'london_low']) else None}
+                'london_low':float(context.loc[at,'london_low']) if pd.notna(context.loc[at,'london_low']) else None,
+                'asia_high':float(asia.loc[at,'asia_high']) if pd.notna(asia.loc[at,'asia_high']) else None,
+                'asia_low':float(asia.loc[at,'asia_low']) if pd.notna(asia.loc[at,'asia_low']) else None}
         for h in HORIZONS:
             match=rows[rows.horizon_min==h]
             item=match.iloc[0] if len(match) else None
@@ -195,6 +219,7 @@ def research_bundle(config:dict)->dict:
         'run_id':run_hash,'edge_validated':False,
         'quality':source_quality,'feature_quality':{'vwap_known_at':True,
             'london_complete_segments':int(context.london_high.notna().sum()),
+            'asia_complete_segments':int(asia.asia_high.notna().sum()),
             'opening_ranges':len(o_range)},
         'events':events,'forward':fwd,'execution':positions,
         'governance':{'family_id':family.family_id,'trial_budget':3,
