@@ -1,0 +1,18 @@
+schema_version: 1
+research_question: "Can the end-to-end QUANT research workflow reproduce a toy result?"
+hypothesis: "The pipeline should run deterministically; this is not a market hypothesis."
+dataset:
+  source_kind: synthetic_fixture
+  bars: 600
+instrument: NQ
+seed: 41
+code_ref: "synthetic-e2e-v1"
+opening_range_minutes: 15
+feature: close
+threshold: 19999
+side: above
+event_spacing_minutes: 60
+horizon_minutes: 15
+stop_points: 4
+target_points: 8
+cost_points: 2
