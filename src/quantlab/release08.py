@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 import yaml
 from quantlab.research_pipeline import run_research, fixture_frame, quality_gate, canonical_json
+from quantlab.research_contract import validate_bars, dataset_fingerprint
 from quantlab.research_validation import opening_range, vwap_known_at, block_bootstrap_mean, fdr_bh
 from quantlab.futures_research import session_context, evaluate_forward
 from quantlab.futures_execution import ExecutionSettings, simulate, equity_statistics
@@ -32,7 +33,14 @@ def research_bundle(config:dict)->dict:
         for col in ('open','high','low','close'): frame[col]-=14000
         frame['contract_id']=('ESZ26' if symbol=='ES' else 'MESZ26')
     elif symbol=='MNQ': frame['contract_id']='MNQZ26'
-    quality_gate(frame)
+    source_quality=quality_gate(frame)
+    canonical=frame.reset_index(names='timestamp_utc')
+    canonical['instrument_id']=symbol
+    canonical['venue']='SIMULATED'
+    canonical['market_type']='future'
+    canonical['source']='SYNTHETIC_FIXTURE_ONLY'
+    source_hash=dataset_fingerprint(validate_bars(canonical))
+    run_hash=hashlib.sha256(canonical_json({'instrument':symbol,'config':config,'dataset_hash':source_hash}).encode()).hexdigest()
     context=session_context(frame)
     vwap=vwap_known_at(frame)
     o_range=opening_range(frame,minutes=15)
@@ -136,10 +144,10 @@ def research_bundle(config:dict)->dict:
                 'status':'NOT TESTED - SYNTHETIC ONLY'}
     return {'schema_version':'0.8','provenance':'SYNTHETIC SANDBOX (DETERMINISTIC)',
         'source_kind':'synthetic_fixture','instrument':symbol,'seed':seed,
-        'dataset_id':baseline['manifest']['dataset_hash'],
+        'dataset_id':source_hash,
         'config_hash':hashlib.sha256(canonical_json(config).encode()).hexdigest(),
-        'run_id':baseline['run_id'],'edge_validated':False,
-        'quality':baseline['quality'],'feature_quality':{'vwap_known_at':True,
+        'run_id':run_hash,'edge_validated':False,
+        'quality':source_quality,'feature_quality':{'vwap_known_at':True,
             'london_complete_segments':int(context.london_high.notna().sum()),
             'opening_ranges':len(o_range)},
         'events':events,'forward':fwd,'execution':positions,
