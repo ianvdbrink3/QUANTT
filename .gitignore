@@ -13,3 +13,7 @@ data/curated/partitions/
 *.tsbuildinfo
 *.log
 .DS_Store
+
+# Local/possibly proprietary research artefacts — never publish to Vercel
+research_runs/
+private/
