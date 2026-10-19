@@ -2,6 +2,8 @@ name: Release 0.8 production Chromium smoke
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
