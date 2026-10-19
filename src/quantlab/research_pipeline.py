@@ -79,7 +79,7 @@ def run_research(config: dict) -> dict:
     if config.get('schema_version')!=1: raise ValueError('Unsupported experiment schema')
     data=config.get('dataset',{})
     if data.get('source_kind')!='synthetic_fixture':
-        raise ValueError('Observed futures and CFD data cannot use the synthetic-only runner')
+        raise ValueError('Observed futures and CFD data require a verified source adapter; synthetic-only runner rejects these datasets')
     symbol=config.get('instrument','NQ')
     ins=Instrument(symbol,.25,{'NQ':20,'MNQ':2,'ES':50,'MES':5}[symbol]).validate()
     seed=int(config.get('seed',17))
