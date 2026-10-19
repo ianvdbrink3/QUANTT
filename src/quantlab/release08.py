@@ -11,9 +11,9 @@ import math
 import numpy as np
 import pandas as pd
 import yaml
-from quantlab.research_pipeline import run_research, fixture_frame, quality_gate, canonical_json
+from quantlab.research_pipeline import fixture_frame, quality_gate, canonical_json
 from quantlab.research_contract import validate_bars, dataset_fingerprint
-from quantlab.research_validation import opening_range, vwap_known_at, block_bootstrap_mean, fdr_bh
+from quantlab.research_validation import opening_range, vwap_known_at, block_bootstrap_mean, matched_baseline, fdr_bh
 from quantlab.futures_research import session_context, evaluate_forward
 from quantlab.futures_execution import ExecutionSettings, simulate, equity_statistics
 from quantlab.validation_governance import purge_overlapping_events, ResearchFamily
@@ -21,11 +21,31 @@ from quantlab.validation_governance import purge_overlapping_events, ResearchFam
 HORIZONS=(15,30,60)
 SCENARIOS=('London High/Low Sweep','NY 09:30 Opening Range Breakout','VWAP Mean Reversion')
 
+def asia_context(frame:pd.DataFrame)->pd.DataFrame:
+    """Causal Asia 18:00–00:00 ET levels (research definition, not CME session).
+
+    Require a complete 360-minute contract-native window; prior-bar levels
+    inside the window and finalized levels from 00:00 ET onward.
+    """
+    local=frame.index.tz_convert('America/New_York')
+    offset=local-pd.Timedelta(hours=18)
+    result=pd.DataFrame(index=frame.index,data={'asia_high':np.nan,'asia_low':np.nan})
+    for (_,contract),group in frame.groupby([offset.date,frame.contract_id],sort=False):
+        minute=group.index.tz_convert('America/New_York')
+        minute=minute.hour*60+minute.minute
+        inside=(minute>=1080)&(minute<1440)
+        if list(minute[inside])!=list(range(1080,1440)):
+            continue
+        highs=group.high.where(inside)
+        lows=group.low.where(inside)
+        result.loc[group.index,'asia_high']=highs.cummax().shift(1).where(inside,highs.cummax().ffill()).to_numpy()
+        result.loc[group.index,'asia_low']=lows.cummin().shift(1).where(inside,lows.cummin().ffill()).to_numpy()
+    return result
+
 def research_bundle(config:dict)->dict:
     """Compute all visible numbers in Python, rather than invent frontend metrics."""
-    baseline=run_research(config)
     if config.get('dataset',{}).get('source_kind')!='synthetic_fixture':
-        raise ValueError('The public reference exporter is synthetic-only')
+        raise ValueError('Observed futures and CFD data require a verified source adapter; public reference exporter is synthetic-only')
     symbol=config.get('instrument','NQ')
     frame=fixture_frame(int(config.get('seed',17)),int(config['dataset'].get('bars',500))).copy()
     if symbol in {'ES','MES'}:
@@ -42,6 +62,7 @@ def research_bundle(config:dict)->dict:
     source_hash=dataset_fingerprint(validate_bars(canonical))
     run_hash=hashlib.sha256(canonical_json({'instrument':symbol,'config':config,'dataset_hash':source_hash}).encode()).hexdigest()
     context=session_context(frame)
+    asia=asia_context(frame)
     vwap=vwap_known_at(frame)
     o_range=opening_range(frame,minutes=15)
     local=frame.index.tz_convert('America/New_York')
@@ -58,8 +79,10 @@ def research_bundle(config:dict)->dict:
         breakout|=pd.Series(day_mask & (frame.index>=row.known_at_utc) & (frame.close>row.range_high),index=frame.index)
     signals[SCENARIOS[1]]=breakout
     signals[SCENARIOS[2]]=vwap.vwap_prior.notna() & (frame.close<vwap.vwap_prior) & (frame.close.shift(1)>=vwap.vwap_prior.shift(1))
-    events=[]
-    forward_rows=[]
+    # Build interval identities BEFORE reading any forward outcomes. The
+    # holdout and embargo periods are never passed to evaluate_forward or
+    # the execution engine, even transiently.
+    candidates=[]
     positions={}
     seed=int(config.get('seed',17))
     min_spacing=int(config.get('event_spacing_minutes',60))
@@ -69,22 +92,38 @@ def research_bundle(config:dict)->dict:
         for at in frame.index[flag.fillna(False)]:
             if not selected or at-selected[-1]>=pd.Timedelta(minutes=min_spacing):
                 selected.append(at)
-        future=evaluate_forward(frame,pd.DatetimeIndex(selected),horizons=HORIZONS)
-        for at in selected:
-            rows=future[future.signal_utc==at]
-            record={'scenario':name,'signal_utc':at.isoformat(),'event_type':'SYNTHETIC',
-                    'known_at_utc':(at+pd.Timedelta(minutes=1)).isoformat(),
-                    'vwap_prior':float(vwap.loc[at,'vwap_prior']) if pd.notna(vwap.loc[at,'vwap_prior']) else None,
-                    'london_high':float(context.loc[at,'london_high']) if pd.notna(context.loc[at,'london_high']) else None,
-                    'london_low':float(context.loc[at,'london_low']) if pd.notna(context.loc[at,'london_low']) else None}
-            for h in HORIZONS:
-                match=rows[rows.horizon_min==h]
-                item=match.iloc[0] if len(match) else None
-                record[str(h)+'m']=({'forward_points':float(item.forward_points),
-                    'mfe_points':float(item.mfe_points),'mae_points':float(item.mae_points)}
-                    if item is not None and item.complete else None)
-            events.append(record)
-    events.sort(key=lambda e:(e['signal_utc'],e['scenario']))
+        candidates.extend((name,at) for at in selected)
+    candidates.sort(key=lambda pair:(pair[1],pair[0]))
+    interval=pd.DataFrame([{'event_start_utc':at.isoformat(),
+             'event_end_utc':(at+pd.Timedelta(minutes=60)).isoformat()}
+             for _,at in candidates],columns=['event_start_utc','event_end_utc'])
+    train_end=frame.index[int(len(frame)*.6)]
+    valid_end=frame.index[int(len(frame)*.8)]
+    first=purge_overlapping_events(interval,train_end,embargo_minutes=60)
+    second=purge_overlapping_events(first['evaluation'],valid_end,embargo_minutes=60)
+    training=len(first['train'])
+    validation=len(second['train'])
+    holdout_count=len(second['evaluation'])
+    allowed=set(first['train'].event_start_utc.tolist()+second['train'].event_start_utc.tolist())
+    events=[]
+    for name,at in candidates:
+        if at not in allowed:
+            continue
+        rows=evaluate_forward(frame,pd.DatetimeIndex([at]),horizons=HORIZONS)
+        record={'scenario':name,'signal_utc':at.isoformat(),'event_type':'SYNTHETIC',
+                'known_at_utc':(at+pd.Timedelta(minutes=1)).isoformat(),
+                'vwap_prior':float(vwap.loc[at,'vwap_prior']) if pd.notna(vwap.loc[at,'vwap_prior']) else None,
+                'london_high':float(context.loc[at,'london_high']) if pd.notna(context.loc[at,'london_high']) else None,
+                'london_low':float(context.loc[at,'london_low']) if pd.notna(context.loc[at,'london_low']) else None,
+                'asia_high':float(asia.loc[at,'asia_high']) if pd.notna(asia.loc[at,'asia_high']) else None,
+                'asia_low':float(asia.loc[at,'asia_low']) if pd.notna(asia.loc[at,'asia_low']) else None}
+        for h in HORIZONS:
+            match=rows[rows.horizon_min==h]
+            item=match.iloc[0] if len(match) else None
+            record[str(h)+'m']=({'forward_points':float(item.forward_points),
+                'mfe_points':float(item.mfe_points),'mae_points':float(item.mae_points)}
+                if item is not None and item.complete else None)
+        events.append(record)
     # Use only complete 60-minute paths for 60-minute strategy execution.
     trade_events=[e for e in events if e['60m'] is not None]
     for mode in ('base_pessimistic','stress_pessimistic','base_optimistic','stress_optimistic'):
@@ -95,7 +134,7 @@ def research_bundle(config:dict)->dict:
             at=pd.Timestamp(e['signal_utc'])
             start=at+pd.Timedelta(minutes=1)
             path=frame.loc[start:start+pd.Timedelta(minutes=59)]
-            direction='short' if 'Sweep' in e['scenario'] or 'Mean Reversion' in e['scenario'] else 'long'
+            direction='short' if 'Sweep' in e['scenario'] else 'long'
             params=ExecutionSettings(
                 side=direction,stop_points=4,target_points=8,
                 multiplier={'NQ':20,'MNQ':2,'ES':50,'MES':5}[symbol],
@@ -119,17 +158,28 @@ def research_bundle(config:dict)->dict:
             'long_count':sum(t['side']=='long' for t in fills),
             'short_count':sum(t['side']=='short' for t in fills),
             'ambiguity_count':sum(t['ambiguity'] for t in fills)}
-    # Holdout is NEVER evaluated here. Its results are deliberately sealed.
-    interval=pd.DataFrame([{'event_start_utc':e['signal_utc'],
-          'event_end_utc':(pd.Timestamp(e['signal_utc'])+pd.Timedelta(minutes=60)).isoformat()}
-          for e in events])
-    train_end=frame.index[int(len(frame)*.6)]
-    valid_end=frame.index[int(len(frame)*.8)]
-    first=purge_overlapping_events(interval,train_end,embargo_minutes=60)
-    second=purge_overlapping_events(first['evaluation'],valid_end,embargo_minutes=60)
-    training=len(first['train'])
-    validation=len(second['train'])
-    holdout_count=len(second['evaluation'])
+    # Matched negative controls use the same UTC interval purge/embargo
+    # *before* forward outcome evaluation. Match by ET hour and a
+    # point-in-time prior-bar volatility regime; exclude nearby events.
+    vol_regime=(frame.close.diff().abs().rolling(20,min_periods=20).mean().shift(1)>0.15).fillna(False).astype(int)
+    control_times=list(frame.index[20::15])
+    control_intervals=pd.DataFrame([{'event_start_utc':t.isoformat(),
+        'event_end_utc':(t+pd.Timedelta(minutes=60)).isoformat()}
+        for t in control_times],columns=['event_start_utc','event_end_utc'])
+    ctrain=purge_overlapping_events(control_intervals,train_end,embargo_minutes=60)
+    cvalid=purge_overlapping_events(ctrain['evaluation'],valid_end,embargo_minutes=60)
+    admissible=set(ctrain['train'].event_start_utc.tolist()+cvalid['train'].event_start_utc.tolist())
+    event_stamps=[pd.Timestamp(e['signal_utc']) for e in events]
+    controls=[]
+    for at in control_times:
+        if at not in admissible or any(abs(at-event_at)<=pd.Timedelta(minutes=60) for event_at in event_stamps):
+            continue
+        rows=evaluate_forward(frame,pd.DatetimeIndex([at]),horizons=HORIZONS)
+        for row in rows.itertuples():
+            if row.complete:
+                controls.append({'hour_et':int(at.tz_convert('America/New_York').hour),
+                    'volatility_regime':int(vol_regime.loc[at]),
+                    'horizon':int(row.horizon_min),'forward_points':float(row.forward_points)})
     # No fabricated p-values. FDR adjustment requires valid, predeclared tests.
     family=ResearchFamily('release08-sandbox',SCENARIOS,3,seed).validate()
     fwd={}
@@ -138,10 +188,30 @@ def research_bundle(config:dict)->dict:
         fwd[name]={}
         for h in HORIZONS:
             x=[e[str(h)+'m']['forward_points'] for e in selected if e[str(h)+'m'] is not None]
+            current=[{'forward_points':e[str(h)+'m']['forward_points'],
+                     'hour_et':int(pd.Timestamp(e['signal_utc']).tz_convert('America/New_York').hour),
+                     'volatility_regime':int(vol_regime.loc[pd.Timestamp(e['signal_utc'])])}
+                     for e in selected if e[str(h)+'m'] is not None]
+            pool=[r for r in controls if r['horizon']==h]
+            match=(matched_baseline(pd.DataFrame(current,columns=['forward_points','hour_et','volatility_regime']),
+                 pd.DataFrame(pool,columns=['forward_points','hour_et','volatility_regime']))
+                 if current and pool else {'matched_events':0,'unmatched_events':len(current),'mean_excess_points':None})
+            baseline_mean=None
+            if match['matched_events']:
+                groups=pd.DataFrame(pool).groupby(['hour_et','volatility_regime']).forward_points.mean()
+                matches=[groups.get((r['hour_et'],r['volatility_regime']))
+                         for r in current]
+                baseline_mean=float(np.mean([v for v in matches if v is not None and pd.notna(v)]))
             fwd[name][str(h)]={'n':len(x),'mean_points':sum(x)/len(x) if x else None,
                 'bootstrap_ci':block_bootstrap_mean(x,seed=seed,samples=500) if len(x)>=20 else None,
+                'matched_baseline_mean_points':baseline_mean,
+                'matched_events':match['matched_events'],
+                'unmatched_events':match['unmatched_events'],
+                'mean_excess_points':match['mean_excess_points'],
+                'matching_dimensions':['hour_et','volatility_regime_prior20'],
                 'p_value':None,'fdr_adjusted_p':None,
-                'status':'NOT TESTED - SYNTHETIC ONLY'}
+                'status':'DESCRIPTIVE SYNTHETIC CONTROL COMPARISON; INFERENCE WITHHELD'}
+
     return {'schema_version':'0.8','provenance':'SYNTHETIC SANDBOX (DETERMINISTIC)',
         'source_kind':'synthetic_fixture','instrument':symbol,'seed':seed,
         'dataset_id':source_hash,
@@ -149,11 +219,14 @@ def research_bundle(config:dict)->dict:
         'run_id':run_hash,'edge_validated':False,
         'quality':source_quality,'feature_quality':{'vwap_known_at':True,
             'london_complete_segments':int(context.london_high.notna().sum()),
+            'asia_complete_segments':int(asia.asia_high.notna().sum()),
             'opening_ranges':len(o_range)},
         'events':events,'forward':fwd,'execution':positions,
         'governance':{'family_id':family.family_id,'trial_budget':3,
             'trials_registered':3,'train_count':training,'validation_count':validation,
             'holdout_count_sealed':holdout_count,
+            'forward_evaluated_events':len(events),
+            'holdout_events_evaluated':0,
             'purged_or_embargoed':first['purged_or_embargoed']+second['purged_or_embargoed'],
             'embargo_minutes':60,'holdout_sealed':True,'holdout_scored':False,
             'multiple_testing':'WITHHELD — no real hypothesis p-values',
@@ -179,7 +252,7 @@ def export_reference(configs: list[dict],output:Path)->dict:
 def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument('--out',default='public/data/research08.json')
-    p.add_argument('--bars',type=int,default=1600)
+    p.add_argument('--bars',type=int,default=2400)
     a=p.parse_args(argv)
     configs=[{'schema_version':1,'dataset':{'source_kind':'synthetic_fixture','bars':a.bars},
        'instrument':s,'seed':41+i,'code_ref':'release08-reference-v1','event_spacing_minutes':60}
