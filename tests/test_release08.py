@@ -56,3 +56,19 @@ def test_export_keeps_cfd_separate_and_deterministic(tmp_path):
     first=output.read_bytes()
     export_reference([config(),config('ES')],output)
     assert first==output.read_bytes()
+
+def test_sealed_holdout_never_emits_forward_labels_or_execution(tmp_path):
+    from quantlab.research_pipeline import fixture_frame
+    import pandas as pd
+    c=config('NQ',2400)
+    b=research_bundle(c)
+    horizon=pd.Timedelta(minutes=60)
+    index=fixture_frame(c['seed'],c['dataset']['bars']).index
+    withheld=index[int(len(index)*.8)]
+    embargo=pd.Timedelta(minutes=b['governance']['embargo_minutes'])
+    assert all(pd.Timestamp(e['signal_utc'])+horizon<withheld-embargo for e in b['events'])
+    assert b['governance']['holdout_events_evaluated']==0
+    assert b['governance']['forward_evaluated_events']==len(b['events'])
+    assert b['governance']['holdout_sealed'] and not b['governance']['holdout_scored']
+    assert b['governance']['holdout_count_sealed']>=0
+    assert all(v['trades']<=len(b['events']) for v in b['execution'].values())
