@@ -40,8 +40,8 @@ def session_context(bars: pd.DataFrame) -> pd.DataFrame:
         # A minute bar is only known at its CLOSE. Prior-bar cumulative
         # levels are valid inside the window. After 08:30 ET the complete
         # window may be used; never include highs/lows from a future bar.
-        high = highs.cummax().shift(1).where(inside, highs.cummax())
-        low = lows.cummin().shift(1).where(inside, lows.cummin())
+        high = highs.cummax().shift(1).where(inside, highs.cummax().ffill())
+        low = lows.cummin().shift(1).where(inside, lows.cummin().ffill())
         result.loc[group.index, 'london_high'] = high.to_numpy()
         result.loc[group.index, 'london_low'] = low.to_numpy()
     return result
