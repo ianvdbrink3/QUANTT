@@ -45,7 +45,7 @@ def asia_context(frame:pd.DataFrame)->pd.DataFrame:
 def research_bundle(config:dict)->dict:
     """Compute all visible numbers in Python, rather than invent frontend metrics."""
     if config.get('dataset',{}).get('source_kind')!='synthetic_fixture':
-        raise ValueError('The public reference exporter is synthetic-only')
+        raise ValueError('Observed futures and CFD data require a verified source adapter; public reference exporter is synthetic-only')
     symbol=config.get('instrument','NQ')
     frame=fixture_frame(int(config.get('seed',17)),int(config['dataset'].get('bars',500))).copy()
     if symbol in {'ES','MES'}:
