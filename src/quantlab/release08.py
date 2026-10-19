@@ -13,7 +13,7 @@ import pandas as pd
 import yaml
 from quantlab.research_pipeline import fixture_frame, quality_gate, canonical_json
 from quantlab.research_contract import validate_bars, dataset_fingerprint
-from quantlab.research_validation import opening_range, vwap_known_at, block_bootstrap_mean, fdr_bh
+from quantlab.research_validation import opening_range, vwap_known_at, block_bootstrap_mean, matched_baseline, fdr_bh
 from quantlab.futures_research import session_context, evaluate_forward
 from quantlab.futures_execution import ExecutionSettings, simulate, equity_statistics
 from quantlab.validation_governance import purge_overlapping_events, ResearchFamily
@@ -134,6 +134,28 @@ def research_bundle(config:dict)->dict:
             'long_count':sum(t['side']=='long' for t in fills),
             'short_count':sum(t['side']=='short' for t in fills),
             'ambiguity_count':sum(t['ambiguity'] for t in fills)}
+    # Matched negative controls use the same UTC interval purge/embargo
+    # *before* forward outcome evaluation. Match by ET hour and a
+    # point-in-time prior-bar volatility regime; exclude nearby events.
+    vol_regime=(frame.close.diff().abs().rolling(20,min_periods=20).mean().shift(1)>0.15).fillna(False).astype(int)
+    control_times=list(frame.index[20::15])
+    control_intervals=pd.DataFrame([{'event_start_utc':t.isoformat(),
+        'event_end_utc':(t+pd.Timedelta(minutes=60)).isoformat()}
+        for t in control_times],columns=['event_start_utc','event_end_utc'])
+    ctrain=purge_overlapping_events(control_intervals,train_end,embargo_minutes=60)
+    cvalid=purge_overlapping_events(ctrain['evaluation'],valid_end,embargo_minutes=60)
+    admissible=set(ctrain['train'].event_start_utc.tolist()+cvalid['train'].event_start_utc.tolist())
+    event_stamps=[pd.Timestamp(e['signal_utc']) for e in events]
+    controls=[]
+    for at in control_times:
+        if at not in admissible or any(abs(at-event_at)<=pd.Timedelta(minutes=60) for event_at in event_stamps):
+            continue
+        rows=evaluate_forward(frame,pd.DatetimeIndex([at]),horizons=HORIZONS)
+        for row in rows.itertuples():
+            if row.complete:
+                controls.append({'hour_et':int(at.tz_convert('America/New_York').hour),
+                    'volatility_regime':int(vol_regime.loc[at]),
+                    'horizon':int(row.horizon_min),'forward_points':float(row.forward_points)})
     # No fabricated p-values. FDR adjustment requires valid, predeclared tests.
     family=ResearchFamily('release08-sandbox',SCENARIOS,3,seed).validate()
     fwd={}
@@ -142,10 +164,30 @@ def research_bundle(config:dict)->dict:
         fwd[name]={}
         for h in HORIZONS:
             x=[e[str(h)+'m']['forward_points'] for e in selected if e[str(h)+'m'] is not None]
+            current=[{'forward_points':e[str(h)+'m']['forward_points'],
+                     'hour_et':int(pd.Timestamp(e['signal_utc']).tz_convert('America/New_York').hour),
+                     'volatility_regime':int(vol_regime.loc[pd.Timestamp(e['signal_utc'])])}
+                     for e in selected if e[str(h)+'m'] is not None]
+            pool=[r for r in controls if r['horizon']==h]
+            match=(matched_baseline(pd.DataFrame(current,columns=['forward_points','hour_et','volatility_regime']),
+                 pd.DataFrame(pool,columns=['forward_points','hour_et','volatility_regime']))
+                 if current and pool else {'matched_events':0,'unmatched_events':len(current),'mean_excess_points':None})
+            baseline_mean=None
+            if match['matched_events']:
+                groups=pd.DataFrame(pool).groupby(['hour_et','volatility_regime']).forward_points.mean()
+                matches=[groups.get((r['hour_et'],r['volatility_regime']))
+                         for r in current]
+                baseline_mean=float(np.mean([v for v in matches if v is not None and pd.notna(v)]))
             fwd[name][str(h)]={'n':len(x),'mean_points':sum(x)/len(x) if x else None,
                 'bootstrap_ci':block_bootstrap_mean(x,seed=seed,samples=500) if len(x)>=20 else None,
+                'matched_baseline_mean_points':baseline_mean,
+                'matched_events':match['matched_events'],
+                'unmatched_events':match['unmatched_events'],
+                'mean_excess_points':match['mean_excess_points'],
+                'matching_dimensions':['hour_et','volatility_regime_prior20'],
                 'p_value':None,'fdr_adjusted_p':None,
-                'status':'NOT TESTED - SYNTHETIC ONLY'}
+                'status':'DESCRIPTIVE SYNTHETIC CONTROL COMPARISON; INFERENCE WITHHELD'}
+
     return {'schema_version':'0.8','provenance':'SYNTHETIC SANDBOX (DETERMINISTIC)',
         'source_kind':'synthetic_fixture','instrument':symbol,'seed':seed,
         'dataset_id':source_hash,
