@@ -51,7 +51,7 @@ def verify(base:str)->None:
         assert page.get_by_text('CME FUTURES READY (AWAITING INGEST)').count()>=1
         assert page.locator('.r08-chart').count()>=2
         page.get_by_label('Instrument').select_option('ES')
-        assert float(page.locator('.r08-tile').first.locator('strong').inner_text().replace(',',''))==1700.0
+        assert float(page.locator('.r08-tile').first.locator('strong').inner_text().replace(',',''))==next(r['quality']['rows'] for r in ref['runs'] if r['instrument']=='ES')
         page.get_by_label('Event family').select_option('VWAP Mean Reversion')
         page.get_by_label('Forward window').select_option('60')
         page.get_by_label('Costs').select_option('stress')
