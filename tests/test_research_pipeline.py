@@ -68,3 +68,16 @@ instrument: NQ
     dest=tmp_path/'out'
     with pytest.raises(ValueError): main(['--config',str(cfg),'--out',str(dest)])
     assert json.loads((dest/'failures.jsonl').read_text().splitlines()[0])['status']=='FAILED'
+
+def test_repository_shipped_demo_yaml_is_executable(tmp_path):
+    """Exercise the actual committed CLI config, not just an inline imitation."""
+    from pathlib import Path
+    demo=Path(__file__).resolve().parents[1]/'configs'/'synthetic_research.yaml'
+    assert demo.exists()
+    out=tmp_path/'shipped-demo'
+    assert main(['--config',str(demo),'--out',str(out)])==0
+    a=json.loads((out/'result.json').read_text())
+    assert a['provenance']=='SYNTHETIC_FIXTURE_ONLY'
+    assert a['quality']['status']=='PASS'
+    assert a['edge_validated'] is False
+    assert a['manifest']['code_ref']=='synthetic-e2e-v1'
