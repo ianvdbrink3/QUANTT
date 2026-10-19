@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.8",
+  "classification": "DETERMINISTIC SYNTHETIC REFERENCE - GENERATION PENDING",
+  "edge_validated": false,
+  "runs": [],
+  "sources": [
+    {
+      "id": "dukascopy_partial_2025_03_19",
+      "label": "EMPIRICAL CFD (DUKASCOPY - 1 DAY)",
+      "market_type": "index_cfd",
+      "date": "2025-03-19",
+      "verified_minute_bars": 1329,
+      "note": "Separate legacy partial observation"
+    },
+    {
+      "id": "cme_futures_waiting",
+      "label": "CME FUTURES READY (AWAITING INGEST)",
+      "market_type": "future",
+      "observed_bars": 0,
+      "provenance_verified": false
+    }
+  ]
+}

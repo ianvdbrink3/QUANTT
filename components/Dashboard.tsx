@@ -37,8 +37,9 @@ const Chart = dynamic(() => import("./Charts"), {
     </div>
   ),
 });
-type View = "explorer" | "quality" | "sessions" | "experiments";
+type View = "explorer" | "quality" | "sessions" | "experiments" | "research";
 const nav = [
+  { id: "research", href: "/research", label: "Research Command Center", icon: FlaskConical },
   { id: "explorer", href: "/", label: "Market explorer", icon: BarChart3 },
   { id: "quality", href: "/quality", label: "Data quality", icon: ShieldCheck },
   {
