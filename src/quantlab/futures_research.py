@@ -32,10 +32,7 @@ def session_context(bars: pd.DataFrame) -> pd.DataFrame:
         # Require the *entire* London 03:00-08:30 ET window with one-minute
         # bars from this exact contract. Missing prefix or internal gaps
         # invalidate the level rather than silently shrinking the range.
-        expected_minutes = pd.Series(range(180, 510))
-        observed_minutes = pd.Series(minutes[inside])
-        full_window = (len(observed_minutes) == 330
-                       and observed_minutes.reset_index(drop=True).equals(expected_minutes))
+        full_window = list(minutes[inside]) == list(range(180, 510))
         if not full_window:
             continue
         highs = group['high'].where(inside)
