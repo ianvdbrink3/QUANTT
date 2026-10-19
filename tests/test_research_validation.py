@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from quantlab.research_validation import (Instrument,validate_minute_index,coverage_report,
  to_trade_date,session_window,opening_range,vwap_known_at,fixed_events,matched_baseline,
- chronological_splits,block_bootstrap_mean,fdr_bh,cost_sensitivity,test_manifest)
+ chronological_splits,block_bootstrap_mean,fdr_bh,cost_sensitivity,test_manifest as build_manifest)
 
 def bars(n=400,start='2026-10-19T13:00:00Z'):
     idx=pd.date_range(start,periods=n,freq='min',tz='UTC')
@@ -54,6 +54,6 @@ def test_cost_scenarios():
     r=cost_sensitivity([5,-1],costs=(0,2))
     assert r['2']['mean_net_points']==0
 def test_manifest_is_stable():
-    a=test_manifest(data_hash='sha',code_ref='commit',instrument=Instrument('ES',.25,50),parameters={'h':15},synthetic=True)
-    assert a==test_manifest(data_hash='sha',code_ref='commit',instrument=Instrument('ES',.25,50),parameters={'h':15},synthetic=True)
+    a=build_manifest(data_hash='sha',code_ref='commit',instrument=Instrument('ES',.25,50),parameters={'h':15},synthetic=True)
+    assert a==build_manifest(data_hash='sha',code_ref='commit',instrument=Instrument('ES',.25,50),parameters={'h':15},synthetic=True)
     assert not a['edge_validated']
