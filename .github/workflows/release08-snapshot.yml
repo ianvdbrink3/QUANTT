@@ -22,7 +22,7 @@ jobs:
       - name: Validate full Python suite
         run: python -m pytest -q
       - name: Generate Python-computed NQ/ES synthetic reference
-        run: python scripts/export_research08.py --bars 1700 --out public/data/research08.json
+        run: python scripts/export_research08.py --bars 2400 --out public/data/research08.json
       - name: Validate synthetic provenance and source segregation
         run: |
           python - <<'PY'
