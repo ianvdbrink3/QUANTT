@@ -17,3 +17,4 @@ data/curated/partitions/
 # Local/possibly proprietary research artefacts — never publish to Vercel
 research_runs/
 private/
+artifacts/

@@ -17,7 +17,8 @@ from quantlab.research_contract import save_curated
 def stage_futures_csv(file: str | Path, output: str | Path, *,
                       instrument: str, source: str) -> dict:
     path=Path(file)
-    if not source or source.strip() in {'SYNTHETIC_FIXTURE_ONLY','Dukascopy'}:
+    label = str(source or '').strip().lower()
+    if not label or any(token in label for token in ('synthetic','fixture','cfd','dukascopy')):
         raise ValueError('Provide a non-CFD named source; synthetic fixtures not authorized')
     structural=validate_contract_csv(path,instrument=instrument)
     # The strict, source-native CSV validator runs BEFORE metadata is assigned.

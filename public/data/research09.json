@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.9",
+  "classification": "NO OBSERVED FUTURES INPUT",
+  "status": "AWAITING_INPUT",
+  "edge_validated": false,
+  "data_is_synthetic": false,
+  "row_count": 0,
+  "sources": [],
+  "event_counts": {},
+  "descriptive_forward": {},
+  "governance": {
+    "holdout_scored": false,
+    "holdout_validated": false,
+    "trading_edge_validation_allowed": false,
+    "execution_simulated": false
+  },
+  "limitations": [
+    "No licensed contract-native CME futures dataset has been supplied in this repository; no observed study was executed."
+  ]
+}
