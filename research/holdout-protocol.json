@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "registered_at_utc": "2026-10-20T20:30:01.819846+00:00",
+  "phase": "DATA_AND_PROTOCOL_LOCKED_BEFORE_SIGNALS",
+  "start": "2025-04-18",
+  "end": "2025-09-30",
+  "sources": [
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "e2979e3b199eb1eaf612b5848b636cc4fb5b80befdae28200bb969fb15f80f92",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "d3728679128f5640dd79f4b291c1721069d92e2a2c698ec9f36f292e1c05f888",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "f9c15773ad15a2e6a8438aa35d737f9d5523e5e4b920992a131ef65f2b31a3c5",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "sha256": "556843730f8a0172b0e5677380236c2649533036f38d499f80983e2f4bc5ef67",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "sha256": "1930aaeac611492d8763fabaff3852b63cbffa99af92f37c8538f301899e26d7",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "sha256": "b4dec48a466e848ecd7dd78058a0ccf1389289cde9d0ec74d5a0ef100c943670",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "sha256": "ed82e77acb77ba78431a3d66aa82419025b8d1d9554573b00a5e8062680b1047",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-8.csv",
+      "sha256": "8bfff8352b7cf9a49b44b4e759402cb230f1cd550db142f0a729a673212777f9",
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "bc7b294bbdbbe892fc8fb8208dc854e1db4b96a93e5fff6583fd402e2f04ec8f",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "bd73a92c5a34752296420899cd0ce60d17c15deed7d6ee7669fe1ef07cfe138b",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "e5280bb16101963998060d3cc7a10efdc02d33b082251542cefd558c8228d6ef",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "0ea15d49a332695c33a1e4fec906605e7fa278ce05f03791c5a541071e0a77b1",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "aeae0f26c7122c191eb6d9dd99549498e09373648f89151049b29a62b1f32c6b",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-3.csv",
+      "sha256": "e88ec71ade5b2d89651fbcc768e95da688b531ff1f46c3a0bf782b1f0822e77e",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-4.csv",
+      "sha256": "bb7bc3080653e86b79f0bf08ad6db517de0a24303e94e8206b21efe17cf36592",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-5.csv",
+      "sha256": "1bcd0b4be0cf0b728411ce5eff3cda9c3559742a0fd0e1a218b2c31f5c93e240",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-6.csv",
+      "sha256": "94caf07085dfe22e55022f51c323d6d8dcde65201e3f53e1b412b87fcd13800a",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-7.csv",
+      "sha256": "82fed51b25f9b46012ca445195edc4a110dbc1dba2a1d83ea67150e32da216cc",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-8.csv",
+      "sha256": "f808f9c9adc9e95c737e8fac7392c818bab0613baac28a6f5ee3c5cab6884415",
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "a299a73610623ce5f11d50c26bf7f2a3a010e7bb933514e578da9a96142f6b8d",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "ca6d853c9d01bf9599fbb3a4b79549b14f7cf57efaf54716eddc7d73c08ed922",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-3.csv",
+      "sha256": "2579a6840e4e0347f1f352df1d953f3835dc3a16b1572038df3fd280e1459f10",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-4.csv",
+      "sha256": "ebfe31da452a88b9ed034e34c0188d46cdfd5654f5c370ce0da62a66a46d457c",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-5.csv",
+      "sha256": "70939648393c830e71a5398b0d8abf8231b6b8e7fce005296c5e03c7f6c4a7ce",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-6.csv",
+      "sha256": "ce415bd56c40a762c693a7196baf6dd7c29b78e35ce165cac01299a7ddb5fd2e",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-7.csv",
+      "sha256": "bc8cc03c5e2360fd1d596800ec455b8ac311bef0511a3e3734feb1306ba3eb4d",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-8.csv",
+      "sha256": "0d37c01e9a988bf6c3bd7cda5d0ebda8d8edc3cb6e312d7e08d4a500f72682f4",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-9.csv",
+      "sha256": "833d7a309119016e547ecd81d4df5fac23aaad9336e28b3dfb595237d18a26a3",
+      "contract": "NQU25"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "830a9db3b97a5ef61ce6f3910f25a6e6506b72baba343014fcd9e0372889c42c",
+      "contract": "NQZ25"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "a3f609927907656c13342e05720e9a40ce9bc00dc90f7e04c2b79460e42e0b37",
+      "contract": "NQZ25"
+    }
+  ],
+  "frozen_engine_sha256": "8fbf6cb7ced7fe0338cca164de1f3cbde8b3d03eb92738bde4616829cd541d8b",
+  "baseline_manifest_sha256": "e101b5c64f6b0151f627f33cae28b20495463aefb305f85201cf202b084d0d89",
+  "primary_strategy": "B_ORB15",
+  "primary_quality_view": "all",
+  "reference_strategies": [
+    "A_London_sweep",
+    "B_ORB5",
+    "C_VWAP_extreme"
+  ],
+  "pass_rule": {
+    "minimum_eligible_days": 20,
+    "net_points_gt": 0,
+    "profit_factor_gt": 1,
+    "two_sided_block_bootstrap_p_lt": 0.05,
+    "mean_daily_ci_low_gt": 0
+  },
+  "inference": "Frozen 2000 circular 5-eligible-day block bootstrap, seed 20261020, two-sided centered p; zero-trade eligible days included. Combined results descriptive only.",
+  "roll_rule": "Irreversible first incoming > outgoing completed civil-session observed volume; switch next available session at 18:00 NY. Same boundary-completeness checks in holdout_data.py. No intra-session roll.",
+  "volume_timing_caveat": "Minute-derived prior-session totals assumed knowable before next 18:00 NY open; no vendor publication-vintage evidence. Not official total-volume/open-interest certification.",
+  "calendar": {
+    "2025-04-18": null,
+    "2025-05-26": "13:00",
+    "2025-06-19": "13:00",
+    "2025-07-03": "13:15",
+    "2025-07-04": "13:00",
+    "2025-09-01": "13:00"
+  },
+  "calendar_sources": [
+    "https://www.cmegroup.com/trading-hours.html",
+    "https://hedgingmarkets.com/wp-content/uploads/2025/02/CME-Good-Friday-2025-Holiday-Schedule.xlsx",
+    "https://iqhelp.dtn.com/juneteenth-2025-holiday-exchange-schedule-2/",
+    "https://iqhelp.dtn.com/fourth-of-july-service-hours-2025/",
+    "https://iqhelp.dtn.com/labor-day-holiday-schedule-2025/",
+    "https://help.oneuptrader.com/article/521-us-memorial-holiday-trading-schedule-2025"
+  ],
+  "calendar_evidence_limit": "Historical CME webpage currently serves 2026 schedules. Historical hours reconstructed from contemporaneous vendor/broker schedules and checked against bars; not a retrieved signed CME 2025 calendar. Civil session dates retained, not clearing TradeDate.",
+  "warmup": "Same-contract only, all available prior raw history. No ATR substitution or history transferred across contract. New U/Z may remain ineligible until 14 valid prior RTH true ranges.",
+  "holdout_integrity": "No strategy PnL inspected before this protocol. Raw prices/volumes previously inspected for quality; not a prospective preregistration or independent third-party blind study.",
+  "cost_rt_usd": 24.5,
+  "contract_audits": [
+    {
+      "contract": "NQH25",
+      "raw_rows": 105950,
+      "unique_retained_bars": 79743,
+      "duplicate_rows": 26207
+    },
+    {
+      "contract": "NQM25",
+      "raw_rows": 124101,
+      "unique_retained_bars": 98703,
+      "duplicate_rows": 25398
+    },
+    {
+      "contract": "NQU25",
+      "raw_rows": 125649,
+      "unique_retained_bars": 100632,
+      "duplicate_rows": 25017
+    },
+    {
+      "contract": "NQZ25",
+      "raw_rows": 24021,
+      "unique_retained_bars": 22221,
+      "duplicate_rows": 1380
+    }
+  ],
+  "rollovers": [
+    {
+      "from": "NQM25",
+      "to": "NQU25",
+      "decision_session": "2025-06-16",
+      "old_volume": 169439,
+      "new_volume": 262268,
+      "effective_session": "2025-06-17",
+      "effective_utc": "2025-06-16T22:00:00+00:00"
+    },
+    {
+      "from": "NQU25",
+      "to": "NQZ25",
+      "decision_session": "2025-09-16",
+      "old_volume": 94415,
+      "new_volume": 320653,
+      "effective_session": "2025-09-17",
+      "effective_utc": "2025-09-16T22:00:00+00:00"
+    }
+  ]
+}
