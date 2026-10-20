@@ -104,3 +104,34 @@ Python tests cover binary decoding, scale rejection, flat filtering, malformed d
 The live project imports [ianvdbrink3/QUANTT](https://github.com/ianvdbrink3/QUANTT) as a Next.js project, repository root, production branch `main`. `vercel.json` uses `npm ci` and `npm run build`. No environment variables or database are required. Git integration then redeploys exported data and source changes on every push to `main`. No raw `.bi5` files, virtual environments, dependencies, tokens, or build directories are committed.
 
 The deployment does not make ingestion complete: the visible coverage warning stays until source data is actually obtained and exports are regenerated. To replace the CFD with NQ/ES futures, add a contract-native licensed source adapter, exchange holiday/half-day calendar and explicit rollover/cost models before transferring research conclusions.
+
+## Latest observed NQ research — 20 October 2026 (Release 0.9)
+
+The tracked historical NQ reports are publicly available as derived aggregate research
+at `/data/nq-overnight.json` and `/data/research09.json`, both displayed at
+`/research/nq` and `/research/observed`. They cover **106,678 NQ 1-minute
+contract-native observations** across **78 trade dates (2024-12-30 through
+2025-04-17)**, including NQH25 and NQM25, with **42 eligible strategy days**.
+No ES futures data were included in this observed snapshot.
+
+**No statistically validated trading edge.** ORB15 is an exploratory candidate
+that fails multiple-testing significance requirements and has no independent
+sealed holdout. All observed sources remain **UNVERIFIED** for vendor license,
+CME contract provenance, trading calendar and broker execution. The original
+Barchart CSVs and the external overnight-generator source are **not in this
+repository**; the published JSONs are versioned outputs, not independently
+reproduced raw-to-signal backtests.
+
+See `docs/QUANT09_PRODUCTION_DATA_AUDIT_2026-10-20.md` for the data audit
+and `docs/RELEASE09_DATA_READY.md` for the private CSV staging command.
+
+Reconciliation gate:
+```sh
+python scripts/verify_observed_snapshots.py
+python scripts/verify_observed_snapshots.py --base-url https://quantt-eight.vercel.app
+```
+
+The second command compares exact Git bytes against the active public
+production domain. Keep publication limited to reviewed derived aggregates,
+not raw vendor futures history. Future production releases should come from
+verified Git commits, not untracked local CLI source trees.

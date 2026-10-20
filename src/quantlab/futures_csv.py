@@ -6,6 +6,7 @@ This module only validates: it does not declare the source licensed or CME-autho
 """
 from __future__ import annotations
 import csv
+import re
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
@@ -34,7 +35,7 @@ def validate_contract_csv(path: str | Path, instrument: str = 'NQ') -> dict:
                 if stamp.second or stamp.microsecond:
                     raise ValueError('Timestamp must be minute-aligned')
                 contract = row['contract_id'].strip().upper()
-                if not contract.startswith(instrument) or len(contract) < len(instrument)+2:
+                if not re.fullmatch(re.escape(instrument) + r'[HMUZ](?:[0-9]{2}|[0-9]{4})', contract):
                     raise ValueError('Wrong or missing contract ID')
                 values = {field: Decimal(row[field]) for field in PRICES+('volume',)}
                 if not all(v.is_finite() for v in values.values()):

@@ -1,0 +1,131 @@
+{
+  "classification": "OBSERVED FUTURES \u2014 UNVERIFIED SOURCE",
+  "data_is_synthetic": false,
+  "dataset_id": "d5752c43336768873afb2918e2db670f12365d4eba79c1d20584487de1ab6833",
+  "descriptive_forward": {
+    "London high sweep": {
+      "15": {
+        "complete_events": 67,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 8.111940298507463,
+        "mean_mae_points": 49.406716417910445,
+        "mean_mfe_points": 54.27985074626866
+      },
+      "30": {
+        "complete_events": 67,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 2.3917910447761193,
+        "mean_mae_points": 62.75,
+        "mean_mfe_points": 77.09701492537313
+      },
+      "60": {
+        "complete_events": 67,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 1.6567164179104477,
+        "mean_mae_points": 89.30223880597015,
+        "mean_mfe_points": 94.84328358208955
+      }
+    },
+    "NY opening range breakout": {
+      "15": {
+        "complete_events": 58,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 4.448275862068965,
+        "mean_mae_points": 44.49568965517241,
+        "mean_mfe_points": 42.827586206896555
+      },
+      "30": {
+        "complete_events": 58,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 15.719827586206897,
+        "mean_mae_points": 60.9698275862069,
+        "mean_mfe_points": 78.27155172413794
+      },
+      "60": {
+        "complete_events": 58,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": 21.625,
+        "mean_mae_points": 80.71982758620689,
+        "mean_mfe_points": 96.95689655172414
+      }
+    },
+    "VWAP mean reversion": {
+      "15": {
+        "complete_events": 117,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": -4.168803418803419,
+        "mean_mae_points": 42.74786324786325,
+        "mean_mfe_points": 38.151709401709404
+      },
+      "30": {
+        "complete_events": 116,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": -4.625,
+        "mean_mae_points": 64.3771551724138,
+        "mean_mfe_points": 56.3125
+      },
+      "60": {
+        "complete_events": 116,
+        "inference": "WITHHELD \u2014 source provenance, calendar and holdout unverified",
+        "mean_forward_points": -7.030172413793103,
+        "mean_mae_points": 96.40086206896552,
+        "mean_mfe_points": 84.82974137931035
+      }
+    }
+  },
+  "edge_validated": false,
+  "event_counts": {
+    "London high sweep": {
+      "complete_15m": 67,
+      "complete_30m": 67,
+      "complete_60m": 67,
+      "detected": 67
+    },
+    "NY opening range breakout": {
+      "complete_15m": 58,
+      "complete_30m": 58,
+      "complete_60m": 58,
+      "detected": 58
+    },
+    "VWAP mean reversion": {
+      "complete_15m": 117,
+      "complete_30m": 116,
+      "complete_60m": 116,
+      "detected": 117
+    }
+  },
+  "governance": {
+    "execution_simulated": false,
+    "holdout_scored": false,
+    "holdout_validated": false,
+    "trading_edge_validation_allowed": false
+  },
+  "limitations": [
+    "Structurally valid user-supplied futures data is not CME provenance verification",
+    "Trading calendar/maintenance windows and contract roll policies are not certified",
+    "Raw gaps are not forward-filled; only complete single-contract horizons are measured",
+    "Events are descriptive screens, not independent or multiple-testing-corrected samples",
+    "No sealed holdout, broker-cost calibration or real fill validation was conducted"
+  ],
+  "row_count": 106678,
+  "run_id": "ee5cda9a6deaa5fb4fe447577d11ce4e7431ede5bd156a3d2d0585599903d329",
+  "schema_version": "0.9",
+  "sources": [
+    {
+      "calendar_verified": false,
+      "contract_provenance_verified": false,
+      "contracts": [
+        "NQH25",
+        "NQM25"
+      ],
+      "dataset_fingerprint": "d5752c43336768873afb2918e2db670f12365d4eba79c1d20584487de1ab6833",
+      "input_sha256": "658f7e223e29232681104143b4ce50e8762f1a303e6bd82e758d3677fdddf57e",
+      "instrument": "NQ",
+      "observed_gaps": 85,
+      "rows": 106678,
+      "source": "Barchart user-supplied individual contract exports",
+      "staged_sha256": "1b8aa469a2fb1f4e1e26d0a8e8011c0fddca9291ed91678654a3e33f818a672b"
+    }
+  ],
+  "status": "STAGED_UNVERIFIED"
+}
