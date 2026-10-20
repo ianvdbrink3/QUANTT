@@ -1,130 +1,60 @@
-import Link from "next/link";
-import report from "../../../public/data/nq-overnight.json";
-import type { Metadata } from "next";
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import snapshot from '../../../public/data/nq-overnight.json';
+import holdout from '../../../public/data/research-holdout.json';
+import postmortem from '../../../public/data/research-postmortem.json';
+import './nq.css';
 
-export const metadata: Metadata = {
-  title: "QUANTT — NQ Observed Historical Research",
-  description: "Historical NQ contract-native exploratory results, source unverified and no validated edge.",
-};
+export const metadata: Metadata = { title: 'QUANTT — NQ onderzoek op echte data', description: 'Kostenbewust NQ-onderzoek, kwaliteitscontrole en onzekerheid. Geen gevalideerde trading edge.' };
+const data = snapshot;
+const primary = holdout.holdout.B_ORB15.all;
+const discovery = data.strategies.find(s => s.id === 'B_ORB15')!;
+const periods = [{ label: 'In-sample · 30 dec 2024–17 apr 2025', metrics: discovery.metrics }, { label: 'Holdout · 18 apr–30 sep 2025', metrics: primary }];
+const f = (v: number | null | undefined, digits = 2) => v == null ? '—' : (Math.sign(v) * Math.round((Math.abs(v) + 1e-9) * 10 ** digits) / 10 ** digits).toLocaleString('nl-NL', { maximumFractionDigits: digits, minimumFractionDigits: digits });
+const labels: Record<string, string> = { A_London_sweep: 'London sweep', B_ORB5: 'Opening range 5m', B_ORB15: 'Opening range 15m', C_VWAP_extreme: 'VWAP-afwijking' };
+const colors = ['#85a9ff', '#ffb771', '#67dfbd', '#dba4ff'];
 
-type Stats = {
-  trades: number; eligible_days: number; net_points: number; net_usd: number;
-  profit_factor: number; win_rate: number; max_drawdown_points: number;
-  ci_low: number | null; ci_high: number | null; p_value: number | null;
-};
-type Trade = {
-  id: string; metrics: Stats; candidate: boolean; edge_validated: boolean;
-  holm_original: number | null;
-  net_points_without_best: Record<string,number>;
-  splits: Record<string,Stats>;
-  monthly: {month:string;trades:number;net_points:number}[];
-  cost_scenarios: Record<string,Stats & {round_trip_points:number}>;
-  paired_daily_inference?: {p_value:number|null;ci_low:number|null;ci_high:number|null};
-};
-type Report = {
-  period:string[]; row_count:number; trade_dates:number; clean_days:number; flagged_days:number;
-  atr_ready_days:number; eligible_days:number; missing_minutes:number; cost_rt_usd:number;
-  status:string; edge_validated:boolean; strategies:Trade[];
-  day_quality: {trade_date:string;contract:string;data_quality_flag:string;missing_minutes:number}[];
-  baseline: {entry_ny:string;horizon:string;n:number;mean_net_points:number;win_rate_net:number}[];
-  overnight_regimes: {regime:string;n:number;mean_net_points:number;positive_net_probability:number}[];
-  checks: Record<string,boolean>; limitations:string[];
-};
-const data=report as Report;
-const nf=(v:number|null|undefined, digits=2)=>v==null?"—":v.toLocaleString("en-US",{maximumFractionDigits:digits});
-const money=(v:number)=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(v);
-const pct=(v:number)=>nf(v*100,1)+"%";
-const cell:React.CSSProperties={padding:"10px 12px",borderBottom:"1px solid #27384d",textAlign:"left"};
-const h:React.CSSProperties={fontSize:18,fontWeight:650,color:"#ebf3ff",marginBottom:12};
-const panel:React.CSSProperties={background:"#131e2c",border:"1px solid #304057",borderRadius:12,padding:20,marginBottom:20};
-const muted="#a8b7ca";
-function Table({heads,rows}:{heads:string[];rows:(string|number)[][]}) {
-  return <div style={{overflowX:"auto"}}><table style={{width:"100%",borderCollapse:"collapse",color:"#dbe7f5",fontSize:13}}>
-    <thead><tr>{heads.map(x=><th key={x} style={{...cell,color:"#9fb4cb",fontWeight:600,whiteSpace:"nowrap"}}>{x}</th>)}</tr></thead>
-    <tbody>{rows.map((r,i)=><tr key={i}>{r.map((x,j)=><td key={j} style={{...cell,whiteSpace:"nowrap"}}>{x}</td>)}</tr>)}</tbody>
-  </table></div>;
+function Equity() {
+  const all = data.strategies.flatMap(s => s.equity.map(p => p.net_points));
+  const lo = Math.min(0, ...all), hi = Math.max(1, ...all);
+  const start = Date.parse(data.period[0]), end = Date.parse(data.period[1]);
+  const x = (date: string) => 65 + (Date.parse(date) - start) / (end - start) * 870;
+  const y = (value: number) => 20 + (hi - value) / (hi - lo) * 190;
+  return <figure className="nq-chart"><svg viewBox="0 0 960 250" role="img" aria-labelledby="equity-title equity-desc">
+    <title id="equity-title">Cumulatieve netto punten per afzonderlijke hypothese</title>
+    <desc id="equity-desc">Vier onafhankelijke strategiecurves na kosten. Geen gecombineerd portfolio. Gedetailleerde waarden staan in de tabellen en onderzoeksdownload.</desc>
+    {[lo, 0, hi].map((v, i) => <g key={i}><line x1="65" x2="935" y1={y(v)} y2={y(v)} stroke="#344254" strokeDasharray="4 4" /><text x="54" y={y(v)+4} textAnchor="end" fill="#aab9ca" fontSize="12">{f(v, 0)}</text></g>)}
+    {data.strategies.map((s, i) => <polyline key={s.id} fill="none" stroke={colors[i]} strokeWidth="2.5" points={[`${x(data.period[0])},${y(0)}`, ...s.equity.map(p => `${x(p.date).toFixed(1)},${y(p.net_points).toFixed(1)}`)].join(' ')} />)}
+    <text x="65" y="237" fill="#aab9ca" fontSize="12">30 dec 2024</text><text x="935" y="237" textAnchor="end" fill="#aab9ca" fontSize="12">17 apr 2025</text>
+  </svg><figcaption>{data.strategies.map((s, i) => <span key={s.id} style={{ color: colors[i] }}>{labels[s.id]}</span>)}</figcaption></figure>;
 }
-export default function NQResearchPage(){
-  const flags=Object.entries(data.day_quality.reduce((acc:Record<string,number>,d)=>{
-    acc[d.data_quality_flag]=(acc[d.data_quality_flag]||0)+1;return acc;
-  },{}));
-  return <main style={{background:"#0a111d",color:"#e4edfa",minHeight:"100vh",padding:"30px clamp(16px,4vw,64px)",fontFamily:"Arial,sans-serif"}}>
-    <nav style={{display:"flex",gap:18,flexWrap:"wrap",fontSize:13,marginBottom:20}}>
-      <Link style={{color:"#96c5ff"}} href="/research">← Research Command Center</Link>
-      <Link style={{color:"#96c5ff"}} href="/research/observed">Observed 0.9 audit</Link>
-      <Link style={{color:"#96c5ff"}} href="/explorer">Market explorer</Link>
-    </nav>
-    <p style={{color:"#78b2ff",fontSize:11,letterSpacing:2,fontWeight:700}}>QUANTT · 2024–2025 HISTORICAL NQ RESEARCH</p>
-    <h1 style={{fontSize:"clamp(27px,4vw,39px)",margin:"12px 0"}}>NQ Intraday & Overnight Lab</h1>
-    <p style={{color:muted,marginBottom:24,maxWidth:860}}>
-      Contract-native observed NQ exports, Barchart as supplied source. Publication is a reproducible
-      research snapshot, <strong>not independent source authentication, live signals or trading advice</strong>.
-      Strategy outputs are separate hypothetical backtests, not an additive portfolio.
-    </p>
-    <div style={{...panel,borderColor:"#836d45",background:"#211f1a"}}>
-      <strong>NO VALIDATED TRADING EDGE — {data.status}</strong>
-      <p style={{color:"#e2ceb5",margin:"8px 0 0"}}>
-        There is no independently sealed holdout, certified vendor origin, authoritative exchange calendar
-        or broker-verified execution. All candidate flags indicate further research only.
-      </p>
-    </div>
-    <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(160px,1fr))",gap:12,marginBottom:24}}>
-      {[
-        ["Minute bars",nf(data.row_count,0)],
-        ["Trade dates",nf(data.trade_dates,0)],
-        ["Eligible days",nf(data.eligible_days,0)],
-        ["Clean days",nf(data.clean_days,0)],
-        ["Flagged days",nf(data.flagged_days,0)],
-        ["Validated edges","0"]
-      ].map(([label,value])=><div key={label} style={{...panel,marginBottom:0,padding:16}}>
-        <span style={{fontSize:11,color:muted}}>{label}</span>
-        <div style={{fontSize:25,fontWeight:750,marginTop:6}}>{value}</div>
-      </div>)}
-    </div>
-    <section style={panel}><h2 style={h}>Four pre-data research screens (hypothetical, after modeled costs)</h2>
-      <Table heads={["Strategy","Trades","Net P&L","Profit factor","Win rate","Bootstrap p","Holm-adjusted p","Status"]}
-        rows={data.strategies.map(s=>[
-          s.id,s.metrics.trades,money(s.metrics.net_usd),nf(s.metrics.profit_factor),
-          pct(s.metrics.win_rate),nf(s.metrics.p_value,3),nf(s.holm_original,3),
-          s.candidate?"CANDIDATE · NOT VALIDATED":"INCONCLUSIVE"
-        ])}/>
-      <p style={{color:muted,fontSize:12,marginTop:12}}>Round-trip assumed cost: {money(data.cost_rt_usd)} per NQ contract. Profitability and significance are not established; the 95% intervals include zero.</p>
+
+export default function NQResearch() {
+  return <main className="nq-page">
+    <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#resultaten">Hypothesen</a><a href="#robuustheid">Robuustheid</a><a href="#kwaliteit">Datakwaliteit</a><Link href="/research/observed">0.9 importaudit</Link></nav></header>
+    <section className="nq-intro"><p className="nq-eyebrow">ECHTE NQ-FUTURESDATA · HISTORISCHE HOLDOUT</p><div className="nq-title"><h1>ORB15 slaagt niet<br />voor de holdout.</h1><span className="nq-status">{holdout.status}</span></div><p className="nq-lead">De vaste-regels vervolgtest van 18 april t/m 30 september 2025 is na kosten negatief. Geen promotie naar een gevalideerde edge. De oorspronkelijke ontdekkingsresultaten staan hieronder apart; dit zijn geen actuele handelssignalen.</p></section>
+    <section className="nq-section" aria-labelledby="holdout-title"><h2 id="holdout-title">Niveau 3: ongeoptimaliseerde vervolgtest</h2><div className="nq-table"><table><caption>Strikt gescheiden perioden · ORB 15m · één NQ · $24,50 kosten per roundtrip · all-view</caption><thead><tr>{['Periode','Eligible','Trades','Netto punten','Netto USD','Winrate','Profit factor','p-waarde'].map(h=><th key={h} scope="col">{h}</th>)}</tr></thead><tbody>{periods.map(p=><tr key={p.label}><th scope="row">{p.label}</th><td>{p.metrics.eligible_days}</td><td>{p.metrics.trades}</td><td>{f(p.metrics.net_points)}</td><td>${f(p.metrics.net_usd)}</td><td>{f((p.metrics.win_rate ?? 0)*100,1)}%</td><td>{f(p.metrics.profit_factor,3)}</td><td>{f(p.metrics.p_value,3)}</td></tr>)}</tbody></table></div><p className="nq-warning">95%-bootstrapinterval voor gemiddelde netto punten per eligible dag: {f(primary.ci_low)} tot {f(primary.ci_high)}. Maximale gerealiseerde drawdown: {f(primary.max_drawdown_points)} punten. NQZ25 levert in september geen eligible dagen door ontbrekende contracteigen ATR-opwarmhistorie. Dit is geen volledige handelsdekking van alle kalenderdagen.</p><p className="nq-note">De clean-sensitiviteit heeft dezelfde 76 trades en dezelfde nettouitkomst. Gecombineerd met de ontdekkingsperiode: {f(holdout.combined.B_ORB15.all.net_points)} punten, p={f(holdout.combined.B_ORB15.all.p_value,3)}. Dat gecombineerde resultaat is geen onafhankelijke bevestiging. Historische kalenderuren zijn uit contemporaine vendor-/brokerschema’s gereconstrueerd, niet afzonderlijk door CME gecertificeerd.</p><a href="/data/research-holdout.json" download>Download volledige geaggregeerde holdout-resultaten</a></section>
+    <section className="nq-section" aria-labelledby="postmortem-title"><h2 id="postmortem-title">Beschrijvende post-mortem, geen optimalisatie</h2><div className="nq-table"><table><caption>Marktkenmerken op de 42 in-sample en 81 holdout-eligible dagen</caption><thead><tr><th>Maatstaf</th><th>In-sample</th><th>Holdout</th></tr></thead><tbody>{[
+['Gemiddelde ORB15 (punten)',postmortem.in_sample.orb15_points.mean,postmortem.out_of_sample.orb15_points.mean],
+['Gemiddelde eerdere RTH ATR14 (punten)',postmortem.in_sample.prior_rth_atr14_points.mean,postmortem.out_of_sample.prior_rth_atr14_points.mean],
+['Long netto (punten)',postmortem.in_sample.long_short.long.net_points,postmortem.out_of_sample.long_short.long.net_points],
+['Short netto (punten)',postmortem.in_sample.long_short.short.net_points,postmortem.out_of_sample.long_short.short.net_points],
+['Terug binnen ORB binnen 5 minuten (%)',100*postmortem.in_sample.return_inside_range_after_entry['5'].fraction,100*postmortem.out_of_sample.return_inside_range_after_entry['5'].fraction]
+].map(([label,a,b])=><tr key={String(label)}><th scope="row">{label}</th><td>{f(Number(a))}</td><td>{f(Number(b))}</td></tr>)}</tbody></table></div><p className="nq-note">Een failed breakout is hier een minuutclose binnen de oorspronkelijke range in de eerste vijf minuten na entry, ook als de gesimuleerde trade eerder sloot. Niet vaker in de holdout. De positieve short-bijdrage uit de ontdekking verdween; dit is beschrijvende samenhang, geen bewezen oorzaak of reden om nu long-only te kiezen.</p><p className="nq-note">Contracteigen opwarming vóór de roll bestaat al. NQU25 had bij de roll één geldige eerdere true range, NQZ25 twee; er zijn er veertien nodig. De huidige overlap kan dus geen nuluitval leveren. De bevroren engine en rapporten zijn niet aangepast.</p><a href="/data/research-postmortem.json" download>Download diagnose, MFE/MAE en ATR-readiness</a></section>
+    <section className="nq-kpis" aria-label="Onderzoeksbereik">{[['Geobserveerde minuten',f(data.row_count,0)],['Handelsdagen',String(data.trade_dates)],['Dagen met ATR-opwarming voltooid',String(data.atr_ready_days)],['Kosten per round trip',`$${f(data.cost_rt_usd)}`]].map(([label,value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}</section>
+    <section id="resultaten" className="nq-section"><div className="nq-heading"><div><p className="nq-eyebrow">ONTDEKKINGSPERIODE · DECEMBER 2024–APRIL 2025</p><h2>Oorspronkelijke resultaten na kosten</h2></div><p>Eén NQ-contract · afzonderlijke tests</p></div>
+      <div className="nq-table"><table><caption>Alle geschikte dagen, inclusief kwaliteitsgemarkeerde dagen wanneer de vereiste vensters compleet zijn</caption><thead><tr>{['Hypothese','Trades','Winrate','Profit factor','Netto punten','Max. drawdown','Gem. 1e helft','Gem. 2e helft','Holm p¹'].map(h=><th key={h} scope="col">{h}</th>)}</tr></thead><tbody>{data.strategies.map(s=><tr key={s.id}><th scope="row">{labels[s.id]}{s.candidate ? <small>Onderzoekskandidaat</small> : null}</th><td>{s.metrics.trades}</td><td>{f((s.metrics.win_rate ?? 0)*100,1)}%</td><td>{f(s.metrics.profit_factor)}</td><td>{f(s.metrics.net_points)}</td><td>{f(s.metrics.max_drawdown_points)}</td><td>{f(s.splits.first.mean_net_points)}<small>n={s.splits.first.trades}</small></td><td>{f(s.splits.second.mean_net_points)}<small>n={s.splits.second.trades}</small></td><td>{f(s.holm_joint_profit_p,3)}</td></tr>)}</tbody></table></div>
+      <p className="nq-note">¹ Gecorrigeerd over vier winsttests én vier directionele controles. Geen enkele test is significant op 5%. De eerste helft loopt t/m 21 februari; de tweede vanaf 24 februari. Geen ongeopende holdout meer.</p><Equity />
     </section>
-    <section style={panel}><h2 style={h}>Chronological half-splits and tail dependence</h2>
-      <Table heads={["Strategy","First half points","Second half points","Without largest trade","Without 3 best trades","Double-slippage net points"]}
-        rows={data.strategies.map(s=>[s.id,nf(s.splits.first.net_points),nf(s.splits.second.net_points),
-          nf(s.net_points_without_best["1"]),nf(s.net_points_without_best["3"]),
-          nf(s.cost_scenarios.double_slippage.net_points)])}/>
-      <p style={{fontSize:12,color:muted,marginTop:12}}>
-        Positive aggregate performance is not sufficient. In particular, removing the three best ORB15 trades
-        leaves only 49.1 points, and the strategy lacks an independent post-selection holdout.
-      </p>
+    <section id="robuustheid" className="nq-section"><div className="nq-heading"><div><p className="nq-eyebrow">PROBEER DE UITKOMST TE WEERLEGGEN</p><h2>Kosten, uitbijters en controles</h2></div></div>
+      <div className="nq-table"><table><caption>Aanvullende tests op dezelfde, reeds bekeken data; geen nieuwe validatieset</caption><thead><tr>{['Hypothese','Dubbele slippage: netto punten','Zonder beste trade','Zonder beste 3','Coinflip-controle²','Extra netto boven controle','Holm p richting'].map(h=><th key={h} scope="col">{h}</th>)}</tr></thead><tbody>{data.strategies.map(s=><tr key={s.id}><th scope="row">{labels[s.id]}</th><td>{f(s.cost_scenarios.double_slippage.net_points)}</td><td>{f(s.net_points_without_best['1'])}</td><td>{f(s.net_points_without_best['3'])}</td><td>{f(s.coinflip_expected_net_points)}</td><td>{f(s.paired_excess_total_points)}</td><td>{f(s.holm_joint_direction_p,3)}</td></tr>)}</tbody></table></div>
+      <p className="nq-note">² Gemiddelde van de echte en omgekeerde richting op dezelfde instapmomenten, met gespiegeld risico/target. Dit controleert richting, niet de selectie van instaptijden, en is geen onafhankelijke randomisatie. Dubbele slippage: 4 ticks per kant plus $4,50 commissie.</p>
+      <div className="nq-grid">{data.strategies.map(s=><article key={s.id} className="nq-card"><h3>{labels[s.id]}</h3><p>Maandbijdragen in netto punten</p><ul>{s.monthly.map(m=><li key={m.month}><span>{m.month} <small>({m.trades} trades)</small></span><strong>{f(m.net_points)}</strong></li>)}</ul></article>)}</div>
     </section>
-    <section style={panel}><h2 style={h}>Overnight range / prior ATR conditioning</h2>
-      <Table heads={["Regime","Days","Positive net fraction","Mean 60-minute net points"]}
-        rows={data.overnight_regimes.map(x=>[x.regime,x.n,pct(x.positive_net_probability),nf(x.mean_net_points)])}/>
-      <p style={{fontSize:12,color:muted,marginTop:12}}>
-        Broad overnight sample n=3: statistical inference withheld. Regime selection is post-hoc exploratory.
-      </p>
-    </section>
-    <section style={panel}><h2 style={h}>Unconditional 09:30 long baseline</h2>
-      <Table heads={["Horizon","Observations","Mean net points","Positive fraction"]}
-        rows={data.baseline.map(x=>[x.horizon,x.n,nf(x.mean_net_points),pct(x.win_rate_net)])}/>
-    </section>
-    <section style={panel}><h2 style={h}>Data quality and audit gates</h2>
-      <p style={{color:muted}}>Source period: {data.period.join(" — ")}; NQH25 / NQM25. Missing in-session minutes: {nf(data.missing_minutes,0)}. ATR-ready: {data.atr_ready_days} days.</p>
-      <Table heads={["Day classification","Count"]} rows={flags.map(([name,n])=>[name,n])}/>
-      <p style={{color:muted,marginTop:14,fontSize:12}}>
-        Automated checks passed: {Object.values(data.checks).filter(Boolean).length} of {Object.keys(data.checks).length}.
-        Automated assertions are not independent audit of original licensed CSVs.
-      </p>
-    </section>
-    <section style={panel}><h2 style={h}>Limitations and release provenance</h2>
-      <ul style={{paddingLeft:19,color:muted}}>{data.limitations.map((x,i)=><li key={i} style={{marginBottom:7}}>{x}</li>)}</ul>
-      <div style={{display:"flex",gap:18,flexWrap:"wrap",fontSize:13,marginTop:18}}>
-        <a style={{color:"#9bc8ff"}} href="/data/nq-overnight.json">Published NQ aggregate JSON</a>
-        <a style={{color:"#9bc8ff"}} href="/data/research09.json">Observed 0.9 source audit</a>
-      </div>
-    </section>
+    <section className="nq-section"><div className="nq-heading"><div><p className="nq-eyebrow">BESCHRIJVEND, NIET VOORSPELLEND</p><h2>Overnight range / ATR</h2></div></div><div className="nq-table"><table><caption>Long vanaf 09:30, uitstappen om 10:30 NY, na kosten</caption><thead><tr><th>Regime</th><th>Dagen</th><th>Kans netto positief</th><th>Gem. netto punten</th></tr></thead><tbody>{data.overnight_regimes.map(r=><tr key={r.regime}><th scope="row">{r.regime}</th><td>{r.n}</td><td>{f(r.positive_net_probability*100,1)}%</td><td>{f(r.mean_net_points)}</td></tr>)}</tbody></table></div><p className="nq-warning">De brede overnight-rangegroep bevat slechts 3 dagen. Een hoog percentage in deze groep is geen betrouwbare edge.</p></section>
+    <section id="kwaliteit" className="nq-section"><div className="nq-heading"><div><p className="nq-eyebrow">HERKOMST EN GRENZEN</p><h2>De data achter de cijfers</h2></div></div><div className="nq-grid"><article className="nq-card"><h3>Gecontroleerd, niet gecertificeerd</h3><p>{data.clean_days} schone dagen, {data.flagged_days} gemarkeerde dagen en {data.missing_minutes} ontbrekende minuten na de beperkte kalendercorrecties. De 0.9-importgate heeft alle {f(data.import_gate.rows,0)} bars privé verwerkt.</p></article><article className="nq-card"><h3>Contractbewuste rollover</h3><p>NQH25 t/m 18 maart; NQM25 vanaf handelsdag 19 maart. Features eerst per contract en sessie, geen prijsaanpassing en geen returns over de contractsprong. M25-opwarmhistorie wordt niet uit H25 geleend.</p></article><article className="nq-card"><h3>Causale uitvoeringsregels</h3><p>Signalen op voltooide minuten, entry volgende open. Bij stop én target in dezelfde bar: stop eerst. 2 ticks slippage per kant en $4,50 commissie. Geen tick- of orderboekbewijs.</p></article><article className="nq-card"><h3>Geen schijnzekerheid</h3><p>De ruwe prijzen blijven privé. Herkomst, historische publicatievintages, vendorlicentie en brokerfills zijn niet onafhankelijk gecertificeerd. De VWAP is een HLC3-minuutproxy.</p></article></div>
+      <details className="nq-details"><summary>Bekijk de kwaliteitsvlaggen per dag</summary><div className="nq-table"><table><thead><tr><th>Handelsdatum</th><th>Contract</th><th>Kwaliteit</th><th>Ontbrekende minuten</th><th>ATR-historie</th></tr></thead><tbody>{data.day_quality.map(d=><tr key={d.trade_date}><th scope="row">{d.trade_date}</th><td>{d.contract}</td><td>{d.data_quality_flag}</td><td>{d.missing_minutes}</td><td>{d.atr_history_count}/14</td></tr>)}</tbody></table></div></details>
+      <details className="nq-details"><summary>Vaste onderzoeksdefinities en beperkingen</summary><dl>{Object.entries(data.methodology).map(([key,value])=><div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}</dl><ul>{data.limitations.map(s=><li key={s}>{s}</li>)}</ul></details>
+    </section><footer className="nq-footer"><span>Ontdekking t/m 17 april · Holdout t/m 30 september 2025 · Geen live handelssignalen</span><a href="/data/nq-overnight.json" download>Download geaggregeerde onderzoeksexport</a></footer>
   </main>;
 }

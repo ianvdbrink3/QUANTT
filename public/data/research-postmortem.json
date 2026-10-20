@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "classification": "DESCRIPTIVE_POST_HOC_NOT_NEW_HOLDOUT",
+  "frozen_engine_unchanged": true,
+  "frozen_holdout_status": "HOLDOUT_FAILED",
+  "input_sha256": {
+    "trades.csv": "9bc892d8ddbe8be0e06432d8ec68bf91b60d483efb29ea82557c528a5d177dd4",
+    "eligibility.csv": "e2fc102611c7296428383a34799a9a7417faa459c8134c0f9207296f10a6e4bd",
+    "session-quality.csv": "cc7b44a46df90b88475d882c15520ae873b1e491118db15581303a48953ddf48",
+    "snapshots.csv": "4a2c3763004dc2731907ebd1df05c658810a5121e1f62b0ff4676d13dbc2c2d4",
+    "missing-minutes.csv": "a7aa3fa8fbd1537fa0db41e5ebd21171374f6784a8cf95e68c0017558cc074f9",
+    "summary.json": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352"
+  },
+  "source_sha256": [
+    "e2979e3b199eb1eaf612b5848b636cc4fb5b80befdae28200bb969fb15f80f92",
+    "d3728679128f5640dd79f4b291c1721069d92e2a2c698ec9f36f292e1c05f888",
+    "f9c15773ad15a2e6a8438aa35d737f9d5523e5e4b920992a131ef65f2b31a3c5",
+    "556843730f8a0172b0e5677380236c2649533036f38d499f80983e2f4bc5ef67",
+    "1930aaeac611492d8763fabaff3852b63cbffa99af92f37c8538f301899e26d7",
+    "b4dec48a466e848ecd7dd78058a0ccf1389289cde9d0ec74d5a0ef100c943670",
+    "ed82e77acb77ba78431a3d66aa82419025b8d1d9554573b00a5e8062680b1047",
+    "8bfff8352b7cf9a49b44b4e759402cb230f1cd550db142f0a729a673212777f9",
+    "bc7b294bbdbbe892fc8fb8208dc854e1db4b96a93e5fff6583fd402e2f04ec8f",
+    "bd73a92c5a34752296420899cd0ce60d17c15deed7d6ee7669fe1ef07cfe138b",
+    "e5280bb16101963998060d3cc7a10efdc02d33b082251542cefd558c8228d6ef",
+    "0ea15d49a332695c33a1e4fec906605e7fa278ce05f03791c5a541071e0a77b1",
+    "aeae0f26c7122c191eb6d9dd99549498e09373648f89151049b29a62b1f32c6b",
+    "e88ec71ade5b2d89651fbcc768e95da688b531ff1f46c3a0bf782b1f0822e77e",
+    "bb7bc3080653e86b79f0bf08ad6db517de0a24303e94e8206b21efe17cf36592",
+    "1bcd0b4be0cf0b728411ce5eff3cda9c3559742a0fd0e1a218b2c31f5c93e240",
+    "94caf07085dfe22e55022f51c323d6d8dcde65201e3f53e1b412b87fcd13800a",
+    "82fed51b25f9b46012ca445195edc4a110dbc1dba2a1d83ea67150e32da216cc",
+    "f808f9c9adc9e95c737e8fac7392c818bab0613baac28a6f5ee3c5cab6884415",
+    "a299a73610623ce5f11d50c26bf7f2a3a010e7bb933514e578da9a96142f6b8d",
+    "ca6d853c9d01bf9599fbb3a4b79549b14f7cf57efaf54716eddc7d73c08ed922",
+    "2579a6840e4e0347f1f352df1d953f3835dc3a16b1572038df3fd280e1459f10",
+    "ebfe31da452a88b9ed034e34c0188d46cdfd5654f5c370ce0da62a66a46d457c",
+    "70939648393c830e71a5398b0d8abf8231b6b8e7fce005296c5e03c7f6c4a7ce",
+    "ce415bd56c40a762c693a7196baf6dd7c29b78e35ce165cac01299a7ddb5fd2e",
+    "bc8cc03c5e2360fd1d596800ec455b8ac311bef0511a3e3734feb1306ba3eb4d",
+    "0d37c01e9a988bf6c3bd7cda5d0ebda8d8edc3cb6e312d7e08d4a500f72682f4",
+    "833d7a309119016e547ecd81d4df5fac23aaad9336e28b3dfb595237d18a26a3",
+    "830a9db3b97a5ef61ce6f3910f25a6e6506b72baba343014fcd9e0372889c42c",
+    "a3f609927907656c13342e05720e9a40ce9bc00dc90f7e04c2b79460e42e0b37"
+  ],
+  "in_sample": {
+    "period": [
+      "2024-12-30",
+      "2025-04-17"
+    ],
+    "eligible_days": 42,
+    "trades": 37,
+    "orb15_points": {
+      "n": 42,
+      "mean": 129.4404761904762,
+      "median": 117.75,
+      "p25": 85.4375,
+      "p75": 167.375
+    },
+    "orb15_pct_prior_atr": {
+      "n": 42,
+      "mean": 29.2256144345352,
+      "median": 27.079995840504118,
+      "p25": 18.726916796400076,
+      "p75": 35.48496584724135
+    },
+    "prior_rth_atr14_points": {
+      "n": 42,
+      "mean": 466.7232142857143,
+      "median": 385.8303571428571,
+      "p25": 353.8125,
+      "p75": 531.7678571428571
+    },
+    "actual_same_day_rth_range_points": {
+      "n": 41,
+      "mean": 474.0365853658537,
+      "median": 407.5,
+      "p25": 274.5,
+      "p75": 525.5
+    },
+    "long_short": {
+      "long": {
+        "trades": 18,
+        "net_points": -213.5499999999999,
+        "mean_net_points": -11.863888888888884,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 0.7835824676969851
+      },
+      "short": {
+        "trades": 19,
+        "net_points": 1132.9750000000001,
+        "mean_net_points": 59.630263157894746,
+        "win_rate": 0.631578947368421,
+        "profit_factor": 2.710602800739818
+      }
+    },
+    "mfe_exit_bar_bound_points": {
+      "n": 37,
+      "mean": 115.91891891891892,
+      "median": 108.25,
+      "p25": 38.5,
+      "p75": 165.25
+    },
+    "mae_exit_bar_bound_points": {
+      "n": 37,
+      "mean": 74.36486486486487,
+      "median": 57.25,
+      "p25": 22.0,
+      "p75": 101.0
+    },
+    "mfe_exit_bar_bound_atr": {
+      "n": 37,
+      "mean": 0.28383904976406793,
+      "median": 0.24783176903884996,
+      "p25": 0.10167892850405583,
+      "p75": 0.49783472476449847
+    },
+    "mae_exit_bar_bound_atr": {
+      "n": 37,
+      "mean": 0.16197316452317861,
+      "median": 0.151197887191096,
+      "p25": 0.0692946791585646,
+      "p75": 0.2530962844586496
+    },
+    "forward15_mfe_points": {
+      "n": 37,
+      "mean": 73.64189189189189,
+      "median": 43.25,
+      "p25": 32.25,
+      "p75": 86.5
+    },
+    "forward15_mae_points": {
+      "n": 37,
+      "mean": 52.351351351351354,
+      "median": 29.0,
+      "p25": 20.75,
+      "p75": 45.5
+    },
+    "return_inside_range_after_entry": {
+      "1": {
+        "trades_with_complete_window": 37,
+        "returned_inside": 7,
+        "fraction": 0.1891891891891892
+      },
+      "5": {
+        "trades_with_complete_window": 37,
+        "returned_inside": 15,
+        "fraction": 0.40540540540540543
+      },
+      "15": {
+        "trades_with_complete_window": 37,
+        "returned_inside": 22,
+        "fraction": 0.5945945945945946
+      }
+    },
+    "entry_open_inside_range": 1
+  },
+  "out_of_sample": {
+    "period": [
+      "2025-04-18",
+      "2025-09-30"
+    ],
+    "eligible_days": 81,
+    "trades": 76,
+    "orb15_points": {
+      "n": 81,
+      "mean": 89.87345679012346,
+      "median": 83.75,
+      "p25": 66.0,
+      "p75": 107.75
+    },
+    "orb15_pct_prior_atr": {
+      "n": 81,
+      "mean": 28.90719793717623,
+      "median": 25.90956887486856,
+      "p25": 20.25015722171756,
+      "p75": 36.03776368195899
+    },
+    "prior_rth_atr14_points": {
+      "n": 81,
+      "mean": 355.51609347442684,
+      "median": 291.25,
+      "p25": 252.2321428571429,
+      "p75": 366.7857142857143
+    },
+    "actual_same_day_rth_range_points": {
+      "n": 79,
+      "mean": 264.0854430379747,
+      "median": 250.0,
+      "p25": 177.25,
+      "p75": 324.375
+    },
+    "long_short": {
+      "long": {
+        "trades": 33,
+        "net_points": 29.075000000000152,
+        "mean_net_points": 0.8810606060606107,
+        "win_rate": 0.5454545454545454,
+        "profit_factor": 1.0280951805773646
+      },
+      "short": {
+        "trades": 43,
+        "net_points": -656.6749999999998,
+        "mean_net_points": -15.271511627906973,
+        "win_rate": 0.3023255813953488,
+        "profit_factor": 0.6690146169354841
+      }
+    },
+    "mfe_exit_bar_bound_points": {
+      "n": 76,
+      "mean": 62.27302631578947,
+      "median": 46.25,
+      "p25": 22.1875,
+      "p75": 93.4375
+    },
+    "mae_exit_bar_bound_points": {
+      "n": 76,
+      "mean": 56.75986842105263,
+      "median": 58.625,
+      "p25": 21.4375,
+      "p75": 75.0
+    },
+    "mfe_exit_bar_bound_atr": {
+      "n": 76,
+      "mean": 0.1936101221424229,
+      "median": 0.15994390732744712,
+      "p25": 0.07233668055532601,
+      "p75": 0.2591731265099906
+    },
+    "mae_exit_bar_bound_atr": {
+      "n": 76,
+      "mean": 0.17252685824505226,
+      "median": 0.23672415187592055,
+      "p25": 0.06115704388726319,
+      "p75": 0.2566074357400277
+    },
+    "forward15_mfe_points": {
+      "n": 76,
+      "mean": 35.838815789473685,
+      "median": 30.125,
+      "p25": 17.5625,
+      "p75": 46.5625
+    },
+    "forward15_mae_points": {
+      "n": 76,
+      "mean": 34.83223684210526,
+      "median": 28.125,
+      "p25": 11.5,
+      "p75": 56.0
+    },
+    "return_inside_range_after_entry": {
+      "1": {
+        "trades_with_complete_window": 76,
+        "returned_inside": 8,
+        "fraction": 0.10526315789473684
+      },
+      "5": {
+        "trades_with_complete_window": 76,
+        "returned_inside": 28,
+        "fraction": 0.3684210526315789
+      },
+      "15": {
+        "trades_with_complete_window": 76,
+        "returned_inside": 43,
+        "fraction": 0.5657894736842105
+      }
+    },
+    "entry_open_inside_range": 0
+  },
+  "warmup": [
+    {
+      "contract": "NQU25",
+      "roll_session": "2025-06-17",
+      "raw_first_session": "2025-06-02",
+      "pre_roll_sessions": 11,
+      "pre_roll_complete_rth": 2,
+      "pre_roll_valid_tr": 1,
+      "valid_prior_tr_at_roll": 1,
+      "atr_ready_at_roll": false,
+      "first_atr_ready_session": "2025-07-11",
+      "active_sessions_without_atr_in_available_data": 18,
+      "last_available_prior_tr_count": 62,
+      "zero_lost_sessions_possible_under_frozen_rules": false
+    },
+    {
+      "contract": "NQZ25",
+      "roll_session": "2025-09-17",
+      "raw_first_session": "2025-09-01",
+      "pre_roll_sessions": 12,
+      "pre_roll_complete_rth": 3,
+      "pre_roll_valid_tr": 2,
+      "valid_prior_tr_at_roll": 2,
+      "atr_ready_at_roll": false,
+      "first_atr_ready_session": null,
+      "active_sessions_without_atr_in_available_data": 10,
+      "last_available_prior_tr_count": 11,
+      "zero_lost_sessions_possible_under_frozen_rules": false
+    }
+  ],
+  "definitions": {
+    "direct_failed_breakout": "At least one minute CLOSE inside original ORB15 within first 5 post-entry bars, inclusive boundaries; fixed diagnostic path, may occur after simulated exit",
+    "mfe_mae": "Exit-minute OHLC extrema are bounds, not exact intrabar excursions; separate fixed 15m diagnostic ignores actual exit",
+    "atr": "Frozen SMA14 prior same-contract valid RTH TR; no transfer, no parameter optimization"
+  }
+}

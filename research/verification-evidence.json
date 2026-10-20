@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-20T18:29:42.330487+00:00",
+  "sources_verified": 11,
+  "targets": {
+    "bars": 106678,
+    "eligible_days": 42,
+    "orb15_trades": 37,
+    "orb15_net_points": 919.425,
+    "orb15_display_points": "919.43",
+    "orb15_trade_ledger_sha256": "c0595e9049cb5a52679845b3d933bc5ee85117861ee1fae35b8cb059eeca98af"
+  },
+  "published_payload_checks": {
+    "nq-overnight.json": {
+      "semantic_match": true,
+      "original_sha256": "bbad362b47f2f6736e705a19b4df8041032e6c2537ab6fe0c25094cc823239cf",
+      "recomputed_sha256": "17337454f6c3a1b28c931351b6c3957dc44c60e92647a0c4637606a0ce46ade5",
+      "excluded_serialization_metadata": [
+        "generated_at",
+        "dataset_sha256"
+      ]
+    },
+    "research09.json": {
+      "semantic_match": true,
+      "original_sha256": "141205a8057d78a1e5493cbd17939a610c8d9d243edc697d1ff760ac54e20dea",
+      "recomputed_sha256": "141205a8057d78a1e5493cbd17939a610c8d9d243edc697d1ff760ac54e20dea",
+      "excluded_serialization_metadata": [
+        "sources[].staged_sha256"
+      ]
+    }
+  },
+  "level": "2: raw-input rerun of frozen implementation; not independent code or vendor certification",
+  "finished_at": "2026-10-20T18:31:25.165600+00:00",
+  "published": true,
+  "command": "npm run reproduce:research",
+  "runtime": {
+    "python": "3.14.3",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "pyarrow": "26.0.0",
+    "scipy": "1.18.1"
+  },
+  "code_sha256": {
+    "scripts/reproduce-research": "4d625bf56c0114928b31ae88028003c8c9b6db22dc98ff2bd0db7d6bedbc1164",
+    "scripts/reproduce_research/__init__.py": "a2d5178be7f99a545a4ac31d1bb26dda3c59a6bf3da4d6e5053b7828f97f5d7d",
+    "scripts/reproduce_research/audit_outputs.py": "6e0f165d8cd7f04675e52ce3e33189c5aaa57c23c11b5453a7a89144a3ebeb6d",
+    "scripts/reproduce_research/barchart.py": "8e409113a4b88420bbd0ab9054caa6c8dab57f2887de3e7792d714c66711b804",
+    "scripts/reproduce_research/cli.py": "36874c2719ff176877c4516d257a56c80ad04cdd13295f490b770c9b0da086e4",
+    "scripts/reproduce_research/engine.py": "8fbf6cb7ced7fe0338cca164de1f3cbde8b3d03eb92738bde4616829cd541d8b",
+    "scripts/reproduce_research/publish.py": "23049f0a297bb6ebd645469dc19b7cd48f83f4346d3df4d2d208f96ab6efb05a"
+  },
+  "public_export_byte_identity": {
+    "nq-overnight.json": true,
+    "research09.json": true
+  },
+  "tests": {
+    "pytest_passed": 136,
+    "typescript_typecheck": "passed",
+    "next_production_build": "passed"
+  }
+}

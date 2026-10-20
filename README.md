@@ -2,6 +2,19 @@
 
 A reproducible Python market-data pipeline and a dark Next.js research dashboard. The web app serves versioned static data directly from Git; it needs no external database, credentials, or Python runtime on Vercel.
 
+## Current NQ research status — 20 October 2026
+
+ORB15 is **HOLDOUT_FAILED**, not a validated trading edge. The dashboard at `/research/nq` shows the periods separately: discovery 30 Dec 2024–17 Apr 2025, 37 trades, +919.425 NQ points; holdout 18 Apr–30 Sep 2025, 76 trades on 81 eligible sessions, -627.600 points. Costs are $24.50 per roundtrip for one NQ. No live execution is enabled.
+
+- `npm run verify:research`: full raw-only replay of the frozen discovery release.
+- `npm run verify:holdout`: full raw-only replay of the frozen holdout, retaining its failed result.
+- `npm run diagnose:orb15`: descriptive period comparison and contract-own ATR-history audit after a successful holdout replay. Does not change parameters or rerun strategy selection.
+- `python scripts/verify_release.py`: offline CI guard for separate, immutable public snapshots; not a replacement for raw-source replay.
+
+Put the 30 original source files listed in `research/holdout-protocol.json` in the entirely ignored `/data/raw/` directory. Private bars, trades and generated Parquet remain under ignored `artifacts/`; only derived aggregates are public. CI needs no private sources or credentials.
+
+Reports: [Level 2 reproduction](docs/LEVEL2_REPRODUCTION.md), [holdout results](docs/LEVEL3_HOLDOUT_REPORT.md), [holdout replay](docs/LEVEL3_REPRODUCTION.md), [post-mortem and ATR architecture](docs/ORB15_POSTMORTEM_AND_ATR_ARCHITECTURE.md). Earlier dated status sections below describe previous CFD/synthetic work, not the current NQ validation claim.
+
 ## Actual delivery status — 18 October 2026
 
 **Historical ingestion is incomplete because source access is blocked.** The repository was empty when work began; no v0.2 implementation, existing hypotheses, cost profiles, or historical dataset was present. This implementation and its three hypotheses were created from scratch.

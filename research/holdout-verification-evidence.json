@@ -1,0 +1,24 @@
+{
+  "verification_status": "PASS",
+  "hypothesis_status": "HOLDOUT_FAILED",
+  "complete_raw_runs": 2,
+  "source_files": 30,
+  "before_signal_local_protocol_commit": "a1519e8abbd76a14b3bd21c2ca95437b0737c048",
+  "remote_protocol_commit_same_tree": "bbc2c4303a3b1f5127de4bdf83ead2573ae401bc",
+  "protocol_sha256": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022",
+  "reference_sha256": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352",
+  "all_detailed_outputs_byte_identical": true,
+  "private_output_sha256": {
+    "trades.csv": "9bc892d8ddbe8be0e06432d8ec68bf91b60d483efb29ea82557c528a5d177dd4",
+    "eligibility.csv": "e2fc102611c7296428383a34799a9a7417faa459c8134c0f9207296f10a6e4bd",
+    "session-quality.csv": "cc7b44a46df90b88475d882c15520ae873b1e491118db15581303a48953ddf48",
+    "snapshots.csv": "4a2c3763004dc2731907ebd1df05c658810a5121e1f62b0ff4676d13dbc2c2d4",
+    "missing-minutes.csv": "a7aa3fa8fbd1537fa0db41e5ebd21171374f6784a8cf95e68c0017558cc074f9",
+    "summary.json": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352"
+  },
+  "original_level2_orb15_ledger_reproduced": true,
+  "pytest_passed": 152,
+  "typecheck": "PASS",
+  "production_build": "PASS",
+  "raw_files_tracked": false
+}
