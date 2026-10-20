@@ -12,6 +12,9 @@ export default function ResearchPage() {
   return (
     <>
       <nav style={{ background: "#0b1220", padding: "12px 32px", color: "#9fc9ff" }}>
+        <Link href="/research/nq" style={{ display: "block", paddingBottom: 8, color: "#67dfbd", textDecoration: "underline" }}>
+          Echte NQ-data: 78 handelsdagen, kostenbacktests en edge-robuustheid →
+        </Link>
         <Link href="/research/observed" style={{ textDecoration: "underline" }}>
           View 0.9 observed-futures readiness and provenance →
         </Link>

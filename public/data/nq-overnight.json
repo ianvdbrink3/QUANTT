@@ -1,0 +1,2040 @@
+{
+  "schema_version": "nq-overnight-1",
+  "classification": "OBSERVED NQ \u2014 SOURCE UNVERIFIED",
+  "status": "EXPLORATORY_NO_VALIDATED_EDGE",
+  "generated_at": "2026-10-20T16:14:14.148842+00:00",
+  "period": [
+    "2024-12-30",
+    "2025-04-17"
+  ],
+  "row_count": 106678,
+  "trade_dates": 78,
+  "clean_days": 67,
+  "flagged_days": 11,
+  "missing_minutes": 32,
+  "atr_ready_days": 47,
+  "eligible_days": 42,
+  "cost_rt_usd": 24.5,
+  "roll_trade_date": "2025-03-19",
+  "edge_validated": false,
+  "dataset_sha256": "a48a6e71fc001309df74dcaa37f963e62da8691c7f8b521659a3e0795610196f",
+  "source_csv_hashes": [
+    "e2979e3b199eb1eaf612b5848b636cc4fb5b80befdae28200bb969fb15f80f92",
+    "d3728679128f5640dd79f4b291c1721069d92e2a2c698ec9f36f292e1c05f888",
+    "f9c15773ad15a2e6a8438aa35d737f9d5523e5e4b920992a131ef65f2b31a3c5",
+    "556843730f8a0172b0e5677380236c2649533036f38d499f80983e2f4bc5ef67",
+    "1930aaeac611492d8763fabaff3852b63cbffa99af92f37c8538f301899e26d7",
+    "b4dec48a466e848ecd7dd78058a0ccf1389289cde9d0ec74d5a0ef100c943670",
+    "ed82e77acb77ba78431a3d66aa82419025b8d1d9554573b00a5e8062680b1047",
+    "8bfff8352b7cf9a49b44b4e759402cb230f1cd550db142f0a729a673212777f9",
+    "bc7b294bbdbbe892fc8fb8208dc854e1db4b96a93e5fff6583fd402e2f04ec8f",
+    "bd73a92c5a34752296420899cd0ce60d17c15deed7d6ee7669fe1ef07cfe138b",
+    "e5280bb16101963998060d3cc7a10efdc02d33b082251542cefd558c8228d6ef"
+  ],
+  "import_gate": {
+    "passed": true,
+    "rows": 106678,
+    "run_id": "ee5cda9a6deaa5fb4fe447577d11ce4e7431ede5bd156a3d2d0585599903d329",
+    "synthetic_input": false,
+    "calendar_certified": false,
+    "source_authenticated": false
+  },
+  "strategies": [
+    {
+      "id": "A_London_sweep",
+      "metrics": {
+        "trades": 18,
+        "days": 18,
+        "eligible_days": 42,
+        "net_points": 236.20000000000007,
+        "net_usd": 4724.000000000002,
+        "mean_net_points": 13.122222222222227,
+        "mean_net_bps": 5.556682571024215,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 1.2239924134660976,
+        "profit_factor_no_losses": false,
+        "max_drawdown_points": 610.875,
+        "median_net_points": -81.35,
+        "bootstrap_unit": "eligible-day net points including no-trade zero days",
+        "ci_low": -26.585624999999997,
+        "ci_high": 36.07566964285714,
+        "p_value": 0.7221389305347327
+      },
+      "splits": {
+        "first": {
+          "trades": 8,
+          "days": 8,
+          "eligible_days": 19,
+          "net_points": 406.95000000000005,
+          "net_usd": 8139.000000000001,
+          "mean_net_points": 50.868750000000006,
+          "mean_net_bps": 23.150331103333198,
+          "win_rate": 0.625,
+          "profit_factor": 2.4486072795230047,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 280.92499999999995,
+          "median_net_points": 91.9,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": null,
+          "ci_high": null,
+          "p_value": null
+        },
+        "second": {
+          "trades": 10,
+          "days": 10,
+          "eligible_days": 23,
+          "net_points": -170.75,
+          "net_usd": -3415.0,
+          "mean_net_points": -17.075,
+          "mean_net_bps": -8.518236254822972,
+          "win_rate": 0.3,
+          "profit_factor": 0.7792715638431955,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 610.875,
+          "median_net_points": -95.85,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -49.06584239130434,
+          "ci_high": 36.61714673913043,
+          "p_value": 0.7501249375312344
+        }
+      },
+      "cost_scenarios": {
+        "base": {
+          "round_trip_points": 1.225,
+          "trades": 18,
+          "days": 18,
+          "eligible_days": 42,
+          "net_points": 236.20000000000007,
+          "net_usd": 4724.000000000002,
+          "mean_net_points": 13.122222222222227,
+          "mean_net_bps": 5.556682571024215,
+          "win_rate": 0.4444444444444444,
+          "profit_factor": 1.2239924134660976,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 610.875,
+          "median_net_points": -81.35,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -26.585624999999997,
+          "ci_high": 36.07566964285714,
+          "p_value": 0.7221389305347327
+        },
+        "double_slippage": {
+          "round_trip_points": 2.225,
+          "trades": 18,
+          "days": 18,
+          "eligible_days": 42,
+          "net_points": 218.20000000000007,
+          "net_usd": 4364.000000000002,
+          "mean_net_points": 12.122222222222227,
+          "mean_net_bps": 5.078383659824051,
+          "win_rate": 0.4444444444444444,
+          "profit_factor": 1.2049788633161107,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 615.875,
+          "median_net_points": -82.35,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -27.056041666666665,
+          "ci_high": 35.65052083333333,
+          "p_value": 0.7396301849075462
+        }
+      },
+      "holm_original": 1.0,
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 2,
+          "net_points": 359.3
+        },
+        {
+          "month": "2025-02",
+          "trades": 9,
+          "net_points": 35.47500000000005
+        },
+        {
+          "month": "2025-03",
+          "trades": 6,
+          "net_points": -430.1
+        },
+        {
+          "month": "2025-04",
+          "trades": 1,
+          "net_points": 271.525
+        }
+      ],
+      "net_points_without_best": {
+        "1": -35.3249999999999,
+        "3": -406.625
+      },
+      "leave_one_trade_out_net_points_min": -35.3249999999999,
+      "coinflip_expected_net_points": 199.2000000000001,
+      "paired_excess_total_points": 37.0,
+      "paired_daily_inference": {
+        "ci_low": -32.17671130952381,
+        "ci_high": 30.177529761904736,
+        "p_value": 0.9515242378810594
+      },
+      "candidate": false,
+      "edge_validated": false,
+      "equity": [
+        {
+          "date": "2025-01-27",
+          "net_points": 0.0
+        },
+        {
+          "date": "2025-01-28",
+          "net_points": 168.775
+        },
+        {
+          "date": "2025-01-29",
+          "net_points": 168.775
+        },
+        {
+          "date": "2025-01-30",
+          "net_points": 359.3
+        },
+        {
+          "date": "2025-01-31",
+          "net_points": 359.3
+        },
+        {
+          "date": "2025-02-03",
+          "net_points": 265.07500000000005
+        },
+        {
+          "date": "2025-02-04",
+          "net_points": 265.07500000000005
+        },
+        {
+          "date": "2025-02-05",
+          "net_points": 167.85000000000005
+        },
+        {
+          "date": "2025-02-06",
+          "net_points": 167.85000000000005
+        },
+        {
+          "date": "2025-02-07",
+          "net_points": 78.37500000000006
+        },
+        {
+          "date": "2025-02-10",
+          "net_points": 78.37500000000006
+        },
+        {
+          "date": "2025-02-11",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-12",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-14",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-17",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-18",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-19",
+          "net_points": 119.40000000000006
+        },
+        {
+          "date": "2025-02-20",
+          "net_points": 262.17500000000007
+        },
+        {
+          "date": "2025-02-21",
+          "net_points": 406.95000000000005
+        },
+        {
+          "date": "2025-02-25",
+          "net_points": 557.475
+        },
+        {
+          "date": "2025-02-26",
+          "net_points": 481.25
+        },
+        {
+          "date": "2025-02-27",
+          "net_points": 481.25
+        },
+        {
+          "date": "2025-02-28",
+          "net_points": 394.775
+        },
+        {
+          "date": "2025-03-03",
+          "net_points": 575.55
+        },
+        {
+          "date": "2025-03-04",
+          "net_points": 575.55
+        },
+        {
+          "date": "2025-03-05",
+          "net_points": 470.32499999999993
+        },
+        {
+          "date": "2025-03-06",
+          "net_points": 359.0999999999999
+        },
+        {
+          "date": "2025-03-07",
+          "net_points": 241.62499999999991
+        },
+        {
+          "date": "2025-03-10",
+          "net_points": 241.62499999999991
+        },
+        {
+          "date": "2025-03-11",
+          "net_points": 105.89999999999992
+        },
+        {
+          "date": "2025-03-13",
+          "net_points": 105.89999999999992
+        },
+        {
+          "date": "2025-03-14",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-03-17",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-04",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-07",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-08",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-10",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-11",
+          "net_points": -35.325000000000074
+        },
+        {
+          "date": "2025-04-14",
+          "net_points": 236.1999999999999
+        },
+        {
+          "date": "2025-04-15",
+          "net_points": 236.1999999999999
+        },
+        {
+          "date": "2025-04-16",
+          "net_points": 236.1999999999999
+        },
+        {
+          "date": "2025-04-17",
+          "net_points": 236.1999999999999
+        }
+      ],
+      "holm_joint_profit_p": 1.0,
+      "holm_joint_direction_p": 1.0
+    },
+    {
+      "id": "B_ORB5",
+      "metrics": {
+        "trades": 38,
+        "days": 38,
+        "eligible_days": 42,
+        "net_points": 34.20000000000024,
+        "net_usd": 684.0000000000048,
+        "mean_net_points": 0.9000000000000062,
+        "mean_net_bps": -0.8292440469441344,
+        "win_rate": 0.42105263157894735,
+        "profit_factor": 1.0161973998910703,
+        "profit_factor_no_losses": false,
+        "max_drawdown_points": 753.225,
+        "median_net_points": -36.975,
+        "bootstrap_unit": "eligible-day net points including no-trade zero days",
+        "ci_low": -30.693452380952376,
+        "ci_high": 34.458422619047624,
+        "p_value": 0.9620189905047476
+      },
+      "splits": {
+        "first": {
+          "trades": 18,
+          "days": 18,
+          "eligible_days": 19,
+          "net_points": 210.4500000000001,
+          "net_usd": 4209.000000000002,
+          "mean_net_points": 11.691666666666672,
+          "mean_net_bps": 5.104477668363144,
+          "win_rate": 0.5,
+          "profit_factor": 1.3227636977109773,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 301.34999999999997,
+          "median_net_points": 8.649999999999999,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": null,
+          "ci_high": null,
+          "p_value": null
+        },
+        "second": {
+          "trades": 20,
+          "days": 20,
+          "eligible_days": 23,
+          "net_points": -176.24999999999991,
+          "net_usd": -3524.999999999998,
+          "mean_net_points": -8.812499999999996,
+          "mean_net_bps": -6.169593590720686,
+          "win_rate": 0.35,
+          "profit_factor": 0.879233259674187,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 753.2249999999999,
+          "median_net_points": -92.725,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -45.775244565217385,
+          "ci_high": 36.304076086956506,
+          "p_value": 0.7386306846576711
+        }
+      },
+      "cost_scenarios": {
+        "base": {
+          "round_trip_points": 1.225,
+          "trades": 38,
+          "days": 38,
+          "eligible_days": 42,
+          "net_points": 34.20000000000024,
+          "net_usd": 684.0000000000048,
+          "mean_net_points": 0.9000000000000062,
+          "mean_net_bps": -0.8292440469441344,
+          "win_rate": 0.42105263157894735,
+          "profit_factor": 1.0161973998910703,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 753.225,
+          "median_net_points": -36.975,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -30.693452380952376,
+          "ci_high": 34.458422619047624,
+          "p_value": 0.9620189905047476
+        },
+        "double_slippage": {
+          "round_trip_points": 2.225,
+          "trades": 38,
+          "days": 38,
+          "eligible_days": 42,
+          "net_points": -3.79999999999977,
+          "net_usd": -75.9999999999954,
+          "mean_net_points": -0.09999999999999394,
+          "mean_net_bps": -1.316186708688665,
+          "win_rate": 0.42105263157894735,
+          "profit_factor": 0.9982188474067826,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 764.225,
+          "median_net_points": -37.975,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -31.575089285714284,
+          "ci_high": 33.531413690476185,
+          "p_value": 0.9965017491254373
+        }
+      },
+      "holm_original": 1.0,
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 5,
+          "net_points": -207.12499999999997
+        },
+        {
+          "month": "2025-02",
+          "trades": 17,
+          "net_points": 704.1750000000001
+        },
+        {
+          "month": "2025-03",
+          "trades": 9,
+          "net_points": -177.77499999999995
+        },
+        {
+          "month": "2025-04",
+          "trades": 7,
+          "net_points": -285.075
+        }
+      ],
+      "net_points_without_best": {
+        "1": -342.3249999999998,
+        "3": -762.1249999999999
+      },
+      "leave_one_trade_out_net_points_min": -342.32499999999976,
+      "coinflip_expected_net_points": -339.92499999999995,
+      "paired_excess_total_points": 374.125,
+      "paired_daily_inference": {
+        "ci_low": -17.976711309523807,
+        "ci_high": 37.52604166666666,
+        "p_value": 0.5247376311844077
+      },
+      "candidate": false,
+      "edge_validated": false,
+      "equity": [
+        {
+          "date": "2025-01-27",
+          "net_points": -90.475
+        },
+        {
+          "date": "2025-01-28",
+          "net_points": -189.95
+        },
+        {
+          "date": "2025-01-29",
+          "net_points": -154.17499999999998
+        },
+        {
+          "date": "2025-01-30",
+          "net_points": -251.14999999999998
+        },
+        {
+          "date": "2025-01-31",
+          "net_points": -207.12499999999997
+        },
+        {
+          "date": "2025-02-03",
+          "net_points": -301.34999999999997
+        },
+        {
+          "date": "2025-02-04",
+          "net_points": -168.32499999999996
+        },
+        {
+          "date": "2025-02-05",
+          "net_points": -265.54999999999995
+        },
+        {
+          "date": "2025-02-06",
+          "net_points": -293.525
+        },
+        {
+          "date": "2025-02-07",
+          "net_points": -117.99999999999997
+        },
+        {
+          "date": "2025-02-10",
+          "net_points": -82.97499999999997
+        },
+        {
+          "date": "2025-02-11",
+          "net_points": -133.94999999999996
+        },
+        {
+          "date": "2025-02-12",
+          "net_points": -16.424999999999955
+        },
+        {
+          "date": "2025-02-14",
+          "net_points": -33.149999999999956
+        },
+        {
+          "date": "2025-02-17",
+          "net_points": -33.149999999999956
+        },
+        {
+          "date": "2025-02-18",
+          "net_points": 0.8750000000000426
+        },
+        {
+          "date": "2025-02-19",
+          "net_points": -77.09999999999995
+        },
+        {
+          "date": "2025-02-20",
+          "net_points": 65.67500000000005
+        },
+        {
+          "date": "2025-02-21",
+          "net_points": 210.45000000000005
+        },
+        {
+          "date": "2025-02-25",
+          "net_points": 360.975
+        },
+        {
+          "date": "2025-02-26",
+          "net_points": 432.5
+        },
+        {
+          "date": "2025-02-27",
+          "net_points": 583.525
+        },
+        {
+          "date": "2025-02-28",
+          "net_points": 497.04999999999995
+        },
+        {
+          "date": "2025-03-03",
+          "net_points": 677.8249999999999
+        },
+        {
+          "date": "2025-03-04",
+          "net_points": 578.8499999999999
+        },
+        {
+          "date": "2025-03-05",
+          "net_points": 473.6249999999999
+        },
+        {
+          "date": "2025-03-06",
+          "net_points": 362.39999999999986
+        },
+        {
+          "date": "2025-03-07",
+          "net_points": 244.92499999999987
+        },
+        {
+          "date": "2025-03-10",
+          "net_points": 483.9499999999999
+        },
+        {
+          "date": "2025-03-11",
+          "net_points": 348.2249999999999
+        },
+        {
+          "date": "2025-03-13",
+          "net_points": 205.49999999999991
+        },
+        {
+          "date": "2025-03-14",
+          "net_points": 319.2749999999999
+        },
+        {
+          "date": "2025-03-17",
+          "net_points": 319.2749999999999
+        },
+        {
+          "date": "2025-04-04",
+          "net_points": 205.04999999999993
+        },
+        {
+          "date": "2025-04-07",
+          "net_points": 76.07499999999993
+        },
+        {
+          "date": "2025-04-08",
+          "net_points": -75.40000000000006
+        },
+        {
+          "date": "2025-04-10",
+          "net_points": 301.1249999999999
+        },
+        {
+          "date": "2025-04-11",
+          "net_points": 82.39999999999989
+        },
+        {
+          "date": "2025-04-14",
+          "net_points": 82.39999999999989
+        },
+        {
+          "date": "2025-04-15",
+          "net_points": 80.1749999999999
+        },
+        {
+          "date": "2025-04-16",
+          "net_points": 80.1749999999999
+        },
+        {
+          "date": "2025-04-17",
+          "net_points": 34.199999999999896
+        }
+      ],
+      "holm_joint_profit_p": 1.0,
+      "holm_joint_direction_p": 1.0
+    },
+    {
+      "id": "B_ORB15",
+      "metrics": {
+        "trades": 37,
+        "days": 37,
+        "eligible_days": 42,
+        "net_points": 919.425,
+        "net_usd": 18388.5,
+        "mean_net_points": 24.84932432432432,
+        "mean_net_bps": 12.692627315625764,
+        "win_rate": 0.5405405405405406,
+        "profit_factor": 1.5575398329366468,
+        "profit_factor_no_losses": false,
+        "max_drawdown_points": 315.42500000000007,
+        "median_net_points": 9.025,
+        "bootstrap_unit": "eligible-day net points including no-trade zero days",
+        "ci_low": -8.100267857142855,
+        "ci_high": 55.12543154761904,
+        "p_value": 0.18790604697651175
+      },
+      "splits": {
+        "first": {
+          "trades": 18,
+          "days": 18,
+          "eligible_days": 19,
+          "net_points": 183.9500000000001,
+          "net_usd": 3679.000000000002,
+          "mean_net_points": 10.21944444444445,
+          "mean_net_bps": 4.543904583650184,
+          "win_rate": 0.5,
+          "profit_factor": 1.2878604123469348,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 225.375,
+          "median_net_points": -4.9750000000000005,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": null,
+          "ci_high": null,
+          "p_value": null
+        },
+        "second": {
+          "trades": 19,
+          "days": 19,
+          "eligible_days": 23,
+          "net_points": 735.475,
+          "net_usd": 14709.5,
+          "mean_net_points": 38.70921052631579,
+          "mean_net_bps": 20.412469903813154,
+          "win_rate": 0.5789473684210527,
+          "profit_factor": 1.7281570219296076,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 315.425,
+          "median_net_points": 33.775,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -10.111902173913041,
+          "ci_high": 78.16331521739133,
+          "p_value": 0.1519240379810095
+        }
+      },
+      "cost_scenarios": {
+        "base": {
+          "round_trip_points": 1.225,
+          "trades": 37,
+          "days": 37,
+          "eligible_days": 42,
+          "net_points": 919.425,
+          "net_usd": 18388.5,
+          "mean_net_points": 24.84932432432432,
+          "mean_net_bps": 12.692627315625764,
+          "win_rate": 0.5405405405405406,
+          "profit_factor": 1.5575398329366468,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 315.42500000000007,
+          "median_net_points": 9.025,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -8.100267857142855,
+          "ci_high": 55.12543154761904,
+          "p_value": 0.18790604697651175
+        },
+        "double_slippage": {
+          "round_trip_points": 2.225,
+          "trades": 37,
+          "days": 37,
+          "eligible_days": 42,
+          "net_points": 882.425,
+          "net_usd": 17648.5,
+          "mean_net_points": 23.84932432432432,
+          "mean_net_bps": 12.206627410394692,
+          "win_rate": 0.5405405405405406,
+          "profit_factor": 1.5296430232732625,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 318.42500000000007,
+          "median_net_points": 8.025,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -8.910982142857138,
+          "ci_high": 54.19745535714285,
+          "p_value": 0.20689655172413793
+        }
+      },
+      "holm_original": 0.751624187906047,
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 5,
+          "net_points": -2.374999999999986
+        },
+        {
+          "month": "2025-02",
+          "trades": 17,
+          "net_points": 593.1750000000001
+        },
+        {
+          "month": "2025-03",
+          "trades": 9,
+          "net_points": -111.77499999999995
+        },
+        {
+          "month": "2025-04",
+          "trades": 6,
+          "net_points": 440.4
+        }
+      ],
+      "net_points_without_best": {
+        "1": 542.9000000000002,
+        "3": 49.100000000000165
+      },
+      "leave_one_trade_out_net_points_min": 542.9,
+      "coinflip_expected_net_points": 106.17500000000018,
+      "paired_excess_total_points": 813.25,
+      "paired_daily_inference": {
+        "ci_low": -4.671651785714285,
+        "ci_high": 47.07462797619047,
+        "p_value": 0.1519240379810095
+      },
+      "candidate": true,
+      "edge_validated": false,
+      "equity": [
+        {
+          "date": "2025-01-27",
+          "net_points": -90.475
+        },
+        {
+          "date": "2025-01-28",
+          "net_points": 41.55000000000001
+        },
+        {
+          "date": "2025-01-29",
+          "net_points": 50.57500000000001
+        },
+        {
+          "date": "2025-01-30",
+          "net_points": -46.399999999999984
+        },
+        {
+          "date": "2025-01-31",
+          "net_points": -2.374999999999986
+        },
+        {
+          "date": "2025-02-03",
+          "net_points": -96.59999999999998
+        },
+        {
+          "date": "2025-02-04",
+          "net_points": 36.425000000000026
+        },
+        {
+          "date": "2025-02-05",
+          "net_points": -60.79999999999997
+        },
+        {
+          "date": "2025-02-06",
+          "net_points": -88.77499999999998
+        },
+        {
+          "date": "2025-02-07",
+          "net_points": 86.75000000000003
+        },
+        {
+          "date": "2025-02-10",
+          "net_points": 121.77500000000003
+        },
+        {
+          "date": "2025-02-11",
+          "net_points": 70.80000000000004
+        },
+        {
+          "date": "2025-02-12",
+          "net_points": -15.674999999999955
+        },
+        {
+          "date": "2025-02-14",
+          "net_points": -32.399999999999956
+        },
+        {
+          "date": "2025-02-17",
+          "net_points": -32.399999999999956
+        },
+        {
+          "date": "2025-02-18",
+          "net_points": -25.624999999999957
+        },
+        {
+          "date": "2025-02-19",
+          "net_points": -103.59999999999995
+        },
+        {
+          "date": "2025-02-20",
+          "net_points": 39.175000000000054
+        },
+        {
+          "date": "2025-02-21",
+          "net_points": 183.95000000000005
+        },
+        {
+          "date": "2025-02-25",
+          "net_points": 334.475
+        },
+        {
+          "date": "2025-02-26",
+          "net_points": 406.0
+        },
+        {
+          "date": "2025-02-27",
+          "net_points": 557.025
+        },
+        {
+          "date": "2025-02-28",
+          "net_points": 590.8
+        },
+        {
+          "date": "2025-03-03",
+          "net_points": 609.0749999999999
+        },
+        {
+          "date": "2025-03-04",
+          "net_points": 510.0999999999999
+        },
+        {
+          "date": "2025-03-05",
+          "net_points": 404.8749999999999
+        },
+        {
+          "date": "2025-03-06",
+          "net_points": 293.64999999999986
+        },
+        {
+          "date": "2025-03-07",
+          "net_points": 449.42499999999984
+        },
+        {
+          "date": "2025-03-10",
+          "net_points": 688.4499999999998
+        },
+        {
+          "date": "2025-03-11",
+          "net_points": 552.7249999999998
+        },
+        {
+          "date": "2025-03-13",
+          "net_points": 409.9999999999998
+        },
+        {
+          "date": "2025-03-14",
+          "net_points": 479.02499999999975
+        },
+        {
+          "date": "2025-03-17",
+          "net_points": 479.02499999999975
+        },
+        {
+          "date": "2025-04-04",
+          "net_points": 704.2999999999997
+        },
+        {
+          "date": "2025-04-07",
+          "net_points": 959.0749999999997
+        },
+        {
+          "date": "2025-04-08",
+          "net_points": 807.5999999999997
+        },
+        {
+          "date": "2025-04-10",
+          "net_points": 1184.1249999999995
+        },
+        {
+          "date": "2025-04-11",
+          "net_points": 965.3999999999995
+        },
+        {
+          "date": "2025-04-14",
+          "net_points": 965.3999999999995
+        },
+        {
+          "date": "2025-04-15",
+          "net_points": 965.3999999999995
+        },
+        {
+          "date": "2025-04-16",
+          "net_points": 965.3999999999995
+        },
+        {
+          "date": "2025-04-17",
+          "net_points": 919.4249999999995
+        }
+      ],
+      "holm_joint_profit_p": 1.0,
+      "holm_joint_direction_p": 1.0
+    },
+    {
+      "id": "C_VWAP_extreme",
+      "metrics": {
+        "trades": 19,
+        "days": 19,
+        "eligible_days": 42,
+        "net_points": 82.97500000000005,
+        "net_usd": 1659.500000000001,
+        "mean_net_points": 4.367105263157898,
+        "mean_net_bps": 2.8319561192063447,
+        "win_rate": 0.5263157894736842,
+        "profit_factor": 1.1277963882792346,
+        "profit_factor_no_losses": false,
+        "max_drawdown_points": 310.625,
+        "median_net_points": 27.025,
+        "bootstrap_unit": "eligible-day net points including no-trade zero days",
+        "ci_low": -15.76739583333333,
+        "ci_high": 19.67462797619047,
+        "p_value": 0.8355822088955522
+      },
+      "splits": {
+        "first": {
+          "trades": 9,
+          "days": 9,
+          "eligible_days": 19,
+          "net_points": -183.02499999999998,
+          "net_usd": -3660.4999999999995,
+          "mean_net_points": -20.33611111111111,
+          "mean_net_bps": -9.61800546228705,
+          "win_rate": 0.3333333333333333,
+          "profit_factor": 0.4673311990686845,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 310.625,
+          "median_net_points": -27.225,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": null,
+          "ci_high": null,
+          "p_value": null
+        },
+        "second": {
+          "trades": 10,
+          "days": 10,
+          "eligible_days": 23,
+          "net_points": 266.00000000000006,
+          "net_usd": 5320.000000000001,
+          "mean_net_points": 26.600000000000005,
+          "mean_net_bps": 14.036921542550399,
+          "win_rate": 0.7,
+          "profit_factor": 1.8702052833892207,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 134.975,
+          "median_net_points": 45.775,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -11.20815217391304,
+          "ci_high": 33.67426630434782,
+          "p_value": 0.3553223388305847
+        }
+      },
+      "cost_scenarios": {
+        "base": {
+          "round_trip_points": 1.225,
+          "trades": 19,
+          "days": 19,
+          "eligible_days": 42,
+          "net_points": 82.97500000000005,
+          "net_usd": 1659.500000000001,
+          "mean_net_points": 4.367105263157898,
+          "mean_net_bps": 2.8319561192063447,
+          "win_rate": 0.5263157894736842,
+          "profit_factor": 1.1277963882792346,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 310.625,
+          "median_net_points": 27.025,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -15.76739583333333,
+          "ci_high": 19.67462797619047,
+          "p_value": 0.8355822088955522
+        },
+        "double_slippage": {
+          "round_trip_points": 2.225,
+          "trades": 19,
+          "days": 19,
+          "eligible_days": 42,
+          "net_points": 63.975000000000044,
+          "net_usd": 1279.500000000001,
+          "mean_net_points": 3.3671052631578973,
+          "mean_net_bps": 2.3468762263585417,
+          "win_rate": 0.5263157894736842,
+          "profit_factor": 1.0971858265922296,
+          "profit_factor_no_losses": false,
+          "max_drawdown_points": 315.625,
+          "median_net_points": 26.025,
+          "bootstrap_unit": "eligible-day net points including no-trade zero days",
+          "ci_low": -16.14894345238095,
+          "ci_high": 19.153794642857125,
+          "p_value": 0.8650674662668666
+        }
+      },
+      "holm_original": 1.0,
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 2,
+          "net_points": -101.44999999999999
+        },
+        {
+          "month": "2025-02",
+          "trades": 10,
+          "net_points": 119.50000000000004
+        },
+        {
+          "month": "2025-03",
+          "trades": 4,
+          "net_points": -57.64999999999999
+        },
+        {
+          "month": "2025-04",
+          "trades": 3,
+          "net_points": 122.57500000000002
+        }
+      ],
+      "net_points_without_best": {
+        "1": -131.04999999999993,
+        "3": -312.34999999999997
+      },
+      "leave_one_trade_out_net_points_min": -131.04999999999995,
+      "coinflip_expected_net_points": -207.52499999999995,
+      "paired_excess_total_points": 290.5,
+      "paired_daily_inference": {
+        "ci_low": -6.8757440476190474,
+        "ci_high": 20.551264880952377,
+        "p_value": 0.3328335832083958
+      },
+      "candidate": false,
+      "edge_validated": false,
+      "equity": [
+        {
+          "date": "2025-01-27",
+          "net_points": 0.0
+        },
+        {
+          "date": "2025-01-28",
+          "net_points": -4.475
+        },
+        {
+          "date": "2025-01-29",
+          "net_points": -4.475
+        },
+        {
+          "date": "2025-01-30",
+          "net_points": -101.44999999999999
+        },
+        {
+          "date": "2025-01-31",
+          "net_points": -101.44999999999999
+        },
+        {
+          "date": "2025-02-03",
+          "net_points": -195.67499999999998
+        },
+        {
+          "date": "2025-02-04",
+          "net_points": -195.67499999999998
+        },
+        {
+          "date": "2025-02-05",
+          "net_points": -283.4
+        },
+        {
+          "date": "2025-02-06",
+          "net_points": -283.4
+        },
+        {
+          "date": "2025-02-07",
+          "net_points": -310.625
+        },
+        {
+          "date": "2025-02-10",
+          "net_points": -310.625
+        },
+        {
+          "date": "2025-02-11",
+          "net_points": -252.6
+        },
+        {
+          "date": "2025-02-12",
+          "net_points": -252.6
+        },
+        {
+          "date": "2025-02-14",
+          "net_points": -203.575
+        },
+        {
+          "date": "2025-02-17",
+          "net_points": -203.575
+        },
+        {
+          "date": "2025-02-18",
+          "net_points": -150.04999999999998
+        },
+        {
+          "date": "2025-02-19",
+          "net_points": -150.04999999999998
+        },
+        {
+          "date": "2025-02-20",
+          "net_points": -150.04999999999998
+        },
+        {
+          "date": "2025-02-21",
+          "net_points": -183.02499999999998
+        },
+        {
+          "date": "2025-02-25",
+          "net_points": -66.74999999999997
+        },
+        {
+          "date": "2025-02-26",
+          "net_points": -39.72499999999997
+        },
+        {
+          "date": "2025-02-27",
+          "net_points": -39.72499999999997
+        },
+        {
+          "date": "2025-02-28",
+          "net_points": 18.050000000000026
+        },
+        {
+          "date": "2025-03-03",
+          "net_points": 18.050000000000026
+        },
+        {
+          "date": "2025-03-04",
+          "net_points": 18.050000000000026
+        },
+        {
+          "date": "2025-03-05",
+          "net_points": 83.07500000000003
+        },
+        {
+          "date": "2025-03-06",
+          "net_points": 83.07500000000003
+        },
+        {
+          "date": "2025-03-07",
+          "net_points": -34.39999999999996
+        },
+        {
+          "date": "2025-03-10",
+          "net_points": 13.625000000000036
+        },
+        {
+          "date": "2025-03-11",
+          "net_points": 13.625000000000036
+        },
+        {
+          "date": "2025-03-13",
+          "net_points": 13.625000000000036
+        },
+        {
+          "date": "2025-03-14",
+          "net_points": -39.599999999999966
+        },
+        {
+          "date": "2025-03-17",
+          "net_points": -39.599999999999966
+        },
+        {
+          "date": "2025-04-04",
+          "net_points": 174.42500000000004
+        },
+        {
+          "date": "2025-04-07",
+          "net_points": 174.42500000000004
+        },
+        {
+          "date": "2025-04-08",
+          "net_points": 174.42500000000004
+        },
+        {
+          "date": "2025-04-10",
+          "net_points": 174.42500000000004
+        },
+        {
+          "date": "2025-04-11",
+          "net_points": 174.42500000000004
+        },
+        {
+          "date": "2025-04-14",
+          "net_points": 39.450000000000045
+        },
+        {
+          "date": "2025-04-15",
+          "net_points": 39.450000000000045
+        },
+        {
+          "date": "2025-04-16",
+          "net_points": 39.450000000000045
+        },
+        {
+          "date": "2025-04-17",
+          "net_points": 82.97500000000005
+        }
+      ],
+      "holm_joint_profit_p": 1.0,
+      "holm_joint_direction_p": 1.0
+    }
+  ],
+  "day_quality": [
+    {
+      "trade_date": "2024-12-30",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 0
+    },
+    {
+      "trade_date": "2024-12-31",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 0
+    },
+    {
+      "trade_date": "2025-01-02",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 1
+    },
+    {
+      "trade_date": "2025-01-03",
+      "contract": "NQH25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 1,
+      "atr_history_count": 2
+    },
+    {
+      "trade_date": "2025-01-06",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 3
+    },
+    {
+      "trade_date": "2025-01-07",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 4
+    },
+    {
+      "trade_date": "2025-01-08",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 5
+    },
+    {
+      "trade_date": "2025-01-09",
+      "contract": "NQH25",
+      "data_quality_flag": "special_session",
+      "missing_minutes": 0,
+      "atr_history_count": 6
+    },
+    {
+      "trade_date": "2025-01-10",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 6
+    },
+    {
+      "trade_date": "2025-01-13",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 6
+    },
+    {
+      "trade_date": "2025-01-14",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 7
+    },
+    {
+      "trade_date": "2025-01-15",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 8
+    },
+    {
+      "trade_date": "2025-01-16",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 9
+    },
+    {
+      "trade_date": "2025-01-17",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 10
+    },
+    {
+      "trade_date": "2025-01-20",
+      "contract": "NQH25",
+      "data_quality_flag": "special_session",
+      "missing_minutes": 0,
+      "atr_history_count": 11
+    },
+    {
+      "trade_date": "2025-01-21",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 11
+    },
+    {
+      "trade_date": "2025-01-22",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 11
+    },
+    {
+      "trade_date": "2025-01-23",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 12
+    },
+    {
+      "trade_date": "2025-01-24",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 13
+    },
+    {
+      "trade_date": "2025-01-27",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-01-28",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-01-29",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-01-30",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-01-31",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-03",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-04",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-05",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-06",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-07",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-10",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-11",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-12",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-13",
+      "contract": "NQH25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 1,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-14",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-17",
+      "contract": "NQH25",
+      "data_quality_flag": "special_session",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-18",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-19",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-20",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-21",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-24",
+      "contract": "NQH25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 1,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-25",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-26",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-27",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-02-28",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-03",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-04",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-05",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-06",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-07",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-10",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-11",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-12",
+      "contract": "NQH25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 13,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-13",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-14",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-17",
+      "contract": "NQH25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-18",
+      "contract": "NQH25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 1,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-03-19",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 2
+    },
+    {
+      "trade_date": "2025-03-20",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 3
+    },
+    {
+      "trade_date": "2025-03-21",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 4
+    },
+    {
+      "trade_date": "2025-03-24",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 5
+    },
+    {
+      "trade_date": "2025-03-25",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 6
+    },
+    {
+      "trade_date": "2025-03-26",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 7
+    },
+    {
+      "trade_date": "2025-03-27",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 8
+    },
+    {
+      "trade_date": "2025-03-28",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 9
+    },
+    {
+      "trade_date": "2025-03-31",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 10
+    },
+    {
+      "trade_date": "2025-04-01",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 11
+    },
+    {
+      "trade_date": "2025-04-02",
+      "contract": "NQM25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 1,
+      "atr_history_count": 12
+    },
+    {
+      "trade_date": "2025-04-03",
+      "contract": "NQM25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 2,
+      "atr_history_count": 13
+    },
+    {
+      "trade_date": "2025-04-04",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-07",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-08",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-09",
+      "contract": "NQM25",
+      "data_quality_flag": "missing_minutes",
+      "missing_minutes": 12,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-10",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-11",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-14",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-15",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-16",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    },
+    {
+      "trade_date": "2025-04-17",
+      "contract": "NQM25",
+      "data_quality_flag": "ok",
+      "missing_minutes": 0,
+      "atr_history_count": 14
+    }
+  ],
+  "overnight_regimes": [
+    {
+      "quality_view": "all",
+      "half": "all",
+      "regime": "broad",
+      "entry_ny": "09:30",
+      "horizon": "60m",
+      "direction": 1,
+      "n": 3,
+      "positive_gross_probability": 0.6666666666666666,
+      "positive_net_probability": 0.6666666666666666,
+      "wilson_low": 0.2076549551264879,
+      "wilson_high": 0.9385096847238394,
+      "mean_net_points": 145.35833333333332,
+      "median_mfe_points": 246.75,
+      "median_mae_points": 241.75,
+      "note": "Descriptive overlapping paths; Wilson independence assumption approximate, no multiple-comparison significance claim"
+    },
+    {
+      "quality_view": "all",
+      "half": "all",
+      "regime": "middle",
+      "entry_ny": "09:30",
+      "horizon": "60m",
+      "direction": 1,
+      "n": 21,
+      "positive_gross_probability": 0.4761904761904761,
+      "positive_net_probability": 0.4761904761904761,
+      "wilson_low": 0.2834371229676294,
+      "wilson_high": 0.6763078209973324,
+      "mean_net_points": -22.74880952380952,
+      "median_mfe_points": 109.25,
+      "median_mae_points": 129.75,
+      "note": "Descriptive overlapping paths; Wilson independence assumption approximate, no multiple-comparison significance claim"
+    },
+    {
+      "quality_view": "all",
+      "half": "all",
+      "regime": "narrow",
+      "entry_ny": "09:30",
+      "horizon": "60m",
+      "direction": 1,
+      "n": 18,
+      "positive_gross_probability": 0.4444444444444444,
+      "positive_net_probability": 0.4444444444444444,
+      "wilson_low": 0.2455923110138912,
+      "wilson_high": 0.6628393057174837,
+      "mean_net_points": -35.641666666666666,
+      "median_mfe_points": 61.875,
+      "median_mae_points": 68.625,
+      "note": "Descriptive overlapping paths; Wilson independence assumption approximate, no multiple-comparison significance claim"
+    }
+  ],
+  "baseline": [
+    {
+      "quality_view": "all",
+      "half": "all",
+      "entry_ny": "09:30",
+      "horizon": "15m",
+      "direction": 1,
+      "n": 77,
+      "mean_gross_points": -5.253246753246753,
+      "mean_net_points": -6.4782467532467525,
+      "win_rate_net": 0.4675324675324675,
+      "return_points_p05": -151.85,
+      "return_points_p25": -63.25,
+      "return_points_p50": -2.75,
+      "return_points_p75": 46.25,
+      "return_points_p95": 122.60000000000002,
+      "mfe_points_p05": 3.35,
+      "mfe_points_p25": 16.75,
+      "mfe_points_p50": 38.75,
+      "mfe_points_p75": 87.5,
+      "mfe_points_p95": 154.55,
+      "mae_points_p05": 10.25,
+      "mae_points_p25": 20.25,
+      "mae_points_p50": 49.75,
+      "mae_points_p75": 95.75,
+      "mae_points_p95": 172.65000000000003
+    },
+    {
+      "quality_view": "all",
+      "half": "all",
+      "entry_ny": "09:30",
+      "horizon": "30m",
+      "direction": 1,
+      "n": 77,
+      "mean_gross_points": -4.383116883116883,
+      "mean_net_points": -5.608116883116885,
+      "win_rate_net": 0.5454545454545454,
+      "return_points_p05": -200.5,
+      "return_points_p25": -81.25,
+      "return_points_p50": 13.0,
+      "return_points_p75": 71.75,
+      "return_points_p95": 157.60000000000016,
+      "mfe_points_p05": 3.35,
+      "mfe_points_p25": 25.25,
+      "mfe_points_p50": 58.25,
+      "mfe_points_p75": 99.0,
+      "mfe_points_p95": 220.45000000000005,
+      "mae_points_p05": 10.25,
+      "mae_points_p25": 22.75,
+      "mae_points_p50": 64.5,
+      "mae_points_p75": 132.75,
+      "mae_points_p95": 235.45
+    },
+    {
+      "quality_view": "all",
+      "half": "all",
+      "entry_ny": "09:30",
+      "horizon": "60m",
+      "direction": 1,
+      "n": 77,
+      "mean_gross_points": -15.63961038961039,
+      "mean_net_points": -16.864610389610384,
+      "win_rate_net": 0.4415584415584415,
+      "return_points_p05": -218.7,
+      "return_points_p25": -118.5,
+      "return_points_p50": -40.0,
+      "return_points_p75": 92.25,
+      "return_points_p95": 238.2,
+      "mfe_points_p05": 3.35,
+      "mfe_points_p25": 29.25,
+      "mfe_points_p50": 82.0,
+      "mfe_points_p75": 149.5,
+      "mfe_points_p95": 255.95000000000013,
+      "mae_points_p05": 10.85,
+      "mae_points_p25": 38.75,
+      "mae_points_p50": 105.25,
+      "mae_points_p75": 189.75,
+      "mae_points_p95": 300.25000000000006
+    },
+    {
+      "quality_view": "all",
+      "half": "all",
+      "entry_ny": "09:30",
+      "horizon": "noon",
+      "direction": 1,
+      "n": 77,
+      "mean_gross_points": -25.63961038961039,
+      "mean_net_points": -26.86461038961039,
+      "win_rate_net": 0.4805194805194805,
+      "return_points_p05": -339.2,
+      "return_points_p25": -134.25,
+      "return_points_p50": -6.25,
+      "return_points_p75": 106.5,
+      "return_points_p95": 217.80000000000004,
+      "mfe_points_p05": 4.5,
+      "mfe_points_p25": 36.0,
+      "mfe_points_p50": 96.25,
+      "mfe_points_p75": 179.0,
+      "mfe_points_p95": 299.70000000000005,
+      "mae_points_p05": 10.85,
+      "mae_points_p25": 48.75,
+      "mae_points_p50": 132.75,
+      "mae_points_p75": 252.0,
+      "mae_points_p95": 406.50000000000006
+    }
+  ],
+  "methodology": {
+    "roll_trade_date": "2025-03-19",
+    "roll_timestamp_utc": "2025-03-18T22:00:00Z",
+    "tick_points": 0.25,
+    "point_value_usd": 20,
+    "slippage_ticks_per_side": 2,
+    "commission_rt_usd": 4.5,
+    "cost_rt_points": 1.225,
+    "cost_rt_usd": 24.5,
+    "atr": "SMA of last 14 valid completed RTH true ranges, same contract only; no warmup substitution",
+    "vwap": "Session 18:00 NY anchored volume-weighted HLC3 proxy; population weighted SD of HLC3, not trade-level VWAP",
+    "vcr": "last 30 contiguous 1m log-return population SD / median same-clock SD from prior 20 observations, minimum 10",
+    "rvol": "cumulative session volume / median same-clock cumulative volume of prior 20 complete prefixes, minimum 10",
+    "orb_volume": "completed breakout bar volume / median same NY minute volume from prior 20 sessions, minimum 10",
+    "ATR_history": "Invalid RTH or its immediately following TR omitted, last 14 valid TR observations required",
+    "signal_timing": "Signals use completed minute bars; entry next exact-minute open. All positions flat by noon.",
+    "A": "London sweep high or low 08:30-10:15, strict close back inside range, then directional VWAP close cross on same/later completed bar before 10:15; first signal per day",
+    "B": "ORB5 and ORB15 separately: first close beyond completed range 09:35/09:45-11:00, volume >1.5x prior same-clock median and close on same VWAP side",
+    "C": "First close with |VWAP z|>2 during 10:30-11:30, fade toward VWAP frozen at signal, only if target lies in profit direction at next open",
+    "risk": "A/B SL 0.25 prior ATR and TP 0.50 prior ATR; C SL 0.25 ATR and frozen VWAP TP. Distances floored/ceiled conservatively to tick grid. Fixed, not optimized.",
+    "fills": "One trade per strategy/day, independent strategies not combined portfolio. Gap SL fills worse open; gap TP capped target. Same bar SL+TP -> SL. Costs charged on every exit.",
+    "D": "Overnight 18:00-09:30 high-low / prior ATR: narrow <0.5, broad >1.2, middle otherwise; conditioning four entry times and four horizons",
+    "split": "Chronological trading-date halves shared across all analyses, not split by trade counts",
+    "inference": "5-trading-day circular moving-block bootstrap on daily PnL including zero-trade eligible dates; 2000 replicates; Holm across four strategy screens per quality view; exploratory, no independent holdout"
+  },
+  "checks": {
+    "unique_sorted_index": true,
+    "roll_selection": true,
+    "no_cross_contract_or_day_returns": true,
+    "vwap_resets": true,
+    "anchor_availability_masks": true,
+    "dst_checks": true,
+    "cost_reconciliation": true,
+    "next_bar_entries": true,
+    "orb5_vs_orb15_distinct_windows": true,
+    "synthetic_worst_case_fill": true,
+    "synthetic_gap_stop_fill": true,
+    "future_truncation_invariance": true,
+    "parquet_exact_roundtrip": true,
+    "csv_ohlcv_roundtrip": true,
+    "strict_json_parsing": true,
+    "raw_source_hashes_unchanged": true,
+    "independent_pnl_reconciliation": true,
+    "baseline_long_short_cost_identity": true,
+    "same_contract_previous_rth_at_roll": true,
+    "independent_day_quality_counts": true
+  },
+  "limitations": [
+    "Historical Dec2024\u2013Apr2025 only, not current market signals.",
+    "No independent holdout; additional robustness probes viewed after original results.",
+    "Direction control uses same selected entries/risk distances, not a randomized independent experiment.",
+    "Cost estimates and OHLC fill model, not broker-verified execution.",
+    "HLC3 VWAP proxy; raw data, local paths and trade-level prices not published.",
+    "Strategy equities are independent screens, not an additive investment portfolio.",
+    "Broad overnight regime has only three observations; no reliable edge conclusion.",
+    "Vendor redistribution rights are not certified; only derived aggregate research exported."
+  ]
+}

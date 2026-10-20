@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "e2979e3b199eb1eaf612b5848b636cc4fb5b80befdae28200bb969fb15f80f92",
+      "rows": 11969,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "d3728679128f5640dd79f4b291c1721069d92e2a2c698ec9f36f292e1c05f888",
+      "rows": 14520,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "f9c15773ad15a2e6a8438aa35d737f9d5523e5e4b920992a131ef65f2b31a3c5",
+      "rows": 14520,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "sha256": "556843730f8a0172b0e5677380236c2649533036f38d499f80983e2f4bc5ef67",
+      "rows": 14760,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "sha256": "1930aaeac611492d8763fabaff3852b63cbffa99af92f37c8538f301899e26d7",
+      "rows": 14519,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "sha256": "b4dec48a466e848ecd7dd78058a0ccf1389289cde9d0ec74d5a0ef100c943670",
+      "rows": 14759,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "sha256": "ed82e77acb77ba78431a3d66aa82419025b8d1d9554573b00a5e8062680b1047",
+      "rows": 7847,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-8.csv",
+      "sha256": "8bfff8352b7cf9a49b44b4e759402cb230f1cd550db142f0a729a673212777f9",
+      "rows": 13056,
+      "contract": "NQH25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "bc7b294bbdbbe892fc8fb8208dc854e1db4b96a93e5fff6583fd402e2f04ec8f",
+      "rows": 11950,
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "bd73a92c5a34752296420899cd0ce60d17c15deed7d6ee7669fe1ef07cfe138b",
+      "rows": 14757,
+      "contract": "NQM25"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "e5280bb16101963998060d3cc7a10efdc02d33b082251542cefd558c8228d6ef",
+      "rows": 13368,
+      "contract": "NQM25"
+    }
+  ],
+  "reference_files": {
+    "nq-overnight.json": "bbad362b47f2f6736e705a19b4df8041032e6c2537ab6fe0c25094cc823239cf",
+    "research09.json": "141205a8057d78a1e5493cbd17939a610c8d9d243edc697d1ff760ac54e20dea"
+  },
+  "expected": {
+    "bars": 106678,
+    "eligible_days": 42,
+    "orb15_trades": 37,
+    "orb15_net_points": 919.425,
+    "orb15_display_points": "919.43",
+    "orb15_trade_ledger_sha256": "c0595e9049cb5a52679845b3d933bc5ee85117861ee1fae35b8cb059eeca98af"
+  }
+}

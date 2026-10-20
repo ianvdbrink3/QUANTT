@@ -6,7 +6,9 @@
     "dev": "next dev --webpack --hostname 0.0.0.0",
     "build": "next build --webpack",
     "start": "next start --hostname 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "verify:research": "node scripts/reproduce-research",
+    "reproduce:research": "node scripts/reproduce-research --publish"
   },
   "dependencies": {
     "lucide-react": "1.59.0",
