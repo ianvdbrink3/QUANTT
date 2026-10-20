@@ -1,5 +1,2 @@
-import Dashboard from "@/components/Dashboard";
-import { loadData } from "@/lib/data";
-export default async function Page() {
-  return <Dashboard view="explorer" data={await loadData()} />;
-}
+import { redirect } from "next/navigation";
+export default function Page() { redirect("/research/nq"); }
