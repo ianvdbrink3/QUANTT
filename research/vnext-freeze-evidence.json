@@ -1,0 +1,19 @@
+{
+  "freeze_id": "VNEXT_159_2026-10-21",
+  "historical_commit": "1be0a10e0afd2713957b1a6e262524613cdc07fe",
+  "historical_tests_preserved": 207,
+  "new_integrity_tests": 4,
+  "pytest_passed": 211,
+  "production_build_local": "PASS",
+  "frozen_files_verified": 73,
+  "baseline_release_guard": "PASS",
+  "prior_public_exports_changed": false,
+  "local_browser": "PASS: freeze section visible; no captured error logs",
+  "local_downloads_byte_identical": 3,
+  "future_strategy_scoring_run": false,
+  "inventory_files": 95,
+  "inventory_read_mode": "TIMESTAMP_COLUMN_ONLY_PLUS_WHOLE_FILE_SHA256",
+  "inventory_errors": 0,
+  "raw_or_individual_trades_published": false,
+  "deployment_note": "Production must be checked against the commit containing this evidence; READY is not asserted by this pre-publication file."
+}
