@@ -1,8 +1,8 @@
 {
   "checked_on": "2026-10-21",
   "scope": "Source quality, volume rollover and bulk procurement research only",
-  "python_tests_passed": 232,
-  "new_regression_tests": 6,
+  "python_tests_passed": 234,
+  "new_regression_tests": 8,
   "frozen_files_byte_identical": 73,
   "frozen_eligible_days": 159,
   "historical_data_parity": {"files":30,"contract_bars":301299,"strategies_called":0,"future_rows_read":0},

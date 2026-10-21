@@ -68,3 +68,25 @@ def test_public_december_provenance_and_no_outcomes():
 def test_rejected_capped_download_cannot_be_ingested():
     rejected = json.loads((ROOT/'research/december-overlap-protocol.json').read_text())['rejected_download']
     assert all(name != rejected['filename'] and digest != rejected['sha256'] for _, name, digest in december.SOURCES)
+
+
+def test_verify_reads_staged_raw_and_cannot_hide_tampering_behind_download(tmp_path):
+    downloads = tmp_path/'downloads'
+    downloads.mkdir()
+    original = downloads/'nqh26_test.csv'
+    original.write_text('original bytes')
+    digest = adapter.sha(original)
+    target = december.registered_source(tmp_path, downloads, original.name, digest, stage=True)
+    assert december.registered_source(tmp_path, downloads, original.name, digest) == target
+    target.write_text('tampered raw')
+    with pytest.raises(ValueError, match='staged source hash mismatch'):
+        december.registered_source(tmp_path, downloads, original.name, digest)
+    assert original.read_text() == 'original bytes'
+
+
+def test_verify_requires_raw_staging_and_never_implicitly_copies_download(tmp_path):
+    original = tmp_path/'nqh26_test.csv'
+    original.write_text('original bytes')
+    with pytest.raises(FileNotFoundError):
+        december.registered_source(tmp_path, tmp_path, original.name, adapter.sha(original))
+    assert not (tmp_path/'data/raw/oos'/original.name).exists()

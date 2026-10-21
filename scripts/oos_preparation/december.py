@@ -16,6 +16,18 @@ SOURCES = [
 ]
 
 
+def registered_source(root, downloads, name, digest, stage=False):
+    target = root/'data/raw/oos'/name
+    if stage:
+        original = downloads/name
+        if sha(original) != digest:
+            raise ValueError('December original hash mismatch: '+name)
+        stage_immutable(original, target)
+    if sha(target) != digest:
+        raise ValueError('December staged source hash mismatch: '+name)
+    return target
+
+
 def volume_evidence(frame, calendar):
     rows = []
     for day in pd.bdate_range('2025-12-01', '2025-12-19').strftime('%Y-%m-%d'):
@@ -42,17 +54,10 @@ def run(downloads, stage=False):
             raise ValueError('Previously registered source changed')
         parts.append(load_csv(p, 'NQZ25'))
     for contract, name, digest in SOURCES:
-        target = ROOT/'data/raw/oos'/name
-        source = downloads/name
-        if not source.exists():
-            source = target
-        if sha(source) != digest:
-            raise ValueError('December source hash mismatch: '+name)
+        source = registered_source(ROOT, downloads, name, digest, stage)
         b = load_csv(source, contract)
         if len(b) >= 19999:
             raise ValueError('Possible vendor download cap')
-        if stage:
-            stage_immutable(source, target)
         manifest.append({'filename': name, 'contract': contract, 'sha256': digest,
                          'rows': len(b), 'first_utc': b.index.min().isoformat(),
                          'last_utc': b.index.max().isoformat(),
