@@ -1,4 +1,5 @@
 import freeze from '../../../public/data/research-freeze.json';
+import preparation from '../../../public/data/research-oos-preparation.json';
 
 export default function FrozenResearch() {
   return <section id="frozen-vnext" className="nq-section" aria-labelledby="frozen-title">
@@ -16,5 +17,16 @@ export default function FrozenResearch() {
     <a href="/data/research-freeze.json" download>Download bevroren protocol en bestandsinventaris</a>{' · '}
     <a href="/data/research-freeze.md" download>Lees de bevroren onderzoeksstand</a>{' · '}
     <a href="/data/research-data-inventory.md" download>Lees wat aanwezig is en nog ontbreekt</a>
+    <div id="oos-preparation">
+      <h3>Vervolgvoorbereiding · holdout blijft ongescoord</h3>
+      <p className="nq-warning">Status: {preparation.status}. Zes bronblokken privé vastgelegd, {preparation.standard_clean_days} schone normale dagen en {preparation.complete_noon_prefix_days} complete ochtend-prefixen. Geen strategie-uitkomsten geopend. H26/M26/U26/Z26, december-rollbewijs en volledige productkalender ontbreken nog; de voorbereiding geeft geen toestemming voor scoring.</p>
+      <p className="nq-note">De aparte data-adapter reproduceert alle 30 historische bronbestanden en de juni-/septemberroll zonder strategieën uit te voeren. Onbekende kalenderdatums en conflicterende overlap worden geweigerd. Eerdere kwaliteitsinspectie is geregistreerd; volledige niet-gebruikgarantie is niet bewezen.</p>
+      <details className="nq-details"><summary>Powerplanning · alleen oude onderzoeksdata</summary>
+        <p>Planning met de reeds verbruikte 159 dagen, niet met toekomstige resultaten. Bij een hypothetische echte netto edge van 10 punten per eligible dag is de normale benadering circa 12% power bij 52 dagen en 38% bij 240 dagen. Voor 20 punten is dit circa 34% en 91%. Dit is geen exacte power van het bevroren gezamenlijke bootstrap-/CI-/PF-criterium en geen reden om de vaste jaarhorizon of regels te wijzigen.</p>
+        <p>In deze voorbereiding zijn geen nieuwe signalen of rendementen berekend. Kalenderuitzonderingen en opwarmhistorie worden niet versoepeld om meer trades te krijgen. De bron heeft geen tick-aantallen.</p>
+      </details>
+      <a href="/data/research-oos-preparation.json" download>Download voorbereiding en poweraannames</a>{' · '}
+      <a href="/data/research-oos-preparation.md" download>Lees uitvoering, beperkingen en downloadplan</a>
+    </div>
   </section>;
 }

@@ -1,0 +1,77 @@
+{
+  "phase": "QUALITY_ONLY_NOT_SCORING_AUTHORIZATION",
+  "source_timezone": "America/Chicago",
+  "session_convention": "Civil NY 18:00-17:00, not CME clearing TradeDate",
+  "sources": [
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "contract": "NQZ25",
+      "sha256": "c550853a9b971b69861056d807afb4e318f8ca49aa4bb5724a78143afb66e4bb",
+      "rows": 13799,
+      "first_utc": "2025-09-21T22:00:00+00:00",
+      "last_utc": "2025-10-03T20:59:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "contract": "NQZ25",
+      "sha256": "57199908b8ceac9a171eb4dde4af3bacd093921f39a98293761d9c93b2c44b7d",
+      "rows": 14760,
+      "first_utc": "2025-10-03T05:00:00+00:00",
+      "last_utc": "2025-10-17T20:59:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "contract": "NQZ25",
+      "sha256": "5ed776215dff7f062af867344165161950c03b4eabb8ecdf42175548df9a9929",
+      "rows": 14760,
+      "first_utc": "2025-10-17T05:00:00+00:00",
+      "last_utc": "2025-10-31T20:59:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "contract": "NQZ25",
+      "sha256": "97d8e0ce86cc52fedd9a3a447319020e47c0ece5c702b28faad79c6c05af9246",
+      "rows": 14760,
+      "first_utc": "2025-10-31T05:00:00+00:00",
+      "last_utc": "2025-11-14T21:59:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "contract": "NQZ25",
+      "sha256": "bd847b830342f9d2c04f8698dd2546c7498714da659c30a6c098931658463917",
+      "rows": 13648,
+      "first_utc": "2025-11-14T06:00:00+00:00",
+      "last_utc": "2025-11-28T18:14:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "contract": "NQZ25",
+      "sha256": "85e095a1eb26bbd44ad8f8021e0b417115de4da2a3a5510205f7f869b3427b92",
+      "rows": 14085,
+      "first_utc": "2025-11-28T13:30:00+00:00",
+      "last_utc": "2025-12-12T21:59:00+00:00",
+      "staged_and_verified": true,
+      "prior_access": "2026-10-19 quality/consolidation; 2026-10-21 inventory and quality audit; no strategy use found, not proven never-used"
+    }
+  ],
+  "calendar_sha256": "0158e0a6e128c55e8d690eadd198317de3126965eba5e83853cfb3f22abd4bb6",
+  "prior_quality_report_sha256": "8a53779d933e08e74180d454d52a76416835f21df8864c1b4f3114eb7fd0e895",
+  "frozen_protocol_sha256": "5977a76b74926f6df137db61a195f8a551998ded8daa2d6c39a3c80d6a6f7997",
+  "license_status": "PENDING_VERIFICATION_NO_RAW_PUBLICATION"
+}

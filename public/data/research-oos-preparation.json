@@ -1,0 +1,219 @@
+{
+  "classification": "PREPARATION_ONLY_HOLDOUT_UNSCORED",
+  "status": "DATA_INSUFFICIENT",
+  "target_period": [
+    "2025-10-01",
+    "2026-09-30"
+  ],
+  "blockers": [
+    "Missing NQH26/NQM26/NQU26/NQZ26 and joint pre-roll overlaps",
+    "December crossover not established from incoming volume",
+    "NQ-specific calendar beyond 2025-12-12 not verified",
+    "Vendor usage rights/publication vintages not independently confirmed",
+    "Prior strategy non-use cannot be certified from incomplete local execution logs",
+    "No authenticated automated Barchart download session available; public page has verification challenge"
+  ],
+  "unique_bars_oct_dec": 72028,
+  "session_dates": 53,
+  "standard_clean_days": 51,
+  "complete_noon_prefix_days": 52,
+  "active_contract_eligible_days": null,
+  "eligibility_note": "52 prefix-suitable days conditional on frozen historical warmup; not scored, not certified active through December without H26 volume comparison. Thanksgiving included by unchanged all-view.",
+  "unresolved_missing_minutes": 2,
+  "missing_full_dates": [],
+  "prior_access_evidence": "Existing 2026-10-19 quality report and source hashes match; historical runners capped at Sep30. No October-December strategy ledger found in inspected local outputs. Absence is not proof of non-execution.",
+  "scoring_run": false,
+  "signals_computed": false,
+  "power_planning": {
+    "classification": "PLANNING_ONLY_CONSUMED_DATA_NORMAL_APPROXIMATION_NOT_OOS_RESULTS",
+    "input_sha256": {
+      "trades": "dfe1a19f2452e130fa298ea522ec90ea9ea4dccdd7a7c4b9c45988227ea23d6a",
+      "eligibility": "24ee41ea92413dd71be529dd266a10c8777b713df39f4e23da52ef6d7df1e64e"
+    },
+    "historical_eligible_days": 159,
+    "daily_sd_points": 94.03489097607385,
+    "fixed_lag4_HAC_sd_points": 82.83726191622596,
+    "alpha_two_sided": 0.05,
+    "target_power": 0.8,
+    "scenarios": [
+      {
+        "variance_inflation": 1.0,
+        "assumed_net_points_per_eligible_day": 2.5,
+        "approx_days_for_80pct_power": 11105,
+        "approx_power_52_days": 0.05422090040257879,
+        "approx_power_200_days": 0.06634585641650843,
+        "approx_power_240_days": 0.06964953083528318
+      },
+      {
+        "variance_inflation": 1.0,
+        "assumed_net_points_per_eligible_day": 5.0,
+        "approx_days_for_80pct_power": 2777,
+        "approx_power_52_days": 0.06700572082869599,
+        "approx_power_200_days": 0.11686795190832827,
+        "approx_power_240_days": 0.130617165378449
+      },
+      {
+        "variance_inflation": 1.0,
+        "assumed_net_points_per_eligible_day": 10.0,
+        "approx_days_for_80pct_power": 695,
+        "approx_power_52_days": 0.11961055259953202,
+        "approx_power_200_days": 0.32444692936796365,
+        "approx_power_240_days": 0.37748586398184064
+      },
+      {
+        "variance_inflation": 1.0,
+        "assumed_net_points_per_eligible_day": 20.0,
+        "approx_days_for_80pct_power": 174,
+        "approx_power_52_days": 0.33519882413234403,
+        "approx_power_200_days": 0.8526544463486829,
+        "approx_power_240_days": 0.9090568341814603
+      },
+      {
+        "variance_inflation": 1.5,
+        "assumed_net_points_per_eligible_day": 2.5,
+        "approx_days_for_80pct_power": 16658,
+        "approx_power_52_days": 0.05281157277170868,
+        "approx_power_200_days": 0.06086440241339421,
+        "approx_power_240_days": 0.06305320446214971
+      },
+      {
+        "variance_inflation": 1.5,
+        "assumed_net_points_per_eligible_day": 5.0,
+        "approx_days_for_80pct_power": 4165,
+        "approx_power_52_days": 0.06130175316219675,
+        "approx_power_200_days": 0.09418036408469704,
+        "approx_power_240_days": 0.10321689832949973
+      },
+      {
+        "variance_inflation": 1.5,
+        "assumed_net_points_per_eligible_day": 10.0,
+        "approx_days_for_80pct_power": 1042,
+        "approx_power_52_days": 0.09598319907674559,
+        "approx_power_200_days": 0.23279624044943756,
+        "approx_power_240_days": 0.2698137296773225
+      },
+      {
+        "variance_inflation": 1.5,
+        "assumed_net_points_per_eligible_day": 20.0,
+        "approx_days_for_80pct_power": 261,
+        "approx_power_52_days": 0.24022533534991317,
+        "approx_power_200_days": 0.6900345736188359,
+        "approx_power_240_days": 0.7674097213495434
+      },
+      {
+        "variance_inflation": 2.0,
+        "assumed_net_points_per_eligible_day": 2.5,
+        "approx_days_for_80pct_power": 22210,
+        "approx_power_52_days": 0.052107788610628925,
+        "approx_power_200_days": 0.05813567353826547,
+        "approx_power_240_days": 0.059771931010238415
+      },
+      {
+        "variance_inflation": 2.0,
+        "assumed_net_points_per_eligible_day": 5.0,
+        "approx_days_for_80pct_power": 5553,
+        "approx_power_52_days": 0.05846268809630101,
+        "approx_power_200_days": 0.08296746620992418,
+        "approx_power_240_days": 0.0896835916831421
+      },
+      {
+        "variance_inflation": 2.0,
+        "assumed_net_points_per_eligible_day": 10.0,
+        "approx_days_for_80pct_power": 1389,
+        "approx_power_52_days": 0.08430780091257954,
+        "approx_power_200_days": 0.18623493188237195,
+        "approx_power_240_days": 0.2141875775641583
+      },
+      {
+        "variance_inflation": 2.0,
+        "assumed_net_points_per_eligible_day": 20.0,
+        "approx_days_for_80pct_power": 348,
+        "approx_power_52_days": 0.19182494589227708,
+        "approx_power_200_days": 0.5662999128513702,
+        "approx_power_240_days": 0.6442824888642664
+      }
+    ],
+    "limitations": "Not power of the frozen bootstrap + PF + CI joint rule. Normal approximation with historical noise and hypothetical constant effect; serial dependence, tails and regime shifts may worsen calibration. HAC is a noisy descriptive diagnostic, not a fitted planning choice. No future returns read, no required sample-size change, no optional stopping rule, no guarantee one year suffices."
+  },
+  "quality_exceptions": [
+    {
+      "day": "2025-11-27",
+      "bars": 1140,
+      "expected": 1140,
+      "unresolved_missing": 0,
+      "unexpected": 0,
+      "standard_clean": false,
+      "noon_prefix_complete": true,
+      "missing_utc": []
+    },
+    {
+      "day": "2025-11-28",
+      "bars": 508,
+      "expected": 510,
+      "unresolved_missing": 2,
+      "unexpected": 0,
+      "standard_clean": false,
+      "noon_prefix_complete": false,
+      "missing_utc": [
+        "2025-11-28T01:47:00+00:00",
+        "2025-11-28T02:22:00+00:00"
+      ]
+    }
+  ],
+  "source_count": 6,
+  "source_manifest_sha256": "d0e9fc8fbc082e4b21e0c7e88b63facf4b5ea84072e8defce470bf1bdd8a25fc",
+  "calendar_sha256": "0158e0a6e128c55e8d690eadd198317de3126965eba5e83853cfb3f22abd4bb6",
+  "frozen_protocol_sha256": "5977a76b74926f6df137db61a195f8a551998ded8daa2d6c39a3c80d6a6f7997",
+  "download_plan": {
+    "phase": "DATA_COLLECTION_ONLY_NO_STRATEGY_RESULTS",
+    "target_period": [
+      "2025-10-01",
+      "2026-09-30"
+    ],
+    "provider": "Existing user Barchart access only; no new paid subscription or API purchase authorized",
+    "settings": "Intraday (NOT Nearby), 1 minute, Ascending Date, individual quarterly contract, contract volume not total market volume/open interest",
+    "batching": "Maximum 20000 records per request. Use at most 10 calendar days per export, adjacent exports overlap one full session when possible. Reject a response hitting 20000 until truncation is excluded. Preserve original files and download footer.",
+    "jobs": [
+      {
+        "contract": "NQZ25",
+        "from": "2025-12-01",
+        "through": "2025-12-19",
+        "reason": "Extend outgoing December contract past existing Dec12 coverage to establish actual crossover, not a guessed roll date",
+        "url": "https://www.barchart.com/futures/quotes/NQZ25/historical-download"
+      },
+      {
+        "contract": "NQH26",
+        "from": "2025-12-01",
+        "through": "2026-03-20",
+        "reason": "December overlap, first 2026 active block and March outgoing overlap",
+        "url": "https://www.barchart.com/futures/quotes/NQH26/historical-download"
+      },
+      {
+        "contract": "NQM26",
+        "from": "2026-03-01",
+        "through": "2026-06-19",
+        "reason": "March incoming overlap and June outgoing overlap",
+        "url": "https://www.barchart.com/futures/quotes/NQM26/historical-download"
+      },
+      {
+        "contract": "NQU26",
+        "from": "2026-06-01",
+        "through": "2026-09-18",
+        "reason": "June incoming overlap and September outgoing overlap",
+        "url": "https://www.barchart.com/futures/quotes/NQU26/historical-download"
+      },
+      {
+        "contract": "NQZ26",
+        "from": "2026-09-01",
+        "through": "2026-09-30",
+        "reason": "September incoming overlap and final active sessions",
+        "url": "https://www.barchart.com/futures/quotes/NQZ26/historical-download"
+      }
+    ],
+    "range_caveat": "These are collection windows, NEVER hardcoded activation dates or proof of contract expiration. If qualified overlap fails to contain a crossover, extend overlap further backward before any scoring, or stay DATA_INSUFFICIENT. Hours/expiration and calendar require product-specific verification.",
+    "existing_sources": "NQZ25 Oct1-Dec12 already present and staged privately; do not redownload the whole block without a quality reason",
+    "access_state": "BLOCKED: Safari app inspection timed out; public Barchart URL returns JS/robot verification. No challenge bypass or credential extraction attempted.",
+    "next_input_needed": "A controllable, already-authenticated Barchart browser session with historical download rights, or the exported CSVs. No password/API secret should be pasted into chat."
+  },
+  "sealing_limit": "Software separation and integrity checks, NOT OS-level access control or proof nobody inspected prices."
+}

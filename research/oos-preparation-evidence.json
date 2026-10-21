@@ -1,0 +1,20 @@
+{
+  "status": "PREPARATION_VERIFIED_COLLECTION_BLOCKED",
+  "baseline_and_vnext159_frozen_files_unchanged": 73,
+  "pytest_passed": 226,
+  "new_preparation_tests": 15,
+  "historical_raw_files_exact_import_parity": 30,
+  "historical_deduplicated_contract_bars": 301299,
+  "historical_roll_parity": ["2025-06-17", "2025-09-17"],
+  "historical_signal_or_feature_recalculation": false,
+  "future_signals_or_returns_computed": false,
+  "private_sources_staged_without_modification": 6,
+  "two_preparation_runs_byte_identical": true,
+  "normal_approximation_power_inputs": "SHA256-locked already-consumed 159-day ledgers only; no Oct2025+ returns",
+  "production_build_local": "PASS",
+  "browser_preparation_section": "PASS; DATA_INSUFFICIENT visible, no captured console errors",
+  "local_downloads_match_saved_bytes": 2,
+  "new_contract_data_downloaded": false,
+  "remaining_input": "Controllable authenticated Barchart session or missing CSV exports; product-calendar evidence and license/contamination review",
+  "deployment_note": "Pre-publication evidence; production READY must be checked against the commit containing this file."
+}

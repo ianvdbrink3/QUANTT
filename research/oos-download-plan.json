@@ -1,0 +1,18 @@
+{
+  "phase": "DATA_COLLECTION_ONLY_NO_STRATEGY_RESULTS",
+  "target_period": ["2025-10-01", "2026-09-30"],
+  "provider": "Existing user Barchart access only; no new paid subscription or API purchase authorized",
+  "settings": "Intraday (NOT Nearby), 1 minute, Ascending Date, individual quarterly contract, contract volume not total market volume/open interest",
+  "batching": "Maximum 20000 records per request. Use at most 10 calendar days per export, adjacent exports overlap one full session when possible. Reject a response hitting 20000 until truncation is excluded. Preserve original files and download footer.",
+  "jobs": [
+    {"contract":"NQZ25", "from":"2025-12-01", "through":"2025-12-19", "reason":"Extend outgoing December contract past existing Dec12 coverage to establish actual crossover, not a guessed roll date", "url":"https://www.barchart.com/futures/quotes/NQZ25/historical-download"},
+    {"contract":"NQH26", "from":"2025-12-01", "through":"2026-03-20", "reason":"December overlap, first 2026 active block and March outgoing overlap", "url":"https://www.barchart.com/futures/quotes/NQH26/historical-download"},
+    {"contract":"NQM26", "from":"2026-03-01", "through":"2026-06-19", "reason":"March incoming overlap and June outgoing overlap", "url":"https://www.barchart.com/futures/quotes/NQM26/historical-download"},
+    {"contract":"NQU26", "from":"2026-06-01", "through":"2026-09-18", "reason":"June incoming overlap and September outgoing overlap", "url":"https://www.barchart.com/futures/quotes/NQU26/historical-download"},
+    {"contract":"NQZ26", "from":"2026-09-01", "through":"2026-09-30", "reason":"September incoming overlap and final active sessions", "url":"https://www.barchart.com/futures/quotes/NQZ26/historical-download"}
+  ],
+  "range_caveat": "These are collection windows, NEVER hardcoded activation dates or proof of contract expiration. If qualified overlap fails to contain a crossover, extend overlap further backward before any scoring, or stay DATA_INSUFFICIENT. Hours/expiration and calendar require product-specific verification.",
+  "existing_sources": "NQZ25 Oct1-Dec12 already present and staged privately; do not redownload the whole block without a quality reason",
+  "access_state": "BLOCKED: Safari app inspection timed out; public Barchart URL returns JS/robot verification. No challenge bypass or credential extraction attempted.",
+  "next_input_needed": "A controllable, already-authenticated Barchart browser session with historical download rights, or the exported CSVs. No password/API secret should be pasted into chat."
+}
