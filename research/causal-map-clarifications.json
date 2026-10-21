@@ -1,0 +1,7 @@
+{
+  "kind": "TEXT_ONLY_ERRATUM_NO_METHOD_OR_RESULTS_CHANGE",
+  "field": "protocol.quarters",
+  "original": "including one-day2024Q4",
+  "correction": "The fixed435-day sample contains TWO dates in2024Q4:2024-12-30 and2024-12-31. The original method/code/input lock and results are preserved. All quarter event counts use actual source dates, not this mistaken prose.",
+  "selection_thresholds_horizons_statistics_changed": false
+}

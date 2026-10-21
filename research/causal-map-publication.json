@@ -1,0 +1,34 @@
+{
+  "status": "EXPLORATORY_CAUSAL_TIMING_SCAN_NOT_VALIDATED_EDGE",
+  "files_sha256": {
+    "public/data/research-causal-map.json": "67059b6360dc78b06ee907107af4cfc69755f976037df16b81dc4eee26b0c390",
+    "public/data/research-causal-map.ranking.csv": "9316739db6d671f20ac0f6bca05546e57460f0150ebf74cbd0611044d41f477e",
+    "public/data/research-causal-map.quarters.csv": "b2628ccfde8c7ee06789d41c0c714c2819e95b5e7922e3502983a9f6ac0d32b9",
+    "public/data/research-causal-map.calibration.csv": "e109ed0c3eee07b49f49b7a149c0163e188208afa5eec1e1f6457fa74f97334c",
+    "public/data/research-causal-map.eligibility.csv": "62be762a663702fe33c6c780ca0854a222d7a4d202a65f054812a90b33b3deec",
+    "public/data/research-causal-map.md": "010cdd0a76ed45ce094efbdfc98494464df0466c880ec94910b853ab8b062ac9"
+  },
+  "category_summary": {
+    "A": {
+      "cells": 32,
+      "tested_cells": 32,
+      "joint_significant_cells": 0
+    },
+    "B": {
+      "cells": 32,
+      "tested_cells": 16,
+      "joint_significant_cells": 0
+    },
+    "C": {
+      "cells": 48,
+      "tested_cells": 36,
+      "joint_significant_cells": 0
+    },
+    "D": {
+      "cells": 16,
+      "tested_cells": 16,
+      "joint_significant_cells": 0
+    }
+  },
+  "joint_significant_cells": []
+}

@@ -1,0 +1,227 @@
+{
+  "status": "EXPLORATORY_CONSUMED_DATA_NOT_NEW_HOLDOUT",
+  "anchor_commit": "6149e043133487eea69ac9915a4f39e4fc3ae3e4",
+  "sample": "Exactly previous435 complete RTH days; context availability reported separately. No future-day exclusions based on returns.",
+  "hypotheses": [
+    {
+      "id": "A_PDH_ACCEPT",
+      "category": "A",
+      "label": "PDH: eerste bereik, close voorbij niveau",
+      "direction": "naar buiten"
+    },
+    {
+      "id": "A_PDH_REJECT",
+      "category": "A",
+      "label": "PDH: eerste bereik, close terug aan binnenzijde",
+      "direction": "naar binnen"
+    },
+    {
+      "id": "A_PDL_ACCEPT",
+      "category": "A",
+      "label": "PDL: eerste bereik, close voorbij niveau",
+      "direction": "naar buiten"
+    },
+    {
+      "id": "A_PDL_REJECT",
+      "category": "A",
+      "label": "PDL: eerste bereik, close terug aan binnenzijde",
+      "direction": "naar binnen"
+    },
+    {
+      "id": "A_ONH_ACCEPT",
+      "category": "A",
+      "label": "ONH: eerste bereik, close voorbij niveau",
+      "direction": "naar buiten"
+    },
+    {
+      "id": "A_ONH_REJECT",
+      "category": "A",
+      "label": "ONH: eerste bereik, close terug aan binnenzijde",
+      "direction": "naar binnen"
+    },
+    {
+      "id": "A_ONL_ACCEPT",
+      "category": "A",
+      "label": "ONL: eerste bereik, close voorbij niveau",
+      "direction": "naar buiten"
+    },
+    {
+      "id": "A_ONL_REJECT",
+      "category": "A",
+      "label": "ONL: eerste bereik, close terug aan binnenzijde",
+      "direction": "naar binnen"
+    },
+    {
+      "id": "B_GAP_UP_0930",
+      "category": "B",
+      "label": "GAP_UP vanaf 0930",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_GAP_UP_1000",
+      "category": "B",
+      "label": "GAP_UP vanaf 1000",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_GAP_DOWN_0930",
+      "category": "B",
+      "label": "GAP_DOWN vanaf 0930",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_GAP_DOWN_1000",
+      "category": "B",
+      "label": "GAP_DOWN vanaf 1000",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_EXTREME_ON_UP_0930",
+      "category": "B",
+      "label": "EXTREME_ON_UP vanaf 0930",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_EXTREME_ON_UP_1000",
+      "category": "B",
+      "label": "EXTREME_ON_UP vanaf 1000",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_EXTREME_ON_DOWN_0930",
+      "category": "B",
+      "label": "EXTREME_ON_DOWN vanaf 0930",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "B_EXTREME_ON_DOWN_1000",
+      "category": "B",
+      "label": "EXTREME_ON_DOWN vanaf 1000",
+      "direction": "met gap/overnight-verplaatsing"
+    },
+    {
+      "id": "C_0930_UP_SMALL",
+      "category": "C",
+      "label": "0930 | UP | SMALL",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_0930_UP_MID",
+      "category": "C",
+      "label": "0930 | UP | MID",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_0930_UP_LARGE",
+      "category": "C",
+      "label": "0930 | UP | LARGE",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_0930_DOWN_SMALL",
+      "category": "C",
+      "label": "0930 | DOWN | SMALL",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_0930_DOWN_MID",
+      "category": "C",
+      "label": "0930 | DOWN | MID",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_0930_DOWN_LARGE",
+      "category": "C",
+      "label": "0930 | DOWN | LARGE",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_UP_SMALL",
+      "category": "C",
+      "label": "1500 | UP | SMALL",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_UP_MID",
+      "category": "C",
+      "label": "1500 | UP | MID",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_UP_LARGE",
+      "category": "C",
+      "label": "1500 | UP | LARGE",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_DOWN_SMALL",
+      "category": "C",
+      "label": "1500 | DOWN | SMALL",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_DOWN_MID",
+      "category": "C",
+      "label": "1500 | DOWN | MID",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "C_1500_DOWN_LARGE",
+      "category": "C",
+      "label": "1500 | DOWN | LARGE",
+      "direction": "met reeds bekende sessierichting"
+    },
+    {
+      "id": "D_1m_HIGH",
+      "category": "D",
+      "label": "1m volumeschok op nieuw HIGH",
+      "direction": "naar nieuw extreem (negatief = omkeer)"
+    },
+    {
+      "id": "D_1m_LOW",
+      "category": "D",
+      "label": "1m volumeschok op nieuw LOW",
+      "direction": "naar nieuw extreem (negatief = omkeer)"
+    },
+    {
+      "id": "D_5m_HIGH",
+      "category": "D",
+      "label": "5m volumeschok op nieuw HIGH",
+      "direction": "naar nieuw extreem (negatief = omkeer)"
+    },
+    {
+      "id": "D_5m_LOW",
+      "category": "D",
+      "label": "5m volumeschok op nieuw LOW",
+      "direction": "naar nieuw extreem (negatief = omkeer)"
+    }
+  ],
+  "horizons": [
+    15,
+    30,
+    60,
+    "close"
+  ],
+  "A": "First reach of each PDH/PDL/ONH/ONL in RTH, including gap-over. First completed close beyond level=ACCEPT; otherwise REJECT. Direction fixed outward for ACCEPT, inward for REJECT. No later classification. First reach at final bar is counted but has no forward horizon.",
+  "B": "Gap up strictly open>PDH; gap down strictly open<PDL. Extreme overnight strictly abs(open-priorRTHclose)/priorATR14>=1.0. At09:30 open and10:00 prior09:59close. Overlapping gap and extreme groups intentionally retained in one family.",
+  "C": "At09:30 use18:00-09:30 overnight direction and range; no RTH direction exists yet. At15:00 use09:30open to14:59close and observed RTH range. Direction UP/DOWN (zero omitted); range/ATR SMALL<0.5, MID[0.5,1.2), LARGE>=1.2. First-half-hour and last-hour are included in four fixed horizons, not MOC order-flow proof.",
+  "D": "Completed aligned1m or5m block volume>linear empirical95th percentile of exactly20 preceding scheduled sessions at same clock; RVOL=current/previous20mean. All20 observations required. New strict RTH extreme relative to bars before block. Skip first block; both-sides blocks may emit both labels. Direction outward; negative forward mean=exhaustion.",
+  "context": "ATR14 mean of14 prior valid complete-session true ranges, point-in-time Panama offsets only when spread known before activation. PDH/PDL/priorclose from immediately previous scheduled complete RTH in current raw basis; no carry through incomplete session. Overnight exact18:00(previous civil date)-09:30 requires all930 minutes; absent levels remain missing. Price outcomes always raw active contract.",
+  "horizons_rule": "k=known boundary, endpointbar=k+h-1 or389; no shortening, no zero-length. Clock09:30 anchor=open; other anchors=last completed close. Excursions only bars k..endpoint; eventbar excluded. RTH close proxy=15:59barclose, not settlement/auction.",
+  "inference": "Pooled event mean. CR1 sandwich of within-day SUM residuals, t(event_days-1), min20 eventdays. Also daily-score HAC with Bartlett lags1..5, same tdf. Global Holm over32x4x2=256 prespecified log-bp zero-mean tests incl unavailable cells p=1. Points CI and MFE/MAE descriptive, no extra p-tests. Rank by maximum of two Holm p-values, then absolute mean bp, not chosen sign.",
+  "quarters": "Every calendar quarter including one-day2024Q4. No quarter p-values, no selection on quarter sign. Quarter counts/means/medians/positive fraction and MFE/MAE all reported.",
+  "calibration": {
+    "seed": 20261024,
+    "panels": 128,
+    "sessions_per_panel": 120,
+    "model": "Independent zero-mean Gaussian LOG innovations,8substeps/minute, independent overnight logjump and volume. No directional predictability; arithmetic-price Jensen drift is not zero. Same selector, horizons and inference. No rerun to significance."
+  },
+  "limitations": [
+    "Exploratory scan on consumed data, not preregistered independent confirmation.",
+    "Causal means information timing, not causal identification of institutional agents, stops or MOC orders.",
+    "Zero-mean drift tests do not establish incremental prediction beyond same-clock unconditional drift.",
+    "No execution assumptions, fees, trades or optimal parameters; favorable/adverse paths are not fillable profits.",
+    "Same vendor revised OHLCV, no historical publication-vintage certification. Minute timestamps and OHLC hide intrabar ordering.",
+    "Small subgroup counts, overlapping horizons, few quarters and asymptotic uncertainty limit interpretation. Nominal CIs are not simultaneous."
+  ]
+}

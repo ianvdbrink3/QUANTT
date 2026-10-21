@@ -1,0 +1,37 @@
+{
+  "status": "VERIFIED_EXPLORATORY_PUBLICATION_NO_NEW_TRADING_MODEL",
+  "checks": {
+    "pytest": "372 passed in 41.02s",
+    "typecheck": "PASS",
+    "production_build_local": "PASS",
+    "built_dashboard_section": "causal-map",
+    "built_dashboard_download_links": 6,
+    "method_code_input_lock": "PASS",
+    "protected_archive_files_unchanged": 115,
+    "source_files_sha256_checked": 69,
+    "complete_RTH_days": 435,
+    "future_prefix_checks": 5220,
+    "recomputed_context_checks": 90,
+    "event_horizon_replay_byte_identical": true,
+    "deterministic_publication_test": "PASS",
+    "new_strategy_runs": 0
+  },
+  "scientific_scope": {
+    "mechanisms": 32,
+    "horizons": [15, 30, 60, "RTH close"],
+    "reported_cells": 128,
+    "cells_with_at_least20_event_days": 100,
+    "cells_insufficient_for_inference": 28,
+    "joint_Holm_test_family": 256,
+    "significant_cells_after_Holm_with_both_methods": 0,
+    "calibration_panels": 128,
+    "calibration_panel_sessions": 120,
+    "calibration_cells_with_any_valid_panel": 88,
+    "calibration_cells_with_no_valid_panel": 40,
+    "calibration_joint_rejection_panels": 2,
+    "claim": "Measured exploratory distributions only. No institutional causal identification, no independent holdout, no incremental same-clock prediction claim, no tradability after costs claim."
+  },
+  "verification_command": "node scripts/verify-causal-map",
+  "archive_note": "package.json is archived and stays byte-identical; use the standalone verifier rather than changing old npm scripts.",
+  "browser_QA": "Not performed. Local built HTML section and all six downloads checked; production readiness checked separately after deployment."
+}

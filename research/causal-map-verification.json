@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "complete_RTH_days": 435,
+  "scheduled_sessions": 454,
+  "source_files": 69,
+  "selected_events": 6131,
+  "event_horizon_rows": 24093,
+  "future_prefix_checks": 5220,
+  "recomputed_context_checks": 90,
+  "identical_replay": true,
+  "ledger_sha256": "50bb51d5492178d676371ed3dce3dba484f94a620c213be36e4af0f2490f099e",
+  "cells": 128,
+  "global_test_family": 256,
+  "protected_archive_files": 115,
+  "archive": {
+    "status": "ARCHIVED_NOT_VALIDATED",
+    "protected_files": 115,
+    "models": 4
+  },
+  "private_evidence_sha256": {
+    "artifacts/causal-map/calibration.json": "e6d20d452857cb77c8252fcc1dfa763b9b42411770bfabe5d64ee305612f33ee",
+    "artifacts/causal-map/calibration-checkpoint.json": "174299b1207caf1d0f704621469b1e1d60a002f9364496638a5c36e25befce11",
+    "artifacts/causal-map/events-horizons.csv": "50bb51d5492178d676371ed3dce3dba484f94a620c213be36e4af0f2490f099e",
+    "artifacts/causal-map/events.csv": "810e09497ee2d8c5a34f7dad46fb69b10831acfc8a3e0aa23f62aa1b8b37a870",
+    "artifacts/causal-map/events-horizons-replay.csv": "50bb51d5492178d676371ed3dce3dba484f94a620c213be36e4af0f2490f099e",
+    "artifacts/causal-map/eligibility.json": "d889e19b978a7d49ed2ca460736eeea67af48aee9c5177d3f71a9a7b8ff9b61f",
+    "artifacts/causal-map/summary.json": "b3a61431745667f7f51683e04457c7000cc4d341a9bd081a26e43462067b0730"
+  }
+}
