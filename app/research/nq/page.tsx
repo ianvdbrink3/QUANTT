@@ -9,6 +9,7 @@ import VolumePathResearch from './VolumePathResearch';
 import VolumeStabilityAudit from './VolumeStabilityAudit';
 import FrozenResearch from './FrozenResearch';
 import DataCollectionUpdate from './DataCollectionUpdate';
+import YearHoldoutResults from './YearHoldoutResults';
 import './nq.css';
 
 export const metadata: Metadata = { title: 'QUANTT — NQ onderzoek op echte data', description: 'Kostenbewust NQ-onderzoek, kwaliteitscontrole en onzekerheid. Geen gevalideerde trading edge.' };
@@ -38,9 +39,9 @@ function Equity() {
 export default function NQResearch() {
   return <main className="nq-page">
     <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#volume-stability">Stabiliteitsaudit</a><a href="#volume-path">159 dagen</a><a href="#baseline-title">Baseline v0.9</a><a href="#resultaten">Hypothesen</a><a href="#kwaliteit">Datakwaliteit</a><Link href="/research/observed">0.9 importaudit</Link></nav></header>
-    <section className="nq-intro"><p className="nq-eyebrow">BASELINE V0.9 · HISTORISCHE HOLDOUT BEVROREN</p><div className="nq-title"><h1>ORB15 slaagt niet<br />voor de holdout.</h1><span className="nq-status">{holdout.status}</span></div><p className="nq-lead">De vaste-regels vervolgtest van 18 april t/m 30 september 2025 is na kosten negatief. Geen promotie naar een gevalideerde edge. Nieuw onderzoek met 159 gedeelde dagen staat hieronder apart en is geen nieuwe holdout; dit zijn geen actuele handelssignalen.</p></section>
-    <DataCollectionUpdate />
-    <FrozenResearch />
+    <section className="nq-intro"><p className="nq-eyebrow">BEVROREN REGELS · VASTE JAAR-HOLDOUT UITGEVOERD</p><div className="nq-title"><h1>De jaar-holdout<br />is getoetst.</h1></div><p className="nq-lead">Het nieuwe jaarvenster oktober 2025–september 2026 staat hieronder los van de eerdere onderzoeksperioden. Baseline v0.9 blijft HOLDOUT_FAILED; vNext159 blijft ongewijzigde, reeds verbruikte historie. Geen actuele handelssignalen.</p></section>
+    <YearHoldoutResults />
+    <details className="nq-details"><summary>Vooraf vastgelegde voorbereiding en bevroren onderzoeksstand · historische momentopnamen</summary><DataCollectionUpdate /><FrozenResearch /></details>
     <VolumeStabilityAudit />
     <VolumePathResearch />
     <section className="nq-section" aria-labelledby="holdout-title"><h2 id="holdout-title">Niveau 3: ongeoptimaliseerde vervolgtest</h2><div className="nq-table"><table><caption>Strikt gescheiden perioden · ORB 15m · één NQ · $24,50 kosten per roundtrip · all-view</caption><thead><tr>{['Periode','Eligible','Trades','Netto punten','Netto USD','Winrate','Profit factor','p-waarde'].map(h=><th key={h} scope="col">{h}</th>)}</tr></thead><tbody>{periods.map(p=><tr key={p.label}><th scope="row">{p.label}</th><td>{p.metrics.eligible_days}</td><td>{p.metrics.trades}</td><td>{f(p.metrics.net_points)}</td><td>${f(p.metrics.net_usd)}</td><td>{f((p.metrics.win_rate ?? 0)*100,1)}%</td><td>{f(p.metrics.profit_factor,3)}</td><td>{f(p.metrics.p_value,3)}</td></tr>)}</tbody></table></div><p className="nq-warning">95%-bootstrapinterval voor gemiddelde netto punten per eligible dag: {f(primary.ci_low)} tot {f(primary.ci_high)}. Maximale gerealiseerde drawdown: {f(primary.max_drawdown_points)} punten. NQZ25 levert in september geen eligible dagen door ontbrekende contracteigen ATR-opwarmhistorie. Dit is geen volledige handelsdekking van alle kalenderdagen.</p><p className="nq-note">De clean-sensitiviteit heeft dezelfde 76 trades en dezelfde nettouitkomst. Gecombineerd met de ontdekkingsperiode: {f(holdout.combined.B_ORB15.all.net_points)} punten, p={f(holdout.combined.B_ORB15.all.p_value,3)}. Dat gecombineerde resultaat is geen onafhankelijke bevestiging. Historische kalenderuren zijn uit contemporaine vendor-/brokerschema’s gereconstrueerd, niet afzonderlijk door CME gecertificeerd.</p><a href="/data/research-holdout.json" download>Download volledige geaggregeerde holdout-resultaten</a></section>

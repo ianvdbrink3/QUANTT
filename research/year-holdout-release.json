@@ -1,0 +1,42 @@
+{
+  "classification": "EXPLICIT_HUMAN_RELEASE_BEFORE_FIRST_SCORING",
+  "approved_preparation_commit": "8d37b66b76ba7f0ea0b486b372c29582f08fab7f",
+  "authorization": "User explicitly approves Step4 fixed full-year scoring, one independent source replay, Step5 publication to GitHub main and quantt production; accepts preparation limitations.",
+  "period": [
+    "2025-10-01",
+    "2026-09-30"
+  ],
+  "primary_strategy": "B_ORB15",
+  "primary_view": "all",
+  "expected_eligible_per_model": 249,
+  "cost_rt_usd": 24.5,
+  "parameters_changed": false,
+  "maximum_full_scoring_runs_this_release": 2,
+  "nonprimary_family": [
+    "year:A_London_sweep",
+    "year:B_ORB5",
+    "year:C_VWAP_extreme",
+    "combined:A_London_sweep",
+    "combined:B_ORB5",
+    "combined:B_ORB15",
+    "combined:C_VWAP_extreme",
+    "year:B_ORB15:clean"
+  ],
+  "multiplicity": "One confirmatory year ORB15 all-view, unchanged raw p. Eight other requested/clean sensitivity p-values in one globally Holm-adjusted family, fixed before scoring. References and combined statistics descriptive only, never promotion.",
+  "costs_stress_rt_usd": [
+    24.5,
+    44.5,
+    64.5
+  ],
+  "subgroup_tests": "None: month, direction and paths descriptive only",
+  "preparation_sha256": "085761cb002a82549c9cc55469f477019aa0ca34a23dc8fc838da6276a070c15",
+  "frozen_protocol_sha256": "5977a76b74926f6df137db61a195f8a551998ded8daa2d6c39a3c80d6a6f7997",
+  "scoring_code_sha256": "cef02b6489c24ed2f6ee235b99d551adbe6e4c1c0f5b814092f39ce4cf4231dd",
+  "source_register_sha256": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+  "calibration": "No future returns inspected before this file; user release is not an external prospective registration.",
+  "caveats": [
+    "Explicit human release required for Step4",
+    "Limited local non-use evidence: independent never-use certification unavailable",
+    "Vendor publication vintages and usage rights not independently certified; no raw/public trade publication"
+  ]
+}

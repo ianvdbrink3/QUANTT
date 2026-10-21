@@ -1,0 +1,26 @@
+{
+  "status": "PASS_TWO_FRESH_SOURCE_REPLAYS_BYTE_IDENTICAL",
+  "files_sha256": {
+    "daily-equity.csv": "7e3180efd059517b5e65f4c97fac4208735104d5b67ebd39dcc28da1a8409ec7",
+    "eligibility.csv": "b61d824c2880390908c4e735e01891d1321d7a59ccc2a1304ebf2131ee1e589f",
+    "summary.json": "f333382e9b900a9c44612d19bc6434e27d5583d1b7cd8f1728d3725c40bdecd9",
+    "trade-paths.csv": "219bd8db2514a8678eadbbc64d97a0babb93da52dcfdafd89d0823f3c5ef7935",
+    "trades-combined.csv": "8b783a196fc008196dfc29484859164bc55af2446459aa9ace7791d0dc022b7e",
+    "trades-year.csv": "b9f5312b7a37e420635531207b7b3cbe439acf9d66d4ad99d206a3b4af550b77"
+  },
+  "fresh_processes": 2,
+  "scoring_engine_invocations": 2,
+  "parameter_changes": 0,
+  "independent_engine_implementation": false,
+  "release_sha256": "14b98743bf6d89ba6a2cb4f1bed8c8398ed9292963978ca5eebaa2a862a2d79a",
+  "publication_files_sha256": {
+    "REPORT.md": "ba8732dacbaa767afcd2a92dcc1dbac7be59a2965134474e0a41d0830c06a663",
+    "costs.csv": "c02d087bc7b6cd29779c35f6f2520dcd0d8037297e63eef38e7bde162ee54216",
+    "direction.csv": "709eb78b4d9733acd3c6e53b51468747719b14e434eb648fb501d41eba4ff29d",
+    "excursions.csv": "9abed1618bd032dd435f5bf2b4b0ccfdf24e65c9a662b2ad25c04cf0f7372874",
+    "metrics.csv": "21ecdb3e9d6b7779f1e0e054ea597fc64ddb530b55926af829ce6ca91fd451bd",
+    "monthly-equity.csv": "0f3e444f43a920c9e5908d5942f6df2bab192a9569008dc69965ba0e3c836bcb",
+    "monthly.csv": "2a8a1a3e6644871096217e1f134fbe7db738a9f48b58f8123ef1029c96334696",
+    "results.json": "f333382e9b900a9c44612d19bc6434e27d5583d1b7cd8f1728d3725c40bdecd9"
+  }
+}
