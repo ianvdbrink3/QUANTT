@@ -11,6 +11,7 @@
     "verify:holdout": "node scripts/verify-holdout",
     "verify:continuous": "node scripts/verify-continuous",
     "research:volume-path": "node scripts/research-volume-path",
+    "research:volume-stability": "node scripts/research-volume-stability",
     "diagnose:orb15": "node scripts/diagnose-orb15",
     "reproduce:research": "node scripts/reproduce-research --publish"
   },

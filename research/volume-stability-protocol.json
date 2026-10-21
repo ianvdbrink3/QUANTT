@@ -1,0 +1,47 @@
+{
+  "classification": "RETROSPECTIVE_AUDIT_OF_ALREADY_OBSERVED_DATA",
+  "not_prospective_preregistration": true,
+  "periods": {
+    "full": [
+      "2024-12-30",
+      "2025-09-30"
+    ],
+    "discovery": [
+      "2024-12-30",
+      "2025-04-17"
+    ],
+    "observed_apr_sep": [
+      "2025-04-18",
+      "2025-09-30"
+    ]
+  },
+  "roll_window": "First 20 observed active civil-session dates starting at each fixed roll, including incomplete/holiday observed sessions. Last window truncated at dataset end. Check changed trades outside, do not assume references become identical.",
+  "roll_dates": [
+    "2025-03-19",
+    "2025-06-17",
+    "2025-09-17"
+  ],
+  "inference": "One global Holm family of 16 two-sided centered circular 5-eligible-session bootstrap tests: four strategies x three period mean returns plus four paired common148 improvements. Existing engine bootstrap: 2000 replicates, seed 20261020. Eligible zero-trade days included; calendar gaps not filled. Nominal 95% CIs are not simultaneous. Monthly/direction/roll groups and sensitivities descriptive only.",
+  "costs_rt_usd": [
+    24.5,
+    44.5,
+    64.5
+  ],
+  "cost_definition": "2,4,6 ticks per side at .25 points; fixed $4.50 RT commission; unchanged trade fills and stops. Extra cost only, no new signal simulation.",
+  "outliers": "Remove exactly three highest-net trades per strategy/period, tie break by date; no threshold search.",
+  "source_sha256": {
+    "artifacts/continuous-vnext/trades.csv": "a0d2858aa84f8824b19a04bc89a2868bf441f1bd65aefdca0532db1fc2105770",
+    "artifacts/continuous-vnext/eligibility.csv": "aa09eaae777f626f22b68d6ddc0ab57570585fed8c16a479525d1cea117278b6",
+    "artifacts/volume-path-vnext/trades.csv": "dfe1a19f2452e130fa298ea522ec90ea9ea4dccdd7a7c4b9c45988227ea23d6a",
+    "artifacts/volume-path-vnext/eligibility.csv": "24ee41ea92413dd71be529dd266a10c8777b713df39f4e23da52ef6d7df1e64e"
+  },
+  "frozen_sha256": {
+    "public/data/nq-overnight.json": "bbad362b47f2f6736e705a19b4df8041032e6c2537ab6fe0c25094cc823239cf",
+    "public/data/research09.json": "141205a8057d78a1e5493cbd17939a610c8d9d243edc697d1ff760ac54e20dea",
+    "public/data/research-holdout.json": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352",
+    "public/data/research-continuous.json": "93ec9ed2c6776eae0406603de66e226f1e382a6c57395540ae86cc8c23576c3b",
+    "public/data/research-volume-path.json": "ec106b0e9a9991f2da403efacf0d9ded6e4a46aa14b76dfa8432ad13ca0b3d90",
+    "research/holdout-reference.json": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352",
+    "research/holdout-protocol.json": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022"
+  }
+}

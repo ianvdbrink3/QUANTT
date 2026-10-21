@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "classification": "RETROSPECTIVE_AUDIT_NOT_NEW_HOLDOUT",
+  "pytest_passed": 207,
+  "production_build": "PASS",
+  "frozen_release_guard": "PASS",
+  "all_previous_exports_unchanged": true,
+  "two_audit_runs_byte_identical": true,
+  "independent_decimal_fill_cost_reconciliation_periods": 12,
+  "private_trade_attribution_sha256": "e931ed75e6cb5754beff67080d612c55f6abc7787354a6cff27059f0fc3ec50b",
+  "public_summary_sha256": "2a78000e0891ebd5172d6328fb491760c1b9defe6a8faaddd71199561d44ab06",
+  "public_report_sha256": "fd409a1ea99a78f118f40171baac36d0d75ced05c49781ea79da0a93ce3b8ee5",
+  "local_dashboard": "PASS; key figures rendered, no captured console errors",
+  "local_download_hashes": "PASS",
+  "global_Holm_tests": 16,
+  "source_data_and_individual_trades_published": false
+}
