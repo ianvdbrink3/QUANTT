@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "7bb27512a6e431ebedf662521214557d59d9eb38924a99e6c7ee39af76b787f6",
+  "result_sha256": "f4bcd9d33691a381aac9a1430bcd668ea13596e0ecbf155df47ab1e51af8280d",
+  "private_files_sha256": {
+    "daily.csv": "696e358768171e8ccbf11495318967aa72376f26a5c6dbd79a887f836a4b754a",
+    "events.csv": "2bd68f590c4ce6224abfbf9aa121d2fb08b6300970e780ef042b4e1551f14266",
+    "half-hours.csv": "65f72d304ca5922aad3a8b82ad905a8f6dbccdbb8f7cd416da39d9f7048a246a",
+    "quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c"
+  },
+  "strategy_functions_runtime_blocked": true
+}

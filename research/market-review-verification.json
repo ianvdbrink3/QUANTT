@@ -1,0 +1,17 @@
+{
+  "status": "ARCHIVED_AND_DESCRIPTIVE_ONLY",
+  "files_sha256": {
+    "public/data/research-execution-audit.csv": "0e99cbdeee28024f5c79d2ee303ee48286762ddac78cca0a5f6f56b64d70ecdb",
+    "public/data/research-execution-audit.json": "77963f2002ff1491cafc3d55d9f619a0c7940b732fc8cd1d2287659fb11ea42e",
+    "public/data/research-experiment-archive.json": "4dfd907075c822cfe3f7ed6550899bf5e1047ce74c2365f6a5915a188ae1b6d6",
+    "public/data/research-market-review.md": "09ad31a5c443d94201cab016e45a41a6d58f7d5601d52d8ede53cdace74d06a0",
+    "public/data/research-raw-market.correlations.csv": "e1cf767e1abd5089562913e7713d295d67bd76cf3e0693e049943d19499977dd",
+    "public/data/research-raw-market.events.csv": "049416d101cdbcf326584b9fa31dc57d611410509708f1b7bc1ece67c7c29626",
+    "public/data/research-raw-market.half-hours.csv": "0b58a8889282c0ff7922af2ea01f0da6d56f945ca9ac8a0870f34a484c5d9ae0",
+    "public/data/research-raw-market.json": "f4bcd9d33691a381aac9a1430bcd668ea13596e0ecbf155df47ab1e51af8280d",
+    "public/data/research-raw-market.tests.csv": "0a89a61717268582357443e1e3d316411da99bfb27cda34b60bfadd0be969e78"
+  },
+  "definitions_sha256": "7bb27512a6e431ebedf662521214557d59d9eb38924a99e6c7ee39af76b787f6",
+  "calculation_code_sha256": "eb38bc9d8ce4f39acc5070001cdfa841fb583285dc51b1b571fb7f3ddd103f19",
+  "archived_files_verified": 115
+}

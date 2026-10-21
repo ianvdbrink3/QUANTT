@@ -10,6 +10,7 @@ import VolumeStabilityAudit from './VolumeStabilityAudit';
 import FrozenResearch from './FrozenResearch';
 import DataCollectionUpdate from './DataCollectionUpdate';
 import YearHoldoutResults from './YearHoldoutResults';
+import MarketReview from './MarketReview';
 import './nq.css';
 
 export const metadata: Metadata = { title: 'QUANTT — NQ onderzoek op echte data', description: 'Kostenbewust NQ-onderzoek, kwaliteitscontrole en onzekerheid. Geen gevalideerde trading edge.' };
@@ -38,8 +39,10 @@ function Equity() {
 
 export default function NQResearch() {
   return <main className="nq-page">
-    <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#volume-stability">Stabiliteitsaudit</a><a href="#volume-path">159 dagen</a><a href="#baseline-title">Baseline v0.9</a><a href="#resultaten">Hypothesen</a><a href="#kwaliteit">Datakwaliteit</a><Link href="/research/observed">0.9 importaudit</Link></nav></header>
-    <section className="nq-intro"><p className="nq-eyebrow">BEVROREN REGELS · VASTE JAAR-HOLDOUT UITGEVOERD</p><div className="nq-title"><h1>De jaar-holdout<br />is getoetst.</h1></div><p className="nq-lead">Het nieuwe jaarvenster oktober 2025–september 2026 staat hieronder los van de eerdere onderzoeksperioden. Baseline v0.9 blijft HOLDOUT_FAILED; vNext159 blijft ongewijzigde, reeds verbruikte historie. Geen actuele handelssignalen.</p></section>
+    <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#market-review">Archivering</a><a href="#execution-audit">Uitvoeringsaudit</a><a href="#session-structure">Sessiestructuur</a><a href="#raw-correlations">Correlaties</a><a href="#raw-extremes">Extremen</a></nav></header>
+    <section className="nq-intro"><p className="nq-eyebrow">ARCHIVED_NOT_VALIDATED · GEEN ACTIEVE HANDELSMODELLEN</p><div className="nq-title"><h1>Experimenten afgesloten.<br />De meetlat gecontroleerd.</h1></div><p className="nq-lead">ORB 5m, ORB 15m, London Sweep en VWAP Extreme zijn definitief gearchiveerd. Hieronder staan de uitvoeringsaudit en uitsluitend beschrijvende metingen van ruw NQ-marktgedrag. Geen nieuwe strategie, filters of parameter-tuning.</p></section>
+    <MarketReview />
+    <details className="nq-details"><summary>Historisch experimentenarchief · ongewijzigde rapporten · geen actuele kandidaten</summary>
     <YearHoldoutResults />
     <details className="nq-details"><summary>Vooraf vastgelegde voorbereiding en bevroren onderzoeksstand · historische momentopnamen</summary><DataCollectionUpdate /><FrozenResearch /></details>
     <VolumeStabilityAudit />
@@ -68,6 +71,6 @@ export default function NQResearch() {
     <section id="kwaliteit" className="nq-section"><div className="nq-heading"><div><p className="nq-eyebrow">HERKOMST EN GRENZEN</p><h2>De data achter de cijfers</h2></div></div><div className="nq-grid"><article className="nq-card"><h3>Gecontroleerd, niet gecertificeerd</h3><p>{data.clean_days} schone dagen, {data.flagged_days} gemarkeerde dagen en {data.missing_minutes} ontbrekende minuten na de beperkte kalendercorrecties. De 0.9-importgate heeft alle {f(data.import_gate.rows,0)} bars privé verwerkt.</p></article><article className="nq-card"><h3>Contractbewuste rollover</h3><p>NQH25 t/m 18 maart; NQM25 vanaf handelsdag 19 maart. Features eerst per contract en sessie, geen prijsaanpassing en geen returns over de contractsprong. M25-opwarmhistorie wordt niet uit H25 geleend.</p></article><article className="nq-card"><h3>Causale uitvoeringsregels</h3><p>Signalen op voltooide minuten, entry volgende open. Bij stop én target in dezelfde bar: stop eerst. 2 ticks slippage per kant en $4,50 commissie. Geen tick- of orderboekbewijs.</p></article><article className="nq-card"><h3>Geen schijnzekerheid</h3><p>De ruwe prijzen blijven privé. Herkomst, historische publicatievintages, vendorlicentie en brokerfills zijn niet onafhankelijk gecertificeerd. De VWAP is een HLC3-minuutproxy.</p></article></div>
       <details className="nq-details"><summary>Bekijk de kwaliteitsvlaggen per dag</summary><div className="nq-table"><table><thead><tr><th>Handelsdatum</th><th>Contract</th><th>Kwaliteit</th><th>Ontbrekende minuten</th><th>ATR-historie</th></tr></thead><tbody>{data.day_quality.map(d=><tr key={d.trade_date}><th scope="row">{d.trade_date}</th><td>{d.contract}</td><td>{d.data_quality_flag}</td><td>{d.missing_minutes}</td><td>{d.atr_history_count}/14</td></tr>)}</tbody></table></div></details>
       <details className="nq-details"><summary>Vaste onderzoeksdefinities en beperkingen</summary><dl>{Object.entries(data.methodology).map(([key,value])=><div key={key}><dt>{key}</dt><dd>{String(value)}</dd></div>)}</dl><ul>{data.limitations.map(s=><li key={s}>{s}</li>)}</ul></details>
-    </section><footer className="nq-footer"><span>Ontdekking t/m 17 april · Holdout t/m 30 september 2025 · Geen live handelssignalen</span><a href="/data/nq-overnight.json" download>Download geaggregeerde onderzoeksexport</a></footer>
+    </section></details><footer className="nq-footer"><span>ARCHIVED_NOT_VALIDATED · Beschrijvend onderzoek t/m september 2026 · Geen live handelssignalen</span><a href="/data/research-market-review.md" download>Download volledig archief- en marktrapport</a></footer>
   </main>;
 }

@@ -1,0 +1,412 @@
+{
+  "status": "READ_ONLY_EXECUTION_REALISM_AUDIT",
+  "independence": "New source inspection and hand-derived synthetic tests, not broker/tick certification or a second full engine.",
+  "engine_sha256": "8fbf6cb7ced7fe0338cca164de1f3cbde8b3d03eb92738bde4616829cd541d8b",
+  "ledger_hashes": {
+    "trades-combined.csv": "8b783a196fc008196dfc29484859164bc55af2446459aa9ace7791d0dc022b7e",
+    "trades-year.csv": "b9f5312b7a37e420635531207b7b3cbe439acf9d66d4ad99d206a3b4af550b77"
+  },
+  "strategy_parameters_changed": false,
+  "new_real_data_signals": 0,
+  "models": [
+    {
+      "period": "year",
+      "model": "A_London_sweep",
+      "trades": 113,
+      "stop_fills": 55,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 113,
+      "stop_on_entry_bar": 0,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 55,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -526.6750000000003,
+          "net_usd": -10533.500000000005,
+          "profit_factor": 0.9228710551365594,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 55,
+          "extra_cost_points": 13.75,
+          "extra_cost_usd": 275.0,
+          "net_points": -540.4250000000003,
+          "net_usd": -10808.500000000005,
+          "profit_factor": 0.9210164784975697,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 55,
+          "extra_cost_points": 27.5,
+          "extra_cost_usd": 550.0,
+          "net_points": -554.1750000000005,
+          "net_usd": -11083.500000000011,
+          "profit_factor": 0.9191693407234534,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "year",
+      "model": "B_ORB15",
+      "trades": 216,
+      "stop_fills": 92,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 216,
+      "stop_on_entry_bar": 0,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 92,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -616.3500000000001,
+          "net_usd": -12327.000000000004,
+          "profit_factor": 0.9457067982118084,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 92,
+          "extra_cost_points": 23.0,
+          "extra_cost_usd": 460.0,
+          "net_points": -639.3500000000001,
+          "net_usd": -12787.000000000004,
+          "profit_factor": 0.9437946418760028,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 92,
+          "extra_cost_points": 46.0,
+          "extra_cost_usd": 920.0,
+          "net_points": -662.3500000000001,
+          "net_usd": -13247.000000000004,
+          "profit_factor": 0.9418902024433576,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "year",
+      "model": "B_ORB5",
+      "trades": 225,
+      "stop_fills": 94,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 225,
+      "stop_on_entry_bar": 0,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 94,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": 161.62499999999977,
+          "net_usd": 3232.4999999999955,
+          "profit_factor": 1.0135704719963394,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 94,
+          "extra_cost_points": 23.5,
+          "extra_cost_usd": 470.0,
+          "net_points": 138.12499999999977,
+          "net_usd": 2762.4999999999955,
+          "profit_factor": 1.011574510518664,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 94,
+          "extra_cost_points": 47.0,
+          "extra_cost_usd": 940.0,
+          "net_points": 114.62499999999977,
+          "net_usd": 2292.4999999999955,
+          "profit_factor": 1.0095863946374735,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "year",
+      "model": "C_VWAP_extreme",
+      "trades": 77,
+      "stop_fills": 19,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 77,
+      "stop_on_entry_bar": 1,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 19,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -124.82499999999987,
+          "net_usd": -2496.4999999999973,
+          "profit_factor": 0.9582678613219222,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 19,
+          "extra_cost_points": 4.75,
+          "extra_cost_usd": 95.0,
+          "net_points": -129.57499999999987,
+          "net_usd": -2591.4999999999973,
+          "profit_factor": 0.9567485020945646,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 19,
+          "extra_cost_points": 9.5,
+          "extra_cost_usd": 190.0,
+          "net_points": -134.32499999999987,
+          "net_usd": -2686.4999999999973,
+          "profit_factor": 0.9552339532093587,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "combined",
+      "model": "A_London_sweep",
+      "trades": 195,
+      "stop_fills": 95,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 195,
+      "stop_on_entry_bar": 1,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 95,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -351.1250000000006,
+          "net_usd": -7022.500000000013,
+          "profit_factor": 0.9657491653721496,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 95,
+          "extra_cost_points": 23.75,
+          "extra_cost_usd": 475.0,
+          "net_points": -374.8750000000006,
+          "net_usd": -7497.500000000013,
+          "profit_factor": 0.9635169690496402,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 95,
+          "extra_cost_points": 47.5,
+          "extra_cost_usd": 950.0,
+          "net_points": -398.6250000000006,
+          "net_usd": -7972.500000000013,
+          "profit_factor": 0.9612950677609392,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "combined",
+      "model": "B_ORB15",
+      "trades": 359,
+      "stop_fills": 145,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 359,
+      "stop_on_entry_bar": 0,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 145,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": 467.22499999999945,
+          "net_usd": 9344.499999999989,
+          "profit_factor": 1.0282826417915414,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 145,
+          "extra_cost_points": 36.25,
+          "extra_cost_usd": 725.0,
+          "net_points": 430.97499999999945,
+          "net_usd": 8619.499999999989,
+          "profit_factor": 1.0260311909205668,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 145,
+          "extra_cost_points": 72.5,
+          "extra_cost_usd": 1450.0,
+          "net_points": 394.72499999999945,
+          "net_usd": 7894.499999999989,
+          "profit_factor": 1.0237895777270847,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "combined",
+      "model": "B_ORB5",
+      "trades": 372,
+      "stop_fills": 161,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 372,
+      "stop_on_entry_bar": 0,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 161,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -240.4500000000004,
+          "net_usd": -4809.000000000007,
+          "profit_factor": 0.9868795477550084,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 161,
+          "extra_cost_points": 40.25,
+          "extra_cost_usd": 805.0,
+          "net_points": -280.7000000000005,
+          "net_usd": -5614.00000000001,
+          "profit_factor": 0.9847168229285769,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 161,
+          "extra_cost_points": 80.5,
+          "extra_cost_usd": 1610.0,
+          "net_points": -320.9500000000005,
+          "net_usd": -6419.00000000001,
+          "profit_factor": 0.9825635565020631,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    },
+    {
+      "period": "combined",
+      "model": "C_VWAP_extreme",
+      "trades": 140,
+      "stop_fills": 33,
+      "stop_entry_orders": 0,
+      "limit_entry_orders": 0,
+      "market_next_open_entries": 140,
+      "stop_on_entry_bar": 1,
+      "target_on_entry_bar": 0,
+      "both_stop_target_bars": 0,
+      "scenarios": [
+        {
+          "extra_ticks_per_stop_fill": 0,
+          "stop_fills": 33,
+          "extra_cost_points": 0.0,
+          "extra_cost_usd": 0.0,
+          "net_points": -28.999999999999716,
+          "net_usd": -579.9999999999943,
+          "profit_factor": 0.9937793269875312,
+          "adjusted_stop_trade_RT_usd": 24.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 1,
+          "stop_fills": 33,
+          "extra_cost_points": 8.25,
+          "extra_cost_usd": 165.0,
+          "net_points": -37.249999999999716,
+          "net_usd": -744.9999999999943,
+          "profit_factor": 0.992023768100425,
+          "adjusted_stop_trade_RT_usd": 29.5,
+          "other_trade_RT_usd": 24.5
+        },
+        {
+          "extra_ticks_per_stop_fill": 2,
+          "stop_fills": 33,
+          "extra_cost_points": 16.5,
+          "extra_cost_usd": 330.0,
+          "net_points": -45.499999999999716,
+          "net_usd": -909.9999999999943,
+          "profit_factor": 0.9902744008336222,
+          "adjusted_stop_trade_RT_usd": 34.5,
+          "other_trade_RT_usd": 24.5
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "All four screens call the same simulate function: signal on completed minute t, entry at raw open of exact minute t+1. No stop-entry or limit-entry implementation exists. A close signal is not a close fill.",
+    "Entry always precedes entry-bar extrema because it is the bar open; stop/target are active immediately in that same bar. Actual order submission latency and bracket activation are absent.",
+    "If stop and target both lie in any scanned bar, stop wins. Long stop exit=min(stop,bar open), short=max(stop,bar open); target exit is capped at target even after a favorable gap.",
+    "Timeout fills at11:59 minute close, assumed available at12:00NY. exit_bar_utc is bar-start label, not exact execution timestamp.",
+    "Stop distance=floor(0.25ATR/0.25)*0.25 with minimum0.25; fixed target distance=ceil(0.50ATR/0.25)*0.25. VWAP target rounded down for long/up for short and frozen at signal. Closer stops are not universally conservative.",
+    "VWAP resets per raw contract/trade_date, intended18:00NY. It is cumulative sum(volume*(high+low+close)/3)/sum(volume), weighted population SD of the same HLC3 proxy. Current minute becomes known at minute end. If prefix incomplete, the computation begins at first observed bar; eligibility rejects incomplete18NY-noon prefixes.",
+    "Flat friction1.225points=$24.50RT:2ticks each side=$20 plus$4.50commission. Prices in ledger are raw hypothetical fills, not slippage-adjusted; friction is subtracted separately. Gap loss is already in raw exit, in addition to flat friction.",
+    "London sweep, re-entry and VWAP crossing may all be inferred from the same completed bar; no tick-order proof. Entry at next open prevents a fill earlier in that signal bar.",
+    "ORB is a completed-close breakout with volume/VWAP checks, not a resting stop order at the opening-range edge. VWAP Extreme fades at next open; it is not a resting VWAP limit entry."
+  ],
+  "conservative": [
+    "Stop priority when both barriers hit; adverse stop gaps use the worse open; favorable target gaps get no improvement.",
+    "No interpolation for missing required minutes; no signal-close fill; constant friction also charged on target/time exits."
+  ],
+  "blind_spots_or_optimism": [
+    "Next-open fill assumes zero compute/transmission latency, executable size and no spread/queue restrictions beyond flat fees.",
+    "A target touch is assumed filled: queue position, bid/ask side and traded size are unknown. A minute low/high is not proof a limit order filled.",
+    "Same-minute bracket readiness and exact intrabar sequence are unobserved; stop-first does not make all fills conservatively certified.",
+    "A session VWAP computed from HLC3 is not exchange tick VWAP; historical vendor timestamps/bar-start convention and publication vintage are not independently certified.",
+    "Flat2tick-per-side slippage is not calibrated by volatility, spread, order type or stop cascades. Added stop friction is sensitivity only, not an estimated fill distribution.",
+    "At12:00 an immediate close fill at the previous minute last trade is an idealization; exact timestamp and latency remain unknown."
+  ]
+}
