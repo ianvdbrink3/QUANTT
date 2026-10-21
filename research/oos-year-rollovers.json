@@ -1,0 +1,65 @@
+{
+  "rollovers": [
+    {
+      "from": "NQZ25",
+      "to": "NQH26",
+      "decision_session": "2025-12-15",
+      "effective_session": "2025-12-16",
+      "effective_utc": "2025-12-15T23:00:00+00:00",
+      "close_bar_utc": "2025-12-15T20:59:00+00:00",
+      "spread_available_utc": "2025-12-15T21:00:00+00:00",
+      "decision_missing_by_contract": {
+        "NQZ25": 0,
+        "NQH26": 0
+      },
+      "future_truncation_verified": true,
+      "volume_availability": "Observed vendor volumes assumed available by next18NY; not certified publication vintages"
+    },
+    {
+      "from": "NQH26",
+      "to": "NQM26",
+      "decision_session": "2026-03-16",
+      "effective_session": "2026-03-17",
+      "effective_utc": "2026-03-16T22:00:00+00:00",
+      "close_bar_utc": "2026-03-16T19:59:00+00:00",
+      "spread_available_utc": "2026-03-16T20:00:00+00:00",
+      "decision_missing_by_contract": {
+        "NQH26": 1,
+        "NQM26": 0
+      },
+      "future_truncation_verified": true,
+      "volume_availability": "Observed vendor volumes assumed available by next18NY; not certified publication vintages"
+    },
+    {
+      "from": "NQM26",
+      "to": "NQU26",
+      "decision_session": "2026-06-15",
+      "effective_session": "2026-06-16",
+      "effective_utc": "2026-06-15T22:00:00+00:00",
+      "close_bar_utc": "2026-06-15T19:59:00+00:00",
+      "spread_available_utc": "2026-06-15T20:00:00+00:00",
+      "decision_missing_by_contract": {
+        "NQM26": 0,
+        "NQU26": 0
+      },
+      "future_truncation_verified": true,
+      "volume_availability": "Observed vendor volumes assumed available by next18NY; not certified publication vintages"
+    },
+    {
+      "from": "NQU26",
+      "to": "NQZ26",
+      "decision_session": "2026-09-14",
+      "effective_session": "2026-09-15",
+      "effective_utc": "2026-09-14T22:00:00+00:00",
+      "close_bar_utc": "2026-09-14T19:59:00+00:00",
+      "spread_available_utc": "2026-09-14T20:00:00+00:00",
+      "decision_missing_by_contract": {
+        "NQU26": 0,
+        "NQZ26": 0
+      },
+      "future_truncation_verified": true,
+      "volume_availability": "Observed vendor volumes assumed available by next18NY; not certified publication vintages"
+    }
+  ],
+  "private_evidence_sha256": "7ab36d47d4641e6a37a1f8e31a472380f99a1fe3cb9c141a8dbe6ce65a4a389f"
+}

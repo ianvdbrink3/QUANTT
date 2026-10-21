@@ -1,0 +1,20 @@
+{
+  "classification": "PREPARATION_RELEASE_CHECKS_NOT_HOLDOUT_RESULTS",
+  "recorded_on": "2026-10-21",
+  "pytest_passed": 262,
+  "pytest_failed": 0,
+  "pytest_skipped": 0,
+  "typecheck": "PASS",
+  "production_build_local": "PASS",
+  "frozen_files_byte_identical": 73,
+  "historical_replay": "435 trades and780 eligibility rows byte-identical; 159 eligible days per model",
+  "historical_replay_end": "2025-09-30",
+  "future_signals_computed": false,
+  "future_PnL_computed": false,
+  "future_intraday_strategy_features_computed": false,
+  "readiness_ATR_volume_prerequisites_computed": true,
+  "dashboard_static_html": "New heading, release-blocked status and headline counts verified",
+  "react_review": "Server components; static JSON only; stable list keys, labeled section/details, no new client JS or effects",
+  "publication_scope": "Aggregated quality, dates, source hashes and protocol only. Private OHLCV and trade ledgers excluded.",
+  "deployment": "Separate Vercel READY inspection required; not asserted by this pre-deployment file"
+}

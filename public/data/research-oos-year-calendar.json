@@ -1,0 +1,60 @@
+{
+  "classification": "CIVIL_NY_SESSION_CALENDAR_NOT_CLEARING_TRADEDATE",
+  "reviewed_ranges": [
+    [
+      "2024-12-30",
+      "2026-09-30"
+    ]
+  ],
+  "closes_ny": {
+    "2025-01-01": null,
+    "2025-01-09": "09:30",
+    "2025-01-20": "13:00",
+    "2025-02-17": "13:00",
+    "2025-04-18": null,
+    "2025-05-26": "13:00",
+    "2025-06-19": "13:00",
+    "2025-07-03": "13:15",
+    "2025-07-04": "13:00",
+    "2025-09-01": "13:00",
+    "2025-11-27": "13:00",
+    "2025-11-28": "13:15",
+    "2025-12-24": "13:15",
+    "2025-12-25": null,
+    "2026-01-01": null,
+    "2026-01-19": "13:00",
+    "2026-02-16": "13:00",
+    "2026-04-03": "09:15",
+    "2026-05-25": "13:00",
+    "2026-06-19": "13:00",
+    "2026-07-03": "13:00",
+    "2026-09-07": "13:00"
+  },
+  "observed_outages": [
+    {
+      "start_utc": "2025-11-28T02:45:00+00:00",
+      "end_utc": "2025-11-28T13:30:00+00:00",
+      "minutes": 645,
+      "status": "Existence documented; minute endpoints observed, not certified. Quality attribution only; never removed from eligibility prefix.",
+      "source": "https://d2744r28dxz36a.cloudfront.net/MemberNotices/2025/25-030.pdf"
+    }
+  ],
+  "sources": [
+    "research/oos-calendar-register.json",
+    "research/holdout-protocol.json",
+    "https://support.ninjatrader.com/eu/s/article/2026-Holiday-Trading-Hours?language=en_US",
+    "https://www.ampfutures.com/news/christmas-holiday-trading-schedule",
+    "https://www.ampfutures.com/news/new-year-holiday-trading-schedule",
+    "https://www.ampfutures.com/news/holiday-trading-schedule-thanksgiving",
+    "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+  ],
+  "reviewed_on": "2026-10-21",
+  "evidence_limit": "Product-specific broker/vendor reconstruction, checked against raw minutes. Not an exchange-signed historical calendar. 2026 Good Friday equity halt08:15CT is09:15NY, not fully closed. Dec26 and Jan2 ordinary. Closed civil day resumes18NY for next session. Expiring outgoing contracts are not active on expiry, so no expiry-only close override in active calendar.",
+  "dst": {
+    "timezone_input": "America/Chicago",
+    "timezone_session": "America/New_York",
+    "fall_transition": "2025-11-02",
+    "spring_transition": "2026-03-08",
+    "fixed_utc_offsets_forbidden": true
+  }
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+const { spawnSync } = require('node:child_process');
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const local = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
+const python = process.env.PYTHON || (fs.existsSync(local) ? local : 'python3');
+const args = process.argv.slice(2);
+const historical = args.includes('--historical-parity');
+const result = spawnSync(python, ['-B', '-m', historical ? 'scripts.oos_preparation.replay' : 'scripts.oos_preparation.year', ...args.filter(a => a !== '--historical-parity')], { cwd: root, stdio: 'inherit' });
+if (result.error) console.error(result.error.message);
+process.exit(result.status ?? 1);

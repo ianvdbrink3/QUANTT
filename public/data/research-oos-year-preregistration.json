@@ -1,0 +1,141 @@
+{
+  "classification": "PRE_SCORING_RELEASE_GATE_NOT_SCORING_PERMISSION",
+  "status": "AWAITING_EXPLICIT_RELEASE",
+  "preparation_base_commit": "1079d85859449003284a7cde1358e652dfde78bf",
+  "version_anchor": "Containing Git commit plus exact per-fileSHA256; no self-referential commit hash",
+  "files_sha256": {
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "research/oos-year-calendar.json": "1bc217b2abd9112a85d21b8b74df791b223202f7d615890f5d9b9e80127f56aa",
+    "research/oos-year-rollovers.json": "1299dff7d13c9e05fb9dfa42e27c19b21c6f348f832291f933a5daec47c91882",
+    "research/oos-year-release-checks.json": "ef5c0f8c89c3608e0b81aa3afed1674642b52ca8f6e657c61f766dfd964a1ef3",
+    "research/oos-year-historical-parity.json": "9412a5ae516d699d6b2093414fa20ad180b813cab807410fbee270157f15b9c8",
+    "research/vnext-future-oos-protocol.json": "5977a76b74926f6df137db61a195f8a551998ded8daa2d6c39a3c80d6a6f7997",
+    "public/data/research-oos-year-readiness.json": "b5d935c93fb7ac72d84895d53fe569d10325edb3b3a24c998f0b2463866fd211",
+    "public/data/research-oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "public/data/research-oos-year-calendar.json": "eaa7e1ba358d814652bace3b5b31b57fdd7242cab370ca603747d44b6fbc312c",
+    "scripts/verify-oos-year": "7f3433ac7110078673fc3ee84f89d8fea285d00f74f59203ab742cab6a625e17",
+    "tests/test_oos_year.py": "51e25d0f7eee247dc2caf7f794aa954c7d57858177e7268ff02a4df34f282c4e",
+    "package.json": "40ada94a84d58273de08d13c9b645e51df896dce9b54ac537a31e26540ccf343",
+    "app/research/nq/DataCollectionUpdate.tsx": "61ef961571d9e72b6f26c49fe8526636d8d228475bbe7d67b4cce891551dc963",
+    "app/research/nq/FrozenResearch.tsx": "7aba2fab4e2428d1c25472d0717514439d41b00b8db528982caba7b1c351b1e7",
+    ".vercelignore": "7ed51f3e57e6f3333eb5813095efeb6f1e7547ed64ecafb7c7273439a778f070",
+    "scripts/oos_preparation/__init__.py": "d0677d5cc28807204da465448099f8c482de8566df603657c545232e82ecea6d",
+    "scripts/oos_preparation/adapter.py": "35692d717db1c06037a54216590a854bb984252c9ad8ba4f90196023a0c6e9a3",
+    "scripts/oos_preparation/december.py": "80e2d8e17326a31d63e05c8d358f20592b3f1e2afaa01e03906bde54b6f2abf4",
+    "scripts/oos_preparation/export.py": "6e088e89f0d7384ae926e4620be4701b87f5724a7adcd9628801c1fe7a943aae",
+    "scripts/oos_preparation/parity.py": "18ea22706276bce5e6bb2e714ec735e6f996f13cbb3b2d0246c3135e321627df",
+    "scripts/oos_preparation/power.py": "30c04b2c5469d783fea497d7a60fadde780c215f46d239b5dc7e7cb981d93a56",
+    "scripts/oos_preparation/prepare.py": "5ace42020c3e7c0950c9f2e592b38b1fb45dcd6478d8756d47c19df6d3e77c4f",
+    "scripts/oos_preparation/replay.py": "c9c768b8b069a5a344b552dcdc633b22c0daefca39b3b3098552c5f27d7ca804",
+    "scripts/oos_preparation/route.py": "75ddcee667aa5e66975621fe2c46fc423f0527bb369b528facaf03d4d2a2173e",
+    "scripts/oos_preparation/seal.py": "24c91d2d988b61900a748be58cf913ce14c0214ac592611c871c9cd1328ebc3d",
+    "scripts/oos_preparation/year.py": "480c39a1ca42dda114198d8ed460799d457158b046755fb4d67805b49604c5ea"
+  },
+  "existing_frozen_protocol_sha256": "5977a76b74926f6df137db61a195f8a551998ded8daa2d6c39a3c80d6a6f7997",
+  "primary_strategy": "B_ORB15",
+  "reference_strategies_descriptive_only": [
+    "A_London_sweep",
+    "B_ORB5",
+    "C_VWAP_extreme"
+  ],
+  "period": [
+    "2025-10-01",
+    "2026-09-30"
+  ],
+  "pass_rule": {
+    "minimum_eligible_days": 20,
+    "net_points_gt": 0,
+    "profit_factor_gt": 1,
+    "two_sided_block_bootstrap_p_lt": 0.05,
+    "mean_daily_ci_low_gt": 0
+  },
+  "inference": {
+    "confirmatory_hypotheses": 1,
+    "replicates": 2000,
+    "circular_block_length_eligible_sessions": 5,
+    "seed": 20261020,
+    "p_value": "Two-sided centered bootstrap: (1 + count(abs(resampled_mean - observed_mean) >= abs(observed_mean))) / 2001",
+    "ci": "Nominal percentile 95% interval of resampled daily mean; p and CI need not be exact inverses. Both pass conditions required.",
+    "daily_series": "Chronological eligible dates, zero for no trade, no fictitious calendar-gap days; no historical discovery PnL in OOS inference",
+    "multiplicity": "One confirmatory primary; no correction needed within that single family. No reference/subgroup may be promoted based on this run. Any optional inferential reference family must be declared before scoring and globally Holm-corrected, otherwise descriptive only. Existing retrospective 16-test Holm audit remains frozen."
+  },
+  "cost_rt_usd": 24.5,
+  "historical_parity": {
+    "status": "PASS_HISTORICAL_FULL_LEDGER_BYTE_PARITY",
+    "period": [
+      "2024-12-30",
+      "2025-09-30"
+    ],
+    "source_files": 30,
+    "future_source_files_opened": 0,
+    "future_signals_computed": false,
+    "historical_results": {
+      "trades": {
+        "rows": 435,
+        "reference_sha256": "dfe1a19f2452e130fa298ea522ec90ea9ea4dccdd7a7c4b9c45988227ea23d6a",
+        "byte_identical": true
+      },
+      "eligibility": {
+        "rows": 780,
+        "reference_sha256": "24ee41ea92413dd71be529dd266a10c8777b713df39f4e23da52ef6d7df1e64e",
+        "byte_identical": true
+      }
+    },
+    "technical_eligible_days": {
+      "A_London_sweep": 159,
+      "B_ORB5": 159,
+      "B_ORB15": 159,
+      "C_VWAP_extreme": 159
+    },
+    "freeze": {
+      "status": "FROZEN_BYTES_VERIFIED",
+      "freeze_id": "VNEXT_159_2026-10-21",
+      "files": 73,
+      "historical_tests": 207,
+      "eligible_days": 159,
+      "backtest_run": false
+    },
+    "implementation_sha256": {
+      "scripts/oos_preparation/route.py": "75ddcee667aa5e66975621fe2c46fc423f0527bb369b528facaf03d4d2a2173e",
+      "scripts/oos_preparation/replay.py": "c9c768b8b069a5a344b552dcdc633b22c0daefca39b3b3098552c5f27d7ca804",
+      "scripts/reproduce_research/engine.py": "8fbf6cb7ced7fe0338cca164de1f3cbde8b3d03eb92738bde4616829cd541d8b",
+      "scripts/reproduce_research/continuous.py": "21ac911494de16263eaf03e938848bb37eebef648e476f3d767f974ab3de47e1",
+      "scripts/reproduce_research/volume_path.py": "308836e1c43494651fbae7a9d9bfae0835a0acf7463899dceefd4504ee81145f"
+    }
+  },
+  "release_checks": {
+    "classification": "PREPARATION_RELEASE_CHECKS_NOT_HOLDOUT_RESULTS",
+    "recorded_on": "2026-10-21",
+    "pytest_passed": 262,
+    "pytest_failed": 0,
+    "pytest_skipped": 0,
+    "typecheck": "PASS",
+    "production_build_local": "PASS",
+    "frozen_files_byte_identical": 73,
+    "historical_replay": "435 trades and780 eligibility rows byte-identical; 159 eligible days per model",
+    "historical_replay_end": "2025-09-30",
+    "future_signals_computed": false,
+    "future_PnL_computed": false,
+    "future_intraday_strategy_features_computed": false,
+    "readiness_ATR_volume_prerequisites_computed": true,
+    "dashboard_static_html": "New heading, release-blocked status and headline counts verified",
+    "react_review": "Server components; static JSON only; stable list keys, labeled section/details, no new client JS or effects",
+    "publication_scope": "Aggregated quality, dates, source hashes and protocol only. Private OHLCV and trade ledgers excluded.",
+    "deployment": "Separate Vercel READY inspection required; not asserted by this pre-deployment file"
+  },
+  "final_technical_eligible_days": {
+    "A_London_sweep": 249,
+    "B_ORB5": 249,
+    "B_ORB15": 249,
+    "C_VWAP_extreme": 249
+  },
+  "future_scoring_authorized": false,
+  "future_signal_calls": 0,
+  "future_PnL_calls": 0,
+  "known_limits": [
+    "Explicit human release required for Step4",
+    "Limited local non-use evidence: independent never-use certification unavailable",
+    "Vendor publication vintages and usage rights not independently certified; no raw/public trade publication"
+  ],
+  "scope": "Step1quality, Step2historical-only replay and prerequisite state, Step3publication. No Step4. No new thresholds or strategies. New preparation package, not a revision of frozen baseline."
+}

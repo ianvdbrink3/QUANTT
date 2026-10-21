@@ -1,0 +1,43 @@
+{
+  "status": "PASS_HISTORICAL_FULL_LEDGER_BYTE_PARITY",
+  "period": [
+    "2024-12-30",
+    "2025-09-30"
+  ],
+  "source_files": 30,
+  "future_source_files_opened": 0,
+  "future_signals_computed": false,
+  "historical_results": {
+    "trades": {
+      "rows": 435,
+      "reference_sha256": "dfe1a19f2452e130fa298ea522ec90ea9ea4dccdd7a7c4b9c45988227ea23d6a",
+      "byte_identical": true
+    },
+    "eligibility": {
+      "rows": 780,
+      "reference_sha256": "24ee41ea92413dd71be529dd266a10c8777b713df39f4e23da52ef6d7df1e64e",
+      "byte_identical": true
+    }
+  },
+  "technical_eligible_days": {
+    "A_London_sweep": 159,
+    "B_ORB5": 159,
+    "B_ORB15": 159,
+    "C_VWAP_extreme": 159
+  },
+  "freeze": {
+    "status": "FROZEN_BYTES_VERIFIED",
+    "freeze_id": "VNEXT_159_2026-10-21",
+    "files": 73,
+    "historical_tests": 207,
+    "eligible_days": 159,
+    "backtest_run": false
+  },
+  "implementation_sha256": {
+    "scripts/oos_preparation/route.py": "75ddcee667aa5e66975621fe2c46fc423f0527bb369b528facaf03d4d2a2173e",
+    "scripts/oos_preparation/replay.py": "c9c768b8b069a5a344b552dcdc633b22c0daefca39b3b3098552c5f27d7ca804",
+    "scripts/reproduce_research/engine.py": "8fbf6cb7ced7fe0338cca164de1f3cbde8b3d03eb92738bde4616829cd541d8b",
+    "scripts/reproduce_research/continuous.py": "21ac911494de16263eaf03e938848bb37eebef648e476f3d767f974ab3de47e1",
+    "scripts/reproduce_research/volume_path.py": "308836e1c43494651fbae7a9d9bfae0835a0acf7463899dceefd4504ee81145f"
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "classification": "SOURCES_LOCKED_BEFORE_SIGNALS",
+  "period": [
+    "2025-10-01",
+    "2026-09-30"
+  ],
+  "sources": [
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-10.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-10.csv",
+      "contract": "NQH26",
+      "sha256": "bf3839894b659fea4d70901d6dae9a37567f2add36aa0aa2482f70017792e8c5",
+      "rows": 13799,
+      "first_utc": "2026-02-22T23:00:00+00:00",
+      "last_utc": "2026-03-06T21:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-11.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-11.csv",
+      "contract": "NQH26",
+      "sha256": "acefd89417e201a8f25f2433ad98d91fef372c3a8acbc32a3d19e95d67b6f0c6",
+      "rows": 12934,
+      "first_utc": "2026-03-08T22:00:00+00:00",
+      "last_utc": "2026-03-20T13:29:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "contract": "NQH26",
+      "sha256": "68f4548eaf12d3de98a2bff1651f093c715cb8c0f0669989dc00f393483a02fe",
+      "rows": 3015,
+      "first_utc": "2025-11-30T23:00:00+00:00",
+      "last_utc": "2025-12-10T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "contract": "NQH26",
+      "sha256": "59763de75f4c288671297260d8606c54485b7441a663a9f48832e3c311b82642",
+      "rows": 8244,
+      "first_utc": "2025-12-08T06:02:00+00:00",
+      "last_utc": "2025-12-18T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "contract": "NQH26",
+      "sha256": "5a098d8a55810b8f181fbe754903fd596c54608ff6ef4e82922ddbd4c904db86",
+      "rows": 5100,
+      "first_utc": "2025-12-16T06:00:00+00:00",
+      "last_utc": "2025-12-19T21:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "contract": "NQH26",
+      "sha256": "896ff19e633c12e29bf8990956d00bfbcfb109c62c202152dcee9cef314b4c3c",
+      "rows": 10809,
+      "first_utc": "2025-12-19T06:00:00+00:00",
+      "last_utc": "2026-01-02T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "contract": "NQH26",
+      "sha256": "4d2b4e0d63022215a8c9753065a032cf255d70ba0afe7c838146b16dcde75fcd",
+      "rows": 12839,
+      "first_utc": "2026-01-01T23:00:00+00:00",
+      "last_utc": "2026-01-15T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "contract": "NQH26",
+      "sha256": "fb29ac506180fb9a9931e249dc432ae2012f04aab7147b4ae6fe290c15b2955a",
+      "rows": 13560,
+      "first_utc": "2026-01-14T06:00:00+00:00",
+      "last_utc": "2026-01-28T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "contract": "NQH26",
+      "sha256": "dfafc23a1e7aa224d3abc1ab65d0ec8283ebfc9ccf93cf8809251904081f5dd9",
+      "rows": 13800,
+      "first_utc": "2026-01-27T06:00:00+00:00",
+      "last_utc": "2026-02-10T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "contract": "NQH26",
+      "sha256": "9a27c0ff8664b3f2212111d39f74410f7a75506ec9ec7c78a235e4d355a19765",
+      "rows": 13558,
+      "first_utc": "2026-02-09T06:00:00+00:00",
+      "last_utc": "2026-02-23T05:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-10.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-10.csv",
+      "contract": "NQM26",
+      "sha256": "e1b556727f8625715150094c97b14d36a4c1fa85ade9d1f5b562e1f1f2043982",
+      "rows": 13560,
+      "first_utc": "2026-05-18T05:00:00+00:00",
+      "last_utc": "2026-06-01T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-11.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-11.csv",
+      "contract": "NQM26",
+      "sha256": "43ba5d11f235bc4d5ee4d081e8c26a703931c4b41906d0752e2d5974fd5ea72e",
+      "rows": 13800,
+      "first_utc": "2026-05-31T22:00:00+00:00",
+      "last_utc": "2026-06-12T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-12.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-12.csv",
+      "contract": "NQM26",
+      "sha256": "e6b8ef135b324496b48b1c713edf725241262a2e13c939a2fa76e4584c67e96d",
+      "rows": 4685,
+      "first_utc": "2026-06-14T22:00:00+00:00",
+      "last_utc": "2026-06-18T13:29:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "contract": "NQM26",
+      "sha256": "b36913bb4d039c7d12d9c4744f871dd6b35ade448110c7b5dc130f7098b61633",
+      "rows": 8768,
+      "first_utc": "2026-03-01T23:00:00+00:00",
+      "last_utc": "2026-03-13T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "contract": "NQM26",
+      "sha256": "96d5204417b95db964e35cc8f3423b7282f524fa0f4deea16e515226b999f18c",
+      "rows": 13800,
+      "first_utc": "2026-03-15T22:00:00+00:00",
+      "last_utc": "2026-03-27T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "contract": "NQM26",
+      "sha256": "6255ab5451f89a3c6079ab44854b257f035a56d790d7f50655323de65c0aad82",
+      "rows": 13329,
+      "first_utc": "2026-03-27T05:00:00+00:00",
+      "last_utc": "2026-04-10T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "contract": "NQM26",
+      "sha256": "b4525323ca68f3a7a9d8ede3b97e898c5f50dd2c038ed68295797ace58dd9750",
+      "rows": 13799,
+      "first_utc": "2026-04-09T05:00:00+00:00",
+      "last_utc": "2026-04-23T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "contract": "NQM26",
+      "sha256": "e160899e6b8b818db68264586e4cb4df295a795543a2b5439a66483b44efa18b",
+      "rows": 12420,
+      "first_utc": "2026-04-22T05:00:00+00:00",
+      "last_utc": "2026-05-05T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "contract": "NQM26",
+      "sha256": "3483dc6a8acac61a502e2875a266194cc62b6c41559858e287efc6ee3234cc95",
+      "rows": 13800,
+      "first_utc": "2026-04-22T05:00:00+00:00",
+      "last_utc": "2026-05-06T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqm26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "relative_private_path": "data/raw/oos/nqm26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "contract": "NQM26",
+      "sha256": "4e73c2f67f8b29ab1f47fd364ef5fcff07948ca8d3588bd41db704b42c0c6ba3",
+      "rows": 18900,
+      "first_utc": "2026-05-05T05:00:00+00:00",
+      "last_utc": "2026-05-22T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "contract": "NQU26",
+      "sha256": "ca8cf5aa5f213346efbcca271207d1ccf4be5083563f3073d493e6d3de4d1f87",
+      "rows": 19999,
+      "first_utc": "2026-06-04T17:34:00+00:00",
+      "last_utc": "2026-06-26T20:59:00+00:00",
+      "cap_warning": true,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "contract": "NQU26",
+      "sha256": "bdbd2a2b558d096ab72edafed716b036e65a79c18bb89698e81c2398de4d6fa3",
+      "rows": 19999,
+      "first_utc": "2026-06-19T08:40:00+00:00",
+      "last_utc": "2026-07-10T04:59:00+00:00",
+      "cap_warning": true,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "contract": "NQU26",
+      "sha256": "c9fe1a753fdd5572a804dfe1f88299ae4fe91aa075498b9b459ce4a6d9ef054d",
+      "rows": 13800,
+      "first_utc": "2026-07-09T05:00:00+00:00",
+      "last_utc": "2026-07-23T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-5.csv",
+      "contract": "NQU26",
+      "sha256": "d75e2daa75342973f1b80ff0360a933b5228ba21c5d45103b630e1ac102cfa53",
+      "rows": 13800,
+      "first_utc": "2026-07-22T05:00:00+00:00",
+      "last_utc": "2026-08-05T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-6.csv",
+      "contract": "NQU26",
+      "sha256": "90ac51a5e1f1081fffd256b9e1e0929c610f02bdfdd858fae0b904553fd9593e",
+      "rows": 13800,
+      "first_utc": "2026-08-04T05:00:00+00:00",
+      "last_utc": "2026-08-18T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-7.csv",
+      "contract": "NQU26",
+      "sha256": "04174dfdd87bf5031606ccf18b8d6835351e426c61d078aaa5eec2a3271fa74f",
+      "rows": 13800,
+      "first_utc": "2026-08-17T05:00:00+00:00",
+      "last_utc": "2026-08-31T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-8.csv",
+      "contract": "NQU26",
+      "sha256": "b3c3bd4b88e71f4508fbbb4edb4059af1be6227e2f5370c4fc37222d0fef1c12",
+      "rows": 13560,
+      "first_utc": "2026-08-30T22:00:00+00:00",
+      "last_utc": "2026-09-11T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026-9.csv",
+      "contract": "NQU26",
+      "sha256": "ad9a893529766522c9c0631d2b2f1cda6b3fa65abfe324eb1240a163087cb755",
+      "rows": 6019,
+      "first_utc": "2026-09-13T22:00:00+00:00",
+      "last_utc": "2026-09-18T13:29:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqu26_intraday-1min_historical-data-10-21-2026.csv",
+      "relative_private_path": "data/raw/oos/nqu26_intraday-1min_historical-data-10-21-2026.csv",
+      "contract": "NQU26",
+      "sha256": "43e77f0372b71d22255ca84a9ee47bcfdfa55e92a5d045f4cf547b522a5ae528",
+      "rows": 8709,
+      "first_utc": "2026-05-31T22:00:00+00:00",
+      "last_utc": "2026-06-12T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "contract": "NQZ25",
+      "sha256": "c550853a9b971b69861056d807afb4e318f8ca49aa4bb5724a78143afb66e4bb",
+      "rows": 13799,
+      "first_utc": "2025-09-21T22:00:00+00:00",
+      "last_utc": "2025-10-03T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "contract": "NQZ25",
+      "sha256": "57199908b8ceac9a171eb4dde4af3bacd093921f39a98293761d9c93b2c44b7d",
+      "rows": 14760,
+      "first_utc": "2025-10-03T05:00:00+00:00",
+      "last_utc": "2025-10-17T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "contract": "NQZ25",
+      "sha256": "5ed776215dff7f062af867344165161950c03b4eabb8ecdf42175548df9a9929",
+      "rows": 14760,
+      "first_utc": "2025-10-17T05:00:00+00:00",
+      "last_utc": "2025-10-31T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "contract": "NQZ25",
+      "sha256": "97d8e0ce86cc52fedd9a3a447319020e47c0ece5c702b28faad79c6c05af9246",
+      "rows": 14760,
+      "first_utc": "2025-10-31T05:00:00+00:00",
+      "last_utc": "2025-11-14T21:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "contract": "NQZ25",
+      "sha256": "bd847b830342f9d2c04f8698dd2546c7498714da659c30a6c098931658463917",
+      "rows": 13648,
+      "first_utc": "2025-11-14T06:00:00+00:00",
+      "last_utc": "2025-11-28T18:14:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "contract": "NQZ25",
+      "sha256": "85e095a1eb26bbd44ad8f8021e0b417115de4da2a3a5510205f7f869b3427b92",
+      "rows": 14085,
+      "first_utc": "2025-11-28T13:30:00+00:00",
+      "last_utc": "2025-12-12T21:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-21-2026.csv",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-21-2026.csv",
+      "contract": "NQZ25",
+      "sha256": "17d6d03e8034074fcec3d60a1700c47efafd54680a13fc0f6d83d15c8e62d6e2",
+      "rows": 9692,
+      "first_utc": "2025-12-10T06:00:00+00:00",
+      "last_utc": "2025-12-19T14:29:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "relative_private_path": "data/raw/oos/nqz26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "contract": "NQZ26",
+      "sha256": "28762c3abc3d10efd8c85404d8fcbb96d961defeffa52a3c5412459193765004",
+      "rows": 13800,
+      "first_utc": "2026-09-13T22:00:00+00:00",
+      "last_utc": "2026-09-25T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "relative_private_path": "data/raw/oos/nqz26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "contract": "NQZ26",
+      "sha256": "57975d1539d06d6a76f15bcfa49e9a80cf221dfdeca687010cb731ceab8a4d1d",
+      "rows": 5520,
+      "first_utc": "2026-09-25T05:00:00+00:00",
+      "last_utc": "2026-10-01T04:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    },
+    {
+      "filename": "nqz26_intraday-1min_historical-data-10-21-2026.csv",
+      "relative_private_path": "data/raw/oos/nqz26_intraday-1min_historical-data-10-21-2026.csv",
+      "contract": "NQZ26",
+      "sha256": "223e757a634a8fe2310e68d3797024046ca6e78a5f4e462f68e632e19f421a09",
+      "rows": 6226,
+      "first_utc": "2026-08-30T22:00:00+00:00",
+      "last_utc": "2026-09-11T20:59:00+00:00",
+      "cap_warning": false,
+      "prior_access": "Quality-only intake; logs incomplete, absolute non-use not certified"
+    }
+  ],
+  "warmup_sources": [
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "e2979e3b199eb1eaf612b5848b636cc4fb5b80befdae28200bb969fb15f80f92",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "d3728679128f5640dd79f4b291c1721069d92e2a2c698ec9f36f292e1c05f888",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-2.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "f9c15773ad15a2e6a8438aa35d737f9d5523e5e4b920992a131ef65f2b31a3c5",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-3.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-4.csv",
+      "sha256": "556843730f8a0172b0e5677380236c2649533036f38d499f80983e2f4bc5ef67",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-4.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-5.csv",
+      "sha256": "1930aaeac611492d8763fabaff3852b63cbffa99af92f37c8538f301899e26d7",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-5.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-6.csv",
+      "sha256": "b4dec48a466e848ecd7dd78058a0ccf1389289cde9d0ec74d5a0ef100c943670",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-6.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-7.csv",
+      "sha256": "ed82e77acb77ba78431a3d66aa82419025b8d1d9554573b00a5e8062680b1047",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-7.csv"
+    },
+    {
+      "filename": "nqh25_intraday-1min_historical-data-10-19-2026-8.csv",
+      "sha256": "8bfff8352b7cf9a49b44b4e759402cb230f1cd550db142f0a729a673212777f9",
+      "contract": "NQH25",
+      "relative_private_path": "data/raw/nqh25_intraday-1min_historical-data-10-19-2026-8.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026.csv",
+      "sha256": "bc7b294bbdbbe892fc8fb8208dc854e1db4b96a93e5fff6583fd402e2f04ec8f",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-19-2026.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-2.csv",
+      "sha256": "bd73a92c5a34752296420899cd0ce60d17c15deed7d6ee7669fe1ef07cfe138b",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-19-2026-2.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-19-2026-3.csv",
+      "sha256": "e5280bb16101963998060d3cc7a10efdc02d33b082251542cefd558c8228d6ef",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-19-2026-3.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "0ea15d49a332695c33a1e4fec906605e7fa278ce05f03791c5a541071e0a77b1",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "aeae0f26c7122c191eb6d9dd99549498e09373648f89151049b29a62b1f32c6b",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-2.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-3.csv",
+      "sha256": "e88ec71ade5b2d89651fbcc768e95da688b531ff1f46c3a0bf782b1f0822e77e",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-3.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-4.csv",
+      "sha256": "bb7bc3080653e86b79f0bf08ad6db517de0a24303e94e8206b21efe17cf36592",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-4.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-5.csv",
+      "sha256": "1bcd0b4be0cf0b728411ce5eff3cda9c3559742a0fd0e1a218b2c31f5c93e240",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-5.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-6.csv",
+      "sha256": "94caf07085dfe22e55022f51c323d6d8dcde65201e3f53e1b412b87fcd13800a",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-6.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-7.csv",
+      "sha256": "82fed51b25f9b46012ca445195edc4a110dbc1dba2a1d83ea67150e32da216cc",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-7.csv"
+    },
+    {
+      "filename": "nqm25_intraday-1min_historical-data-10-20-2026-8.csv",
+      "sha256": "f808f9c9adc9e95c737e8fac7392c818bab0613baac28a6f5ee3c5cab6884415",
+      "contract": "NQM25",
+      "relative_private_path": "data/raw/nqm25_intraday-1min_historical-data-10-20-2026-8.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "a299a73610623ce5f11d50c26bf7f2a3a010e7bb933514e578da9a96142f6b8d",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "ca6d853c9d01bf9599fbb3a4b79549b14f7cf57efaf54716eddc7d73c08ed922",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-2.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-3.csv",
+      "sha256": "2579a6840e4e0347f1f352df1d953f3835dc3a16b1572038df3fd280e1459f10",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-3.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-4.csv",
+      "sha256": "ebfe31da452a88b9ed034e34c0188d46cdfd5654f5c370ce0da62a66a46d457c",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-4.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-5.csv",
+      "sha256": "70939648393c830e71a5398b0d8abf8231b6b8e7fce005296c5e03c7f6c4a7ce",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-5.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-6.csv",
+      "sha256": "ce415bd56c40a762c693a7196baf6dd7c29b78e35ce165cac01299a7ddb5fd2e",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-6.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-7.csv",
+      "sha256": "bc8cc03c5e2360fd1d596800ec455b8ac311bef0511a3e3734feb1306ba3eb4d",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-7.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-8.csv",
+      "sha256": "0d37c01e9a988bf6c3bd7cda5d0ebda8d8edc3cb6e312d7e08d4a500f72682f4",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-8.csv"
+    },
+    {
+      "filename": "nqu25_intraday-1min_historical-data-10-20-2026-9.csv",
+      "sha256": "833d7a309119016e547ecd81d4df5fac23aaad9336e28b3dfb595237d18a26a3",
+      "contract": "NQU25",
+      "relative_private_path": "data/raw/nqu25_intraday-1min_historical-data-10-20-2026-9.csv"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-20-2026.csv",
+      "sha256": "830a9db3b97a5ef61ce6f3910f25a6e6506b72baba343014fcd9e0372889c42c",
+      "contract": "NQZ25",
+      "relative_private_path": "data/raw/nqz25_intraday-1min_historical-data-10-20-2026.csv"
+    },
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-20-2026-2.csv",
+      "sha256": "a3f609927907656c13342e05720e9a40ce9bc00dc90f7e04c2b79460e42e0b37",
+      "contract": "NQZ25",
+      "relative_private_path": "data/raw/nqz25_intraday-1min_historical-data-10-20-2026-2.csv"
+    }
+  ],
+  "prior_intake_evidence_sha256": {
+    "artifacts/nqh26-batch1/audit.json": "b1e71948ac40d254621ab84a4197d9a5b5eae9715562ae7fb467723dcd65924c",
+    "artifacts/nqh26-batch2/audit.json": "d3f5c9f090944e56b5568c4574d234bf43252c57cd28e305e45c05c240189dbe",
+    "artifacts/nqh26-batch3/audit.json": "a693f3cad838f142c5d46775c782af882645bde8fdc079f3d2e8879b8f707b15",
+    "artifacts/nqm26-batch1/audit.json": "ca35f6af75bcd56db6748a60d428abedfeeb761143ce566696ca417b08d372ea",
+    "artifacts/nqm26-batch2/audit.json": "0a6e89484fcc573eb5a1a31452f5fddb6528900e6cbacaf784c7bbea79d86c28",
+    "artifacts/nqm26-batch3/audit.json": "2715028305a4fdf828251a062ac491d0069e21490c476b827b2d72c90da8677e",
+    "artifacts/nqu26-batch1/audit.json": "7e7f92e609956480c7b45cc742b40d835aa67a2fe5e9af44756eb5d832bca9bc",
+    "artifacts/nqu26-batch2/audit.json": "eeffb9dee2fa886fd76803531c490d6bdd205d4dca407a70823e5f77652048ba",
+    "artifacts/nqu26-batch3/audit.json": "09f4110b0ec949d3ab81bf00cdc01f3585f579d093ddf6570a43e879dccb6c3e",
+    "artifacts/nqz26-batch1/audit.json": "acfb33a5b8dff5815cbb99470bca6b454da27ef41abc17ff1e56ae1c84f5d559"
+  },
+  "license_status": "UNVERIFIED_NO_RAW_PUBLICATION",
+  "rule": "No Downloads fallback. Require all registered bytes, reject changes and conflicting overlap. Capped U26 exports overlap earlier accepted blocks; cap flag retained, not represented as uncapped."
+}

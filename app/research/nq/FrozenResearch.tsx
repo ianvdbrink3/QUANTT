@@ -10,15 +10,15 @@ export default function FrozenResearch() {
     <details className="nq-details"><summary>Vaste regels en beoordelingscriteria</summary>
       <p>Alleen bekende roll-spreads voor multi-dag indicatoren; uitvoering op onverschoven actieve contractprijzen. Volumereferentie: mediaan van maximaal 20 eerdere observaties van dezelfde NY-minuut, minimum 10. Geen nieuwe filters of exits. $24,50 kosten per roundtrip.</p>
       <p>Op de volledige onafhankelijke testperiode: minstens 20 eligible dagen, netto &gt; 0, profit factor &gt; 1, tweezijdige block-bootstrap p &lt; 0,05 én ondergrens 95%-interval van het daggemiddelde &gt; 0. Dezelfde numerieke criteria als eerder; 20 is geen garantie van voldoende statistische power. Geen tussentijdse resultaatselectie.</p>
-      <p>De toekomstige datum-/contractadapter is nog niet uitgevoerd of gebouwd in deze freeze-release. De bestaande historische reproductie blijft intact. De download bevat alle exacte grenzen en beslisregels.</p>
+      <p>Ten tijde van deze freeze-release was de toekomstige datum-/contractadapter nog niet gebouwd. De actuele voorbereidingsstatus staat hierboven. De bestaande historische reproductie blijft intact. De download bevat alle exacte grenzen en beslisregels.</p>
     </details>
-    <h3>Aanwezige vervolgdata · alleen geïnventariseerd</h3>
+    <h3>Historische inventarisatie bij de freeze · inmiddels aangevuld</h3>
     <p className="nq-note">{freeze.inventory.files_scanned} NQ-CSV’s bekeken op timestamps en hashes, zonder nieuwe backtest. In Downloads staan NQZ25-exports tot 12 december 2025. Individuele H26/M26/U26 en Z26-overlap ontbreken. Andere continue reeksen zijn geen gevalideerde vervanging. De oktober-2026-sample valt buiten het vaste testvenster.</p>
     <a href="/data/research-freeze.json" download>Download bevroren protocol en bestandsinventaris</a>{' · '}
     <a href="/data/research-freeze.md" download>Lees de bevroren onderzoeksstand</a>{' · '}
     <a href="/data/research-data-inventory.md" download>Lees wat aanwezig is en nog ontbreekt</a>
     <div id="oos-preparation">
-      <h3>Vervolgvoorbereiding · holdout blijft ongescoord</h3>
+      <h3>Eerste voorbereidingsmomentopname · zie actuele jaarcontrole hierboven</h3>
       <p className="nq-warning">Status: {preparation.status}. Zes bronblokken privé vastgelegd, {preparation.standard_clean_days} schone normale dagen en {preparation.complete_noon_prefix_days} complete ochtend-prefixen. Geen strategie-uitkomsten geopend. H26/M26/U26/Z26, december-rollbewijs en volledige productkalender ontbreken nog; de voorbereiding geeft geen toestemming voor scoring.</p>
       <p className="nq-note">De aparte data-adapter reproduceert alle 30 historische bronbestanden en de juni-/septemberroll zonder strategieën uit te voeren. Onbekende kalenderdatums en conflicterende overlap worden geweigerd. Eerdere kwaliteitsinspectie is geregistreerd; volledige niet-gebruikgarantie is niet bewezen.</p>
       <details className="nq-details"><summary>Powerplanning · alleen oude onderzoeksdata</summary>

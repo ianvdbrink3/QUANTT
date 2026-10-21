@@ -13,6 +13,8 @@
     "research:volume-path": "node scripts/research-volume-path",
     "research:volume-stability": "node scripts/research-volume-stability",
     "verify:freeze": "python3 scripts/verify_research_freeze.py",
+    "verify:oos-year": "node scripts/verify-oos-year",
+    "verify:oos-year-parity": "node scripts/verify-oos-year --historical-parity",
     "prepare:oos": "node scripts/prepare-oos",
     "verify:oos-data-parity": "node scripts/verify-oos-data-parity",
     "verify:december-overlap": "node scripts/verify-december-overlap",
