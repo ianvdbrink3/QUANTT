@@ -1,0 +1,15 @@
+{
+  "status": "METHOD_AUDIT_COMPLETE_NO_NEW_MODEL",
+  "files_sha256": {
+    "public/data/research-weighting-audit-tables.json": "590065c3676cd035a335a1321efaaf4450493d469e2c14be1cb1c5739ed545f0",
+    "public/data/research-weighting-audit.calibration.csv": "e8a0db31e59e8d8394c1dbbc4f343e490fccd6c52b5bbbc9cd25727d6431a9be",
+    "public/data/research-weighting-audit.comparisons.csv": "0ec91b461580ac73b7ff53104918a0d83780c8042ecb89242780ed60dc252982",
+    "public/data/research-weighting-audit.decomposition.csv": "95fb24b6ad2772e707ab8570aac3eb41adc834b3aba147dd3ca7f113aad4f599",
+    "public/data/research-weighting-audit.exact.csv": "2493ca94accaee09806479dd707d7b416b513c642261df64eadb03a52989b592",
+    "public/data/research-weighting-audit.family-calibration.csv": "cd734ba0facae36477da19ee44dbeed65fab75829c3fb4e69357345f3d8dd86f",
+    "public/data/research-weighting-audit.json": "603b328d2e07e72a6e5a9edb76ed4e26f0c0867a03e9102aee8f30fe76f5b090",
+    "public/data/research-weighting-audit.md": "ee94c3a534fa618e58efeddbb1028717e6148b812f77d73ea224b06d08afd67a",
+    "public/data/research-weighting-audit.observed.csv": "4de07e2f35a136573823a40b9ca6cc973f1358de1baba525decd62155c816740"
+  },
+  "report_sha256": "ee94c3a534fa618e58efeddbb1028717e6148b812f77d73ea224b06d08afd67a"
+}

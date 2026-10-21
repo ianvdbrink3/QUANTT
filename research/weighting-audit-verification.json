@@ -1,0 +1,15 @@
+{
+  "result_sha256": "603b328d2e07e72a6e5a9edb76ed4e26f0c0867a03e9102aee8f30fe76f5b090",
+  "lock_sha256": "7476f40d0d6ebe968b38727f74c040ddb141e8b694cf8bdc40bbce30b8ab6d42",
+  "private_files_sha256": {
+    "real-statistics.npz": "2abc42afb028cbfed82c8fa3e68ce612d3ca8b9a6bff58bdd168238cbd1fc559",
+    "independent-reproduction.json": "0346aef57de8b8c2e8140b4c6b374be29184bc97f62795f2aa5dc223f64cb5f6",
+    "gaussian_iid.npz": "7124b5d28aeaec74dfff368c61ef246caee81a300feebb341ee8fc2a9151496a",
+    "gaussian_iid.sha.json": "5040b5d606b4c34a870b5461a87471f4a53a96f5787b82d210eb3fda78a71ca9",
+    "gaussian_clock_scale.npz": "1d1223132fb0c4ce239c9bbe5f8c07f0d59156f58c62ef1c54e3e57f35b6813c",
+    "gaussian_clock_scale.sha.json": "4d77b6597ffbbd5c0b8df382c9932a3c277f9a7743ca4fa9080afdb198342e50",
+    "conditional_bar_reflections.npz": "d2f14ca037b7a52138c39f0f87ae63d28697fc7438ee740d3ec5a4cafc0a4ee7",
+    "conditional_bar_reflections.sha.json": "04d62738819c0d3f21fbb0e9471f9ba820e31522e3fae28b9dcca97077e1379b"
+  },
+  "old_outputs_unchanged": true
+}

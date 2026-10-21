@@ -1,0 +1,29 @@
+{
+  "status": "FIXED_BEFORE_NEW_ESTIMATOR_AND_SIMULATION_RESULTS",
+  "anchor_commit": "fc888217fba8994eeecfb02273c20ca846b6fa71",
+  "files_sha256": {
+    "artifacts/raw-market/daily.csv": "696e358768171e8ccbf11495318967aa72376f26a5c6dbd79a887f836a4b754a",
+    "artifacts/raw-market/events.csv": "2bd68f590c4ce6224abfbf9aa121d2fb08b6300970e780ef042b4e1551f14266",
+    "artifacts/raw-market/half-hours.csv": "65f72d304ca5922aad3a8b82ad905a8f6dbccdbb8f7cd416da39d9f7048a246a",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c",
+    "public/data/research-execution-audit.csv": "0e99cbdeee28024f5c79d2ee303ee48286762ddac78cca0a5f6f56b64d70ecdb",
+    "public/data/research-execution-audit.json": "77963f2002ff1491cafc3d55d9f619a0c7940b732fc8cd1d2287659fb11ea42e",
+    "public/data/research-experiment-archive.json": "4dfd907075c822cfe3f7ed6550899bf5e1047ce74c2365f6a5915a188ae1b6d6",
+    "public/data/research-market-review.md": "09ad31a5c443d94201cab016e45a41a6d58f7d5601d52d8ede53cdace74d06a0",
+    "public/data/research-raw-market.correlations.csv": "e1cf767e1abd5089562913e7713d295d67bd76cf3e0693e049943d19499977dd",
+    "public/data/research-raw-market.events.csv": "049416d101cdbcf326584b9fa31dc57d611410509708f1b7bc1ece67c7c29626",
+    "public/data/research-raw-market.half-hours.csv": "0b58a8889282c0ff7922af2ea01f0da6d56f945ca9ac8a0870f34a484c5d9ae0",
+    "public/data/research-raw-market.json": "f4bcd9d33691a381aac9a1430bcd668ea13596e0ecbf155df47ab1e51af8280d",
+    "public/data/research-raw-market.tests.csv": "0a89a61717268582357443e1e3d316411da99bfb27cda34b60bfadd0be969e78",
+    "research/holdout-protocol.json": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022",
+    "research/market-review-verification.json": "b7d3317a0053322263d32cb3d47a6f39768eee469ec53d37caa4188304b4c71b",
+    "research/oos-year-calendar.json": "1bc217b2abd9112a85d21b8b74df791b223202f7d615890f5d9b9e80127f56aa",
+    "research/oos-year-rollovers.json": "1299dff7d13c9e05fb9dfa42e27c19b21c6f348f832291f933a5daec47c91882",
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "research/raw-market-protocol.json": "7bb27512a6e431ebedf662521214557d59d9eb38924a99e6c7ee39af76b787f6",
+    "research/raw-market-verification.json": "c3397512936eea3b96f8f791df8ba46f19e15ae3009b15b258978a50adaf8ede",
+    "research/weighting-audit-protocol.json": "028151863460a6b995371c3ef73902a098906268b6f42a8d80f69cf58d1eb806",
+    "scripts/weighting_audit/__main__.py": "88f23d1401ca50a2d09e369dfc3e0f3627a5bc3138cc6a65aa4daf5c9575e485",
+    "scripts/weighting_audit/core.py": "34333cfc0847f64d8a2d063d34a30963f4ecb6d06e86696836f8c1ed48dd1193"
+  }
+}

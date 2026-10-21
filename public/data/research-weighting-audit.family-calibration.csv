@@ -1,0 +1,7 @@
+generator,procedure,panels,panels_with_any_record_rejection,rate,wilson_95,note
+gaussian_iid,nominal,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
+gaussian_iid,holm43,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
+gaussian_clock_scale,nominal,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
+gaussian_clock_scale,holm43,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
+conditional_bar_reflections,nominal,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
+conditional_bar_reflections,holm43,128,128,1.0,"[0.9708630437264916, 1.0]","Any zero rejection among12record tests, not typeI error for a true equal-day zero null"
