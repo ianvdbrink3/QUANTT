@@ -15,6 +15,7 @@
     "verify:freeze": "python3 scripts/verify_research_freeze.py",
     "prepare:oos": "node scripts/prepare-oos",
     "verify:oos-data-parity": "node scripts/verify-oos-data-parity",
+    "verify:december-overlap": "node scripts/verify-december-overlap",
     "diagnose:orb15": "node scripts/diagnose-orb15",
     "reproduce:research": "node scripts/reproduce-research --publish"
   },

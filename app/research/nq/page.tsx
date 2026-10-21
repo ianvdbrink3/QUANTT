@@ -8,6 +8,7 @@ import continuous from '../../../public/data/research-continuous.json';
 import VolumePathResearch from './VolumePathResearch';
 import VolumeStabilityAudit from './VolumeStabilityAudit';
 import FrozenResearch from './FrozenResearch';
+import DataCollectionUpdate from './DataCollectionUpdate';
 import './nq.css';
 
 export const metadata: Metadata = { title: 'QUANTT — NQ onderzoek op echte data', description: 'Kostenbewust NQ-onderzoek, kwaliteitscontrole en onzekerheid. Geen gevalideerde trading edge.' };
@@ -38,6 +39,7 @@ export default function NQResearch() {
   return <main className="nq-page">
     <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#volume-stability">Stabiliteitsaudit</a><a href="#volume-path">159 dagen</a><a href="#baseline-title">Baseline v0.9</a><a href="#resultaten">Hypothesen</a><a href="#kwaliteit">Datakwaliteit</a><Link href="/research/observed">0.9 importaudit</Link></nav></header>
     <section className="nq-intro"><p className="nq-eyebrow">BASELINE V0.9 · HISTORISCHE HOLDOUT BEVROREN</p><div className="nq-title"><h1>ORB15 slaagt niet<br />voor de holdout.</h1><span className="nq-status">{holdout.status}</span></div><p className="nq-lead">De vaste-regels vervolgtest van 18 april t/m 30 september 2025 is na kosten negatief. Geen promotie naar een gevalideerde edge. Nieuw onderzoek met 159 gedeelde dagen staat hieronder apart en is geen nieuwe holdout; dit zijn geen actuele handelssignalen.</p></section>
+    <DataCollectionUpdate />
     <FrozenResearch />
     <VolumeStabilityAudit />
     <VolumePathResearch />

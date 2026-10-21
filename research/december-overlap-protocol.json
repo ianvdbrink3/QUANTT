@@ -1,0 +1,23 @@
+{
+  "classification": "QUALITY_AND_VOLUME_ONLY_NO_SCORING",
+  "recorded_on": "2026-10-21",
+  "period": ["2025-12-01", "2025-12-19"],
+  "roll_rule": "Reuse scripts/oos_preparation/adapter.py determine_roll unchanged: first boundary-qualified completed session with incoming volume strictly above outgoing; activate next session. No strategy inputs.",
+  "completeness_guard": "Require at least one preceding qualifying outgoing-dominant day. Missing incoming no-trade minutes are not imputed. Report all minute gaps, do not demand full incoming coverage before it becomes liquid.",
+  "calendar": {
+    "reviewed_ranges": [["2025-12-01", "2025-12-19"]],
+    "closes_ny": {},
+    "observed_outages": [],
+    "scope": "Ordinary weekday Globex sessions only, 18:00 previous civil NY day to 17:00. No Christmas-period inference. NQZ25 expiration Dec19 09:30 NY is separately excluded from full-day cleanliness claims.",
+    "evidence": ["https://www.cmegroup.com/trading-hours.html", "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html"],
+    "limitation": "Reconstructed ordinary-session grid, not independently signed historical exchange calendar. Adapter intentionally preserves frozen convention."
+  },
+  "rejected_download": {
+    "filename": "nqh26_intraday-1min_historical-data-10-21-2026.csv",
+    "sha256": "03386e60bd0757e55f01227ecdeed616be29f9738b6613517ad267624ddeaa15",
+    "reason": "Malformed UI date fields produced unrelated Feb-Mar2026 capped export. Only structural/date validation performed. Not staged, no features or scoring. Original download retained."
+  },
+  "allowed": ["schema", "hashes", "timestamps", "OHLCV validation", "overlap reconciliation", "session coverage", "volume crossover", "pre-roll common close spread"],
+  "forbidden": ["strategy signals", "returns", "features", "P&L", "backtests", "eligibility engine"],
+  "purchase_authority": false
+}

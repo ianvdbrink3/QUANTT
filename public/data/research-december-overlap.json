@@ -1,0 +1,76 @@
+{
+  "classification": "QUALITY_AND_VOLUME_ONLY_HOLDOUT_UNSCORED",
+  "status": "DECEMBER_OVERLAP_VERIFIED_NOT_FULL_YEAR_READY",
+  "protocol_sha256": "5751c4d44d7522ae59c3213f30ad46236f6802c72b71259410c9de99df433725",
+  "sources": [
+    {
+      "filename": "nqz25_intraday-1min_historical-data-10-21-2026.csv",
+      "contract": "NQZ25",
+      "sha256": "17d6d03e8034074fcec3d60a1700c47efafd54680a13fc0f6d83d15c8e62d6e2",
+      "rows": 9692,
+      "first_utc": "2025-12-10T06:00:00+00:00",
+      "last_utc": "2025-12-19T14:29:00+00:00",
+      "relative_private_path": "data/raw/oos/nqz25_intraday-1min_historical-data-10-21-2026.csv"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-2.csv",
+      "contract": "NQH26",
+      "sha256": "68f4548eaf12d3de98a2bff1651f093c715cb8c0f0669989dc00f393483a02fe",
+      "rows": 3015,
+      "first_utc": "2025-11-30T23:00:00+00:00",
+      "last_utc": "2025-12-10T05:59:00+00:00",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-2.csv"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-3.csv",
+      "contract": "NQH26",
+      "sha256": "59763de75f4c288671297260d8606c54485b7441a663a9f48832e3c311b82642",
+      "rows": 8244,
+      "first_utc": "2025-12-08T06:02:00+00:00",
+      "last_utc": "2025-12-18T05:59:00+00:00",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-3.csv"
+    },
+    {
+      "filename": "nqh26_intraday-1min_historical-data-10-21-2026-4.csv",
+      "contract": "NQH26",
+      "sha256": "5a098d8a55810b8f181fbe754903fd596c54608ff6ef4e82922ddbd4c904db86",
+      "rows": 5100,
+      "first_utc": "2025-12-16T06:00:00+00:00",
+      "last_utc": "2025-12-19T21:59:00+00:00",
+      "relative_private_path": "data/raw/oos/nqh26_intraday-1min_historical-data-10-21-2026-4.csv"
+    }
+  ],
+  "source_rows_new": 26051,
+  "overlap_duplicate_rows": 7458,
+  "conflicting_overlaps": 0,
+  "preceding_qualified_outgoing_dominant_days": [
+    "2025-12-01",
+    "2025-12-02",
+    "2025-12-03",
+    "2025-12-04",
+    "2025-12-05",
+    "2025-12-08",
+    "2025-12-09",
+    "2025-12-10",
+    "2025-12-11",
+    "2025-12-12"
+  ],
+  "active_unique_bars": 20700,
+  "active_sessions": 15,
+  "active_standard_clean_days": 15,
+  "active_noon_prefix_complete_days": 15,
+  "active_missing_minutes": 0,
+  "signals_computed": false,
+  "scoring_run": false,
+  "eligible_days": null,
+  "note": "No strategy eligibility evaluation. Ordinary-session calendar reconstructed; no raw bars publicly exported.",
+  "roll": {
+    "from": "NQZ25",
+    "to": "NQH26",
+    "decision_session": "2025-12-15",
+    "effective_session": "2025-12-16",
+    "effective_utc": "2025-12-15T23:00:00+00:00",
+    "close_bar_utc": "2025-12-15T20:59:00+00:00",
+    "spread_available_utc": "2025-12-15T21:00:00+00:00"
+  }
+}

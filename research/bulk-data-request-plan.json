@@ -1,0 +1,35 @@
+{
+  "recorded_on": "2026-10-21",
+  "status": "QUOTE_AND_LICENSE_REQUIRED_NO_PURCHASE_AUTHORITY",
+  "budget_eur": [25, 50],
+  "purchase_authorized": false,
+  "preferred_vendor": "Databento historical usage-based, subject to quote and rights",
+  "observed_public_estimate": {
+    "vendor_url": "https://databento.com/pricing/",
+    "observed_on": "2026-10-21",
+    "product": "NQ E-mini Nasdaq-100 Futures",
+    "schema": "OHLCV-1m",
+    "displayed_start_utc_date": "2021-09-30",
+    "displayed_end_utc_date": "2026-09-30",
+    "estimated_usd": 9.51,
+    "estimated_mb": 145.9,
+    "subscription_required": false,
+    "account_credit_assumed": false,
+    "request_submitted": false,
+    "limitations": "Public calculator estimate only, not an account-specific definitive quote. Date-only display does not prove exact UTC intraday bounds or coverage/rights. Tax, FX, account eligibility and precise raw-contract scope remain unverified."
+  },
+  "dataset": "GLBX.MDP3",
+  "schema": "ohlcv-1m",
+  "request_scopes": [
+    {"label":"NQ remaining collection, conservative parent quote", "stype_in":"parent", "symbols":["NQ.FUT"], "start":"2025-12-19T22:00:00Z", "end":"2026-09-30T21:00:00Z", "notes":"UTC bounds cover civil NY sessions through Sep30. Reopened evening Dec21 is first ordinary session in interval. Parent quote includes all outright maturities, not continuous front-month. Christmas calendar still requires verification."},
+    {"label":"NQ five-year bulk comparison", "stype_in":"parent", "symbols":["NQ.FUT"], "start":"2021-09-30T22:00:00Z", "end":"2026-09-30T21:00:00Z", "notes":"Planning scope only, not an authorization to run a five-year backtest or reuse consumed observations as holdout."},
+    {"label":"ES separately priced optional research", "stype_in":"parent", "symbols":["ES.FUT"], "start":"2021-09-30T22:00:00Z", "end":"2026-09-30T21:00:00Z", "notes":"Separate quote. ES is not required to validate the frozen NQ hypothesis and adds another research family if tested."}
+  ],
+  "quote_method": "Historical.metadata.get_cost with exact dataset/schema/symbols/time bounds. Metadata and symbology are free according to official docs. No timeseries.get_range or batch.submit_job before explicit approval.",
+  "symbol_rule": "Parent includes all outright maturities. For narrower contract windows resolve exchange instrument definitions/IDs first; never assume Barchart two-digit contract names equal vendor raw_symbol.",
+  "credit": "Official advertised new-team credit $125, once per team, expires after six months. Actual account eligibility/balance not checked. Never treat credit as guaranteed coverage.",
+  "quote_required_fields": ["gross USD", "available credits", "net USD", "EUR conversion/fees/tax", "record count", "bytes", "coverage", "rights to research and public aggregated results", "account and licence eligibility"],
+  "bridge_audit": "Before changing vendor use ONLY consumed 2025 contract overlap: timestamp conventions, missing bars, OHLC quarter ticks, volume totals and RVOL-input parity, definitions/expiration. Do not choose vendor based on future strategy returns.",
+  "bar_limitations": "OHLCV-1m has no trade count/ticks, bid/ask, aggressor, queue or intrabar ordering. No synthetic tick counts or claimed exact fills. Separate trades/TBBO quote only if explicitly needed later.",
+  "sources": ["https://databento.com/pricing/", "https://databento.com/docs/api-historical", "https://databento.com/docs/faqs/usage-pricing-and-data-credits", "https://www.databento.tech/docs/schemas/ohlcv", "https://firstratedata.com/i/futures/NQ", "https://firstratedata.com/about/license", "https://www.barchart.com/futures/quotes/NQH26/historical-download"]
+}
