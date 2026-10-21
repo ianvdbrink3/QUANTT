@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "verify:research": "node scripts/reproduce-research",
     "verify:holdout": "node scripts/verify-holdout",
+    "verify:continuous": "node scripts/verify-continuous",
     "diagnose:orb15": "node scripts/diagnose-orb15",
     "reproduce:research": "node scripts/reproduce-research --publish"
   },

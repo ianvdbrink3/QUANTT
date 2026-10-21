@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "classification": "EXPLORATORY_NOT_NEW_HOLDOUT",
+  "pytest_passed": 184,
+  "production_build": "PASS",
+  "offline_baseline_guard": "PASS",
+  "baseline09_full_raw_replay": "PASS",
+  "baseline09_original_ledger_reproduced": true,
+  "baseline09_frozen_reference_sha256": "6b6387ec46fddfede07c0f528928a98ee0b3e8dbe41bbbd81bc9a668269ae352",
+  "continuous_full_raw_verification": "PASS",
+  "all_seven_private_outputs_byte_identical": true,
+  "raw_source_files_sha_verified": 30,
+  "private_output_sha256": {
+    "REPORT.md": "1781ec7b481a2491aa16dedee0af6ad7dc403be375a0803b037cf826527f7e71",
+    "daily-indicators.csv": "92bd6e0d2f8031f193f06c91f33480d3abe834a8e68a5d4acf8efe4232f497ee",
+    "day-context.csv": "e609404b498d7bdff51c176c2bf6db4e861ff7786fb09bf68cf870aab71b07aa",
+    "eligibility.csv": "aa09eaae777f626f22b68d6ddc0ab57570585fed8c16a479525d1cea117278b6",
+    "summary.json": "93ec9ed2c6776eae0406603de66e226f1e382a6c57395540ae86cc8c23576c3b",
+    "trade-context.csv": "9e6883554e6ad7b25dff7aab3e633c72db4600efcab5ba0364db6fea86a4fd52",
+    "trades.csv": "a0d2858aa84f8824b19a04bc89a2868bf441f1bd65aefdca0532db1fc2105770"
+  },
+  "browser_local_static_dashboard": "PASS; baseline and vNext tables visible, no captured console errors",
+  "raw_data_tracked": false,
+  "tick_features": "UNAVAILABLE_SOURCE_HAS_NO_TICK_COUNTS",
+  "ORB15_eligible_baseline": 123,
+  "ORB15_eligible_continuous": 148,
+  "zero_ATR_loss_after_each_roll": true,
+  "zero_other_eligibility_loss": false,
+  "global_Holm_feature_tests": 40
+}
