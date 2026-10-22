@@ -1,0 +1,15 @@
+{
+  "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+  "independent_test_released": false,
+  "new_afternoon_runs": 0,
+  "files_sha256": {
+    "research/afternoon-candidate-v2.json": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e",
+    "research/afternoon-candidate-current.json": "40a95cea181b1054d34db29b54e190b849f5c4367bbf7b8dd7d4635b3df704cc",
+    "docs/AFTERNOON_CANDIDATE_PREREGISTRATION_V2.md": "09a3a121095589c2f8963ff20af6f0de3e2ba960e7155d5803cd216b19f25839",
+    "scripts/register_afternoon_candidate_v2.py": "93bb3efdc0811bf83d5efebdb24be77f079c0e6c70a16ce4abbae7dd14ac1006",
+    "research/afternoon-candidate-v1-lock.json": "3eb649eab7082e95374285beb1f0452254cd1b5e4e23b26190b59d634811cd45",
+    "research/afternoon-candidate-v1.json": "81ea637f52b5a2fe651976e22d59ccab1bf3b565e00f10d9141f5f6567251395",
+    "scripts/afternoon_specificity.py": "b29d1c19fe1ff2ef0a78be7517bf8f3023b41e065c7073f35d4924259ac80931",
+    "scripts/causal_map/core.py": "4746f4aec16dcc43585fb859f208432ee651c9b9cc9607b9f2ce62f1e0b0bb19"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "LOCKED_BEFORE_NEW_CI_QUARTER_AND_MFE_MAE_RESULTS",
+  "files_sha256": {
+    "scripts/morning_recovery_precision.py": "c2b66e66c24c272ed5d5b37d1f5cec71974163c3953f419ba7fc1261453d5043",
+    "research/morning-recovery-precision-protocol.json": "765820a6d24e7a1b056cc33c7d690061aa84c4e513636929f8efa0a86b8e9237",
+    "artifacts/morning-recovery-anatomy/measurements.csv": "cc78e610197b02edd2e3b39fe81641d959766d63867c8bdfb32525079ad7ed53",
+    "artifacts/morning-recovery-anatomy/COMPLETED.json": "0062935eb7903200b8fd1319d79d5b9ec7162c71387900bce9bbe343466d4ea1",
+    "research/morning-recovery-anatomy-report-manifest.json": "70cb96f427c7828f01cbec31bcfa0d4571bf525d8a18ac48bbe1ffc2e34e1471",
+    "research/afternoon-candidate-v2-lock.json": "4cd84b0a572058722ff360713f464f62bfd9b947a6a1cf5e2b48ee06669fee6a",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c",
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "scripts/afternoon_specificity.py": "b29d1c19fe1ff2ef0a78be7517bf8f3023b41e065c7073f35d4924259ac80931"
+  }
+}

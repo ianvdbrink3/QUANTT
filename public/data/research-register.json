@@ -14,6 +14,43 @@
       "complete_RTH_days": 435,
       "formal_tests": 24,
       "independent_validation": false
+    },
+    {
+      "id": "NQ-1430-FIXED-UP-1500-V2",
+      "title": "15:00-kandidaat v2: twee parallelle primaire horizons",
+      "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+      "dashboard": "/research/nq#research-round",
+      "report": "/data/AFTERNOON_CANDIDATE_PREREGISTRATION_V2.md",
+      "aggregates": "/data/research-afternoon-candidate-v2.json",
+      "report_sha256": "09a3a121095589c2f8963ff20af6f0de3e2ba960e7155d5803cd216b19f25839",
+      "independent_validation": false,
+      "formal_candidate": true
+    },
+    {
+      "id": "NQ-MORNING-ANATOMY",
+      "title": "Ochtendherstel: causale vensters en ONL-timing",
+      "status": "CLOSED_DESCRIPTIVE_NOT_CANDIDATE",
+      "dashboard": "/research/nq#research-round",
+      "report": "/data/MORNING_RECOVERY_ANATOMY.md",
+      "aggregates": "/data/research-morning-anatomy.json",
+      "report_sha256": "fd19347bd950efc82b37a6b5a2e2843acf825133f3fab072344af302ef54641a",
+      "independent_validation": false,
+      "formal_candidate": false
+    },
+    {
+      "id": "NQ-MORNING-PRECISION",
+      "title": "Ochtendherstel: onzekerheid, kwartalen en excursies",
+      "status": "CLOSED_DESCRIPTIVE_NOT_CANDIDATE",
+      "dashboard": "/research/nq#research-round",
+      "report": "/data/MORNING_RECOVERY_PRECISION.md",
+      "aggregates": "/data/research-morning-precision.json",
+      "report_sha256": "3debe76dd5463fdf4cb429039faa0b435254f4c6f83d3265af132bb06df3ee1c",
+      "independent_validation": false,
+      "formal_candidate": false
     }
-  ]
+  ],
+  "active_formal_candidate_ids": [
+    "NQ-1430-FIXED-UP-1500-V2"
+  ],
+  "future_independent_test_released": false
 }

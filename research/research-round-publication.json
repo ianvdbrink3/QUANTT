@@ -1,0 +1,25 @@
+{
+  "status": "RESEARCH_ROUND_CLOSED_ONE_FORMAL_CANDIDATE",
+  "report_copies_byte_identical": true,
+  "shared_register_updated": true,
+  "old_falsification_index_hash_refreshed": true,
+  "new_afternoon_runs": 0,
+  "new_strategy_runs": 0,
+  "raw_data_published": false,
+  "files_sha256": {
+    "public/data/AFTERNOON_CANDIDATE_PREREGISTRATION_V2.md": "09a3a121095589c2f8963ff20af6f0de3e2ba960e7155d5803cd216b19f25839",
+    "public/data/MORNING_RECOVERY_ANATOMY.md": "fd19347bd950efc82b37a6b5a2e2843acf825133f3fab072344af302ef54641a",
+    "public/data/MORNING_RECOVERY_PRECISION.md": "3debe76dd5463fdf4cb429039faa0b435254f4c6f83d3265af132bb06df3ee1c",
+    "public/data/research-afternoon-candidate-v2.json": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e",
+    "public/data/research-morning-anatomy.json": "22c9c58ce7601affe03df31c3cfab66cc410cedac2a8cd1e22b19da20675cd58",
+    "public/data/research-morning-precision.json": "6b5f16100cbaff4dc9c7dd9c6fc5a25eddb62f888ef657d22e1a8c10943c759d",
+    "public/data/research-morning-anatomy.tables.csv": "34b74ac95f4288bb9285a89a587f680216a2f40021a2ffa104ef10bc1f15c4e4",
+    "public/data/research-morning-anatomy.timing.csv": "36f968fa6a0e78bc5881bc6005c5df66661b2801706e1a36140e82a18c4033ac",
+    "public/data/research-morning-anatomy.differences.csv": "cad95c566eb10336a13b656aca1ce5ac0acd0e4be8eaa0b25ed0dc3eabc09d0f",
+    "public/data/research-morning-precision.intervals.csv": "3befdfe1dccb6ad488fe2db82a2242e98db9ca527f20fff78bd09f0af90fdcf9",
+    "public/data/research-morning-precision.quarters.csv": "537ce96e623a34b3001a3329fff206195dafed5deba5be5608cead0cd782fefc",
+    "public/data/research-morning-precision.excursions.csv": "291bcc22ad946747f1ab1f42b092aad1fc2deb433b4de6c18ed5c33987ffcf5c",
+    "public/data/research-round-closure.json": "3c06c96bca426d67f7f18fc83802fd985b14cca86e87bb68b72085f4ffc7042f",
+    "public/data/research-register.json": "e9cd23dd295c999ba4fb526890349c3d968e81fc13aa12d3043af613fc1a75f3"
+  }
+}

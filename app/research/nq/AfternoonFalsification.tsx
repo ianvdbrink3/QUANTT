@@ -11,7 +11,7 @@ export default function AfternoonFalsification() {
     <p className="nq-warning"><strong>{data.status}</strong><br />De positieve gemiddelde impuls overleeft cohortbevriezing en alle dag-/kwartaalweglatingen. Geen onafhankelijke bevestiging, nieuwe holdout of gevalideerde handelsedge.</p>
     <div className="nq-table"><table><caption>Geregistreerde publicatie · dezelfde 435 volledige RTH-dagen</caption>
       <thead><tr><th scope="col">Onderzoek</th><th scope="col">Status</th><th scope="col">Rapport</th></tr></thead>
-      <tbody>{registry.entries.map(r => <tr key={r.id}><th scope="row">{r.title}</th><td>{r.status}</td><td><a href={r.report} download>Download rapport</a></td></tr>)}</tbody>
+      <tbody>{registry.entries.filter(r => r.id === 'NQ-AFTERNOON-FALSIFICATION').map(r => <tr key={r.id}><th scope="row">{r.title}</th><td>{r.status}</td><td><a href={r.report} download>Download rapport</a></td></tr>)}</tbody>
     </table></div>
     <div className="nq-table"><table><caption>Volledige kwartieren · gemiddelde / mediaan punten · positief bij voortzetting van de genoemde richting</caption>
       <thead><tr>{['Cohort', 'Richting', 'Start NY', 'Dagen', 'Gemiddelde pt', 'Mediaan pt'].map(h => <th key={h} scope="col">{h}</th>)}</tr></thead>

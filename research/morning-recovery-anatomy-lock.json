@@ -1,0 +1,14 @@
+{
+  "status": "LOCKED_BEFORE_NEW_0945_1030_OUTCOMES",
+  "files_sha256": {
+    "scripts/morning_recovery_anatomy.py": "7f33e4b33a0b05281deb73485c659098d158fbf38fd8dc98d255619a73d39062",
+    "research/morning-recovery-anatomy-protocol.json": "49da7ac9f94d807a943879bb7489ba135ea95e98158786f40d5e492d5be097d8",
+    "research/afternoon-candidate-v1-lock.json": "3eb649eab7082e95374285beb1f0452254cd1b5e4e23b26190b59d634811cd45",
+    "artifacts/causal-map/COMPLETED.json": "2a413ae5eb4a0d59a139dcdaa35eb10eed3f82dbbf4f948b3b9ad9d20d8fcfe1",
+    "artifacts/causal-map/events-horizons.csv": "50bb51d5492178d676371ed3dce3dba484f94a620c213be36e4af0f2490f099e",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c",
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "research/holdout-protocol.json": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022",
+    "research/oos-year-rollovers.json": "1299dff7d13c9e05fb9dfa42e27c19b21c6f348f832291f933a5daec47c91882"
+  }
+}

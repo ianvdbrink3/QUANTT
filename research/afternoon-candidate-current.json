@@ -1,0 +1,7 @@
+{
+  "active_id": "NQ-1430-FIXED-UP-1500-V2",
+  "specification": "research/afternoon-candidate-v2.json",
+  "sha256": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e",
+  "prior_specification": "research/afternoon-candidate-v1.json",
+  "independent_test_released": false
+}

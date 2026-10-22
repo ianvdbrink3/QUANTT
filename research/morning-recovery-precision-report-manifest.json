@@ -1,0 +1,23 @@
+{
+  "verification": {
+    "existing_gap_days": 69,
+    "negative_days": 29,
+    "positive_days": 40,
+    "source_files": 69,
+    "fresh_excursion_replay_identical": true,
+    "existing_following_returns_reproduced": true,
+    "exact45_post0945_bars": true,
+    "new_afternoon_runs": 0,
+    "new_strategy_runs": 0,
+    "new_pvalues": 0,
+    "protected_archive_files": 115
+  },
+  "files_sha256": {
+    "docs/MORNING_RECOVERY_PRECISION.md": "3debe76dd5463fdf4cb429039faa0b435254f4c6f83d3265af132bb06df3ee1c",
+    "scripts/report_morning_recovery_precision.py": "16e34514dc98b521b83029f25440bdc31f287a875b274499f0123c5dd45a2fa8",
+    "research/morning-recovery-precision-results.json": "6b5f16100cbaff4dc9c7dd9c6fc5a25eddb62f888ef657d22e1a8c10943c759d",
+    "research/morning-recovery-precision-intervals.csv": "3befdfe1dccb6ad488fe2db82a2242e98db9ca527f20fff78bd09f0af90fdcf9",
+    "research/morning-recovery-precision-quarters.csv": "537ce96e623a34b3001a3329fff206195dafed5deba5be5608cead0cd782fefc",
+    "research/morning-recovery-precision-excursions.csv": "291bcc22ad946747f1ab1f42b092aad1fc2deb433b4de6c18ed5c33987ffcf5c"
+  }
+}

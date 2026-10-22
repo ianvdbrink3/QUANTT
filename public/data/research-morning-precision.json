@@ -1,0 +1,248 @@
+{
+  "status": "EXPLORATORY_PRECISION_NOT_INDEPENDENT_VALIDATION",
+  "intervals": [
+    {
+      "id": "MEAN_NEGATIVE29",
+      "estimate": 57.456896551724135,
+      "se_HAC5": 30.199263077782934,
+      "se_CR1": 34.60394330694136,
+      "df": 28,
+      "event_days": 29,
+      "ci95": [
+        -4.403489613759881,
+        119.31728271720814
+      ]
+    },
+    {
+      "id": "NEGATIVE29_MINUS_POSITIVE40",
+      "estimate": 52.13189655172413,
+      "se_HAC5": 36.22467199832625,
+      "se_CR1": 38.852047986879484,
+      "df": 28,
+      "event_days": 69,
+      "ci95": [
+        -22.070980278837588,
+        126.33477338228585
+      ]
+    }
+  ],
+  "block_bootstrap": {
+    "replicates": 20000,
+    "valid_replicates": 20000,
+    "block_sessions": 5,
+    "seed": 20261022,
+    "mean_negative_ci95": [
+      0.6248842592592594,
+      119.89265455163033
+    ],
+    "difference_ci95": [
+      -16.929272392478207,
+      127.25008265665574
+    ]
+  },
+  "quarters": [
+    {
+      "quarter": "2024Q4",
+      "group": "NEGATIVE",
+      "days": 0,
+      "mean_points": null,
+      "median_points": null,
+      "positive_fraction": null,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2024Q4",
+      "group": "POSITIVE",
+      "days": 0,
+      "mean_points": null,
+      "median_points": null,
+      "positive_fraction": null,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2025Q1",
+      "group": "NEGATIVE",
+      "days": 4,
+      "mean_points": -78.0625,
+      "median_points": -94.0,
+      "positive_fraction": 0.5,
+      "median_mfe_points": 91.5,
+      "median_mae_points": 139.25
+    },
+    {
+      "quarter": "2025Q1",
+      "group": "POSITIVE",
+      "days": 8,
+      "mean_points": 50.125,
+      "median_points": 53.875,
+      "positive_fraction": 0.75,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2025Q2",
+      "group": "NEGATIVE",
+      "days": 4,
+      "mean_points": 115.8125,
+      "median_points": 8.375,
+      "positive_fraction": 0.5,
+      "median_mfe_points": 172.5,
+      "median_mae_points": 96.0
+    },
+    {
+      "quarter": "2025Q2",
+      "group": "POSITIVE",
+      "days": 8,
+      "mean_points": -3.65625,
+      "median_points": 21.25,
+      "positive_fraction": 0.625,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2025Q3",
+      "group": "NEGATIVE",
+      "days": 2,
+      "mean_points": 129.0,
+      "median_points": 129.0,
+      "positive_fraction": 1.0,
+      "median_mfe_points": 140.0,
+      "median_mae_points": 61.25
+    },
+    {
+      "quarter": "2025Q3",
+      "group": "POSITIVE",
+      "days": 1,
+      "mean_points": 29.75,
+      "median_points": 29.75,
+      "positive_fraction": 1.0,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2025Q4",
+      "group": "NEGATIVE",
+      "days": 5,
+      "mean_points": 80.95,
+      "median_points": 91.25,
+      "positive_fraction": 0.6,
+      "median_mfe_points": 190.25,
+      "median_mae_points": 31.5
+    },
+    {
+      "quarter": "2025Q4",
+      "group": "POSITIVE",
+      "days": 4,
+      "mean_points": 47.625,
+      "median_points": 31.625,
+      "positive_fraction": 0.5,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2026Q1",
+      "group": "NEGATIVE",
+      "days": 6,
+      "mean_points": -16.541666666666668,
+      "median_points": 0.75,
+      "positive_fraction": 0.5,
+      "median_mfe_points": 80.125,
+      "median_mae_points": 84.75
+    },
+    {
+      "quarter": "2026Q1",
+      "group": "POSITIVE",
+      "days": 8,
+      "mean_points": -11.53125,
+      "median_points": 30.125,
+      "positive_fraction": 0.625,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2026Q2",
+      "group": "NEGATIVE",
+      "days": 5,
+      "mean_points": 95.2,
+      "median_points": 115.0,
+      "positive_fraction": 0.8,
+      "median_mfe_points": 150.75,
+      "median_mae_points": 75.25
+    },
+    {
+      "quarter": "2026Q2",
+      "group": "POSITIVE",
+      "days": 3,
+      "mean_points": -7.0,
+      "median_points": -45.5,
+      "positive_fraction": 0.3333333333333333,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    },
+    {
+      "quarter": "2026Q3",
+      "group": "NEGATIVE",
+      "days": 3,
+      "mean_points": 158.58333333333334,
+      "median_points": 81.25,
+      "positive_fraction": 0.6666666666666666,
+      "median_mfe_points": 95.5,
+      "median_mae_points": 9.25
+    },
+    {
+      "quarter": "2026Q3",
+      "group": "POSITIVE",
+      "days": 8,
+      "mean_points": -33.21875,
+      "median_points": -4.75,
+      "positive_fraction": 0.5,
+      "median_mfe_points": null,
+      "median_mae_points": null
+    }
+  ],
+  "excursions": {
+    "mfe_points": {
+      "days": 29,
+      "mean": 183.24137931034483,
+      "min": 1.75,
+      "max": 1606.0,
+      "p10": 28.750000000000004,
+      "p25": 62.75,
+      "median": 122.25,
+      "p75": 204.0,
+      "p90": 276.4
+    },
+    "mae_points": {
+      "days": 29,
+      "mean": 88.21551724137932,
+      "min": 3.0,
+      "max": 285.0,
+      "p10": 8.9,
+      "p25": 22.25,
+      "median": 75.25,
+      "p75": 119.5,
+      "p90": 192.04999999999998
+    }
+  },
+  "group_means": {
+    "negative29": 57.456896551724135,
+    "positive40": 5.325,
+    "difference": 52.13189655172413
+  },
+  "verification": {
+    "existing_gap_days": 69,
+    "negative_days": 29,
+    "positive_days": 40,
+    "source_files": 69,
+    "fresh_excursion_replay_identical": true,
+    "existing_following_returns_reproduced": true,
+    "exact45_post0945_bars": true,
+    "new_afternoon_runs": 0,
+    "new_strategy_runs": 0,
+    "new_pvalues": 0,
+    "protected_archive_files": 115
+  },
+  "protocol_sha256": "765820a6d24e7a1b056cc33c7d690061aa84c4e513636929f8efa0a86b8e9237"
+}

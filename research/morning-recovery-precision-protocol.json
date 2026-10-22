@@ -1,0 +1,23 @@
+{
+  "status": "FIXED_PRECISION_EXTENSION_NOT_NEW_MODEL",
+  "sample": "Exactly the existing69 Gap-Down days:29 first-quarter-negative,40 positive,zero flat. Reuse fixed morning measurements, no selection or horizon changes.",
+  "outcome": "Existing long-signed gross following_points:09:45 Open to10:29 Close,45 bars; no first-quarter bar or09:44close-to09:45open gap.",
+  "requested_CIs": "Exactly two nominal pointwise95% intervals: mean of29 negative-opening days and mean29 minus mean40. Not simultaneous, not independent holdout evidence. No p-values or significance selection.",
+  "main_method": "Daily influence scores on all454 original scheduled sessions, including zero influence (not zero return) for nonselected days. Bartlett HAC lags1..5, correction D/(D-1) with29 clusters for mean and69 for contrast; t df28 for both. Contrast scores are subtracted on the same calendar, retaining temporal covariance.",
+  "sensitivity": {
+    "method": "Circular moving-block percentile bootstrap, entire scheduled-day records/masks together; recompute both conditional means and their difference in each replicate; never fill absent events with zero returns.",
+    "block_sessions": 5,
+    "replicates": 20000,
+    "seed": 20261022,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "limits": "Finite small-sample sensitivity under approximate temporal stability; not guaranteed coverage under arbitrary regime changes. Both methods reported, no choice based on narrower/more positive result."
+  },
+  "quarters": "All calendar quarters2024Q4 through2026Q3. Per group count, mean, median and fraction following return>0. Empty groups remain N=0, no invented mean. No quarter p-values.",
+  "excursions": "Only29 first-quarter-negative Gap-Down days. Long-oriented MFE=max(High09:45..10:29)-Open09:45; MAE=Open09:45-min(Low09:45..10:29). Nonnegative distances, not exit PnL or known intraminute order. No pre09:45 or post10:29 bars included.",
+  "excursion_output": "Mean,min,P10,P25,median,P75,P90,max in points; per-quarter medians for the29-day group. No stops, targets, risk multiples or parameter search.",
+  "checks": "Reproduce existing69 returns; frozen29/40 membership; direct45-bar excursion endpoints; fresh source replay. Preserve all previous locks including v1, v2 and the149/101 morning tables.",
+  "publication": "Local only; no GitHub/Vercel release or future15:00 test authorized."
+}

@@ -5,7 +5,7 @@
   "new_strategy_runs": 0,
   "files_sha256": {
     "public/data/research-afternoon-falsification.json": "fa7f79f68b56092b5957c8b2e6449155f763056bbb99119f8e6a3ce22e7fc7d9",
-    "public/data/research-register.json": "924e8ea35d3ebbe731d72c2e1b4c8f93bfc72d88675337a559779294ac39180c",
+    "public/data/research-register.json": "e9cd23dd295c999ba4fb526890349c3d968e81fc13aa12d3043af613fc1a75f3",
     "public/data/AFTERNOON_FALSIFICATION_REPORT.md": "d0b46e9752a99f3ff23fb112b1577ae72b3117d1b52ef875495e986a38ec3daa",
     "public/data/research-afternoon-falsification.rows.csv": "12c94adfe440258b8aaa3d1f257434cf55167ca12b0e991e231875f443fe0abf",
     "public/data/research-afternoon-falsification.tests.csv": "da8c43f292659a46814473e78aa05bae1cb3bd7db1c5e78044976406682a12a5",

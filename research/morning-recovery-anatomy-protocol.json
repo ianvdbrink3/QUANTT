@@ -1,0 +1,13 @@
+{
+  "status": "DESCRIPTIVE_NONOVERLAPPING_WINDOWS_NO_NEW_HYPOTHESIS_TESTS",
+  "sample": "Same435 complete RTH days; existing69 Gap-Down and101 A_ONL_ACCEPT 60m-event days,21 overlap,149 unique. No new level thresholds or optimized subgroups.",
+  "first_window": "09:30 Open to09:44 Close. Classify strictly negative, strictly positive, exactly zero separately. Known at09:45 under internally supported bar-start convention.",
+  "following_window": "09:45 Open to10:29 Close, exactly45 bars. Direct long-signed end-start price change and10000*ln(end/start). No09:30-09:44 bar or09:44close-to09:45open gap enters following return.",
+  "requested_a": "Only69 Gap-Down days partitioned by first-window sign; retain zero days even if empty.",
+  "requested_b": "Requested48 Gap-only,80 ONL-only,21 both are retrospective whole-day event labels. They cannot all be represented as known at09:45.",
+  "timing_audit": "Report ONL confirmation boundary<=15 (known09:45),16..60 (later through10:30),>60 (after the following window). No event boundary shift or redefining101-day sample.",
+  "causal_companion": "Separately partition G union O_early, where O_early is exactly the frozen ONL days confirmed by09:45. G-only means no ONL confirmed YET, not no future ONL. Never use later ONL to select this companion sample.",
+  "output": "Counts, means, medians, P10/P25/P75/P90, fraction following return>0, and descriptive between-group differences. No p-values, confidence intervals, significance claims, costs, entries, stops, targets, PnL or filters.",
+  "check": "First-window classification unchanged by truncating at09:45 or mutating later prices. Direct45-minute outcome, endpoint-gap reconciliation and fresh source-reload exact replay. Separate15:00 candidate lock must remain intact.",
+  "publication": "Local only; no new GitHub/Vercel release authorized."
+}

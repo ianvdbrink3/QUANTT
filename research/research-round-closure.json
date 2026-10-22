@@ -1,0 +1,56 @@
+{
+  "status": "RESEARCH_ROUND_CLOSED_ONE_FORMAL_CANDIDATE",
+  "active_formal_candidate_ids": [
+    "NQ-1430-FIXED-UP-1500-V2"
+  ],
+  "candidate_status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+  "future_independent_test_released": false,
+  "candidate_report": "/data/AFTERNOON_CANDIDATE_PREREGISTRATION_V2.md",
+  "morning_status": "CLOSED_DESCRIPTIVE_NOT_CANDIDATE",
+  "morning_reports": [
+    "/data/MORNING_RECOVERY_ANATOMY.md",
+    "/data/MORNING_RECOVERY_PRECISION.md"
+  ],
+  "closure_reason": "Onderzoeksbesluit: de ochtendverkenning wordt afgesloten als beschrijvend rapport wegens beperkte precisie en brede excursies bij N=29. Geen kandidaat-model, reddingsfilter of verdere parameter-tuning. Geen universeel bewijs dat elk ochtendherstelmechanisme afwezig is.",
+  "interpretation": "Alle bestaande435 dagen blijven ontdekkingsdata. V2 is uitsluitend een bevroren kandidaat voor nog niet vrijgegeven onafhankelijke toetsing; geen gevalideerde trading edge.",
+  "historical_publication_note": "De rapporten zijn byte-identieke historische momentopnamen. Tekst over uitsluitend lokale publicatie dateert van v\u00f3\u00f3r de latere expliciete publicatievrijgave.",
+  "verification": {
+    "candidate": {
+      "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+      "active_version": 2,
+      "v1_preserved": true,
+      "new_afternoon_runs": 0,
+      "protected_archive_files": 115
+    },
+    "anatomy": {
+      "source_files": 69,
+      "frozen_universe_days": 435,
+      "requested_unique_days": 149,
+      "known_at0945_unique_days": 101,
+      "first_quarter_prefix_checks": 149,
+      "first_quarter_future_mutation_checks": 149,
+      "exact_source_replay": true,
+      "nonoverlapping_bars": true,
+      "new_afternoon_runs": 0,
+      "new_strategy_runs": 0,
+      "new_pvalues": 0,
+      "protected_archive_files": 115
+    },
+    "precision": {
+      "existing_gap_days": 69,
+      "negative_days": 29,
+      "positive_days": 40,
+      "source_files": 69,
+      "fresh_excursion_replay_identical": true,
+      "existing_following_returns_reproduced": true,
+      "exact45_post0945_bars": true,
+      "new_afternoon_runs": 0,
+      "new_strategy_runs": 0,
+      "new_pvalues": 0,
+      "protected_archive_files": 115
+    },
+    "new_afternoon_runs": 0,
+    "new_strategy_runs": 0,
+    "raw_data_published": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "verification": {
+    "source_files": 69,
+    "frozen_universe_days": 435,
+    "requested_unique_days": 149,
+    "known_at0945_unique_days": 101,
+    "first_quarter_prefix_checks": 149,
+    "first_quarter_future_mutation_checks": 149,
+    "exact_source_replay": true,
+    "nonoverlapping_bars": true,
+    "new_afternoon_runs": 0,
+    "new_strategy_runs": 0,
+    "new_pvalues": 0,
+    "protected_archive_files": 115
+  },
+  "files_sha256": {
+    "docs/MORNING_RECOVERY_ANATOMY.md": "fd19347bd950efc82b37a6b5a2e2843acf825133f3fab072344af302ef54641a",
+    "scripts/report_morning_recovery_anatomy.py": "5a64fabcbaf3f6cf3903b021a51b6caf423e0471985680714e64c3281d8f54e8",
+    "research/morning-recovery-anatomy-results.json": "22c9c58ce7601affe03df31c3cfab66cc410cedac2a8cd1e22b19da20675cd58",
+    "research/morning-recovery-anatomy-tables.csv": "34b74ac95f4288bb9285a89a587f680216a2f40021a2ffa104ef10bc1f15c4e4",
+    "research/morning-recovery-anatomy-timing.csv": "36f968fa6a0e78bc5881bc6005c5df66661b2801706e1a36140e82a18c4033ac",
+    "research/morning-recovery-anatomy-differences.csv": "cad95c566eb10336a13b656aca1ce5ac0acd0e4be8eaa0b25ed0dc3eabc09d0f"
+  }
+}

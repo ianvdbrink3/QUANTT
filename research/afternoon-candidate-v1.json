@@ -1,0 +1,67 @@
+{
+  "id": "NQ-1430-FIXED-UP-1500-V1",
+  "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+  "registration_date": "2026-10-22",
+  "anchor_commit": "94c5c9ea617a4adeed775483cbb7db36e2ad8052",
+  "timezone": "America/New_York",
+  "cohort": {
+    "freeze_time": "14:30",
+    "last_observed_bar_label": "14:29",
+    "direction": "close_1429 > open_0930, strictly; flat and DOWN excluded",
+    "range": "max(high_0930_to_1429) - min(low_0930_to_1429), completed bars only",
+    "range_atr_lower_inclusive": 0.5,
+    "range_atr_upper_exclusive": 1.2,
+    "atr": "Existing frozen causal-map.prepare prior ATR14: arithmetic mean of the last 14 valid prior complete-RTH true-range observations; point-in-time Panama basis only for cross-day indicators; no current-day or future price enters ATR.",
+    "true_range": "max(H-L, abs(H-previous_RTH_close), abs(L-previous_RTH_close)), according to the locked context implementation. A missing scheduled RTH session is not silently converted to a valid prior session.",
+    "rollover": "Declared point-in-time volume schedule and pre-activation common RTH-close spreads. No outcome-based roll date or hindsight full-sample adjustment. Raw active contract prices for both within-day endpoints.",
+    "membership": "Freeze once at14:30. Do not reselect at15:00 or after observing subsequent returns. One observation per selected day."
+  },
+  "outcomes": [
+    {
+      "id": "PRIMARY_15M",
+      "role": "primary",
+      "start": "Open of label15:00",
+      "end": "Close of label15:14, available at15:15",
+      "minutes": 15,
+      "motivation": "15-minute horizon existed before the minute-by-minute inspection. The open anchor is the explicitly selected research anchor, not the older14:59-close anchor."
+    },
+    {
+      "id": "SECONDARY_2M",
+      "role": "secondary",
+      "start": "Open of label15:00",
+      "end": "Close of label15:01, available at15:02",
+      "minutes": 2,
+      "motivation": "Post-hoc discovery on consumed data. Known fixed-cohort mean gross approximately5.694444 points, including the inter-bar gap. Not independent evidence."
+    }
+  ],
+  "price_measurement": "Long-signed C_end-O_1500 in NQ points and10000*ln(C_end/O_1500) in log-basispoints. Compute each complete horizon directly, never sum separate OC bars without inter-bar gaps.",
+  "statistical_plan": {
+    "estimand": "Mean gross long-signed log-bp per eligible fixed-cohort day; mean/median points also reported descriptively. This tests conditional drift against zero, not incremental value over unconditional drift or realized trading profitability.",
+    "null": "For each of exactly two horizons, mean gross log-bp equals zero; two-sided p-values, positive estimated effect required for positive-drift support.",
+    "uncertainty": "Reuse frozen afternoon_specificity.mean_influence and uncertainty: one score per scheduled day, zero influence rather than a fictitious zero return on nonselected days, Bartlett HAC lags1..5, event-day finite-sample correction and t degrees of freedom n_selected-1. CR1 SE descriptive sensitivity only. No extra inferential family.",
+    "multiplicity": "One Holm step-down family of exactly two two-sided p-values, family alpha0.05. Ordered raw p values: adjusted first=min(1,2*p_first), adjusted second=max(adjusted_first,p_second). Missing/uncomputable endpoint retains p=1 placeholder.",
+    "primary_decision": "Primary drift support requires positive PRIMARY_15M estimate and Holm2 p<0.05 on the independent registered sample. Secondary cannot rescue a failed primary or become a replacement primary. Statistical support is not HOLDOUT_PASSED trading-edge certification.",
+    "descriptives": "Always report both horizons, all exclusions, eligible counts, mean, median and nominal95% intervals. No selecting the better horizon, subgroup, quarter or cost assumption after outcomes are opened."
+  },
+  "costs_and_execution": {
+    "fixed_descriptive_friction_usd": 24.5,
+    "fixed_descriptive_friction_points": 1.225,
+    "scope": "Separate unchanged arithmetic sensitivity only, not a new backtest or primary net-profit hypothesis. NQ multiplier20USD/point. This cost assumption does not prove the open is executable.",
+    "limitations": "No tick/bid-ask/queue/latency evidence for a fill at15:00:00 or exact closing print. No stops, targets, intrabar fill simulation, execution-delay tuning or sizing rule. Actual forward fills, if collected, must be reported separately from research anchors and never substituted selectively."
+  },
+  "data_quality": {
+    "timestamp_status": "BAR_START_SUPPORTED_INTERNAL_ONLY",
+    "timestamp_limit": "Existing OHLCV volume/range patterns support start labels; exact boundary-second inclusion and a vendor-label offset are not independently certified.",
+    "gate": "Before outcomes are unlocked, lock vendor/timezone/label interpretation, raw hashes, calendar, active-contract schedule, rollover availability, quality and shared horizon sample. Require complete09:30-14:29 selection prefix, known ATR14 and all labeled bars15:00-15:14 for the common two-horizon sample. Do not impute, substitute shifted endpoints or drop days by outcome.",
+    "sensitivity": "Any necessary vendor-time normalization must be justified and frozen without seeing new outcomes; a shift chosen to maximize the effect invalidates confirmatory status."
+  },
+  "independence": {
+    "discovery_days": 435,
+    "consumed_period": ["2024-12-30", "2026-09-30"],
+    "rule": "All435 days and both observed horizons are discovery data. No fresh15:00 outcome computation on these days in this registration step.",
+    "future_data": "Forward observations or genuinely unexamined, nonoverlapping historical data with a declared access/contamination audit. Older history is historical replication, not a forward trial; exclude all overlap with consumed days.",
+    "release_gate": "No independent run authorized yet. Before any new outcomes are read, a separate immutable addendum must lock the exact test dates OR outcome-independent fixed stopping count, minimum information/power justification, warmup-only periods and exclusions. No optional stopping, repeated significance checks or sample extension after a failure. This candidate specification alone is not a complete released sample plan."
+  },
+  "interpretation": "No demonstrated Treasury-close cause, independent data certification or validated market edge. No revival or modification of archived ORB/VWAP/London models.",
+  "publication": "Local registration only in this request. No new GitHub/Vercel publication or future holdout execution authorized."
+}

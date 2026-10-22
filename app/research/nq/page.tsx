@@ -14,6 +14,7 @@ import MarketReview from './MarketReview';
 import WeightingAudit from './WeightingAudit';
 import CausalMechanismMap from './CausalMechanismMap';
 import AfternoonFalsification from './AfternoonFalsification';
+import ResearchRoundClosure from './ResearchRoundClosure';
 import './nq.css';
 
 export const metadata: Metadata = { title: 'QUANTT — NQ onderzoek op echte data', description: 'Kostenbewust NQ-onderzoek, kwaliteitscontrole en onzekerheid. Geen gevalideerde trading edge.' };
@@ -44,6 +45,7 @@ export default function NQResearch() {
   return <main className="nq-page">
     <header className="nq-header"><Link href="/research" className="nq-brand">QUANTT / RESEARCH</Link><nav aria-label="Onderzoek"><a href="#causal-map">Mechanisme-kaart</a><a href="#weighting-audit">Wegingsaudit</a><a href="#market-review">Archivering</a><a href="#execution-audit">Uitvoeringsaudit</a><a href="#session-structure">Sessiestructuur</a><a href="#raw-correlations">Correlaties</a><a href="#raw-extremes">Extremen</a></nav></header>
     <section className="nq-intro"><p className="nq-eyebrow">ARCHIVED_NOT_VALIDATED · GEEN ACTIEVE HANDELSMODELLEN</p><div className="nq-title"><h1>Experimenten afgesloten.<br />De meetlat gecontroleerd.</h1></div><p className="nq-lead">ORB 5m, ORB 15m, London Sweep en VWAP Extreme zijn definitief gearchiveerd. Hieronder staan de uitvoeringsaudit en uitsluitend beschrijvende metingen van ruw NQ-marktgedrag. Geen nieuwe strategie, filters of parameter-tuning.</p></section>
+    <ResearchRoundClosure />
     <AfternoonFalsification />
     <CausalMechanismMap />
     <WeightingAudit />

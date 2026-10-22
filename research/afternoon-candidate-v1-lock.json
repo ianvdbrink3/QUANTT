@@ -1,0 +1,16 @@
+{
+  "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+  "registration_date": "2026-10-22",
+  "new_afternoon_runs": 0,
+  "independent_test_released": false,
+  "files_sha256": {
+    "research/afternoon-candidate-v1.json": "81ea637f52b5a2fe651976e22d59ccab1bf3b565e00f10d9141f5f6567251395",
+    "docs/AFTERNOON_CANDIDATE_PREREGISTRATION.md": "915bba3b0be652498ec2b728468cb9fe5892aca22e2427c32411d295b233af04",
+    "scripts/register_afternoon_candidate.py": "6d922666f275b6a3b566f5450e90a616250e959d9a519dfe1e94793c264f9dbb",
+    "scripts/afternoon_specificity.py": "b29d1c19fe1ff2ef0a78be7517bf8f3023b41e065c7073f35d4924259ac80931",
+    "scripts/causal_map/__main__.py": "b7f1fd33558c32acf83a5cd10005ba1fd7fc78b237b82720aee3b2a026f93227",
+    "scripts/causal_map/core.py": "4746f4aec16dcc43585fb859f208432ee651c9b9cc9607b9f2ce62f1e0b0bb19",
+    "scripts/oos_preparation/route.py": "75ddcee667aa5e66975621fe2c46fc423f0527bb369b528facaf03d4d2a2173e",
+    "scripts/reproduce_research/next_engine.py": "67e3284b9efad52d59132ede38cfd07c0a6cc58d655b403ccfc55302f4d44379"
+  }
+}
