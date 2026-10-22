@@ -1,0 +1,9 @@
+{
+  "status": "EXPLORATORY_FIXED_CLOCK_SPECIFICITY_NOT_VALIDATION",
+  "files_sha256": {
+    "docs/AFTERNOON_SPECIFICITY_REPORT.md": "f671b3cb16685e22421accbc430be06ba09bd5e3c6d49dfdadf95908169feeb4",
+    "research/afternoon-specificity-results.json": "893e7fc5ade205a642a0c0f52fb6c6b1e6f7e58aa09f6d8e91ba64b5423237f2",
+    "research/afternoon-specificity-rows.csv": "05784c765ad71c1664589ddb936bf3d2e63a3cece6437d8111c9200d8a577336",
+    "research/afternoon-specificity-contrasts.csv": "4b2c6a2c1fc62cbc7e21069487582a9f6e2e8b6b4de7964bafc273efa7a9aa4d"
+  }
+}

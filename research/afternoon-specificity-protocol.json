@@ -1,0 +1,38 @@
+{
+  "status": "FIXED_EXPLORATORY_SPECIFICITY_COMPARISON_NOT_NEW_HOLDOUT",
+  "anchor_commit": "8f727f671a4f78a5473aebf853aae89ed663d7c2",
+  "windows": {
+    "14:30": 300,
+    "14:45": 315,
+    "15:00": 330
+  },
+  "horizon_minutes": 15,
+  "universe": "Identical435 complete RTH days from frozen quality mask",
+  "context": "UP/DOWN relative to09:30open using LAST COMPLETED minute close. RTH high-low over completed bars only, divided by frozen prior ATR14. MID=[0.5,1.2), preserving original upper-exclusive rule. Zero direction and missing ATR excluded only from context rows, never from ALL435.",
+  "direction": "ALL and UP use rising-price orientation; DOWN uses falling-price orientation. A DOWN context premium compares with blind SHORT of the same quarter, not blind long.",
+  "friction_points": 1.225,
+  "friction_scope": "Constant arithmetic deduction per observation, no entries/stops/targets/fill simulator. Costs cancel in context-minus-same-direction-benchmark differences.",
+  "contrasts": "Exactly10:15:00 minus14:30 and minus14:45 for ALL/UP/DOWN raw oriented means (6); and UP/DOWN context premiums over each own same-clock unconditional directional benchmark (4). No extra clocks, horizons, thresholds or subgroups.",
+  "inference": "Primary: two-sided mean LOG-bp contrasts, joint day influence scores with exact overlap covariance. Bartlett daily-score HAC lags1..5, calendar454 rows including0 influence on absent rows, finite correction D/(D-1) for union eventdays, conservative tdf=min compared group daycounts-1. One Holm10 family. Nominal95% intervals; points CI separately computed. CR1 standard error recorded only as sensitivity, no second p-family.",
+  "paired_cohorts": "Context is re-evaluated separately at each clock; cohorts may change. This compares operational conditional means, not a matched-identical-cohort causal treatment effect. Temporal dependence and changing cohort composition are limitations, not parameters to optimize.",
+  "checks": "Every day:selector prefix at each of3 boundaries agrees with full-day selector; mutation of all later bars leaves context unchanged.15:00 subgroup membership and all435 benchmark anchors/outcomes reproduce previous known results. Fresh source reload replay must be identical.",
+  "known_1500_findings": {
+    "all_days": 435,
+    "all_mean_points": 0.846551724137931,
+    "all_median_points": 1.25,
+    "up_days": 167,
+    "up_mean_points": 7.540419161676646,
+    "up_median_points": 4.0,
+    "down_days": 131,
+    "down_oriented_mean_points": 3.6660305343511452,
+    "down_oriented_median_points": 2.5,
+    "previous_benchmark_nominal_p_logbps": 0.006507373940679841,
+    "evidence": "Previously examined exploratory result; not an independent preregistration or validation."
+  },
+  "limits": [
+    "Previously consumed data; correction only covers these10 comparisons, not all historical research.",
+    "Non-significant pairwise differences do not establish equivalence, absence or generic momentum.",
+    "Point-in-time information use is not institutional or economic causal identification.",
+    "No promotion or revival of archived strategies. No external publication authorized in this request."
+  ]
+}

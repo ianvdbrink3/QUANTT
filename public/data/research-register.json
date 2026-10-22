@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scope": "Public aggregate research publications; separate from private experiment ledgers.",
+  "entries": [
+    {
+      "id": "NQ-AFTERNOON-FALSIFICATION",
+      "title": "15:00-effect: vooraf vastgelegde falsificatie",
+      "status": "INTERESTING_OBSERVATION_INDEPENDENTLY_UNCONFIRMED",
+      "dashboard": "/research/nq#afternoon-falsification",
+      "report": "/data/AFTERNOON_FALSIFICATION_REPORT.md",
+      "aggregates": "/data/research-afternoon-falsification.json",
+      "report_sha256": "d0b46e9752a99f3ff23fb112b1577ae72b3117d1b52ef875495e986a38ec3daa",
+      "protocol_sha256": "61c1921d762f313b6343ab0a8fec7fd83d7038ea8179acbc5fa3757451c0d25e",
+      "complete_RTH_days": 435,
+      "formal_tests": 24,
+      "independent_validation": false
+    }
+  ]
+}

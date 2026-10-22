@@ -1,0 +1,13 @@
+{
+  "verification": {
+    "source_files": 69,
+    "days": 435,
+    "prefix_checks": 1305,
+    "fresh_source_replay_identical": true,
+    "previous_clock_cohorts_and_returns_reproduced": true,
+    "formal_tests": 24,
+    "new_strategy_runs": 0,
+    "protected_archive_files": 115
+  },
+  "completed_sha256": "b6cfe0f575443a9fb0f43e95f7d45fa58c44ca662380aad272c4d4942cca0217"
+}

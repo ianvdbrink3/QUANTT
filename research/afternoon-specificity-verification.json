@@ -1,0 +1,15 @@
+{
+  "verification": {
+    "source_files": 69,
+    "complete_RTH_days": 435,
+    "clock_groups": 9,
+    "formal_tests": 10,
+    "prefix_checks": 1305,
+    "future_mutation_checks": 1305,
+    "source_reload_replay_identical": true,
+    "original1500_groups_and_benchmark_reproduced": true,
+    "protected_archive_files": 115,
+    "new_strategy_runs": 0
+  },
+  "completed_sha256": "ce43e4e1176a4696e27d701e5aa11b2f3fbb0fb19e4111434210aaa7a9bdd9e4"
+}

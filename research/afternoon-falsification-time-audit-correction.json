@@ -1,0 +1,41 @@
+{
+  "status": "APPEND_ONLY_UNIT_ASSUMPTION_CORRECTION_NO_STATISTIC_CHANGED",
+  "reason": "Legacy.asi8 spacing compared microsecond timestamps with60e9 assumed nanoseconds; use Timedelta comparisons.",
+  "correction_detected_by": "Synthetic unit tests before inspecting statistical result tables",
+  "legacy_flagged_days": 435,
+  "corrected_integrity": {
+    "days": 435,
+    "expected_bars": 1305,
+    "observed_bars": 1305,
+    "missing": 0,
+    "duplicates": 0,
+    "flagged_days": 0,
+    "price_gaps": [
+      {
+        "pair": "gap1500",
+        "nonzero_days": 352,
+        "mean_points": 0.05574712643678161,
+        "median_points": 0.0,
+        "min_points": -2.0,
+        "max_points": 2.5,
+        "max_absolute_points": 2.5
+      },
+      {
+        "pair": "gap1501",
+        "nonzero_days": 364,
+        "mean_points": 0.05862068965517241,
+        "median_points": 0.0,
+        "min_points": -2.75,
+        "max_points": 4.0,
+        "max_absolute_points": 4.0
+      }
+    ],
+    "second_source_verified": false,
+    "limitation": "Same-source unit-independent timestamp/OHLC audit; no independent label semantics, subsecond path or fill certification."
+  },
+  "old_completed_sha256": "b6cfe0f575443a9fb0f43e95f7d45fa58c44ca662380aad272c4d4942cca0217",
+  "corrected_csv_sha256": "9e72c4fbb5fb2ed9816766aa8e6f531eb82972134b5c2a6269d0aac2707676be",
+  "correction_source_sha256": "c336f9a6938a9ddc58ed46b02ffb54733481332ab027e7f7e75b8588b3c94a3d",
+  "statistical_tables_or_pvalues_changed": false,
+  "source_files": 69
+}

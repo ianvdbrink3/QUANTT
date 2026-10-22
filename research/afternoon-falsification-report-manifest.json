@@ -1,0 +1,25 @@
+{
+  "decision": "INTERESTING_OBSERVATION_INDEPENDENTLY_UNCONFIRMED",
+  "verification": {
+    "status": "PASS_FIXED_FALSIFICATION_EVIDENCE",
+    "source_files": 69,
+    "days": 435,
+    "prefix_checks": 1305,
+    "fresh_source_replay_identical": true,
+    "previous_clock_cohorts_and_returns_reproduced": true,
+    "formal_tests": 24,
+    "new_strategy_runs": 0,
+    "protected_archive_files": 115
+  },
+  "files_sha256": {
+    "docs/AFTERNOON_FALSIFICATION_REPORT.md": "d0b46e9752a99f3ff23fb112b1577ae72b3117d1b52ef875495e986a38ec3daa",
+    "research/afternoon-falsification-results.json": "ac9fa7522aa1d6d1cb37c27809e0d89059f0b77bdd4c7f5c173f6c7bffe6f5f6",
+    "research/afternoon-falsification-rows.csv": "12c94adfe440258b8aaa3d1f257434cf55167ca12b0e991e231875f443fe0abf",
+    "research/afternoon-falsification-tests.csv": "da8c43f292659a46814473e78aa05bae1cb3bd7db1c5e78044976406682a12a5",
+    "research/afternoon-falsification-leave-quarters.csv": "0de18b859de6ce378182f4a663770bad67d077271b79b9e8fa505681d681a44e",
+    "research/afternoon-falsification-transitions.csv": "34af12a76f3a76ff7ce27414f20d7c0db5c8c1f893e80092693f4a923535f3fa",
+    "scripts/report_afternoon_falsification.py": "809e777f288a9db2e5a4b6eca29fd00aa1229026619857f8b038f4c6c85fd9f2",
+    "scripts/falsification_time_audit.py": "c336f9a6938a9ddc58ed46b02ffb54733481332ab027e7f7e75b8588b3c94a3d",
+    "research/afternoon-falsification-time-audit-correction.json": "49270fcbf420516455fc8ec44fb7e646035566e38c3d4e9b0a53041ddd02d96c"
+  }
+}

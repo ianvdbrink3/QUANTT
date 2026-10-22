@@ -1,0 +1,30 @@
+{
+  "status": "FIXED_FALSIFICATION_ON_CONSUMED_DATA_NOT_VALIDATION",
+  "universe": "Exactly435 frozen complete RTH days, same sources, active schedule and prior ATR14 as causal-map and specificity comparison.",
+  "fixed_cohort": "UP/DOWN at boundary14:30, determined only by14:29close relative09:30open and completed RTH range/knownATR14 in[0.5,1.2). Hold membership unchanged across all3 quarters.",
+  "dynamic_cohort": "Same criteria independently at14:30,14:45,15:00. No retrospective15:00-membership selection for earlier quarters.",
+  "windows": {
+    "14:30": 300,
+    "14:45": 315,
+    "15:00": 330
+  },
+  "parts": {
+    "FULL": "close minute k-1 to close k+14, same original benchmark anchor",
+    "FIRST": "open minute k to close minute k: actual first completed minute",
+    "REST": "open minute k+1 to close k+14: remaining14 minutes",
+    "GAPS": "FULL=priorclose-to-open gap+FIRST+firstclose-to-nextopen gap+REST in points. Median components need not add."
+  },
+  "orientation": "UP follows rising price; DOWN follows falling price; also retain raw-up values. No cost/fill/stop/target simulation.",
+  "status_matrix": "UP/DOWN/OTHER on435 days between14:30 and15:00; separate detailed reasons for range outside MID, flat or missing ATR. Only transition counts, no return optimization on movers.",
+  "tests": "Exactly24 two-sided log-bp tests: FIRST/REST means vs0 at15:00 for fixed/dynamic UP/DOWN (8);15:00 FIRST/REST minus each of2 earlier quarters for fixed/dynamic UP/DOWN (16). Joint daily influence scores, known overlap covariance, daily-score HAC(5), same conservative tdf as specificity, one Holm24 family. Points CI separately calculated, no extra p-family. No FULL zero tests or chosen horizons.",
+  "concentration": "All leave-one-day-out and all leave-one-calendar-quarter-out means of original FULL15:00 point return for fixed and dynamic UP cohorts. Report all quarter omissions and min/max day omissions; no deleting outliers from official results or recomputing favorable p-values.",
+  "integrity": "Check raw active timestamps14:59,15:00,15:01 on all435 days: presence, uniqueness,60-second spacing, one contract and vendor trade date, finite/tick-grid/OHLC coherence. Price difference previousclose-to-nextopen is NOT automatically a missing minute. Bar labels and subsecond paths cannot be independently certified with same-source1m bars.",
+  "decision_order": [
+    "If fixed UP FULL15:00 mean<=0: positive average disappears under fixed cohort (selection explanation).",
+    "Else if any UP leave-day or leave-quarter mean<=0 in either scheme: sign-fragile (concentration explanation).",
+    "Else if grid/integrity fails or no independent second source: interesting observation, independently unconfirmed. Same-source checks can survive but do not certify label alignment.",
+    "Else: stronger research hypothesis, not a validated trading edge. No equivalence claim from non-significance."
+  ],
+  "inference_limits": "Exploratory after earlier analyses; Holm24 only covers this round, not whole project. Causal timing is not institutional causal identification. Open prices do not prove executable fills. No fixed minimum economically important effect was agreed; survival means direction survival only.",
+  "publication": "Local report and aggregates only. No new GitHub or Vercel authorization in current task."
+}

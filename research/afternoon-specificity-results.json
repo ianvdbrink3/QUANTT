@@ -1,0 +1,514 @@
+{
+  "status": "EXPLORATORY_FIXED_CLOCK_SPECIFICITY_NOT_VALIDATION",
+  "verification": {
+    "source_files": 69,
+    "complete_RTH_days": 435,
+    "clock_groups": 9,
+    "formal_tests": 10,
+    "prefix_checks": 1305,
+    "future_mutation_checks": 1305,
+    "source_reload_replay_identical": true,
+    "original1500_groups_and_benchmark_reproduced": true,
+    "protected_archive_files": 115,
+    "new_strategy_runs": 0
+  },
+  "protocol_sha256": "90dc566ed8e5fc495d0911dea1b40e5f54b9fd10a115f62684d8727dcf2259e5",
+  "rows": [
+    {
+      "clock": "14:30",
+      "group": "ALL",
+      "days": 435,
+      "mean_gross_points": 0.14195402298850573,
+      "median_gross_points": 0.75,
+      "mean_cost_only_points": -1.0830459770114944,
+      "median_cost_only_points": -0.4750000000000001,
+      "positive_fraction": 0.5218390804597701,
+      "positive_after_cost_fraction": 0.4942528735632184,
+      "mean_logbps": 0.303828047968183,
+      "same_direction_blind_mean_points": 0.14195402298850573,
+      "premium_points": 0.0
+    },
+    {
+      "clock": "14:30",
+      "group": "UP",
+      "days": 162,
+      "mean_gross_points": 0.8549382716049383,
+      "median_gross_points": 0.875,
+      "mean_cost_only_points": -0.3700617283950618,
+      "median_cost_only_points": -0.3500000000000001,
+      "positive_fraction": 0.5308641975308642,
+      "positive_after_cost_fraction": 0.49382716049382713,
+      "mean_logbps": 0.6161145109701863,
+      "same_direction_blind_mean_points": 0.14195402298850573,
+      "premium_points": 0.7129842486164326
+    },
+    {
+      "clock": "14:30",
+      "group": "DOWN",
+      "days": 131,
+      "mean_gross_points": 0.9179389312977099,
+      "median_gross_points": -0.5,
+      "mean_cost_only_points": -0.3070610687022902,
+      "median_cost_only_points": -1.725,
+      "positive_fraction": 0.48854961832061067,
+      "positive_after_cost_fraction": 0.48091603053435117,
+      "mean_logbps": 0.06581211906008323,
+      "same_direction_blind_mean_points": -0.14195402298850573,
+      "premium_points": 1.0598929542862157
+    },
+    {
+      "clock": "14:45",
+      "group": "ALL",
+      "days": 435,
+      "mean_gross_points": -3.2660919540229885,
+      "median_gross_points": 1.25,
+      "mean_cost_only_points": -4.4910919540229886,
+      "median_cost_only_points": 0.02499999999999991,
+      "positive_fraction": 0.5264367816091954,
+      "positive_after_cost_fraction": 0.503448275862069,
+      "mean_logbps": -1.5003311775781198,
+      "same_direction_blind_mean_points": -3.2660919540229885,
+      "premium_points": 0.0
+    },
+    {
+      "clock": "14:45",
+      "group": "UP",
+      "days": 165,
+      "mean_gross_points": -4.957575757575758,
+      "median_gross_points": -0.75,
+      "mean_cost_only_points": -6.1825757575757585,
+      "median_cost_only_points": -1.975,
+      "positive_fraction": 0.4909090909090909,
+      "positive_after_cost_fraction": 0.46060606060606063,
+      "mean_logbps": -1.8761342435327713,
+      "same_direction_blind_mean_points": -3.2660919540229885,
+      "premium_points": -1.6914838035527695
+    },
+    {
+      "clock": "14:45",
+      "group": "DOWN",
+      "days": 133,
+      "mean_gross_points": 5.150375939849624,
+      "median_gross_points": -1.0,
+      "mean_cost_only_points": 3.925375939849624,
+      "median_cost_only_points": -2.225,
+      "positive_fraction": 0.48120300751879697,
+      "positive_after_cost_fraction": 0.46616541353383456,
+      "mean_logbps": 2.127229340264675,
+      "same_direction_blind_mean_points": 3.2660919540229885,
+      "premium_points": 1.8842839858266358
+    },
+    {
+      "clock": "15:00",
+      "group": "ALL",
+      "days": 435,
+      "mean_gross_points": 0.846551724137931,
+      "median_gross_points": 1.25,
+      "mean_cost_only_points": -0.3784482758620691,
+      "median_cost_only_points": 0.02499999999999991,
+      "positive_fraction": 0.5149425287356322,
+      "positive_after_cost_fraction": 0.503448275862069,
+      "mean_logbps": 0.31248228504441156,
+      "same_direction_blind_mean_points": 0.846551724137931,
+      "premium_points": 0.0
+    },
+    {
+      "clock": "15:00",
+      "group": "UP",
+      "days": 167,
+      "mean_gross_points": 7.540419161676646,
+      "median_gross_points": 4.0,
+      "mean_cost_only_points": 6.315419161676646,
+      "median_cost_only_points": 2.775,
+      "positive_fraction": 0.5688622754491018,
+      "positive_after_cost_fraction": 0.562874251497006,
+      "mean_logbps": 3.048130035436652,
+      "same_direction_blind_mean_points": 0.846551724137931,
+      "premium_points": 6.6938674375387155
+    },
+    {
+      "clock": "15:00",
+      "group": "DOWN",
+      "days": 131,
+      "mean_gross_points": 3.6660305343511452,
+      "median_gross_points": 2.5,
+      "mean_cost_only_points": 2.441030534351145,
+      "median_cost_only_points": 1.275,
+      "positive_fraction": 0.5267175572519084,
+      "positive_after_cost_fraction": 0.5190839694656488,
+      "mean_logbps": 1.460338649904231,
+      "same_direction_blind_mean_points": -0.846551724137931,
+      "premium_points": 4.5125822584890765
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "raw_mean",
+      "group": "ALL",
+      "comparison": "15:00 minus 14:30",
+      "n15": 435,
+      "n_other": 435,
+      "common_days": 435,
+      "union_days": 435,
+      "points": {
+        "delta": 0.7045977011494253,
+        "se_HAC5": 2.640082539716785,
+        "se_CR1": 2.7814889038602653,
+        "ci95": [
+          -4.484339493790332,
+          5.893534896089182
+        ],
+        "df": 434,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 0.008654237076228533,
+        "se_HAC5": 1.0802592489975313,
+        "se_CR1": 1.211290632653909,
+        "ci95": [
+          -2.114535971174722,
+          2.1318444453271788
+        ],
+        "p_raw": 0.993611689292578,
+        "df": 434,
+        "event_days": 435
+      },
+      "p_Holm10": 1.0
+    },
+    {
+      "kind": "raw_mean",
+      "group": "UP",
+      "comparison": "15:00 minus 14:30",
+      "n15": 167,
+      "n_other": 162,
+      "common_days": 155,
+      "union_days": 174,
+      "points": {
+        "delta": 6.685480890071708,
+        "se_HAC5": 3.1041759628121954,
+        "se_CR1": 3.471930551737796,
+        "ci95": [
+          0.5553290804887894,
+          12.815632699654627
+        ],
+        "df": 161,
+        "event_days": 174
+      },
+      "bps": {
+        "delta": 2.4320155244664656,
+        "se_HAC5": 1.2314047499516592,
+        "se_CR1": 1.4297415145835588,
+        "ci95": [
+          0.00022746004034290834,
+          4.863803588892589
+        ],
+        "p_raw": 0.049978828901661526,
+        "df": 161,
+        "event_days": 174
+      },
+      "p_Holm10": 0.3498518023116307
+    },
+    {
+      "kind": "raw_mean",
+      "group": "DOWN",
+      "comparison": "15:00 minus 14:30",
+      "n15": 131,
+      "n_other": 131,
+      "common_days": 121,
+      "union_days": 141,
+      "points": {
+        "delta": 2.7480916030534353,
+        "se_HAC5": 4.9618066876581866,
+        "se_CR1": 4.937511006318148,
+        "ci95": [
+          -7.068249523425514,
+          12.564432729532385
+        ],
+        "df": 130,
+        "event_days": 141
+      },
+      "bps": {
+        "delta": 1.3945265308441477,
+        "se_HAC5": 2.067180781869971,
+        "se_CR1": 2.0360627616040268,
+        "ci95": [
+          -2.695143422524058,
+          5.484196484212353
+        ],
+        "p_raw": 0.5011259099516218,
+        "df": 130,
+        "event_days": 141
+      },
+      "p_Holm10": 1.0
+    },
+    {
+      "kind": "context_premium",
+      "group": "UP",
+      "comparison": "15:00 minus 14:30",
+      "n15": 167,
+      "n_other": 162,
+      "common_days": 155,
+      "union_days": 174,
+      "points": {
+        "delta": 5.980883188922283,
+        "se_HAC5": 2.680236664004756,
+        "se_CR1": 3.2633820246390615,
+        "ci95": [
+          0.6879301370358748,
+          11.273836240808691
+        ],
+        "df": 161,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 2.4233612873902373,
+        "se_HAC5": 1.0878829288516765,
+        "se_CR1": 1.4072956271316734,
+        "ci95": [
+          0.27500127661531293,
+          4.571721298165162
+        ],
+        "p_raw": 0.027293874182162073,
+        "df": 161,
+        "event_days": 435
+      },
+      "p_Holm10": 0.21835099345729658
+    },
+    {
+      "kind": "context_premium",
+      "group": "DOWN",
+      "comparison": "15:00 minus 14:30",
+      "n15": 131,
+      "n_other": 131,
+      "common_days": 121,
+      "union_days": 141,
+      "points": {
+        "delta": 3.4526893042028606,
+        "se_HAC5": 3.9805664527547195,
+        "se_CR1": 3.970979695168215,
+        "ci95": [
+          -4.422385368506837,
+          11.327763976912557
+        ],
+        "df": 130,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 1.4031807679203763,
+        "se_HAC5": 1.712266466902079,
+        "se_CR1": 1.7013805413088863,
+        "ci95": [
+          -1.9843336591026992,
+          4.790695194943452
+        ],
+        "p_raw": 0.41400826938027074,
+        "df": 130,
+        "event_days": 435
+      },
+      "p_Holm10": 1.0
+    },
+    {
+      "kind": "raw_mean",
+      "group": "ALL",
+      "comparison": "15:00 minus 14:45",
+      "n15": 435,
+      "n_other": 435,
+      "common_days": 435,
+      "union_days": 435,
+      "points": {
+        "delta": 4.11264367816092,
+        "se_HAC5": 3.114855434552034,
+        "se_CR1": 2.805504425144454,
+        "ci95": [
+          -2.009433559220133,
+          10.234720915541972
+        ],
+        "df": 434,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 1.8128134626225314,
+        "se_HAC5": 1.2833588295799156,
+        "se_CR1": 1.1785649788078034,
+        "ci95": [
+          -0.7095578136845913,
+          4.335184738929654
+        ],
+        "p_raw": 0.158503623006086,
+        "df": 434,
+        "event_days": 435
+      },
+      "p_Holm10": 0.951021738036516
+    },
+    {
+      "kind": "raw_mean",
+      "group": "UP",
+      "comparison": "15:00 minus 14:45",
+      "n15": 167,
+      "n_other": 165,
+      "common_days": 158,
+      "union_days": 174,
+      "points": {
+        "delta": 12.497994919252404,
+        "se_HAC5": 4.068304861933365,
+        "se_CR1": 4.242071320809374,
+        "ci95": [
+          4.464986304231834,
+          20.531003534272976
+        ],
+        "df": 164,
+        "event_days": 174
+      },
+      "bps": {
+        "delta": 4.924264278969423,
+        "se_HAC5": 1.6103500120943646,
+        "se_CR1": 1.684533319311628,
+        "ci95": [
+          1.7445725008549857,
+          8.10395605708386
+        ],
+        "p_raw": 0.0026037027487695627,
+        "df": 164,
+        "event_days": 174
+      },
+      "p_Holm10": 0.026037027487695628
+    },
+    {
+      "kind": "raw_mean",
+      "group": "DOWN",
+      "comparison": "15:00 minus 14:45",
+      "n15": 131,
+      "n_other": 133,
+      "common_days": 125,
+      "union_days": 139,
+      "points": {
+        "delta": -1.484345405498479,
+        "se_HAC5": 5.331291885299119,
+        "se_CR1": 5.020225809785348,
+        "ci95": [
+          -12.031668807092968,
+          9.062977996096011
+        ],
+        "df": 130,
+        "event_days": 139
+      },
+      "bps": {
+        "delta": -0.6668906903604439,
+        "se_HAC5": 2.1501734767629266,
+        "se_CR1": 2.0051536000643955,
+        "ci95": [
+          -4.920751765100116,
+          3.586970384379228
+        ],
+        "p_raw": 0.7569384684663523,
+        "df": 130,
+        "event_days": 139
+      },
+      "p_Holm10": 1.0
+    },
+    {
+      "kind": "context_premium",
+      "group": "UP",
+      "comparison": "15:00 minus 14:45",
+      "n15": 167,
+      "n_other": 165,
+      "common_days": 158,
+      "union_days": 174,
+      "points": {
+        "delta": 8.385351241091485,
+        "se_HAC5": 2.9979813870217518,
+        "se_CR1": 3.5474406713276743,
+        "ci95": [
+          2.4657333346368864,
+          14.304969147546082
+        ],
+        "df": 164,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 3.111450816346891,
+        "se_HAC5": 1.1798659921479475,
+        "se_CR1": 1.4562784008494447,
+        "ci95": [
+          0.7817646199712041,
+          5.441137012722578
+        ],
+        "p_raw": 0.00916523835683087,
+        "df": 164,
+        "event_days": 435
+      },
+      "p_Holm10": 0.08248714521147782
+    },
+    {
+      "kind": "context_premium",
+      "group": "DOWN",
+      "comparison": "15:00 minus 14:45",
+      "n15": 131,
+      "n_other": 133,
+      "common_days": 125,
+      "union_days": 139,
+      "points": {
+        "delta": 2.6282982726624406,
+        "se_HAC5": 4.30541891937215,
+        "se_CR1": 4.256541461716955,
+        "ci95": [
+          -5.8894581546643145,
+          11.146054699989197
+        ],
+        "df": 130,
+        "event_days": 435
+      },
+      "bps": {
+        "delta": 1.1459227722620875,
+        "se_HAC5": 1.71341753891499,
+        "se_CR1": 1.7273418147730022,
+        "ci95": [
+          -2.2438689130765894,
+          4.535714457600764
+        ],
+        "p_raw": 0.5048129967573393,
+        "df": 130,
+        "event_days": 435
+      },
+      "p_Holm10": 1.0
+    }
+  ],
+  "protocol": {
+    "status": "FIXED_EXPLORATORY_SPECIFICITY_COMPARISON_NOT_NEW_HOLDOUT",
+    "anchor_commit": "8f727f671a4f78a5473aebf853aae89ed663d7c2",
+    "windows": {
+      "14:30": 300,
+      "14:45": 315,
+      "15:00": 330
+    },
+    "horizon_minutes": 15,
+    "universe": "Identical435 complete RTH days from frozen quality mask",
+    "context": "UP/DOWN relative to09:30open using LAST COMPLETED minute close. RTH high-low over completed bars only, divided by frozen prior ATR14. MID=[0.5,1.2), preserving original upper-exclusive rule. Zero direction and missing ATR excluded only from context rows, never from ALL435.",
+    "direction": "ALL and UP use rising-price orientation; DOWN uses falling-price orientation. A DOWN context premium compares with blind SHORT of the same quarter, not blind long.",
+    "friction_points": 1.225,
+    "friction_scope": "Constant arithmetic deduction per observation, no entries/stops/targets/fill simulator. Costs cancel in context-minus-same-direction-benchmark differences.",
+    "contrasts": "Exactly10:15:00 minus14:30 and minus14:45 for ALL/UP/DOWN raw oriented means (6); and UP/DOWN context premiums over each own same-clock unconditional directional benchmark (4). No extra clocks, horizons, thresholds or subgroups.",
+    "inference": "Primary: two-sided mean LOG-bp contrasts, joint day influence scores with exact overlap covariance. Bartlett daily-score HAC lags1..5, calendar454 rows including0 influence on absent rows, finite correction D/(D-1) for union eventdays, conservative tdf=min compared group daycounts-1. One Holm10 family. Nominal95% intervals; points CI separately computed. CR1 standard error recorded only as sensitivity, no second p-family.",
+    "paired_cohorts": "Context is re-evaluated separately at each clock; cohorts may change. This compares operational conditional means, not a matched-identical-cohort causal treatment effect. Temporal dependence and changing cohort composition are limitations, not parameters to optimize.",
+    "checks": "Every day:selector prefix at each of3 boundaries agrees with full-day selector; mutation of all later bars leaves context unchanged.15:00 subgroup membership and all435 benchmark anchors/outcomes reproduce previous known results. Fresh source reload replay must be identical.",
+    "known_1500_findings": {
+      "all_days": 435,
+      "all_mean_points": 0.846551724137931,
+      "all_median_points": 1.25,
+      "up_days": 167,
+      "up_mean_points": 7.540419161676646,
+      "up_median_points": 4.0,
+      "down_days": 131,
+      "down_oriented_mean_points": 3.6660305343511452,
+      "down_oriented_median_points": 2.5,
+      "previous_benchmark_nominal_p_logbps": 0.006507373940679841,
+      "evidence": "Previously examined exploratory result; not an independent preregistration or validation."
+    },
+    "limits": [
+      "Previously consumed data; correction only covers these10 comparisons, not all historical research.",
+      "Non-significant pairwise differences do not establish equivalence, absence or generic momentum.",
+      "Point-in-time information use is not institutional or economic causal identification.",
+      "No promotion or revival of archived strategies. No external publication authorized in this request."
+    ]
+  }
+}
