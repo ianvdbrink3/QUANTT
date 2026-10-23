@@ -1,0 +1,300 @@
+{
+  "status": "LOCAL_READINESS_COMPLETED_INDEPENDENT_CONFIRMATION_NOT_OBTAINED",
+  "protocol_sha256": "d4e5d0806e8d2e20709532e182e9ff79d259cf5d238d2c63d3163df89c07c8ed",
+  "preserved_files": 489,
+  "information_planning": {
+    "discovery_count_reproduced": {
+      "weekday_positions": 458,
+      "block_width_weekdays": 39,
+      "scored_weekday_positions": 312,
+      "guard_or_tail_positions": 146,
+      "selected_days": 162,
+      "scored_selected_days": 109,
+      "selected_in_guard_or_tail": 53,
+      "per_block": [
+        8,
+        10,
+        16,
+        16,
+        10,
+        16,
+        20,
+        13
+      ],
+      "minimum_total_satisfied": false,
+      "minimum_each_satisfied": true,
+      "information_gate_satisfied": false
+    },
+    "complete_rth_days": 435,
+    "selected_per_complete_rth_day": 0.3724137931034483,
+    "selected_per_scored_weekday": 0.34935897435897434,
+    "projections": [
+      {
+        "approximate_years": 1.0,
+        "weekday_positions": 260,
+        "scored_weekday_positions": 120,
+        "guard_or_tail_positions": 140,
+        "projected_selected_days": 41.92307692307692,
+        "projected_selected_per_block": 5.240384615384615
+      },
+      {
+        "approximate_years": 2.0,
+        "weekday_positions": 520,
+        "scored_weekday_positions": 376,
+        "guard_or_tail_positions": 144,
+        "projected_selected_days": 131.35897435897436,
+        "projected_selected_per_block": 16.419871794871796
+      },
+      {
+        "approximate_years": 3.0115384615384615,
+        "weekday_positions": 783,
+        "scored_weekday_positions": 640,
+        "guard_or_tail_positions": 143,
+        "projected_selected_days": 223.5897435897436,
+        "projected_selected_per_block": 27.94871794871795
+      }
+    ],
+    "projection_limit": "Historical frequency only; holidays and quality failures already affect that frequency. Future quality, selection and dependence may differ.120 is an information floor, not80% power or guaranteed independence. These are alternative planning lengths, not rolling testing opportunities or an adopted forward endpoint.",
+    "original_v2_method_unchanged": true,
+    "existing_109_are_discovery_not_new_confirmation": true,
+    "historical_route": {
+      "start": "2019-01-02",
+      "end": "2021-12-31",
+      "scored_weekdays": 640,
+      "planned_exports": 103,
+      "first_batch_received_exports": 6,
+      "pending_exports": 97,
+      "next_three_requests": [
+        {
+          "sequence": 7,
+          "contract": "NQH19",
+          "start_iso": "2019-01-14",
+          "end_iso": "2019-01-27",
+          "start_mmddyyyy": "01/14/2019",
+          "end_mmddyyyy": "01/27/2019",
+          "role": "CONTRACT_OVERLAP_AND_FIXED_WINDOW",
+          "frequency": "Intraday",
+          "minutes": 1,
+          "order": "Ascending Date",
+          "total_volume_and_open_interest": false,
+          "nearby": false,
+          "source_url": "https://www.barchart.com/futures/quotes/NQH19/historical-download"
+        },
+        {
+          "sequence": 8,
+          "contract": "NQH19",
+          "start_iso": "2019-01-28",
+          "end_iso": "2019-02-10",
+          "start_mmddyyyy": "01/28/2019",
+          "end_mmddyyyy": "02/10/2019",
+          "role": "CONTRACT_OVERLAP_AND_FIXED_WINDOW",
+          "frequency": "Intraday",
+          "minutes": 1,
+          "order": "Ascending Date",
+          "total_volume_and_open_interest": false,
+          "nearby": false,
+          "source_url": "https://www.barchart.com/futures/quotes/NQH19/historical-download"
+        },
+        {
+          "sequence": 9,
+          "contract": "NQH19",
+          "start_iso": "2019-02-11",
+          "end_iso": "2019-02-24",
+          "start_mmddyyyy": "02/11/2019",
+          "end_mmddyyyy": "02/24/2019",
+          "role": "CONTRACT_OVERLAP_AND_FIXED_WINDOW",
+          "frequency": "Intraday",
+          "minutes": 1,
+          "order": "Ascending Date",
+          "total_volume_and_open_interest": false,
+          "nearby": false,
+          "source_url": "https://www.barchart.com/futures/quotes/NQH19/historical-download"
+        }
+      ],
+      "status": "MISSING_DATA_NOT_NEW_OUTCOME_RELEASE",
+      "access_disclosure": "2019Jan2-Jan11 already inspected during authorized marathon; original window retained, not called wholly blind."
+    },
+    "forward_route": {
+      "status": "NOT_STARTED_NO_VERIFIED_FEED_OR_FINAL_CALENDAR",
+      "requirements": [
+        "lawful existing feed without new charges",
+        "immutable future start/end dates and calendar blocks",
+        "warmup, rollovers, quality and full record of all scheduled dates",
+        "timestamped cohort decision before outcome; both horizons and separate execution evidence"
+      ],
+      "stopping": "One registered final endpoint; insufficient information stays inconclusive. No extension to120."
+    }
+  },
+  "source_comparison": {
+    "status": "LIMITED_OLDER_SAME_DATE_SOURCE_COMPARISON_COMPLETED_NOT_CONFIRMATION",
+    "window": {
+      "start": "2024-01-22",
+      "end": "2024-02-16",
+      "contract": "NQH24",
+      "rule": "All dates of both existing technical-pilot exports, not selected on returns or candidate membership."
+    },
+    "common_rth_minutes": 7796,
+    "common_days": 20,
+    "complete_common_rth_days": 19,
+    "volume_exact_fraction": 0.849153412006157,
+    "minute_oc_difference": {
+      "n": 7796,
+      "exact_fraction": 0.9146998460749102,
+      "median_abs_points": 0.0,
+      "p90_abs_points": 0.0,
+      "max_abs_points": 15.0
+    },
+    "minute_range_difference": {
+      "n": 7796,
+      "exact_fraction": 0.995895330938943,
+      "median_abs_points": 0.0,
+      "p90_abs_points": 0.0,
+      "max_abs_points": 11.5
+    },
+    "constant_daily_close_offset_fraction": 0.1,
+    "maximum_intraday_close_offset_variation_points": 16.0,
+    "anchor_difference": {
+      "2": {
+        "n": 20,
+        "exact_fraction": 0.85,
+        "median_abs_points": 0.0,
+        "p90_abs_points": 0.25,
+        "max_abs_points": 15.5
+      },
+      "15": {
+        "n": 20,
+        "exact_fraction": 0.8,
+        "median_abs_points": 0.0,
+        "p90_abs_points": 0.25,
+        "max_abs_points": 0.75
+      }
+    },
+    "quality": [
+      {
+        "day": "2024-01-22",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-23",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 4,
+        "common_full_rth": false
+      },
+      {
+        "day": "2024-01-24",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-25",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-26",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-29",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-30",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-01-31",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-01",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-02",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-05",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-06",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-07",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-08",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-09",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-12",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-13",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-14",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-15",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      },
+      {
+        "day": "2024-02-16",
+        "generic_missing_rth": 0,
+        "contract_missing_rth": 0,
+        "common_full_rth": true
+      }
+    ],
+    "no_cohort_reselected": true,
+    "no_new_strategy_pnl": true,
+    "limitation": "Only existing NQH24 pilot overlap, not all493 older complete RTH days. No contract-level2023 coverage, full historical roll chain, independent tick/BBO source or provenance certification. Agreement on this pilot cannot clear the older negative result; disagreement cannot justify discarding it without diagnosis."
+  },
+  "candidate_unchanged": true,
+  "independent_test_started": false
+}

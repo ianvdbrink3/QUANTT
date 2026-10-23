@@ -1,0 +1,121 @@
+{
+  "status": "INDEPENDENT_SELECTOR_FILL_REFERENCE_PARITY_PASSED",
+  "samples": [
+    {
+      "sample": "DISCOVERY",
+      "complete_days": 435,
+      "events": 1285,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 1.1102230246251565e-16,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    },
+    {
+      "sample": "CONTRACT_2018_WARMUP",
+      "complete_days": 26,
+      "events": 22,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 1.1102230246251565e-16,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    },
+    {
+      "sample": "CONTRACT_2019_FRAGMENT",
+      "complete_days": 8,
+      "events": 19,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 1.1102230246251565e-16,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    },
+    {
+      "sample": "CONTRACT_PILOT_2024",
+      "complete_days": 19,
+      "events": 13,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 9.020562075079397e-17,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    },
+    {
+      "sample": "CONTINUOUS_2022_2024_UNVERIFIED",
+      "complete_days": 493,
+      "events": 1090,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 1.1102230246251565e-16,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    },
+    {
+      "sample": "VENDOR_SAMPLE_OCT2026",
+      "complete_days": 12,
+      "events": 7,
+      "compared_fields": [
+        "entry",
+        "end",
+        "direction",
+        "decision",
+        "entry_price",
+        "exit_price",
+        "gross_points",
+        "net_points",
+        "mfe_points",
+        "mae_points"
+      ],
+      "maximum_absolute_difference": 0.0,
+      "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+    }
+  ],
+  "reference_code_sha256": "4355911dbe70867ede01861339f60d7eef47ee1097a67881f35b511955227ecf",
+  "limitation": "Independent implementation of fixed selectors and fill/excursion arithmetic, but same author/machine, shared source parser and causal context. Engineering verification, NOT independent market validation."
+}

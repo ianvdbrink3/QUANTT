@@ -1,0 +1,18 @@
+{
+  "status": "SIX_AUTHORIZED_DOWNLOADS_VERIFIED_METADATA_ONLY",
+  "downloads_verified_in_browser_and_on_disk": 6,
+  "authorized_plan_sequences": [1, 2, 3, 4, 5, 6],
+  "remaining_plan_files_not_downloaded": 97,
+  "raw_copies_byte_identical": true,
+  "raw_copies_gitignored": true,
+  "receipt_replay_byte_identical": true,
+  "tracked_baseline_files_unchanged": 400,
+  "prior_method_and_window_locks_verified": true,
+  "new_market_signals_computed": 0,
+  "new_market_returns_computed": 0,
+  "numeric_ohlcv_parsed": false,
+  "full_calendar_quality_audit_completed": false,
+  "independent_test_released": false,
+  "new_purchase_or_subscription_change": false,
+  "github_push_or_vercel_deployment": false
+}

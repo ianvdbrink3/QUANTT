@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-23",
+  "external_publication": false,
+  "files_sha256": {
+    "app/research/historical-preparation/page.tsx": "abad2a440645477bbb7a17ba39116ae6c7cf46158d191e8c8fa9ca171a4fcb5a",
+    "artifacts/historical-preparation/active-bars.parquet": "87548abf179d1955d2e935d038a3a641134b296da79f01333d3907ebb6a969e8",
+    "artifacts/historical-preparation/active-day-quality.json": "c197be2b4243ac8638bca515da80572b0bf4a28616e9191b6287b381ebee2ea9",
+    "artifacts/historical-preparation/contract-bars.parquet": "fd2ef108ce6380ec575413b7b48f135d9fbe385e3b56c71fc8dc8f0791db4118",
+    "artifacts/historical-preparation/contract-day-quality.json": "60dc0527f1de00de875a4575782930222f3a9488f2daff1ed5538de5bc4c0f59",
+    "artifacts/historical-preparation/prior-context.json": "47af86fcc717d936b1bf519b8089ab7c520c6db696291ad8e962565252c6f2e2",
+    "artifacts/historical-preparation/roll-volume-review.json": "7f64e94b9ac976845a6084bb6da9adc6421ff2de8e9d3f14c6a184f309bb78f6",
+    "artifacts/historical-preparation/source-numeric-quality.json": "62ebc3f65c15bbcea605c81871bc1061bbc88aa62605c70fe6b43a9a3ab63cfa",
+    "docs/HISTORICAL_2019_2021_PREPARATION.md": "7d7792a62dd33ba1fc1ae455cad809ea2e5087f2c313744c6d1c1078e4754d92",
+    "docs/HISTORICAL_2019_2021_TECHNICAL_REVIEW.md": "89bd53ebbcc02d75e5ccd279d78824655c0c2f4c1837dc2a49d9a91194f0490f",
+    "public/data/historical-preparation-review.json": "3e2a2140fc808cce3f115503d3a1631e415d1e4e6ed3ccc7225ff7a09a7b503b",
+    "public/data/historical-preparation.json": "b968b88ef7119d561634a8026159bec6d5404a6f040d374be8b015972c552691",
+    "public/reports/HISTORICAL_2019_2021_PREPARATION.md": "7d7792a62dd33ba1fc1ae455cad809ea2e5087f2c313744c6d1c1078e4754d92",
+    "public/reports/HISTORICAL_2019_2021_TECHNICAL_REVIEW.md": "89bd53ebbcc02d75e5ccd279d78824655c0c2f4c1837dc2a49d9a91194f0490f",
+    "research/historical-2019-2021-complete-source-register.json": "45a02b41d1bbf529aac3174d0096674db3b3122fe26d00407cd9d6ddd35ed1bb",
+    "research/historical-preparation-http-verification.json": "e203d985960cc688679aff5c8e9e2acaad940c233d161fdf5b7d32ccd097e1dd",
+    "research/historical-preparation-lock.json": "26da04160720bb82fb4d90d8a0eecac50b9d738b1083d751540964f2da4e6503",
+    "research/historical-preparation-protocol.json": "729846ec5cc1c0b72bdc9db6eac11ae0f805608e57790a0cb38b2c18f66bf506",
+    "research/historical-preparation-quality.json": "b968b88ef7119d561634a8026159bec6d5404a6f040d374be8b015972c552691",
+    "research/historical-preparation-review.json": "f68d68ee94e794138a251e04c5da115e5d354a54cbf9f03c706d91f6cc4eac47",
+    "research/historical-preparation-verification.json": "f8e96ca816a95a6c9ae91c141ff9d6023f6fad0808defbc62fb2f299aeb4a818",
+    "scripts/finalize_historical_preparation.py": "a845d947782894eee90cf31837cce8ed8680a228fbb46ddb379153f088bf503d",
+    "scripts/prepare_historical_contracts.py": "26c3e1e97e26f8c87ee971584ec08c301a753dbed0f0f2f074f540216060fcd4",
+    "scripts/publish_historical_preparation_local.py": "92c535e5313da19e092635bf0309bcd19be6c74e31e196ef5f9673021b6f5317",
+    "scripts/review_historical_preparation.py": "5f184facaf6cc4b774d71946c8e587ce72b5ffc3f11bd348af637ca7dddb0702",
+    "scripts/verify_historical_preparation_http.py": "8635a776c91101bd9643396138d25da9ed82f224b6a4fe2c9c9fc1c2868ca0d6",
+    "tests/test_historical_preparation.py": "e6ce4aec09fa1f0d61b0d6e470f68a5049034b497edfcce13ee60cdb83c7d62f",
+    "tests/test_historical_preparation_outputs.py": "475ee8d01b4f9340aef342ed0c43bfb8d9cf65bf246d325ae86271d07e478020"
+  },
+  "integrity": {
+    "outcome_release": false,
+    "previous_freeze_files": 517,
+    "protected_files": 550
+  },
+  "local_dashboard": "http://127.0.0.1:3012/research/historical-preparation",
+  "new_2019_2021_strategy_signals": false,
+  "open_conditions": [
+    "EXPLICIT_OUTCOME_RELEASE_REQUIRED",
+    "DATE_SPECIFIC_CME_HOLIDAY_AND_HALT_GRID_NOT_FULLY_CERTIFIED",
+    "LICENSE_AND_INDEPENDENT_VENDOR_VALIDATION_UNCONFIRMED",
+    "ROLL_VOLUME_INTERIOR_MINUTE_GAPS"
+  ],
+  "outcome_release": false,
+  "status": "QUALITY_ONLY_HANDOFF_NOT_FINAL_VALIDATION_RELEASE"
+}

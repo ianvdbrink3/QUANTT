@@ -1,0 +1,12 @@
+{
+  "status": "WINDOW_AND_ACQUISITION_PLAN_LOCKED_NO_OUTCOMES",
+  "files_sha256": {
+    "research/afternoon-historical-window.json": "6101261403531c15804aa4384b014aa4dbeb603474e45e246627aa622330edf5",
+    "research/afternoon-historical-download-plan.json": "d10d4148cafef8c4104583f5d65fbaf10ec006fe2aef2d1b1a029a61c9ca2153",
+    "docs/AFTERNOON_HISTORICAL_WINDOW.md": "2d550e16727d39adc2371862ead2abe8045f77feee46434347c2e9786c2c8d6a",
+    "docs/NQ_HISTORICAL_DOWNLOAD_LIST.md": "a6f90691ccb2362863d0e8776fde263ae386decb667057d702ac565e299137d8",
+    "scripts/register_historical_replication_window.py": "8ad6867ccae880b18e5408094f43083ff10f24483461d11e77a5f9b775a4b7fc"
+  },
+  "candidate_test_released": false,
+  "absolute_independence_certified": false
+}

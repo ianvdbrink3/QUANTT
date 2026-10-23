@@ -1,0 +1,13 @@
+{
+  "status": "LOCKED_BEFORE_FRESH_SEEDS",
+  "inputs": {
+    "research/afternoon-method-round2-protocol.json": "1b31e79cdf2531d24ccf6e65ad1e38d7ec3d3a52765b70faf540cecd4aae58b4",
+    "scripts/afternoon_inference_round2.py": "57c944dbc1adf889bea1620ecdaff276d99840c20d0b2df88f586cffaea4ce0b",
+    "research/afternoon-method-round-results.json": "a5fdbce26993f83dd4b42c13bf441eea2a4e7d34ede73a1778f0c590522852e9",
+    "research/afternoon-method-round-protocol.json": "4265e77e5a10b3c4bbdb8644cc2d4840d4eb412f1916d87c68b7de05ca91ee6e",
+    "research/afternoon-feasibility-results.json": "1dd7db22419e00a17ee7283b396bb1573d098ada14812af760568a57c989d280",
+    "research/afternoon-method-round-summary.json": "94baf6e6705c5a0d9a6fbefcd063e43c745541eb628b460b005e2080ae397ea2"
+  },
+  "candidate_v2_unchanged": true,
+  "market_outcomes_released": false
+}

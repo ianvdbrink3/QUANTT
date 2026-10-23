@@ -1,0 +1,1973 @@
+{
+  "status": "AUDIT_COMPLETED_INDEPENDENT_TEST_NOT_RELEASED",
+  "implementation_check": {
+    "matrix_vs_frozen_scalar_and_vectorized": true,
+    "atol": 1e-12,
+    "se_points": [
+      1.165936825547568,
+      2.870031942932052
+    ],
+    "covariance": [
+      [
+        1.3594086811679398,
+        1.967575175124322
+      ],
+      [
+        1.9675751751243236,
+        8.23708335345033
+      ]
+    ],
+    "source_files": 69
+  },
+  "independence_limit": "Second matrix formulation and separate simulator by same assistant, not an external reviewer or independent data validation.",
+  "null_models": [
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.6644,
+      "any_sign_FWER": {
+        "count": 616,
+        "rate": 0.0616,
+        "mc_ci95": [
+          0.05705394834141747,
+          0.06648274142999176
+        ]
+      },
+      "positive_family": {
+        "count": 299,
+        "rate": 0.0299,
+        "mc_ci95": [
+          0.02673823704797818,
+          0.03342279822013196
+        ]
+      },
+      "negative_family": {
+        "count": 318,
+        "rate": 0.0318,
+        "mc_ci95": [
+          0.02853665611788668,
+          0.035422919956414875
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        4.290565505888923,
+        29.797271244263328
+      ],
+      "mean_estimated_variance": [
+        4.128380339912745,
+        28.564887737974647
+      ],
+      "observed_to_estimated_variance": [
+        1.0392854225198653,
+        1.043143299479883
+      ]
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.2337,
+      "any_sign_FWER": {
+        "count": 503,
+        "rate": 0.0503,
+        "mc_ci95": [
+          0.04618626511967923,
+          0.05475910301490729
+        ]
+      },
+      "positive_family": {
+        "count": 262,
+        "rate": 0.0262,
+        "mc_ci95": [
+          0.02324661275726247,
+          0.029517264098790668
+        ]
+      },
+      "negative_family": {
+        "count": 241,
+        "rate": 0.0241,
+        "mc_ci95": [
+          0.021271976432557342,
+          0.02729351321665264
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.127058938856605,
+        14.861852758170642
+      ],
+      "mean_estimated_variance": [
+        2.0848388607264408,
+        14.570500932192418
+      ],
+      "observed_to_estimated_variance": [
+        1.0202510030513594,
+        1.0199960061314366
+      ]
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.2789,
+      "any_sign_FWER": {
+        "count": 504,
+        "rate": 0.0504,
+        "mc_ci95": [
+          0.04628220197159746,
+          0.05486308936331493
+        ]
+      },
+      "positive_family": {
+        "count": 258,
+        "rate": 0.0258,
+        "mc_ci95": [
+          0.022870065228898888,
+          0.029094118825850793
+        ]
+      },
+      "negative_family": {
+        "count": 246,
+        "rate": 0.0246,
+        "mc_ci95": [
+          0.02174161464802862,
+          0.027823491002810685
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.045150505772662,
+        7.413601446931401
+      ],
+      "mean_estimated_variance": [
+        1.0498927582530373,
+        7.346386248813449
+      ],
+      "observed_to_estimated_variance": [
+        0.9954831077335307,
+        1.0091494233819802
+      ]
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.5352,
+      "any_sign_FWER": {
+        "count": 573,
+        "rate": 0.0573,
+        "mc_ci95": [
+          0.05291244988627403,
+          0.06202754227112302
+        ]
+      },
+      "positive_family": {
+        "count": 288,
+        "rate": 0.0288,
+        "mc_ci95": [
+          0.02569865595525375,
+          0.03226322410927187
+        ]
+      },
+      "negative_family": {
+        "count": 285,
+        "rate": 0.0285,
+        "mc_ci95": [
+          0.025415349812625856,
+          0.031946760650922175
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        4.392620341916687,
+        30.27213328081201
+      ],
+      "mean_estimated_variance": [
+        4.1422881595299925,
+        28.853523515338484
+      ],
+      "observed_to_estimated_variance": [
+        1.060433309500877,
+        1.0491659108711417
+      ]
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.2834,
+      "any_sign_FWER": {
+        "count": 478,
+        "rate": 0.0478,
+        "mc_ci95": [
+          0.043789399861243195,
+          0.05215788826519671
+        ]
+      },
+      "positive_family": {
+        "count": 235,
+        "rate": 0.0235,
+        "mc_ci95": [
+          0.020708857111790654,
+          0.02665709333546414
+        ]
+      },
+      "negative_family": {
+        "count": 243,
+        "rate": 0.0243,
+        "mc_ci95": [
+          0.021459791775913607,
+          0.027505544273948104
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.1105689730564245,
+        14.730289668089586
+      ],
+      "mean_estimated_variance": [
+        2.0771863891666755,
+        14.603181541825203
+      ],
+      "observed_to_estimated_variance": [
+        1.0160710584586208,
+        1.0087041392932308
+      ]
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.5157,
+      "any_sign_FWER": {
+        "count": 472,
+        "rate": 0.0472,
+        "mc_ci95": [
+          0.04321461148733595,
+          0.051533137437148754
+        ]
+      },
+      "positive_family": {
+        "count": 264,
+        "rate": 0.0264,
+        "mc_ci95": [
+          0.02343495852636433,
+          0.02972876473034054
+        ]
+      },
+      "negative_family": {
+        "count": 208,
+        "rate": 0.0208,
+        "mc_ci95": [
+          0.018181353731422857,
+          0.02378667030703359
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.0545460052414914,
+        7.319591133362804
+      ],
+      "mean_estimated_variance": [
+        1.0470241366035122,
+        7.341817326069348
+      ],
+      "observed_to_estimated_variance": [
+        1.0071840451189404,
+        0.9969726578966187
+      ]
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.5944,
+      "any_sign_FWER": {
+        "count": 720,
+        "rate": 0.072,
+        "mc_ci95": [
+          0.06709638854767494,
+          0.07723231405762421
+        ]
+      },
+      "positive_family": {
+        "count": 597,
+        "rate": 0.0597,
+        "mc_ci95": [
+          0.05522314248169482,
+          0.06451500648352297
+        ]
+      },
+      "negative_family": {
+        "count": 123,
+        "rate": 0.0123,
+        "mc_ci95": [
+          0.01031929142332744,
+          0.01465526058743051
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        4.179318334275065,
+        30.143869613219046
+      ],
+      "mean_estimated_variance": [
+        4.100740888225556,
+        28.547813550700294
+      ],
+      "observed_to_estimated_variance": [
+        1.019161768127103,
+        1.0559081717303564
+      ]
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.1903,
+      "any_sign_FWER": {
+        "count": 643,
+        "rate": 0.0643,
+        "mc_ci95": [
+          0.05965779150234358,
+          0.069276824677864
+        ]
+      },
+      "positive_family": {
+        "count": 507,
+        "rate": 0.0507,
+        "mc_ci95": [
+          0.0465700404698355,
+          0.05517502046605448
+        ]
+      },
+      "negative_family": {
+        "count": 136,
+        "rate": 0.0136,
+        "mc_ci95": [
+          0.01150944523779097,
+          0.01606410837720322
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.1160047498666836,
+        14.929612387662898
+      ],
+      "mean_estimated_variance": [
+        2.0999002462572096,
+        14.661613056827363
+      ],
+      "observed_to_estimated_variance": [
+        1.0076691755421137,
+        1.0182789799319343
+      ]
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.3874,
+      "any_sign_FWER": {
+        "count": 552,
+        "rate": 0.0552,
+        "mc_ci95": [
+          0.050892429427894396,
+          0.05984917552265948
+        ]
+      },
+      "positive_family": {
+        "count": 413,
+        "rate": 0.0413,
+        "mc_ci95": [
+          0.03757291371455923,
+          0.04537936639069948
+        ]
+      },
+      "negative_family": {
+        "count": 139,
+        "rate": 0.0139,
+        "mc_ci95": [
+          0.011784873697881632,
+          0.01638844951809015
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.092331884742568,
+        7.521580097087877
+      ],
+      "mean_estimated_variance": [
+        1.052686717598596,
+        7.336214234591072
+      ],
+      "observed_to_estimated_variance": [
+        1.037660936042217,
+        1.025267236829424
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.6265,
+      "any_sign_FWER": {
+        "count": 590,
+        "rate": 0.059,
+        "mc_ci95": [
+          0.05454896638249439,
+          0.06378972018044235
+        ]
+      },
+      "positive_family": {
+        "count": 248,
+        "rate": 0.0248,
+        "mc_ci95": [
+          0.021929562215162172,
+          0.02803538983632886
+        ]
+      },
+      "negative_family": {
+        "count": 343,
+        "rate": 0.0343,
+        "mc_ci95": [
+          0.03090792432655773,
+          0.03804973175589044
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        4.195005655648097,
+        29.880930057822898
+      ],
+      "mean_estimated_variance": [
+        4.063538898414783,
+        28.189697466725377
+      ],
+      "observed_to_estimated_variance": [
+        1.0323527743968688,
+        1.0599947052675476
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.1863,
+      "any_sign_FWER": {
+        "count": 512,
+        "rate": 0.0512,
+        "mc_ci95": [
+          0.04704986366401762,
+          0.05569481327350168
+        ]
+      },
+      "positive_family": {
+        "count": 225,
+        "rate": 0.0225,
+        "mc_ci95": [
+          0.019771455245325746,
+          0.0255952631986704
+        ]
+      },
+      "negative_family": {
+        "count": 287,
+        "rate": 0.0287,
+        "mc_ci95": [
+          0.025604210083046038,
+          0.03215774678115372
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.1194527091381694,
+        14.595086491555401
+      ],
+      "mean_estimated_variance": [
+        2.0880607862329112,
+        14.568398876548658
+      ],
+      "observed_to_estimated_variance": [
+        1.0150340081630922,
+        1.0018318838763882
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.4364,
+      "any_sign_FWER": {
+        "count": 519,
+        "rate": 0.0519,
+        "mc_ci95": [
+          0.04772180742973848,
+          0.05642233191006187
+        ]
+      },
+      "positive_family": {
+        "count": 217,
+        "rate": 0.0217,
+        "mc_ci95": [
+          0.01902260420448802,
+          0.02474472863690121
+        ]
+      },
+      "negative_family": {
+        "count": 302,
+        "rate": 0.0302,
+        "mc_ci95": [
+          0.027021969174996986,
+          0.03373883569409074
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.0658212312607906,
+        7.390555951682085
+      ],
+      "mean_estimated_variance": [
+        1.0443615599482579,
+        7.283176227921268
+      ],
+      "observed_to_estimated_variance": [
+        1.0205481244575834,
+        1.0147435295261922
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.5842,
+      "any_sign_FWER": {
+        "count": 637,
+        "rate": 0.0637,
+        "mc_ci95": [
+          0.05907894589748436,
+          0.06865613108076804
+        ]
+      },
+      "positive_family": {
+        "count": 211,
+        "rate": 0.0211,
+        "mc_ci95": [
+          0.0184616240216039,
+          0.02410616961783014
+        ]
+      },
+      "negative_family": {
+        "count": 426,
+        "rate": 0.0426,
+        "mc_ci95": [
+          0.03881428812903491,
+          0.04673699358046003
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        4.795550848346857,
+        28.938767771463944
+      ],
+      "mean_estimated_variance": [
+        4.635352111570627,
+        28.386013521470574
+      ],
+      "observed_to_estimated_variance": [
+        1.0345602087868033,
+        1.0194727677972562
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.0885,
+      "any_sign_FWER": {
+        "count": 589,
+        "rate": 0.0589,
+        "mc_ci95": [
+          0.05445267038436707,
+          0.06368609297824382
+        ]
+      },
+      "positive_family": {
+        "count": 208,
+        "rate": 0.0208,
+        "mc_ci95": [
+          0.018181353731422857,
+          0.02378667030703359
+        ]
+      },
+      "negative_family": {
+        "count": 381,
+        "rate": 0.0381,
+        "mc_ci95": [
+          0.03452178876493106,
+          0.04203294892989998
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.440165991978355,
+        14.80833598548189
+      ],
+      "mean_estimated_variance": [
+        2.3339640065426743,
+        14.324953775472673
+      ],
+      "observed_to_estimated_variance": [
+        1.0455028377207063,
+        1.0337440677007188
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.628,
+      "any_sign_FWER": {
+        "count": 524,
+        "rate": 0.0524,
+        "mc_ci95": [
+          0.04820190179081859,
+          0.05694185355061109
+        ]
+      },
+      "positive_family": {
+        "count": 198,
+        "rate": 0.0198,
+        "mc_ci95": [
+          0.01724822590054425,
+          0.022720566134653557
+        ]
+      },
+      "negative_family": {
+        "count": 326,
+        "rate": 0.0326,
+        "mc_ci95": [
+          0.029294877253107827,
+          0.03626408442380063
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.216583500116121,
+        7.276761293721747
+      ],
+      "mean_estimated_variance": [
+        1.1654668425391388,
+        7.156136042384194
+      ],
+      "observed_to_estimated_variance": [
+        1.043859383820493,
+        1.0168561987395315
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.6728,
+      "any_sign_FWER": {
+        "count": 1056,
+        "rate": 0.1056,
+        "mc_ci95": [
+          0.0997272427309019,
+          0.11177565518388778
+        ]
+      },
+      "positive_family": {
+        "count": 308,
+        "rate": 0.0308,
+        "mc_ci95": [
+          0.02758969484715041,
+          0.034370649223892505
+        ]
+      },
+      "negative_family": {
+        "count": 748,
+        "rate": 0.0748,
+        "mc_ci95": [
+          0.06980563604901403,
+          0.08012091616540935
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        6.179975833440276,
+        31.946544500299293
+      ],
+      "mean_estimated_variance": [
+        4.867956690610377,
+        29.175034347374538
+      ],
+      "observed_to_estimated_variance": [
+        1.269521531561816,
+        1.0949959516731183
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.2225,
+      "any_sign_FWER": {
+        "count": 816,
+        "rate": 0.0816,
+        "mc_ci95": [
+          0.0763938032587989,
+          0.08712752657778329
+        ]
+      },
+      "positive_family": {
+        "count": 262,
+        "rate": 0.0262,
+        "mc_ci95": [
+          0.02324661275726247,
+          0.029517264098790668
+        ]
+      },
+      "negative_family": {
+        "count": 554,
+        "rate": 0.0554,
+        "mc_ci95": [
+          0.051084735868163686,
+          0.06005671548304192
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.9342917943738898,
+        15.374791986357717
+      ],
+      "mean_estimated_variance": [
+        2.422014815034769,
+        14.536084551611083
+      ],
+      "observed_to_estimated_variance": [
+        1.2115086068669514,
+        1.0576983046410307
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.555,
+      "any_sign_FWER": {
+        "count": 689,
+        "rate": 0.0689,
+        "mc_ci95": [
+          0.0640994596515586,
+          0.07403162374363877
+        ]
+      },
+      "positive_family": {
+        "count": 236,
+        "rate": 0.0236,
+        "mc_ci95": [
+          0.020802675812245514,
+          0.026763197835335144
+        ]
+      },
+      "negative_family": {
+        "count": 453,
+        "rate": 0.0453,
+        "mc_ci95": [
+          0.04139568097178173,
+          0.04955352714651155
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.4461659198785706,
+        7.599306991916816
+      ],
+      "mean_estimated_variance": [
+        1.2125833784804232,
+        7.315190778024821
+      ],
+      "observed_to_estimated_variance": [
+        1.1926321484720224,
+        1.0388392076862156
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 125,
+      "repetitions": 10000,
+      "mean_selected": 44.661,
+      "any_sign_FWER": {
+        "count": 914,
+        "rate": 0.0914,
+        "mc_ci95": [
+          0.08590763964037781,
+          0.0972061638281391
+        ]
+      },
+      "positive_family": {
+        "count": 435,
+        "rate": 0.0435,
+        "mc_ci95": [
+          0.039674290803033356,
+          0.04767629970939436
+        ]
+      },
+      "negative_family": {
+        "count": 480,
+        "rate": 0.048,
+        "mc_ci95": [
+          0.043981036388118365,
+          0.05236609813897327
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        6.037092468864122,
+        30.871269719455217
+      ],
+      "mean_estimated_variance": [
+        4.851201115695946,
+        29.097209962895356
+      ],
+      "observed_to_estimated_variance": [
+        1.2444531415799795,
+        1.060970098467246
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 250,
+      "repetitions": 10000,
+      "mean_selected": 89.3061,
+      "any_sign_FWER": {
+        "count": 761,
+        "rate": 0.0761,
+        "mc_ci95": [
+          0.0710642235407037,
+          0.08146133027795592
+        ]
+      },
+      "positive_family": {
+        "count": 348,
+        "rate": 0.0348,
+        "mc_ci95": [
+          0.03138280279392551,
+          0.038574469290151986
+        ]
+      },
+      "negative_family": {
+        "count": 413,
+        "rate": 0.0413,
+        "mc_ci95": [
+          0.03757291371455923,
+          0.04537936639069948
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        2.8588072296691345,
+        15.393842660053583
+      ],
+      "mean_estimated_variance": [
+        2.4210717512110884,
+        14.573811434080854
+      ],
+      "observed_to_estimated_variance": [
+        1.1808023567410089,
+        1.0562674513583377
+      ]
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 500,
+      "repetitions": 10000,
+      "mean_selected": 178.4325,
+      "any_sign_FWER": {
+        "count": 694,
+        "rate": 0.0694,
+        "mc_ci95": [
+          0.06458264430323601,
+          0.07454805509359066
+        ]
+      },
+      "positive_family": {
+        "count": 350,
+        "rate": 0.035,
+        "mc_ci95": [
+          0.031572809892695966,
+          0.03878430859203326
+        ]
+      },
+      "negative_family": {
+        "count": 344,
+        "rate": 0.0344,
+        "mc_ci95": [
+          0.031002883969362332,
+          0.03815469531341171
+        ]
+      },
+      "empirical_mean_estimator_variance": [
+        1.4484467893964357,
+        7.932912464935692
+      ],
+      "mean_estimated_variance": [
+        1.2089912750086014,
+        7.305599071031659
+      ],
+      "observed_to_estimated_variance": [
+        1.1980622353011858,
+        1.0858674816130371
+      ]
+    }
+  ],
+  "partial_null_models": [
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 452,
+        "rate": 0.0452,
+        "mc_ci95": [
+          0.041300001086809354,
+          0.049449283831158056
+        ]
+      },
+      "null_positive_support": {
+        "count": 266,
+        "rate": 0.0266,
+        "mc_ci95": [
+          0.023623351594180678,
+          0.02994021806317592
+        ]
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 380,
+        "rate": 0.038,
+        "mc_ci95": [
+          0.0344265516422164,
+          0.04192826285228877
+        ]
+      },
+      "null_positive_support": {
+        "count": 206,
+        "rate": 0.0206,
+        "mc_ci95": [
+          0.017994590372836756,
+          0.02357358726496796
+        ]
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 413,
+        "rate": 0.0413,
+        "mc_ci95": [
+          0.03757291371455923,
+          0.04537936639069948
+        ]
+      },
+      "null_positive_support": {
+        "count": 255,
+        "rate": 0.0255,
+        "mc_ci95": [
+          0.022587782727039547,
+          0.02877663172673254
+        ]
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 353,
+        "rate": 0.0353,
+        "mc_ci95": [
+          0.03185787941401479,
+          0.03909900867169202
+        ]
+      },
+      "null_positive_support": {
+        "count": 212,
+        "rate": 0.0212,
+        "mc_ci95": [
+          0.018555080388788135,
+          0.02421263645097177
+        ]
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 480,
+        "rate": 0.048,
+        "mc_ci95": [
+          0.043981036388118365,
+          0.05236609813897327
+        ]
+      },
+      "null_positive_support": {
+        "count": 250,
+        "rate": 0.025,
+        "mc_ci95": [
+          0.02211756158552442,
+          0.02824723686661834
+        ]
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 353,
+        "rate": 0.0353,
+        "mc_ci95": [
+          0.03185787941401479,
+          0.03909900867169202
+        ]
+      },
+      "null_positive_support": {
+        "count": 227,
+        "rate": 0.0227,
+        "mc_ci95": [
+          0.019958819233930947,
+          0.025807745610716935
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 457,
+        "rate": 0.0457,
+        "mc_ci95": [
+          0.04177845464123728,
+          0.04997044627835946
+        ]
+      },
+      "null_positive_support": {
+        "count": 282,
+        "rate": 0.0282,
+        "mc_ci95": [
+          0.025132138896511322,
+          0.03163020196605911
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 360,
+        "rate": 0.036,
+        "mc_ci95": [
+          0.032523311925956866,
+          0.03983303856203099
+        ]
+      },
+      "null_positive_support": {
+        "count": 211,
+        "rate": 0.0211,
+        "mc_ci95": [
+          0.0184616240216039,
+          0.02410616961783014
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 427,
+        "rate": 0.0427,
+        "mc_ci95": [
+          0.03890982053191082,
+          0.04684138437790998
+        ]
+      },
+      "null_positive_support": {
+        "count": 274,
+        "rate": 0.0274,
+        "mc_ci95": [
+          0.02437738667154232,
+          0.030785568588421196
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 336,
+        "rate": 0.0336,
+        "mc_ci95": [
+          0.03024343535567891,
+          0.03731475832448821
+        ]
+      },
+      "null_positive_support": {
+        "count": 191,
+        "rate": 0.0191,
+        "mc_ci95": [
+          0.016596099487374096,
+          0.02197323014554265
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 481,
+        "rate": 0.0481,
+        "mc_ci95": [
+          0.044076862159560894,
+          0.0524701955678566
+        ]
+      },
+      "null_positive_support": {
+        "count": 273,
+        "rate": 0.0273,
+        "mc_ci95": [
+          0.024283092442663634,
+          0.030679939616974017
+        ]
+      }
+    },
+    {
+      "model": "STUDENT_T5_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 347,
+        "rate": 0.0347,
+        "mc_ci95": [
+          0.031287811116641966,
+          0.03846953776710967
+        ]
+      },
+      "null_positive_support": {
+        "count": 230,
+        "rate": 0.023,
+        "mc_ci95": [
+          0.02023997548271378,
+          0.02612635896291169
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 593,
+        "rate": 0.0593,
+        "mc_ci95": [
+          0.054837876757090474,
+          0.06410057940682386
+        ]
+      },
+      "null_positive_support": {
+        "count": 511,
+        "rate": 0.0511,
+        "mc_ci95": [
+          0.04695388984871269,
+          0.055590863888480745
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 467,
+        "rate": 0.0467,
+        "mc_ci95": [
+          0.042735761876580645,
+          0.05101237104627474
+        ]
+      },
+      "null_positive_support": {
+        "count": 407,
+        "rate": 0.0407,
+        "mc_ci95": [
+          0.03700032210807924,
+          0.044752418795224264
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 517,
+        "rate": 0.0517,
+        "mc_ci95": [
+          0.04752980093219833,
+          0.05621449200695029
+        ]
+      },
+      "null_positive_support": {
+        "count": 419,
+        "rate": 0.0419,
+        "mc_ci95": [
+          0.03814572841630529,
+          0.04600609089090859
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 449,
+        "rate": 0.0449,
+        "mc_ci95": [
+          0.04101299418343707,
+          0.04913652113355277
+        ]
+      },
+      "null_positive_support": {
+        "count": 388,
+        "rate": 0.0388,
+        "mc_ci95": [
+          0.035188641958211225,
+          0.04276555813890086
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 534,
+        "rate": 0.0534,
+        "mc_ci95": [
+          0.0491624202232057,
+          0.057980567121482626
+        ]
+      },
+      "null_positive_support": {
+        "count": 392,
+        "rate": 0.0392,
+        "mc_ci95": [
+          0.0355698505848916,
+          0.04318404231352394
+        ]
+      }
+    },
+    {
+      "model": "NEGATIVE_SKEW_IID",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 417,
+        "rate": 0.0417,
+        "mc_ci95": [
+          0.037954765678807054,
+          0.0457972072277551
+        ]
+      },
+      "null_positive_support": {
+        "count": 352,
+        "rate": 0.0352,
+        "mc_ci95": [
+          0.031762848433424355,
+          0.0389941164519566
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 457,
+        "rate": 0.0457,
+        "mc_ci95": [
+          0.04177845464123728,
+          0.04997044627835946
+        ]
+      },
+      "null_positive_support": {
+        "count": 302,
+        "rate": 0.0302,
+        "mc_ci95": [
+          0.027021969174996986,
+          0.03373883569409074
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 361,
+        "rate": 0.0361,
+        "mc_ci95": [
+          0.032618404148997034,
+          0.039937869539316696
+        ]
+      },
+      "null_positive_support": {
+        "count": 130,
+        "rate": 0.013,
+        "mc_ci95": [
+          0.010959440195307129,
+          0.015414574217731875
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 424,
+        "rate": 0.0424,
+        "mc_ci95": [
+          0.03862324112699029,
+          0.046528194181852923
+        ]
+      },
+      "null_positive_support": {
+        "count": 277,
+        "rate": 0.0277,
+        "mc_ci95": [
+          0.02466033633788896,
+          0.03110238852305215
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 346,
+        "rate": 0.0346,
+        "mc_ci95": [
+          0.031192827397953683,
+          0.03836459828547208
+        ]
+      },
+      "null_positive_support": {
+        "count": 155,
+        "rate": 0.0155,
+        "mc_ci95": [
+          0.013258222525509154,
+          0.018113871895676464
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 515,
+        "rate": 0.0515,
+        "mc_ci95": [
+          0.047337812436656745,
+          0.05600663410184015
+        ]
+      },
+      "null_positive_support": {
+        "count": 264,
+        "rate": 0.0264,
+        "mc_ci95": [
+          0.02343495852636433,
+          0.02972876473034054
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK1",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 385,
+        "rate": 0.0385,
+        "mc_ci95": [
+          0.03490280656189386,
+          0.04245162393424062
+        ]
+      },
+      "null_positive_support": {
+        "count": 189,
+        "rate": 0.0189,
+        "mc_ci95": [
+          0.01640994618236014,
+          0.021759537049904878
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 418,
+        "rate": 0.0418,
+        "mc_ci95": [
+          0.03805024400211621,
+          0.0459016521047718
+        ]
+      },
+      "null_positive_support": {
+        "count": 243,
+        "rate": 0.0243,
+        "mc_ci95": [
+          0.021459791775913607,
+          0.027505544273948104
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 431,
+        "rate": 0.0431,
+        "mc_ci95": [
+          0.039292009027508144,
+          0.047258888683616114
+        ]
+      },
+      "null_positive_support": {
+        "count": 117,
+        "rate": 0.0117,
+        "mc_ci95": [
+          0.00977199841537232,
+          0.014003014393430442
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 450,
+        "rate": 0.045,
+        "mc_ci95": [
+          0.04110865767535974,
+          0.04924078084195594
+        ]
+      },
+      "null_positive_support": {
+        "count": 258,
+        "rate": 0.0258,
+        "mc_ci95": [
+          0.022870065228898888,
+          0.029094118825850793
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 418,
+        "rate": 0.0418,
+        "mc_ci95": [
+          0.03805024400211621,
+          0.0459016521047718
+        ]
+      },
+      "null_positive_support": {
+        "count": 146,
+        "rate": 0.0146,
+        "mc_ci95": [
+          0.01242858335998111,
+          0.01714420225827173
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 471,
+        "rate": 0.0471,
+        "mc_ci95": [
+          0.04311883126035707,
+          0.05142899446380179
+        ]
+      },
+      "null_positive_support": {
+        "count": 258,
+        "rate": 0.0258,
+        "mc_ci95": [
+          0.022870065228898888,
+          0.029094118825850793
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK5",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 388,
+        "rate": 0.0388,
+        "mc_ci95": [
+          0.035188641958211225,
+          0.04276555813890086
+        ]
+      },
+      "null_positive_support": {
+        "count": 151,
+        "rate": 0.0151,
+        "mc_ci95": [
+          0.01288922549293397,
+          0.01768317612694819
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 684,
+        "rate": 0.0684,
+        "mc_ci95": [
+          0.06361635022048961,
+          0.07351511717307843
+        ]
+      },
+      "null_positive_support": {
+        "count": 369,
+        "rate": 0.0369,
+        "mc_ci95": [
+          0.03337941008580056,
+          0.0407762492051201
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 762,
+        "rate": 0.0762,
+        "mc_ci95": [
+          0.0711610564576371,
+          0.08156442056134838
+        ]
+      },
+      "null_positive_support": {
+        "count": 171,
+        "rate": 0.0171,
+        "mc_ci95": [
+          0.014738184787739424,
+          0.01983268083866003
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 562,
+        "rate": 0.0562,
+        "mc_ci95": [
+          0.05185412408045512,
+          0.0608867128733574
+        ]
+      },
+      "null_positive_support": {
+        "count": 290,
+        "rate": 0.029,
+        "mc_ci95": [
+          0.02588757891009469,
+          0.03247414755508266
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 604,
+        "rate": 0.0604,
+        "mc_ci95": [
+          0.05589749864483998,
+          0.06524011272265888
+        ]
+      },
+      "null_positive_support": {
+        "count": 189,
+        "rate": 0.0189,
+        "mc_ci95": [
+          0.01640994618236014,
+          0.021759537049904878
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 561,
+        "rate": 0.0561,
+        "mc_ci95": [
+          0.05175793644691601,
+          0.06078297730657066
+        ]
+      },
+      "null_positive_support": {
+        "count": 295,
+        "rate": 0.0295,
+        "mc_ci95": [
+          0.026360065950106665,
+          0.033001276516700005
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 517,
+        "rate": 0.0517,
+        "mc_ci95": [
+          0.04752980093219833,
+          0.05621449200695029
+        ]
+      },
+      "null_positive_support": {
+        "count": 185,
+        "rate": 0.0185,
+        "mc_ci95": [
+          0.016037871857846654,
+          0.021331918573114905
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 612,
+        "rate": 0.0612,
+        "mc_ci95": [
+          0.05666840814896296,
+          0.0660685888211428
+        ]
+      },
+      "null_positive_support": {
+        "count": 343,
+        "rate": 0.0343,
+        "mc_ci95": [
+          0.03090792432655773,
+          0.03804973175589044
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 125,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 631,
+        "rate": 0.0631,
+        "mc_ci95": [
+          0.058500221107910415,
+          0.06803531666838682
+        ]
+      },
+      "null_positive_support": {
+        "count": 342,
+        "rate": 0.0342,
+        "mc_ci95": [
+          0.03081297277655021,
+          0.0379447601055721
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 570,
+        "rate": 0.057,
+        "mc_ci95": [
+          0.05262376832268912,
+          0.06171645423373034
+        ]
+      },
+      "null_positive_support": {
+        "count": 309,
+        "rate": 0.0309,
+        "mc_ci95": [
+          0.027684349146600024,
+          0.03447591812476875
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 250,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 543,
+        "rate": 0.0543,
+        "mc_ci95": [
+          0.05002725475432684,
+          0.05891504139329427
+        ]
+      },
+      "null_positive_support": {
+        "count": 297,
+        "rate": 0.0297,
+        "mc_ci95": [
+          0.026549131566489234,
+          0.03321205730096917
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 2,
+      "null_horizon_minutes": 15,
+      "null_any_sign_rejection": {
+        "count": 579,
+        "rate": 0.0579,
+        "mc_ci95": [
+          0.053489917857932376,
+          0.06264961350141986
+        ]
+      },
+      "null_positive_support": {
+        "count": 330,
+        "rate": 0.033,
+        "mc_ci95": [
+          0.02967419810234849,
+          0.03668445637586344
+        ]
+      }
+    },
+    {
+      "model": "EMPIRICAL_BLOCK20_SYMMETRIC",
+      "scheduled_sessions": 500,
+      "nonzero_horizon_minutes": 15,
+      "null_horizon_minutes": 2,
+      "null_any_sign_rejection": {
+        "count": 541,
+        "rate": 0.0541,
+        "mc_ci95": [
+          0.04983503962716959,
+          0.05870741011979978
+        ]
+      },
+      "null_positive_support": {
+        "count": 339,
+        "rate": 0.0339,
+        "mc_ci95": [
+          0.030528167026144658,
+          0.03762979625500005
+        ]
+      }
+    }
+  ],
+  "block20_variance_diagnostic": {
+    "block": 20,
+    "model_long_run_coefficient": [
+      91.4655237056072,
+      494.632522019822
+    ],
+    "expected_population_HAC5_coefficient": [
+      77.28149020594259,
+      469.5901235244579
+    ],
+    "true_to_HAC5_variance_ratio": [
+      1.1835372669686683,
+      1.053328205259964
+    ],
+    "lag0_to19_circular_covariances": [
+      [
+        66.83012114537443,
+        466.9409339818891
+      ],
+      [
+        3.019203445369012,
+        -17.17917800657771
+      ],
+      [
+        4.453571137216512,
+        11.454909832127768
+      ],
+      [
+        3.536183852722033,
+        13.872398760371155
+      ],
+      [
+        -7.488650269211942,
+        -0.24557644327513414
+      ],
+      [
+        5.259475104693535,
+        17.77239231144589
+      ],
+      [
+        -0.5377678522869415,
+        25.3395024432268
+      ],
+      [
+        1.8415337602654052,
+        -8.349178947006637
+      ],
+      [
+        3.4245322782400613,
+        24.866543173996718
+      ],
+      [
+        7.093325107412849,
+        3.0983101832967685
+      ],
+      [
+        1.1594842823734166,
+        -26.108629266299268
+      ],
+      [
+        -0.37599764779464023,
+        19.435186648704097
+      ],
+      [
+        -5.595694308478816,
+        -31.818042629378848
+      ],
+      [
+        -1.4264714880078315,
+        -39.84547591368901
+      ],
+      [
+        -2.2012631206830906,
+        -13.69099068144462
+      ],
+      [
+        1.511587670636864,
+        -1.2625407519201448
+      ],
+      [
+        3.520425436449666,
+        5.149923066115555
+      ],
+      [
+        -0.5730339370207205,
+        3.1041668082975264
+      ],
+      [
+        -1.2165558546799355,
+        -8.16741273083942
+      ],
+      [
+        -3.635977524881709,
+        14.464372898198
+      ]
+    ]
+  },
+  "costs": {
+    "frozen_points": 1.225,
+    "assumed_execution_points": 1.0,
+    "commission_points": 0.225,
+    "commission_usd": 4.5,
+    "raw_quote_data_present": false,
+    "quote_net_rule": "exit_bid - entry_ask - separately measured adverse costs not in quotes - .225pt commission",
+    "empirical_execution_verified": false
+  },
+  "v2_changed": false,
+  "new_strategy_runs": 0,
+  "observed_discovery_mean_tested": false,
+  "protocol": {
+    "status": "AUDIT_ONLY_V2_UNCHANGED_NO_INDEPENDENT_TEST",
+    "seed": 2026102202,
+    "replications": 10000,
+    "lengths": [
+      125,
+      250,
+      500
+    ],
+    "models": [
+      "GAUSSIAN_IID",
+      "STUDENT_T5_IID",
+      "NEGATIVE_SKEW_IID",
+      "EMPIRICAL_BLOCK1",
+      "EMPIRICAL_BLOCK5",
+      "EMPIRICAL_BLOCK20",
+      "EMPIRICAL_BLOCK20_SYMMETRIC"
+    ],
+    "calibration_inputs": "Same 162 previously consumed fixed-cohort days; centered paired residuals and original 454-calendar mask from the prior planning module. No actual mean/p-value test and no new dataset outcomes.",
+    "method": "Independent matrix-kernel covariance check against frozen scalar HAC5 and prior vector estimator. Separate null simulator and direct two-test Holm step-down implementation. Joint and partial-null simulations; one-sided signs reported separately. Same finite correction and t df. No parameter selection.",
+    "null_models": "Sparse iid selection with original probability; paired normal correlation and empirical marginal scales. t5 innovations with unit variance. Negative-skew innovation is normal + 6*(.02-Bernoulli(.02)), standardized by sqrt(1+36*.02*.98). Empirical circular blocks1/5/20. Symmetric control applies one independent +/- sign to an entire paired calendar block, preserving within-block covariances while removing odd moments in expectation.",
+    "variance_diagnostic": "Known circular-block20 stationary covariance: sum g0 + 2*(1-lag/20)*g_lag through lag19. Compare expected population Bartlett-HAC5 coefficient with same block attenuation. These are model quantities, not an optimal bandwidth search or proof of future market covariance.",
+    "costs": "Frozen 1.225pt RT = 1.000pt execution allowance + .225pt commission. Quote-based net PnL subtracts commission plus only execution terms not already embedded in observed entry ask/exit bid; never automatically subtract 1.225pt again.",
+    "access": "Read existing Safari Barchart account status and relevant public tool pages. No credentials extraction, account creation, CAPTCHA solving, subscription, paid request or order.",
+    "release": false
+  },
+  "hashes": {
+    "research/afternoon-gonogo-audit-protocol.json": "1ea403aeb8b476befb089f01e9e0e8eb0fd5e5d49cfe0a2a16166fb01b39c306",
+    "scripts/afternoon_gonogo_audit.py": "c756480ca6538f19614ada9a24dada62b52996e3b21804cf8e716ba56ac73ca6",
+    "research/afternoon-candidate-v2.json": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e"
+  }
+}

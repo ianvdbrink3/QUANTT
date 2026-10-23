@@ -1,0 +1,250 @@
+{
+  "status": "CALIBRATION_FAILED_NO_METHOD_SWITCH",
+  "failed_simultaneous_bounds": 18,
+  "failures": [
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 500,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.06599782424755228,
+      "simultaneous_upper": 0.07653958151096679,
+      "evaluable": 8273,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 500,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.06525403322899109,
+      "simultaneous_upper": 0.07572226406457098,
+      "evaluable": 8306,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.04854368932038835,
+      "simultaneous_upper": 0.07084892243257031,
+      "evaluable": 1648,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "null_scenario": "2M_PLUS4_15M_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.046723300970873786,
+      "simultaneous_upper": 0.068694333889414,
+      "evaluable": 1648,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 1000,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0579,
+      "simultaneous_upper": 0.06691212534034341,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 1000,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.0579,
+      "simultaneous_upper": 0.06691212534034341,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 783,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.056,
+      "simultaneous_upper": 0.06488118693751832,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 783,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.056,
+      "simultaneous_upper": 0.06488118693751832,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 783,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0549,
+      "simultaneous_upper": 0.06370415112685457,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 783,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.0549,
+      "simultaneous_upper": 0.06370415112685457,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 500,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0546,
+      "simultaneous_upper": 0.06338298051030507,
+      "evaluable": 8273,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 500,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0542,
+      "simultaneous_upper": 0.06295464412697795,
+      "evaluable": 8306,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 1000,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0534,
+      "simultaneous_upper": 0.0620975931193617,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 1000,
+      "null_scenario": "BOTH_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.0534,
+      "simultaneous_upper": 0.0620975931193617,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "null_scenario": "2M_PLUS4_15M_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0527,
+      "simultaneous_upper": 0.06134725284146359,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 2,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "null_scenario": "2M_PLUS4_15M_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.0527,
+      "simultaneous_upper": 0.06134725284146359,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "null_scenario": "2M_PLUS4_15M_ZERO",
+      "summary": "unconditional",
+      "rate": 0.0517,
+      "simultaneous_upper": 0.06027464180997249,
+      "evaluable": 10000,
+      "replications": 10000
+    },
+    {
+      "phase": 1,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "null_scenario": "2M_PLUS4_15M_ZERO",
+      "summary": "evaluable_only",
+      "rate": 0.0517,
+      "simultaneous_upper": 0.06027464180997249,
+      "evaluable": 10000,
+      "replications": 10000
+    }
+  ],
+  "nominal_alpha": 0.05,
+  "screening_tolerance": 0.06,
+  "calibration_passed": false,
+  "maximum_upper_bound": 0.07653958151096679,
+  "calendar_diagnostics": [
+    {
+      "weekdays": 500,
+      "block_weekdays": 45,
+      "phi": 0.95,
+      "adjacent_score_correlation": 0.09592830788432644,
+      "true_mean_score_variance": 0.010619274513500263,
+      "expected_group_SE_squared": 0.008827930714185521,
+      "true_to_expected_variance": 1.2029177456542843,
+      "caveat": "Population Gaussian AR(.95) diagnostic with independent selection and no count gate; not exact rejection probability, no inference parameter tuning."
+    },
+    {
+      "weekdays": 783,
+      "block_weekdays": 80,
+      "phi": 0.95,
+      "adjacent_score_correlation": 0.05235412563525415,
+      "true_mean_score_variance": 0.0068351103441747435,
+      "expected_group_SE_squared": 0.00617642433503922,
+      "true_to_expected_variance": 1.1066452001036844,
+      "caveat": "Population Gaussian AR(.95) diagnostic with independent selection and no count gate; not exact rejection probability, no inference parameter tuning."
+    },
+    {
+      "weekdays": 1000,
+      "block_weekdays": 107,
+      "phi": 0.95,
+      "adjacent_score_correlation": 0.03743427247903648,
+      "true_mean_score_variance": 0.005346134998891611,
+      "expected_group_SE_squared": 0.004970037969617606,
+      "true_to_expected_variance": 1.0756728684112933,
+      "caveat": "Population Gaussian AR(.95) diagnostic with independent selection and no count gate; not exact rejection probability, no inference parameter tuning."
+    }
+  ],
+  "synthetic_panels": 720000,
+  "fixed_window": [
+    "2019-01-02",
+    "2021-12-31"
+  ],
+  "downloads": 103,
+  "contracts": 14,
+  "recommendation": "NO_BULK_COLLECTION_OR_OUTCOME_RELEASE_WHILE_METHOD_NOT_CLEARED",
+  "new_market_outcomes_read": false,
+  "source_results_sha256": "a5fdbce26993f83dd4b42c13bf441eea2a4e7d34ede73a1778f0c590522852e9"
+}

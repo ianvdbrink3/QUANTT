@@ -1,0 +1,23 @@
+{
+  "status": "PASS_REPRODUCIBLE_AUDIT_NOT_CANDIDATE_VALIDATION",
+  "tests_passed": 440,
+  "audit_replay_byte_identical": true,
+  "frozen_files_verified": 73,
+  "protected_archive_files_verified": 115,
+  "v2_changed": false,
+  "tracked_baseline_diff_empty": true,
+  "new_strategy_runs": 0,
+  "independent_test_released": false,
+  "empirical_execution_verified": false,
+  "private_billing_evidence_gitignored": true,
+  "external_publication": false,
+  "files_sha256": {
+    "docs/AFTERNOON_GO_NO_GO_AUDIT.md": "d3c531a4527dc3d78c3c9e4ce164699487fc35eaea33b8ac223155dde0b8a099",
+    "research/afternoon-gonogo-audit-protocol.json": "1ea403aeb8b476befb089f01e9e0e8eb0fd5e5d49cfe0a2a16166fb01b39c306",
+    "research/afternoon-gonogo-audit-results.json": "f03ecc461a90d42249f6a957727f286937455b11e9c92d5c0161eeb1ac4d8987",
+    "research/afternoon-gonogo-access.json": "3d91a6933a7b12db7f3c10906ee24025508cb7bb96f3ecec930b45944a476b50",
+    "scripts/afternoon_gonogo_audit.py": "c756480ca6538f19614ada9a24dada62b52996e3b21804cf8e716ba56ac73ca6",
+    "scripts/report_afternoon_gonogo.py": "65d5b0c58036d0d42eb39c4919627505408459a19a5172453f257c21529ec776",
+    "tests/test_afternoon_gonogo_audit.py": "78550dad2315664c62f8889e498440e154d08e3036f305aa0d7fc8f03a0267e4"
+  }
+}

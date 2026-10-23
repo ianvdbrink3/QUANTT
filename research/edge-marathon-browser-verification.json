@@ -1,0 +1,33 @@
+{
+  "status": "LOCAL_BROWSER_DELIVERY_AND_PRIVACY_VERIFIED",
+  "checked_utc": "2026-10-22T17:08:50.316205+00:00",
+  "base_url": "http://127.0.0.1:3012",
+  "dashboard_route": "/research/marathon",
+  "html_status": 200,
+  "responses": {
+    "/data/edge-marathon.json": {
+      "http_status": 200,
+      "bytes_match_disk": true,
+      "sha256": "b801a43571a18ce8e91b590db12e0be4a1b539e3f60d1096f8523a72777e8fa8"
+    },
+    "/data/edge-marathon-verification.json": {
+      "http_status": 200,
+      "bytes_match_disk": true,
+      "sha256": "0c5e5be65fbfb58df76173b743c523783df92962bbf7d52262590e212af1eb41"
+    }
+  },
+  "private_paths_return_404": {
+    "/artifacts/edge-marathon/discovery-trades.csv": 404,
+    "/data/raw/nqh25_intraday-1min_historical-data-10-19-2026.csv": 404
+  },
+  "browser_tool_observations": {
+    "scorecard_rows_including_header": 26,
+    "data_rows": 25,
+    "console_error_or_warning_entries_observed": 0,
+    "viewport_width": 584,
+    "document_scroll_width": 584,
+    "evidence": "Actual CUA browser observations in the active turn; these are not inferred from HTTP."
+  },
+  "external_publication": false,
+  "raw_source_uploads": false
+}

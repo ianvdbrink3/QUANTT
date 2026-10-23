@@ -1,0 +1,14 @@
+{
+  "status": "MONTH_TURN_AUDIT_SOURCE_REPLAY_AND_REGRESSION_PASSED",
+  "tests_passed": 560,
+  "source_reload_byte_identical_outputs": 6,
+  "preserved_files": 497,
+  "typecheck_passed": true,
+  "production_build_passed": true,
+  "dashboard_route": "/research/month-turn-audit",
+  "independent_confirmation": false,
+  "new_holdout": false,
+  "purchases": false,
+  "external_publication": false,
+  "limitation": "Same machine and source parser; independently written daily arithmetic matches original ToM ledgers. No external researcher, source-vintage or tick-fill certification. Local production BUILD is not Vercel deployment."
+}

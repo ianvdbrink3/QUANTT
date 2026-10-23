@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "artifacts/historical-preparation/active-bars.parquet": "87548abf179d1955d2e935d038a3a641134b296da79f01333d3907ebb6a969e8",
+    "artifacts/historical-preparation/active-day-quality.json": "c197be2b4243ac8638bca515da80572b0bf4a28616e9191b6287b381ebee2ea9",
+    "artifacts/historical-preparation/contract-bars.parquet": "fd2ef108ce6380ec575413b7b48f135d9fbe385e3b56c71fc8dc8f0791db4118",
+    "artifacts/historical-preparation/contract-day-quality.json": "60dc0527f1de00de875a4575782930222f3a9488f2daff1ed5538de5bc4c0f59",
+    "artifacts/historical-preparation/prior-context.json": "47af86fcc717d936b1bf519b8089ab7c520c6db696291ad8e962565252c6f2e2",
+    "artifacts/historical-preparation/source-numeric-quality.json": "62ebc3f65c15bbcea605c81871bc1061bbc88aa62605c70fe6b43a9a3ab63cfa",
+    "docs/HISTORICAL_2019_2021_PREPARATION.md": "7d7792a62dd33ba1fc1ae455cad809ea2e5087f2c313744c6d1c1078e4754d92",
+    "public/data/historical-preparation.json": "b968b88ef7119d561634a8026159bec6d5404a6f040d374be8b015972c552691",
+    "research/historical-preparation-quality.json": "b968b88ef7119d561634a8026159bec6d5404a6f040d374be8b015972c552691"
+  },
+  "outcome_release": false,
+  "previous_freeze_files": 517,
+  "protected_files": 550,
+  "signals_computed": false,
+  "status": "BYTE_IDENTICAL_QUALITY_ONLY_REPLAY"
+}

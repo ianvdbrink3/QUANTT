@@ -1,0 +1,4701 @@
+{
+  "status": "CALIBRATION_SCREEN_PASSED_LIMITED_SCOPE_NOT_MARKET_VALIDATION",
+  "max_simultaneous_upper": 0.052612458832083125,
+  "failed_bounds": 0,
+  "tested_bounds": 396,
+  "synthetic_panels": 720000,
+  "null_rows": [
+    {
+      "phase": 1,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8281,
+          "rejected": 208,
+          "positive": 107,
+          "rejected_evaluable": 208,
+          "unconditional": {
+            "rate": 0.0208,
+            "simultaneous_upper": 0.02653048121940941
+          },
+          "evaluable_only": {
+            "rate": 0.02511773940345369,
+            "simultaneous_upper": 0.03201826549228319
+          },
+          "positive_rate": 0.0107
+        },
+        {
+          "total": 10000,
+          "evaluable": 8281,
+          "rejected": 200,
+          "positive": 117,
+          "rejected_evaluable": 200,
+          "unconditional": {
+            "rate": 0.02,
+            "simultaneous_upper": 0.02563226806231048
+          },
+          "evaluable_only": {
+            "rate": 0.024151672503320856,
+            "simultaneous_upper": 0.03093459792383587
+          },
+          "positive_rate": 0.0117
+        },
+        {
+          "total": 10000,
+          "evaluable": 8281,
+          "rejected": 148,
+          "positive": 97,
+          "rejected_evaluable": 148,
+          "unconditional": {
+            "rate": 0.0148,
+            "simultaneous_upper": 0.019735747308764214
+          },
+          "evaluable_only": {
+            "rate": 0.01787223765245743,
+            "simultaneous_upper": 0.023820147922941723
+          },
+          "positive_rate": 0.0097
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 304,
+          "positive": 157,
+          "rejected_evaluable": 304,
+          "unconditional": {
+            "rate": 0.0304,
+            "simultaneous_upper": 0.03717841049661841
+          },
+          "evaluable_only": {
+            "rate": 0.0304,
+            "simultaneous_upper": 0.03717841049661841
+          },
+          "positive_rate": 0.0157
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 308,
+          "positive": 172,
+          "rejected_evaluable": 308,
+          "unconditional": {
+            "rate": 0.0308,
+            "simultaneous_upper": 0.03761782575725652
+          },
+          "evaluable_only": {
+            "rate": 0.0308,
+            "simultaneous_upper": 0.03761782575725652
+          },
+          "positive_rate": 0.0172
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 218,
+          "positive": 128,
+          "rejected_evaluable": 218,
+          "unconditional": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "evaluable_only": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "positive_rate": 0.0128
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 281,
+          "positive": 130,
+          "rejected_evaluable": 281,
+          "unconditional": {
+            "rate": 0.0281,
+            "simultaneous_upper": 0.03464601953886885
+          },
+          "evaluable_only": {
+            "rate": 0.0281,
+            "simultaneous_upper": 0.03464601953886885
+          },
+          "positive_rate": 0.013
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 301,
+          "positive": 141,
+          "rejected_evaluable": 301,
+          "unconditional": {
+            "rate": 0.0301,
+            "simultaneous_upper": 0.036848660764468986
+          },
+          "evaluable_only": {
+            "rate": 0.0301,
+            "simultaneous_upper": 0.036848660764468986
+          },
+          "positive_rate": 0.0141
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 191,
+          "positive": 123,
+          "rejected_evaluable": 191,
+          "unconditional": {
+            "rate": 0.0191,
+            "simultaneous_upper": 0.02461924501535219
+          },
+          "evaluable_only": {
+            "rate": 0.0191,
+            "simultaneous_upper": 0.02461924501535219
+          },
+          "positive_rate": 0.0123
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "T5_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 224,
+          "positive": 112,
+          "rejected_evaluable": 224,
+          "unconditional": {
+            "rate": 0.0224,
+            "simultaneous_upper": 0.028321025545222228
+          },
+          "evaluable_only": {
+            "rate": 0.027131782945736434,
+            "simultaneous_upper": 0.034281564819460056
+          },
+          "positive_rate": 0.0112
+        },
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 204,
+          "positive": 131,
+          "rejected_evaluable": 204,
+          "unconditional": {
+            "rate": 0.0204,
+            "simultaneous_upper": 0.02608163126984651
+          },
+          "evaluable_only": {
+            "rate": 0.024709302325581394,
+            "simultaneous_upper": 0.031571722300195885
+          },
+          "positive_rate": 0.0131
+        },
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 147,
+          "positive": 81,
+          "rejected_evaluable": 147,
+          "unconditional": {
+            "rate": 0.0147,
+            "simultaneous_upper": 0.019621182200091496
+          },
+          "evaluable_only": {
+            "rate": 0.017805232558139535,
+            "simultaneous_upper": 0.023753404507100853
+          },
+          "positive_rate": 0.0081
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "T5_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 291,
+          "positive": 124,
+          "rejected_evaluable": 291,
+          "unconditional": {
+            "rate": 0.0291,
+            "simultaneous_upper": 0.03574829712996843
+          },
+          "evaluable_only": {
+            "rate": 0.0291,
+            "simultaneous_upper": 0.03574829712996843
+          },
+          "positive_rate": 0.0124
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 294,
+          "positive": 157,
+          "rejected_evaluable": 294,
+          "unconditional": {
+            "rate": 0.0294,
+            "simultaneous_upper": 0.03607860287765325
+          },
+          "evaluable_only": {
+            "rate": 0.0294,
+            "simultaneous_upper": 0.03607860287765325
+          },
+          "positive_rate": 0.0157
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 204,
+          "positive": 112,
+          "rejected_evaluable": 204,
+          "unconditional": {
+            "rate": 0.0204,
+            "simultaneous_upper": 0.02608163126984651
+          },
+          "evaluable_only": {
+            "rate": 0.0204,
+            "simultaneous_upper": 0.02608163126984651
+          },
+          "positive_rate": 0.0112
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "T5_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 287,
+          "positive": 163,
+          "rejected_evaluable": 287,
+          "unconditional": {
+            "rate": 0.0287,
+            "simultaneous_upper": 0.035307621150272535
+          },
+          "evaluable_only": {
+            "rate": 0.0287,
+            "simultaneous_upper": 0.035307621150272535
+          },
+          "positive_rate": 0.0163
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 303,
+          "positive": 163,
+          "rejected_evaluable": 303,
+          "unconditional": {
+            "rate": 0.0303,
+            "simultaneous_upper": 0.03706851199375873
+          },
+          "evaluable_only": {
+            "rate": 0.0303,
+            "simultaneous_upper": 0.03706851199375873
+          },
+          "positive_rate": 0.0163
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 202,
+          "positive": 140,
+          "rejected_evaluable": 202,
+          "unconditional": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "evaluable_only": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "positive_rate": 0.014
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 271,
+          "positive": 199,
+          "rejected_evaluable": 271,
+          "unconditional": {
+            "rate": 0.0271,
+            "simultaneous_upper": 0.03354172844481825
+          },
+          "evaluable_only": {
+            "rate": 0.03282461240310078,
+            "simultaneous_upper": 0.040598594705212765
+          },
+          "positive_rate": 0.0199
+        },
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 249,
+          "positive": 197,
+          "rejected_evaluable": 249,
+          "unconditional": {
+            "rate": 0.0249,
+            "simultaneous_upper": 0.03110464921020847
+          },
+          "evaluable_only": {
+            "rate": 0.030159883720930234,
+            "simultaneous_upper": 0.03764981152947354
+          },
+          "positive_rate": 0.0197
+        },
+        {
+          "total": 10000,
+          "evaluable": 8256,
+          "rejected": 176,
+          "positive": 134,
+          "rejected_evaluable": 176,
+          "unconditional": {
+            "rate": 0.0176,
+            "simultaneous_upper": 0.022924410447871992
+          },
+          "evaluable_only": {
+            "rate": 0.02131782945736434,
+            "simultaneous_upper": 0.02775103923827612
+          },
+          "positive_rate": 0.0134
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 308,
+          "positive": 205,
+          "rejected_evaluable": 308,
+          "unconditional": {
+            "rate": 0.0308,
+            "simultaneous_upper": 0.03761782575725652
+          },
+          "evaluable_only": {
+            "rate": 0.0308,
+            "simultaneous_upper": 0.03761782575725652
+          },
+          "positive_rate": 0.0205
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 279,
+          "positive": 194,
+          "rejected_evaluable": 279,
+          "unconditional": {
+            "rate": 0.0279,
+            "simultaneous_upper": 0.03442532574013976
+          },
+          "evaluable_only": {
+            "rate": 0.0279,
+            "simultaneous_upper": 0.03442532574013976
+          },
+          "positive_rate": 0.0194
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 222,
+          "positive": 161,
+          "rejected_evaluable": 222,
+          "unconditional": {
+            "rate": 0.0222,
+            "simultaneous_upper": 0.02809761530930603
+          },
+          "evaluable_only": {
+            "rate": 0.0222,
+            "simultaneous_upper": 0.02809761530930603
+          },
+          "positive_rate": 0.0161
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 320,
+          "positive": 205,
+          "rejected_evaluable": 320,
+          "unconditional": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "evaluable_only": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "positive_rate": 0.0205
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 297,
+          "positive": 186,
+          "rejected_evaluable": 297,
+          "unconditional": {
+            "rate": 0.0297,
+            "simultaneous_upper": 0.03640873896380506
+          },
+          "evaluable_only": {
+            "rate": 0.0297,
+            "simultaneous_upper": 0.03640873896380506
+          },
+          "positive_rate": 0.0186
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 245,
+          "positive": 184,
+          "rejected_evaluable": 245,
+          "unconditional": {
+            "rate": 0.0245,
+            "simultaneous_upper": 0.030660337775696694
+          },
+          "evaluable_only": {
+            "rate": 0.0245,
+            "simultaneous_upper": 0.030660337775696694
+          },
+          "positive_rate": 0.0184
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8300,
+          "rejected": 235,
+          "positive": 66,
+          "rejected_evaluable": 235,
+          "unconditional": {
+            "rate": 0.0235,
+            "simultaneous_upper": 0.029547818771714144
+          },
+          "evaluable_only": {
+            "rate": 0.028313253012048192,
+            "simultaneous_upper": 0.03557714025069339
+          },
+          "positive_rate": 0.0066
+        },
+        {
+          "total": 10000,
+          "evaluable": 8300,
+          "rejected": 184,
+          "positive": 76,
+          "rejected_evaluable": 184,
+          "unconditional": {
+            "rate": 0.0184,
+            "simultaneous_upper": 0.023829369713766133
+          },
+          "evaluable_only": {
+            "rate": 0.02216867469879518,
+            "simultaneous_upper": 0.028693783846970848
+          },
+          "positive_rate": 0.0076
+        },
+        {
+          "total": 10000,
+          "evaluable": 8300,
+          "rejected": 153,
+          "positive": 52,
+          "rejected_evaluable": 153,
+          "unconditional": {
+            "rate": 0.0153,
+            "simultaneous_upper": 0.020307813473748947
+          },
+          "evaluable_only": {
+            "rate": 0.018433734939759035,
+            "simultaneous_upper": 0.024454476240435306
+          },
+          "positive_rate": 0.0052
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 300,
+          "positive": 85,
+          "rejected_evaluable": 300,
+          "unconditional": {
+            "rate": 0.03,
+            "simultaneous_upper": 0.03673870786427685
+          },
+          "evaluable_only": {
+            "rate": 0.03,
+            "simultaneous_upper": 0.03673870786427685
+          },
+          "positive_rate": 0.0085
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 305,
+          "positive": 120,
+          "rejected_evaluable": 305,
+          "unconditional": {
+            "rate": 0.0305,
+            "simultaneous_upper": 0.03728829103961688
+          },
+          "evaluable_only": {
+            "rate": 0.0305,
+            "simultaneous_upper": 0.03728829103961688
+          },
+          "positive_rate": 0.012
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 197,
+          "positive": 74,
+          "rejected_evaluable": 197,
+          "unconditional": {
+            "rate": 0.0197,
+            "simultaneous_upper": 0.02529489980184142
+          },
+          "evaluable_only": {
+            "rate": 0.0197,
+            "simultaneous_upper": 0.02529489980184142
+          },
+          "positive_rate": 0.0074
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 310,
+          "positive": 118,
+          "rejected_evaluable": 310,
+          "unconditional": {
+            "rate": 0.031,
+            "simultaneous_upper": 0.03783742731212156
+          },
+          "evaluable_only": {
+            "rate": 0.031,
+            "simultaneous_upper": 0.03783742731212156
+          },
+          "positive_rate": 0.0118
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 341,
+          "positive": 152,
+          "rejected_evaluable": 341,
+          "unconditional": {
+            "rate": 0.0341,
+            "simultaneous_upper": 0.04123270024565984
+          },
+          "evaluable_only": {
+            "rate": 0.0341,
+            "simultaneous_upper": 0.04123270024565984
+          },
+          "positive_rate": 0.0152
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 212,
+          "positive": 98,
+          "rejected_evaluable": 212,
+          "unconditional": {
+            "rate": 0.0212,
+            "simultaneous_upper": 0.02697883225401093
+          },
+          "evaluable_only": {
+            "rate": 0.0212,
+            "simultaneous_upper": 0.02697883225401093
+          },
+          "positive_rate": 0.0098
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8232,
+          "rejected": 228,
+          "positive": 113,
+          "rejected_evaluable": 228,
+          "unconditional": {
+            "rate": 0.0228,
+            "simultaneous_upper": 0.028767511629481584
+          },
+          "evaluable_only": {
+            "rate": 0.027696793002915453,
+            "simultaneous_upper": 0.034922977684002654
+          },
+          "positive_rate": 0.0113
+        },
+        {
+          "total": 10000,
+          "evaluable": 8232,
+          "rejected": 134,
+          "positive": 78,
+          "rejected_evaluable": 134,
+          "unconditional": {
+            "rate": 0.0134,
+            "simultaneous_upper": 0.018126923081295744
+          },
+          "evaluable_only": {
+            "rate": 0.016277939747327504,
+            "simultaneous_upper": 0.022008721133719857
+          },
+          "positive_rate": 0.0078
+        },
+        {
+          "total": 10000,
+          "evaluable": 8232,
+          "rejected": 133,
+          "positive": 67,
+          "rejected_evaluable": 133,
+          "unconditional": {
+            "rate": 0.0133,
+            "simultaneous_upper": 0.018011581921169906
+          },
+          "evaluable_only": {
+            "rate": 0.016156462585034014,
+            "simultaneous_upper": 0.021868718037001467
+          },
+          "positive_rate": 0.0067
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 277,
+          "positive": 145,
+          "rejected_evaluable": 277,
+          "unconditional": {
+            "rate": 0.0277,
+            "simultaneous_upper": 0.03420455059235845
+          },
+          "evaluable_only": {
+            "rate": 0.0277,
+            "simultaneous_upper": 0.03420455059235845
+          },
+          "positive_rate": 0.0145
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 209,
+          "positive": 129,
+          "rejected_evaluable": 209,
+          "unconditional": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "evaluable_only": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "positive_rate": 0.0129
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 163,
+          "positive": 99,
+          "rejected_evaluable": 163,
+          "unconditional": {
+            "rate": 0.0163,
+            "simultaneous_upper": 0.021448337002899418
+          },
+          "evaluable_only": {
+            "rate": 0.0163,
+            "simultaneous_upper": 0.021448337002899418
+          },
+          "positive_rate": 0.0099
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 294,
+          "positive": 142,
+          "rejected_evaluable": 294,
+          "unconditional": {
+            "rate": 0.0294,
+            "simultaneous_upper": 0.03607860287765325
+          },
+          "evaluable_only": {
+            "rate": 0.0294,
+            "simultaneous_upper": 0.03607860287765325
+          },
+          "positive_rate": 0.0142
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 195,
+          "positive": 113,
+          "rejected_evaluable": 195,
+          "unconditional": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "evaluable_only": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "positive_rate": 0.0113
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 173,
+          "positive": 92,
+          "rejected_evaluable": 173,
+          "unconditional": {
+            "rate": 0.0173,
+            "simultaneous_upper": 0.02258440286018235
+          },
+          "evaluable_only": {
+            "rate": 0.0173,
+            "simultaneous_upper": 0.02258440286018235
+          },
+          "positive_rate": 0.0092
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR06",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8211,
+          "rejected": 263,
+          "positive": 130,
+          "rejected_evaluable": 263,
+          "unconditional": {
+            "rate": 0.0263,
+            "simultaneous_upper": 0.03265677312109255
+          },
+          "evaluable_only": {
+            "rate": 0.03203020338570211,
+            "simultaneous_upper": 0.03974360855783452
+          },
+          "positive_rate": 0.013
+        },
+        {
+          "total": 10000,
+          "evaluable": 8211,
+          "rejected": 209,
+          "positive": 126,
+          "rejected_evaluable": 209,
+          "unconditional": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "evaluable_only": {
+            "rate": 0.025453659724759468,
+            "simultaneous_upper": 0.03242668155804992
+          },
+          "positive_rate": 0.0126
+        },
+        {
+          "total": 10000,
+          "evaluable": 8211,
+          "rejected": 150,
+          "positive": 82,
+          "rejected_evaluable": 150,
+          "unconditional": {
+            "rate": 0.015,
+            "simultaneous_upper": 0.0199647241645634
+          },
+          "evaluable_only": {
+            "rate": 0.018268176835951774,
+            "simultaneous_upper": 0.024301229337938927
+          },
+          "positive_rate": 0.0082
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR06",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 307,
+          "positive": 147,
+          "rejected_evaluable": 307,
+          "unconditional": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "evaluable_only": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 246,
+          "positive": 134,
+          "rejected_evaluable": 246,
+          "unconditional": {
+            "rate": 0.0246,
+            "simultaneous_upper": 0.030771452116359184
+          },
+          "evaluable_only": {
+            "rate": 0.0246,
+            "simultaneous_upper": 0.030771452116359184
+          },
+          "positive_rate": 0.0134
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 198,
+          "positive": 111,
+          "rejected_evaluable": 198,
+          "unconditional": {
+            "rate": 0.0198,
+            "simultaneous_upper": 0.025407389310837757
+          },
+          "evaluable_only": {
+            "rate": 0.0198,
+            "simultaneous_upper": 0.025407389310837757
+          },
+          "positive_rate": 0.0111
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR06",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 312,
+          "positive": 160,
+          "rejected_evaluable": 312,
+          "unconditional": {
+            "rate": 0.0312,
+            "simultaneous_upper": 0.03805695902919862
+          },
+          "evaluable_only": {
+            "rate": 0.0312,
+            "simultaneous_upper": 0.03805695902919862
+          },
+          "positive_rate": 0.016
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 257,
+          "positive": 147,
+          "rejected_evaluable": 257,
+          "unconditional": {
+            "rate": 0.0257,
+            "simultaneous_upper": 0.031992129258060074
+          },
+          "evaluable_only": {
+            "rate": 0.0257,
+            "simultaneous_upper": 0.031992129258060074
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 216,
+          "positive": 133,
+          "rejected_evaluable": 216,
+          "unconditional": {
+            "rate": 0.0216,
+            "simultaneous_upper": 0.027426698049604997
+          },
+          "evaluable_only": {
+            "rate": 0.0216,
+            "simultaneous_upper": 0.027426698049604997
+          },
+          "positive_rate": 0.0133
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR09",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8298,
+          "rejected": 231,
+          "positive": 118,
+          "rejected_evaluable": 231,
+          "unconditional": {
+            "rate": 0.0231,
+            "simultaneous_upper": 0.029102089199431393
+          },
+          "evaluable_only": {
+            "rate": 0.027838033261026754,
+            "simultaneous_upper": 0.03504905079795483
+          },
+          "positive_rate": 0.0118
+        },
+        {
+          "total": 10000,
+          "evaluable": 8298,
+          "rejected": 154,
+          "positive": 83,
+          "rejected_evaluable": 154,
+          "unconditional": {
+            "rate": 0.0154,
+            "simultaneous_upper": 0.020422078241925257
+          },
+          "evaluable_only": {
+            "rate": 0.0185586888406845,
+            "simultaneous_upper": 0.02459794373878401
+          },
+          "positive_rate": 0.0083
+        },
+        {
+          "total": 10000,
+          "evaluable": 8298,
+          "rejected": 127,
+          "positive": 76,
+          "rejected_evaluable": 127,
+          "unconditional": {
+            "rate": 0.0127,
+            "simultaneous_upper": 0.017318251482880197
+          },
+          "evaluable_only": {
+            "rate": 0.015304892745239817,
+            "simultaneous_upper": 0.020860362328711694
+          },
+          "positive_rate": 0.0076
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR09",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 274,
+          "positive": 147,
+          "rejected_evaluable": 274,
+          "unconditional": {
+            "rate": 0.0274,
+            "simultaneous_upper": 0.033873233470525455
+          },
+          "evaluable_only": {
+            "rate": 0.0274,
+            "simultaneous_upper": 0.033873233470525455
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 204,
+          "positive": 121,
+          "rejected_evaluable": 204,
+          "unconditional": {
+            "rate": 0.0204,
+            "simultaneous_upper": 0.02608163126984651
+          },
+          "evaluable_only": {
+            "rate": 0.0204,
+            "simultaneous_upper": 0.02608163126984651
+          },
+          "positive_rate": 0.0121
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 162,
+          "positive": 106,
+          "rejected_evaluable": 162,
+          "unconditional": {
+            "rate": 0.0162,
+            "simultaneous_upper": 0.021334491878831255
+          },
+          "evaluable_only": {
+            "rate": 0.0162,
+            "simultaneous_upper": 0.021334491878831255
+          },
+          "positive_rate": 0.0106
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR09",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 278,
+          "positive": 126,
+          "rejected_evaluable": 278,
+          "unconditional": {
+            "rate": 0.0278,
+            "simultaneous_upper": 0.034314948387852665
+          },
+          "evaluable_only": {
+            "rate": 0.0278,
+            "simultaneous_upper": 0.034314948387852665
+          },
+          "positive_rate": 0.0126
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 203,
+          "positive": 127,
+          "rejected_evaluable": 203,
+          "unconditional": {
+            "rate": 0.0203,
+            "simultaneous_upper": 0.025969339161476496
+          },
+          "evaluable_only": {
+            "rate": 0.0203,
+            "simultaneous_upper": 0.025969339161476496
+          },
+          "positive_rate": 0.0127
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 171,
+          "positive": 87,
+          "rejected_evaluable": 171,
+          "unconditional": {
+            "rate": 0.0171,
+            "simultaneous_upper": 0.022357527642480047
+          },
+          "evaluable_only": {
+            "rate": 0.0171,
+            "simultaneous_upper": 0.022357527642480047
+          },
+          "positive_rate": 0.0087
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8330,
+          "rejected": 359,
+          "positive": 194,
+          "rejected_evaluable": 359,
+          "unconditional": {
+            "rate": 0.0359,
+            "simultaneous_upper": 0.043197303312923124
+          },
+          "evaluable_only": {
+            "rate": 0.04309723889555822,
+            "simultaneous_upper": 0.05181801524670392
+          },
+          "positive_rate": 0.0194
+        },
+        {
+          "total": 10000,
+          "evaluable": 8330,
+          "rejected": 219,
+          "positive": 128,
+          "rejected_evaluable": 219,
+          "unconditional": {
+            "rate": 0.0219,
+            "simultaneous_upper": 0.02776228683191802
+          },
+          "evaluable_only": {
+            "rate": 0.02629051620648259,
+            "simultaneous_upper": 0.033308000252138245
+          },
+          "positive_rate": 0.0128
+        },
+        {
+          "total": 10000,
+          "evaluable": 8330,
+          "rejected": 218,
+          "positive": 131,
+          "rejected_evaluable": 218,
+          "unconditional": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "evaluable_only": {
+            "rate": 0.02617046818727491,
+            "simultaneous_upper": 0.03317386948842979
+          },
+          "positive_rate": 0.0131
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 359,
+          "positive": 170,
+          "rejected_evaluable": 359,
+          "unconditional": {
+            "rate": 0.0359,
+            "simultaneous_upper": 0.043197303312923124
+          },
+          "evaluable_only": {
+            "rate": 0.0359,
+            "simultaneous_upper": 0.043197303312923124
+          },
+          "positive_rate": 0.017
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 250,
+          "positive": 149,
+          "rejected_evaluable": 250,
+          "unconditional": {
+            "rate": 0.025,
+            "simultaneous_upper": 0.031215666739513946
+          },
+          "evaluable_only": {
+            "rate": 0.025,
+            "simultaneous_upper": 0.031215666739513946
+          },
+          "positive_rate": 0.0149
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 202,
+          "positive": 100,
+          "rejected_evaluable": 202,
+          "unconditional": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "evaluable_only": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "positive_rate": 0.01
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "AR095",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 320,
+          "positive": 161,
+          "rejected_evaluable": 320,
+          "unconditional": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "evaluable_only": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "positive_rate": 0.0161
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 215,
+          "positive": 135,
+          "rejected_evaluable": 215,
+          "unconditional": {
+            "rate": 0.0215,
+            "simultaneous_upper": 0.02731477636781359
+          },
+          "evaluable_only": {
+            "rate": 0.0215,
+            "simultaneous_upper": 0.02731477636781359
+          },
+          "positive_rate": 0.0135
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 187,
+          "positive": 99,
+          "rejected_evaluable": 187,
+          "unconditional": {
+            "rate": 0.0187,
+            "simultaneous_upper": 0.024168105684378053
+          },
+          "evaluable_only": {
+            "rate": 0.0187,
+            "simultaneous_upper": 0.024168105684378053
+          },
+          "positive_rate": 0.0099
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 155,
+          "positive": 78,
+          "rejected_evaluable": 155,
+          "unconditional": {
+            "rate": 0.0155,
+            "simultaneous_upper": 0.02053629462217344
+          },
+          "evaluable_only": {
+            "rate": 0.0187107677450507,
+            "simultaneous_upper": 0.024777150307212278
+          },
+          "positive_rate": 0.0078
+        },
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 172,
+          "positive": 111,
+          "rejected_evaluable": 172,
+          "unconditional": {
+            "rate": 0.0172,
+            "simultaneous_upper": 0.022470985830674656
+          },
+          "evaluable_only": {
+            "rate": 0.020762916465475616,
+            "simultaneous_upper": 0.02711066622835227
+          },
+          "positive_rate": 0.0111
+        },
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 96,
+          "positive": 56,
+          "rejected_evaluable": 96,
+          "unconditional": {
+            "rate": 0.0096,
+            "simultaneous_upper": 0.013695019820195949
+          },
+          "evaluable_only": {
+            "rate": 0.01158860453887011,
+            "simultaneous_upper": 0.016524802181749607
+          },
+          "positive_rate": 0.0056
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 280,
+          "positive": 134,
+          "rejected_evaluable": 280,
+          "unconditional": {
+            "rate": 0.028,
+            "simultaneous_upper": 0.03453568275539835
+          },
+          "evaluable_only": {
+            "rate": 0.028,
+            "simultaneous_upper": 0.03453568275539835
+          },
+          "positive_rate": 0.0134
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 279,
+          "positive": 151,
+          "rejected_evaluable": 279,
+          "unconditional": {
+            "rate": 0.0279,
+            "simultaneous_upper": 0.03442532574013976
+          },
+          "evaluable_only": {
+            "rate": 0.0279,
+            "simultaneous_upper": 0.03442532574013976
+          },
+          "positive_rate": 0.0151
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 218,
+          "positive": 135,
+          "rejected_evaluable": 218,
+          "unconditional": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "evaluable_only": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "positive_rate": 0.0135
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 288,
+          "positive": 143,
+          "rejected_evaluable": 288,
+          "unconditional": {
+            "rate": 0.0288,
+            "simultaneous_upper": 0.03541781918153703
+          },
+          "evaluable_only": {
+            "rate": 0.0288,
+            "simultaneous_upper": 0.03541781918153703
+          },
+          "positive_rate": 0.0143
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 289,
+          "positive": 152,
+          "rejected_evaluable": 289,
+          "unconditional": {
+            "rate": 0.0289,
+            "simultaneous_upper": 0.03552799779051485
+          },
+          "evaluable_only": {
+            "rate": 0.0289,
+            "simultaneous_upper": 0.03552799779051485
+          },
+          "positive_rate": 0.0152
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 229,
+          "positive": 136,
+          "rejected_evaluable": 229,
+          "unconditional": {
+            "rate": 0.0229,
+            "simultaneous_upper": 0.028879064528365982
+          },
+          "evaluable_only": {
+            "rate": 0.0229,
+            "simultaneous_upper": 0.028879064528365982
+          },
+          "positive_rate": 0.0136
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 1642,
+          "rejected": 41,
+          "positive": 21,
+          "rejected_evaluable": 41,
+          "unconditional": {
+            "rate": 0.0041,
+            "simultaneous_upper": 0.006983109748856466
+          },
+          "evaluable_only": {
+            "rate": 0.024969549330085262,
+            "simultaneous_upper": 0.04221437267740469
+          },
+          "positive_rate": 0.0021
+        },
+        {
+          "total": 10000,
+          "evaluable": 1642,
+          "rejected": 42,
+          "positive": 26,
+          "rejected_evaluable": 42,
+          "unconditional": {
+            "rate": 0.0042,
+            "simultaneous_upper": 0.007110813411233994
+          },
+          "evaluable_only": {
+            "rate": 0.025578562728380026,
+            "simultaneous_upper": 0.04298323779736964
+          },
+          "positive_rate": 0.0026
+        },
+        {
+          "total": 10000,
+          "evaluable": 1642,
+          "rejected": 29,
+          "positive": 19,
+          "rejected_evaluable": 29,
+          "unconditional": {
+            "rate": 0.0029,
+            "simultaneous_upper": 0.005420324911821037
+          },
+          "evaluable_only": {
+            "rate": 0.01766138855054811,
+            "simultaneous_upper": 0.0327981199953465
+          },
+          "positive_rate": 0.0019
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 7536,
+          "rejected": 209,
+          "positive": 86,
+          "rejected_evaluable": 209,
+          "unconditional": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "evaluable_only": {
+            "rate": 0.027733545647558387,
+            "simultaneous_upper": 0.03531979029305732
+          },
+          "positive_rate": 0.0086
+        },
+        {
+          "total": 10000,
+          "evaluable": 7536,
+          "rejected": 205,
+          "positive": 99,
+          "rejected_evaluable": 205,
+          "unconditional": {
+            "rate": 0.0205,
+            "simultaneous_upper": 0.026193891303074975
+          },
+          "evaluable_only": {
+            "rate": 0.02720276008492569,
+            "simultaneous_upper": 0.034725221096722735
+          },
+          "positive_rate": 0.0099
+        },
+        {
+          "total": 10000,
+          "evaluable": 7536,
+          "rejected": 135,
+          "positive": 78,
+          "rejected_evaluable": 135,
+          "unconditional": {
+            "rate": 0.0135,
+            "simultaneous_upper": 0.018242204912270573
+          },
+          "evaluable_only": {
+            "rate": 0.017914012738853503,
+            "simultaneous_upper": 0.02418768423427172
+          },
+          "positive_rate": 0.0078
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 9347,
+          "rejected": 246,
+          "positive": 122,
+          "rejected_evaluable": 246,
+          "unconditional": {
+            "rate": 0.0246,
+            "simultaneous_upper": 0.030771452116359184
+          },
+          "evaluable_only": {
+            "rate": 0.026318604899967905,
+            "simultaneous_upper": 0.03291391441880943
+          },
+          "positive_rate": 0.0122
+        },
+        {
+          "total": 10000,
+          "evaluable": 9347,
+          "rejected": 264,
+          "positive": 147,
+          "rejected_evaluable": 264,
+          "unconditional": {
+            "rate": 0.0264,
+            "simultaneous_upper": 0.03276746882491688
+          },
+          "evaluable_only": {
+            "rate": 0.028244356478014335,
+            "simultaneous_upper": 0.03504864157168563
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 9347,
+          "rejected": 189,
+          "positive": 118,
+          "rejected_evaluable": 189,
+          "unconditional": {
+            "rate": 0.0189,
+            "simultaneous_upper": 0.024393747071645756
+          },
+          "evaluable_only": {
+            "rate": 0.020220391569487538,
+            "simultaneous_upper": 0.02609282800028343
+          },
+          "positive_rate": 0.0118
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 1651,
+          "rejected": 34,
+          "positive": 20,
+          "rejected_evaluable": 34,
+          "unconditional": {
+            "rate": 0.0034,
+            "simultaneous_upper": 0.006079041849410741
+          },
+          "evaluable_only": {
+            "rate": 0.02059357964869776,
+            "simultaneous_upper": 0.03656996027728062
+          },
+          "positive_rate": 0.002
+        },
+        {
+          "total": 10000,
+          "evaluable": 1651,
+          "rejected": 19,
+          "positive": 12,
+          "rejected_evaluable": 19,
+          "unconditional": {
+            "rate": 0.0019,
+            "simultaneous_upper": 0.004056564203357419
+          },
+          "evaluable_only": {
+            "rate": 0.01150817686250757,
+            "simultaneous_upper": 0.024436197068317993
+          },
+          "positive_rate": 0.0012
+        },
+        {
+          "total": 10000,
+          "evaluable": 1651,
+          "rejected": 20,
+          "positive": 12,
+          "rejected_evaluable": 20,
+          "unconditional": {
+            "rate": 0.002,
+            "simultaneous_upper": 0.0041965456833912545
+          },
+          "evaluable_only": {
+            "rate": 0.012113870381586917,
+            "simultaneous_upper": 0.025276829830991474
+          },
+          "positive_rate": 0.0012
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 7518,
+          "rejected": 162,
+          "positive": 92,
+          "rejected_evaluable": 162,
+          "unconditional": {
+            "rate": 0.0162,
+            "simultaneous_upper": 0.021334491878831255
+          },
+          "evaluable_only": {
+            "rate": 0.02154828411811652,
+            "simultaneous_upper": 0.028353375534813485
+          },
+          "positive_rate": 0.0092
+        },
+        {
+          "total": 10000,
+          "evaluable": 7518,
+          "rejected": 120,
+          "positive": 74,
+          "rejected_evaluable": 120,
+          "unconditional": {
+            "rate": 0.012,
+            "simultaneous_upper": 0.016506431998888918
+          },
+          "evaluable_only": {
+            "rate": 0.01596169193934557,
+            "simultaneous_upper": 0.021939319216229363
+          },
+          "positive_rate": 0.0074
+        },
+        {
+          "total": 10000,
+          "evaluable": 7518,
+          "rejected": 89,
+          "positive": 59,
+          "rejected_evaluable": 89,
+          "unconditional": {
+            "rate": 0.0089,
+            "simultaneous_upper": 0.012865300668140803
+          },
+          "evaluable_only": {
+            "rate": 0.011838254855014631,
+            "simultaneous_upper": 0.01710134455695631
+          },
+          "positive_rate": 0.0059
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 9335,
+          "rejected": 213,
+          "positive": 81,
+          "rejected_evaluable": 213,
+          "unconditional": {
+            "rate": 0.0213,
+            "simultaneous_upper": 0.027090843673881197
+          },
+          "evaluable_only": {
+            "rate": 0.02281735404392073,
+            "simultaneous_upper": 0.029014592681623104
+          },
+          "positive_rate": 0.0081
+        },
+        {
+          "total": 10000,
+          "evaluable": 9335,
+          "rejected": 132,
+          "positive": 73,
+          "rejected_evaluable": 132,
+          "unconditional": {
+            "rate": 0.0132,
+            "simultaneous_upper": 0.017896180776772467
+          },
+          "evaluable_only": {
+            "rate": 0.014140332083556507,
+            "simultaneous_upper": 0.01916780107267419
+          },
+          "positive_rate": 0.0073
+        },
+        {
+          "total": 10000,
+          "evaluable": 9335,
+          "rejected": 139,
+          "positive": 56,
+          "rejected_evaluable": 139,
+          "unconditional": {
+            "rate": 0.0139,
+            "simultaneous_upper": 0.018702751634388937
+          },
+          "evaluable_only": {
+            "rate": 0.014890198178896625,
+            "simultaneous_upper": 0.02003160332767446
+          },
+          "positive_rate": 0.0056
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 243,
+          "positive": 114,
+          "rejected_evaluable": 243,
+          "unconditional": {
+            "rate": 0.0243,
+            "simultaneous_upper": 0.030438035261847737
+          },
+          "evaluable_only": {
+            "rate": 0.029333655239014968,
+            "simultaneous_upper": 0.03671915369901861
+          },
+          "positive_rate": 0.0114
+        },
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 210,
+          "positive": 127,
+          "rejected_evaluable": 210,
+          "unconditional": {
+            "rate": 0.021,
+            "simultaneous_upper": 0.026754718231217573
+          },
+          "evaluable_only": {
+            "rate": 0.025350072428778368,
+            "simultaneous_upper": 0.03227714641410686
+          },
+          "positive_rate": 0.0127
+        },
+        {
+          "total": 10000,
+          "evaluable": 8284,
+          "rejected": 167,
+          "positive": 98,
+          "rejected_evaluable": 167,
+          "unconditional": {
+            "rate": 0.0167,
+            "simultaneous_upper": 0.021903276172638247
+          },
+          "evaluable_only": {
+            "rate": 0.020159343312409463,
+            "simultaneous_upper": 0.026425936245509086
+          },
+          "positive_rate": 0.0098
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 289,
+          "positive": 128,
+          "rejected_evaluable": 289,
+          "unconditional": {
+            "rate": 0.0289,
+            "simultaneous_upper": 0.03552799779051485
+          },
+          "evaluable_only": {
+            "rate": 0.0289,
+            "simultaneous_upper": 0.03552799779051485
+          },
+          "positive_rate": 0.0128
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 307,
+          "positive": 167,
+          "rejected_evaluable": 307,
+          "unconditional": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "evaluable_only": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "positive_rate": 0.0167
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 209,
+          "positive": 119,
+          "rejected_evaluable": 209,
+          "unconditional": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "evaluable_only": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "positive_rate": 0.0119
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 283,
+          "positive": 150,
+          "rejected_evaluable": 283,
+          "unconditional": {
+            "rate": 0.0283,
+            "simultaneous_upper": 0.03486663282678537
+          },
+          "evaluable_only": {
+            "rate": 0.0283,
+            "simultaneous_upper": 0.03486663282678537
+          },
+          "positive_rate": 0.015
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 322,
+          "positive": 181,
+          "rejected_evaluable": 322,
+          "unconditional": {
+            "rate": 0.0322,
+            "simultaneous_upper": 0.03915359231728462
+          },
+          "evaluable_only": {
+            "rate": 0.0322,
+            "simultaneous_upper": 0.03915359231728462
+          },
+          "positive_rate": 0.0181
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 197,
+          "positive": 126,
+          "rejected_evaluable": 197,
+          "unconditional": {
+            "rate": 0.0197,
+            "simultaneous_upper": 0.02529489980184142
+          },
+          "evaluable_only": {
+            "rate": 0.0197,
+            "simultaneous_upper": 0.02529489980184142
+          },
+          "positive_rate": 0.0126
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "T5_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 260,
+          "positive": 127,
+          "rejected_evaluable": 260,
+          "unconditional": {
+            "rate": 0.026,
+            "simultaneous_upper": 0.03232455257493289
+          },
+          "evaluable_only": {
+            "rate": 0.031476997578692496,
+            "simultaneous_upper": 0.03910699658154391
+          },
+          "positive_rate": 0.0127
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 238,
+          "positive": 147,
+          "rejected_evaluable": 238,
+          "unconditional": {
+            "rate": 0.0238,
+            "simultaneous_upper": 0.029881841341487643
+          },
+          "evaluable_only": {
+            "rate": 0.0288135593220339,
+            "simultaneous_upper": 0.03615275814150561
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 159,
+          "positive": 86,
+          "rejected_evaluable": 159,
+          "unconditional": {
+            "rate": 0.0159,
+            "simultaneous_upper": 0.020992685286854256
+          },
+          "evaluable_only": {
+            "rate": 0.019249394673123487,
+            "simultaneous_upper": 0.025400991382512384
+          },
+          "positive_rate": 0.0086
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "T5_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 270,
+          "positive": 151,
+          "rejected_evaluable": 270,
+          "unconditional": {
+            "rate": 0.027,
+            "simultaneous_upper": 0.03343118449254028
+          },
+          "evaluable_only": {
+            "rate": 0.027,
+            "simultaneous_upper": 0.03343118449254028
+          },
+          "positive_rate": 0.0151
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 311,
+          "positive": 178,
+          "rejected_evaluable": 311,
+          "unconditional": {
+            "rate": 0.0311,
+            "simultaneous_upper": 0.03794720185974759
+          },
+          "evaluable_only": {
+            "rate": 0.0311,
+            "simultaneous_upper": 0.03794720185974759
+          },
+          "positive_rate": 0.0178
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 194,
+          "positive": 131,
+          "rejected_evaluable": 194,
+          "unconditional": {
+            "rate": 0.0194,
+            "simultaneous_upper": 0.02495722774836028
+          },
+          "evaluable_only": {
+            "rate": 0.0194,
+            "simultaneous_upper": 0.02495722774836028
+          },
+          "positive_rate": 0.0131
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "T5_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 277,
+          "positive": 157,
+          "rejected_evaluable": 277,
+          "unconditional": {
+            "rate": 0.0277,
+            "simultaneous_upper": 0.03420455059235845
+          },
+          "evaluable_only": {
+            "rate": 0.0277,
+            "simultaneous_upper": 0.03420455059235845
+          },
+          "positive_rate": 0.0157
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 320,
+          "positive": 175,
+          "rejected_evaluable": 320,
+          "unconditional": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "evaluable_only": {
+            "rate": 0.032,
+            "simultaneous_upper": 0.03893440029463319
+          },
+          "positive_rate": 0.0175
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 195,
+          "positive": 133,
+          "rejected_evaluable": 195,
+          "unconditional": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "evaluable_only": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "positive_rate": 0.0133
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8301,
+          "rejected": 246,
+          "positive": 170,
+          "rejected_evaluable": 246,
+          "unconditional": {
+            "rate": 0.0246,
+            "simultaneous_upper": 0.030771452116359184
+          },
+          "evaluable_only": {
+            "rate": 0.02963498373689917,
+            "simultaneous_upper": 0.03704550208906956
+          },
+          "positive_rate": 0.017
+        },
+        {
+          "total": 10000,
+          "evaluable": 8301,
+          "rejected": 218,
+          "positive": 160,
+          "rejected_evaluable": 218,
+          "unconditional": {
+            "rate": 0.0218,
+            "simultaneous_upper": 0.027650453084699426
+          },
+          "evaluable_only": {
+            "rate": 0.026261896157089508,
+            "simultaneous_upper": 0.033289345085111714
+          },
+          "positive_rate": 0.016
+        },
+        {
+          "total": 10000,
+          "evaluable": 8301,
+          "rejected": 179,
+          "positive": 144,
+          "rejected_evaluable": 179,
+          "unconditional": {
+            "rate": 0.0179,
+            "simultaneous_upper": 0.02326405982956194
+          },
+          "evaluable_only": {
+            "rate": 0.021563667028068906,
+            "simultaneous_upper": 0.028009910851756175
+          },
+          "positive_rate": 0.0144
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 331,
+          "positive": 212,
+          "rejected_evaluable": 331,
+          "unconditional": {
+            "rate": 0.0331,
+            "simultaneous_upper": 0.04013914674674415
+          },
+          "evaluable_only": {
+            "rate": 0.0331,
+            "simultaneous_upper": 0.04013914674674415
+          },
+          "positive_rate": 0.0212
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 325,
+          "positive": 222,
+          "rejected_evaluable": 325,
+          "unconditional": {
+            "rate": 0.0325,
+            "simultaneous_upper": 0.039482256582687475
+          },
+          "evaluable_only": {
+            "rate": 0.0325,
+            "simultaneous_upper": 0.039482256582687475
+          },
+          "positive_rate": 0.0222
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 231,
+          "positive": 181,
+          "rejected_evaluable": 231,
+          "unconditional": {
+            "rate": 0.0231,
+            "simultaneous_upper": 0.029102089199431393
+          },
+          "evaluable_only": {
+            "rate": 0.0231,
+            "simultaneous_upper": 0.029102089199431393
+          },
+          "positive_rate": 0.0181
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NEGATIVE_SKEW_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 295,
+          "positive": 184,
+          "rejected_evaluable": 295,
+          "unconditional": {
+            "rate": 0.0295,
+            "simultaneous_upper": 0.03618866696743875
+          },
+          "evaluable_only": {
+            "rate": 0.0295,
+            "simultaneous_upper": 0.03618866696743875
+          },
+          "positive_rate": 0.0184
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 327,
+          "positive": 220,
+          "rejected_evaluable": 327,
+          "unconditional": {
+            "rate": 0.0327,
+            "simultaneous_upper": 0.03970128443551174
+          },
+          "evaluable_only": {
+            "rate": 0.0327,
+            "simultaneous_upper": 0.03970128443551174
+          },
+          "positive_rate": 0.022
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 219,
+          "positive": 161,
+          "rejected_evaluable": 219,
+          "unconditional": {
+            "rate": 0.0219,
+            "simultaneous_upper": 0.02776228683191802
+          },
+          "evaluable_only": {
+            "rate": 0.0219,
+            "simultaneous_upper": 0.02776228683191802
+          },
+          "positive_rate": 0.0161
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8205,
+          "rejected": 260,
+          "positive": 73,
+          "rejected_evaluable": 260,
+          "unconditional": {
+            "rate": 0.026,
+            "simultaneous_upper": 0.03232455257493289
+          },
+          "evaluable_only": {
+            "rate": 0.031687995124923825,
+            "simultaneous_upper": 0.03936809765786491
+          },
+          "positive_rate": 0.0073
+        },
+        {
+          "total": 10000,
+          "evaluable": 8205,
+          "rejected": 220,
+          "positive": 81,
+          "rejected_evaluable": 220,
+          "unconditional": {
+            "rate": 0.022,
+            "simultaneous_upper": 0.02787409165781834
+          },
+          "evaluable_only": {
+            "rate": 0.02681291895185862,
+            "simultaneous_upper": 0.03394970127844288
+          },
+          "positive_rate": 0.0081
+        },
+        {
+          "total": 10000,
+          "evaluable": 8205,
+          "rejected": 157,
+          "positive": 56,
+          "rejected_evaluable": 157,
+          "unconditional": {
+            "rate": 0.0157,
+            "simultaneous_upper": 0.020764584037742242
+          },
+          "evaluable_only": {
+            "rate": 0.019134673979280925,
+            "simultaneous_upper": 0.02529295875848793
+          },
+          "positive_rate": 0.0056
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 312,
+          "positive": 107,
+          "rejected_evaluable": 312,
+          "unconditional": {
+            "rate": 0.0312,
+            "simultaneous_upper": 0.03805695902919862
+          },
+          "evaluable_only": {
+            "rate": 0.0312,
+            "simultaneous_upper": 0.03805695902919862
+          },
+          "positive_rate": 0.0107
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 329,
+          "positive": 144,
+          "rejected_evaluable": 329,
+          "unconditional": {
+            "rate": 0.0329,
+            "simultaneous_upper": 0.03992024763469065
+          },
+          "evaluable_only": {
+            "rate": 0.0329,
+            "simultaneous_upper": 0.03992024763469065
+          },
+          "positive_rate": 0.0144
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 199,
+          "positive": 82,
+          "rejected_evaluable": 199,
+          "unconditional": {
+            "rate": 0.0199,
+            "simultaneous_upper": 0.02551984531580568
+          },
+          "evaluable_only": {
+            "rate": 0.0199,
+            "simultaneous_upper": 0.02551984531580568
+          },
+          "positive_rate": 0.0082
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "POSITIVE_SKEW_IID",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 271,
+          "positive": 90,
+          "rejected_evaluable": 271,
+          "unconditional": {
+            "rate": 0.0271,
+            "simultaneous_upper": 0.03354172844481825
+          },
+          "evaluable_only": {
+            "rate": 0.0271,
+            "simultaneous_upper": 0.03354172844481825
+          },
+          "positive_rate": 0.009
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 302,
+          "positive": 125,
+          "rejected_evaluable": 302,
+          "unconditional": {
+            "rate": 0.0302,
+            "simultaneous_upper": 0.036958595445217214
+          },
+          "evaluable_only": {
+            "rate": 0.0302,
+            "simultaneous_upper": 0.036958595445217214
+          },
+          "positive_rate": 0.0125
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 202,
+          "positive": 87,
+          "rejected_evaluable": 202,
+          "unconditional": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "evaluable_only": {
+            "rate": 0.0202,
+            "simultaneous_upper": 0.025857014747065647
+          },
+          "positive_rate": 0.0087
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 227,
+          "positive": 110,
+          "rejected_evaluable": 227,
+          "unconditional": {
+            "rate": 0.0227,
+            "simultaneous_upper": 0.02865593145789663
+          },
+          "evaluable_only": {
+            "rate": 0.027461892088071618,
+            "simultaneous_upper": 0.03464500956167552
+          },
+          "positive_rate": 0.011
+        },
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 157,
+          "positive": 90,
+          "rejected_evaluable": 157,
+          "unconditional": {
+            "rate": 0.0157,
+            "simultaneous_upper": 0.020764584037742242
+          },
+          "evaluable_only": {
+            "rate": 0.01899346721509799,
+            "simultaneous_upper": 0.02510688890119884
+          },
+          "positive_rate": 0.009
+        },
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 118,
+          "positive": 57,
+          "rejected_evaluable": 118,
+          "unconditional": {
+            "rate": 0.0118,
+            "simultaneous_upper": 0.01627386813427655
+          },
+          "evaluable_only": {
+            "rate": 0.014275344785869828,
+            "simultaneous_upper": 0.01967835356099066
+          },
+          "positive_rate": 0.0057
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 259,
+          "positive": 119,
+          "rejected_evaluable": 259,
+          "unconditional": {
+            "rate": 0.0259,
+            "simultaneous_upper": 0.03221376750096918
+          },
+          "evaluable_only": {
+            "rate": 0.0259,
+            "simultaneous_upper": 0.03221376750096918
+          },
+          "positive_rate": 0.0119
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 190,
+          "positive": 111,
+          "rejected_evaluable": 190,
+          "unconditional": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "evaluable_only": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "positive_rate": 0.0111
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 147,
+          "positive": 70,
+          "rejected_evaluable": 147,
+          "unconditional": {
+            "rate": 0.0147,
+            "simultaneous_upper": 0.019621182200091496
+          },
+          "evaluable_only": {
+            "rate": 0.0147,
+            "simultaneous_upper": 0.019621182200091496
+          },
+          "positive_rate": 0.007
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 278,
+          "positive": 144,
+          "rejected_evaluable": 278,
+          "unconditional": {
+            "rate": 0.0278,
+            "simultaneous_upper": 0.034314948387852665
+          },
+          "evaluable_only": {
+            "rate": 0.0278,
+            "simultaneous_upper": 0.034314948387852665
+          },
+          "positive_rate": 0.0144
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 214,
+          "positive": 134,
+          "rejected_evaluable": 214,
+          "unconditional": {
+            "rate": 0.0214,
+            "simultaneous_upper": 0.027202824976800804
+          },
+          "evaluable_only": {
+            "rate": 0.0214,
+            "simultaneous_upper": 0.027202824976800804
+          },
+          "positive_rate": 0.0134
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 155,
+          "positive": 82,
+          "rejected_evaluable": 155,
+          "unconditional": {
+            "rate": 0.0155,
+            "simultaneous_upper": 0.02053629462217344
+          },
+          "evaluable_only": {
+            "rate": 0.0155,
+            "simultaneous_upper": 0.02053629462217344
+          },
+          "positive_rate": 0.0082
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR06",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 235,
+          "positive": 109,
+          "rejected_evaluable": 235,
+          "unconditional": {
+            "rate": 0.0235,
+            "simultaneous_upper": 0.029547818771714144
+          },
+          "evaluable_only": {
+            "rate": 0.028450363196125907,
+            "simultaneous_upper": 0.03574877802603011
+          },
+          "positive_rate": 0.0109
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 181,
+          "positive": 100,
+          "rejected_evaluable": 181,
+          "unconditional": {
+            "rate": 0.0181,
+            "simultaneous_upper": 0.023490298081520193
+          },
+          "evaluable_only": {
+            "rate": 0.02191283292978208,
+            "simultaneous_upper": 0.028422136279949863
+          },
+          "positive_rate": 0.01
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 142,
+          "positive": 82,
+          "rejected_evaluable": 142,
+          "unconditional": {
+            "rate": 0.0142,
+            "simultaneous_upper": 0.019047569103649294
+          },
+          "evaluable_only": {
+            "rate": 0.01719128329297821,
+            "simultaneous_upper": 0.023048044173936997
+          },
+          "positive_rate": 0.0082
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR06",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 311,
+          "positive": 160,
+          "rejected_evaluable": 311,
+          "unconditional": {
+            "rate": 0.0311,
+            "simultaneous_upper": 0.03794720185974759
+          },
+          "evaluable_only": {
+            "rate": 0.0311,
+            "simultaneous_upper": 0.03794720185974759
+          },
+          "positive_rate": 0.016
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 263,
+          "positive": 156,
+          "rejected_evaluable": 263,
+          "unconditional": {
+            "rate": 0.0263,
+            "simultaneous_upper": 0.03265677312109255
+          },
+          "evaluable_only": {
+            "rate": 0.0263,
+            "simultaneous_upper": 0.03265677312109255
+          },
+          "positive_rate": 0.0156
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 190,
+          "positive": 110,
+          "rejected_evaluable": 190,
+          "unconditional": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "evaluable_only": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "positive_rate": 0.011
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR06",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 288,
+          "positive": 147,
+          "rejected_evaluable": 288,
+          "unconditional": {
+            "rate": 0.0288,
+            "simultaneous_upper": 0.03541781918153703
+          },
+          "evaluable_only": {
+            "rate": 0.0288,
+            "simultaneous_upper": 0.03541781918153703
+          },
+          "positive_rate": 0.0147
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 268,
+          "positive": 160,
+          "rejected_evaluable": 268,
+          "unconditional": {
+            "rate": 0.0268,
+            "simultaneous_upper": 0.0332100324892075
+          },
+          "evaluable_only": {
+            "rate": 0.0268,
+            "simultaneous_upper": 0.0332100324892075
+          },
+          "positive_rate": 0.016
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 198,
+          "positive": 118,
+          "rejected_evaluable": 198,
+          "unconditional": {
+            "rate": 0.0198,
+            "simultaneous_upper": 0.025407389310837757
+          },
+          "evaluable_only": {
+            "rate": 0.0198,
+            "simultaneous_upper": 0.025407389310837757
+          },
+          "positive_rate": 0.0118
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR09",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8275,
+          "rejected": 261,
+          "positive": 137,
+          "rejected_evaluable": 261,
+          "unconditional": {
+            "rate": 0.0261,
+            "simultaneous_upper": 0.03243531511961667
+          },
+          "evaluable_only": {
+            "rate": 0.031540785498489425,
+            "simultaneous_upper": 0.039170100098290056
+          },
+          "positive_rate": 0.0137
+        },
+        {
+          "total": 10000,
+          "evaluable": 8275,
+          "rejected": 164,
+          "positive": 96,
+          "rejected_evaluable": 164,
+          "unconditional": {
+            "rate": 0.0164,
+            "simultaneous_upper": 0.021562137600411414
+          },
+          "evaluable_only": {
+            "rate": 0.019818731117824773,
+            "simultaneous_upper": 0.026042679680122048
+          },
+          "positive_rate": 0.0096
+        },
+        {
+          "total": 10000,
+          "evaluable": 8275,
+          "rejected": 158,
+          "positive": 96,
+          "rejected_evaluable": 158,
+          "unconditional": {
+            "rate": 0.0158,
+            "simultaneous_upper": 0.020878657964583977
+          },
+          "evaluable_only": {
+            "rate": 0.01909365558912387,
+            "simultaneous_upper": 0.025217407893374594
+          },
+          "positive_rate": 0.0096
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR09",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 287,
+          "positive": 130,
+          "rejected_evaluable": 287,
+          "unconditional": {
+            "rate": 0.0287,
+            "simultaneous_upper": 0.035307621150272535
+          },
+          "evaluable_only": {
+            "rate": 0.0287,
+            "simultaneous_upper": 0.035307621150272535
+          },
+          "positive_rate": 0.013
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 212,
+          "positive": 116,
+          "rejected_evaluable": 212,
+          "unconditional": {
+            "rate": 0.0212,
+            "simultaneous_upper": 0.02697883225401093
+          },
+          "evaluable_only": {
+            "rate": 0.0212,
+            "simultaneous_upper": 0.02697883225401093
+          },
+          "positive_rate": 0.0116
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 171,
+          "positive": 94,
+          "rejected_evaluable": 171,
+          "unconditional": {
+            "rate": 0.0171,
+            "simultaneous_upper": 0.022357527642480047
+          },
+          "evaluable_only": {
+            "rate": 0.0171,
+            "simultaneous_upper": 0.022357527642480047
+          },
+          "positive_rate": 0.0094
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR09",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 307,
+          "positive": 176,
+          "rejected_evaluable": 307,
+          "unconditional": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "evaluable_only": {
+            "rate": 0.0307,
+            "simultaneous_upper": 0.03750799858584
+          },
+          "positive_rate": 0.0176
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 224,
+          "positive": 149,
+          "rejected_evaluable": 224,
+          "unconditional": {
+            "rate": 0.0224,
+            "simultaneous_upper": 0.028321025545222228
+          },
+          "evaluable_only": {
+            "rate": 0.0224,
+            "simultaneous_upper": 0.028321025545222228
+          },
+          "positive_rate": 0.0149
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 190,
+          "positive": 120,
+          "rejected_evaluable": 190,
+          "unconditional": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "evaluable_only": {
+            "rate": 0.019,
+            "simultaneous_upper": 0.024506513835764333
+          },
+          "positive_rate": 0.012
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 362,
+          "positive": 175,
+          "rejected_evaluable": 362,
+          "unconditional": {
+            "rate": 0.0362,
+            "simultaneous_upper": 0.0435242828990056
+          },
+          "evaluable_only": {
+            "rate": 0.04379385434309219,
+            "simultaneous_upper": 0.052612458832083125
+          },
+          "positive_rate": 0.0175
+        },
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 233,
+          "positive": 127,
+          "rejected_evaluable": 233,
+          "unconditional": {
+            "rate": 0.0233,
+            "simultaneous_upper": 0.02932500683541827
+          },
+          "evaluable_only": {
+            "rate": 0.028187757077183642,
+            "simultaneous_upper": 0.03545364241337964
+          },
+          "positive_rate": 0.0127
+        },
+        {
+          "total": 10000,
+          "evaluable": 8266,
+          "rejected": 200,
+          "positive": 102,
+          "rejected_evaluable": 200,
+          "unconditional": {
+            "rate": 0.02,
+            "simultaneous_upper": 0.02563226806231048
+          },
+          "evaluable_only": {
+            "rate": 0.024195499637067505,
+            "simultaneous_upper": 0.030990537901399336
+          },
+          "positive_rate": 0.0102
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 325,
+          "positive": 151,
+          "rejected_evaluable": 325,
+          "unconditional": {
+            "rate": 0.0325,
+            "simultaneous_upper": 0.039482256582687475
+          },
+          "evaluable_only": {
+            "rate": 0.0325,
+            "simultaneous_upper": 0.039482256582687475
+          },
+          "positive_rate": 0.0151
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 216,
+          "positive": 126,
+          "rejected_evaluable": 216,
+          "unconditional": {
+            "rate": 0.0216,
+            "simultaneous_upper": 0.027426698049604997
+          },
+          "evaluable_only": {
+            "rate": 0.0216,
+            "simultaneous_upper": 0.027426698049604997
+          },
+          "positive_rate": 0.0126
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 206,
+          "positive": 107,
+          "rejected_evaluable": 206,
+          "unconditional": {
+            "rate": 0.0206,
+            "simultaneous_upper": 0.026306119489276202
+          },
+          "evaluable_only": {
+            "rate": 0.0206,
+            "simultaneous_upper": 0.026306119489276202
+          },
+          "positive_rate": 0.0107
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "AR095",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 359,
+          "positive": 167,
+          "rejected_evaluable": 359,
+          "unconditional": {
+            "rate": 0.0359,
+            "simultaneous_upper": 0.043197303312923124
+          },
+          "evaluable_only": {
+            "rate": 0.0359,
+            "simultaneous_upper": 0.043197303312923124
+          },
+          "positive_rate": 0.0167
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 241,
+          "positive": 143,
+          "rejected_evaluable": 241,
+          "unconditional": {
+            "rate": 0.0241,
+            "simultaneous_upper": 0.030215633319972963
+          },
+          "evaluable_only": {
+            "rate": 0.0241,
+            "simultaneous_upper": 0.030215633319972963
+          },
+          "positive_rate": 0.0143
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 214,
+          "positive": 102,
+          "rejected_evaluable": 214,
+          "unconditional": {
+            "rate": 0.0214,
+            "simultaneous_upper": 0.027202824976800804
+          },
+          "evaluable_only": {
+            "rate": 0.0214,
+            "simultaneous_upper": 0.027202824976800804
+          },
+          "positive_rate": 0.0102
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 159,
+          "positive": 80,
+          "rejected_evaluable": 159,
+          "unconditional": {
+            "rate": 0.0159,
+            "simultaneous_upper": 0.020992685286854256
+          },
+          "evaluable_only": {
+            "rate": 0.019249394673123487,
+            "simultaneous_upper": 0.025400991382512384
+          },
+          "positive_rate": 0.008
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 167,
+          "positive": 103,
+          "rejected_evaluable": 167,
+          "unconditional": {
+            "rate": 0.0167,
+            "simultaneous_upper": 0.021903276172638247
+          },
+          "evaluable_only": {
+            "rate": 0.020217917675544796,
+            "simultaneous_upper": 0.026502471884743133
+          },
+          "positive_rate": 0.0103
+        },
+        {
+          "total": 10000,
+          "evaluable": 8260,
+          "rejected": 111,
+          "positive": 66,
+          "rejected_evaluable": 111,
+          "unconditional": {
+            "rate": 0.0111,
+            "simultaneous_upper": 0.015457594075483529
+          },
+          "evaluable_only": {
+            "rate": 0.013438256658595642,
+            "simultaneous_upper": 0.018705094346109393
+          },
+          "positive_rate": 0.0066
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 262,
+          "positive": 133,
+          "rejected_evaluable": 262,
+          "unconditional": {
+            "rate": 0.0262,
+            "simultaneous_upper": 0.03254605526030329
+          },
+          "evaluable_only": {
+            "rate": 0.0262,
+            "simultaneous_upper": 0.03254605526030329
+          },
+          "positive_rate": 0.0133
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 259,
+          "positive": 139,
+          "rejected_evaluable": 259,
+          "unconditional": {
+            "rate": 0.0259,
+            "simultaneous_upper": 0.03221376750096918
+          },
+          "evaluable_only": {
+            "rate": 0.0259,
+            "simultaneous_upper": 0.03221376750096918
+          },
+          "positive_rate": 0.0139
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 209,
+          "positive": 131,
+          "rejected_evaluable": 209,
+          "unconditional": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "evaluable_only": {
+            "rate": 0.0209,
+            "simultaneous_upper": 0.026642615206062044
+          },
+          "positive_rate": 0.0131
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 296,
+          "positive": 140,
+          "rejected_evaluable": 296,
+          "unconditional": {
+            "rate": 0.0296,
+            "simultaneous_upper": 0.03629871229892629
+          },
+          "evaluable_only": {
+            "rate": 0.0296,
+            "simultaneous_upper": 0.03629871229892629
+          },
+          "positive_rate": 0.014
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 321,
+          "positive": 169,
+          "rejected_evaluable": 321,
+          "unconditional": {
+            "rate": 0.0321,
+            "simultaneous_upper": 0.03904400460661471
+          },
+          "evaluable_only": {
+            "rate": 0.0321,
+            "simultaneous_upper": 0.03904400460661471
+          },
+          "positive_rate": 0.0169
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 195,
+          "positive": 111,
+          "rejected_evaluable": 195,
+          "unconditional": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "evaluable_only": {
+            "rate": 0.0195,
+            "simultaneous_upper": 0.025069819274001353
+          },
+          "positive_rate": 0.0111
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 1666,
+          "rejected": 44,
+          "positive": 23,
+          "rejected_evaluable": 44,
+          "unconditional": {
+            "rate": 0.0044,
+            "simultaneous_upper": 0.007365259384769023
+          },
+          "evaluable_only": {
+            "rate": 0.026410564225690276,
+            "simultaneous_upper": 0.04387944205668857
+          },
+          "positive_rate": 0.0023
+        },
+        {
+          "total": 10000,
+          "evaluable": 1666,
+          "rejected": 40,
+          "positive": 25,
+          "rejected_evaluable": 40,
+          "unconditional": {
+            "rate": 0.004,
+            "simultaneous_upper": 0.006855070449056568
+          },
+          "evaluable_only": {
+            "rate": 0.024009603841536616,
+            "simultaneous_upper": 0.04085155704251133
+          },
+          "positive_rate": 0.0025
+        },
+        {
+          "total": 10000,
+          "evaluable": 1666,
+          "rejected": 31,
+          "positive": 18,
+          "rejected_evaluable": 31,
+          "unconditional": {
+            "rate": 0.0031,
+            "simultaneous_upper": 0.0056853005133197815
+          },
+          "evaluable_only": {
+            "rate": 0.018607442977190875,
+            "simultaneous_upper": 0.03390403403974408
+          },
+          "positive_rate": 0.0018
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 7548,
+          "rejected": 194,
+          "positive": 100,
+          "rejected_evaluable": 194,
+          "unconditional": {
+            "rate": 0.0194,
+            "simultaneous_upper": 0.02495722774836028
+          },
+          "evaluable_only": {
+            "rate": 0.02570217276099629,
+            "simultaneous_upper": 0.033034169629948026
+          },
+          "positive_rate": 0.01
+        },
+        {
+          "total": 10000,
+          "evaluable": 7548,
+          "rejected": 210,
+          "positive": 125,
+          "rejected_evaluable": 210,
+          "unconditional": {
+            "rate": 0.021,
+            "simultaneous_upper": 0.026754718231217573
+          },
+          "evaluable_only": {
+            "rate": 0.02782193958664547,
+            "simultaneous_upper": 0.035412160304748405
+          },
+          "positive_rate": 0.0125
+        },
+        {
+          "total": 10000,
+          "evaluable": 7548,
+          "rejected": 149,
+          "positive": 89,
+          "rejected_evaluable": 149,
+          "unconditional": {
+            "rate": 0.0149,
+            "simultaneous_upper": 0.01985026112908763
+          },
+          "evaluable_only": {
+            "rate": 0.019740328563857976,
+            "simultaneous_upper": 0.02627718937561791
+          },
+          "positive_rate": 0.0089
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 9407,
+          "rejected": 243,
+          "positive": 117,
+          "rejected_evaluable": 243,
+          "unconditional": {
+            "rate": 0.0243,
+            "simultaneous_upper": 0.030438035261847737
+          },
+          "evaluable_only": {
+            "rate": 0.025831827362602318,
+            "simultaneous_upper": 0.03235036297487727
+          },
+          "positive_rate": 0.0117
+        },
+        {
+          "total": 10000,
+          "evaluable": 9407,
+          "rejected": 262,
+          "positive": 140,
+          "rejected_evaluable": 262,
+          "unconditional": {
+            "rate": 0.0262,
+            "simultaneous_upper": 0.03254605526030329
+          },
+          "evaluable_only": {
+            "rate": 0.02785159987243542,
+            "simultaneous_upper": 0.03459057578821262
+          },
+          "positive_rate": 0.014
+        },
+        {
+          "total": 10000,
+          "evaluable": 9407,
+          "rejected": 186,
+          "positive": 118,
+          "rejected_evaluable": 186,
+          "unconditional": {
+            "rate": 0.0186,
+            "simultaneous_upper": 0.02405523049936499
+          },
+          "evaluable_only": {
+            "rate": 0.019772509833103007,
+            "simultaneous_upper": 0.025567139209578194
+          },
+          "positive_rate": 0.0118
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 1709,
+          "rejected": 28,
+          "positive": 14,
+          "rejected_evaluable": 28,
+          "unconditional": {
+            "rate": 0.0028,
+            "simultaneous_upper": 0.005287019323811849
+          },
+          "evaluable_only": {
+            "rate": 0.016383850204798128,
+            "simultaneous_upper": 0.030749163398853797
+          },
+          "positive_rate": 0.0014
+        },
+        {
+          "total": 10000,
+          "evaluable": 1709,
+          "rejected": 18,
+          "positive": 12,
+          "rejected_evaluable": 18,
+          "unconditional": {
+            "rate": 0.0018,
+            "simultaneous_upper": 0.0039155686646307865
+          },
+          "evaluable_only": {
+            "rate": 0.010532475131655939,
+            "simultaneous_upper": 0.022793748128056915
+          },
+          "positive_rate": 0.0012
+        },
+        {
+          "total": 10000,
+          "evaluable": 1709,
+          "rejected": 20,
+          "positive": 12,
+          "rejected_evaluable": 20,
+          "unconditional": {
+            "rate": 0.002,
+            "simultaneous_upper": 0.0041965456833912545
+          },
+          "evaluable_only": {
+            "rate": 0.011702750146284377,
+            "simultaneous_upper": 0.02442453050806298
+          },
+          "positive_rate": 0.0012
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 7578,
+          "rejected": 170,
+          "positive": 98,
+          "rejected_evaluable": 170,
+          "unconditional": {
+            "rate": 0.017,
+            "simultaneous_upper": 0.022244027942975135
+          },
+          "evaluable_only": {
+            "rate": 0.022433359725521247,
+            "simultaneous_upper": 0.02932834217550123
+          },
+          "positive_rate": 0.0098
+        },
+        {
+          "total": 10000,
+          "evaluable": 7578,
+          "rejected": 113,
+          "positive": 76,
+          "rejected_evaluable": 113,
+          "unconditional": {
+            "rate": 0.0113,
+            "simultaneous_upper": 0.015691191337940565
+          },
+          "evaluable_only": {
+            "rate": 0.014911586170493533,
+            "simultaneous_upper": 0.02069152036951396
+          },
+          "positive_rate": 0.0076
+        },
+        {
+          "total": 10000,
+          "evaluable": 7578,
+          "rejected": 90,
+          "positive": 53,
+          "rejected_evaluable": 90,
+          "unconditional": {
+            "rate": 0.009,
+            "simultaneous_upper": 0.012984142751370742
+          },
+          "evaluable_only": {
+            "rate": 0.011876484560570071,
+            "simultaneous_upper": 0.01712297164386813
+          },
+          "positive_rate": 0.0053
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "MA19_PERSISTENT_SELECTION",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 9371,
+          "rejected": 223,
+          "positive": 123,
+          "rejected_evaluable": 223,
+          "unconditional": {
+            "rate": 0.0223,
+            "simultaneous_upper": 0.028209334511391786
+          },
+          "evaluable_only": {
+            "rate": 0.023796819976523317,
+            "simultaneous_upper": 0.030096681362162956
+          },
+          "positive_rate": 0.0123
+        },
+        {
+          "total": 10000,
+          "evaluable": 9371,
+          "rejected": 163,
+          "positive": 105,
+          "rejected_evaluable": 163,
+          "unconditional": {
+            "rate": 0.0163,
+            "simultaneous_upper": 0.021448337002899418
+          },
+          "evaluable_only": {
+            "rate": 0.01739408814427489,
+            "simultaneous_upper": 0.022883964246396753
+          },
+          "positive_rate": 0.0105
+        },
+        {
+          "total": 10000,
+          "evaluable": 9371,
+          "rejected": 132,
+          "positive": 83,
+          "rejected_evaluable": 132,
+          "unconditional": {
+            "rate": 0.0132,
+            "simultaneous_upper": 0.017896180776772467
+          },
+          "evaluable_only": {
+            "rate": 0.014086010030946537,
+            "simultaneous_upper": 0.019094352631738764
+          },
+          "positive_rate": 0.0083
+        }
+      ]
+    }
+  ],
+  "negative_control": [
+    {
+      "phase": 1,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8267,
+          "rejected": 8134,
+          "positive": 5053,
+          "rejected_evaluable": 8134,
+          "unconditional": {
+            "rate": 0.8134,
+            "simultaneous_upper": 0.8274125695851723
+          },
+          "evaluable_only": {
+            "rate": 0.9839119390347163,
+            "simultaneous_upper": 0.9884991589045515
+          },
+          "positive_rate": 0.5053
+        },
+        {
+          "total": 10000,
+          "evaluable": 8267,
+          "rejected": 7497,
+          "positive": 3764,
+          "rejected_evaluable": 7497,
+          "unconditional": {
+            "rate": 0.7497,
+            "simultaneous_upper": 0.7653661662130803
+          },
+          "evaluable_only": {
+            "rate": 0.9068585944115156,
+            "simultaneous_upper": 0.9181577221788597
+          },
+          "positive_rate": 0.3764
+        },
+        {
+          "total": 10000,
+          "evaluable": 8267,
+          "rejected": 7512,
+          "positive": 3835,
+          "rejected_evaluable": 7512,
+          "unconditional": {
+            "rate": 0.7512,
+            "simultaneous_upper": 0.7668330232778516
+          },
+          "evaluable_only": {
+            "rate": 0.9086730373775251,
+            "simultaneous_upper": 0.9198673003317993
+          },
+          "positive_rate": 0.3835
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9915,
+          "positive": 6133,
+          "rejected_evaluable": 9915,
+          "unconditional": {
+            "rate": 0.9915,
+            "simultaneous_upper": 0.9944609951588919
+          },
+          "evaluable_only": {
+            "rate": 0.9915,
+            "simultaneous_upper": 0.9944609951588919
+          },
+          "positive_rate": 0.6133
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9344,
+          "positive": 4704,
+          "rejected_evaluable": 9344,
+          "unconditional": {
+            "rate": 0.9344,
+            "simultaneous_upper": 0.9431068780181967
+          },
+          "evaluable_only": {
+            "rate": 0.9344,
+            "simultaneous_upper": 0.9431068780181967
+          },
+          "positive_rate": 0.4704
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9319,
+          "positive": 4659,
+          "rejected_evaluable": 9319,
+          "unconditional": {
+            "rate": 0.9319,
+            "simultaneous_upper": 0.9407677469270744
+          },
+          "evaluable_only": {
+            "rate": 0.9319,
+            "simultaneous_upper": 0.9407677469270744
+          },
+          "positive_rate": 0.4659
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9933,
+          "positive": 6226,
+          "rejected_evaluable": 9933,
+          "unconditional": {
+            "rate": 0.9933,
+            "simultaneous_upper": 0.9958864968097341
+          },
+          "evaluable_only": {
+            "rate": 0.9933,
+            "simultaneous_upper": 0.9958864968097341
+          },
+          "positive_rate": 0.6226
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9381,
+          "positive": 4755,
+          "rejected_evaluable": 9381,
+          "unconditional": {
+            "rate": 0.9381,
+            "simultaneous_upper": 0.9465618223588494
+          },
+          "evaluable_only": {
+            "rate": 0.9381,
+            "simultaneous_upper": 0.9465618223588494
+          },
+          "positive_rate": 0.4755
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9389,
+          "positive": 4745,
+          "rejected_evaluable": 9389,
+          "unconditional": {
+            "rate": 0.9389,
+            "simultaneous_upper": 0.9473076867717383
+          },
+          "evaluable_only": {
+            "rate": 0.9389,
+            "simultaneous_upper": 0.9473076867717383
+          },
+          "positive_rate": 0.4745
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 500,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 8263,
+          "rejected": 8121,
+          "positive": 4972,
+          "rejected_evaluable": 8121,
+          "unconditional": {
+            "rate": 0.8121,
+            "simultaneous_upper": 0.8261518933016871
+          },
+          "evaluable_only": {
+            "rate": 0.9828149582476098,
+            "simultaneous_upper": 0.9875709643082757
+          },
+          "positive_rate": 0.4972
+        },
+        {
+          "total": 10000,
+          "evaluable": 8263,
+          "rejected": 7521,
+          "positive": 3728,
+          "rejected_evaluable": 7521,
+          "unconditional": {
+            "rate": 0.7521,
+            "simultaneous_upper": 0.7677130154057556
+          },
+          "evaluable_only": {
+            "rate": 0.9102021057727218,
+            "simultaneous_upper": 0.9213095131604052
+          },
+          "positive_rate": 0.3728
+        },
+        {
+          "total": 10000,
+          "evaluable": 8263,
+          "rejected": 7482,
+          "positive": 3738,
+          "rejected_evaluable": 7482,
+          "unconditional": {
+            "rate": 0.7482,
+            "simultaneous_upper": 0.7638990560721202
+          },
+          "evaluable_only": {
+            "rate": 0.905482270361854,
+            "simultaneous_upper": 0.9168626977621408
+          },
+          "positive_rate": 0.3738
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 783,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9920,
+          "positive": 6116,
+          "rejected_evaluable": 9920,
+          "unconditional": {
+            "rate": 0.992,
+            "simultaneous_upper": 0.9948613670142743
+          },
+          "evaluable_only": {
+            "rate": 0.992,
+            "simultaneous_upper": 0.9948613670142743
+          },
+          "positive_rate": 0.6116
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9310,
+          "positive": 4602,
+          "rejected_evaluable": 9310,
+          "unconditional": {
+            "rate": 0.931,
+            "simultaneous_upper": 0.9399247754806027
+          },
+          "evaluable_only": {
+            "rate": 0.931,
+            "simultaneous_upper": 0.9399247754806027
+          },
+          "positive_rate": 0.4602
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9334,
+          "positive": 4647,
+          "rejected_evaluable": 9334,
+          "unconditional": {
+            "rate": 0.9334,
+            "simultaneous_upper": 0.9421716662396604
+          },
+          "evaluable_only": {
+            "rate": 0.9334,
+            "simultaneous_upper": 0.9421716662396604
+          },
+          "positive_rate": 0.4647
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "NONMIXING_COMMON_FACTOR",
+      "weekdays": 1000,
+      "scenarios": [
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9949,
+          "positive": 6065,
+          "rejected_evaluable": 9949,
+          "unconditional": {
+            "rate": 0.9949,
+            "simultaneous_upper": 0.997108087350908
+          },
+          "evaluable_only": {
+            "rate": 0.9949,
+            "simultaneous_upper": 0.997108087350908
+          },
+          "positive_rate": 0.6065
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9388,
+          "positive": 4596,
+          "rejected_evaluable": 9388,
+          "unconditional": {
+            "rate": 0.9388,
+            "simultaneous_upper": 0.9472144768347324
+          },
+          "evaluable_only": {
+            "rate": 0.9388,
+            "simultaneous_upper": 0.9472144768347324
+          },
+          "positive_rate": 0.4596
+        },
+        {
+          "total": 10000,
+          "evaluable": 10000,
+          "rejected": 9393,
+          "positive": 4599,
+          "rejected_evaluable": 9393,
+          "unconditional": {
+            "rate": 0.9393,
+            "simultaneous_upper": 0.9476804598710412
+          },
+          "evaluable_only": {
+            "rate": 0.9393,
+            "simultaneous_upper": 0.9476804598710412
+          },
+          "positive_rate": 0.4599
+        }
+      ]
+    }
+  ],
+  "power": [
+    {
+      "model": "GAUSSIAN_IID",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 8979,
+        "positive": 8979,
+        "rejected_evaluable": 8979,
+        "unconditional": {
+          "rate": 0.8979,
+          "simultaneous_upper": 0.9028441609389779
+        },
+        "evaluable_only": {
+          "rate": 0.8979,
+          "simultaneous_upper": 0.9028441609389779
+        },
+        "positive_rate": 0.8979
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 8346,
+        "positive": 8346,
+        "rejected_evaluable": 8346,
+        "unconditional": {
+          "rate": 0.8346,
+          "simultaneous_upper": 0.8406887547412953
+        },
+        "evaluable_only": {
+          "rate": 0.8346,
+          "simultaneous_upper": 0.8406887547412953
+        },
+        "positive_rate": 0.8346
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 5570,
+        "positive": 5570,
+        "rejected_evaluable": 5570,
+        "unconditional": {
+          "rate": 0.557,
+          "simultaneous_upper": 0.5652076162233066
+        },
+        "evaluable_only": {
+          "rate": 0.557,
+          "simultaneous_upper": 0.5652076162233066
+        },
+        "positive_rate": 0.557
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 4496,
+        "positive": 4496,
+        "rejected_evaluable": 4496,
+        "unconditional": {
+          "rate": 0.4496,
+          "simultaneous_upper": 0.45784246787034777
+        },
+        "evaluable_only": {
+          "rate": 0.4496,
+          "simultaneous_upper": 0.45784246787034777
+        },
+        "positive_rate": 0.4496
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 1925,
+        "positive": 1925,
+        "rejected_evaluable": 1925,
+        "unconditional": {
+          "rate": 0.1925,
+          "simultaneous_upper": 0.19910099942329032
+        },
+        "evaluable_only": {
+          "rate": 0.1925,
+          "simultaneous_upper": 0.19910099942329032
+        },
+        "positive_rate": 0.1925
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 1377,
+        "positive": 1377,
+        "rejected_evaluable": 1377,
+        "unconditional": {
+          "rate": 0.1377,
+          "simultaneous_upper": 0.14349598636647537
+        },
+        "evaluable_only": {
+          "rate": 0.1377,
+          "simultaneous_upper": 0.14349598636647537
+        },
+        "positive_rate": 0.1377
+      }
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 943,
+        "positive": 943,
+        "rejected_evaluable": 943,
+        "unconditional": {
+          "rate": 0.0943,
+          "simultaneous_upper": 0.09924486898027926
+        },
+        "evaluable_only": {
+          "rate": 0.0943,
+          "simultaneous_upper": 0.09924486898027926
+        },
+        "positive_rate": 0.0943
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 668,
+        "positive": 668,
+        "rejected_evaluable": 668,
+        "unconditional": {
+          "rate": 0.0668,
+          "simultaneous_upper": 0.07105103615450535
+        },
+        "evaluable_only": {
+          "rate": 0.0668,
+          "simultaneous_upper": 0.07105103615450535
+        },
+        "positive_rate": 0.0668
+      }
+    },
+    {
+      "model": "MA19",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 1873,
+        "positive": 1873,
+        "rejected_evaluable": 1873,
+        "unconditional": {
+          "rate": 0.1873,
+          "simultaneous_upper": 0.19383451739518004
+        },
+        "evaluable_only": {
+          "rate": 0.1873,
+          "simultaneous_upper": 0.19383451739518004
+        },
+        "positive_rate": 0.1873
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 1309,
+        "positive": 1309,
+        "rejected_evaluable": 1309,
+        "unconditional": {
+          "rate": 0.1309,
+          "simultaneous_upper": 0.13657753175516144
+        },
+        "evaluable_only": {
+          "rate": 0.1309,
+          "simultaneous_upper": 0.13657753175516144
+        },
+        "positive_rate": 0.1309
+      }
+    },
+    {
+      "model": "MA19",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 873,
+        "positive": 873,
+        "rejected_evaluable": 873,
+        "unconditional": {
+          "rate": 0.0873,
+          "simultaneous_upper": 0.09208245901301518
+        },
+        "evaluable_only": {
+          "rate": 0.0873,
+          "simultaneous_upper": 0.09208245901301518
+        },
+        "positive_rate": 0.0873
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 562,
+        "positive": 562,
+        "rejected_evaluable": 562,
+        "unconditional": {
+          "rate": 0.0562,
+          "simultaneous_upper": 0.0601350049582527
+        },
+        "evaluable_only": {
+          "rate": 0.0562,
+          "simultaneous_upper": 0.0601350049582527
+        },
+        "positive_rate": 0.0562
+      }
+    },
+    {
+      "model": "MA19",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 406,
+        "positive": 406,
+        "rejected_evaluable": 406,
+        "unconditional": {
+          "rate": 0.0406,
+          "simultaneous_upper": 0.043996988893710454
+        },
+        "evaluable_only": {
+          "rate": 0.0406,
+          "simultaneous_upper": 0.043996988893710454
+        },
+        "positive_rate": 0.0406
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 253,
+        "positive": 253,
+        "rejected_evaluable": 253,
+        "unconditional": {
+          "rate": 0.0253,
+          "simultaneous_upper": 0.028037880510692448
+        },
+        "evaluable_only": {
+          "rate": 0.0253,
+          "simultaneous_upper": 0.028037880510692448
+        },
+        "positive_rate": 0.0253
+      }
+    },
+    {
+      "model": "MA19",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 270,
+        "positive": 270,
+        "rejected_evaluable": 270,
+        "unconditional": {
+          "rate": 0.027,
+          "simultaneous_upper": 0.02982041910684596
+        },
+        "evaluable_only": {
+          "rate": 0.027,
+          "simultaneous_upper": 0.02982041910684596
+        },
+        "positive_rate": 0.027
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 167,
+        "positive": 167,
+        "rejected_evaluable": 167,
+        "unconditional": {
+          "rate": 0.0167,
+          "simultaneous_upper": 0.01896550703653547
+        },
+        "evaluable_only": {
+          "rate": 0.0167,
+          "simultaneous_upper": 0.01896550703653547
+        },
+        "positive_rate": 0.0167
+      }
+    },
+    {
+      "model": "AR095",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 1359,
+        "positive": 1359,
+        "rejected_evaluable": 1359,
+        "unconditional": {
+          "rate": 0.1359,
+          "simultaneous_upper": 0.14166509487062395
+        },
+        "evaluable_only": {
+          "rate": 0.1359,
+          "simultaneous_upper": 0.14166509487062395
+        },
+        "positive_rate": 0.1359
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 955,
+        "positive": 955,
+        "rejected_evaluable": 955,
+        "unconditional": {
+          "rate": 0.0955,
+          "simultaneous_upper": 0.1004718777011226
+        },
+        "evaluable_only": {
+          "rate": 0.0955,
+          "simultaneous_upper": 0.1004718777011226
+        },
+        "positive_rate": 0.0955
+      }
+    },
+    {
+      "model": "AR095",
+      "effect": [
+        4,
+        0
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 758,
+        "positive": 758,
+        "rejected_evaluable": 758,
+        "unconditional": {
+          "rate": 0.0758,
+          "simultaneous_upper": 0.08029568999746288
+        },
+        "evaluable_only": {
+          "rate": 0.0758,
+          "simultaneous_upper": 0.08029568999746288
+        },
+        "positive_rate": 0.0758
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 501,
+        "positive": 501,
+        "rejected_evaluable": 501,
+        "unconditional": {
+          "rate": 0.0501,
+          "simultaneous_upper": 0.05383654764325327
+        },
+        "evaluable_only": {
+          "rate": 0.0501,
+          "simultaneous_upper": 0.05383654764325327
+        },
+        "positive_rate": 0.0501
+      }
+    },
+    {
+      "model": "AR095",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 412,
+        "positive": 412,
+        "rejected_evaluable": 412,
+        "unconditional": {
+          "rate": 0.0412,
+          "simultaneous_upper": 0.04461971081310525
+        },
+        "evaluable_only": {
+          "rate": 0.0412,
+          "simultaneous_upper": 0.04461971081310525
+        },
+        "positive_rate": 0.0412
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 269,
+        "positive": 269,
+        "rejected_evaluable": 269,
+        "unconditional": {
+          "rate": 0.0269,
+          "simultaneous_upper": 0.029715643417472695
+        },
+        "evaluable_only": {
+          "rate": 0.0269,
+          "simultaneous_upper": 0.029715643417472695
+        },
+        "positive_rate": 0.0269
+      }
+    },
+    {
+      "model": "AR095",
+      "effect": [
+        0,
+        4
+      ],
+      "sigma_multiplier": 1.5,
+      "original": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 307,
+        "positive": 307,
+        "rejected_evaluable": 307,
+        "unconditional": {
+          "rate": 0.0307,
+          "simultaneous_upper": 0.03369076202823356
+        },
+        "evaluable_only": {
+          "rate": 0.0307,
+          "simultaneous_upper": 0.03369076202823356
+        },
+        "positive_rate": 0.0307
+      },
+      "conservative": {
+        "total": 10000,
+        "evaluable": 10000,
+        "rejected": 187,
+        "positive": 187,
+        "rejected_evaluable": 187,
+        "unconditional": {
+          "rate": 0.0187,
+          "simultaneous_upper": 0.021085172124823776
+        },
+        "evaluable_only": {
+          "rate": 0.0187,
+          "simultaneous_upper": 0.021085172124823776
+        },
+        "positive_rate": 0.0187
+      }
+    }
+  ],
+  "round1_diagnosis": [
+    {
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "phase": 1,
+      "scenario": 1,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 517,
+      "rate": 0.0517,
+      "simultaneous_lower": 0.04396260566331871,
+      "simultaneous_upper": 0.06027464180997249,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "GAUSSIAN_IID",
+      "weekdays": 1000,
+      "phase": 1,
+      "scenario": 1,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 517,
+      "rate": 0.0517,
+      "simultaneous_lower": 0.04396260566331871,
+      "simultaneous_upper": 0.06027464180997249,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 500,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 546,
+      "rate": 0.0546,
+      "simultaneous_lower": 0.04664867814522928,
+      "simultaneous_upper": 0.06338298051030507,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 500,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 8273,
+      "k": 546,
+      "rate": 0.06599782424755228,
+      "simultaneous_lower": 0.05643557841155792,
+      "simultaneous_upper": 0.07653958151096679,
+      "interpretation": "EVIDENCE_RATE_ABOVE_NOMINAL_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 783,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 560,
+      "rate": 0.056,
+      "simultaneous_lower": 0.04794777928919624,
+      "simultaneous_upper": 0.06488118693751832,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 783,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 560,
+      "rate": 0.056,
+      "simultaneous_lower": 0.04794777928919624,
+      "simultaneous_upper": 0.06488118693751832,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 1000,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 579,
+      "rate": 0.0579,
+      "simultaneous_lower": 0.04971319221955504,
+      "simultaneous_upper": 0.06691212534034341,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 1000,
+      "phase": 1,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 579,
+      "rate": 0.0579,
+      "simultaneous_lower": 0.04971319221955504,
+      "simultaneous_upper": 0.06691212534034341,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 500,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 542,
+      "rate": 0.0542,
+      "simultaneous_lower": 0.04627778444119896,
+      "simultaneous_upper": 0.06295464412697795,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 500,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 8306,
+      "k": 542,
+      "rate": 0.06525403322899109,
+      "simultaneous_lower": 0.05576312174912628,
+      "simultaneous_upper": 0.07572226406457098,
+      "interpretation": "EVIDENCE_RATE_ABOVE_NOMINAL_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 783,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 549,
+      "rate": 0.0549,
+      "simultaneous_lower": 0.04692693028603576,
+      "simultaneous_upper": 0.06370415112685457,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 783,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 549,
+      "rate": 0.0549,
+      "simultaneous_lower": 0.04692693028603576,
+      "simultaneous_upper": 0.06370415112685457,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 1000,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 534,
+      "rate": 0.0534,
+      "simultaneous_lower": 0.045536376170887176,
+      "simultaneous_upper": 0.0620975931193617,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "AR095",
+      "weekdays": 1000,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 534,
+      "rate": 0.0534,
+      "simultaneous_lower": 0.045536376170887176,
+      "simultaneous_upper": 0.0620975931193617,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "phase": 2,
+      "scenario": 1,
+      "scope": "unconditional",
+      "n": 10000,
+      "k": 527,
+      "rate": 0.0527,
+      "simultaneous_lower": 0.0448880655898832,
+      "simultaneous_upper": 0.06134725284146359,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "VOLATILITY_REGIMES",
+      "weekdays": 1000,
+      "phase": 2,
+      "scenario": 1,
+      "scope": "evaluable_only",
+      "n": 10000,
+      "k": 527,
+      "rate": 0.0527,
+      "simultaneous_lower": 0.0448880655898832,
+      "simultaneous_upper": 0.06134725284146359,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "phase": 2,
+      "scenario": 0,
+      "scope": "evaluable_only",
+      "n": 1648,
+      "k": 80,
+      "rate": 0.04854368932038835,
+      "simultaneous_lower": 0.03140413665891081,
+      "simultaneous_upper": 0.07084892243257031,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    },
+    {
+      "model": "PERSISTENT_SELECTION",
+      "weekdays": 500,
+      "phase": 2,
+      "scenario": 1,
+      "scope": "evaluable_only",
+      "n": 1648,
+      "k": 77,
+      "rate": 0.046723300970873786,
+      "simultaneous_lower": 0.02994044627114122,
+      "simultaneous_upper": 0.068694333889414,
+      "interpretation": "SCREEN_FAILURE_NOT_PROOF_RATE_ABOVE_5_PERCENT"
+    }
+  ],
+  "inputs": {
+    "research/afternoon-method-round2-protocol.json": "1b31e79cdf2531d24ccf6e65ad1e38d7ec3d3a52765b70faf540cecd4aae58b4",
+    "scripts/afternoon_inference_round2.py": "57c944dbc1adf889bea1620ecdaff276d99840c20d0b2df88f586cffaea4ce0b",
+    "research/afternoon-method-round-results.json": "a5fdbce26993f83dd4b42c13bf441eea2a4e7d34ede73a1778f0c590522852e9",
+    "research/afternoon-method-round-protocol.json": "4265e77e5a10b3c4bbdb8644cc2d4840d4eb412f1916d87c68b7de05ca91ee6e",
+    "research/afternoon-feasibility-results.json": "1dd7db22419e00a17ee7283b396bb1573d098ada14812af760568a57c989d280",
+    "research/afternoon-method-round-summary.json": "94baf6e6705c5a0d9a6fbefcd063e43c745541eb628b460b005e2080ae397ea2"
+  },
+  "raw_market_files_read": 0,
+  "independent_test_released": false,
+  "candidate_v2_changed": false,
+  "limitation": "Fixed 25% variance margin is model-motivated, not a theorem. Common-factor negative control remains outside assumptions. No guarantee under arbitrary dependence, no automatic inference-method adoption."
+}

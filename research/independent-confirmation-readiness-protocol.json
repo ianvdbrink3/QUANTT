@@ -1,0 +1,62 @@
+{
+  "id": "INDEPENDENT-CONFIRMATION-READINESS-20261022",
+  "status": "TECHNICAL_SOURCE_AUDIT_AND_INFORMATION_PLANNING_ONLY",
+  "authorization": "User accepted checking older negative evidence first and asked how to obtain120 scored observations.",
+  "sample": {
+    "start": "2024-01-22",
+    "end": "2024-02-16",
+    "contract": "NQH24",
+    "rule": "All dates of both existing technical-pilot exports, not selected on returns or candidate membership."
+  },
+  "timestamps": {
+    "contract": "America/Chicago, existing start-label interpretation",
+    "generic": "America/New_York, existing bar-end minus1minute normalization",
+    "search": false
+  },
+  "measurements": [
+    "all common RTH bars: volume, within-bar OC movement, high-low range, daily price-offset variation",
+    "unconditional raw15:00open to15:01close and15:14close anchor differences, no cohort or costs"
+  ],
+  "sources": [
+    {
+      "filename": "Dataset_NQ_1min_2022_2025.csv",
+      "sha256": "1577e60a7feab411e49da7a56c7052a64738cd1757cfd60aa11fd783ff43b60b"
+    },
+    {
+      "filename": "nqh24_intraday-1min_historical-data-10-22-2026-2.csv",
+      "sha256": "9ee92754ba8777635a37c6e8824619f798b45996b3d286ee3a4ede7621548514"
+    },
+    {
+      "filename": "nqh24_intraday-1min_historical-data-10-22-2026.csv",
+      "sha256": "66441d492328528589ede1f690fba016ec32082eba2dfb254789095c162933e5"
+    }
+  ],
+  "planning": {
+    "input": "Existing discovery selected dates ONLY; do not read PnL columns.",
+    "method": "Exactly8 equal weekday blocks with20 unscored weekdays between blocks; leftover tail not scored.",
+    "min_total": 120,
+    "min_each_block": 8,
+    "lengths_weekdays": [
+      260,
+      520,
+      783
+    ],
+    "projection": "Existing scored-event frequency, not a power calculation or guaranteed future frequency."
+  },
+  "boundaries": {
+    "candidate_v2_unchanged": true,
+    "original_v2_method": "HAC5 with Holm2",
+    "group_method": "Separate conservative addendum/proposal, not a silently substituted v2 rule",
+    "new_strategy_signals": false,
+    "new_strategy_pnl": false,
+    "new_confirmatory_test": false,
+    "forward_feed_connected": false,
+    "forward_test_started": false,
+    "downloads": false,
+    "purchases": false,
+    "git_publication": false,
+    "vercel_publication": false
+  },
+  "interpretation": "This is a same-date vendor/contract technical comparison, not statistical independent validation. Existing older continuous negative evidence is retained;19 pilot days cannot certify all493 older days. A fixed final test cannot be extended until120 or significance is reached.",
+  "method_source": "https://www.princeton.edu/~umueller/tstat.pdf"
+}

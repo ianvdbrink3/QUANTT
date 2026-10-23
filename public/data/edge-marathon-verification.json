@@ -1,0 +1,12 @@
+{
+  "status": "FULL_MARATHON_VERIFICATION_PASSED",
+  "tests_passed": 530,
+  "second_complete_source_reload": true,
+  "byte_identical_outputs": 20,
+  "typecheck_passed": true,
+  "production_build_passed": true,
+  "dashboard_route": "/research/marathon",
+  "external_publication": false,
+  "execution_limit": "Same machine, same raw bytes, independent selector/fill arithmetic plus second source reload. No external independent researcher or tick fills certified.",
+  "reference_events": 2436
+}

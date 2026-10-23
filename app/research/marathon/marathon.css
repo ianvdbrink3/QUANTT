@@ -1,0 +1,29 @@
+.marathon { max-width: 1480px; margin: 0 auto; padding: 30px 38px 50px; color: #e8edf5; }
+.marathon-nav, .marathon-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; font-size: 13px; }
+.marathon a { color: #9bbdff; text-decoration: underline; text-underline-offset: 4px; }
+.marathon-header { padding: 46px 0 28px; max-width: 1080px; }
+.marathon-eyebrow { color: #9caec7; font-size: 11px; letter-spacing: .12em; }
+.marathon h1 { font-size: clamp(28px, 3.6vw, 45px); letter-spacing: -.04em; margin: 15px 0; }
+.marathon-lead { color: #b9c8db; font-size: 16px; line-height: 1.7; }
+.marathon-warning { margin-top: 22px; padding: 15px 18px; border-left: 3px solid #d3ac68; background: #1a1b1c; color: #dec397; }
+.marathon-counters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 0 0 20px; }
+.marathon-counters > div { padding: 20px; background: #111b29; border: 1px solid #273447; border-radius: 8px; }
+.marathon-counters span { display: block; color: #a4b6cc; font-size: 12px; margin-bottom: 9px; }
+.marathon-counters strong { display: block; font-size: 30px; font-weight: 500; }
+.marathon section:not(.marathon-counters) { margin-top: 35px; padding-top: 27px; border-top: 1px solid #283344; }
+.marathon h2 { font-size: 23px; letter-spacing: -.02em; margin-bottom: 12px; }
+.marathon section > p { color: #adbed3; max-width: 1050px; margin: 9px 0 18px; }
+.marathon-table { overflow-x: auto; border: 1px solid #293649; border-radius: 7px; background: #0e1622; }
+.marathon table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.marathon caption { text-align: left; padding: 14px 16px; color: #9eb0c7; font-size: 11px; }
+.marathon th, .marathon td { padding: 12px 14px; border-top: 1px solid #243043; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; vertical-align: top; }
+.marathon thead th { color: #c9d6e8; background: #172233; font-weight: 500; }
+.marathon th[scope="row"] { text-align: left; font-weight: 500; color: #e3ebf6; }
+.marathon small { display: block; font-size: 10px; color: #8b9fb9; margin-top: 5px; }
+.marathon tbody tr:hover { background: #142033; }
+.marathon .marathon-note { font-size: 12px; color: #98abc3; margin-top: 14px; }
+.marathon details { margin-top: 20px; padding: 18px 20px; border: 1px solid #2a374a; border-radius: 7px; }
+.marathon summary { cursor: pointer; font-size: 14px; color: #cddbed; }
+.marathon details p { color: #aebdd1; margin-top: 15px; max-width: 1050px; }
+.marathon-footer { margin-top: 35px; padding-top: 24px; border-top: 1px solid #283344; }
+@media (max-width: 760px) { .marathon { padding: 22px 16px 35px; } .marathon-header { padding-top: 33px; } .marathon-counters { grid-template-columns: repeat(2, 1fr); gap: 10px; } .marathon-counters > div { padding: 16px; } .marathon-lead { font-size: 14px; } .marathon h2 { font-size: 20px; } }

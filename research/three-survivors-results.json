@@ -1,0 +1,913 @@
+{
+  "status": "EXPLORATORY_CONSUMED_DATA_ONLY_NO_PROMOTION",
+  "models": [
+    "TOM_RTH",
+    "COMPRESSED_BREAK5",
+    "SWEEP_REV_1200"
+  ],
+  "protocol_sha256": "ad1613b66465a5aaacbb50517516bd13400faf2d7a26e44fa9b46cff267ec70d",
+  "MNQ_RT_cost_assumption": 6.5,
+  "dollar_ATR_budget": 1000.0,
+  "samples": {
+    "DISCOVERY": {
+      "days": 435,
+      "atr_ready_days": 418,
+      "missing_ATR_days": 17,
+      "original_trade_parity": true,
+      "counts": {
+        "TOM_RTH": {
+          "original": 81,
+          "atr_ready": 78,
+          "missing_ATR_size0": 3
+        },
+        "COMPRESSED_BREAK5": {
+          "original": 109,
+          "atr_ready": 109,
+          "missing_ATR_size0": 0
+        },
+        "SWEEP_REV_1200": {
+          "original": 63,
+          "atr_ready": 62,
+          "missing_ATR_size0": 1
+        }
+      },
+      "variants": {
+        "NQ_ATR": {
+          "TOM_RTH": {
+            "total_R": 8.511759333455002,
+            "mean_R_per_day": 0.01956726283552874,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 1.0994336035258112,
+            "daily_close_drawdown_R": 4.977436736905013,
+            "minute_close_drawdown_R": 5.525608524418935,
+            "worst_day_R": -2.0842154920275497,
+            "positive_days": 50,
+            "profit_factor": 1.4970446765098226,
+            "mean_R_ci95": [
+              -0.008325372317923685,
+              0.04326856411323619
+            ],
+            "total_R_fixed_N_ci95": [
+              -3.621536958296803,
+              18.821825389257743
+            ],
+            "sharpe_ci95": [
+              -0.43503007369294083,
+              2.6080773200777116
+            ],
+            "p_raw": 0.1361863813618638,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.21466113316166735,
+            "cost_R": 0.26295988812304244,
+            "active_days": 78,
+            "p_holm8": 0.9533046695330467
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": 2.311552635157973,
+            "mean_R_per_day": 0.005313914103811433,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.43320287996591667,
+            "daily_close_drawdown_R": 3.6366245718426042,
+            "minute_close_drawdown_R": 3.988784151356884,
+            "worst_day_R": -1.0668782188003954,
+            "positive_days": 59,
+            "profit_factor": 1.1546846081836388,
+            "mean_R_ci95": [
+              -0.012630480797553465,
+              0.02226260738224904
+            ],
+            "total_R_fixed_N_ci95": [
+              -5.494259146935757,
+              9.684234211278334
+            ],
+            "sharpe_ci95": [
+              -0.955627612371695,
+              2.081517598731417
+            ],
+            "p_raw": 0.5680431956804319,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.2617358896815379,
+            "cost_R": 0.320626464859884,
+            "active_days": 109,
+            "p_holm8": 1.0
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 2.397531209500876,
+            "mean_R_per_day": 0.005511565998852589,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.5475819194999346,
+            "daily_close_drawdown_R": 1.7835960867637644,
+            "minute_close_drawdown_R": 2.082427727556499,
+            "worst_day_R": -0.8701309734513274,
+            "positive_days": 31,
+            "profit_factor": 1.3000772632551842,
+            "mean_R_ci95": [
+              -0.003266013593623587,
+              0.015202172738848316
+            ],
+            "total_R_fixed_N_ci95": [
+              -1.4207159132262603,
+              6.612945141399018
+            ],
+            "sharpe_ci95": [
+              -0.34700040989049424,
+              1.3419563397634937
+            ],
+            "p_raw": 0.24937506249375063,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.16878550378305385,
+            "cost_R": 0.20676224213424094,
+            "active_days": 62,
+            "p_holm8": 1.0
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": 4.40694772603795,
+            "mean_R_per_day": 0.01013091431273092,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 1.277824817888306,
+            "daily_close_drawdown_R": 1.9796786144690124,
+            "minute_close_drawdown_R": 2.2254940796813685,
+            "worst_day_R": -0.6947384973425167,
+            "positive_days": 118,
+            "profit_factor": 1.3781940714083813,
+            "mean_R_ci95": [
+              -0.0014112628125857764,
+              0.020287055308889086
+            ],
+            "total_R_fixed_N_ci95": [
+              -0.6138993234748127,
+              8.824869059366753
+            ],
+            "sharpe_ci95": [
+              -0.1727821499476323,
+              2.585720194944594
+            ],
+            "p_raw": 0.0705929407059294,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.21506084220875313,
+            "cost_R": 0.26344953170572244,
+            "active_days": 212,
+            "p_holm8": 0.5647435256474352
+          }
+        },
+        "MNQ_FRACTIONAL": {
+          "TOM_RTH": {
+            "total_R": 8.077070538802626,
+            "mean_R_per_day": 0.018567978250120982,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 1.0438401101972665,
+            "daily_close_drawdown_R": 5.161178470998185,
+            "minute_close_drawdown_R": 5.7093502585121065,
+            "worst_day_R": -2.094914614586282,
+            "positive_days": 50,
+            "profit_factor": 1.4671504719329869,
+            "mean_R_ci95": [
+              -0.009383683753709385,
+              0.042323373169479005
+            ],
+            "total_R_fixed_N_ci95": [
+              -4.081902432863583,
+              18.410667328723367
+            ],
+            "sharpe_ci95": [
+              -0.49024838828430445,
+              2.559803623732217
+            ],
+            "p_raw": 0.15828417158284172,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 107.33056658083366,
+            "cost_R": 0.6976486827754188,
+            "active_days": 78,
+            "total_USD_reference": 8077.070538802626,
+            "minute_close_drawdown_USD_reference": 5709.350258512107
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": 1.7815374585528585,
+            "mean_R_per_day": 0.004095488410466341,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.33378789507747686,
+            "daily_close_drawdown_R": 3.70116175907061,
+            "minute_close_drawdown_R": 4.052144925077376,
+            "worst_day_R": -1.0727774020704364,
+            "positive_days": 58,
+            "profit_factor": 1.1172034382366498,
+            "mean_R_ci95": [
+              -0.013921418875035807,
+              0.02117249382335589
+            ],
+            "total_R_fixed_N_ci95": [
+              -6.055817210640576,
+              9.210034813159812
+            ],
+            "sharpe_ci95": [
+              -1.0518905048721259,
+              1.980550263311601
+            ],
+            "p_raw": 0.6623337666233376,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 130.867944840769,
+            "cost_R": 0.8506416414649985,
+            "active_days": 108,
+            "total_USD_reference": 1781.5374585528584,
+            "minute_close_drawdown_USD_reference": 4052.144925077376
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 2.0557405643401925,
+            "mean_R_per_day": 0.004725840377793546,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.46980116445814973,
+            "daily_close_drawdown_R": 1.8977049256044953,
+            "minute_close_drawdown_R": 2.1965365663972305,
+            "worst_day_R": -0.8781592920353982,
+            "positive_days": 31,
+            "profit_factor": 1.2518432577194096,
+            "mean_R_ci95": [
+              -0.0041763808240765825,
+              0.014585003586748645
+            ],
+            "total_R_fixed_N_ci95": [
+              -1.8167256584733134,
+              6.344476560235661
+            ],
+            "sharpe_ci95": [
+              -0.44542787170663906,
+              1.2782084190914764
+            ],
+            "p_raw": 0.3311668833116688,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 84.3927518915269,
+            "cost_R": 0.5485528872949252,
+            "active_days": 62,
+            "total_USD_reference": 2055.7405643401926,
+            "minute_close_drawdown_USD_reference": 2196.5365663972307
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": 3.971449520565225,
+            "mean_R_per_day": 0.00912976901279362,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 1.1520520254617335,
+            "daily_close_drawdown_R": 2.1565669582389937,
+            "minute_close_drawdown_R": 2.40238242345135,
+            "worst_day_R": -0.6983048715287605,
+            "positive_days": 117,
+            "profit_factor": 1.3349471339036003,
+            "mean_R_ci95": [
+              -0.002552804722992176,
+              0.019408029336369658
+            ],
+            "total_R_fixed_N_ci95": [
+              -1.1104700545015966,
+              8.442492761320802
+            ],
+            "sharpe_ci95": [
+              -0.31102746656981456,
+              2.4706394958683866
+            ],
+            "p_raw": 0.10578942105789421,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 107.53042110437654,
+            "cost_R": 0.6989477371784478,
+            "active_days": 211,
+            "total_USD_reference": 3971.449520565225,
+            "minute_close_drawdown_USD_reference": 2402.38242345135
+          }
+        },
+        "MNQ_INTEGER": {
+          "TOM_RTH": {
+            "total_R": 5.3660000000000005,
+            "mean_R_per_day": 0.012335632183908048,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.9462507384472515,
+            "daily_close_drawdown_R": 4.1095,
+            "minute_close_drawdown_R": 4.521,
+            "worst_day_R": -1.586,
+            "positive_days": 41,
+            "profit_factor": 1.4705572850440654,
+            "mean_R_ci95": [
+              -0.008707946600552142,
+              0.03133307901284396
+            ],
+            "total_R_fixed_N_ci95": [
+              -3.787956771240182,
+              13.629889370587124
+            ],
+            "sharpe_ci95": [
+              -0.6328278960260212,
+              2.508715487952632
+            ],
+            "p_raw": 0.2258774122587741,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 73.0,
+            "cost_R": 0.47450000000000037,
+            "active_days": 64,
+            "total_USD_reference": 5366.000000000001,
+            "minute_close_drawdown_USD_reference": 4521.0
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": -0.06349999999999967,
+            "mean_R_per_day": -0.0001459770114942521,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": -0.01718921197580829,
+            "daily_close_drawdown_R": 2.3764999999999996,
+            "minute_close_drawdown_R": 2.8319999999999994,
+            "worst_day_R": -0.7365,
+            "positive_days": 34,
+            "profit_factor": 0.9932829110911301,
+            "mean_R_ci95": [
+              -0.012003939845474612,
+              0.010554858132390446
+            ],
+            "total_R_fixed_N_ci95": [
+              -5.2217138327814565,
+              4.591363287589844
+            ],
+            "sharpe_ci95": [
+              -1.3195032600821044,
+              1.3607635078217852
+            ],
+            "p_raw": 0.9826017398260174,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 77.0,
+            "cost_R": 0.5005000000000004,
+            "active_days": 71,
+            "total_USD_reference": -63.499999999999666,
+            "minute_close_drawdown_USD_reference": 2831.9999999999995
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 2.3195000000000006,
+            "mean_R_per_day": 0.005332183908045979,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.6573311932117265,
+            "daily_close_drawdown_R": 1.4029999999999998,
+            "minute_close_drawdown_R": 1.6035,
+            "worst_day_R": -0.625,
+            "positive_days": 25,
+            "profit_factor": 1.4810743544540081,
+            "mean_R_ci95": [
+              -0.003582241658579747,
+              0.016307144303065353
+            ],
+            "total_R_fixed_N_ci95": [
+              -1.55827512148219,
+              7.093607771833429
+            ],
+            "sharpe_ci95": [
+              -0.5972050892094178,
+              1.5170388786143734
+            ],
+            "p_raw": 0.30026997300269975,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 55.0,
+            "cost_R": 0.3575000000000002,
+            "active_days": 47,
+            "total_USD_reference": 2319.5000000000005,
+            "minute_close_drawdown_USD_reference": 1603.5
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": 0.0,
+            "mean_R_per_day": 0.0,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": null,
+            "daily_close_drawdown_R": 0.0,
+            "minute_close_drawdown_R": 0.0,
+            "worst_day_R": 0.0,
+            "positive_days": 0,
+            "profit_factor": null,
+            "mean_R_ci95": [
+              0.0,
+              0.0
+            ],
+            "total_R_fixed_N_ci95": [
+              0.0,
+              0.0
+            ],
+            "sharpe_ci95": [
+              0.0,
+              0.0
+            ],
+            "p_raw": 1.0,
+            "months": 22,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.0,
+            "cost_R": 0.0,
+            "active_days": 0,
+            "total_USD_reference": 0.0,
+            "minute_close_drawdown_USD_reference": 0.0
+          }
+        }
+      },
+      "daily_net_R_correlation": [
+        [
+          1.0,
+          -0.011371254380469757,
+          0.05061171428753514
+        ],
+        [
+          -0.011371254380469755,
+          1.0,
+          -0.06473935591046397
+        ],
+        [
+          0.05061171428753514,
+          -0.06473935591046397,
+          0.9999999999999998
+        ]
+      ],
+      "ATR_ready_daily_net_R_correlation": [
+        [
+          1.0,
+          -0.011449590348860105,
+          0.050520494242391696
+        ],
+        [
+          -0.011449590348860103,
+          1.0,
+          -0.06478028198396749
+        ],
+        [
+          0.05052049424239169,
+          -0.0647802819839675,
+          1.0
+        ]
+      ],
+      "coactive_days": [
+        [
+          78,
+          15,
+          10
+        ],
+        [
+          15,
+          109,
+          12
+        ],
+        [
+          10,
+          12,
+          62
+        ]
+      ]
+    },
+    "CONTINUOUS_2022_2024_UNVERIFIED": {
+      "days": 493,
+      "atr_ready_days": 477,
+      "missing_ATR_days": 16,
+      "original_trade_parity": true,
+      "counts": {
+        "TOM_RTH": {
+          "original": 90,
+          "atr_ready": 86,
+          "missing_ATR_size0": 4
+        },
+        "COMPRESSED_BREAK5": {
+          "original": 106,
+          "atr_ready": 106,
+          "missing_ATR_size0": 0
+        },
+        "SWEEP_REV_1200": {
+          "original": 70,
+          "atr_ready": 69,
+          "missing_ATR_size0": 1
+        }
+      },
+      "variants": {
+        "NQ_ATR": {
+          "TOM_RTH": {
+            "total_R": 7.424090128542929,
+            "mean_R_per_day": 0.015059006345928862,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.9626522486706043,
+            "daily_close_drawdown_R": 3.756401586669133,
+            "minute_close_drawdown_R": 4.24025262634858,
+            "worst_day_R": -1.4488137472283813,
+            "positive_days": 55,
+            "profit_factor": 1.4397898641727473,
+            "mean_R_ci95": [
+              -0.00960566109797472,
+              0.03712117388692985
+            ],
+            "total_R_fixed_N_ci95": [
+              -4.735590921301537,
+              18.300738726256416
+            ],
+            "sharpe_ci95": [
+              -0.5911332187731827,
+              2.415944889433746
+            ],
+            "p_raw": 0.21597840215978403,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.3702282546493236,
+            "cost_R": 0.45352961194542135,
+            "active_days": 86,
+            "p_holm8": 1.0
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": 4.5384478953986065,
+            "mean_R_per_day": 0.009205776664094537,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.5430488970111247,
+            "daily_close_drawdown_R": 3.8432968436917774,
+            "minute_close_drawdown_R": 4.912487133794853,
+            "worst_day_R": -1.7126666666666668,
+            "positive_days": 48,
+            "profit_factor": 1.233433597995259,
+            "mean_R_ci95": [
+              -0.015364113502799244,
+              0.025968786200493255
+            ],
+            "total_R_fixed_N_ci95": [
+              -7.574507956880027,
+              12.802611596843175
+            ],
+            "sharpe_ci95": [
+              -0.9880319241083483,
+              1.5549943742002
+            ],
+            "p_raw": 0.405959404059594,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.4319249239763605,
+            "cost_R": 0.5291080318710418,
+            "active_days": 106,
+            "p_holm8": 1.0
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 0.6974468629027768,
+            "mean_R_per_day": 0.0014146995190725696,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.16518962742022755,
+            "daily_close_drawdown_R": 3.0932321076670712,
+            "minute_close_drawdown_R": 3.469828908556907,
+            "worst_day_R": -0.8743906299461854,
+            "positive_days": 34,
+            "profit_factor": 1.0750891976098231,
+            "mean_R_ci95": [
+              -0.009966800836652908,
+              0.014033315970380265
+            ],
+            "total_R_fixed_N_ci95": [
+              -4.913632812469884,
+              6.91842477339747
+            ],
+            "sharpe_ci95": [
+              -1.2758673010432977,
+              1.540601244968247
+            ],
+            "p_raw": 0.8214178582141786,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.28848442633749266,
+            "cost_R": 0.35339342226342857,
+            "active_days": 69,
+            "p_holm8": 1.0
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": 4.2199949622814374,
+            "mean_R_per_day": 0.008559827509698656,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 1.0602990852827028,
+            "daily_close_drawdown_R": 1.8759191374637245,
+            "minute_close_drawdown_R": 1.9810945436733478,
+            "worst_day_R": -0.5708888888888889,
+            "positive_days": 115,
+            "profit_factor": 1.3181765679926243,
+            "mean_R_ci95": [
+              -0.0037823365467663157,
+              0.018155564365816897
+            ],
+            "total_R_fixed_N_ci95": [
+              -1.8646919175557937,
+              8.95069323234773
+            ],
+            "sharpe_ci95": [
+              -0.484081032175311,
+              2.287430332314686
+            ],
+            "p_raw": 0.1483851614838516,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 0.36354586832105873,
+            "cost_R": 0.4453436886932975,
+            "active_days": 219,
+            "p_holm8": 0.9533046695330467
+          }
+        },
+        "MNQ_FRACTIONAL": {
+          "TOM_RTH": {
+            "total_R": 6.674377912878047,
+            "mean_R_per_day": 0.013538291912531536,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.8668537448798951,
+            "daily_close_drawdown_R": 3.823404014114578,
+            "minute_close_drawdown_R": 4.316679123927735,
+            "worst_day_R": -1.45509977827051,
+            "positive_days": 53,
+            "profit_factor": 1.3887119419871266,
+            "mean_R_ci95": [
+              -0.011143110979985257,
+              0.03558906521934197
+            ],
+            "total_R_fixed_N_ci95": [
+              -5.493553713132732,
+              17.54540915313559
+            ],
+            "sharpe_ci95": [
+              -0.6839557508489532,
+              2.3262601333568336
+            ],
+            "p_raw": 0.27207279272072793,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 185.11412732466184,
+            "cost_R": 1.2032418276103014,
+            "active_days": 85,
+            "total_USD_reference": 6674.377912878047,
+            "minute_close_drawdown_USD_reference": 4316.679123927735
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": 3.6637999243464767,
+            "mean_R_per_day": 0.007431642848572975,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.438650686080978,
+            "daily_close_drawdown_R": 4.126703924050148,
+            "minute_close_drawdown_R": 5.252884052384289,
+            "worst_day_R": -1.7228828828828828,
+            "positive_days": 48,
+            "profit_factor": 1.1839601679398204,
+            "mean_R_ci95": [
+              -0.017192265047288505,
+              0.02416845436079667
+            ],
+            "total_R_fixed_N_ci95": [
+              -8.475786668313233,
+              11.915047999872758
+            ],
+            "sharpe_ci95": [
+              -1.1022351342588792,
+              1.4540629834051024
+            ],
+            "p_raw": 0.5031496850314968,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 215.96246198818028,
+            "cost_R": 1.4037560029231722,
+            "active_days": 106,
+            "total_USD_reference": 3663.799924346477,
+            "minute_close_drawdown_USD_reference": 5252.884052384289
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 0.11326589956935451,
+            "mean_R_per_day": 0.0002297482749885487,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.026804738940832566,
+            "daily_close_drawdown_R": 3.227879280512861,
+            "minute_close_drawdown_R": 3.61427051912942,
+            "worst_day_R": -0.8863564419119975,
+            "positive_days": 33,
+            "profit_factor": 1.0118019365819313,
+            "mean_R_ci95": [
+              -0.011175706812140803,
+              0.01292216632159503
+            ],
+            "total_R_fixed_N_ci95": [
+              -5.509623458385416,
+              6.37062799654635
+            ],
+            "sharpe_ci95": [
+              -1.41640574547679,
+              1.4211088820936726
+            ],
+            "p_raw": 0.9694030596940306,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 144.2422131687463,
+            "cost_R": 0.9375743855968508,
+            "active_days": 69,
+            "total_USD_reference": 113.26589956935452,
+            "minute_close_drawdown_USD_reference": 3614.2705191294203
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": 3.483814578931293,
+            "mean_R_per_day": 0.00706656101203102,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.8757361154658466,
+            "daily_close_drawdown_R": 1.9925835452242606,
+            "minute_close_drawdown_R": 2.100833622004894,
+            "worst_day_R": -0.5742942942942942,
+            "positive_days": 113,
+            "profit_factor": 1.255546044889176,
+            "mean_R_ci95": [
+              -0.005298467051255414,
+              0.0167361089346213
+            ],
+            "total_R_fixed_N_ci95": [
+              -2.612144256268919,
+              8.250901704768301
+            ],
+            "sharpe_ci95": [
+              -0.6845518428538957,
+              2.1136671109512717
+            ],
+            "p_raw": 0.23937606239376064,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 181.7729341605295,
+            "cost_R": 1.1815240720434417,
+            "active_days": 218,
+            "total_USD_reference": 3483.814578931293,
+            "minute_close_drawdown_USD_reference": 2100.833622004894
+          }
+        },
+        "MNQ_INTEGER": {
+          "TOM_RTH": {
+            "total_R": 4.279999999999999,
+            "mean_R_per_day": 0.0086815415821501,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.6839952225203869,
+            "daily_close_drawdown_R": 3.0515,
+            "minute_close_drawdown_R": 3.3965,
+            "worst_day_R": -1.423,
+            "positive_days": 53,
+            "profit_factor": 1.3053652968036529,
+            "mean_R_ci95": [
+              -0.010499017137096773,
+              0.026140685852704022
+            ],
+            "total_R_fixed_N_ci95": [
+              -5.176015448588709,
+              12.887358125383082
+            ],
+            "sharpe_ci95": [
+              -0.7928532776677043,
+              2.0936005463884686
+            ],
+            "p_raw": 0.36296370362963704,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 147.0,
+            "cost_R": 0.9554999999999995,
+            "active_days": 85,
+            "total_USD_reference": 4279.999999999999,
+            "minute_close_drawdown_USD_reference": 3396.5
+          },
+          "COMPRESSED_BREAK5": {
+            "total_R": 2.8539999999999996,
+            "mean_R_per_day": 0.005789046653144015,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.40169711402066344,
+            "daily_close_drawdown_R": 3.737,
+            "minute_close_drawdown_R": 4.76,
+            "worst_day_R": -1.366,
+            "positive_days": 48,
+            "profit_factor": 1.1799836034558868,
+            "mean_R_ci95": [
+              -0.014824589505739458,
+              0.019923734317350304
+            ],
+            "total_R_fixed_N_ci95": [
+              -7.308522626329553,
+              9.8224010184537
+            ],
+            "sharpe_ci95": [
+              -1.1915361186219446,
+              1.3867306384177192
+            ],
+            "p_raw": 0.5395460453954605,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 171.0,
+            "cost_R": 1.1114999999999986,
+            "active_days": 106,
+            "total_USD_reference": 2853.9999999999995,
+            "minute_close_drawdown_USD_reference": 4760.0
+          },
+          "SWEEP_REV_1200": {
+            "total_R": 0.1559999999999997,
+            "mean_R_per_day": 0.00031643002028397505,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": 0.048866356985507065,
+            "daily_close_drawdown_R": 2.6560000000000006,
+            "minute_close_drawdown_R": 2.987,
+            "worst_day_R": -0.6,
+            "positive_days": 33,
+            "profit_factor": 1.0220136879983066,
+            "mean_R_ci95": [
+              -0.00817959312894564,
+              0.009274850894632201
+            ],
+            "total_R_fixed_N_ci95": [
+              -4.0325394125702,
+              4.572501491053675
+            ],
+            "sharpe_ci95": [
+              -1.376479698109524,
+              1.359386456927253
+            ],
+            "p_raw": 0.9442055794420557,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 109.0,
+            "cost_R": 0.7084999999999995,
+            "active_days": 69,
+            "total_USD_reference": 155.9999999999997,
+            "minute_close_drawdown_USD_reference": 2987.0
+          },
+          "PORTFOLIO_EQUAL_THIRD": {
+            "total_R": -0.11299999999999996,
+            "mean_R_per_day": -0.00022920892494929,
+            "median_R_per_day": 0.0,
+            "sharpe_daily_annualized": -0.22191758351279361,
+            "daily_close_drawdown_R": 0.32999999999999996,
+            "minute_close_drawdown_R": 0.544,
+            "worst_day_R": -0.289,
+            "positive_days": 1,
+            "profit_factor": 0.6575757575757577,
+            "mean_R_ci95": [
+              -0.00189046895750332,
+              0.0012495201535508637
+            ],
+            "total_R_fixed_N_ci95": [
+              -0.9320011960491368,
+              0.6160134357005758
+            ],
+            "sharpe_ci95": [
+              -1.3172783637514798,
+              1.153127734164844
+            ],
+            "p_raw": 0.7637236276372362,
+            "months": 25,
+            "replications": 10000,
+            "sum_contracts_or_point_weights": 5.0,
+            "cost_R": 0.0325,
+            "active_days": 3,
+            "total_USD_reference": -112.99999999999996,
+            "minute_close_drawdown_USD_reference": 544.0
+          }
+        }
+      },
+      "daily_net_R_correlation": [
+        [
+          1.0,
+          -0.028976573264823,
+          0.007016848518521684
+        ],
+        [
+          -0.028976573264822995,
+          1.0,
+          -0.018505589291392996
+        ],
+        [
+          0.007016848518521684,
+          -0.018505589291392996,
+          1.0
+        ]
+      ],
+      "ATR_ready_daily_net_R_correlation": [
+        [
+          1.0,
+          -0.029048665239053147,
+          0.0069960838964667526
+        ],
+        [
+          -0.02904866523905315,
+          1.0,
+          -0.018517951955749724
+        ],
+        [
+          0.0069960838964667526,
+          -0.018517951955749724,
+          1.0
+        ]
+      ],
+      "coactive_days": [
+        [
+          86,
+          19,
+          10
+        ],
+        [
+          19,
+          106,
+          13
+        ],
+        [
+          10,
+          13,
+          69
+        ]
+      ]
+    }
+  }
+}

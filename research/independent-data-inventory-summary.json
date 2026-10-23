@@ -1,0 +1,17 @@
+{
+  "status": "NO_VERIFIED_INDEPENDENT_TEST_DATA_READY",
+  "files_scanned": 170,
+  "records": 170,
+  "unique_byte_contents": 101,
+  "registered_unique_source_contents": 69,
+  "outside_date_label_files": 14,
+  "inventory_errors": 0,
+  "verified_independent_test_days": 0,
+  "technical_eligible_independent_days": null,
+  "eligible_count_reason": "No new quality/contract/contamination audit or sample release; not a claim zero technically possible sessions.",
+  "observed_new_hypothesis_outcomes": false,
+  "ohlcv_numeric_analysis": false,
+  "current_barchart_entitlement": "NOT_VERIFIED_NO_EXISTING_ENABLED_BROWSER_TAB",
+  "no_paid_account_or_purchase": true,
+  "coverage_scope": "Downloads recursively and four explicitly listed project data roots; not a whole-disk search; CSV only; no archives extracted"
+}

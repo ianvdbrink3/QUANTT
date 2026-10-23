@@ -1,0 +1,1419 @@
+{
+  "status": "INSUFFICIENT_EVIDENCE_NO_PROMOTION",
+  "verdict_text": "De oorspronkelijke maandwisselregel blijft netto positief in beide gebruikte bronnen. De vaste audit levert geen consistente, voor alle vier contrasten gecorrigeerde bevestiging van extra kalendermeerwaarde. Niet promoveren tot bewezen winstmodel. Geen filters toevoegen op basis van deze uitslag.",
+  "protocol_sha256": "6d1056966e3cb47e02f0793dd5b02073676b2fcc1330157a20034ecc66067eb9",
+  "protected_files": 497,
+  "samples": {
+    "DISCOVERY": {
+      "source": "DISCOVERY",
+      "period": [
+        "2024-12-30",
+        "2026-09-30"
+      ],
+      "complete_days": 435,
+      "replay": {
+        "status": "ORIGINAL_TOM_REPRODUCED_FROM_SOURCE_BARS",
+        "trades": 81,
+        "compared_fields": 4,
+        "net_points": 4364.025
+      },
+      "tom": {
+        "days": 81,
+        "gross_points": 4463.25,
+        "net_points": 4364.025,
+        "net_dollars": 87280.5,
+        "mean_net": 53.876851851851846,
+        "median_net": 90.525,
+        "winrate": 0.6419753086419753,
+        "profit_factor": 1.7059787026664126,
+        "closed_trade_drawdown": 1307.0749999999975,
+        "worst_day": -583.975,
+        "worst_day_date": "2025-03-03"
+      },
+      "non_tom": {
+        "days": 354,
+        "gross_points": -3057.75,
+        "net_points": -3491.3999999999996,
+        "net_dollars": -69828.0,
+        "mean_net": -9.862711864406778,
+        "median_net": -1.475,
+        "winrate": 0.4943502824858757,
+        "profit_factor": 0.8948089129516191,
+        "closed_trade_drawdown": 4338.524999999999,
+        "worst_day": -1074.225,
+        "worst_day_date": "2025-11-20"
+      },
+      "all_rth_long": {
+        "days": 435,
+        "gross_points": 1405.5,
+        "net_points": 872.6249999999982,
+        "net_dollars": 17452.499999999964,
+        "mean_net": 2.0060344827586163,
+        "median_net": 13.525,
+        "winrate": 0.5218390804597701,
+        "profit_factor": 1.0221632838106758,
+        "closed_trade_drawdown": 4149.824999999999,
+        "worst_day": -1074.225,
+        "worst_day_date": "2025-11-20"
+      },
+      "all_benchmark_excess_per_tom_day": 51.87081736909323,
+      "raw_contrast": {
+        "unit": "net_NQ_points",
+        "months": 22,
+        "tom_days": 81,
+        "non_tom_days": 354,
+        "tom_mean": 53.87685185185184,
+        "non_tom_mean": -9.862711864406778,
+        "difference": 63.739563716258616,
+        "tom_ci95": [
+          3.91246141975309,
+          104.422667721519
+        ],
+        "non_tom_ci95": [
+          -35.58368318018615,
+          16.64253477956935
+        ],
+        "difference_ci95": [
+          12.050234820167514,
+          116.3570047721468
+        ],
+        "p_raw": 0.015898410158984102,
+        "bootstrap_valid_replications": 10000,
+        "method": "Fixed2-consecutive-month moving block bootstrap, pooled sums/counts,10000 draws; approximate null-centered p.",
+        "limitation": "Exploratory nominal intervals, weak dependence and stationarity assumed, few months; not independent confirmation. Holm4 corrects only this fixed audit family, not the full accumulated research selection history.",
+        "p_holm4": 0.06359364063593641
+      },
+      "normalized_contrast": {
+        "unit": "net_points_per_prior_ATR",
+        "months": 22,
+        "tom_days": 78,
+        "non_tom_days": 340,
+        "tom_mean": 0.10912511965967951,
+        "non_tom_mean": -0.02629709188856902,
+        "difference": 0.13542221154824852,
+        "tom_ci95": [
+          -0.03876028025524561,
+          0.2431565100254022
+        ],
+        "non_tom_ci95": [
+          -0.09018653443024185,
+          0.03498444720435206
+        ],
+        "difference_ci95": [
+          -0.024103037353691577,
+          0.2857608921940728
+        ],
+        "p_raw": 0.08309169083091691,
+        "bootstrap_valid_replications": 10000,
+        "method": "Fixed2-consecutive-month moving block bootstrap, pooled sums/counts,10000 draws; approximate null-centered p.",
+        "limitation": "Exploratory nominal intervals, weak dependence and stationarity assumed, few months; not independent confirmation. Holm4 corrects only this fixed audit family, not the full accumulated research selection history.",
+        "p_holm4": 0.24927507249275074
+      },
+      "normalization": {
+        "common_sample_days": 418,
+        "tom_missing_atr": 3,
+        "non_tom_missing_atr": 14,
+        "groups": {
+          "tom": {
+            "days": 78,
+            "mean_prior_atr": 403.0709706959707,
+            "median_prior_atr": 375.7232142857143,
+            "mean_net_points": 55.313461538461524,
+            "mean_net_per_atr": 0.10912511965967954
+          },
+          "non_tom": {
+            "days": 340,
+            "mean_prior_atr": 424.24128151260504,
+            "median_prior_atr": 407.8571428571429,
+            "mean_net_points": -7.7272058823529415,
+            "mean_net_per_atr": -0.026297091888569008
+          }
+        },
+        "original_model_exclusions_changed": false,
+        "interpretation": "PriorATR normalization is a descriptive common-sample risk-unit comparison, not a sized trading model or causal identification."
+      },
+      "risk": {
+        "top3_net_points": 1649.8249999999998,
+        "top3_share_of_total_net": 0.3780512256460492,
+        "top3_dates": [
+          "2026-08-04",
+          "2026-03-31",
+          "2026-08-03"
+        ],
+        "without_top3": {
+          "days": 78,
+          "gross_points": 2809.75,
+          "net_points": 2714.2,
+          "net_dollars": 54284.0,
+          "mean_net": 34.797435897435896,
+          "median_net": 81.525,
+          "winrate": 0.6282051282051282,
+          "profit_factor": 1.4390825888433676,
+          "closed_trade_drawdown": 1307.0749999999975,
+          "worst_day": -583.975,
+          "worst_day_date": "2025-03-03"
+        },
+        "leave_one_day_out_mean": [
+          46.521874999999994,
+          61.85
+        ],
+        "leave_one_quarter_out": [
+          {
+            "omitted": "2025Q1",
+            "days": 69,
+            "gross_points": 3634.0,
+            "net_points": 3549.475,
+            "net_dollars": 70989.5,
+            "mean_net": 51.44166666666666,
+            "median_net": 86.775,
+            "winrate": 0.6231884057971014,
+            "profit_factor": 1.6795724761157165,
+            "closed_trade_drawdown": 1307.0750000000005,
+            "worst_day": -539.475,
+            "worst_day_date": "2026-07-02"
+          },
+          {
+            "omitted": "2025Q2",
+            "days": 69,
+            "gross_points": 3222.75,
+            "net_points": 3138.2249999999995,
+            "net_dollars": 62764.499999999985,
+            "mean_net": 45.48152173913043,
+            "median_net": 90.525,
+            "winrate": 0.6231884057971014,
+            "profit_factor": 1.5379107317324006,
+            "closed_trade_drawdown": 1307.0750000000003,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          {
+            "omitted": "2025Q3",
+            "days": 70,
+            "gross_points": 4704.75,
+            "net_points": 4618.999999999998,
+            "net_dollars": 92379.99999999997,
+            "mean_net": 65.98571428571427,
+            "median_net": 95.775,
+            "winrate": 0.6571428571428571,
+            "profit_factor": 1.9107489672986107,
+            "closed_trade_drawdown": 1221.3249999999985,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          {
+            "omitted": "2025Q4",
+            "days": 70,
+            "gross_points": 4509.5,
+            "net_points": 4423.750000000001,
+            "net_dollars": 88475.00000000001,
+            "mean_net": 63.196428571428584,
+            "median_net": 92.4,
+            "winrate": 0.6714285714285714,
+            "profit_factor": 1.8405097683432516,
+            "closed_trade_drawdown": 1247.3499999999985,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          {
+            "omitted": "2026Q1",
+            "days": 70,
+            "gross_points": 4012.75,
+            "net_points": 3926.9999999999995,
+            "net_dollars": 78539.99999999999,
+            "mean_net": 56.099999999999994,
+            "median_net": 88.65,
+            "winrate": 0.6571428571428571,
+            "profit_factor": 1.8218662034469404,
+            "closed_trade_drawdown": 797.1249999999995,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          {
+            "omitted": "2026Q2",
+            "days": 69,
+            "gross_points": 2689.0,
+            "net_points": 2604.4749999999995,
+            "net_dollars": 52089.499999999985,
+            "mean_net": 37.746014492753616,
+            "median_net": 67.775,
+            "winrate": 0.6086956521739131,
+            "profit_factor": 1.435107107207444,
+            "closed_trade_drawdown": 1307.0749999999975,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          {
+            "omitted": "2026Q3",
+            "days": 69,
+            "gross_points": 4006.75,
+            "net_points": 3922.225,
+            "net_dollars": 78444.5,
+            "mean_net": 56.84384057971015,
+            "median_net": 97.275,
+            "winrate": 0.6521739130434783,
+            "profit_factor": 1.7950751548199424,
+            "closed_trade_drawdown": 1307.0749999999975,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          }
+        ],
+        "minute_close_equity_drawdown": 1512.824999999997,
+        "mark_to_market_assumption": "Minute-close marks plus full24.50RT deduction at entry. Not tick-equity or a guaranteed worst intrabar drawdown; closed-trade DD reported separately.",
+        "mae": {
+          "p10": 17.5,
+          "p25": 45.75,
+          "median": 102.25,
+          "p75": 234.75,
+          "p90": 364.0,
+          "p95": 497.0,
+          "max": 747.75
+        },
+        "mfe": {
+          "p10": 30.25,
+          "p25": 96.25,
+          "median": 190.0,
+          "p75": 272.75,
+          "p90": 407.0,
+          "p95": 545.25,
+          "max": 721.75
+        },
+        "net_distribution": {
+          "p10": -224.725,
+          "p25": -126.725,
+          "median": 90.525,
+          "p75": 209.025,
+          "p90": 328.275,
+          "p95": 456.025,
+          "max": 642.275
+        },
+        "capital_limit": "No account size, margin schedule, risk budget or tick fills; cannot declare capital suitability."
+      },
+      "quarters": [
+        {
+          "quarter": "2024Q4",
+          "tom": {
+            "days": 0,
+            "net_points": 0.0,
+            "net_dollars": 0.0,
+            "mean_net": null,
+            "median_net": null,
+            "winrate": null,
+            "profit_factor": null,
+            "closed_trade_drawdown": null
+          },
+          "non_tom": {
+            "days": 2,
+            "gross_points": -233.25,
+            "net_points": -235.7,
+            "net_dollars": -4714.0,
+            "mean_net": -117.85,
+            "median_net": -117.85,
+            "winrate": 0.5,
+            "profit_factor": 0.005380314379153919,
+            "closed_trade_drawdown": 236.975,
+            "worst_day": -236.975,
+            "worst_day_date": "2024-12-31"
+          },
+          "difference": null
+        },
+        {
+          "quarter": "2025Q1",
+          "tom": {
+            "days": 12,
+            "gross_points": 829.25,
+            "net_points": 814.5499999999998,
+            "net_dollars": 16290.999999999996,
+            "mean_net": 67.87916666666665,
+            "median_net": 199.275,
+            "winrate": 0.75,
+            "profit_factor": 1.849883924146386,
+            "closed_trade_drawdown": 583.975,
+            "worst_day": -583.975,
+            "worst_day_date": "2025-03-03"
+          },
+          "non_tom": {
+            "days": 48,
+            "gross_points": -2437.75,
+            "net_points": -2496.55,
+            "net_dollars": -49931.0,
+            "mean_net": -52.01145833333334,
+            "median_net": -23.6,
+            "winrate": 0.4791666666666667,
+            "profit_factor": 0.556553209440707,
+            "closed_trade_drawdown": 2827.1999999999994,
+            "worst_day": -733.725,
+            "worst_day_date": "2025-02-27"
+          },
+          "difference": 119.89062499999999
+        },
+        {
+          "quarter": "2025Q2",
+          "tom": {
+            "days": 12,
+            "gross_points": 1240.5,
+            "net_points": 1225.8000000000002,
+            "net_dollars": 24516.000000000004,
+            "mean_net": 102.15000000000002,
+            "median_net": 74.775,
+            "winrate": 0.75,
+            "profit_factor": 4.5282435057926165,
+            "closed_trade_drawdown": 239.22500000000002,
+            "worst_day": -239.225,
+            "worst_day_date": "2025-04-03"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": 2169.5,
+            "net_points": 2108.25,
+            "net_dollars": 42165.0,
+            "mean_net": 42.165,
+            "median_net": 24.65,
+            "winrate": 0.54,
+            "profit_factor": 1.4865089392339774,
+            "closed_trade_drawdown": 911.975,
+            "worst_day": -911.975,
+            "worst_day_date": "2025-04-08"
+          },
+          "difference": 59.98500000000002
+        },
+        {
+          "quarter": "2025Q3",
+          "tom": {
+            "days": 11,
+            "gross_points": -241.5,
+            "net_points": -254.9750000000001,
+            "net_dollars": -5099.500000000002,
+            "mean_net": -23.179545454545465,
+            "median_net": 27.525,
+            "winrate": 0.5454545454545454,
+            "profit_factor": 0.7702669219506701,
+            "closed_trade_drawdown": 797.125,
+            "worst_day": -394.475,
+            "worst_day_date": "2025-07-31"
+          },
+          "non_tom": {
+            "days": 52,
+            "gross_points": 447.0,
+            "net_points": 383.29999999999995,
+            "net_dollars": 7665.999999999999,
+            "mean_net": 7.371153846153845,
+            "median_net": 17.65,
+            "winrate": 0.5384615384615384,
+            "profit_factor": 1.1712575117842867,
+            "closed_trade_drawdown": 557.075,
+            "worst_day": -293.475,
+            "worst_day_date": "2025-08-19"
+          },
+          "difference": -30.55069930069931
+        },
+        {
+          "quarter": "2025Q4",
+          "tom": {
+            "days": 11,
+            "gross_points": -46.25,
+            "net_points": -59.72499999999994,
+            "net_dollars": -1194.4999999999986,
+            "mean_net": -5.4295454545454485,
+            "median_net": -56.975,
+            "winrate": 0.45454545454545453,
+            "profit_factor": 0.934964882670006,
+            "closed_trade_drawdown": 693.625,
+            "worst_day": -224.725,
+            "worst_day_date": "2025-12-31"
+          },
+          "non_tom": {
+            "days": 51,
+            "gross_points": -1842.5,
+            "net_points": -1904.9749999999995,
+            "net_dollars": -38099.499999999985,
+            "mean_net": -37.35245098039215,
+            "median_net": 33.025,
+            "winrate": 0.5294117647058824,
+            "profit_factor": 0.6725102717942548,
+            "closed_trade_drawdown": 2203.949999999999,
+            "worst_day": -1074.225,
+            "worst_day_date": "2025-11-20"
+          },
+          "difference": 31.9229055258467
+        },
+        {
+          "quarter": "2026Q1",
+          "tom": {
+            "days": 11,
+            "gross_points": 450.5,
+            "net_points": 437.02499999999975,
+            "net_dollars": 8740.499999999995,
+            "mean_net": 39.72954545454543,
+            "median_net": 176.275,
+            "winrate": 0.5454545454545454,
+            "profit_factor": 1.3114099937650308,
+            "closed_trade_drawdown": 914.0750000000002,
+            "worst_day": -490.475,
+            "worst_day_date": "2026-02-03"
+          },
+          "non_tom": {
+            "days": 49,
+            "gross_points": -1328.5,
+            "net_points": -1388.525,
+            "net_dollars": -27770.5,
+            "mean_net": -28.337244897959184,
+            "median_net": -47.975,
+            "winrate": 0.42857142857142855,
+            "profit_factor": 0.7246656289348706,
+            "closed_trade_drawdown": 2299.6250000000005,
+            "worst_day": -583.975,
+            "worst_day_date": "2026-02-12"
+          },
+          "difference": 68.06679035250461
+        },
+        {
+          "quarter": "2026Q2",
+          "tom": {
+            "days": 12,
+            "gross_points": 1774.25,
+            "net_points": 1759.5500000000002,
+            "net_dollars": 35191.0,
+            "mean_net": 146.6291666666667,
+            "median_net": 128.9,
+            "winrate": 0.8333333333333334,
+            "profit_factor": 9.991057741440981,
+            "closed_trade_drawdown": 120.22499999999991,
+            "worst_day": -120.225,
+            "worst_day_date": "2026-06-03"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": 1273.75,
+            "net_points": 1212.5,
+            "net_dollars": 24250.0,
+            "mean_net": 24.25,
+            "median_net": 58.775000000000006,
+            "winrate": 0.56,
+            "profit_factor": 1.24234489926447,
+            "closed_trade_drawdown": 2791.124999999999,
+            "worst_day": -1020.975,
+            "worst_day_date": "2026-06-05"
+          },
+          "difference": 122.37916666666669
+        },
+        {
+          "quarter": "2026Q3",
+          "tom": {
+            "days": 12,
+            "gross_points": 456.5,
+            "net_points": 441.7999999999998,
+            "net_dollars": 8835.999999999996,
+            "mean_net": 36.81666666666665,
+            "median_net": 40.775000000000006,
+            "winrate": 0.5833333333333334,
+            "profit_factor": 1.3539000700911186,
+            "closed_trade_drawdown": 756.6500000000001,
+            "worst_day": -539.475,
+            "worst_day_date": "2026-07-02"
+          },
+          "non_tom": {
+            "days": 52,
+            "gross_points": -1106.0,
+            "net_points": -1169.7000000000003,
+            "net_dollars": -23394.000000000007,
+            "mean_net": -22.494230769230775,
+            "median_net": -38.975,
+            "winrate": 0.38461538461538464,
+            "profit_factor": 0.7607706388244075,
+            "closed_trade_drawdown": 2404.274999999998,
+            "worst_day": -580.725,
+            "worst_day_date": "2026-07-29"
+          },
+          "difference": 59.310897435897424
+        }
+      ],
+      "execution_sensitivity": [
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 24.5,
+          "days": 81,
+          "gross_points": 4463.25,
+          "net_points": 4364.025,
+          "net_dollars": 87280.5,
+          "mean_net": 53.876851851851846,
+          "median_net": 90.525,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.7059787026664126,
+          "closed_trade_drawdown": 1307.0749999999975,
+          "worst_day": -583.975,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 34.5,
+          "days": 81,
+          "gross_points": 4463.25,
+          "net_points": 4323.525,
+          "net_dollars": 86470.5,
+          "mean_net": 53.376851851851846,
+          "median_net": 90.025,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.6977901154369126,
+          "closed_trade_drawdown": 1320.5749999999975,
+          "worst_day": -584.475,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 44.5,
+          "days": 81,
+          "gross_points": 4463.25,
+          "net_points": 4283.025,
+          "net_dollars": 85660.5,
+          "mean_net": 52.876851851851846,
+          "median_net": 89.525,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.689639764754187,
+          "closed_trade_drawdown": 1334.0749999999975,
+          "worst_day": -584.975,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 24.5,
+          "days": 81,
+          "gross_points": 4213.25,
+          "net_points": 4114.025,
+          "net_dollars": 82280.5,
+          "mean_net": 50.79043209876543,
+          "median_net": 94.775,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.6727182048965537,
+          "closed_trade_drawdown": 1350.8249999999985,
+          "worst_day": -556.225,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 34.5,
+          "days": 81,
+          "gross_points": 4213.25,
+          "net_points": 4073.525,
+          "net_dollars": 81470.5,
+          "mean_net": 50.290432098765436,
+          "median_net": 94.275,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.6645201283844677,
+          "closed_trade_drawdown": 1359.3249999999985,
+          "worst_day": -556.725,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 44.5,
+          "days": 81,
+          "gross_points": 4213.25,
+          "net_points": 4033.025,
+          "net_dollars": 80660.5,
+          "mean_net": 49.790432098765436,
+          "median_net": 93.775,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.656360743914297,
+          "closed_trade_drawdown": 1367.8249999999985,
+          "worst_day": -557.225,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 24.5,
+          "days": 81,
+          "gross_points": 3768.25,
+          "net_points": 3669.025,
+          "net_dollars": 73380.5,
+          "mean_net": 45.29660493827161,
+          "median_net": 73.025,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.627127480012477,
+          "closed_trade_drawdown": 1072.7999999999993,
+          "worst_day": -615.225,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 34.5,
+          "days": 81,
+          "gross_points": 3768.25,
+          "net_points": 3628.525,
+          "net_dollars": 72570.5,
+          "mean_net": 44.79660493827161,
+          "median_net": 72.525,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.618671702166657,
+          "closed_trade_drawdown": 1076.7999999999993,
+          "worst_day": -615.725,
+          "worst_day_date": "2025-03-03"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 44.5,
+          "days": 81,
+          "gross_points": 3768.25,
+          "net_points": 3588.025,
+          "net_dollars": 71760.5,
+          "mean_net": 44.29660493827161,
+          "median_net": 72.025,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.610257631356274,
+          "closed_trade_drawdown": 1080.7999999999993,
+          "worst_day": -616.225,
+          "worst_day_date": "2025-03-03"
+        }
+      ],
+      "source_status": "REGISTERED_CONTRACT_CHAIN_ALREADY_CONSUMED"
+    },
+    "CONTINUOUS_2022_2024_UNVERIFIED": {
+      "source": "CONTINUOUS_2022_2024_UNVERIFIED",
+      "period": [
+        "2022-12-27",
+        "2024-12-27"
+      ],
+      "complete_days": 493,
+      "replay": {
+        "status": "ORIGINAL_TOM_REPRODUCED_FROM_SOURCE_BARS",
+        "trades": 90,
+        "compared_fields": 4,
+        "net_points": 1440.2500000000002
+      },
+      "tom": {
+        "days": 90,
+        "gross_points": 1550.5,
+        "net_points": 1440.25,
+        "net_dollars": 28805.0,
+        "mean_net": 16.002777777777776,
+        "median_net": 42.4,
+        "winrate": 0.6222222222222222,
+        "profit_factor": 1.3224091422943038,
+        "closed_trade_drawdown": 1149.7499999999995,
+        "worst_day": -499.225,
+        "worst_day_date": "2024-08-01"
+      },
+      "non_tom": {
+        "days": 403,
+        "gross_points": 1665.5,
+        "net_points": 1171.824999999999,
+        "net_dollars": 23436.499999999978,
+        "mean_net": 2.907754342431759,
+        "median_net": 15.525,
+        "winrate": 0.5409429280397022,
+        "profit_factor": 1.0509608223660967,
+        "closed_trade_drawdown": 2924.4999999999845,
+        "worst_day": -784.225,
+        "worst_day_date": "2024-12-18"
+      },
+      "all_rth_long": {
+        "days": 493,
+        "gross_points": 3216.0,
+        "net_points": 2612.074999999998,
+        "net_dollars": 52241.499999999956,
+        "mean_net": 5.29832657200811,
+        "median_net": 20.275,
+        "winrate": 0.5557809330628803,
+        "profit_factor": 1.095116757747815,
+        "closed_trade_drawdown": 3047.6000000000113,
+        "worst_day": -784.225,
+        "worst_day_date": "2024-12-18"
+      },
+      "all_benchmark_excess_per_tom_day": 10.704451205769667,
+      "raw_contrast": {
+        "unit": "net_NQ_points",
+        "months": 25,
+        "tom_days": 90,
+        "non_tom_days": 403,
+        "tom_mean": 16.00277777777777,
+        "non_tom_mean": 2.907754342431757,
+        "difference": 13.095023435346013,
+        "tom_ci95": [
+          -18.039532244071726,
+          44.640131691832515
+        ],
+        "non_tom_ci95": [
+          -9.939725711199763,
+          17.738623184161188
+        ],
+        "difference_ci95": [
+          -23.103832219642033,
+          43.06438375895529
+        ],
+        "p_raw": 0.45365463453654636,
+        "bootstrap_valid_replications": 10000,
+        "method": "Fixed2-consecutive-month moving block bootstrap, pooled sums/counts,10000 draws; approximate null-centered p.",
+        "limitation": "Exploratory nominal intervals, weak dependence and stationarity assumed, few months; not independent confirmation. Holm4 corrects only this fixed audit family, not the full accumulated research selection history.",
+        "p_holm4": 0.6681331866813318
+      },
+      "normalized_contrast": {
+        "unit": "net_points_per_prior_ATR",
+        "months": 25,
+        "tom_days": 86,
+        "non_tom_days": 391,
+        "tom_mean": 0.08632662940166197,
+        "non_tom_mean": 0.012682365584161205,
+        "difference": 0.07364426381750076,
+        "tom_ci95": [
+          -0.052617749070494144,
+          0.2223622262864812
+        ],
+        "non_tom_ci95": [
+          -0.0410356054452742,
+          0.07819468161399086
+        ],
+        "difference_ci95": [
+          -0.0824854584535651,
+          0.21457138941143966
+        ],
+        "p_raw": 0.3340665933406659,
+        "bootstrap_valid_replications": 10000,
+        "method": "Fixed2-consecutive-month moving block bootstrap, pooled sums/counts,10000 draws; approximate null-centered p.",
+        "limitation": "Exploratory nominal intervals, weak dependence and stationarity assumed, few months; not independent confirmation. Holm4 corrects only this fixed audit family, not the full accumulated research selection history.",
+        "p_holm4": 0.6681331866813318
+      },
+      "normalization": {
+        "common_sample_days": 477,
+        "tom_missing_atr": 4,
+        "non_tom_missing_atr": 12,
+        "groups": {
+          "tom": {
+            "days": 86,
+            "mean_prior_atr": 239.1065199335548,
+            "median_prior_atr": 233.77678571428572,
+            "mean_net_points": 19.199418604651168,
+            "mean_net_per_atr": 0.08632662940166196
+          },
+          "non_tom": {
+            "days": 391,
+            "mean_prior_atr": 248.59782608695653,
+            "median_prior_atr": 237.57142857142858,
+            "mean_net_points": 2.059526854219949,
+            "mean_net_per_atr": 0.012682365584161193
+          }
+        },
+        "original_model_exclusions_changed": false,
+        "interpretation": "PriorATR normalization is a descriptive common-sample risk-unit comparison, not a sized trading model or causal identification."
+      },
+      "risk": {
+        "top3_net_points": 785.3249999999999,
+        "top3_share_of_total_net": 0.5452699184169415,
+        "top3_dates": [
+          "2023-02-01",
+          "2024-07-02",
+          "2024-03-01"
+        ],
+        "without_top3": {
+          "days": 87,
+          "gross_points": 761.5,
+          "net_points": 654.925,
+          "net_dollars": 13098.5,
+          "mean_net": 7.527873563218391,
+          "median_net": 39.025,
+          "winrate": 0.6091954022988506,
+          "profit_factor": 1.146609135578612,
+          "closed_trade_drawdown": 1342.8499999999997,
+          "worst_day": -499.225,
+          "worst_day_date": "2024-08-01"
+        },
+        "leave_one_day_out_mean": [
+          13.089606741573032,
+          21.791853932584267
+        ],
+        "leave_one_quarter_out": [
+          {
+            "omitted": "2022Q4",
+            "days": 89,
+            "gross_points": 1439.5,
+            "net_points": 1330.475,
+            "net_dollars": 26609.5,
+            "mean_net": 14.949157303370786,
+            "median_net": 42.025,
+            "winrate": 0.6179775280898876,
+            "profit_factor": 1.2978353088658308,
+            "closed_trade_drawdown": 1149.7499999999995,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2023Q1",
+            "days": 78,
+            "gross_points": 666.75,
+            "net_points": 571.1999999999998,
+            "net_dollars": 11423.999999999996,
+            "mean_net": 7.323076923076921,
+            "median_net": 40.525,
+            "winrate": 0.6153846153846154,
+            "profit_factor": 1.1407503234152654,
+            "closed_trade_drawdown": 1149.75,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2023Q2",
+            "days": 79,
+            "gross_points": 1383.25,
+            "net_points": 1286.4749999999997,
+            "net_dollars": 25729.499999999993,
+            "mean_net": 16.28449367088607,
+            "median_net": 47.275,
+            "winrate": 0.620253164556962,
+            "profit_factor": 1.3095464388835416,
+            "closed_trade_drawdown": 1149.7499999999998,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2023Q3",
+            "days": 79,
+            "gross_points": 1803.25,
+            "net_points": 1706.4750000000004,
+            "net_dollars": 34129.50000000001,
+            "mean_net": 21.600949367088614,
+            "median_net": 50.025,
+            "winrate": 0.620253164556962,
+            "profit_factor": 1.4358812260536398,
+            "closed_trade_drawdown": 1149.749999999999,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2023Q4",
+            "days": 78,
+            "gross_points": 840.25,
+            "net_points": 744.7,
+            "net_dollars": 14894.0,
+            "mean_net": 9.547435897435898,
+            "median_net": 38.775,
+            "winrate": 0.6025641025641025,
+            "profit_factor": 1.1781802738382208,
+            "closed_trade_drawdown": 1151.4,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2024Q1",
+            "days": 78,
+            "gross_points": 1633.75,
+            "net_points": 1538.2,
+            "net_dollars": 30764.0,
+            "mean_net": 19.72051282051282,
+            "median_net": 50.525,
+            "winrate": 0.6666666666666666,
+            "profit_factor": 1.4108604778503409,
+            "closed_trade_drawdown": 1149.749999999999,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2024Q2",
+            "days": 78,
+            "gross_points": 1522.0,
+            "net_points": 1426.4499999999998,
+            "net_dollars": 28528.999999999996,
+            "mean_net": 18.28782051282051,
+            "median_net": 48.65,
+            "winrate": 0.6410256410256411,
+            "profit_factor": 1.3645832002146936,
+            "closed_trade_drawdown": 1149.7499999999995,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          {
+            "omitted": "2024Q3",
+            "days": 81,
+            "gross_points": 1727.5,
+            "net_points": 1628.2749999999999,
+            "net_dollars": 32565.499999999996,
+            "mean_net": 20.10216049382716,
+            "median_net": 38.525,
+            "winrate": 0.6049382716049383,
+            "profit_factor": 1.4650619787501424,
+            "closed_trade_drawdown": 790.0249999999984,
+            "worst_day": -353.725,
+            "worst_day_date": "2024-10-31"
+          },
+          {
+            "omitted": "2024Q4",
+            "days": 80,
+            "gross_points": 1387.75,
+            "net_points": 1289.7499999999998,
+            "net_dollars": 25794.999999999996,
+            "mean_net": 16.121874999999996,
+            "median_net": 38.775,
+            "winrate": 0.6125,
+            "profit_factor": 1.3390755115051693,
+            "closed_trade_drawdown": 915.9249999999997,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          }
+        ],
+        "minute_close_equity_drawdown": 1320.2250000000022,
+        "mark_to_market_assumption": "Minute-close marks plus full24.50RT deduction at entry. Not tick-equity or a guaranteed worst intrabar drawdown; closed-trade DD reported separately.",
+        "mae": {
+          "p10": 7.875,
+          "p25": 25.4375,
+          "median": 69.625,
+          "p75": 163.1875,
+          "p90": 255.37500000000017,
+          "p95": 331.8874999999998,
+          "max": 657.0
+        },
+        "mfe": {
+          "p10": 16.325,
+          "p25": 46.9375,
+          "median": 106.5,
+          "p75": 185.4375,
+          "p90": 239.05,
+          "p95": 272.3125,
+          "max": 372.5
+        },
+        "net_distribution": {
+          "p10": -160.15,
+          "p25": -67.4125,
+          "median": 42.4,
+          "p75": 112.4,
+          "p90": 179.2750000000001,
+          "p95": 220.6625,
+          "max": 275.275
+        },
+        "capital_limit": "No account size, margin schedule, risk budget or tick fills; cannot declare capital suitability."
+      },
+      "quarters": [
+        {
+          "quarter": "2022Q4",
+          "tom": {
+            "days": 1,
+            "gross_points": 111.0,
+            "net_points": 109.775,
+            "net_dollars": 2195.5,
+            "mean_net": 109.775,
+            "median_net": 109.775,
+            "winrate": 1.0,
+            "profit_factor": null,
+            "closed_trade_drawdown": 0.0,
+            "worst_day": 109.775,
+            "worst_day_date": "2022-12-30"
+          },
+          "non_tom": {
+            "days": 3,
+            "gross_points": -116.75,
+            "net_points": -120.42499999999998,
+            "net_dollars": -2408.4999999999995,
+            "mean_net": -40.14166666666666,
+            "median_net": -131.475,
+            "winrate": 0.3333333333333333,
+            "profit_factor": 0.5463364098700321,
+            "closed_trade_drawdown": 265.45,
+            "worst_day": -133.975,
+            "worst_day_date": "2022-12-27"
+          },
+          "difference": 149.91666666666666
+        },
+        {
+          "quarter": "2023Q1",
+          "tom": {
+            "days": 12,
+            "gross_points": 883.75,
+            "net_points": 869.05,
+            "net_dollars": 17381.0,
+            "mean_net": 72.42083333333333,
+            "median_net": 111.275,
+            "winrate": 0.6666666666666666,
+            "profit_factor": 3.1253362680361945,
+            "closed_trade_drawdown": 320.67499999999995,
+            "worst_day": -177.975,
+            "worst_day_date": "2023-01-03"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": 1564.75,
+            "net_points": 1503.5,
+            "net_dollars": 30070.0,
+            "mean_net": 30.07,
+            "median_net": 23.025,
+            "winrate": 0.6,
+            "profit_factor": 1.6911054929901177,
+            "closed_trade_drawdown": 855.1999999999991,
+            "worst_day": -296.475,
+            "worst_day_date": "2023-02-09"
+          },
+          "difference": 42.350833333333334
+        },
+        {
+          "quarter": "2023Q2",
+          "tom": {
+            "days": 11,
+            "gross_points": 167.25,
+            "net_points": 153.77500000000003,
+            "net_dollars": 3075.500000000001,
+            "mean_net": 13.979545454545457,
+            "median_net": 17.275,
+            "winrate": 0.6363636363636364,
+            "profit_factor": 1.494215008838181,
+            "closed_trade_drawdown": 248.425,
+            "worst_day": -116.975,
+            "worst_day_date": "2023-05-02"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": 1518.75,
+            "net_points": 1457.5000000000002,
+            "net_dollars": 29150.000000000004,
+            "mean_net": 29.150000000000006,
+            "median_net": 25.525,
+            "winrate": 0.62,
+            "profit_factor": 1.7862334965138713,
+            "closed_trade_drawdown": 354.92500000000007,
+            "worst_day": -262.475,
+            "worst_day_date": "2023-06-07"
+          },
+          "difference": -15.170454545454549
+        },
+        {
+          "quarter": "2023Q3",
+          "tom": {
+            "days": 11,
+            "gross_points": -252.75,
+            "net_points": -266.22499999999997,
+            "net_dollars": -5324.499999999999,
+            "mean_net": -24.202272727272724,
+            "median_net": 19.025,
+            "winrate": 0.6363636363636364,
+            "profit_factor": 0.5178393552476682,
+            "closed_trade_drawdown": 389.82499999999993,
+            "worst_day": -200.725,
+            "worst_day_date": "2023-08-02"
+          },
+          "non_tom": {
+            "days": 51,
+            "gross_points": -705.25,
+            "net_points": -767.7250000000001,
+            "net_dollars": -15354.500000000004,
+            "mean_net": -15.053431372549023,
+            "median_net": 8.025,
+            "winrate": 0.5098039215686274,
+            "profit_factor": 0.7673119909073689,
+            "closed_trade_drawdown": 1377.4250000000002,
+            "worst_day": -477.225,
+            "worst_day_date": "2023-08-24"
+          },
+          "difference": -9.148841354723702
+        },
+        {
+          "quarter": "2023Q4",
+          "tom": {
+            "days": 12,
+            "gross_points": 710.25,
+            "net_points": 695.55,
+            "net_dollars": 13911.0,
+            "mean_net": 57.9625,
+            "median_net": 83.9,
+            "winrate": 0.75,
+            "profit_factor": 3.4178326236204057,
+            "closed_trade_drawdown": 161.725,
+            "worst_day": -161.725,
+            "worst_day_date": "2023-10-03"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": 636.5,
+            "net_points": 575.25,
+            "net_dollars": 11505.0,
+            "mean_net": 11.505,
+            "median_net": 29.275,
+            "winrate": 0.6,
+            "profit_factor": 1.2421085858585863,
+            "closed_trade_drawdown": 965.4500000000002,
+            "worst_day": -265.975,
+            "worst_day_date": "2023-10-25"
+          },
+          "difference": 46.457499999999996
+        },
+        {
+          "quarter": "2024Q1",
+          "tom": {
+            "days": 12,
+            "gross_points": -83.25,
+            "net_points": -97.94999999999993,
+            "net_dollars": -1958.9999999999986,
+            "mean_net": -8.162499999999994,
+            "median_net": -32.6,
+            "winrate": 0.3333333333333333,
+            "profit_factor": 0.8645790128577354,
+            "closed_trade_drawdown": 382.15,
+            "worst_day": -203.225,
+            "worst_day_date": "2024-03-05"
+          },
+          "non_tom": {
+            "days": 49,
+            "gross_points": 550.0,
+            "net_points": 489.97500000000014,
+            "net_dollars": 9799.500000000004,
+            "mean_net": 9.99948979591837,
+            "median_net": -2.225,
+            "winrate": 0.4897959183673469,
+            "profit_factor": 1.2506426242087094,
+            "closed_trade_drawdown": 628.8250000000004,
+            "worst_day": -281.725,
+            "worst_day_date": "2024-03-08"
+          },
+          "difference": -18.161989795918366
+        },
+        {
+          "quarter": "2024Q2",
+          "tom": {
+            "days": 12,
+            "gross_points": 28.5,
+            "net_points": 13.800000000000011,
+            "net_dollars": 276.0000000000002,
+            "mean_net": 1.150000000000001,
+            "median_net": 18.9,
+            "winrate": 0.5,
+            "profit_factor": 1.0248827984132705,
+            "closed_trade_drawdown": 342.95000000000005,
+            "worst_day": -272.725,
+            "worst_day_date": "2024-04-30"
+          },
+          "non_tom": {
+            "days": 51,
+            "gross_points": 27.5,
+            "net_points": -34.97500000000023,
+            "net_dollars": -699.5000000000045,
+            "mean_net": -0.6857843137254946,
+            "median_net": 7.275,
+            "winrate": 0.5294117647058824,
+            "profit_factor": 0.9885239446786869,
+            "closed_trade_drawdown": 1429.4500000000003,
+            "worst_day": -466.975,
+            "worst_day_date": "2024-04-04"
+          },
+          "difference": 1.8357843137254957
+        },
+        {
+          "quarter": "2024Q3",
+          "tom": {
+            "days": 9,
+            "gross_points": -177.0,
+            "net_points": -188.02500000000012,
+            "net_dollars": -3760.5000000000023,
+            "mean_net": -20.89166666666668,
+            "median_net": 77.775,
+            "winrate": 0.7777777777777778,
+            "profit_factor": 0.8053470676536051,
+            "closed_trade_drawdown": 915.9250000000001,
+            "worst_day": -499.225,
+            "worst_day_date": "2024-08-01"
+          },
+          "non_tom": {
+            "days": 49,
+            "gross_points": -1381.75,
+            "net_points": -1441.7749999999999,
+            "net_dollars": -28835.499999999996,
+            "mean_net": -29.423979591836734,
+            "median_net": -1.725,
+            "winrate": 0.4897959183673469,
+            "profit_factor": 0.6776625772014643,
+            "closed_trade_drawdown": 2191.1499999999996,
+            "worst_day": -482.975,
+            "worst_day_date": "2024-08-07"
+          },
+          "difference": 8.532312925170054
+        },
+        {
+          "quarter": "2024Q4",
+          "tom": {
+            "days": 10,
+            "gross_points": 162.75,
+            "net_points": 150.49999999999994,
+            "net_dollars": 3009.999999999999,
+            "mean_net": 15.049999999999994,
+            "median_net": 75.4,
+            "winrate": 0.7,
+            "profit_factor": 1.226853073067792,
+            "closed_trade_drawdown": 489.40000000000003,
+            "worst_day": -353.725,
+            "worst_day_date": "2024-10-31"
+          },
+          "non_tom": {
+            "days": 50,
+            "gross_points": -428.25,
+            "net_points": -489.5000000000002,
+            "net_dollars": -9790.000000000004,
+            "mean_net": -9.790000000000004,
+            "median_net": -0.2250000000000001,
+            "winrate": 0.5,
+            "profit_factor": 0.8620786813651254,
+            "closed_trade_drawdown": 1359.525,
+            "worst_day": -784.225,
+            "worst_day_date": "2024-12-18"
+          },
+          "difference": 24.839999999999996
+        }
+      ],
+      "execution_sensitivity": [
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 24.5,
+          "days": 90,
+          "gross_points": 1550.5,
+          "net_points": 1440.25,
+          "net_dollars": 28805.0,
+          "mean_net": 16.002777777777776,
+          "median_net": 42.4,
+          "winrate": 0.6222222222222222,
+          "profit_factor": 1.3224091422943038,
+          "closed_trade_drawdown": 1149.7499999999995,
+          "worst_day": -499.225,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 34.5,
+          "days": 90,
+          "gross_points": 1550.5,
+          "net_points": 1395.25,
+          "net_dollars": 27905.0,
+          "mean_net": 15.502777777777778,
+          "median_net": 41.9,
+          "winrate": 0.6222222222222222,
+          "profit_factor": 1.3111515002843346,
+          "closed_trade_drawdown": 1154.7499999999995,
+          "worst_day": -499.725,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 0,
+          "roundtrip_cost_usd": 44.5,
+          "days": 90,
+          "gross_points": 1550.5,
+          "net_points": 1350.25,
+          "net_dollars": 27005.0,
+          "mean_net": 15.002777777777778,
+          "median_net": 41.4,
+          "winrate": 0.6111111111111112,
+          "profit_factor": 1.299963899919468,
+          "closed_trade_drawdown": 1159.7499999999995,
+          "worst_day": -500.225,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 24.5,
+          "days": 90,
+          "gross_points": 1467.75,
+          "net_points": 1357.4999999999995,
+          "net_dollars": 27149.999999999993,
+          "mean_net": 15.083333333333329,
+          "median_net": 32.9,
+          "winrate": 0.5888888888888889,
+          "profit_factor": 1.3158574395188258,
+          "closed_trade_drawdown": 1093.2499999999995,
+          "worst_day": -504.725,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 34.5,
+          "days": 90,
+          "gross_points": 1467.75,
+          "net_points": 1312.4999999999995,
+          "net_dollars": 26249.999999999993,
+          "mean_net": 14.583333333333329,
+          "median_net": 32.4,
+          "winrate": 0.5888888888888889,
+          "profit_factor": 1.3040781220135178,
+          "closed_trade_drawdown": 1098.2499999999995,
+          "worst_day": -505.225,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 1,
+          "roundtrip_cost_usd": 44.5,
+          "days": 90,
+          "gross_points": 1467.75,
+          "net_points": 1267.4999999999995,
+          "net_dollars": 25349.999999999993,
+          "mean_net": 14.083333333333329,
+          "median_net": 31.9,
+          "winrate": 0.5888888888888889,
+          "profit_factor": 1.2923993471478081,
+          "closed_trade_drawdown": 1103.2499999999998,
+          "worst_day": -505.725,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 24.5,
+          "days": 90,
+          "gross_points": 1445.5,
+          "net_points": 1335.25,
+          "net_dollars": 26705.0,
+          "mean_net": 14.83611111111111,
+          "median_net": 28.15,
+          "winrate": 0.6111111111111112,
+          "profit_factor": 1.3241193069757553,
+          "closed_trade_drawdown": 1128.2499999999995,
+          "worst_day": -531.975,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 34.5,
+          "days": 90,
+          "gross_points": 1445.5,
+          "net_points": 1290.25,
+          "net_dollars": 25805.0,
+          "mean_net": 14.33611111111111,
+          "median_net": 27.65,
+          "winrate": 0.6111111111111112,
+          "profit_factor": 1.3118711665709875,
+          "closed_trade_drawdown": 1133.25,
+          "worst_day": -532.475,
+          "worst_day_date": "2024-08-01"
+        },
+        {
+          "entry_delay_minutes": 5,
+          "roundtrip_cost_usd": 44.5,
+          "days": 90,
+          "gross_points": 1445.5,
+          "net_points": 1245.25,
+          "net_dollars": 24905.0,
+          "mean_net": 13.83611111111111,
+          "median_net": 27.15,
+          "winrate": 0.6111111111111112,
+          "profit_factor": 1.2997262087432673,
+          "closed_trade_drawdown": 1138.25,
+          "worst_day": -532.975,
+          "worst_day_date": "2024-08-01"
+        }
+      ],
+      "source_status": "OLDER_CONTINUOUS_CONTRACT_CHAIN_AND_VINTAGE_UNVERIFIED"
+    }
+  },
+  "source_parity": {
+    "status": "LIMITED_SAME_DATE_RTH_ANCHOR_COMPARISON_NOT_INDEPENDENT_VALIDATION",
+    "period": [
+      "2024-01-22",
+      "2024-02-16"
+    ],
+    "complete_common_days": 19,
+    "exact_rth_movement_fraction": 0.5263157894736842,
+    "median_abs_difference_points": 0.0,
+    "maximum_abs_difference_points": 2.5,
+    "mean_difference_points": -0.013157894736842105,
+    "tom_common_days": 4,
+    "tom_total_difference_points": 1.75,
+    "earlier_two_minute_exception_points": 15.5,
+    "limit": "19 pilot sessions cannot certify493 older sessions, full historical roll provenance or timestamp vintage. Prior two-minute discrepancy remains documented; no old data or negative evidence discarded."
+  },
+  "multiplicity": {
+    "new_contrasts": 4,
+    "method": "Holm4 exploratory",
+    "previous_families_unchanged": true
+  },
+  "independent_validation": false,
+  "new_candidate_preregistration": false,
+  "public_privacy": "Aggregate-only; no daily/trade prices, raw arrays or absolute private paths.",
+  "dashboard_route": "/research/month-turn-audit",
+  "external_publication": false
+}

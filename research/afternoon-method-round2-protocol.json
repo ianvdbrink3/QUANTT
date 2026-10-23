@@ -1,0 +1,17 @@
+{
+  "method": "GAP20_GROUP8_SCORE_T_VARIANCE125",
+  "status": "PROPOSAL_ONLY_NOT_A_CHANGE_TO_CANDIDATE_V2",
+  "variance_multiplier": 1.25,
+  "justification_before_simulation": "Round1 analytic AR095 true variance / expected group SE squared peaks at 1.2029 for the registered lengths. Round upward to fixed 1.25, do not select on fresh rejections or market outcomes. This does not prove independence or universal coverage.",
+  "seeds": [20261022041, 20261022042],
+  "replications": 10000,
+  "lengths": [500, 783, 1000],
+  "models": ["GAUSSIAN_IID", "T5_IID", "NEGATIVE_SKEW_IID", "POSITIVE_SKEW_IID", "MA19", "AR06", "AR09", "AR095", "VOLATILITY_REGIMES", "PERSISTENT_SELECTION", "MA19_PERSISTENT_SELECTION"],
+  "negative_control": "NONMIXING_COMMON_FACTOR",
+  "nominal_alpha": 0.05,
+  "screen_max_simultaneous_upper": 0.06,
+  "bound_family": 396,
+  "unchanged": "8 blocks, 20 weekday gaps, t df7, minimum8 selected/block and120 total, Holm2 two-sided, three null scenarios, same source scales. Invalid panels have p=1. No market release or candidate pointer change.",
+  "power": {"models": ["GAUSSIAN_IID", "MA19", "AR095"], "effects": [[4, 0], [0, 4]], "sigma_multipliers": [1, 1.5]},
+  "stop_rule": "One proposal only. Failure ends this round without another multiplier, model deletion, relaxed threshold or new market outcomes."
+}

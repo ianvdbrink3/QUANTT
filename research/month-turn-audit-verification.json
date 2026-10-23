@@ -1,0 +1,41 @@
+{
+  "status": "MONTH_TURN_AUDIT_SOURCE_REPLAY_AND_REGRESSION_PASSED",
+  "tests_passed": 560,
+  "source_reload_byte_identical_outputs": 6,
+  "output_sha256": {
+    "research/month-turn-audit-results.json": "a71982b0d50a0bc229be66f0390f7d34730743cd9ab9b51c4828d7c41c05666a",
+    "public/data/month-turn-audit.json": "a71982b0d50a0bc229be66f0390f7d34730743cd9ab9b51c4828d7c41c05666a",
+    "docs/MONTH_TURN_AUDIT.md": "9419ea730ea7c5ead429da7c32cd9c94d720bf665f73d129efa38f672e5fadd7",
+    "public/reports/MONTH_TURN_AUDIT.md": "9419ea730ea7c5ead429da7c32cd9c94d720bf665f73d129efa38f672e5fadd7",
+    "artifacts/month-turn-audit/discovery-daily.json": "e1b4b179f616d1e94101807f5a57053a10afb319e8f1720075bbc031132b76e9",
+    "artifacts/month-turn-audit/continuous_2022_2024_unverified-daily.json": "e50454b7b049ad6edca856ef68061ecc2a3906883043dd4508b8426cf91f97a4"
+  },
+  "preserved_files": 497,
+  "frozen_baseline": {
+    "status": "FROZEN_BYTES_VERIFIED",
+    "freeze_id": "VNEXT_159_2026-10-21",
+    "files": 73,
+    "historical_tests": 207,
+    "eligible_days": 159,
+    "backtest_run": false
+  },
+  "candidate_v2_verifier": {
+    "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+    "active_version": 2,
+    "v1_preserved": true,
+    "new_afternoon_runs": 0,
+    "protected_archive_files": 115
+  },
+  "typecheck_passed": true,
+  "production_build_passed": true,
+  "implementation_sha256": "33819584c4da22a1f3d3e51a61f065ee9eea6d350c72e26bfca7707c5f97ff8d",
+  "verifier_sha256": "c240dff96450a319bb5164ed95fe68a71478ca7219294e5483f2c3eeadac93bb",
+  "context_sha256": "2289ad15373f92caa144e74464c0d737ff29264988cab0d01f12bf95a5019d6d",
+  "replay_log_sha256": "e1b4b179f616d1e94101807f5a57053a10afb319e8f1720075bbc031132b76e9",
+  "dashboard_route": "/research/month-turn-audit",
+  "independent_confirmation": false,
+  "new_holdout": false,
+  "purchases": false,
+  "external_publication": false,
+  "limitation": "Same machine and source parser; independently written daily arithmetic matches original ToM ledgers. No external researcher, source-vintage or tick-fill certification. Local production BUILD is not Vercel deployment."
+}

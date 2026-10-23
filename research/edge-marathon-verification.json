@@ -1,0 +1,181 @@
+{
+  "status": "FULL_MARATHON_VERIFICATION_PASSED",
+  "started_utc": "2026-10-22T17:01:35.723288+00:00",
+  "completed_utc": "2026-10-22T17:04:24.667999+00:00",
+  "second_complete_source_reload": true,
+  "byte_identical_outputs": 20,
+  "output_hashes": {
+    "artifacts/edge-marathon/discovery.json": "bc72f39d95392b3d4df87b411c329e38858fd4df3eca6648600f3c46c4c27a80",
+    "artifacts/edge-marathon/historical.json": "8d692df42b9446fad18668c983e378d160e69b656d713b69ac7341657f99de19",
+    "artifacts/edge-marathon/historical-release.json": "83a13c8be095b89dea2699adb2df14bd09936af60f22a9c5246c2b29a43fc290",
+    "artifacts/edge-marathon/historical-zero-loss-release.json": "88374e5bd6e41c5429890695032c5e0374cb8f30387ed93d2deb675299b16d7c",
+    "artifacts/edge-marathon/historical-before-zero-loss-completion.json": "6d645f2a4d00a449f84700ed164509ef35be6ca34319f38cddb609bd6ac3f436",
+    "artifacts/edge-marathon/source-overlap-parity.json": "24ea6e009b99c17923e78a434c07b93ded4fcd8f4d1566a74d8c1bab0e89de12",
+    "artifacts/edge-marathon/inventory-feasibility.json": "b021d6c77d7de7dc310ca35d7f60328ec78ea97adfe77a34f05f23b6f216d1f7",
+    "artifacts/edge-marathon/tom-paths.csv": "4dafd5cd4752e771a3c5c8056e462047c2b5d8651480a004735c59c6d382ece6",
+    "artifacts/edge-marathon/non-csv-containers.json": "898929d3f32c3df7088923e208ddb65edb04b09bd6bd20cf972a983dd2f98899",
+    "research/edge-marathon-results.json": "ebbc51aaa4f70dad28ee2e2217c696d3031f71b1d13f9f48d4deadc84f1d1bd2",
+    "research/edge-marathon-reference-parity.json": "b289f18ccd62a2bc71ec35499d9d079e323f120f8137f04e86c5465bfe1f3085",
+    "public/data/edge-marathon.json": "b801a43571a18ce8e91b590db12e0be4a1b539e3f60d1096f8523a72777e8fa8",
+    "public/reports/AUTONOMOUS_EDGE_DISCOVERY_SUMMARY.md": "87d4b24ca91307d8039fb77a31371aabb49d538413a9855de63b3961741e4750",
+    "docs/AUTONOMOUS_EDGE_DISCOVERY_REPORT.md": "a8a206d68e8bec144aac62603c1638635552dcf66218744d80de0e9f72026216",
+    "artifacts/edge-marathon/continuous_2022_2024_unverified-trades.csv": "cb225b59164919e9e070b39862a101fed94f82687310a777dab5068a398be496",
+    "artifacts/edge-marathon/contract_2018_warmup-trades.csv": "24bac97f8f14bef2c65acd169524ac5c6c4a51c3c95897aba54ad3e57878f757",
+    "artifacts/edge-marathon/contract_2019_fragment-trades.csv": "1cc7993a8467cfe3e363b9622b7f7e533bef614ae900cdbb2db9e3daed2e9e4e",
+    "artifacts/edge-marathon/contract_pilot_2024-trades.csv": "4e591535a16744bf39c698d8092923242401a8177f8d3b3c9cad4436836fa528",
+    "artifacts/edge-marathon/discovery-trades.csv": "8fbd12f7e8f27068cbb0251b3be2203fbb411157b74b55c218373fa0fb41ce41",
+    "artifacts/edge-marathon/vendor_sample_oct2026-trades.csv": "562d0fdac09a72e665ebe0bd5a4209c366e4b507ed562d8ec20c6a405e33aa09"
+  },
+  "tests_passed": 530,
+  "test_output_sha256": "14b099af954243f4b6619d5e11a1921479b12b0b429646700dd838b0188c199c",
+  "typecheck_passed": true,
+  "production_build_passed": true,
+  "freeze": {
+    "status": "FROZEN_BYTES_VERIFIED",
+    "freeze_id": "VNEXT_159_2026-10-21",
+    "files": 73,
+    "historical_tests": 207,
+    "eligible_days": 159,
+    "backtest_run": false
+  },
+  "candidate_v2_original_registration_verifier": {
+    "status": "CANDIDATE_SPEC_FROZEN_INDEPENDENT_TEST_NOT_RELEASED",
+    "active_version": 2,
+    "v1_preserved": true,
+    "new_afternoon_runs": 0,
+    "protected_archive_files": 115
+  },
+  "historical_window_original_verifier": "Window and download instructions byte-identical; outcomes not released.",
+  "current_scope": {
+    "candidate_v2_specification_unmodified": true,
+    "user_authorized_new_fragment_calculations": true,
+    "full_fixed_end_2019_2021_test_completed": false,
+    "note": "Legacy verifier newruns0/outcomesnotreleased strings describe preserved original registration, NOT this newly authorized fragment analysis."
+  },
+  "preserved_files": 407,
+  "independent_reference": {
+    "status": "INDEPENDENT_SELECTOR_FILL_REFERENCE_PARITY_PASSED",
+    "samples": [
+      {
+        "sample": "DISCOVERY",
+        "complete_days": 435,
+        "events": 1285,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      },
+      {
+        "sample": "CONTRACT_2018_WARMUP",
+        "complete_days": 26,
+        "events": 22,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      },
+      {
+        "sample": "CONTRACT_2019_FRAGMENT",
+        "complete_days": 8,
+        "events": 19,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      },
+      {
+        "sample": "CONTRACT_PILOT_2024",
+        "complete_days": 19,
+        "events": 13,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 9.020562075079397e-17,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      },
+      {
+        "sample": "CONTINUOUS_2022_2024_UNVERIFIED",
+        "complete_days": 493,
+        "events": 1090,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 1.1102230246251565e-16,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      },
+      {
+        "sample": "VENDOR_SAMPLE_OCT2026",
+        "complete_days": 12,
+        "events": 7,
+        "compared_fields": [
+          "entry",
+          "end",
+          "direction",
+          "decision",
+          "entry_price",
+          "exit_price",
+          "gross_points",
+          "net_points",
+          "mfe_points",
+          "mae_points"
+        ],
+        "maximum_absolute_difference": 0.0,
+        "status": "INDEPENDENT_SELECTOR_AND_FILL_IMPLEMENTATION_MATCH"
+      }
+    ],
+    "reference_code_sha256": "4355911dbe70867ede01861339f60d7eef47ee1097a67881f35b511955227ecf",
+    "limitation": "Independent implementation of fixed selectors and fill/excursion arithmetic, but same author/machine, shared source parser and causal context. Engineering verification, NOT independent market validation."
+  },
+  "execution_limit": "Same machine, same raw bytes, independent selector/fill arithmetic plus second source reload. No external independent researcher or tick fills certified.",
+  "dashboard_route": "/research/marathon",
+  "external_publication": false,
+  "replay_code_hash": "9a0b57b6b96f13bd017b25c1d88416b737c8ba131fe8b8be0609a9f0e39b9920"
+}

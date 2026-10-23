@@ -1,0 +1,16 @@
+{
+  "status": "SOURCE_REPLAY_FROZEN_REGRESSION_AND_BUILD_PASSED",
+  "tests_passed": 582,
+  "byte_identical_outputs": 8,
+  "prior_files_unchanged": 517,
+  "protocol_sha256": "ad1613b66465a5aaacbb50517516bd13400faf2d7a26e44fa9b46cff267ec70d",
+  "future_specification_sha256": "5f4d47a631d94b40ca8c60ed6ddadd5c097522562e25218310978161ce4d634a",
+  "future_holdout_executed": false,
+  "new_historical_numeric_OHLCV_read": false,
+  "external_publication": false,
+  "provisional_MNQ_cost_USD": 6.5,
+  "actual_broker_cost_known": false,
+  "typecheck": true,
+  "build": true,
+  "dashboard_route": "/research/three-survivors"
+}

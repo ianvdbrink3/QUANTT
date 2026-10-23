@@ -1,0 +1,282 @@
+{
+  "active_anomalies": [
+    {
+      "boundary_0929_missing": true,
+      "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+      "contract": "NQH20",
+      "day": "2020-03-09",
+      "missing_RTH": [
+        "09:33",
+        "09:36",
+        "09:37",
+        "09:38",
+        "09:39",
+        "09:40",
+        "09:41",
+        "09:42",
+        "09:43",
+        "09:44",
+        "09:45",
+        "09:46",
+        "09:47",
+        "09:48"
+      ]
+    },
+    {
+      "boundary_0929_missing": true,
+      "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+      "contract": "NQH20",
+      "day": "2020-03-12",
+      "missing_RTH": [
+        "09:37",
+        "09:38",
+        "09:39",
+        "09:40",
+        "09:41",
+        "09:42",
+        "09:43",
+        "09:44",
+        "09:45",
+        "09:46",
+        "09:47",
+        "09:48",
+        "09:49"
+      ]
+    },
+    {
+      "boundary_0929_missing": true,
+      "classification": "MISSING_0929_BOUNDARY_ONLY",
+      "contract": "NQH20",
+      "day": "2020-03-13",
+      "missing_RTH": []
+    },
+    {
+      "boundary_0929_missing": true,
+      "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+      "contract": "NQH20",
+      "day": "2020-03-16",
+      "missing_RTH": [
+        "09:31",
+        "09:32",
+        "09:33",
+        "09:34",
+        "09:35",
+        "09:36",
+        "09:37",
+        "09:38",
+        "09:39",
+        "09:40",
+        "09:41",
+        "09:42",
+        "09:43",
+        "09:44"
+      ]
+    },
+    {
+      "boundary_0929_missing": true,
+      "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+      "contract": "NQM20",
+      "day": "2020-03-18",
+      "missing_RTH": [
+        "12:58",
+        "12:59",
+        "13:00",
+        "13:01",
+        "13:02",
+        "13:03",
+        "13:04",
+        "13:05",
+        "13:06",
+        "13:07",
+        "13:08",
+        "13:09",
+        "13:10"
+      ]
+    },
+    {
+      "boundary_0929_missing": false,
+      "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+      "contract": "NQU20",
+      "day": "2020-06-16",
+      "missing_RTH": [
+        "10:56"
+      ]
+    },
+    {
+      "boundary_0929_missing": false,
+      "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+      "contract": "NQU20",
+      "day": "2020-07-31",
+      "missing_RTH": [
+        "15:02"
+      ]
+    },
+    {
+      "boundary_0929_missing": false,
+      "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+      "contract": "NQU20",
+      "day": "2020-09-03",
+      "missing_RTH": [
+        "11:24"
+      ]
+    },
+    {
+      "boundary_0929_missing": false,
+      "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+      "contract": "NQU20",
+      "day": "2020-09-08",
+      "missing_RTH": [
+        "09:44"
+      ]
+    },
+    {
+      "boundary_0929_missing": false,
+      "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+      "contract": "NQM21",
+      "day": "2021-05-06",
+      "missing_RTH": [
+        "09:34",
+        "09:35",
+        "11:25",
+        "11:26"
+      ]
+    }
+  ],
+  "actual_roll_open_prefix_tests": [
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2018-12-17",
+      "new_contract": "NQH19",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2019-03-11",
+      "new_contract": "NQM19",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2019-06-17",
+      "new_contract": "NQU19",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2019-09-16",
+      "new_contract": "NQZ19",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2019-12-16",
+      "new_contract": "NQH20",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2020-03-17",
+      "new_contract": "NQM20",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2020-06-16",
+      "new_contract": "NQU20",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2020-09-15",
+      "new_contract": "NQZ20",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2020-12-15",
+      "new_contract": "NQH21",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2021-03-16",
+      "new_contract": "NQM21",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2021-06-15",
+      "new_contract": "NQU21",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2021-09-14",
+      "new_contract": "NQZ21",
+      "passed": true,
+      "prior_ATR14_ready": true
+    },
+    {
+      "current_RTH_absent_from_prefix": true,
+      "day": "2021-12-13",
+      "new_contract": "NQH22",
+      "passed": true,
+      "prior_ATR14_ready": true
+    }
+  ],
+  "external_publication": false,
+  "holdout_executed": false,
+  "integrity": {
+    "outcome_release": false,
+    "previous_freeze_files": 517,
+    "protected_files": 550
+  },
+  "no_price_imputation": true,
+  "not_proven": [
+    "complete CME date-specific holiday/halts",
+    "true volume in missing vendor minutes",
+    "license permissions",
+    "independent timestamps/tick fills"
+  ],
+  "old_discovery_parity": {
+    "compared_fields": [
+      "atr",
+      "PDH",
+      "PDL",
+      "prior_close",
+      "ONH",
+      "ONL",
+      "on_open",
+      "on_close"
+    ],
+    "days": 435,
+    "new_2019_2021_signals_computed": false,
+    "note": "Adapter regression on already consumed2024Dec-2026Sep only, not independent confirmation.",
+    "status": "EXACT_OLD_DISCOVERY_PARITY_ONLY",
+    "trade_counts": {
+      "COMPRESSED_BREAK5": 109,
+      "SWEEP_REV_1200": 63,
+      "TOM_RTH": 81
+    }
+  },
+  "remaining_blockers": [
+    "EXPLICIT_OUTCOME_RELEASE_REQUIRED",
+    "DATE_SPECIFIC_CME_HOLIDAY_AND_HALT_GRID_NOT_FULLY_CERTIFIED",
+    "LICENSE_AND_INDEPENDENT_VENDOR_VALIDATION_UNCONFIRMED",
+    "ROLL_VOLUME_INTERIOR_MINUTE_GAPS"
+  ],
+  "root_report_note": "2020-03-13 has390RTH bars but lacks09:29. Root COMPLETE labels its RTH-only gap classification, not full eligibility. This supplement explicitly corrects the presentation, not any exclusion or count.",
+  "signals_on_registered_remainder": false,
+  "status": "TECHNICAL_REVIEW_NOT_OUTCOME_RELEASE"
+}

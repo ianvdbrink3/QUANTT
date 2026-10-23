@@ -1,0 +1,18 @@
+{
+  "status": "PLANNING_ONLY_NOT_INDEPENDENT_TEST_RELEASE",
+  "anchor_commit": "9508b3b8ad698e86488993273d10b22d012dcc64",
+  "cohort": "Existing fixed 14:30 UP cohort only; 162 of 435 complete RTH days, on original 454 scheduled-session calendar. No new cohort selection or filters.",
+  "inputs": "Existing falsification membership and 15m measurements. Reconcile open-based 15m with original source anchors; extract only 15:00 open and 15:01/15:14 closes on already selected consumed days for variance calibration. No new test on observed mean, strategy, fill, stop, target or independent data outcome.",
+  "calibration": "Center both horizons separately. Preserve paired residuals and selection/quality indicator on all 454 scheduled sessions. No extrapolation of the discovery mean.",
+  "effects_net_points": [2, 4, 6],
+  "effect_interpretation": "Hypothetical net effect after frozen 1.225pt friction. Scenarios, not a chosen minimum worthwhile effect or inferred edge.",
+  "individual_approximation": "Two-sided noncentral t planning at alpha .025 per horizon using HAC5 equivalent per-selected-day sigma. Target .80. Also sigma multipliers 1.25 and 1.5; no candidate parameter change.",
+  "joint_simulation": "Circular blocks of 20 scheduled sessions, resample paired centered residuals and selection indicator. Fixed calendar lengths; reestimate registered Bartlett HAC5, n/(n-1), t df n-1. Inject hypothetical positive NET means (delta,0), (0,delta), (delta,delta). Exact Holm2 positive own-mean decisions. Include joint-zero calibration. No test of actual discovery mean.",
+  "scheduled_sessions": [125, 250, 500, 1000, 2000, 4000, 8000],
+  "replications": 5000,
+  "seed": 2026102201,
+  "selection_uncertainty": "Wilson descriptive interval and circular20-session block bootstrap interval; quarter frequencies including partial 2024Q4. Calendar conversion assumes 250 scheduled sessions/year, not a future exchange-calendar guarantee.",
+  "reporting": "Report all three scenarios, both horizons, all fixed calendar lengths, Monte Carlo precision, all variance sensitivities and limitations. No sample size is released by this calculation. Heavy tails, 162 events, regime shifts and data quality may make projections inaccurate.",
+  "inventory": "Downloads and local project data directories: filenames, headers, timestamps, counts and SHA256 only. No OHLCV numeric analysis of new or unvalidated files. No downloads, account creation, subscription, paid API or external writes.",
+  "release": false
+}

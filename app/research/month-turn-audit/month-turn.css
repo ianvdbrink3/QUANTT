@@ -1,0 +1,28 @@
+.tom-audit { max-width: 1480px; margin: 0 auto; padding: 30px 38px 50px; color: #e8edf5; }
+.tom-audit nav, .tom-audit footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; font-size: 13px; }
+.tom-audit a { color: #9bbdff; text-decoration: underline; text-underline-offset: 4px; }
+.tom-audit header { padding: 42px 0 12px; max-width: 1080px; }
+.tom-eyebrow { color: #9caec7; font-size: 11px; letter-spacing: .12em; }
+.tom-audit h1 { font-size: clamp(28px, 3.6vw, 45px); letter-spacing: -.04em; margin: 15px 0; }
+.tom-lead { color: #b9c8db; font-size: 16px; line-height: 1.7; }
+.tom-warning { padding: 15px 18px; border-left: 3px solid #d3ac68; background: #1a1b1c; color: #dec397; }
+.tom-audit section { margin-top: 32px; padding-top: 24px; border-top: 1px solid #283344; min-width: 0; }
+.tom-audit h2 { font-size: 23px; letter-spacing: -.02em; margin-bottom: 12px; }
+.tom-audit section > p { color: #adbed3; max-width: 1050px; margin: 9px 0 18px; }
+.tom-table { overflow-x: auto; border: 1px solid #293649; border-radius: 7px; background: #0e1622; }
+.tom-audit table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.tom-audit caption { text-align: left; padding: 14px 16px; color: #9eb0c7; font-size: 11px; }
+.tom-audit th, .tom-audit td { padding: 12px 14px; border-top: 1px solid #243043; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; vertical-align: top; }
+.tom-audit thead th { color: #c9d6e8; background: #172233; font-weight: 500; }
+.tom-audit th[scope="row"] { text-align: left; font-weight: 500; color: #e3ebf6; }
+.tom-audit tbody tr:hover { background: #142033; }
+.tom-audit .tom-note { font-size: 12px; color: #98abc3; margin-top: 14px; }
+.tom-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.tom-notes article { padding: 18px; background: #111b29; border: 1px solid #273447; border-radius: 8px; }
+.tom-notes h3 { font-size: 15px; margin-bottom: 10px; }
+.tom-notes p { color: #adbed3; font-size: 13px; margin: 8px 0; }
+.tom-audit details { margin-top: 20px; padding: 18px; border: 1px solid #2a374a; border-radius: 7px; }
+.tom-audit summary { cursor: pointer; color: #cddbed; margin-bottom: 12px; }
+.tom-audit footer { margin-top: 35px; padding-top: 24px; border-top: 1px solid #283344; }
+.tom-audit a:focus-visible, .tom-table:focus-visible, .tom-audit summary:focus-visible { outline: 2px solid #9bbdff; outline-offset: 4px; }
+@media (max-width: 760px) { .tom-audit { padding: 22px 16px 35px; } .tom-audit header { padding-top: 30px; } .tom-lead { font-size: 14px; } .tom-audit h2 { font-size: 20px; } .tom-notes { grid-template-columns: 1fr; } }

@@ -1,0 +1,109 @@
+{
+  "id": "NQ-AFTERNOON-HISTORICAL-REPLICATION-2019-2021",
+  "status": "DATE_WINDOW_FIXED_OUTCOME_RELEASE_BLOCKED",
+  "registered_on": "2026-10-22",
+  "start": "2019-01-02",
+  "end": "2021-12-31",
+  "warmup_start": "2018-11-19",
+  "discovery_overlap": false,
+  "classification": "FIXED_HISTORICAL_REPLICATION_WINDOW_NOT_PROSPECTIVE_CERTIFIED",
+  "independence_evidence": {
+    "scope": "Prior metadata inventory, audited report, local source-code/report references and current Downloads filenames. Not a full computer/chat/access-history forensic proof.",
+    "inventory_sha256": "395a6a4ed830aae7539bdf6e216ddcb8cf66fdec2ed5aabc1cd24f9b5f7891c1",
+    "prior_audit_sha256": "cded5d0d93cc6dd5c73ddc207d6b559964a37a88e18936a7dd350df7a44e18ab",
+    "earliest_prior_minute_source_label": "2022-12-26T18:01:00",
+    "earliest_prior_intraday_source_label": "2022-01-02T23:00:00",
+    "prior_daily_weekly_monthly_access": true,
+    "known_candidate_specific_outcome_evidence_in_window": false,
+    "absolute_non_exposure_proven": false,
+    "prospective_data": false,
+    "requested_contract_files_in_downloads": [],
+    "nqh24_pilot_excluded": true,
+    "consumed_435_days_excluded": true,
+    "new_csv_content_parsed": false,
+    "new_market_outcomes_read": false
+  },
+  "calendar_weekdays": 783,
+  "complete_rth_days": null,
+  "technical_eligible_days": null,
+  "selected_event_days": null,
+  "unknown_count_reason": "No requested-year source CSV is parsed and official calendars/quality/rollovers have not been verified; weekdays are NOT exchange sessions or eligible days.",
+  "inference_blocks": [
+    {
+      "group": 1,
+      "start": "2019-01-02",
+      "end": "2019-04-23",
+      "weekdays": 80
+    },
+    {
+      "group": 2,
+      "start": "2019-05-22",
+      "end": "2019-09-10",
+      "weekdays": 80
+    },
+    {
+      "group": 3,
+      "start": "2019-10-09",
+      "end": "2020-01-28",
+      "weekdays": 80
+    },
+    {
+      "group": 4,
+      "start": "2020-02-26",
+      "end": "2020-06-16",
+      "weekdays": 80
+    },
+    {
+      "group": 5,
+      "start": "2020-07-15",
+      "end": "2020-11-03",
+      "weekdays": 80
+    },
+    {
+      "group": 6,
+      "start": "2020-12-02",
+      "end": "2021-03-23",
+      "weekdays": 80
+    },
+    {
+      "group": 7,
+      "start": "2021-04-21",
+      "end": "2021-08-10",
+      "weekdays": 80
+    },
+    {
+      "group": 8,
+      "start": "2021-09-08",
+      "end": "2021-12-28",
+      "weekdays": 80
+    }
+  ],
+  "scored_weekdays": 640,
+  "guard_or_tail_weekdays": 143,
+  "scored_date_hash": "abf02ad7ae5ac60a488d88ec0a07277283ff12704d30a917b8ee2aaa44eafdc2",
+  "interpretation": "No zero-PnL fabrication: unselected/closed/failed-quality slots are zero moment-scores, not selected zero-return observations.",
+  "unchanged_candidate": "research/afternoon-candidate-v2.json",
+  "candidate_sha256": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e",
+  "method_addendum": "research/afternoon-method-round-protocol.json",
+  "method_protocol_sha256": "4265e77e5a10b3c4bbdb8644cc2d4840d4eb412f1916d87c68b7de05ca91ee6e",
+  "costs": {
+    "roundtrip_usd": 24.5,
+    "net_points_deduction": 1.225,
+    "point_value_usd": 20
+  },
+  "required_quality": {
+    "timezone": "America/Chicago source -> UTC -> America/New_York",
+    "interval": "BAR_START_SUPPORTED_INTERNAL_ONLY",
+    "strict_shared_sample": "Require complete normal RTH09:30-15:59 plus09:29 boundary, all selection and both horizon labels; valid prior ATR14. Official early-close sessions are not vendor corruption but cannot enter the full-RTH shared sample.",
+    "warmup": "Only 14 prior valid complete RTH true ranges in the frozen continuous point-in-time context; no current or future returns. Carry history across guard dates; no artificial reset at a statistical block boundary.",
+    "official_calendar": "MUST_VERIFY_BEFORE_OUTCOME_RELEASE; 2018 warmup and2019-2021 holidays, early closes, extraordinary halts and both DST transitions each year. Do not classify every weekday as an exchange session.",
+    "raw": "Individual unadjusted contracts. Deduplicate identical contract/timestamp bars; conflicting overlaps fail. Never fill missing OHLCV or move a timestamp to improve an effect.",
+    "roll": "Use frozen volume crossover logic: new contract exceeds old completed-session volume, activate next trading session; last common completed RTH close before activation for causal additive Panama context. Never switch on returns. If evidence unavailable, mark DATA_INSUFFICIENT, no calendar-roll fallback. Raw prices remain unadjusted for horizons.",
+    "minimum_information": ">=120 selected common observations total and >=8 in each fixed inference block; no event-count extension.",
+    "hashes": "Lock all sourceSHA256, calendar, volume decisions, partitions, quality and adaptation-parity BEFORE any new outcomes are scored."
+  },
+  "no_peeking": "One final fixed-end run only after explicit release; no peeking, event-count extension, date replacement, alternative window selection or merging discovery/replication p-values. Missing-information result stays inconclusive. Execution remains independently unverified.",
+  "market_outcomes_computed": false,
+  "candidate_test_released": false,
+  "publication_authorized": false
+}

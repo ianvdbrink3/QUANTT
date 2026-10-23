@@ -1,0 +1,9 @@
+{
+  "external_publication": false,
+  "json_sha256": "b968b88ef7119d561634a8026159bec6d5404a6f040d374be8b015972c552691",
+  "outcome_release": false,
+  "previous_freeze_files": 517,
+  "protected_files": 550,
+  "report_sha256": "7d7792a62dd33ba1fc1ae455cad809ea2e5087f2c313744c6d1c1078e4754d92",
+  "status": "LOCAL_AGGREGATE_REPORT_ONLY"
+}

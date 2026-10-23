@@ -1,0 +1,16 @@
+{
+  "status": "LOCKED_BEFORE_FIRST_NEW_CANDIDATE_RUN",
+  "inputs": {
+    "research/new-candidates-round01-protocol.json": "cbe24302c1196d732a99889c0c6fab327380d5d482ade75091384725c50698a0",
+    "scripts/new_candidates_round01.py": "071d4f61a5c5f90ae55026d1c94dee4240c31df6947e12f719aab844d9455b34",
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "research/oos-year-rollovers.json": "1299dff7d13c9e05fb9dfa42e27c19b21c6f348f832291f933a5daec47c91882",
+    "research/holdout-protocol.json": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022",
+    "research/oos-year-calendar.json": "1bc217b2abd9112a85d21b8b74df791b223202f7d615890f5d9b9e80127f56aa",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c",
+    "scripts/causal_map/__main__.py": "b7f1fd33558c32acf83a5cd10005ba1fd7fc78b237b82720aee3b2a026f93227",
+    "scripts/oos_preparation/year.py": "480c39a1ca42dda114198d8ed460799d457158b046755fb4d67805b49604c5ea"
+  },
+  "independent_preregistration": false,
+  "new_historical_outcomes_released": false
+}

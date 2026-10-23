@@ -1,0 +1,3453 @@
+{
+  "status": "TWO_EXPLORATORY_BACKTESTS_COMPLETE_NOT_VALIDATED",
+  "rules_sha256": "cbe24302c1196d732a99889c0c6fab327380d5d482ade75091384725c50698a0",
+  "period": [
+    "2024-12-30",
+    "2026-09-30"
+  ],
+  "source_files": 69,
+  "fixed_complete_days": 435,
+  "new_historical_sample_read": false,
+  "frozen_models_changed": false,
+  "results": {
+    "MORNING_TO_CLOSE": {
+      "metrics": {
+        "trades": 417,
+        "gross_points": 439.5,
+        "net_points": -71.32499999999914,
+        "net_dollars": -1426.4999999999827,
+        "mean_net": -0.17104316546762383,
+        "median_net": -1.475,
+        "winrate": 0.486810551558753,
+        "profit_factor": 0.9924479056372022,
+        "max_closed_equity_drawdown": 2064.549999999994,
+        "worst_day": -251.975,
+        "top3_positive_share_of_net": null,
+        "mfe_points": {
+          "p10": 4.25,
+          "p25": 12.0,
+          "median": 33.0,
+          "p75": 61.0,
+          "p90": 95.35000000000001
+        },
+        "mae_points": {
+          "p10": 5.75,
+          "p25": 14.5,
+          "median": 30.25,
+          "p75": 52.5,
+          "p90": 102.25
+        },
+        "cost_sensitivity": [
+          {
+            "extra_ticks_per_leg": 0,
+            "total_cost_points": 1.225,
+            "mean_net": -0.17104316546762383,
+            "net_points": -71.32499999999914,
+            "net_dollars": -1426.4999999999827
+          },
+          {
+            "extra_ticks_per_leg": 1,
+            "total_cost_points": 1.725,
+            "mean_net": -0.6710431654676239,
+            "net_points": -279.82499999999914,
+            "net_dollars": -5596.499999999983
+          },
+          {
+            "extra_ticks_per_leg": 2,
+            "total_cost_points": 2.225,
+            "mean_net": -1.1710431654676239,
+            "net_points": -488.32499999999914,
+            "net_dollars": -9766.499999999982
+          }
+        ]
+      },
+      "benchmark": {
+        "trades": 417,
+        "gross_points": 753.5,
+        "net_points": 242.67500000000013,
+        "net_dollars": 4853.500000000003,
+        "mean_net": 0.5819544364508397,
+        "median_net": 0.02499999999999991,
+        "winrate": 0.5083932853717026,
+        "profit_factor": 1.0261626575028628,
+        "max_closed_equity_drawdown": 1192.8250000000007,
+        "worst_day": -377.475,
+        "top3_positive_share_of_net": 2.467600700525393,
+        "mfe_points": {
+          "p10": 5.75,
+          "p25": 14.25,
+          "median": 32.5,
+          "p75": 58.25,
+          "p90": 101.75
+        },
+        "mae_points": {
+          "p10": 3.25,
+          "p25": 11.75,
+          "median": 30.25,
+          "p75": 56.5,
+          "p90": 93.60000000000001
+        },
+        "cost_sensitivity": [
+          {
+            "extra_ticks_per_leg": 0,
+            "total_cost_points": 1.225,
+            "mean_net": 0.5819544364508397,
+            "net_points": 242.67500000000013,
+            "net_dollars": 4853.500000000003
+          },
+          {
+            "extra_ticks_per_leg": 1,
+            "total_cost_points": 1.725,
+            "mean_net": 0.08195443645083966,
+            "net_points": 34.175000000000125,
+            "net_dollars": 683.5000000000025
+          },
+          {
+            "extra_ticks_per_leg": 2,
+            "total_cost_points": 2.225,
+            "mean_net": -0.41804556354916034,
+            "net_points": -174.32499999999987,
+            "net_dollars": -3486.4999999999973
+          }
+        ]
+      },
+      "uncertainty": {
+        "month_clusters": 22,
+        "mean_nominal95": [
+          -6.8501907276995295,
+          6.7756780133928585
+        ],
+        "benchmark_matched_mean": 0.5819544364508399,
+        "incremental_mean": -0.7529976019184641,
+        "incremental_nominal95": [
+          -12.86605812899875,
+          10.525049773755653
+        ],
+        "confirmatory_p": null,
+        "formal_status": "EXPLORATORY_NOT_VALIDATED",
+        "interval_limit": "Nominal monthly percentile bootstrap, not simultaneous or a universal dependence guarantee"
+      },
+      "quarterly": {
+        "2024Q4": {
+          "trades": 1,
+          "gross_points": -88.75,
+          "net_points": -89.975,
+          "net_dollars": -1799.5,
+          "mean_net": -89.975,
+          "median_net": -89.975,
+          "winrate": 0.0,
+          "profit_factor": 0.0,
+          "max_closed_equity_drawdown": 89.975,
+          "worst_day": -89.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 7.0,
+            "p25": 7.0,
+            "median": 7.0,
+            "p75": 7.0,
+            "p90": 7.0
+          },
+          "mae_points": {
+            "p10": 120.0,
+            "p25": 120.0,
+            "median": 120.0,
+            "p75": 120.0,
+            "p90": 120.0
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -89.975,
+              "net_points": -89.975,
+              "net_dollars": -1799.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -90.475,
+              "net_points": -90.475,
+              "net_dollars": -1809.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -90.975,
+              "net_points": -90.975,
+              "net_dollars": -1819.5
+            }
+          ]
+        },
+        "2025Q1": {
+          "trades": 57,
+          "gross_points": 57.75,
+          "net_points": -12.074999999999903,
+          "net_dollars": -241.49999999999807,
+          "mean_net": -0.2118421052631562,
+          "median_net": -1.725,
+          "winrate": 0.49122807017543857,
+          "profit_factor": 0.9914695960862582,
+          "max_closed_equity_drawdown": 415.7,
+          "worst_day": -159.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 4.4,
+            "p25": 13.25,
+            "median": 41.0,
+            "p75": 76.0,
+            "p90": 97.89999999999999
+          },
+          "mae_points": {
+            "p10": 5.250000000000001,
+            "p25": 15.25,
+            "median": 30.25,
+            "p75": 65.0,
+            "p90": 119.99999999999999
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -0.2118421052631562,
+              "net_points": -12.074999999999903,
+              "net_dollars": -241.49999999999807
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -0.7118421052631562,
+              "net_points": -40.5749999999999,
+              "net_dollars": -811.4999999999981
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -1.2118421052631563,
+              "net_points": -69.0749999999999,
+              "net_dollars": -1381.4999999999982
+            }
+          ]
+        },
+        "2025Q2": {
+          "trades": 60,
+          "gross_points": -854.75,
+          "net_points": -928.25,
+          "net_dollars": -18565.0,
+          "mean_net": -15.470833333333333,
+          "median_net": -4.1,
+          "winrate": 0.43333333333333335,
+          "profit_factor": 0.5882496451383962,
+          "max_closed_equity_drawdown": 1211.4499999999998,
+          "worst_day": -251.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 2.45,
+            "p25": 8.75,
+            "median": 28.625,
+            "p75": 55.625,
+            "p90": 89.55000000000001
+          },
+          "mae_points": {
+            "p10": 8.95,
+            "p25": 24.4375,
+            "median": 40.625,
+            "p75": 102.25,
+            "p90": 170.65
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -15.470833333333333,
+              "net_points": -928.25,
+              "net_dollars": -18565.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -15.970833333333333,
+              "net_points": -958.25,
+              "net_dollars": -19165.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -16.47083333333333,
+              "net_points": -988.25,
+              "net_dollars": -19765.0
+            }
+          ]
+        },
+        "2025Q3": {
+          "trades": 61,
+          "gross_points": 375.25,
+          "net_points": 300.5249999999999,
+          "net_dollars": 6010.499999999998,
+          "mean_net": 4.926639344262294,
+          "median_net": -0.7250000000000001,
+          "winrate": 0.4918032786885246,
+          "profit_factor": 1.526797843902011,
+          "max_closed_equity_drawdown": 163.525,
+          "worst_day": -39.975,
+          "top3_positive_share_of_net": 0.9602362532235259,
+          "mfe_points": {
+            "p10": 6.0,
+            "p25": 10.5,
+            "median": 22.25,
+            "p75": 37.25,
+            "p90": 51.5
+          },
+          "mae_points": {
+            "p10": 3.0,
+            "p25": 12.75,
+            "median": 24.75,
+            "p75": 36.75,
+            "p90": 48.75
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 4.926639344262294,
+              "net_points": 300.5249999999999,
+              "net_dollars": 6010.499999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 4.426639344262294,
+              "net_points": 270.0249999999999,
+              "net_dollars": 5400.499999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 3.926639344262294,
+              "net_points": 239.52499999999992,
+              "net_dollars": 4790.499999999998
+            }
+          ]
+        },
+        "2025Q4": {
+          "trades": 60,
+          "gross_points": -230.0,
+          "net_points": -303.5,
+          "net_dollars": -6070.0,
+          "mean_net": -5.058333333333334,
+          "median_net": -1.85,
+          "winrate": 0.45,
+          "profit_factor": 0.7871930162848181,
+          "max_closed_equity_drawdown": 451.6500000000002,
+          "worst_day": -156.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 2.6250000000000004,
+            "p25": 10.3125,
+            "median": 24.5,
+            "p75": 56.875,
+            "p90": 78.50000000000003
+          },
+          "mae_points": {
+            "p10": 6.2,
+            "p25": 15.625,
+            "median": 29.875,
+            "p75": 49.375,
+            "p90": 94.22500000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -5.058333333333334,
+              "net_points": -303.5,
+              "net_dollars": -6070.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -5.558333333333334,
+              "net_points": -333.5,
+              "net_dollars": -6670.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -6.058333333333334,
+              "net_points": -363.5,
+              "net_dollars": -7270.0
+            }
+          ]
+        },
+        "2026Q1": {
+          "trades": 57,
+          "gross_points": -410.25,
+          "net_points": -480.0749999999999,
+          "net_dollars": -9601.499999999998,
+          "mean_net": -8.42236842105263,
+          "median_net": -7.725,
+          "winrate": 0.43859649122807015,
+          "profit_factor": 0.6608921381648655,
+          "max_closed_equity_drawdown": 655.0500000000004,
+          "worst_day": -138.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 3.8000000000000003,
+            "p25": 9.25,
+            "median": 31.75,
+            "p75": 62.25,
+            "p90": 81.35
+          },
+          "mae_points": {
+            "p10": 5.800000000000001,
+            "p25": 14.75,
+            "median": 34.5,
+            "p75": 55.25,
+            "p90": 88.94999999999999
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -8.42236842105263,
+              "net_points": -480.0749999999999,
+              "net_dollars": -9601.499999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -8.92236842105263,
+              "net_points": -508.5749999999999,
+              "net_dollars": -10171.499999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -9.42236842105263,
+              "net_points": -537.0749999999998,
+              "net_dollars": -10741.499999999996
+            }
+          ]
+        },
+        "2026Q2": {
+          "trades": 59,
+          "gross_points": 986.0,
+          "net_points": 913.725,
+          "net_dollars": 18274.5,
+          "mean_net": 15.486864406779661,
+          "median_net": 13.525,
+          "winrate": 0.6271186440677966,
+          "profit_factor": 1.8102553870710303,
+          "max_closed_equity_drawdown": 263.92499999999995,
+          "worst_day": -153.975,
+          "top3_positive_share_of_net": 0.5191113299953487,
+          "mfe_points": {
+            "p10": 5.300000000000001,
+            "p25": 18.5,
+            "median": 41.25,
+            "p75": 79.25,
+            "p90": 140.05
+          },
+          "mae_points": {
+            "p10": 4.600000000000001,
+            "p25": 15.375,
+            "median": 29.25,
+            "p75": 52.5,
+            "p90": 105.35000000000005
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 15.486864406779661,
+              "net_points": 913.725,
+              "net_dollars": 18274.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 14.986864406779661,
+              "net_points": 884.225,
+              "net_dollars": 17684.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 14.486864406779661,
+              "net_points": 854.725,
+              "net_dollars": 17094.5
+            }
+          ]
+        },
+        "2026Q3": {
+          "trades": 62,
+          "gross_points": 604.25,
+          "net_points": 528.3,
+          "net_dollars": 10566.0,
+          "mean_net": 8.520967741935483,
+          "median_net": -2.225,
+          "winrate": 0.4838709677419355,
+          "profit_factor": 1.4616191183537948,
+          "max_closed_equity_drawdown": 276.375,
+          "worst_day": -150.975,
+          "top3_positive_share_of_net": 1.1552621616505776,
+          "mfe_points": {
+            "p10": 7.9250000000000025,
+            "p25": 19.4375,
+            "median": 40.75,
+            "p75": 62.1875,
+            "p90": 101.3
+          },
+          "mae_points": {
+            "p10": 7.25,
+            "p25": 11.625,
+            "median": 31.875,
+            "p75": 49.1875,
+            "p90": 87.64999999999999
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 8.520967741935483,
+              "net_points": 528.3,
+              "net_dollars": 10566.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 8.020967741935483,
+              "net_points": 497.29999999999995,
+              "net_dollars": 9946.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 7.520967741935483,
+              "net_points": 466.29999999999995,
+              "net_dollars": 9326.0
+            }
+          ]
+        }
+      },
+      "monthly": {
+        "2024-12": {
+          "trades": 1,
+          "gross_points": -88.75,
+          "net_points": -89.975,
+          "net_dollars": -1799.5,
+          "mean_net": -89.975,
+          "median_net": -89.975,
+          "winrate": 0.0,
+          "profit_factor": 0.0,
+          "max_closed_equity_drawdown": 89.975,
+          "worst_day": -89.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 7.0,
+            "p25": 7.0,
+            "median": 7.0,
+            "p75": 7.0,
+            "p90": 7.0
+          },
+          "mae_points": {
+            "p10": 120.0,
+            "p25": 120.0,
+            "median": 120.0,
+            "p75": 120.0,
+            "p90": 120.0
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -89.975,
+              "net_points": -89.975,
+              "net_dollars": -1799.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -90.475,
+              "net_points": -90.475,
+              "net_dollars": -1809.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -90.975,
+              "net_points": -90.975,
+              "net_dollars": -1819.5
+            }
+          ]
+        },
+        "2025-01": {
+          "trades": 18,
+          "gross_points": -116.25,
+          "net_points": -138.29999999999995,
+          "net_dollars": -2765.999999999999,
+          "mean_net": -7.683333333333331,
+          "median_net": -14.225,
+          "winrate": 0.3888888888888889,
+          "profit_factor": 0.6985121805002997,
+          "max_closed_equity_drawdown": 189.04999999999998,
+          "worst_day": -82.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 4.425,
+            "p25": 6.5625,
+            "median": 33.125,
+            "p75": 53.1875,
+            "p90": 89.625
+          },
+          "mae_points": {
+            "p10": 17.7,
+            "p25": 24.8125,
+            "median": 41.5,
+            "p75": 57.375,
+            "p90": 83.10000000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -7.683333333333331,
+              "net_points": -138.29999999999995,
+              "net_dollars": -2765.999999999999
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -8.18333333333333,
+              "net_points": -147.29999999999995,
+              "net_dollars": -2945.999999999999
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -8.68333333333333,
+              "net_points": -156.29999999999995,
+              "net_dollars": -3125.999999999999
+            }
+          ]
+        },
+        "2025-02": {
+          "trades": 18,
+          "gross_points": 312.0,
+          "net_points": 289.95000000000005,
+          "net_dollars": 5799.000000000001,
+          "mean_net": 16.108333333333334,
+          "median_net": 18.525,
+          "winrate": 0.7222222222222222,
+          "profit_factor": 2.0864637002341917,
+          "max_closed_equity_drawdown": 154.22500000000002,
+          "worst_day": -154.225,
+          "top3_positive_share_of_net": 0.8926539058458355,
+          "mfe_points": {
+            "p10": 8.150000000000002,
+            "p25": 39.5,
+            "median": 50.125,
+            "p75": 81.625,
+            "p90": 95.87500000000001
+          },
+          "mae_points": {
+            "p10": 3.9750000000000005,
+            "p25": 6.625,
+            "median": 18.75,
+            "p75": 31.75,
+            "p90": 48.12500000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 16.108333333333334,
+              "net_points": 289.95000000000005,
+              "net_dollars": 5799.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 15.608333333333334,
+              "net_points": 280.95000000000005,
+              "net_dollars": 5619.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 15.108333333333334,
+              "net_points": 271.95000000000005,
+              "net_dollars": 5439.000000000001
+            }
+          ]
+        },
+        "2025-03": {
+          "trades": 21,
+          "gross_points": -138.0,
+          "net_points": -163.72499999999994,
+          "net_dollars": -3274.4999999999986,
+          "mean_net": -7.796428571428568,
+          "median_net": -2.975,
+          "winrate": 0.38095238095238093,
+          "profit_factor": 0.7626915969127079,
+          "max_closed_equity_drawdown": 415.7,
+          "worst_day": -159.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 10.75,
+            "p25": 16.75,
+            "median": 46.25,
+            "p75": 73.5,
+            "p90": 103.75
+          },
+          "mae_points": {
+            "p10": 8.25,
+            "p25": 19.0,
+            "median": 49.25,
+            "p75": 96.75,
+            "p90": 126.75
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -7.796428571428568,
+              "net_points": -163.72499999999994,
+              "net_dollars": -3274.4999999999986
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -8.296428571428567,
+              "net_points": -174.22499999999994,
+              "net_dollars": -3484.4999999999986
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -8.796428571428567,
+              "net_points": -184.72499999999994,
+              "net_dollars": -3694.4999999999986
+            }
+          ]
+        },
+        "2025-04": {
+          "trades": 21,
+          "gross_points": -601.75,
+          "net_points": -627.475,
+          "net_dollars": -12549.5,
+          "mean_net": -29.879761904761907,
+          "median_net": -21.975,
+          "winrate": 0.3333333333333333,
+          "profit_factor": 0.4749822198050454,
+          "max_closed_equity_drawdown": 692.0750000000002,
+          "worst_day": -251.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 3.0,
+            "p25": 10.5,
+            "median": 34.25,
+            "p75": 85.5,
+            "p90": 144.5
+          },
+          "mae_points": {
+            "p10": 31.75,
+            "p25": 40.0,
+            "median": 72.0,
+            "p75": 170.25,
+            "p90": 236.75
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -29.879761904761907,
+              "net_points": -627.475,
+              "net_dollars": -12549.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -30.379761904761907,
+              "net_points": -637.975,
+              "net_dollars": -12759.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -30.879761904761907,
+              "net_points": -648.475,
+              "net_dollars": -12969.5
+            }
+          ]
+        },
+        "2025-05": {
+          "trades": 20,
+          "gross_points": -420.75,
+          "net_points": -445.25,
+          "net_dollars": -8905.0,
+          "mean_net": -22.2625,
+          "median_net": -29.225,
+          "winrate": 0.45,
+          "profit_factor": 0.5268205850314833,
+          "max_closed_equity_drawdown": 616.175,
+          "worst_day": -169.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 0.0,
+            "p25": 2.6875,
+            "median": 15.125,
+            "p75": 58.3125,
+            "p90": 77.025
+          },
+          "mae_points": {
+            "p10": 22.725,
+            "p25": 25.875,
+            "median": 54.25,
+            "p75": 104.0,
+            "p90": 159.05
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -22.2625,
+              "net_points": -445.25,
+              "net_dollars": -8905.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -22.7625,
+              "net_points": -455.25,
+              "net_dollars": -9105.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -23.2625,
+              "net_points": -465.25,
+              "net_dollars": -9305.0
+            }
+          ]
+        },
+        "2025-06": {
+          "trades": 19,
+          "gross_points": 167.75,
+          "net_points": 144.475,
+          "net_dollars": 2889.5,
+          "mean_net": 7.603947368421053,
+          "median_net": 1.525,
+          "winrate": 0.5263157894736842,
+          "profit_factor": 2.2215176495455506,
+          "max_closed_equity_drawdown": 74.125,
+          "worst_day": -27.725,
+          "top3_positive_share_of_net": 1.057795466343658,
+          "mfe_points": {
+            "p10": 10.6,
+            "p25": 15.0,
+            "median": 33.0,
+            "p75": 42.375,
+            "p90": 62.89999999999998
+          },
+          "mae_points": {
+            "p10": 6.15,
+            "p25": 12.5,
+            "median": 20.5,
+            "p75": 31.125,
+            "p90": 49.699999999999996
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 7.603947368421053,
+              "net_points": 144.475,
+              "net_dollars": 2889.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 7.103947368421053,
+              "net_points": 134.975,
+              "net_dollars": 2699.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 6.603947368421053,
+              "net_points": 125.475,
+              "net_dollars": 2509.5
+            }
+          ]
+        },
+        "2025-07": {
+          "trades": 20,
+          "gross_points": 52.5,
+          "net_points": 27.999999999999986,
+          "net_dollars": 559.9999999999998,
+          "mean_net": 1.3999999999999992,
+          "median_net": -2.725,
+          "winrate": 0.45,
+          "profit_factor": 1.1335081654547623,
+          "max_closed_equity_drawdown": 163.525,
+          "worst_day": -39.975,
+          "top3_positive_share_of_net": 5.252678571428573,
+          "mfe_points": {
+            "p10": 6.0,
+            "p25": 12.1875,
+            "median": 22.75,
+            "p75": 31.0,
+            "p90": 38.375
+          },
+          "mae_points": {
+            "p10": 6.6000000000000005,
+            "p25": 12.25,
+            "median": 16.75,
+            "p75": 33.125,
+            "p90": 40.550000000000004
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 1.3999999999999992,
+              "net_points": 27.999999999999986,
+              "net_dollars": 559.9999999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 0.8999999999999992,
+              "net_points": 17.999999999999986,
+              "net_dollars": 359.9999999999997
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 0.39999999999999925,
+              "net_points": 7.999999999999986,
+              "net_dollars": 159.99999999999972
+            }
+          ]
+        },
+        "2025-08": {
+          "trades": 21,
+          "gross_points": 100.5,
+          "net_points": 74.775,
+          "net_dollars": 1495.5,
+          "mean_net": 3.560714285714286,
+          "median_net": -4.975,
+          "winrate": 0.47619047619047616,
+          "profit_factor": 1.4444939812750783,
+          "max_closed_equity_drawdown": 46.2,
+          "worst_day": -39.225,
+          "top3_positive_share_of_net": 2.528585757271815,
+          "mfe_points": {
+            "p10": 6.0,
+            "p25": 7.5,
+            "median": 15.0,
+            "p75": 33.0,
+            "p90": 40.75
+          },
+          "mae_points": {
+            "p10": 5.0,
+            "p25": 17.5,
+            "median": 26.25,
+            "p75": 44.25,
+            "p90": 50.0
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 3.560714285714286,
+              "net_points": 74.775,
+              "net_dollars": 1495.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 3.060714285714286,
+              "net_points": 64.275,
+              "net_dollars": 1285.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 2.560714285714286,
+              "net_points": 53.775000000000006,
+              "net_dollars": 1075.5
+            }
+          ]
+        },
+        "2025-09": {
+          "trades": 20,
+          "gross_points": 222.25,
+          "net_points": 197.75000000000003,
+          "net_dollars": 3955.0000000000005,
+          "mean_net": 9.887500000000001,
+          "median_net": 8.4,
+          "winrate": 0.55,
+          "profit_factor": 2.0271393325542135,
+          "max_closed_equity_drawdown": 114.77500000000003,
+          "worst_day": -37.725,
+          "top3_positive_share_of_net": 1.0838179519595446,
+          "mfe_points": {
+            "p10": 9.025,
+            "p25": 10.875,
+            "median": 24.25,
+            "p75": 42.0625,
+            "p90": 83.0
+          },
+          "mae_points": {
+            "p10": 1.25,
+            "p25": 7.75,
+            "median": 24.375,
+            "p75": 29.625,
+            "p90": 39.625
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 9.887500000000001,
+              "net_points": 197.75000000000003,
+              "net_dollars": 3955.0000000000005
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 9.387500000000001,
+              "net_points": 187.75000000000003,
+              "net_dollars": 3755.0000000000005
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 8.887500000000001,
+              "net_points": 177.75000000000003,
+              "net_dollars": 3555.0000000000005
+            }
+          ]
+        },
+        "2025-10": {
+          "trades": 23,
+          "gross_points": 13.0,
+          "net_points": -15.174999999999955,
+          "net_dollars": -303.4999999999991,
+          "mean_net": -0.6597826086956502,
+          "median_net": 5.025,
+          "winrate": 0.5217391304347826,
+          "profit_factor": 0.9711762191936938,
+          "max_closed_equity_drawdown": 180.32500000000002,
+          "worst_day": -130.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 1.7500000000000002,
+            "p25": 5.5,
+            "median": 24.25,
+            "p75": 42.875,
+            "p90": 87.10000000000002
+          },
+          "mae_points": {
+            "p10": 3.4500000000000006,
+            "p25": 10.375,
+            "median": 30.25,
+            "p75": 46.625,
+            "p90": 88.60000000000002
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -0.6597826086956502,
+              "net_points": -15.174999999999955,
+              "net_dollars": -303.4999999999991
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -1.1597826086956502,
+              "net_points": -26.674999999999955,
+              "net_dollars": -533.4999999999991
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -1.6597826086956502,
+              "net_points": -38.174999999999955,
+              "net_dollars": -763.4999999999991
+            }
+          ]
+        },
+        "2025-11": {
+          "trades": 18,
+          "gross_points": -205.25,
+          "net_points": -227.2999999999999,
+          "net_dollars": -4545.999999999998,
+          "mean_net": -12.627777777777773,
+          "median_net": -12.975000000000001,
+          "winrate": 0.4444444444444444,
+          "profit_factor": 0.6360288230584469,
+          "max_closed_equity_drawdown": 369.09999999999997,
+          "worst_day": -156.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 1.0250000000000001,
+            "p25": 10.375,
+            "median": 45.125,
+            "p75": 68.0,
+            "p90": 106.47500000000001
+          },
+          "mae_points": {
+            "p10": 15.15,
+            "p25": 22.1875,
+            "median": 39.125,
+            "p75": 92.0,
+            "p90": 108.20000000000002
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -12.627777777777773,
+              "net_points": -227.2999999999999,
+              "net_dollars": -4545.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -13.127777777777773,
+              "net_points": -236.2999999999999,
+              "net_dollars": -4725.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -13.627777777777773,
+              "net_points": -245.2999999999999,
+              "net_dollars": -4905.999999999998
+            }
+          ]
+        },
+        "2025-12": {
+          "trades": 19,
+          "gross_points": -37.75,
+          "net_points": -61.02500000000001,
+          "net_dollars": -1220.5000000000002,
+          "mean_net": -3.2118421052631585,
+          "median_net": -1.475,
+          "winrate": 0.3684210526315789,
+          "profit_factor": 0.7782521802325583,
+          "max_closed_equity_drawdown": 84.475,
+          "worst_day": -65.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 9.65,
+            "p25": 13.25,
+            "median": 20.75,
+            "p75": 43.375,
+            "p90": 65.05
+          },
+          "mae_points": {
+            "p10": 4.95,
+            "p25": 10.75,
+            "median": 27.0,
+            "p75": 39.625,
+            "p90": 50.349999999999994
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -3.2118421052631585,
+              "net_points": -61.02500000000001,
+              "net_dollars": -1220.5000000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -3.7118421052631585,
+              "net_points": -70.525,
+              "net_dollars": -1410.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -4.211842105263159,
+              "net_points": -80.025,
+              "net_dollars": -1600.5
+            }
+          ]
+        },
+        "2026-01": {
+          "trades": 19,
+          "gross_points": -493.75,
+          "net_points": -517.025,
+          "net_dollars": -10340.5,
+          "mean_net": -27.211842105263155,
+          "median_net": -26.225,
+          "winrate": 0.21052631578947367,
+          "profit_factor": 0.18240759043289184,
+          "max_closed_equity_drawdown": 517.025,
+          "worst_day": -138.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 4.2,
+            "p25": 6.625,
+            "median": 11.25,
+            "p75": 25.875,
+            "p90": 41.5
+          },
+          "mae_points": {
+            "p10": 12.3,
+            "p25": 25.875,
+            "median": 40.5,
+            "p75": 57.625,
+            "p90": 94.99999999999997
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -27.211842105263155,
+              "net_points": -517.025,
+              "net_dollars": -10340.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -27.711842105263155,
+              "net_points": -526.525,
+              "net_dollars": -10530.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -28.211842105263155,
+              "net_points": -536.025,
+              "net_dollars": -10720.5
+            }
+          ]
+        },
+        "2026-02": {
+          "trades": 18,
+          "gross_points": -59.0,
+          "net_points": -81.04999999999998,
+          "net_dollars": -1620.9999999999995,
+          "mean_net": -4.502777777777776,
+          "median_net": -4.85,
+          "winrate": 0.4444444444444444,
+          "profit_factor": 0.8089569829110196,
+          "max_closed_equity_drawdown": 124.94999999999999,
+          "worst_day": -116.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 2.125,
+            "p25": 6.5625,
+            "median": 35.375,
+            "p75": 72.4375,
+            "p90": 91.85000000000002
+          },
+          "mae_points": {
+            "p10": 4.525,
+            "p25": 13.625,
+            "median": 35.75,
+            "p75": 53.5,
+            "p90": 69.72500000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -4.502777777777776,
+              "net_points": -81.04999999999998,
+              "net_dollars": -1620.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -5.002777777777776,
+              "net_points": -90.04999999999998,
+              "net_dollars": -1800.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -5.502777777777776,
+              "net_points": -99.04999999999998,
+              "net_dollars": -1980.9999999999995
+            }
+          ]
+        },
+        "2026-03": {
+          "trades": 20,
+          "gross_points": 142.5,
+          "net_points": 118.00000000000003,
+          "net_dollars": 2360.0000000000005,
+          "mean_net": 5.900000000000001,
+          "median_net": 18.15,
+          "winrate": 0.65,
+          "profit_factor": 1.3286221541460694,
+          "max_closed_equity_drawdown": 130.95,
+          "worst_day": -99.475,
+          "top3_positive_share_of_net": 1.8650423728813557,
+          "mfe_points": {
+            "p10": 12.0,
+            "p25": 35.0,
+            "median": 55.25,
+            "p75": 74.0,
+            "p90": 88.97500000000001
+          },
+          "mae_points": {
+            "p10": 6.95,
+            "p25": 14.1875,
+            "median": 26.75,
+            "p75": 54.875,
+            "p90": 96.32500000000002
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 5.900000000000001,
+              "net_points": 118.00000000000003,
+              "net_dollars": 2360.0000000000005
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 5.400000000000001,
+              "net_points": 108.00000000000003,
+              "net_dollars": 2160.0000000000005
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 4.900000000000001,
+              "net_points": 98.00000000000003,
+              "net_dollars": 1960.0000000000005
+            }
+          ]
+        },
+        "2026-04": {
+          "trades": 20,
+          "gross_points": -129.0,
+          "net_points": -153.4999999999999,
+          "net_dollars": -3069.9999999999977,
+          "mean_net": -7.6749999999999945,
+          "median_net": -1.0999999999999996,
+          "winrate": 0.5,
+          "profit_factor": 0.7136194029850746,
+          "max_closed_equity_drawdown": 263.92499999999995,
+          "worst_day": -153.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 5.15,
+            "p25": 11.625,
+            "median": 22.5,
+            "p75": 42.875,
+            "p90": 76.67500000000003
+          },
+          "mae_points": {
+            "p10": 4.65,
+            "p25": 8.3125,
+            "median": 30.625,
+            "p75": 49.875,
+            "p90": 87.77500000000012
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -7.6749999999999945,
+              "net_points": -153.4999999999999,
+              "net_dollars": -3069.9999999999977
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -8.174999999999994,
+              "net_points": -163.4999999999999,
+              "net_dollars": -3269.9999999999977
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -8.674999999999994,
+              "net_points": -173.4999999999999,
+              "net_dollars": -3469.9999999999977
+            }
+          ]
+        },
+        "2026-05": {
+          "trades": 19,
+          "gross_points": 262.0,
+          "net_points": 238.72500000000008,
+          "net_dollars": 4774.500000000002,
+          "mean_net": 12.564473684210531,
+          "median_net": 0.5249999999999999,
+          "winrate": 0.5789473684210527,
+          "profit_factor": 1.7344254730041533,
+          "max_closed_equity_drawdown": 176.7,
+          "worst_day": -127.975,
+          "top3_positive_share_of_net": 1.3501937375641426,
+          "mfe_points": {
+            "p10": 3.5500000000000003,
+            "p25": 12.875,
+            "median": 35.5,
+            "p75": 77.75,
+            "p90": 99.64999999999999
+          },
+          "mae_points": {
+            "p10": 5.2,
+            "p25": 13.75,
+            "median": 26.75,
+            "p75": 47.5,
+            "p90": 60.499999999999986
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 12.564473684210531,
+              "net_points": 238.72500000000008,
+              "net_dollars": 4774.500000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 12.064473684210531,
+              "net_points": 229.22500000000008,
+              "net_dollars": 4584.500000000002
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 11.564473684210531,
+              "net_points": 219.72500000000008,
+              "net_dollars": 4394.500000000002
+            }
+          ]
+        },
+        "2026-06": {
+          "trades": 20,
+          "gross_points": 853.0,
+          "net_points": 828.5,
+          "net_dollars": 16570.0,
+          "mean_net": 41.425,
+          "median_net": 33.65,
+          "winrate": 0.8,
+          "profit_factor": 4.10706919182449,
+          "max_closed_equity_drawdown": 134.22500000000002,
+          "worst_day": -134.225,
+          "top3_positive_share_of_net": 0.5281532890766446,
+          "mfe_points": {
+            "p10": 22.35,
+            "p25": 44.25,
+            "median": 68.125,
+            "p75": 125.5625,
+            "p90": 151.3
+          },
+          "mae_points": {
+            "p10": 8.225000000000001,
+            "p25": 17.875,
+            "median": 31.25,
+            "p75": 66.125,
+            "p90": 117.8
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 41.425,
+              "net_points": 828.5,
+              "net_dollars": 16570.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 40.925,
+              "net_points": 818.5,
+              "net_dollars": 16370.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 40.425,
+              "net_points": 808.5,
+              "net_dollars": 16170.0
+            }
+          ]
+        },
+        "2026-07": {
+          "trades": 21,
+          "gross_points": 421.25,
+          "net_points": 395.525,
+          "net_dollars": 7910.5,
+          "mean_net": 18.83452380952381,
+          "median_net": -12.725,
+          "winrate": 0.47619047619047616,
+          "profit_factor": 1.7639673571876961,
+          "max_closed_equity_drawdown": 211.12499999999994,
+          "worst_day": -75.975,
+          "top3_positive_share_of_net": 1.5102079514569244,
+          "mfe_points": {
+            "p10": 18.75,
+            "p25": 26.5,
+            "median": 44.0,
+            "p75": 95.25,
+            "p90": 136.0
+          },
+          "mae_points": {
+            "p10": 5.75,
+            "p25": 26.25,
+            "median": 41.5,
+            "p75": 79.25,
+            "p90": 88.5
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 18.83452380952381,
+              "net_points": 395.525,
+              "net_dollars": 7910.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 18.33452380952381,
+              "net_points": 385.025,
+              "net_dollars": 7700.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 17.83452380952381,
+              "net_points": 374.525,
+              "net_dollars": 7490.5
+            }
+          ]
+        },
+        "2026-08": {
+          "trades": 21,
+          "gross_points": 20.25,
+          "net_points": -5.474999999999994,
+          "net_dollars": -109.49999999999989,
+          "mean_net": -0.26071428571428545,
+          "median_net": -3.225,
+          "winrate": 0.47619047619047616,
+          "profit_factor": 0.9846627915120106,
+          "max_closed_equity_drawdown": 187.425,
+          "worst_day": -150.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 6.25,
+            "p25": 17.5,
+            "median": 29.25,
+            "p75": 55.5,
+            "p90": 63.75
+          },
+          "mae_points": {
+            "p10": 10.0,
+            "p25": 15.0,
+            "median": 35.75,
+            "p75": 47.5,
+            "p90": 57.75
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -0.26071428571428545,
+              "net_points": -5.474999999999994,
+              "net_dollars": -109.49999999999989
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -0.7607142857142855,
+              "net_points": -15.974999999999994,
+              "net_dollars": -319.4999999999999
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -1.2607142857142855,
+              "net_points": -26.474999999999994,
+              "net_dollars": -529.4999999999999
+            }
+          ]
+        },
+        "2026-09": {
+          "trades": 20,
+          "gross_points": 162.75,
+          "net_points": 138.24999999999997,
+          "net_dollars": 2764.9999999999995,
+          "mean_net": 6.912499999999999,
+          "median_net": 0.2749999999999999,
+          "winrate": 0.5,
+          "profit_factor": 1.5125115848007413,
+          "max_closed_equity_drawdown": 151.45000000000002,
+          "worst_day": -142.225,
+          "top3_positive_share_of_net": 2.000542495479205,
+          "mfe_points": {
+            "p10": 6.7,
+            "p25": 20.4375,
+            "median": 42.25,
+            "p75": 61.0625,
+            "p90": 80.15000000000003
+          },
+          "mae_points": {
+            "p10": 6.800000000000001,
+            "p25": 8.5,
+            "median": 18.0,
+            "p75": 29.3125,
+            "p90": 36.07500000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 6.912499999999999,
+              "net_points": 138.24999999999997,
+              "net_dollars": 2764.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 6.412499999999999,
+              "net_points": 128.24999999999997,
+              "net_dollars": 2564.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 5.912499999999999,
+              "net_points": 118.24999999999997,
+              "net_dollars": 2364.9999999999995
+            }
+          ]
+        }
+      },
+      "direction": {
+        "-1": {
+          "trades": 195,
+          "gross_points": -157.0,
+          "net_points": -395.8749999999997,
+          "net_dollars": -7917.4999999999945,
+          "mean_net": -2.0301282051282037,
+          "median_net": -2.475,
+          "winrate": 0.4666666666666667,
+          "profit_factor": 0.9211545738811759,
+          "max_closed_equity_drawdown": 1841.8249999999996,
+          "worst_day": -251.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 3.0,
+            "p25": 12.25,
+            "median": 34.25,
+            "p75": 66.0,
+            "p90": 93.74999999999997
+          },
+          "mae_points": {
+            "p10": 7.950000000000001,
+            "p25": 17.5,
+            "median": 32.75,
+            "p75": 66.75,
+            "p90": 117.65
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -2.0301282051282037,
+              "net_points": -395.8749999999997,
+              "net_dollars": -7917.4999999999945
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -2.5301282051282037,
+              "net_points": -493.3749999999997,
+              "net_dollars": -9867.499999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -3.0301282051282037,
+              "net_points": -590.8749999999998,
+              "net_dollars": -11817.499999999996
+            }
+          ]
+        },
+        "1": {
+          "trades": 222,
+          "gross_points": 596.5,
+          "net_points": 324.5499999999999,
+          "net_dollars": 6490.999999999998,
+          "mean_net": 1.4619369369369364,
+          "median_net": 0.2749999999999999,
+          "winrate": 0.5045045045045045,
+          "profit_factor": 1.0733695037865933,
+          "max_closed_equity_drawdown": 834.1000000000006,
+          "worst_day": -169.975,
+          "top3_positive_share_of_net": 1.5754891388075805,
+          "mfe_points": {
+            "p10": 5.25,
+            "p25": 11.4375,
+            "median": 30.875,
+            "p75": 57.5,
+            "p90": 95.45
+          },
+          "mae_points": {
+            "p10": 4.050000000000001,
+            "p25": 11.3125,
+            "median": 27.625,
+            "p75": 47.5,
+            "p90": 93.30000000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 1.4619369369369364,
+              "net_points": 324.5499999999999,
+              "net_dollars": 6490.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 0.9619369369369364,
+              "net_points": 213.5499999999999,
+              "net_dollars": 4270.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 0.4619369369369364,
+              "net_points": 102.5499999999999,
+              "net_dollars": 2050.999999999998
+            }
+          ]
+        }
+      }
+    },
+    "TURN_OF_MONTH_RTH": {
+      "metrics": {
+        "trades": 81,
+        "gross_points": 4463.25,
+        "net_points": 4364.025,
+        "net_dollars": 87280.5,
+        "mean_net": 53.876851851851846,
+        "median_net": 90.525,
+        "winrate": 0.6419753086419753,
+        "profit_factor": 1.7059787026664126,
+        "max_closed_equity_drawdown": 1307.0749999999975,
+        "worst_day": -583.975,
+        "top3_positive_share_of_net": 0.3780512256460492,
+        "mfe_points": {
+          "p10": 30.25,
+          "p25": 96.25,
+          "median": 190.0,
+          "p75": 272.75,
+          "p90": 407.0
+        },
+        "mae_points": {
+          "p10": 17.5,
+          "p25": 45.75,
+          "median": 102.25,
+          "p75": 234.75,
+          "p90": 364.0
+        },
+        "cost_sensitivity": [
+          {
+            "extra_ticks_per_leg": 0,
+            "total_cost_points": 1.225,
+            "mean_net": 53.876851851851846,
+            "net_points": 4364.025,
+            "net_dollars": 87280.5
+          },
+          {
+            "extra_ticks_per_leg": 1,
+            "total_cost_points": 1.725,
+            "mean_net": 53.376851851851846,
+            "net_points": 4323.525,
+            "net_dollars": 86470.5
+          },
+          {
+            "extra_ticks_per_leg": 2,
+            "total_cost_points": 2.225,
+            "mean_net": 52.876851851851846,
+            "net_points": 4283.025,
+            "net_dollars": 85660.5
+          }
+        ]
+      },
+      "benchmark": {
+        "trades": 352,
+        "gross_points": -2824.5,
+        "net_points": -3255.7000000000007,
+        "net_dollars": -65114.000000000015,
+        "mean_net": -9.24914772727273,
+        "median_net": -1.475,
+        "winrate": 0.4943181818181818,
+        "profit_factor": 0.9012048594937503,
+        "max_closed_equity_drawdown": 4338.524999999995,
+        "worst_day": -1074.225,
+        "top3_positive_share_of_net": null,
+        "mfe_points": {
+          "p10": 16.525,
+          "p25": 50.4375,
+          "median": 123.75,
+          "p75": 223.5625,
+          "p90": 328.20000000000016
+        },
+        "mae_points": {
+          "p10": 24.625,
+          "p25": 63.5625,
+          "median": 149.25,
+          "p75": 271.25,
+          "p90": 401.70000000000005
+        },
+        "cost_sensitivity": [
+          {
+            "extra_ticks_per_leg": 0,
+            "total_cost_points": 1.225,
+            "mean_net": -9.24914772727273,
+            "net_points": -3255.7000000000007,
+            "net_dollars": -65114.000000000015
+          },
+          {
+            "extra_ticks_per_leg": 1,
+            "total_cost_points": 1.725,
+            "mean_net": -9.74914772727273,
+            "net_points": -3431.7000000000007,
+            "net_dollars": -68634.00000000001
+          },
+          {
+            "extra_ticks_per_leg": 2,
+            "total_cost_points": 2.225,
+            "mean_net": -10.24914772727273,
+            "net_points": -3607.7000000000007,
+            "net_dollars": -72154.00000000001
+          }
+        ]
+      },
+      "uncertainty": {
+        "month_clusters": 21,
+        "mean_nominal95": [
+          -0.11279453256063054,
+          111.69454982247605
+        ],
+        "benchmark_matched_mean": -7.414237345360499,
+        "incremental_mean": 61.29108919721233,
+        "incremental_nominal95": [
+          1.5087235562540053,
+          129.71098130204967
+        ],
+        "confirmatory_p": null,
+        "formal_status": "EXPLORATORY_NOT_VALIDATED",
+        "interval_limit": "Nominal monthly percentile bootstrap, not simultaneous or a universal dependence guarantee"
+      },
+      "quarterly": {
+        "2025Q1": {
+          "trades": 12,
+          "gross_points": 829.25,
+          "net_points": 814.5499999999998,
+          "net_dollars": 16290.999999999996,
+          "mean_net": 67.87916666666665,
+          "median_net": 199.275,
+          "winrate": 0.75,
+          "profit_factor": 1.849883924146386,
+          "max_closed_equity_drawdown": 583.975,
+          "worst_day": -583.975,
+          "top3_positive_share_of_net": 1.0512859861273096,
+          "mfe_points": {
+            "p10": 103.025,
+            "p25": 185.0,
+            "median": 269.125,
+            "p75": 309.0,
+            "p90": 350.925
+          },
+          "mae_points": {
+            "p10": 34.025,
+            "p25": 76.25,
+            "median": 159.75,
+            "p75": 245.5,
+            "p90": 354.32500000000005
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 67.87916666666665,
+              "net_points": 814.5499999999998,
+              "net_dollars": 16290.999999999996
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 67.37916666666665,
+              "net_points": 808.5499999999998,
+              "net_dollars": 16170.999999999996
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 66.87916666666665,
+              "net_points": 802.5499999999998,
+              "net_dollars": 16050.999999999996
+            }
+          ]
+        },
+        "2025Q2": {
+          "trades": 12,
+          "gross_points": 1240.5,
+          "net_points": 1225.8000000000002,
+          "net_dollars": 24516.000000000004,
+          "mean_net": 102.15000000000002,
+          "median_net": 74.775,
+          "winrate": 0.75,
+          "profit_factor": 4.5282435057926165,
+          "max_closed_equity_drawdown": 239.22500000000002,
+          "worst_day": -239.225,
+          "top3_positive_share_of_net": 0.8176904878446727,
+          "mfe_points": {
+            "p10": 64.425,
+            "p25": 131.8125,
+            "median": 183.5,
+            "p75": 257.875,
+            "p90": 399.40000000000003
+          },
+          "mae_points": {
+            "p10": 26.225,
+            "p25": 49.0625,
+            "median": 87.75,
+            "p75": 138.8125,
+            "p90": 253.3
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 102.15000000000002,
+              "net_points": 1225.8000000000002,
+              "net_dollars": 24516.000000000004
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 101.65000000000002,
+              "net_points": 1219.8000000000002,
+              "net_dollars": 24396.000000000004
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 101.15000000000002,
+              "net_points": 1213.8000000000002,
+              "net_dollars": 24276.000000000004
+            }
+          ]
+        },
+        "2025Q3": {
+          "trades": 11,
+          "gross_points": -241.5,
+          "net_points": -254.9750000000001,
+          "net_dollars": -5099.500000000002,
+          "mean_net": -23.179545454545465,
+          "median_net": 27.525,
+          "winrate": 0.5454545454545454,
+          "profit_factor": 0.7702669219506701,
+          "max_closed_equity_drawdown": 797.125,
+          "worst_day": -394.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 8.25,
+            "p25": 31.0,
+            "median": 93.25,
+            "p75": 194.875,
+            "p90": 199.75
+          },
+          "mae_points": {
+            "p10": 5.25,
+            "p25": 72.75,
+            "median": 105.25,
+            "p75": 244.625,
+            "p90": 312.5
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -23.179545454545465,
+              "net_points": -254.9750000000001,
+              "net_dollars": -5099.500000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -23.679545454545465,
+              "net_points": -260.47500000000014,
+              "net_dollars": -5209.500000000003
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -24.179545454545465,
+              "net_points": -265.97500000000014,
+              "net_dollars": -5319.500000000003
+            }
+          ]
+        },
+        "2025Q4": {
+          "trades": 11,
+          "gross_points": -46.25,
+          "net_points": -59.72499999999994,
+          "net_dollars": -1194.4999999999986,
+          "mean_net": -5.4295454545454485,
+          "median_net": -56.975,
+          "winrate": 0.45454545454545453,
+          "profit_factor": 0.934964882670006,
+          "max_closed_equity_drawdown": 693.625,
+          "worst_day": -224.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 3.75,
+            "p25": 21.75,
+            "median": 151.5,
+            "p75": 215.375,
+            "p90": 273.75
+          },
+          "mae_points": {
+            "p10": 45.75,
+            "p25": 59.75,
+            "median": 171.5,
+            "p75": 215.25,
+            "p90": 234.25
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -5.4295454545454485,
+              "net_points": -59.72499999999994,
+              "net_dollars": -1194.4999999999986
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -5.9295454545454485,
+              "net_points": -65.22499999999994,
+              "net_dollars": -1304.4999999999986
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -6.4295454545454485,
+              "net_points": -70.72499999999994,
+              "net_dollars": -1414.4999999999986
+            }
+          ]
+        },
+        "2026Q1": {
+          "trades": 11,
+          "gross_points": 450.5,
+          "net_points": 437.02499999999975,
+          "net_dollars": 8740.499999999995,
+          "mean_net": 39.72954545454543,
+          "median_net": 176.275,
+          "winrate": 0.5454545454545454,
+          "profit_factor": 1.3114099937650308,
+          "max_closed_equity_drawdown": 914.0750000000002,
+          "worst_day": -490.475,
+          "top3_positive_share_of_net": 2.7843372804759463,
+          "mfe_points": {
+            "p10": 17.5,
+            "p25": 85.625,
+            "median": 201.75,
+            "p75": 385.625,
+            "p90": 456.5
+          },
+          "mae_points": {
+            "p10": 5.25,
+            "p25": 27.75,
+            "median": 39.5,
+            "p75": 343.625,
+            "p90": 602.0
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 39.72954545454543,
+              "net_points": 437.02499999999975,
+              "net_dollars": 8740.499999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 39.22954545454543,
+              "net_points": 431.52499999999975,
+              "net_dollars": 8630.499999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 38.72954545454543,
+              "net_points": 426.02499999999975,
+              "net_dollars": 8520.499999999995
+            }
+          ]
+        },
+        "2026Q2": {
+          "trades": 12,
+          "gross_points": 1774.25,
+          "net_points": 1759.5500000000002,
+          "net_dollars": 35191.0,
+          "mean_net": 146.6291666666667,
+          "median_net": 128.9,
+          "winrate": 0.8333333333333334,
+          "profit_factor": 9.991057741440981,
+          "max_closed_equity_drawdown": 120.22499999999991,
+          "worst_day": -120.225,
+          "top3_positive_share_of_net": 0.6526242505185983,
+          "mfe_points": {
+            "p10": 91.075,
+            "p25": 147.8125,
+            "median": 193.375,
+            "p75": 300.6875,
+            "p90": 487.92500000000007
+          },
+          "mae_points": {
+            "p10": 15.25,
+            "p25": 37.75,
+            "median": 74.0,
+            "p75": 160.3125,
+            "p90": 257.02500000000003
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 146.6291666666667,
+              "net_points": 1759.5500000000002,
+              "net_dollars": 35191.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 146.1291666666667,
+              "net_points": 1753.5500000000002,
+              "net_dollars": 35071.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 145.6291666666667,
+              "net_points": 1747.5500000000002,
+              "net_dollars": 34951.0
+            }
+          ]
+        },
+        "2026Q3": {
+          "trades": 12,
+          "gross_points": 456.5,
+          "net_points": 441.7999999999998,
+          "net_dollars": 8835.999999999996,
+          "mean_net": 36.81666666666665,
+          "median_net": 40.775000000000006,
+          "winrate": 0.5833333333333334,
+          "profit_factor": 1.3539000700911186,
+          "max_closed_equity_drawdown": 756.6500000000001,
+          "worst_day": -539.475,
+          "top3_positive_share_of_net": 3.1775124490719793,
+          "mfe_points": {
+            "p10": 101.875,
+            "p25": 119.125,
+            "median": 206.25,
+            "p75": 277.375,
+            "p90": 524.2
+          },
+          "mae_points": {
+            "p10": 28.85,
+            "p25": 57.125,
+            "median": 94.125,
+            "p75": 231.875,
+            "p90": 485.52500000000003
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 36.81666666666665,
+              "net_points": 441.7999999999998,
+              "net_dollars": 8835.999999999996
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 36.31666666666665,
+              "net_points": 435.7999999999998,
+              "net_dollars": 8715.999999999996
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 35.81666666666665,
+              "net_points": 429.7999999999998,
+              "net_dollars": 8595.999999999996
+            }
+          ]
+        }
+      },
+      "monthly": {
+        "2025-01": {
+          "trades": 4,
+          "gross_points": -140.0,
+          "net_points": -144.89999999999998,
+          "net_dollars": -2897.9999999999995,
+          "mean_net": -36.224999999999994,
+          "median_net": -81.725,
+          "winrate": 0.5,
+          "profit_factor": 0.6130324475897985,
+          "max_closed_equity_drawdown": 194.475,
+          "worst_day": -194.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 116.575,
+            "p25": 147.0625,
+            "median": 178.0,
+            "p75": 210.375,
+            "p90": 243.45000000000002
+          },
+          "mae_points": {
+            "p10": 48.075,
+            "p25": 71.8125,
+            "median": 161.625,
+            "p75": 269.6875,
+            "p90": 326.27500000000003
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -36.224999999999994,
+              "net_points": -144.89999999999998,
+              "net_dollars": -2897.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -36.724999999999994,
+              "net_points": -146.89999999999998,
+              "net_dollars": -2937.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -37.224999999999994,
+              "net_points": -148.89999999999998,
+              "net_dollars": -2977.9999999999995
+            }
+          ]
+        },
+        "2025-02": {
+          "trades": 4,
+          "gross_points": 977.5,
+          "net_points": 972.6,
+          "net_dollars": 19452.0,
+          "mean_net": 243.15,
+          "median_net": 227.4,
+          "winrate": 1.0,
+          "profit_factor": null,
+          "max_closed_equity_drawdown": 0.0,
+          "worst_day": 189.525,
+          "top3_positive_share_of_net": 0.8051357186921654,
+          "mfe_points": {
+            "p10": 234.425,
+            "p25": 259.0625,
+            "median": 288.5,
+            "p75": 316.6875,
+            "p90": 339.075
+          },
+          "mae_points": {
+            "p10": 26.200000000000003,
+            "p25": 41.5,
+            "median": 76.125,
+            "p75": 109.125,
+            "p90": 121.5
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 243.15,
+              "net_points": 972.6,
+              "net_dollars": 19452.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 242.65,
+              "net_points": 970.6,
+              "net_dollars": 19412.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 242.15,
+              "net_points": 968.6,
+              "net_dollars": 19372.0
+            }
+          ]
+        },
+        "2025-03": {
+          "trades": 4,
+          "gross_points": -8.25,
+          "net_points": -13.150000000000091,
+          "net_dollars": -263.0000000000018,
+          "mean_net": -3.2875000000000227,
+          "median_net": 144.275,
+          "winrate": 0.75,
+          "profit_factor": 0.9774819127531145,
+          "max_closed_equity_drawdown": 583.975,
+          "worst_day": -583.975,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 136.45000000000002,
+            "p25": 244.0,
+            "median": 313.5,
+            "p75": 339.9375,
+            "p90": 369.975
+          },
+          "mae_points": {
+            "p10": 194.7,
+            "p25": 202.125,
+            "median": 236.75,
+            "p75": 385.3125,
+            "p90": 597.825
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -3.2875000000000227,
+              "net_points": -13.150000000000091,
+              "net_dollars": -263.0000000000018
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -3.7875000000000227,
+              "net_points": -15.150000000000091,
+              "net_dollars": -303.0000000000018
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -4.287500000000023,
+              "net_points": -17.15000000000009,
+              "net_dollars": -343.0000000000018
+            }
+          ]
+        },
+        "2025-04": {
+          "trades": 4,
+          "gross_points": 744.5,
+          "net_points": 739.5999999999999,
+          "net_dollars": 14791.999999999998,
+          "mean_net": 184.89999999999998,
+          "median_net": 280.9,
+          "winrate": 0.75,
+          "profit_factor": 4.091650120179747,
+          "max_closed_equity_drawdown": 239.22500000000002,
+          "worst_day": -239.225,
+          "top3_positive_share_of_net": 1.323451865873445,
+          "mfe_points": {
+            "p10": 184.05,
+            "p25": 235.125,
+            "median": 339.0,
+            "p75": 451.4375,
+            "p90": 517.9250000000001
+          },
+          "mae_points": {
+            "p10": 43.825,
+            "p25": 92.3125,
+            "median": 158.375,
+            "p75": 213.0,
+            "p90": 240.9
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 184.89999999999998,
+              "net_points": 739.5999999999999,
+              "net_dollars": 14791.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 184.39999999999998,
+              "net_points": 737.5999999999999,
+              "net_dollars": 14751.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 183.89999999999998,
+              "net_points": 735.5999999999999,
+              "net_dollars": 14711.999999999998
+            }
+          ]
+        },
+        "2025-05": {
+          "trades": 4,
+          "gross_points": 46.25,
+          "net_points": 41.35000000000001,
+          "net_dollars": 827.0000000000002,
+          "mean_net": 10.337500000000002,
+          "median_net": 20.775,
+          "winrate": 0.5,
+          "profit_factor": 1.3821626617375233,
+          "max_closed_equity_drawdown": 94.475,
+          "worst_day": -94.475,
+          "top3_positive_share_of_net": 3.616686819830713,
+          "mfe_points": {
+            "p10": 82.47500000000001,
+            "p25": 128.9375,
+            "median": 168.0,
+            "p75": 182.375,
+            "p90": 184.4
+          },
+          "mae_points": {
+            "p10": 38.875,
+            "p25": 59.6875,
+            "median": 92.25,
+            "p75": 162.5625,
+            "p90": 251.32500000000005
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 10.337500000000002,
+              "net_points": 41.35000000000001,
+              "net_dollars": 827.0000000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 9.837500000000002,
+              "net_points": 39.35000000000001,
+              "net_dollars": 787.0000000000002
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 9.337500000000002,
+              "net_points": 37.35000000000001,
+              "net_dollars": 747.0000000000002
+            }
+          ]
+        },
+        "2025-06": {
+          "trades": 4,
+          "gross_points": 449.75,
+          "net_points": 444.84999999999997,
+          "net_dollars": 8897.0,
+          "mean_net": 111.21249999999999,
+          "median_net": 93.525,
+          "winrate": 1.0,
+          "profit_factor": null,
+          "max_closed_equity_drawdown": 0.0,
+          "worst_day": 12.525,
+          "top3_positive_share_of_net": 0.9718444419467238,
+          "mfe_points": {
+            "p10": 67.275,
+            "p25": 73.6875,
+            "median": 145.0,
+            "p75": 223.5625,
+            "p90": 243.025
+          },
+          "mae_points": {
+            "p10": 41.975,
+            "p25": 49.0625,
+            "median": 68.875,
+            "p75": 86.25,
+            "p90": 88.95
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 111.21249999999999,
+              "net_points": 444.84999999999997,
+              "net_dollars": 8897.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 110.71249999999999,
+              "net_points": 442.84999999999997,
+              "net_dollars": 8857.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 110.21249999999999,
+              "net_points": 440.84999999999997,
+              "net_dollars": 8817.0
+            }
+          ]
+        },
+        "2025-07": {
+          "trades": 3,
+          "gross_points": -312.5,
+          "net_points": -316.175,
+          "net_dollars": -6323.5,
+          "mean_net": -105.39166666666667,
+          "median_net": -110.725,
+          "winrate": 0.3333333333333333,
+          "profit_factor": 0.37415874901029295,
+          "max_closed_equity_drawdown": 394.475,
+          "worst_day": -394.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 13.0,
+            "p25": 25.375,
+            "median": 46.0,
+            "p75": 122.875,
+            "p90": 169.0
+          },
+          "mae_points": {
+            "p10": 43.95,
+            "p25": 105.375,
+            "median": 207.75,
+            "p75": 324.75,
+            "p90": 394.95
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -105.39166666666667,
+              "net_points": -316.175,
+              "net_dollars": -6323.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -105.89166666666667,
+              "net_points": -317.675,
+              "net_dollars": -6353.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -106.39166666666667,
+              "net_points": -319.175,
+              "net_dollars": -6383.5
+            }
+          ]
+        },
+        "2025-08": {
+          "trades": 4,
+          "gross_points": -397.75,
+          "net_points": -402.65,
+          "net_dollars": -8053.0,
+          "mean_net": -100.6625,
+          "median_net": -194.225,
+          "winrate": 0.25,
+          "profit_factor": 0.3341050977797991,
+          "max_closed_equity_drawdown": 402.65,
+          "worst_day": -216.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 10.575,
+            "p25": 14.0625,
+            "median": 32.5,
+            "p75": 90.0625,
+            "p90": 163.97500000000002
+          },
+          "mae_points": {
+            "p10": 74.10000000000001,
+            "p25": 177.375,
+            "median": 244.625,
+            "p75": 269.0,
+            "p90": 295.1
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -100.6625,
+              "net_points": -402.65,
+              "net_dollars": -8053.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -101.1625,
+              "net_points": -404.65,
+              "net_dollars": -8093.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -101.6625,
+              "net_points": -406.65,
+              "net_dollars": -8133.0
+            }
+          ]
+        },
+        "2025-09": {
+          "trades": 4,
+          "gross_points": 468.75,
+          "net_points": 463.85,
+          "net_dollars": 9277.0,
+          "mean_net": 115.9625,
+          "median_net": 125.775,
+          "winrate": 1.0,
+          "profit_factor": null,
+          "max_closed_equity_drawdown": 0.0,
+          "worst_day": 27.525,
+          "top3_positive_share_of_net": 0.940659696022421,
+          "mfe_points": {
+            "p10": 95.8,
+            "p25": 99.625,
+            "median": 145.875,
+            "p75": 192.4375,
+            "p90": 196.825
+          },
+          "mae_points": {
+            "p10": 71.85,
+            "p25": 73.875,
+            "median": 86.625,
+            "p75": 100.0,
+            "p90": 103.15
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 115.9625,
+              "net_points": 463.85,
+              "net_dollars": 9277.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 115.4625,
+              "net_points": 461.85,
+              "net_dollars": 9237.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 114.9625,
+              "net_points": 459.85,
+              "net_dollars": 9197.0
+            }
+          ]
+        },
+        "2025-10": {
+          "trades": 4,
+          "gross_points": -150.25,
+          "net_points": -155.14999999999998,
+          "net_dollars": -3102.9999999999995,
+          "mean_net": -38.787499999999994,
+          "median_net": -97.475,
+          "winrate": 0.25,
+          "profit_factor": 0.6147016824982927,
+          "max_closed_equity_drawdown": 402.67499999999995,
+          "worst_day": -207.725,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 1.3000000000000003,
+            "p25": 2.875,
+            "median": 19.125,
+            "p75": 94.3125,
+            "p90": 201.97500000000002
+          },
+          "mae_points": {
+            "p10": 77.35000000000001,
+            "p25": 137.875,
+            "median": 190.875,
+            "p75": 235.3125,
+            "p90": 280.425
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -38.787499999999994,
+              "net_points": -155.14999999999998,
+              "net_dollars": -3102.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -39.287499999999994,
+              "net_points": -157.14999999999998,
+              "net_dollars": -3142.9999999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -39.787499999999994,
+              "net_points": -159.14999999999998,
+              "net_dollars": -3182.9999999999995
+            }
+          ]
+        },
+        "2025-11": {
+          "trades": 3,
+          "gross_points": -89.75,
+          "net_points": -93.42499999999998,
+          "net_dollars": -1868.4999999999995,
+          "mean_net": -31.141666666666662,
+          "median_net": -126.725,
+          "winrate": 0.3333333333333333,
+          "profit_factor": 0.6788967176490807,
+          "max_closed_equity_drawdown": 290.95,
+          "worst_day": -164.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 54.5,
+            "p25": 90.875,
+            "median": 151.5,
+            "p75": 244.625,
+            "p90": 300.5
+          },
+          "mae_points": {
+            "p10": 83.0,
+            "p25": 126.125,
+            "median": 198.0,
+            "p75": 209.125,
+            "p90": 215.8
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -31.141666666666662,
+              "net_points": -93.42499999999998,
+              "net_dollars": -1868.4999999999995
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -31.641666666666662,
+              "net_points": -94.92499999999998,
+              "net_dollars": -1898.4999999999995
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -32.141666666666666,
+              "net_points": -96.42499999999998,
+              "net_dollars": -1928.4999999999995
+            }
+          ]
+        },
+        "2025-12": {
+          "trades": 4,
+          "gross_points": 193.75,
+          "net_points": 188.85000000000005,
+          "net_dollars": 3777.000000000001,
+          "mean_net": 47.21250000000001,
+          "median_net": 126.275,
+          "winrate": 0.75,
+          "profit_factor": 1.8403604405384362,
+          "max_closed_equity_drawdown": 224.725,
+          "worst_day": -224.725,
+          "top3_positive_share_of_net": 2.18996558114906,
+          "mfe_points": {
+            "p10": 62.45000000000001,
+            "p25": 136.25,
+            "median": 183.625,
+            "p75": 202.6875,
+            "p90": 225.525
+          },
+          "mae_points": {
+            "p10": 51.6,
+            "p25": 60.375,
+            "median": 71.75,
+            "p75": 117.25,
+            "p90": 187.45000000000005
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 47.21250000000001,
+              "net_points": 188.85000000000005,
+              "net_dollars": 3777.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 46.71250000000001,
+              "net_points": 186.85000000000005,
+              "net_dollars": 3737.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 46.21250000000001,
+              "net_points": 184.85000000000005,
+              "net_dollars": 3697.000000000001
+            }
+          ]
+        },
+        "2026-01": {
+          "trades": 4,
+          "gross_points": -339.5,
+          "net_points": -344.40000000000003,
+          "net_dollars": -6888.000000000001,
+          "mean_net": -86.10000000000001,
+          "median_net": -108.725,
+          "winrate": 0.25,
+          "profit_factor": 0.33855091947952176,
+          "max_closed_equity_drawdown": 360.20000000000005,
+          "worst_day": -303.225,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 77.575,
+            "p25": 95.6875,
+            "median": 111.25,
+            "p75": 138.0,
+            "p90": 176.25
+          },
+          "mae_points": {
+            "p10": 50.800000000000004,
+            "p25": 85.0,
+            "median": 184.75,
+            "p75": 304.5625,
+            "p90": 374.875
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -86.10000000000001,
+              "net_points": -344.40000000000003,
+              "net_dollars": -6888.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -86.60000000000001,
+              "net_points": -346.40000000000003,
+              "net_dollars": -6928.000000000001
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -87.10000000000001,
+              "net_points": -348.40000000000003,
+              "net_dollars": -6968.000000000001
+            }
+          ]
+        },
+        "2026-02": {
+          "trades": 4,
+          "gross_points": -382.75,
+          "net_points": -387.6500000000001,
+          "net_dollars": -7753.000000000002,
+          "mean_net": -96.91250000000002,
+          "median_net": -105.10000000000001,
+          "winrate": 0.5,
+          "profit_factor": 0.5608360711453494,
+          "max_closed_equity_drawdown": 882.7,
+          "worst_day": -490.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 8.4,
+            "p25": 14.25,
+            "median": 119.5,
+            "p75": 267.875,
+            "p90": 351.35
+          },
+          "mae_points": {
+            "p10": 11.900000000000002,
+            "p25": 25.625,
+            "median": 317.625,
+            "p75": 630.4375,
+            "p90": 681.625
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -96.91250000000002,
+              "net_points": -387.6500000000001,
+              "net_dollars": -7753.000000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -97.41250000000002,
+              "net_points": -389.6500000000001,
+              "net_dollars": -7793.000000000002
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -97.91250000000002,
+              "net_points": -391.6500000000001,
+              "net_dollars": -7833.000000000002
+            }
+          ]
+        },
+        "2026-03": {
+          "trades": 3,
+          "gross_points": 1172.75,
+          "net_points": 1169.0749999999998,
+          "net_dollars": 23381.499999999996,
+          "mean_net": 389.6916666666666,
+          "median_net": 377.525,
+          "winrate": 1.0,
+          "profit_factor": null,
+          "max_closed_equity_drawdown": 0.0,
+          "worst_day": 265.275,
+          "top3_positive_share_of_net": 1.0,
+          "mfe_points": {
+            "p10": 382.7,
+            "p25": 410.375,
+            "median": 456.5,
+            "p75": 525.0,
+            "p90": 566.1
+          },
+          "mae_points": {
+            "p10": 9.7,
+            "p25": 16.375,
+            "median": 27.5,
+            "p75": 33.5,
+            "p90": 37.1
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 389.6916666666666,
+              "net_points": 1169.0749999999998,
+              "net_dollars": 23381.499999999996
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 389.1916666666666,
+              "net_points": 1167.5749999999998,
+              "net_dollars": 23351.499999999996
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 388.6916666666666,
+              "net_points": 1166.0749999999998,
+              "net_dollars": 23321.499999999996
+            }
+          ]
+        },
+        "2026-04": {
+          "trades": 4,
+          "gross_points": 756.75,
+          "net_points": 751.8499999999999,
+          "net_dollars": 15036.999999999998,
+          "mean_net": 187.96249999999998,
+          "median_net": 104.525,
+          "winrate": 1.0,
+          "profit_factor": null,
+          "max_closed_equity_drawdown": 0.0,
+          "worst_day": 86.775,
+          "top3_positive_share_of_net": 0.8845846910952985,
+          "mfe_points": {
+            "p10": 148.675,
+            "p25": 173.3125,
+            "median": 223.75,
+            "p75": 321.1875,
+            "p90": 430.42500000000007
+          },
+          "mae_points": {
+            "p10": 49.9,
+            "p25": 58.0,
+            "median": 74.0,
+            "p75": 145.75,
+            "p90": 254.20000000000005
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 187.96249999999998,
+              "net_points": 751.8499999999999,
+              "net_dollars": 15036.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 187.46249999999998,
+              "net_points": 749.8499999999999,
+              "net_dollars": 14996.999999999998
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 186.96249999999998,
+              "net_points": 747.8499999999999,
+              "net_dollars": 14956.999999999998
+            }
+          ]
+        },
+        "2026-05": {
+          "trades": 4,
+          "gross_points": 291.5,
+          "net_points": 286.6,
+          "net_dollars": 5732.0,
+          "mean_net": 71.65,
+          "median_net": 79.4,
+          "winrate": 0.75,
+          "profit_factor": 4.797283868830739,
+          "max_closed_equity_drawdown": 75.475,
+          "worst_day": -75.475,
+          "top3_positive_share_of_net": 1.2633461270062807,
+          "mfe_points": {
+            "p10": 106.45,
+            "p25": 136.375,
+            "median": 176.375,
+            "p75": 220.875,
+            "p90": 258.90000000000003
+          },
+          "mae_points": {
+            "p10": 15.75,
+            "p25": 16.875,
+            "median": 65.25,
+            "p75": 145.125,
+            "p90": 202.95000000000002
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 71.65,
+              "net_points": 286.6,
+              "net_dollars": 5732.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 71.15,
+              "net_points": 284.6,
+              "net_dollars": 5692.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 70.65,
+              "net_points": 282.6,
+              "net_dollars": 5652.0
+            }
+          ]
+        },
+        "2026-06": {
+          "trades": 4,
+          "gross_points": 726.0,
+          "net_points": 721.1,
+          "net_dollars": 14422.0,
+          "mean_net": 180.275,
+          "median_net": 188.15,
+          "winrate": 0.75,
+          "profit_factor": 6.997920565606156,
+          "max_closed_equity_drawdown": 120.22499999999997,
+          "worst_day": -120.225,
+          "top3_positive_share_of_net": 1.1667244487588406,
+          "mfe_points": {
+            "p10": 86.375,
+            "p25": 136.4375,
+            "median": 257.125,
+            "p75": 400.5625,
+            "p90": 491.57500000000005
+          },
+          "mae_points": {
+            "p10": 25.450000000000003,
+            "p25": 41.875,
+            "median": 92.125,
+            "p75": 164.625,
+            "p90": 221.10000000000002
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 180.275,
+              "net_points": 721.1,
+              "net_dollars": 14422.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 179.775,
+              "net_points": 719.1,
+              "net_dollars": 14382.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 179.275,
+              "net_points": 717.1,
+              "net_dollars": 14342.0
+            }
+          ]
+        },
+        "2026-07": {
+          "trades": 4,
+          "gross_points": -751.75,
+          "net_points": -756.6500000000001,
+          "net_dollars": -15133.000000000002,
+          "mean_net": -189.16250000000002,
+          "median_net": -165.725,
+          "winrate": 0.25,
+          "profit_factor": 0.13121106869133392,
+          "max_closed_equity_drawdown": 756.6500000000001,
+          "worst_day": -539.475,
+          "top3_positive_share_of_net": null,
+          "mfe_points": {
+            "p10": 129.225,
+            "p25": 141.9375,
+            "median": 183.125,
+            "p75": 227.5,
+            "p90": 245.95000000000002
+          },
+          "mae_points": {
+            "p10": 96.17500000000001,
+            "p25": 151.1875,
+            "median": 339.375,
+            "p75": 559.6875,
+            "p90": 672.5250000000001
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": -189.16250000000002,
+              "net_points": -756.6500000000001,
+              "net_dollars": -15133.000000000002
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": -189.66250000000002,
+              "net_points": -758.6500000000001,
+              "net_dollars": -15173.000000000002
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": -190.16250000000002,
+              "net_points": -760.6500000000001,
+              "net_dollars": -15213.000000000002
+            }
+          ]
+        },
+        "2026-08": {
+          "trades": 4,
+          "gross_points": 827.25,
+          "net_points": 822.3499999999999,
+          "net_dollars": 16447.0,
+          "mean_net": 205.58749999999998,
+          "median_net": 274.525,
+          "winrate": 0.75,
+          "profit_factor": 3.2287417846737583,
+          "max_closed_equity_drawdown": 368.975,
+          "worst_day": -368.975,
+          "top3_positive_share_of_net": 1.4486836505137715,
+          "mfe_points": {
+            "p10": 99.45,
+            "p25": 100.125,
+            "median": 322.875,
+            "p75": 589.375,
+            "p90": 668.8000000000001
+          },
+          "mae_points": {
+            "p10": 43.375,
+            "p25": 68.6875,
+            "median": 94.125,
+            "p75": 174.6875,
+            "p90": 299.225
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 205.58749999999998,
+              "net_points": 822.3499999999999,
+              "net_dollars": 16447.0
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 205.08749999999998,
+              "net_points": 820.3499999999999,
+              "net_dollars": 16407.0
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 204.58749999999998,
+              "net_points": 818.3499999999999,
+              "net_dollars": 16366.999999999998
+            }
+          ]
+        },
+        "2026-09": {
+          "trades": 4,
+          "gross_points": 381.0,
+          "net_points": 376.09999999999997,
+          "net_dollars": 7521.999999999999,
+          "mean_net": 94.02499999999999,
+          "median_net": 52.150000000000006,
+          "winrate": 0.75,
+          "profit_factor": 45.37758112094395,
+          "max_closed_equity_drawdown": 8.475000000000023,
+          "worst_day": -8.475,
+          "top3_positive_share_of_net": 1.0225339005583622,
+          "mfe_points": {
+            "p10": 141.775,
+            "p25": 183.0625,
+            "median": 206.25,
+            "p75": 238.5625,
+            "p90": 296.27500000000003
+          },
+          "mae_points": {
+            "p10": 28.125,
+            "p25": 42.1875,
+            "median": 65.75,
+            "p75": 88.5625,
+            "p90": 101.275
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 94.02499999999999,
+              "net_points": 376.09999999999997,
+              "net_dollars": 7521.999999999999
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 93.52499999999999,
+              "net_points": 374.09999999999997,
+              "net_dollars": 7481.999999999999
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 93.02499999999999,
+              "net_points": 372.09999999999997,
+              "net_dollars": 7441.999999999999
+            }
+          ]
+        }
+      },
+      "direction": {
+        "1": {
+          "trades": 81,
+          "gross_points": 4463.25,
+          "net_points": 4364.025,
+          "net_dollars": 87280.5,
+          "mean_net": 53.876851851851846,
+          "median_net": 90.525,
+          "winrate": 0.6419753086419753,
+          "profit_factor": 1.7059787026664126,
+          "max_closed_equity_drawdown": 1307.0749999999975,
+          "worst_day": -583.975,
+          "top3_positive_share_of_net": 0.3780512256460492,
+          "mfe_points": {
+            "p10": 30.25,
+            "p25": 96.25,
+            "median": 190.0,
+            "p75": 272.75,
+            "p90": 407.0
+          },
+          "mae_points": {
+            "p10": 17.5,
+            "p25": 45.75,
+            "median": 102.25,
+            "p75": 234.75,
+            "p90": 364.0
+          },
+          "cost_sensitivity": [
+            {
+              "extra_ticks_per_leg": 0,
+              "total_cost_points": 1.225,
+              "mean_net": 53.876851851851846,
+              "net_points": 4364.025,
+              "net_dollars": 87280.5
+            },
+            {
+              "extra_ticks_per_leg": 1,
+              "total_cost_points": 1.725,
+              "mean_net": 53.376851851851846,
+              "net_points": 4323.525,
+              "net_dollars": 86470.5
+            },
+            {
+              "extra_ticks_per_leg": 2,
+              "total_cost_points": 2.225,
+              "mean_net": 52.876851851851846,
+              "net_points": 4283.025,
+              "net_dollars": 85660.5
+            }
+          ]
+        }
+      },
+      "all_days_long": {
+        "trades": 433,
+        "gross_points": 1638.75,
+        "net_points": 1108.3249999999987,
+        "net_dollars": 22166.499999999975,
+        "mean_net": 2.5596420323325604,
+        "median_net": 13.775,
+        "winrate": 0.5219399538106235,
+        "profit_factor": 1.0283201409459304,
+        "max_closed_equity_drawdown": 4149.824999999998,
+        "worst_day": -1074.225,
+        "top3_positive_share_of_net": 3.072045654478609,
+        "mfe_points": {
+          "p10": 16.85,
+          "p25": 56.25,
+          "median": 133.5,
+          "p75": 234.0,
+          "p90": 340.55000000000007
+        },
+        "mae_points": {
+          "p10": 23.250000000000004,
+          "p25": 59.0,
+          "median": 135.0,
+          "p75": 258.5,
+          "p90": 401.2
+        },
+        "cost_sensitivity": [
+          {
+            "extra_ticks_per_leg": 0,
+            "total_cost_points": 1.225,
+            "mean_net": 2.5596420323325604,
+            "net_points": 1108.3249999999987,
+            "net_dollars": 22166.499999999975
+          },
+          {
+            "extra_ticks_per_leg": 1,
+            "total_cost_points": 1.725,
+            "mean_net": 2.0596420323325604,
+            "net_points": 891.8249999999987,
+            "net_dollars": 17836.499999999975
+          },
+          {
+            "extra_ticks_per_leg": 2,
+            "total_cost_points": 2.225,
+            "mean_net": 1.5596420323325604,
+            "net_points": 675.3249999999987,
+            "net_dollars": 13506.499999999975
+          }
+        ]
+      }
+    }
+  },
+  "morning_signal_exclusions": [
+    {
+      "day": "2024-12-30",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-01-10",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-01-21",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-02-18",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-05-27",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-06-20",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-07-07",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-09-02",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-12-01",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2025-12-26",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-01-20",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-02-17",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-03-04",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-04-06",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-05-26",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-06-22",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-07-06",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    },
+    {
+      "day": "2026-09-08",
+      "reason": "MISSING_PRIOR_COMPLETE_RTH"
+    }
+  ],
+  "ledger_hashes": {
+    "artifacts/new-candidates-round01/morning_to_close-trades.csv": "e041cdceea91c4c8bfc3bb2eb0c0dc8379a0b5a2cc156834a90f1ba80b6134b7",
+    "artifacts/new-candidates-round01/turn_of_month_rth-trades.csv": "97999866f7649946cc165e5ff2e2f4d2856f906481cb374d0af23516e154cfbb"
+  },
+  "deterministic_same_input_replay": true,
+  "independent_source_reload_verified": false,
+  "inputs": {
+    "research/new-candidates-round01-protocol.json": "cbe24302c1196d732a99889c0c6fab327380d5d482ade75091384725c50698a0",
+    "scripts/new_candidates_round01.py": "071d4f61a5c5f90ae55026d1c94dee4240c31df6947e12f719aab844d9455b34",
+    "research/oos-year-sources.json": "7ccaec21545428a51cd2cbcce3aa0483c85227faecd33ba7426113888e0d0c71",
+    "research/oos-year-rollovers.json": "1299dff7d13c9e05fb9dfa42e27c19b21c6f348f832291f933a5daec47c91882",
+    "research/holdout-protocol.json": "1e4cc01d8ea17cf82abd59d25f50018cf87829252c02007a6d2a24603c0a1022",
+    "research/oos-year-calendar.json": "1bc217b2abd9112a85d21b8b74df791b223202f7d615890f5d9b9e80127f56aa",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c",
+    "scripts/causal_map/__main__.py": "b7f1fd33558c32acf83a5cd10005ba1fd7fc78b237b82720aee3b2a026f93227",
+    "scripts/oos_preparation/year.py": "480c39a1ca42dda114198d8ed460799d457158b046755fb4d67805b49604c5ea"
+  }
+}

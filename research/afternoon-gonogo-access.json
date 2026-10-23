@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-22",
+  "status": "EXISTING_TRIAL_ACCESS_CONFIRMED_NOT_PERMANENT_FREE_SERVICE",
+  "browser": "Existing Safari session, Barchart account and historical-download UI read directly",
+  "account_evidence_private": "artifacts/afternoon-gonogo-access-private.json",
+  "historical_form_url": "https://www.barchart.com/futures/quotes/NQZ25/historical-download",
+  "observed": ["Existing signed-in Premier entitlement", "Intraday selected", "One-minute input available", "20,000-record maximum stated on current page", "Per-contract versus Nearby distinction stated", "Historical downloads count against daily quota", "Futures and forex displayed quotes marked 10 or 15 minute delayed"],
+  "not_verified": ["Current remaining daily quota", "Successful nonempty export for a specified older contract and date range", "Unlimited or permanently free service", "Real-time bid/ask, tick history or API entitlement", "Exchange-level second-boundary or executable fill evidence"],
+  "downloads_clicked": 0,
+  "account_or_subscription_changed": false,
+  "new_account_created": false,
+  "cme_liquidity_tool": {
+    "status": "PUBLIC_METHOD_CHECKED_AUTHENTICATED_DATA_NOT_OBTAINED",
+    "method_url": "https://www.cmegroup.com/education/articles-and-reports/understanding-the-cme-liquidity-tool-methodology",
+    "limit": "Aggregated spread/depth/cost-to-trade statistics are not exact contemporaneous 15:00 entry/15:02 or15:15 exit quotes or broker fills. Login/data rights not established; no account created."
+  },
+  "existing_local_quote_data": "No registered source provides bid/ask, receipt time, order acknowledgement or fills. Registered OHLCV schema checked in existing source registry/importer; no new outcome measurement.",
+  "decision": "GO_FOR_SCOPED_HISTORICAL_INTAKE_USING_EXISTING_ACCESS_IF_NO_ADDITIONAL_CHARGE; NOT_GO_FOR_LIVE_OR_AUTOMATED_QUOTE_PILOT"
+}

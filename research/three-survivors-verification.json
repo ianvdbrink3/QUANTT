@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_REPLAY_FROZEN_REGRESSION_AND_BUILD_PASSED",
+  "tests_passed": 582,
+  "byte_identical_outputs": 8,
+  "output_sha256": {
+    "research/three-survivors-results.json": "2b285db4f76fd067fa7b4fa2d7a0d51fe88cd28e008a4b451ab1c451d6cfc3db",
+    "public/data/three-survivors.json": "2b285db4f76fd067fa7b4fa2d7a0d51fe88cd28e008a4b451ab1c451d6cfc3db",
+    "docs/THREE_SURVIVORS_ATR_PORTFOLIO.md": "d99a574caaa9fe5da6995e8c862b0ee08a1e2912e4db41da0f23691d28c165b3",
+    "public/reports/THREE_SURVIVORS_ATR_PORTFOLIO.md": "d99a574caaa9fe5da6995e8c862b0ee08a1e2912e4db41da0f23691d28c165b3",
+    "artifacts/three-survivors/continuous_2022_2024_unverified-daily.json": "2a4c6b4a7584a7eab579648a0df169de79777e33f8215bc7aa930b0d2412e6dc",
+    "artifacts/three-survivors/discovery-daily.json": "c6a592e3a5b32b6ed769fdf1cc900406f925d5ef12e5aca95de4b5a733090d10",
+    "artifacts/three-survivors/continuous_2022_2024_unverified-trades.json": "b067cf90259c502b5f2a0be7cb5e7e4d9ee51c8874c86d687efd323ad08bea0d",
+    "artifacts/three-survivors/discovery-trades.json": "ce38f587ab64a9c0c0cff56a918b2ce9478384f9ea3c49f8a25c3e0d72c2242d"
+  },
+  "prior_files_unchanged": 517,
+  "protocol_sha256": "ad1613b66465a5aaacbb50517516bd13400faf2d7a26e44fa9b46cff267ec70d",
+  "future_specification_sha256": "5f4d47a631d94b40ca8c60ed6ddadd5c097522562e25218310978161ce4d634a",
+  "future_holdout_executed": false,
+  "new_historical_numeric_OHLCV_read": false,
+  "external_publication": false,
+  "provisional_MNQ_cost_USD": 6.5,
+  "actual_broker_cost_known": false,
+  "typecheck": true,
+  "build": true,
+  "dashboard_route": "/research/three-survivors"
+}

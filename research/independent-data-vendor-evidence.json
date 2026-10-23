@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-22",
+  "scope": "Public documentation and enabled browser-tab inventory only. No accounts, purchases, downloads, paid API calls or outcome access.",
+  "barchart": {
+    "urls": ["https://www.barchart.com/membership-comparison", "https://www.barchart.com/stocks/quotes/-TOOL/historical-download"],
+    "evidence": "Official search-index extracts describe membership tiers, general CSV downloads and historical export limits. Direct pages returned a JavaScript/bot verification page.",
+    "not_established": "No current account entitlement, remaining quota or zero-cost expired NQ contract minute export confirmed. No existing Barchart tab on enabled browser surfaces."
+  },
+  "firstrate": {
+    "urls": ["https://firstratedata.com/about/FAQ", "https://firstratedata.com/about/license"],
+    "evidence": "FAQ offers two weeks of recent sample data and no samples outside its listing. License permits derivative research outputs, not raw redistribution.",
+    "not_established": "No free multi-year per-contract sample archive; actual sample contract chain and complete warmup not certified."
+  },
+  "algoseek": {
+    "urls": ["https://algoseek.com/sandbox/"],
+    "evidence": "Public page advertises up to one year of sandbox history without a credit card.",
+    "not_established": "Exact NQ dataset, dates and export entitlement in the user's account; prior Contact Us screen remains unresolved."
+  },
+  "databento": {
+    "urls": ["https://databento.com/docs/faqs/usage-pricing-and-data-credits", "https://databento.com/docs/portal/billing"],
+    "evidence": "Official FAQ: $125 credits for new users, one per team, six-month expiry; historical usage-based data has no monthly subscription fee. Billing documentation: unlimited default absent a monthly limit; blocks requests after usage exceeds a configured limit.",
+    "not_established": "User eligibility, quote, payment obligations, instrument licensing, remaining credits and a guaranteed zero-out-of-pocket request guard. No account activated."
+  },
+  "cme": {
+    "urls": ["https://www.cmegroup.com/trading/about-settlements.html"],
+    "evidence": "Settlement page supplies daily contract statistics as reference, not the needed exact intraday anchor bars.",
+    "not_established": "No tick-level 15:00 fill or one-minute timestamp certification from daily settlements."
+  }
+}

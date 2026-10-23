@@ -1,0 +1,14 @@
+{
+  "status": "AUDIT_ONLY_V2_UNCHANGED_NO_INDEPENDENT_TEST",
+  "seed": 2026102202,
+  "replications": 10000,
+  "lengths": [125, 250, 500],
+  "models": ["GAUSSIAN_IID", "STUDENT_T5_IID", "NEGATIVE_SKEW_IID", "EMPIRICAL_BLOCK1", "EMPIRICAL_BLOCK5", "EMPIRICAL_BLOCK20", "EMPIRICAL_BLOCK20_SYMMETRIC"],
+  "calibration_inputs": "Same 162 previously consumed fixed-cohort days; centered paired residuals and original 454-calendar mask from the prior planning module. No actual mean/p-value test and no new dataset outcomes.",
+  "method": "Independent matrix-kernel covariance check against frozen scalar HAC5 and prior vector estimator. Separate null simulator and direct two-test Holm step-down implementation. Joint and partial-null simulations; one-sided signs reported separately. Same finite correction and t df. No parameter selection.",
+  "null_models": "Sparse iid selection with original probability; paired normal correlation and empirical marginal scales. t5 innovations with unit variance. Negative-skew innovation is normal + 6*(.02-Bernoulli(.02)), standardized by sqrt(1+36*.02*.98). Empirical circular blocks1/5/20. Symmetric control applies one independent +/- sign to an entire paired calendar block, preserving within-block covariances while removing odd moments in expectation.",
+  "variance_diagnostic": "Known circular-block20 stationary covariance: sum g0 + 2*(1-lag/20)*g_lag through lag19. Compare expected population Bartlett-HAC5 coefficient with same block attenuation. These are model quantities, not an optimal bandwidth search or proof of future market covariance.",
+  "costs": "Frozen 1.225pt RT = 1.000pt execution allowance + .225pt commission. Quote-based net PnL subtracts commission plus only execution terms not already embedded in observed entry ask/exit bid; never automatically subtract 1.225pt again.",
+  "access": "Read existing Safari Barchart account status and relevant public tool pages. No credentials extraction, account creation, CAPTCHA solving, subscription, paid request or order.",
+  "release": false
+}

@@ -1,0 +1,47 @@
+{
+  "status": "LOCAL_MONTH_TURN_DASHBOARD_DELIVERY_PRIVACY_VERIFIED",
+  "served": {
+    "/data/month-turn-audit.json": {
+      "status": 200,
+      "bytes_match_disk": true,
+      "sha256": "a71982b0d50a0bc229be66f0390f7d34730743cd9ab9b51c4828d7c41c05666a"
+    },
+    "/data/month-turn-audit-verification.json": {
+      "status": 200,
+      "bytes_match_disk": true,
+      "sha256": "430c9ed873248e1dbdd3d565e86e31766c540337922efe74e194dde457be5083"
+    },
+    "/reports/MONTH_TURN_AUDIT.md": {
+      "status": 200,
+      "bytes_match_disk": true,
+      "sha256": "9419ea730ea7c5ead429da7c32cd9c94d720bf665f73d129efa38f672e5fadd7"
+    },
+    "/reports/MONTH_TURN_UNCERTAINTY_CONTEXT.md": {
+      "status": 200,
+      "bytes_match_disk": true,
+      "sha256": "2289ad15373f92caa144e74464c0d737ff29264988cab0d01f12bf95a5019d6d"
+    },
+    "/research/month-turn-audit": {
+      "status": 200
+    },
+    "/research/marathon": {
+      "status": 200
+    }
+  },
+  "private_paths": {
+    "/artifacts/month-turn-audit/discovery-daily.json": 404,
+    "/data/raw/nqh25_intraday-1min_historical-data-10-19-2026.csv": 404
+  },
+  "observed_browser_evidence": {
+    "tool": "Actual CUA observations in this turn, not inferred from HTTP",
+    "title": "QUANTT \u2014 Maandwissel-audit",
+    "viewport_width": 584,
+    "document_scroll_width": 584,
+    "tables": 5,
+    "data_rows": 46,
+    "both_details_opened_and_verified": true,
+    "console_warn_or_error_entries_observed": 0
+  },
+  "external_publication": false,
+  "private_raw_uploads": false
+}

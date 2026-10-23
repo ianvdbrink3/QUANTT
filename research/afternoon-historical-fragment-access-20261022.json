@@ -1,0 +1,16 @@
+{
+  "status": "APPEND_ONLY_PARTIAL_HISTORICAL_OUTCOME_ACCESS_DISCLOSED",
+  "as_of": "2026-10-22",
+  "authorization": "The user explicitly authorized phase3 of the autonomous marathon, including frozenv2 and selected new candidates on all available extra historical sessions.",
+  "original_fixed_end_window": ["2019-01-02", "2021-12-31"],
+  "fragment_evaluated": ["2019-01-02", "2019-01-11"],
+  "complete_rth_dates": ["2019-01-02", "2019-01-03", "2019-01-04", "2019-01-07", "2019-01-08", "2019-01-09", "2019-01-10", "2019-01-11"],
+  "frozen_v2_selected_days": 4,
+  "frozen_v2_horizons_evaluated": [2, 15],
+  "full_fixed_end_test_completed": false,
+  "independent_validation_pass_claimed": false,
+  "original_registration_or_v2_bytes_changed": false,
+  "evidence": ["research/edge-marathon-protocol.json", "artifacts/edge-marathon/historical-release.json", "artifacts/edge-marathon/historical.json", "research/edge-marathon-results.json", "docs/AUTONOMOUS_EDGE_DISCOVERY_REPORT.md"],
+  "future_interpretation": "The entire2019-2021window must no longer be described as wholly uninspected. Merely inspecting a fragment does not by itself prove invalidity of a later fixed-end test if rules/endpoints remain frozen and no optional stopping or outcome-driven adaptation occurs. Preserve and disclose this exposure; do not use a favorable fragment to promote the model, change rules, extend dates or silently substitute a new hypothesis family. Any later final analysis must distinguish already inspected fragment outcomes from remaining data and state its decision protocol explicitly.",
+  "legacy_verifier_note": "Original frozen registration verifiers intentionally retain their original newruns0/outcomesnotreleased text. Their byte-integrity checks do not describe this new authorized fragment access."
+}

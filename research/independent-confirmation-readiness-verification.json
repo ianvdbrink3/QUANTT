@@ -1,0 +1,33 @@
+{
+  "status": "LOCAL_SOURCE_COMPARISON_AND_COUNT_PLANNING_VERIFIED_NOT_INDEPENDENT_CONFIRMATION",
+  "tests_passed": 537,
+  "new_counting_tests": 7,
+  "test_command": ".venv/bin/python -m pytest -q",
+  "reproduction_command": ".venv/bin/python -m scripts.independent_confirmation_readiness run",
+  "second_source_reload_byte_identical_outputs": 3,
+  "protected_existing_files_byte_identical": 489,
+  "tracked_git_diff_empty": true,
+  "output_sha256": {
+    "research/independent-confirmation-readiness-results.json": "ff828d67fdb2e9e4a6f99b030ea037faa39a7e636e7727d0e617bad949c19bcc",
+    "docs/INDEPENDENT_CONFIRMATION_READINESS.md": "79f8a0ce3334a9e6091c9646394758318fa2071e927bf189524aee86ca9cd901",
+    "artifacts/independent-confirmation-readiness/anchor-comparison.json": "e5146b651e32dcae9bbc27bdb4938c59c7d9cbdde64b67482641a539df1cce55"
+  },
+  "additional_exception_diagnosis": {
+    "path": "docs/INDEPENDENT_SOURCE_EXCEPTION_20240131.md",
+    "sha256": "d8f28dda57742a0a03317ff0f4d1471213613eb9eb462c943a19a09c731486d1",
+    "scope": "Read-only inspection of already compared2024Jan31 labels14:59,15:00,15:01,15:02,15:14 under the unchanged source conventions. No shift search or rule change.",
+    "two_minute_anchor_difference_points": 15.5,
+    "older_negative_result_cleared": false
+  },
+  "no_new_strategy_run": true,
+  "candidate_v2_bytes_unchanged": true,
+  "original_v2_hac5_holm2_not_replaced": true,
+  "group120_method_separate_addendum": true,
+  "formal_forward_calendar_adopted": false,
+  "live_feed_connected": false,
+  "forward_observation_collection_started": false,
+  "independent_final_test_started": false,
+  "download_or_purchase": false,
+  "git_push_or_vercel_deployment": false,
+  "next_authority_or_data_required": "Verified lawful no-new-charge data access and missing contract source coverage. Before prospective observation: fixed future calendar, formal inference choice, power rationale, full quality/rollover and logging plan. Current120/8 minima are information gates, not proof of independence or guaranteed power."
+}

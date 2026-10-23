@@ -1,0 +1,55 @@
+{
+  "id": "ORIGINAL-TOM-BENCHMARK-RISK-AUDIT-20261022",
+  "status": "EXPLORATORY_AUDIT_OF_ALREADY_CONSUMED_DATA_NOT_INDEPENDENT_VALIDATION",
+  "model": "Original TOM_RTH only: last cash session of month and first3 cash sessions; long09:30open to15:59close. Main2024Dec30/31 remain non-ToM as in the original incomplete-month exclusion. No new filters or sizing.",
+  "samples": [
+    "DISCOVERY",
+    "CONTINUOUS_2022_2024_UNVERIFIED"
+  ],
+  "benchmark": "Same-clock long on ALL complete eligible sessions and on the complementary non-ToM sessions. Compare means per exposed day, not unequal-exposure cumulative profits. All-session benchmark includes ToM and is not an independent control.",
+  "volatility": "Descriptive common sample with finite prior ATR14>0. Compare (gross_points-1.225)/prior_ATR14. Do not remove missing-ATR trades from the original model. No full-sample volatility thresholds or sizing rule.",
+  "inference": {
+    "method": "Moving block bootstrap of2 consecutive calendar MONTH clusters,10000 replications, fixed seeds20261022101/102. Resample whole months, use ratios of pooled event sums/counts; never equal-weight daily or event-rich month means. Percentile95% intervals. Approximate two-sided null-centered bootstrap p=(1+count(abs(diff*-diff)>=abs(diff)))/(B+1). Weak dependence/stationarity and few-month limitations, not exact randomization inference.",
+    "tests": "Exactly4 new exploratory contrasts: ToM minus non-ToM in raw net points and net points/priorATR for each of2 separate sources; Holm4. Other means, paths, delays, quarters and cost cases descriptive only. Previous25/125 families unchanged.",
+    "decision": "No formal promotion. Exploratory support only if all4 adjusted contrasts are positive and p<.05; otherwise INSUFFICIENT_EVIDENCE_NO_PROMOTION. This is an audit label, not a new preregistration or live authorization."
+  },
+  "risk": [
+    "closed-trade drawdown from initial0",
+    "minute-close marked equity drawdown with fullRT cost deducted at entry",
+    "worst day, MAE/MFE, top3 contribution and removal, leave-one-day/quarter-out; no post-hoc exclusions become trading filters"
+  ],
+  "execution": {
+    "entry_delays_minutes": [
+      0,
+      1,
+      5
+    ],
+    "exit": "Same fixed15:59close proxy, no exit timing search",
+    "roundtrip_cost_usd": [
+      24.5,
+      34.5,
+      44.5
+    ],
+    "points": [
+      1.225,
+      1.725,
+      2.225
+    ],
+    "warning": "1/2 extra ticks PER LEG on top of fixed baseline. No BBO/queue/latency evidence; exact open/close fills not certified."
+  },
+  "source_check": "Existing NQH24 pilot against generic on all complete common sessions2024Jan22-Feb16. Fixed old timestamp normalization only, no shift search. Same-date agreement is not sample independence.",
+  "source_register_sha256": "e9d1c9526e17e75170c5d29a08aa51ab150de7d5280087fc38b0113bfdfc9367",
+  "unchanged": [
+    "all prior files",
+    "baseline v0.9",
+    "vNext freeze",
+    "afternoon candidate v2",
+    "original ToM ledger"
+  ],
+  "restrictions": "No unseen history, independent holdout, purchases, downloads, account changes, orders, Git push or external deployment.",
+  "public_output": "Aggregates, quarters, sensitivity and report only. No raw OHLCV, daily/trade arrays, absolute source paths or protected-file manifest.",
+  "references": [
+    "https://docs.lib.purdue.edu/ciberwp/43/",
+    "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+  ]
+}

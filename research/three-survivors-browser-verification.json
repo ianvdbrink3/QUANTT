@@ -1,0 +1,50 @@
+{
+  "status": "LOCAL_BROWSER_DATA_REPORT_BOUNDARIES_VERIFIED",
+  "checks": [
+    {
+      "route": "/data/three-survivors.json",
+      "status": 200,
+      "byte_identical": true
+    },
+    {
+      "route": "/data/three-survivors-verification.json",
+      "status": 200,
+      "byte_identical": true
+    },
+    {
+      "route": "/data/three-survivors-preregistration.json",
+      "status": 200,
+      "byte_identical": true
+    },
+    {
+      "route": "/reports/THREE_SURVIVORS_ATR_PORTFOLIO.md",
+      "status": 200,
+      "byte_identical": true
+    },
+    {
+      "route": "/reports/THREE_SURVIVORS_PREREGISTRATION_2019_2021.md",
+      "status": 200,
+      "byte_identical": true
+    },
+    {
+      "route": "/research/three-survivors",
+      "status": 200,
+      "aggregate_rendering": true
+    },
+    {
+      "route": "/data/raw/historical-replication-2019-2021/nqh19_intraday-1min_historical-data-10-22-2026-4.csv",
+      "status": 404
+    },
+    {
+      "route": "/research/three-survivors-lock.json",
+      "status": 404
+    },
+    {
+      "route": "/artifacts/three-survivors/discovery-trades.json",
+      "status": 404
+    }
+  ],
+  "screenshots": "Native browser rendering inspected separately; no user Safari interaction needed.",
+  "server": "Local production build only, no external deployment",
+  "external_publication": false
+}

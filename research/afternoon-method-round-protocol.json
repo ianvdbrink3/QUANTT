@@ -1,0 +1,58 @@
+{
+  "id": "AFTERNOON-INFERENCE-ROUND-1-20261022",
+  "status": "LOCK_BEFORE_SIMULATION_NO_MARKET_TEST",
+  "scope": "Only synthetic inference calibration, historical-window registration and download instructions. No new market signal, cohort, outcome, download, purchase or publication.",
+  "seeds": [20261022031, 20261022032],
+  "replications_per_cell_per_seed": 10000,
+  "lengths_weekdays": [500, 783, 1000],
+  "models": ["GAUSSIAN_IID", "T5_IID", "NEGATIVE_SKEW_IID", "POSITIVE_SKEW_IID", "MA19", "AR06", "AR09", "AR095", "VOLATILITY_REGIMES", "PERSISTENT_SELECTION", "MA19_PERSISTENT_SELECTION"],
+  "negative_control": "NONMIXING_COMMON_FACTOR",
+  "method": {
+    "name": "GAP20_GROUP8_NULL_SCORE_T",
+    "groups": 8,
+    "guard_weekdays": 20,
+    "minimum_selected_per_group": 8,
+    "minimum_selected_total": 120,
+    "partition": "Eight equal chronological weekday blocks, 20 unscored weekdays between each adjacent pair. At most seven leftover tail weekdays also not scored. Partition fixed by dates, never by outcomes or observed selection. Closed/failed-quality dates remain in their original calendar slots with selection=false.",
+    "formula": "For each horizon, A_j=sum(I_t*Y_t)/L and B_j=sum(I_t)/L in group j. Test mu=0 via sqrt(8)*mean(A)/sd(A), Student t df=7. The displayed conditional event mean is sum(A)/sum(B), not an equal-day-weighted or equal-group-event average. Equal L makes its sign identical to mean(A). For an interval invert t on A_j-mu*B_j (Fieller quadratic), report unbounded sets honestly.",
+    "estimand": "Mean net points conditional on the frozen event within the fixed scored blocks. H0 is the zero selected-return moment E[I*Y]=0, equivalent to E[Y|I=1]=0 when selection probability is positive. Assumes sufficiently independent approximately Gaussian zero-mean group scores under H0; not arbitrary cancelling block-specific nonzero means.",
+    "missing": "If any group has <8 selected complete observations or total <120, both tests get p=1, status DATA_INSUFFICIENT. No compression of calendar, no replacement dates, no regrouping.",
+    "family": "Two parallel two-sided horizons, unchanged Holm2 alpha=.05; own positive conditional mean and own adjusted p<.05 for support. No hierarchical horizon gate. Costs and cohort unchanged.",
+    "no_tuning": "One candidate method only. No lag, group-count or guard search. A failed calibration leaves it unapproved; no same-round replacement or widened tolerance.",
+    "limitations": "Inspired by grouped robust inference, not an exact finite-sample theorem for NQ. Gaps cannot prove independence. Guard-day exclusion changes the scored sample and is a new inferential addendum, not silent v2 reproduction. No new market outcome may be inspected to choose this change."
+  },
+  "simulation_inputs": "Only existing public-ish feasibility JSON scalars: selection probability, paired centered discovery SDs and correlation. No raw CSV or event-ledger read, no discovery mean or new returns.",
+  "generators": "Zero-mean unit-variance Gaussian/t5/signed skew mixtures; stationary Gaussian MA(19) and AR(.6,.9,.95); prechosen deterministic volatility regimes; persistent independent Markov selection phi=.8. MA19 means 20 equal Gaussian innovations divided by sqrt(20). AR processes start at their stationary distribution. Selection independent of outcomes. Paired horizons correlated using old summary rho. Negative control adds a shared random normal factor across the entire panel, violating mixing/group independence.",
+  "calibration_decision": {
+    "nominal_FWER": 0.05,
+    "maximum_simultaneous_upper_bound": 0.06,
+    "confidence_family": 0.95,
+    "rule": "Clopper-Pearson ONE-SIDED upper bounds simultaneous across all joint-null and both partial-null cells, seeds, lengths and unconditional/evaluable-only summaries, via Bonferroni .05/M. Every candidate-method bound must be <=.06. Six percent is an explicit numerical screening tolerance, NOT a redefinition of alpha or proof of universal 5% control. No negative-control requirement, but show failure visibly.",
+    "partial_nulls": "Recompute p-values after adding +4 net points to only one horizon on selected days. Count rejection of the OTHER, true-null horizon, either sign, separately from positive support.",
+    "comparator": "Frozen HAC5/t(N-1) and Holm2 on exactly the same scored days. Comparator never selected if more favorable.",
+    "no_auto_release": true
+  },
+  "power_planning": {
+    "length_weekdays": 783,
+    "effects_net_points": [[2,0],[4,0],[6,0],[0,2],[0,4],[0,6],[2,2],[4,4],[6,6]],
+    "models": ["GAUSSIAN_IID","MA19","AR095"],
+    "sigma_multipliers": [1.0,1.5],
+    "target": "80% is a planning reference for a hypothetical +4pt effect on 2m, not a guarantee, success criterion or claim about the true edge. Show all scenarios; no data-window enlargement if power is weak."
+  },
+  "window": {
+    "start": "2019-01-02",
+    "end": "2021-12-31",
+    "warmup_start": "2018-11-19",
+    "classification": "FIXED_HISTORICAL_REPLICATION_WINDOW_NOT_PROSPECTIVE_CERTIFIED",
+    "reason": "Before all observed prior intraday files: old 4h series starts 2022-01-02, old generic minute series 2022-12-26. Old daily/weekly/monthly material spans these years, so absolute non-exposure is NOT proved. No prior candidate-specific 15:00 outcomes in this window found in inspected local research metadata/code/report scope. The Jan-Feb2024 technical pilot is excluded.",
+    "data_gate": "Official holiday/early-close/halt reconciliation, both DSTs, fixed volume rollovers using completed joint sessions, source SHA256 lock, exact candidate parity and no-outcome-access check BEFORE a separate release. Incomplete RTH dates excluded without forward fill. Excluded calendar positions not replaced. Missing bars do not prove a vendor fault.",
+    "roll": "Use frozen volume crossover logic: new contract exceeds old completed-session volume, activate next trading session; last common completed RTH close before activation for causal additive Panama context. Never switch on returns. If evidence unavailable, mark DATA_INSUFFICIENT, no calendar-roll fallback. Raw prices remain unadjusted for horizons.",
+    "stop": "One final fixed-end run only after explicit release; no peeking, event-count extension, date replacement, alternative window selection or merging discovery/replication p-values. Missing-information result stays inconclusive. Execution remains independently unverified.",
+    "independent_test_released": false
+  },
+  "sources": [
+    "https://www.princeton.edu/~umueller/tstat.pdf",
+    "https://help.barchart.com/support/solutions/articles/242748-how-can-i-download-historical-data-",
+    "https://www.cmegroup.com/markets/equities/nasdaq/e-mini-nasdaq-100.contractSpecs.html"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "status": "TECHNICAL_INTAKE_ONLY_NO_HYPOTHESIS_TEST",
+  "as_of": "2026-10-22",
+  "source_url": "https://www.barchart.com/futures/quotes/NQH24/historical-download",
+  "source_timezone": "America/Chicago",
+  "analysis_timezone": "America/New_York",
+  "timezone_basis": "Barchart historical-download page help: futures timestamps in CT",
+  "bar_interval_status": "BAR_START_SUPPORTED_INTERNAL_ONLY",
+  "tracked_files_unchanged": 400,
+  "total_bars": 26707,
+  "overlapping_timestamps": 0,
+  "complete_rth_days": 19,
+  "missing_rth_minutes": 4,
+  "signals_computed": false,
+  "returns_computed": false,
+  "candidate_test_released": false,
+  "licensing_status": "EXISTING_TRIAL_EXPORT_NOT_REDISTRIBUTION_CLEARANCE",
+  "files": [
+    {
+      "filename": "nqh24_intraday-1min_historical-data-10-22-2026.csv",
+      "sha256": "66441d492328528589ede1f690fba016ec32082eba2dfb254789095c162933e5",
+      "bytes": 880203,
+      "contract": "NQH24",
+      "columns": [
+        "Time",
+        "Open",
+        "High",
+        "Low",
+        "Latest",
+        "Change",
+        "%Change",
+        "Volume"
+      ],
+      "requested_start": "2024-01-22",
+      "requested_end": "2024-02-02",
+      "bars": 13335,
+      "footer_rows": 1,
+      "first_utc": "2024-01-22T06:00:00+00:00",
+      "last_utc": "2024-02-02T21:59:00+00:00",
+      "first_chicago": "2024-01-22T00:00:00-06:00",
+      "last_chicago": "2024-02-02T15:59:00-06:00",
+      "first_new_york": "2024-01-22T01:00:00-05:00",
+      "last_new_york": "2024-02-02T16:59:00-05:00",
+      "complete_rth_days": 9,
+      "quality_issue_counts": {},
+      "days": [
+        {
+          "day": "2024-01-22",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-23",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 386,
+          "missing_rth_minutes": 4,
+          "data_quality_flag": "RTH_GAP_UNEXPLAINED",
+          "missing_rth_ny": [
+            "10:20",
+            "10:21",
+            "10:22",
+            "10:23"
+          ]
+        },
+        {
+          "day": "2024-01-24",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-25",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-26",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-29",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-30",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-01-31",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-01",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-02",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        }
+      ],
+      "private_copy": "data/raw/independent-pilot/nqh24_intraday-1min_historical-data-10-22-2026.csv",
+      "private_copy_byte_identical": true,
+      "private_copy_gitignored": true
+    },
+    {
+      "filename": "nqh24_intraday-1min_historical-data-10-22-2026-2.csv",
+      "sha256": "9ee92754ba8777635a37c6e8824619f798b45996b3d286ee3a4ede7621548514",
+      "bytes": 880551,
+      "contract": "NQH24",
+      "columns": [
+        "Time",
+        "Open",
+        "High",
+        "Low",
+        "Latest",
+        "Change",
+        "%Change",
+        "Volume"
+      ],
+      "requested_start": "2024-02-05",
+      "requested_end": "2024-02-16",
+      "bars": 13372,
+      "footer_rows": 1,
+      "first_utc": "2024-02-05T06:00:00+00:00",
+      "last_utc": "2024-02-16T21:59:00+00:00",
+      "first_chicago": "2024-02-05T00:00:00-06:00",
+      "last_chicago": "2024-02-16T15:59:00-06:00",
+      "first_new_york": "2024-02-05T01:00:00-05:00",
+      "last_new_york": "2024-02-16T16:59:00-05:00",
+      "complete_rth_days": 10,
+      "quality_issue_counts": {},
+      "days": [
+        {
+          "day": "2024-02-05",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-06",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-07",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-08",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-09",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-12",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-13",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-14",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-15",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        },
+        {
+          "day": "2024-02-16",
+          "expected_rth_minutes": 390,
+          "present_rth_minutes": 390,
+          "missing_rth_minutes": 0,
+          "data_quality_flag": "RTH_LABELS_COMPLETE",
+          "missing_rth_ny": []
+        }
+      ],
+      "private_copy": "data/raw/independent-pilot/nqh24_intraday-1min_historical-data-10-22-2026-2.csv",
+      "private_copy_byte_identical": true,
+      "private_copy_gitignored": true
+    }
+  ]
+}

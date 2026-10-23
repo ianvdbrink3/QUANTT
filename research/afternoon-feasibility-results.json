@@ -1,0 +1,1265 @@
+{
+  "status": "FEASIBILITY_ONLY_INDEPENDENT_TEST_NOT_RELEASED",
+  "candidate_changed": false,
+  "observed_mean_tested": false,
+  "new_strategy_runs": 0,
+  "independent_outcomes_read": false,
+  "scheduled_sessions": 454,
+  "complete_RTH_days": 435,
+  "selected_days": 162,
+  "selection_rate_scheduled": 0.3568281938325991,
+  "selection_rate_complete": 0.3724137931034483,
+  "selection_wilson_iid_ci95": [
+    0.3141313018169366,
+    0.4019276144401158
+  ],
+  "selection_block20_ci95": [
+    0.30616740088105726,
+    0.4118942731277533
+  ],
+  "selected_per250_expected": 89.20704845814979,
+  "selected_per250_frequency_interval": [
+    76.54185022026431,
+    102.97356828193833
+  ],
+  "calibration": {
+    "paired_outcome_correlation": 0.5906329022898934,
+    "2": {
+      "iid_sigma_points": 13.727805350876473,
+      "hac5_equivalent_sigma_points": 14.839953044036434,
+      "hac5_to_iid_variance_ratio": 1.168591783270002,
+      "calendar_score_autocorrelations": [
+        0.04523200000007206,
+        0.06672088665555112,
+        0.052977108967347246,
+        -0.11223135390829965,
+        0.07982482194580863
+      ]
+    },
+    "15": {
+      "iid_sigma_points": 36.28657367049086,
+      "hac5_equivalent_sigma_points": 36.5295428832466,
+      "hac5_to_iid_variance_ratio": 1.0134365210042904,
+      "calendar_score_autocorrelations": [
+        -0.03685965928213406,
+        0.024577664729186283,
+        0.029764631397404092,
+        -0.0005275091693783336,
+        0.038516104142102305
+      ]
+    }
+  },
+  "quarters": [
+    {
+      "quarter": "2024Q4",
+      "scheduled": 2,
+      "complete": 2,
+      "selected": 0,
+      "rate_scheduled": 0.0,
+      "rate_complete": 0.0
+    },
+    {
+      "quarter": "2025Q1",
+      "scheduled": 63,
+      "complete": 60,
+      "selected": 17,
+      "rate_scheduled": 0.2698412698412698,
+      "rate_complete": 0.2833333333333333
+    },
+    {
+      "quarter": "2025Q2",
+      "scheduled": 64,
+      "complete": 62,
+      "selected": 21,
+      "rate_scheduled": 0.328125,
+      "rate_complete": 0.3387096774193548
+    },
+    {
+      "quarter": "2025Q3",
+      "scheduled": 66,
+      "complete": 63,
+      "selected": 29,
+      "rate_scheduled": 0.4393939393939394,
+      "rate_complete": 0.4603174603174603
+    },
+    {
+      "quarter": "2025Q4",
+      "scheduled": 65,
+      "complete": 62,
+      "selected": 16,
+      "rate_scheduled": 0.24615384615384617,
+      "rate_complete": 0.25806451612903225
+    },
+    {
+      "quarter": "2026Q1",
+      "scheduled": 63,
+      "complete": 60,
+      "selected": 24,
+      "rate_scheduled": 0.38095238095238093,
+      "rate_complete": 0.4
+    },
+    {
+      "quarter": "2026Q2",
+      "scheduled": 65,
+      "complete": 62,
+      "selected": 35,
+      "rate_scheduled": 0.5384615384615384,
+      "rate_complete": 0.5645161290322581
+    },
+    {
+      "quarter": "2026Q3",
+      "scheduled": 66,
+      "complete": 64,
+      "selected": 20,
+      "rate_scheduled": 0.30303030303030304,
+      "rate_complete": 0.3125
+    }
+  ],
+  "approximation": [
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 526,
+      "scheduled_sessions_expected": 1474.0987654320988,
+      "years_at250": 5.896395061728396,
+      "years_frequency_interval": [
+        5.108106951871657,
+        6.872057553956834
+      ],
+      "positive_power_at_n": 0.8001441076293516
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 821,
+      "scheduled_sessions_expected": 2300.8271604938273,
+      "years_at250": 9.203308641975308,
+      "years_frequency_interval": [
+        7.972919786096257,
+        10.726158273381296
+      ],
+      "positive_power_at_n": 0.8004293903799486
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 1180,
+      "scheduled_sessions_expected": 3306.9135802469136,
+      "years_at250": 13.227654320987655,
+      "years_frequency_interval": [
+        11.459251336898397,
+        15.416402877697843
+      ],
+      "positive_power_at_n": 0.8000144681601207
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 134,
+      "scheduled_sessions_expected": 375.5308641975309,
+      "years_at250": 1.5021234567901236,
+      "years_frequency_interval": [
+        1.3013048128342246,
+        1.7506762589928058
+      ],
+      "positive_power_at_n": 0.8021248354508952
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 207,
+      "scheduled_sessions_expected": 580.1111111111111,
+      "years_at250": 2.3204444444444445,
+      "years_frequency_interval": [
+        2.010224598930481,
+        2.7044028776978415
+      ],
+      "positive_power_at_n": 0.8001295445699284
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 297,
+      "scheduled_sessions_expected": 832.3333333333334,
+      "years_at250": 3.3293333333333335,
+      "years_frequency_interval": [
+        2.8842352941176475,
+        3.8802302158273383
+      ],
+      "positive_power_at_n": 0.8001761067256986
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 61,
+      "scheduled_sessions_expected": 170.9506172839506,
+      "years_at250": 0.6838024691358024,
+      "years_frequency_interval": [
+        0.5923850267379679,
+        0.7969496402877698
+      ],
+      "positive_power_at_n": 0.8023109643619002
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 94,
+      "scheduled_sessions_expected": 263.4320987654321,
+      "years_at250": 1.0537283950617284,
+      "years_frequency_interval": [
+        0.9128556149732621,
+        1.2280863309352519
+      ],
+      "positive_power_at_n": 0.8029097186357836
+    },
+    {
+      "horizon_minutes": 2,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 134,
+      "scheduled_sessions_expected": 375.5308641975309,
+      "years_at250": 1.5021234567901236,
+      "years_frequency_interval": [
+        1.3013048128342246,
+        1.7506762589928058
+      ],
+      "positive_power_at_n": 0.8021248354508951
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 3174,
+      "scheduled_sessions_expected": 8895.037037037036,
+      "years_at250": 35.58014814814815,
+      "years_frequency_interval": [
+        30.82344385026738,
+        41.467510791366905
+      ],
+      "positive_power_at_n": 0.8000802040852759
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 4958,
+      "scheduled_sessions_expected": 13894.641975308643,
+      "years_at250": 55.57856790123457,
+      "years_frequency_interval": [
+        48.14827807486631,
+        64.77502158273381
+      ],
+      "positive_power_at_n": 0.8000835563686313
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 2,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 7138,
+      "scheduled_sessions_expected": 20004.024691358023,
+      "years_at250": 80.01609876543209,
+      "years_frequency_interval": [
+        69.31875935828877,
+        93.2561726618705
+      ],
+      "positive_power_at_n": 0.8000584926129699
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 796,
+      "scheduled_sessions_expected": 2230.7654320987654,
+      "years_at250": 8.923061728395062,
+      "years_frequency_interval": [
+        7.730139037433156,
+        10.399539568345324
+      ],
+      "positive_power_at_n": 0.8004140672739932
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 1242,
+      "scheduled_sessions_expected": 3480.6666666666665,
+      "years_at250": 13.922666666666666,
+      "years_frequency_interval": [
+        12.061347593582889,
+        16.22641726618705
+      ],
+      "positive_power_at_n": 0.8002975479555068
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 4,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 1787,
+      "scheduled_sessions_expected": 5008.0123456790125,
+      "years_at250": 20.03204938271605,
+      "years_frequency_interval": [
+        17.353967914438506,
+        23.346705035971222
+      ],
+      "positive_power_at_n": 0.8002072352665025
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.0,
+      "selected_days_for80": 355,
+      "scheduled_sessions_expected": 994.8765432098766,
+      "years_at250": 3.979506172839506,
+      "years_frequency_interval": [
+        3.4474866310160426,
+        4.637985611510792
+      ],
+      "positive_power_at_n": 0.8001970225890258
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.25,
+      "selected_days_for80": 554,
+      "scheduled_sessions_expected": 1552.567901234568,
+      "years_at250": 6.210271604938272,
+      "years_frequency_interval": [
+        5.380021390374331,
+        7.237870503597122
+      ],
+      "positive_power_at_n": 0.8007683045072949
+    },
+    {
+      "horizon_minutes": 15,
+      "net_effect_points": 6,
+      "sigma_multiplier": 1.5,
+      "selected_days_for80": 796,
+      "scheduled_sessions_expected": 2230.7654320987654,
+      "years_at250": 8.923061728395062,
+      "years_frequency_interval": [
+        7.730139037433156,
+        10.399539568345324
+      ],
+      "positive_power_at_n": 0.8004140672739932
+    }
+  ],
+  "joint_Holm2_simulations": [
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.0762,
+      "power_15m": 0.0246,
+      "family_positive_power": 0.0818,
+      "monte_carlo_se": 0.003875790500014158
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.312,
+      "power_15m": 0.0298,
+      "family_positive_power": 0.3124,
+      "monte_carlo_se": 0.006554483045977005
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.6934,
+      "power_15m": 0.0316,
+      "family_positive_power": 0.6934,
+      "monte_carlo_se": 0.006520681559469071
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.0158,
+      "power_15m": 0.0398,
+      "family_positive_power": 0.0468,
+      "monte_carlo_se": 0.0029869636757081596
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.0178,
+      "power_15m": 0.0784,
+      "family_positive_power": 0.084,
+      "monte_carlo_se": 0.003922856102382548
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.019,
+      "power_15m": 0.1428,
+      "family_positive_power": 0.1468,
+      "monte_carlo_se": 0.005004992707287395
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.079,
+      "power_15m": 0.0458,
+      "family_positive_power": 0.094,
+      "monte_carlo_se": 0.00412708129311745
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.3192,
+      "power_15m": 0.1058,
+      "family_positive_power": 0.3278,
+      "monte_carlo_se": 0.006638481151588818
+    },
+    {
+      "scheduled_sessions": 125,
+      "years_assuming250": 0.5,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 44.7132,
+      "p025_selected_days": 33.0,
+      "p975_selected_days": 58.0,
+      "power_2m": 0.6936,
+      "power_15m": 0.2038,
+      "family_positive_power": 0.6944,
+      "monte_carlo_se": 0.006514731613811884
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.1542,
+      "power_15m": 0.025,
+      "family_positive_power": 0.1566,
+      "monte_carlo_se": 0.005139580527630635
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.6196,
+      "power_15m": 0.0308,
+      "family_positive_power": 0.6196,
+      "monte_carlo_se": 0.006865796967577762
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.97,
+      "power_15m": 0.031,
+      "family_positive_power": 0.97,
+      "monte_carlo_se": 0.0024124676163629647
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.0144,
+      "power_15m": 0.052,
+      "family_positive_power": 0.0578,
+      "monte_carlo_se": 0.003300277564084573
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.0178,
+      "power_15m": 0.1214,
+      "family_positive_power": 0.1244,
+      "monte_carlo_se": 0.004667432699032735
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.0192,
+      "power_15m": 0.2584,
+      "family_positive_power": 0.26,
+      "monte_carlo_se": 0.0062032249677083295
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.1596,
+      "power_15m": 0.065,
+      "family_positive_power": 0.173,
+      "monte_carlo_se": 0.005349224242822504
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.6218,
+      "power_15m": 0.1772,
+      "family_positive_power": 0.625,
+      "monte_carlo_se": 0.006846531968814577
+    },
+    {
+      "scheduled_sessions": 250,
+      "years_assuming250": 1.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 89.3814,
+      "p025_selected_days": 72.0,
+      "p975_selected_days": 108.0,
+      "power_2m": 0.9686,
+      "power_15m": 0.3438,
+      "family_positive_power": 0.9686,
+      "monte_carlo_se": 0.002466334932648037
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.324,
+      "power_15m": 0.03,
+      "family_positive_power": 0.3252,
+      "monte_carlo_se": 0.0066248767535705905
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.9332,
+      "power_15m": 0.0324,
+      "family_positive_power": 0.9332,
+      "monte_carlo_se": 0.0035309420839203798
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0324,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.0188,
+      "power_15m": 0.0754,
+      "family_positive_power": 0.0804,
+      "monte_carlo_se": 0.003845408690893596
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.0224,
+      "power_15m": 0.226,
+      "family_positive_power": 0.228,
+      "monte_carlo_se": 0.005933228463492705
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.0256,
+      "power_15m": 0.4852,
+      "family_positive_power": 0.486,
+      "monte_carlo_se": 0.00706829540978587
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.3294,
+      "power_15m": 0.1018,
+      "family_positive_power": 0.3378,
+      "monte_carlo_se": 0.006688664440678722
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.9316,
+      "power_15m": 0.3138,
+      "family_positive_power": 0.9318,
+      "monte_carlo_se": 0.0035650739122772765
+    },
+    {
+      "scheduled_sessions": 500,
+      "years_assuming250": 2.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 178.485,
+      "p025_selected_days": 154.0,
+      "p975_selected_days": 204.0,
+      "power_2m": 0.9994,
+      "power_15m": 0.5984,
+      "family_positive_power": 0.9994,
+      "monte_carlo_se": 0.0003463062228721987
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.6194,
+      "power_15m": 0.025,
+      "family_positive_power": 0.6194,
+      "monte_carlo_se": 0.006866493136965914
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.9998,
+      "power_15m": 0.0252,
+      "family_positive_power": 0.9998,
+      "monte_carlo_se": 0.00019997999899988897
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0252,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.021,
+      "power_15m": 0.1234,
+      "family_positive_power": 0.1276,
+      "monte_carlo_se": 0.004718437029356226
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.028,
+      "power_15m": 0.4414,
+      "family_positive_power": 0.4424,
+      "monte_carlo_se": 0.007023990888376778
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.031,
+      "power_15m": 0.8132,
+      "family_positive_power": 0.8132,
+      "monte_carlo_se": 0.005511910013779252
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.6244,
+      "power_15m": 0.1832,
+      "family_positive_power": 0.6272,
+      "monte_carlo_se": 0.0068384232100682394
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 0.9992,
+      "power_15m": 0.5528,
+      "family_positive_power": 0.9992,
+      "monte_carlo_se": 0.0003998399679871993
+    },
+    {
+      "scheduled_sessions": 1000,
+      "years_assuming250": 4.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 357.074,
+      "p025_selected_days": 322.0,
+      "p975_selected_days": 393.0,
+      "power_2m": 1.0,
+      "power_15m": 0.8772,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 0.9188,
+      "power_15m": 0.0314,
+      "family_positive_power": 0.9188,
+      "monte_carlo_se": 0.0038628114113945567
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0314,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0314,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 0.0254,
+      "power_15m": 0.2234,
+      "family_positive_power": 0.226,
+      "monte_carlo_se": 0.005914795009127535
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 0.0302,
+      "power_15m": 0.7616,
+      "family_positive_power": 0.7618,
+      "monte_carlo_se": 0.006024296805437129
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 0.0304,
+      "power_15m": 0.9882,
+      "family_positive_power": 0.9882,
+      "monte_carlo_se": 0.0015271385005951512
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 0.9166,
+      "power_15m": 0.3156,
+      "family_positive_power": 0.9172,
+      "monte_carlo_se": 0.003897285208962772
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 1.0,
+      "power_15m": 0.8364,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 2000,
+      "years_assuming250": 8.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 713.8854,
+      "p025_selected_days": 664.975,
+      "p975_selected_days": 765.0,
+      "power_2m": 1.0,
+      "power_15m": 0.9948,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 0.9982,
+      "power_15m": 0.0282,
+      "family_positive_power": 0.9982,
+      "monte_carlo_se": 0.0005994597567810576
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0282,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0282,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 0.0334,
+      "power_15m": 0.4456,
+      "family_positive_power": 0.4466,
+      "monte_carlo_se": 0.007030625007778469
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 0.0352,
+      "power_15m": 0.974,
+      "family_positive_power": 0.974,
+      "monte_carlo_se": 0.0022505110530721692
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 0.0352,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 0.9976,
+      "power_15m": 0.5552,
+      "family_positive_power": 0.9976,
+      "monte_carlo_se": 0.0006919884392097831
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 1.0,
+      "power_15m": 0.9858,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 4000,
+      "years_assuming250": 16.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 1427.6688,
+      "p025_selected_days": 1356.0,
+      "p975_selected_days": 1501.0,
+      "power_2m": 1.0,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 0,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0304,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 0,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0304,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 0,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 0.0304,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 2,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 0.0368,
+      "power_15m": 0.7622,
+      "family_positive_power": 0.7622,
+      "monte_carlo_se": 0.006020816555916648
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 4,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 0.037,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 0,
+      "net_effect_15m": 6,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 0.037,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 2,
+      "net_effect_15m": 2,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 0.8378,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 4,
+      "net_effect_15m": 4,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    },
+    {
+      "scheduled_sessions": 8000,
+      "years_assuming250": 32.0,
+      "net_effect_2m": 6,
+      "net_effect_15m": 6,
+      "mean_selected_days": 2855.1042,
+      "p025_selected_days": 2755.975,
+      "p975_selected_days": 2959.0,
+      "power_2m": 1.0,
+      "power_15m": 1.0,
+      "family_positive_power": 1.0,
+      "monte_carlo_se": 0.0
+    }
+  ],
+  "zero_calibration": [
+    {
+      "scheduled_sessions": 125,
+      "positive_family_false_support": 0.0284,
+      "any_sign_family_rejection": 0.1018,
+      "any_sign_mc_se": 0.004276371358991172,
+      "mc_se": 0.002349188796159219
+    },
+    {
+      "scheduled_sessions": 250,
+      "positive_family_false_support": 0.025,
+      "any_sign_family_rejection": 0.0786,
+      "any_sign_mc_se": 0.003805838672355937,
+      "mc_se": 0.002207940216581962
+    },
+    {
+      "scheduled_sessions": 500,
+      "positive_family_false_support": 0.029,
+      "any_sign_family_rejection": 0.0694,
+      "any_sign_mc_se": 0.003593984974926857,
+      "mc_se": 0.0023731413780051116
+    },
+    {
+      "scheduled_sessions": 1000,
+      "positive_family_false_support": 0.024,
+      "any_sign_family_rejection": 0.0582,
+      "any_sign_mc_se": 0.003310974478911005,
+      "mc_se": 0.002164439881354989
+    },
+    {
+      "scheduled_sessions": 2000,
+      "positive_family_false_support": 0.0298,
+      "any_sign_family_rejection": 0.0634,
+      "any_sign_mc_se": 0.003446170048038837,
+      "mc_se": 0.002404660474994339
+    },
+    {
+      "scheduled_sessions": 4000,
+      "positive_family_false_support": 0.0316,
+      "any_sign_family_rejection": 0.0676,
+      "any_sign_mc_se": 0.0035504996831432047,
+      "mc_se": 0.0024739215832358147
+    },
+    {
+      "scheduled_sessions": 8000,
+      "positive_family_false_support": 0.029,
+      "any_sign_family_rejection": 0.0616,
+      "any_sign_mc_se": 0.0034001599962354715,
+      "mc_se": 0.0023731413780051116
+    }
+  ],
+  "method": {
+    "status": "PLANNING_ONLY_NOT_INDEPENDENT_TEST_RELEASE",
+    "anchor_commit": "9508b3b8ad698e86488993273d10b22d012dcc64",
+    "cohort": "Existing fixed 14:30 UP cohort only; 162 of 435 complete RTH days, on original 454 scheduled-session calendar. No new cohort selection or filters.",
+    "inputs": "Existing falsification membership and 15m measurements. Reconcile open-based 15m with original source anchors; extract only 15:00 open and 15:01/15:14 closes on already selected consumed days for variance calibration. No new test on observed mean, strategy, fill, stop, target or independent data outcome.",
+    "calibration": "Center both horizons separately. Preserve paired residuals and selection/quality indicator on all 454 scheduled sessions. No extrapolation of the discovery mean.",
+    "effects_net_points": [
+      2,
+      4,
+      6
+    ],
+    "effect_interpretation": "Hypothetical net effect after frozen 1.225pt friction. Scenarios, not a chosen minimum worthwhile effect or inferred edge.",
+    "individual_approximation": "Two-sided noncentral t planning at alpha .025 per horizon using HAC5 equivalent per-selected-day sigma. Target .80. Also sigma multipliers 1.25 and 1.5; no candidate parameter change.",
+    "joint_simulation": "Circular blocks of 20 scheduled sessions, resample paired centered residuals and selection indicator. Fixed calendar lengths; reestimate registered Bartlett HAC5, n/(n-1), t df n-1. Inject hypothetical positive NET means (delta,0), (0,delta), (delta,delta). Exact Holm2 positive own-mean decisions. Include joint-zero calibration. No test of actual discovery mean.",
+    "scheduled_sessions": [
+      125,
+      250,
+      500,
+      1000,
+      2000,
+      4000,
+      8000
+    ],
+    "replications": 5000,
+    "seed": 2026102201,
+    "selection_uncertainty": "Wilson descriptive interval and circular20-session block bootstrap interval; quarter frequencies including partial 2024Q4. Calendar conversion assumes 250 scheduled sessions/year, not a future exchange-calendar guarantee.",
+    "reporting": "Report all three scenarios, both horizons, all fixed calendar lengths, Monte Carlo precision, all variance sensitivities and limitations. No sample size is released by this calculation. Heavy tails, 162 events, regime shifts and data quality may make projections inaccurate.",
+    "inventory": "Downloads and local project data directories: filenames, headers, timestamps, counts and SHA256 only. No OHLCV numeric analysis of new or unvalidated files. No downloads, account creation, subscription, paid API or external writes.",
+    "release": false
+  },
+  "source_files_checked": 69,
+  "hashes": {
+    "research/afternoon-feasibility-protocol.json": "a586ab35e1cf1e81487c049527372c3ff57eb26d89ef949578a263114ab8b29c",
+    "scripts/afternoon_feasibility.py": "0dad05aa47c822d09660087ec6952a2b5cced78b90d880a4aae39a4b870482c9",
+    "research/afternoon-candidate-v2.json": "02be5f2a0a6a3e12040847e00dd0694895b4389107ccd1fca407fca9e1faf85e",
+    "artifacts/afternoon-falsification/measurements.csv": "d9928ded8bc3c84db0b036bf00f6e47e6cc70bb56156791cc2714be57cc09732",
+    "artifacts/afternoon-falsification/transitions.csv": "79d694df766f7e84d30f3ea5058328937af9053464a116178c60a93157478ff7",
+    "artifacts/raw-market/quality.json": "845691b49218676d1c24c7c99dd8d9b5a1da072ec759c7121d0b0791046c962c"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "REGISTERED_NOT_RELEASED",
+  "specification_sha256": "5f4d47a631d94b40ca8c60ed6ddadd5c097522562e25218310978161ce4d634a",
+  "models": [
+    "TOM_RTH",
+    "COMPRESSED_BREAK5",
+    "SWEEP_REV_1200",
+    "PORTFOLIO_EQUAL_THIRD"
+  ],
+  "full_descriptive_window": [
+    "2019-01-02",
+    "2021-12-31"
+  ],
+  "previously_inspected_dates": [
+    "2019-01-02",
+    "2019-01-03",
+    "2019-01-04",
+    "2019-01-07",
+    "2019-01-08",
+    "2019-01-09",
+    "2019-01-10",
+    "2019-01-11"
+  ],
+  "new_outcome_test_window": [
+    "2019-01-14",
+    "2021-12-31"
+  ],
+  "warmup_start": "2018-11-19",
+  "source_code_sha256": {
+    "scripts/edge_marathon/core.py": "a676cbd119dca38aba36977dbe3bb2d858b9b5d986286f349459e78689ffc92c",
+    "scripts/edge_marathon/features.py": "204d091b74d8671f9dafdea6851353cd3f7529795851fa5c4a738c6b3b7ab6d3",
+    "scripts/survivor_portfolio.py": "fdf20005ca5e62de8805ac3013955c5a7bebcf449e07a21b58d76fc571cf4942"
+  },
+  "tests": "4two-sided co-primary dailymean netATR tests,Holm4; jointHolm6 if oldv2twohorizons share this remainder.",
+  "information_floor": {
+    "usable_months": 24,
+    "ATR_ready_trades_each_signal": 30
+  },
+  "fixed_end": "2021-12-31",
+  "interim_outcomes": false,
+  "release": false,
+  "blockers": [
+    "full numeric data quality",
+    "CME holiday/halt/expiry reconciliation",
+    "new calendar adapter parity",
+    "locked causal volume rolls",
+    "complete source manifest",
+    "explicit outcome release"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "THREE-SURVIVORS-ATR-PORTFOLIO-20261022",
+  "status": "EXPLORATORY_CONSUMED_DATA_ONLY",
+  "models": [
+    "TOM_RTH",
+    "COMPRESSED_BREAK5",
+    "SWEEP_REV_1200"
+  ],
+  "source_samples": [
+    "DISCOVERY",
+    "CONTINUOUS_2022_2024_UNVERIFIED"
+  ],
+  "rules": "Original core.select/core.fill unchanged. TOM last cash day and first3; compression prior range<0.65 priorATR, first5m close breakout, next open to RTHclose; sweep exactly one overnight side in first30m,09:59backinside and reversal vsopen,10:00open to11:59close.",
+  "sizing": {
+    "atr": "Prior-known ATR14 only; missing/nonpositive -> size0, counted explicitly, no price filling.",
+    "R": "ATR scale, not stop-loss or maximum loss. netNQ_R=(gross_points-1.225)/ATR.",
+    "dollar_ATR_budget": 1000.0,
+    "MNQ_point_value": 2.0,
+    "MNQ_RT_cost": 6.5,
+    "MNQ_cost_basis": "Provisional $4.50 RT commission/fees plus2ticks perleg ($2 total). Not actual broker quote. Never divide NQ fees by10.",
+    "standalone_qty": "B/(2*ATR)",
+    "sleeve_qty": "B/(3*2*ATR)",
+    "integer": "floor before entry, may be0; no minimum1 and no forced budget increase.",
+    "portfolio": "Exactly1/3 each, idle capital remains idle, no netting cost credits, no fitted weights.",
+    "MNQ_limit": "NQ bar execution proxy only. Fractional contracts not tradeable; MNQ launched2019May6. No margin/capital claim."
+  },
+  "daily": "All435/493 sessions, no-signal and missing-size days are0, dailyendpoint correlations; ATRready-only sensitivity separately.",
+  "risk": "Closed-day cumulative drawdown plus minute-close marked drawdown; fullRT charged atentry; raw contract prices only; sqrt252 mean(dailyPnL_R)/sampleSD, not return on account capital.",
+  "inference": {
+    "reps": 10000,
+    "seed": 20261022301,
+    "block": "2 consecutive calendar months, joint identical block indexes across ALL models and variants; pooled daily sums/counts.",
+    "CI": "Nominal95% percentile CI of meanR/day and Sharpe; totalCI=meanCI*originalN. Approximate centered-bootstrap two-sided p, not exact.",
+    "family": "8 exploratory NQ_ATR dailymean tests:3models+portfolio x2sources, Holm8. Not correction for all historical research; no promotion."
+  },
+  "future_data": "No2019-21 outcome release; intake metadata allowed. Both existing datasets consumed and selected; older contract identity unverified.",
+  "references": [
+    "https://www.cmegroup.com/markets/equities/nasdaq/micro-e-mini-nasdaq-100.contractSpecs.html",
+    "https://www.cmegroup.com/articles/faqs/frequently-asked-questions-micro-e-mini-equity-index-futures.html"
+  ]
+}

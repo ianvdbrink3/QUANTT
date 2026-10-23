@@ -1,0 +1,23 @@
+{
+  "status": "PASS_PLANNING_ONLY_NO_TEST_RELEASE",
+  "anchor_commit": "9508b3b8ad698e86488993273d10b22d012dcc64",
+  "tests_passed": 430,
+  "planning_replay_byte_identical": true,
+  "protected_archive_files_unchanged": 115,
+  "tracked_baseline_diff_empty": true,
+  "independent_test_released": false,
+  "observed_discovery_mean_tested": false,
+  "new_strategy_runs": 0,
+  "external_publication": false,
+  "files_sha256": {
+    "docs/AFTERNOON_VALIDATION_FEASIBILITY.md": "5e6aa99e43e3caaca62925ded1114ad128853b1dfb8b29c7677b581199ca94a3",
+    "docs/INDEPENDENT_DATA_INVENTORY.md": "b24b8cc04728825082df6c26e9522a0778f5b2f94506e09d6ab4568d00c3378a",
+    "research/afternoon-feasibility-protocol.json": "a586ab35e1cf1e81487c049527372c3ff57eb26d89ef949578a263114ab8b29c",
+    "research/afternoon-feasibility-results.json": "1dd7db22419e00a17ee7283b396bb1573d098ada14812af760568a57c989d280",
+    "research/independent-data-inventory-summary.json": "d399e609cc4e96a71da2665b982a0d2ceed4c2d0194ef4eff1906b09538d9ba5",
+    "research/independent-data-vendor-evidence.json": "a79ca5ecb7a6743d5ca88d33bf869bdccaf292b874e65fb4cc0cd376f1f0d9e7",
+    "scripts/afternoon_feasibility.py": "0dad05aa47c822d09660087ec6952a2b5cced78b90d880a4aae39a4b870482c9",
+    "scripts/independent_data_inventory.py": "dc75510a06bb672c0041614534203afcb14da1a8ad4eef0a04ff3e97a01a43ac",
+    "tests/test_afternoon_feasibility.py": "714a89600aca53be29664b5f870f8a9946d8a7252a87bc9e4034d9f2a5defa2c"
+  }
+}

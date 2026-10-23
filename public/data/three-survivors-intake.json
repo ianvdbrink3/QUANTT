@@ -1,0 +1,39 @@
+{
+  "status": "DOWNLOADS_PARTIAL_BROWSER_WINDOW_UNAVAILABLE_NOT_DAILY_LIMIT",
+  "new_unique_blocks": 25,
+  "new_physical_files": 27,
+  "duplicate_download_aliases": 2,
+  "total_received": 31,
+  "total_plan_blocks": 103,
+  "remaining": 72,
+  "metadata_flagged_files": 0,
+  "numeric_OHLCV_read": false,
+  "new_outcomes": false,
+  "paid": false,
+  "external_publication": false,
+  "last_observed_quota": {
+    "used": 36,
+    "limit": 250,
+    "final_verified": false
+  },
+  "next_requests": [
+    {
+      "contract": "NQM19",
+      "sequence": 18,
+      "start": "05/20/2019",
+      "end": "06/02/2019"
+    },
+    {
+      "contract": "NQM19",
+      "sequence": 19,
+      "start": "06/03/2019",
+      "end": "06/16/2019"
+    },
+    {
+      "contract": "NQM19",
+      "sequence": 20,
+      "start": "06/17/2019",
+      "end": "06/21/2019"
+    }
+  ]
+}
