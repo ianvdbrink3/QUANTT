@@ -1,0 +1,118 @@
+{
+  "accepted_limits": [
+    "CROPPED_TABLES_REQUIRE_FULL_PRIMARY_PROVENANCE",
+    "NQ_HALT_SECONDS_NOT_INDEPENDENTLY_CERTIFIED",
+    "VENDOR_MISSING_MINUTE_SEMANTICS_AND_VOLUME_UNIVERSE_UNRESOLVED",
+    "EARLIEST_TRUE_VOLUME_CROSSOVER_NOT_CERTIFIED",
+    "LICENSE_AND_TICK_FILL_VALIDATION_UNCONFIRMED",
+    "EXPLICIT_OUTCOME_RELEASE_REQUIRED"
+  ],
+  "afternoon_hypotheses_executed": false,
+  "costs": {
+    "NQ_point_value_USD": 20.0,
+    "note": "Fixed total NQ roundtrip friction, not an extra fee on top. Equal-third sleeves pay proportional full component friction; no netting discount.",
+    "points": 1.225,
+    "roundtrip_USD": 24.5
+  },
+  "daily_universe": "Each variant common full-RTH/priorATR calendar. No position is zero, not a fabricated trade. A model without PD or full-night context remains idle, with availability separately counted.",
+  "date": "2026-10-24",
+  "end": "2021-12-31",
+  "excluded_cash_session_dates": [
+    "2019-07-03",
+    "2019-11-29",
+    "2019-12-24",
+    "2020-03-09",
+    "2020-03-12",
+    "2020-03-13",
+    "2020-03-16",
+    "2020-03-18",
+    "2020-06-16",
+    "2020-07-31",
+    "2020-09-03",
+    "2020-09-08",
+    "2020-11-27",
+    "2020-12-24",
+    "2021-05-06",
+    "2021-11-26"
+  ],
+  "history": "Exclusion applies to evaluation membership, not deletion of warmup/indicator history. Same corrected calendar and 13 frozen rollovers/spreads for both variants. This sensitivity cannot establish independence from provisional historical context.",
+  "human_authorization": "Explicit user release on 24 October 2026: accept documented source limitations; strict and inclusive sensitivity; execute three frozen models plus equal third and publish after completion.",
+  "id": "HISTORICAL-THREE-SURVIVORS-RELEASE-20261024",
+  "inference": {
+    "block_months": 2,
+    "gate": "At least24 usable months and30 ATR-ready trades per signal; combination requires all three. Positive total netATR and Holm4 p<0.05 -> STATISTICAL_SUPPORT_ON_REGISTERED_REMAINDER, else NO_STATISTICAL_SUPPORT; below floor INCONCLUSIVE. Never live-trading approval.",
+    "intervals": "Nominal95% percentile mean/total and Sharpe intervals; separate Bonferroni4 simultaneous95% mean intervals (98.75% marginal), approximate bootstrap coverage.",
+    "method": "Joint moving blocks of consecutive calendar months, exactly frozen survivor bootstrap; daily zero positions retained on every eligible common evaluation day.",
+    "reps": 10000,
+    "seed": 20261022311,
+    "tests": "Four co-primary two-sided mean daily netATR tests, alpha0.05, Holm4. Raw-point tests and secondary variant descriptive; no second chance. Also report reserved projectwide Holm6 with the two unexecuted afternoon tests assigned p=1."
+  },
+  "interim_outcomes": false,
+  "metric_units": "Standalone PF and winrate on active daily net P&L (at most1trade/day). Portfolio PF/winrate on aggregated active days, not on component legs. Portfolio trade count counts component executions; raw points are theoretical equal-third contract points.",
+  "models": [
+    "TOM_RTH",
+    "COMPRESSED_BREAK5",
+    "SWEEP_REV_1200",
+    "PORTFOLIO_EQUAL_THIRD"
+  ],
+  "normalization": "net_points / prior-known ATR14. Equal third of each model, including idle sleeves. No compounding; ATR is not a stop or loss cap.",
+  "parameter_search": false,
+  "planned_day_list_sha256": {
+    "PRIMARY_STRICT": "39ee20d7d180cdbb3d76cdbc7e7a5a1601814a6e944b3f291f18e9ce59afdc2c",
+    "SECONDARY_AVAILABLE": "39ee20d7d180cdbb3d76cdbc7e7a5a1601814a6e944b3f291f18e9ce59afdc2c"
+  },
+  "planned_evaluation_days": {
+    "PRIMARY_STRICT": 733,
+    "SECONDARY_AVAILABLE": 733
+  },
+  "planned_technical_days": {
+    "PRIMARY_STRICT": {
+      "COMPRESSED_BREAK5": 705,
+      "SWEEP_REV_1200": 619,
+      "TOM_RTH": 733
+    },
+    "SECONDARY_AVAILABLE": {
+      "COMPRESSED_BREAK5": 705,
+      "SWEEP_REV_1200": 619,
+      "TOM_RTH": 733
+    }
+  },
+  "previously_inspected_dates_excluded": [
+    "2019-01-02",
+    "2019-01-03",
+    "2019-01-04",
+    "2019-01-07",
+    "2019-01-08",
+    "2019-01-09",
+    "2019-01-10",
+    "2019-01-11"
+  ],
+  "primary": "Only strict variant can support a formal conclusion. Exclude provisional dates and normal sessions lacking any full-RTH minute or09:29 anchor; require prior positive ATR. Model-specific PD/overnight availability remains required.",
+  "provisional_dates": [
+    "2018-11-22",
+    "2018-11-23",
+    "2019-01-21",
+    "2019-02-18",
+    "2020-01-20",
+    "2020-02-17",
+    "2020-04-10",
+    "2021-01-18",
+    "2021-02-15"
+  ],
+  "provisional_dates_already_outside_full_RTH_test": [
+    "2018-11-22",
+    "2018-11-23",
+    "2019-01-21",
+    "2019-02-18",
+    "2020-01-20",
+    "2020-02-17",
+    "2020-04-10",
+    "2021-01-18",
+    "2021-02-15"
+  ],
+  "publication": "After both runs, tests and build: GitHub main and existing Vercel quantt production. No private CSV, context/daily/trade arrays or source images uploaded.",
+  "released": true,
+  "rules": "Unchanged edge_marathon.core.select/fill. ToM official month positions; compression strict prior range <0.65 ATR, first5m confirm/next open; sweep first30m exactly one side/reversal,10:00open to11:59close. No stops, targets, delay search or additional filters.",
+  "secondary": "Same fixed rules and same calendar-v2 context history, including available provisional dates ONLY if already technically eligible. Never fill missing prices, force short sessions into full-RTH models, or relax anchors. Descriptive sensitivity, cannot rescue primary failure.",
+  "start": "2019-01-14"
+}

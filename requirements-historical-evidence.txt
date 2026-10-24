@@ -1,0 +1,2 @@
+# Additional reader only; retain the project's frozen research dependencies.
+xlrd==2.0.2

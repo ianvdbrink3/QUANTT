@@ -1,0 +1,38 @@
+{
+  "all_pre_release_bytes_unchanged": true,
+  "date": "2026-10-24",
+  "files_sha256": {
+    "app/research/historical-validation/page.tsx": "26ee7610378c5b87d98d6304f903b378fcc0a5dccdfa16735daa7332a3e0c661",
+    "docs/HISTORICAL_VALIDATION_2019_2021.md": "c436e540d6d0cdb4cbfbde1b8eeebd6bc93857e088e945da9103d2e005bbd3a3",
+    "public/data/historical-validation-verification.json": "f937f7ff6f4b4e57f717133ff10a8221d1f1059af2d0a3b9cbaa9e907af610ed",
+    "public/data/historical-validation.json": "faf9308b3a6769ec3f59104c7b9ca7a25d220396bd5349a575563af571fcfad9",
+    "public/reports/HISTORICAL_VALIDATION_2019_2021.md": "c436e540d6d0cdb4cbfbde1b8eeebd6bc93857e088e945da9103d2e005bbd3a3",
+    "public/reports/HISTORICAL_VALIDATION_QUARTERS.csv": "75fc97778cf43c19855c942cc6534e173541a5cbf266149ef33a8f8b8df2bfb5",
+    "research/historical-validation-lock.json": "1e8a12bf237e7789713a6f09b2de19498870a5fdf9a369775f4bd5e324d9b2dc",
+    "research/historical-validation-release.json": "b2408546f4eb501f1e3a419aefe457dae5fc08f90983ad963dd49268ea53690b",
+    "research/historical-validation-results.json": "faf9308b3a6769ec3f59104c7b9ca7a25d220396bd5349a575563af571fcfad9",
+    "research/historical-validation-verification.json": "9d9a0c87c6b8f94aedcb8f74720a6a15b05bd066d0b2e06b5e175de3691ecbe2",
+    "scripts/historical_validation/__init__.py": "a4785da9067c739565e4401151d18cdf44df660fa3024c19cde96a2043b40fca",
+    "scripts/historical_validation/__main__.py": "4fdf4d9a53557a8b53672b4b90a25490370aecc8332558dab35a28d53ca09725",
+    "scripts/historical_validation/analysis.py": "254927a543230f277adc355fff7727e4890212f5aa6bc8baf2dd07359f70476b",
+    "tests/test_historical_validation.py": "64d843a153c7d7b445a9f8d46f026c56d4d409bfd87f65bbc820917fda0c20bb"
+  },
+  "holdout_executed": true,
+  "local_http_and_browser_checked": true,
+  "optimization_performed": false,
+  "production_build_passed": true,
+  "production_project": "quantt",
+  "production_project_id": "prj_2obEIjnqg5YtfDRE8dM53kJFYHnm",
+  "publication_record": "Private artifacts/historical-validation/publication.json records resulting commit and deployment after publication.",
+  "recomputed_private_files": 7,
+  "replay": "BYTE_IDENTICAL_RELEASED_HISTORICAL_REPLICATION",
+  "signals_computed": true,
+  "status": "RELEASED_REPLICATION_TESTED_READY_FOR_REQUESTED_PUBLICATION",
+  "tests": {
+    "failed": 0,
+    "passed": 727,
+    "skipped": 0,
+    "warning_scope": "Single-observation synthetic standard-deviation fixture; real733-day statistics unaffected",
+    "warnings": 2
+  }
+}

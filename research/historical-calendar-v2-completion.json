@@ -1,0 +1,70 @@
+{
+  "anchor_commit": "2db8bddddee0f7bdd2b1beec459308fc264cf2eb",
+  "browser_visual_check": true,
+  "commit_created": false,
+  "cutoff_tests": 43,
+  "dashboard_screenshot": {
+    "private_path": "artifacts/historical-calendar-v2/dashboard-preview.png",
+    "sha256": "a52e1a636efd746b53127343cbbf0d1ab4f7a4ca91ab8106b269f17a3a0e0267"
+  },
+  "date": "2026-10-23",
+  "deployed": false,
+  "files_sha256": {
+    "app/research/historical-calendar-v2/page.tsx": "700674d377a8c605e9975a2557ac8e714da43daf3aaff1f65bfe9f1622a74a97",
+    "docs/HISTORICAL_CALENDAR_V2.md": "29770484c6e47a24afbf39f5640405b7112246d6ed5f3243e7979d340aeb1a01",
+    "public/data/historical-calendar-v2.json": "c5422db75c9c66f9bb1637ea37271beaab50b9fcdb43fff644dfbea9a26879d7",
+    "public/reports/HISTORICAL_CALENDAR_V2.md": "29770484c6e47a24afbf39f5640405b7112246d6ed5f3243e7979d340aeb1a01",
+    "research/historical-calendar-v2-exceptions.csv": "71f54d87f545ac35bd6c2c7ed18662724ff7f9fad3595f92f99b7937c0af4e53",
+    "research/historical-calendar-v2-lock.json": "7dd509b967226d15b3bf4f3a4b2b009b6ae7589e93940763a8a8da745b6664be",
+    "research/historical-calendar-v2-sources.json": "4f47cc2b1ac3cfdbd669e910e02754c04507c425fbfc5f3d0e6f9e5cfa9834d6",
+    "research/historical-calendar-v2-verification.json": "d78c5cefa6e1ee431aafca173301a2eeffdb44461633cb3d9daca460c8700065",
+    "research/historical-calendar-v2.json": "c5422db75c9c66f9bb1637ea37271beaab50b9fcdb43fff644dfbea9a26879d7",
+    "scripts/collect_calendar_v2_sources.py": "1469de1befa826d931e78efb5159338b6c540914fd5a161fd1ecb6e54980805a",
+    "scripts/historical_calendar_v2.py": "eb7b50b56b41b08bf65553976ec2cec98ac2e65b517236172dfc57d28307e5d2",
+    "tests/test_historical_calendar_v2.py": "859f39d2b2819529fa5c6bbb66b025dda98747f4a13f092fcbdb4946e43fb361"
+  },
+  "holdout_executed": false,
+  "identical_output_files": 8,
+  "integrity": {
+    "prior_freeze": {
+      "outcome_release": false,
+      "previous_freeze_files": 517,
+      "protected_files": 550
+    },
+    "private_inputs": 13,
+    "protected_files": 585,
+    "signals_computed": false,
+    "source_documents": 65
+  },
+  "local_http_checks": {
+    "json": 200,
+    "page": 200,
+    "report": 200
+  },
+  "production_build_passed": true,
+  "pushed": false,
+  "raw_data_public": false,
+  "remaining_provisional_dates": [
+    "2018-11-22",
+    "2018-11-23",
+    "2019-01-21",
+    "2019-02-18",
+    "2020-01-20",
+    "2020-02-17",
+    "2020-04-10",
+    "2021-01-18",
+    "2021-02-15"
+  ],
+  "replay_status": "BYTE_IDENTICAL_CALENDAR_V2_REPLAY",
+  "signals_computed": false,
+  "status": "CALENDAR_ROUND_COMPLETE_WITH_EXPLICIT_EVIDENCE_BLOCKERS",
+  "tests": {
+    "added": 69,
+    "duration_seconds": 62.93,
+    "failed": 0,
+    "passed": 702,
+    "previous": 633,
+    "skipped": 0
+  },
+  "typecheck_passed": true
+}

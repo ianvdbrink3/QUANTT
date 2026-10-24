@@ -1,0 +1,42 @@
+{
+  "version": "QUALITY_EVIDENCE_1",
+  "audit_date": "2026-10-23",
+  "scope": ["volume_rollover_input_evidence", "historical_session_calendar_evidence", "indicator_readiness_only"],
+  "outcomes_authorized": false,
+  "mutate_existing_reports": false,
+  "replace_roll_rule_with_daily_volume": false,
+  "missing_minutes_are_zero": false,
+  "sources": {
+    "barchart_csv_help": "https://www.barchart.com/futures/quotes/NQM19/historical-download",
+    "cme_bulletin_definitions_and_availability": "https://www.cmegroup.com/market-data/daily-bulletin.html",
+    "cme_bulletin_volume_universe": "https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf",
+    "cash_calendar": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+    "thanksgiving_2019": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+    "good_friday_2021": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls",
+    "pause_removal": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2021/06/SER-8788.pdf",
+    "mourning_2018": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2018/12/SER-8289.pdf",
+    "cash_halts_and_futures_coordination": "https://www.sec.gov/files/rules/sro/nyse/2021/34-92428-ex3.pdf",
+    "historical_NQ_expiry_chapter_359": "https://www.cmegroup.com/market-regulation/files/16-081R_EXHA.pdf"
+  },
+  "vendor_findings": {
+    "observed_in_logged_in_csv_page_help": true,
+    "observed_date": "2026-10-23",
+    "intraday_trade_filter": "Only qualifying last-price transactions; excludes blocks and other types included in daily volume. Not a proof of missing-minute semantics.",
+    "daily_contract_volume": "Total Volume and Open Interest unchecked selects the individual contract. Daily and intraday volumes are not documented as identical universes.",
+    "timezone": "Futures CSV intraday labels are Chicago central civil time. This does not independently certify interval endpoints.",
+    "independent_vendor": false,
+    "daily_volume_available_before_roll_activation_proven": false
+  },
+  "daily_checks": [
+    {"contract": "NQM19", "filename": "nqm19_daily_historical-data-10-23-2026.csv", "requested_start": "2019-06-03", "requested_end": "2019-06-14"},
+    {"contract": "NQU19", "filename": "nqu19_daily_historical-data-10-23-2026.csv", "requested_start": "2019-06-03", "requested_end": "2019-06-14"},
+    {"contract": "NQH20", "filename": "nqh20_daily_historical-data-10-23-2026.csv", "requested_start": "2019-06-14", "requested_end": "2020-03-16", "note": "UI adjusted start while end was earlier; accepted as a broader audit-only download, no outcomes computed."},
+    {"contract": "NQM20", "filename": "nqm20_daily_historical-data-10-23-2026.csv", "requested_start": "2020-03-02", "requested_end": "2020-03-16"}
+  ],
+  "xls_checks": [
+    {"filename": "2019-thanksgiving-schedule.xls", "source": "thanksgiving_2019", "sheet": "Thanksgiving", "title_cell": [0, 1], "title_contains": "2019", "product_cell": [4, 0], "product_equals": "Equity Products", "checks": [{"day": "2019-11-28", "cell": [4, 11], "action": "Halt", "header_cell": [3, 11], "close_ct": "12:00", "close_ny": "13:00"}, {"day": "2019-11-29", "cell": [4, 19], "action": "Close", "header_cell": [3, 19], "close_ct": "12:15", "close_ny": "13:15"}]},
+    {"filename": "2021-good-friday-holiday-schedule.xls", "source": "good_friday_2021", "sheet": "Good Fri.", "title_cell": [0, 1], "title_contains": "2021", "product_cell": [4, 0], "product_equals": "Equity Products", "checks": [{"day": "2021-04-02", "cell": [4, 9], "action": "Close", "header_cell": [3, 9], "close_ct": "08:15", "close_ny": "09:15"}]}
+  ],
+  "calendar_overlay_only": {"2021-04-02": "09:15"},
+  "release_policy": "Fail closed. Full minute coverage on a decision day alone does not certify earlier partial comparisons, pre-overlap history, vendor completeness or exchange volume. A differing daily order is not automatically a corrupt intraday file. No alternate roll schedule becomes approved without a separate evidence-based pre-outcome decision."
+}

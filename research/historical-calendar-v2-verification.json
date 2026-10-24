@@ -1,0 +1,61 @@
+{
+  "files_sha256": {
+    "artifacts/historical-calendar-v2/fixed-spreads.json": "f2c682f0446b3ccf1f46b59a78882754c993c6c6e8793a3803c039d9055a2040",
+    "artifacts/historical-calendar-v2/prior-context.json": "c8c68f15fc68e8a4856390283261c0ea229c7b176402de089be4b6b4b134e97c",
+    "artifacts/historical-calendar-v2/technical-days.json": "a48341e90734a24eab6716851ac007ed872b6a9cf9c9eb8e9482ae882520f4e6",
+    "docs/HISTORICAL_CALENDAR_V2.md": "29770484c6e47a24afbf39f5640405b7112246d6ed5f3243e7979d340aeb1a01",
+    "public/data/historical-calendar-v2.json": "c5422db75c9c66f9bb1637ea37271beaab50b9fcdb43fff644dfbea9a26879d7",
+    "public/reports/HISTORICAL_CALENDAR_V2.md": "29770484c6e47a24afbf39f5640405b7112246d6ed5f3243e7979d340aeb1a01",
+    "research/historical-calendar-v2-exceptions.csv": "71f54d87f545ac35bd6c2c7ed18662724ff7f9fad3595f92f99b7937c0af4e53",
+    "research/historical-calendar-v2.json": "c5422db75c9c66f9bb1637ea37271beaab50b9fcdb43fff644dfbea9a26879d7"
+  },
+  "holdout_executed": false,
+  "integrity": {
+    "prior_freeze": {
+      "outcome_release": false,
+      "previous_freeze_files": 517,
+      "protected_files": 550
+    },
+    "private_inputs": 13,
+    "protected_files": 585,
+    "signals_computed": false,
+    "source_documents": 65
+  },
+  "signals_computed": false,
+  "status": "BYTE_IDENTICAL_CALENDAR_V2_REPLAY",
+  "summary": {
+    "changed_days": 15,
+    "cutoff_tests": 43,
+    "source_grades": {
+      "CME_LABELED_PRESERVED": 25,
+      "CROPPED_ATTRIBUTED": 9,
+      "DIRECT_CME_XLS_VERIFIED": 3,
+      "PREVIOUSLY_REVIEWED_PRIMARY_NOTICE": 1
+    },
+    "status": "CALENDAR_V2_COMPLETE_CONDITIONAL_NOT_RELEASED",
+    "technical_days": {
+      "FULL_2019_2021": {
+        "cash_half_sessions": 6,
+        "cash_sessions": 757,
+        "clean_full_RTH": 741,
+        "normal_cash_sessions": 751,
+        "technical_by_model": {
+          "COMPRESSED_BREAK5": 713,
+          "SWEEP_REV_1200": 627,
+          "TOM_RTH": 741
+        }
+      },
+      "REGISTERED_REMAINDER": {
+        "cash_half_sessions": 6,
+        "cash_sessions": 749,
+        "clean_full_RTH": 733,
+        "normal_cash_sessions": 743,
+        "technical_by_model": {
+          "COMPRESSED_BREAK5": 705,
+          "SWEEP_REV_1200": 619,
+          "TOM_RTH": 733
+        }
+      }
+    }
+  }
+}

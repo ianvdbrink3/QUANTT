@@ -1,0 +1,2115 @@
+{
+  "accepted_limits": [
+    "CROPPED_TABLES_REQUIRE_FULL_PRIMARY_PROVENANCE",
+    "NQ_HALT_SECONDS_NOT_INDEPENDENTLY_CERTIFIED",
+    "VENDOR_MISSING_MINUTE_SEMANTICS_AND_VOLUME_UNIVERSE_UNRESOLVED",
+    "EARLIEST_TRUE_VOLUME_CROSSOVER_NOT_CERTIFIED",
+    "LICENSE_AND_TICK_FILL_VALIDATION_UNCONFIRMED",
+    "EXPLICIT_OUTCOME_RELEASE_REQUIRED"
+  ],
+  "afternoon_tests_executed": false,
+  "costs": {
+    "NQ_point_value_USD": 20.0,
+    "note": "Fixed total NQ roundtrip friction, not an extra fee on top. Equal-third sleeves pay proportional full component friction; no netting discount.",
+    "points": 1.225,
+    "roundtrip_USD": 24.5
+  },
+  "date": "2026-10-24",
+  "evaluation_days": {
+    "PRIMARY_STRICT": 733,
+    "SECONDARY_AVAILABLE": 733
+  },
+  "holdout_executed": true,
+  "inference": {
+    "block_months": 2,
+    "gate": "At least24 usable months and30 ATR-ready trades per signal; combination requires all three. Positive total netATR and Holm4 p<0.05 -> STATISTICAL_SUPPORT_ON_REGISTERED_REMAINDER, else NO_STATISTICAL_SUPPORT; below floor INCONCLUSIVE. Never live-trading approval.",
+    "intervals": "Nominal95% percentile mean/total and Sharpe intervals; separate Bonferroni4 simultaneous95% mean intervals (98.75% marginal), approximate bootstrap coverage.",
+    "method": "Joint moving blocks of consecutive calendar months, exactly frozen survivor bootstrap; daily zero positions retained on every eligible common evaluation day.",
+    "reps": 10000,
+    "seed": 20261022311,
+    "tests": "Four co-primary two-sided mean daily netATR tests, alpha0.05, Holm4. Raw-point tests and secondary variant descriptive; no second chance. Also report reserved projectwide Holm6 with the two unexecuted afternoon tests assigned p=1."
+  },
+  "interpretation": "Historical replication under accepted source limitations, not prospective or independent-vendor/tick certification. No claim of proven future profitability.",
+  "method_lock_sha256": "1e8a12bf237e7789713a6f09b2de19498870a5fdf9a369775f4bd5e324d9b2dc",
+  "metrics": "Standalone PF and winrate on active daily net P&L (at most1trade/day). Portfolio PF/winrate on aggregated active days, not on component legs. Portfolio trade count counts component executions; raw points are theoretical equal-third contract points.",
+  "no_optimization": true,
+  "previous_8_january_days_excluded": true,
+  "publication_requested": true,
+  "quarterly": [
+    {
+      "component_trades": 9,
+      "evaluation_days": 53,
+      "model": "TOM_RTH",
+      "net_atr": 1.3427436641781805,
+      "net_points": 162.225,
+      "profit_factor": 4.961538461538462,
+      "quarter": "2019Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.7777777777777778
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -0.9542220960077326,
+      "net_points": -76.19999999999999,
+      "profit_factor": 0.75065445026178,
+      "quarter": "2019Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -3.776283381216812,
+      "net_points": -324.475,
+      "profit_factor": 0.3449250492101145,
+      "quarter": "2019Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.36363636363636365
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": -1.4111871697823377,
+      "net_points": -124.72499999999997,
+      "profit_factor": 0.6177890140197657,
+      "quarter": "2019Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.36363636363636365
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 57,
+      "model": "TOM_RTH",
+      "net_atr": 4.683915325234218,
+      "net_points": 593.7999999999998,
+      "profit_factor": 1.9509929532351056,
+      "quarter": "2020Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": 2.1773451897677374,
+      "net_points": 472.80000000000007,
+      "profit_factor": 2.6211212069261105,
+      "quarter": "2020Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 10,
+      "evaluation_days": 61,
+      "model": "TOM_RTH",
+      "net_atr": 2.449279575677511,
+      "net_points": 553.25,
+      "profit_factor": 10.588388214904679,
+      "quarter": "2020Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.8
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": 1.182169406096778,
+      "net_points": 257.30000000000007,
+      "profit_factor": 1.7631052124267816,
+      "quarter": "2020Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.75
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 61,
+      "model": "TOM_RTH",
+      "net_atr": -2.0721130243363297,
+      "net_points": -503.95000000000005,
+      "profit_factor": 0.5883097786128585,
+      "quarter": "2021Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": -1.9993730832989556,
+      "net_points": -327.69999999999993,
+      "profit_factor": 0.42007698093173473,
+      "quarter": "2021Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.4166666666666667
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 64,
+      "model": "TOM_RTH",
+      "net_atr": 0.7972462091467691,
+      "net_points": 80.05000000000004,
+      "profit_factor": 1.2518285489579235,
+      "quarter": "2021Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -1.3951864886176164,
+      "net_points": -466.95000000000005,
+      "profit_factor": 0.6484802860637997,
+      "quarter": "2021Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 13,
+      "evaluation_days": 53,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.5834304260978638,
+      "net_points": -50.67499999999999,
+      "profit_factor": 0.8311255519453471,
+      "quarter": "2019Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.46153846153846156
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 1.9485213095585725,
+      "net_points": 221.25,
+      "profit_factor": 2.1657007376185455,
+      "quarter": "2019Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.6594702738445505,
+      "net_points": -69.50000000000001,
+      "profit_factor": 0.7887377460293336,
+      "quarter": "2019Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.45
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.6704531385872232,
+      "net_points": -82.74999999999997,
+      "profit_factor": 0.7760335611340415,
+      "quarter": "2019Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.45
+    },
+    {
+      "component_trades": 8,
+      "evaluation_days": 57,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.204251651474816,
+      "net_points": -169.3,
+      "profit_factor": 0.5182128628343768,
+      "quarter": "2020Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 21,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.2946284907780351,
+      "net_points": 110.27500000000006,
+      "profit_factor": 1.1001384821448843,
+      "quarter": "2020Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.47619047619047616
+    },
+    {
+      "component_trades": 14,
+      "evaluation_days": 61,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 2.585629018001529,
+      "net_points": 495.1,
+      "profit_factor": 2.4524385771910526,
+      "quarter": "2020Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6428571428571429
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -2.0776644645815048,
+      "net_points": -505.5,
+      "profit_factor": 0.5877423695638879,
+      "quarter": "2020Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.35
+    },
+    {
+      "component_trades": 16,
+      "evaluation_days": 61,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.4042774822136375,
+      "net_points": -282.0999999999999,
+      "profit_factor": 0.7256570469961829,
+      "quarter": "2021Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.4375
+    },
+    {
+      "component_trades": 17,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 0.07454302076222014,
+      "net_points": -71.82499999999993,
+      "profit_factor": 0.8470181043663473,
+      "quarter": "2021Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.4117647058823529
+    },
+    {
+      "component_trades": 15,
+      "evaluation_days": 64,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.63044200817582,
+      "net_points": -227.625,
+      "profit_factor": 0.5913191794963867,
+      "quarter": "2021Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.26666666666666666
+    },
+    {
+      "component_trades": 17,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 0.9972732835696942,
+      "net_points": 338.92499999999995,
+      "profit_factor": 1.443691703485518,
+      "quarter": "2021Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.7058823529411765
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 53,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.8294801238021938,
+      "net_points": 79.675,
+      "profit_factor": 2.324054840049855,
+      "quarter": "2019Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5714285714285714
+    },
+    {
+      "component_trades": 3,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.012246498788610172,
+      "net_points": 27.074999999999996,
+      "profit_factor": 2.178454842219804,
+      "quarter": "2019Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 4,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.3044187549963856,
+      "net_points": 19.35,
+      "profit_factor": 1.2048160889124107,
+      "quarter": "2019Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.75
+    },
+    {
+      "component_trades": 3,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.10240468309726435,
+      "net_points": 1.5749999999999975,
+      "profit_factor": 1.0700778642936595,
+      "quarter": "2019Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 57,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -0.7578343878984537,
+      "net_points": -29.57499999999996,
+      "profit_factor": 0.8746290801186943,
+      "quarter": "2020Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.42857142857142855
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -0.9320724329931078,
+      "net_points": -222.82499999999996,
+      "profit_factor": 0.2556372139635878,
+      "quarter": "2020Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.14285714285714285
+    },
+    {
+      "component_trades": 9,
+      "evaluation_days": 61,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.8841860547759569,
+      "net_points": 179.72500000000002,
+      "profit_factor": 1.8803575802106296,
+      "quarter": "2020Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5555555555555556
+    },
+    {
+      "component_trades": 8,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.9203157131308646,
+      "net_points": 267.7,
+      "profit_factor": 4.447520927237606,
+      "quarter": "2020Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 14,
+      "evaluation_days": 61,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -3.646645739408395,
+      "net_points": -894.4,
+      "profit_factor": 0.06731320715365764,
+      "quarter": "2021Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.14285714285714285
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.04553747711324868,
+      "net_points": 24.67499999999999,
+      "profit_factor": 1.145211122554068,
+      "quarter": "2021Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5714285714285714
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 64,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 1.4588248767958145,
+      "net_points": 183.52500000000003,
+      "profit_factor": 1.8816958923852989,
+      "quarter": "2021Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.6363636363636364
+    },
+    {
+      "component_trades": 10,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -1.4796995861414588,
+      "net_points": -316.75,
+      "profit_factor": 0.14518958305221968,
+      "quarter": "2021Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.2
+    },
+    {
+      "component_trades": 29,
+      "evaluation_days": 53,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.52959778729417,
+      "net_points": 63.74166666666667,
+      "profit_factor": 1.4894420271307907,
+      "quarter": "2019Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 35,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.3355152374464834,
+      "net_points": 57.37500000000001,
+      "profit_factor": 1.4806618263055014,
+      "quarter": "2019Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5517241379310345
+    },
+    {
+      "component_trades": 35,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -1.3771116333549922,
+      "net_points": -124.87500000000001,
+      "profit_factor": 0.5565124744739413,
+      "quarter": "2019Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.41379310344827586
+    },
+    {
+      "component_trades": 34,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.993078541757432,
+      "net_points": -68.63333333333334,
+      "profit_factor": 0.7067995728017089,
+      "quarter": "2019Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.4375
+    },
+    {
+      "component_trades": 27,
+      "evaluation_days": 57,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 1.2406097619536494,
+      "net_points": 131.64166666666668,
+      "profit_factor": 1.3332208323665282,
+      "quarter": "2020Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5416666666666666
+    },
+    {
+      "component_trades": 40,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.3168814219988649,
+      "net_points": 120.08333333333336,
+      "profit_factor": 1.2504344803614877,
+      "quarter": "2020Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5151515151515151
+    },
+    {
+      "component_trades": 33,
+      "evaluation_days": 61,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 1.973031549484999,
+      "net_points": 409.35833333333335,
+      "profit_factor": 3.2985821908193356,
+      "quarter": "2020Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.7037037037037037
+    },
+    {
+      "component_trades": 40,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.008273551548712545,
+      "net_points": 6.5000000000000355,
+      "profit_factor": 1.014428412874584,
+      "quarter": "2020Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 42,
+      "evaluation_days": 61,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -2.374345415319454,
+      "net_points": -560.1499999999999,
+      "profit_factor": 0.44977243705183184,
+      "quarter": "2021Q1",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.37142857142857144
+    },
+    {
+      "component_trades": 36,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.6264308618078289,
+      "net_points": -124.94999999999995,
+      "profit_factor": 0.6385071604223925,
+      "quarter": "2021Q2",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.43333333333333335
+    },
+    {
+      "component_trades": 38,
+      "evaluation_days": 64,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.20854302592225438,
+      "net_points": 11.983333333333377,
+      "profit_factor": 1.0364798701133973,
+      "quarter": "2021Q3",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 39,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.6258709303964606,
+      "net_points": -148.2583333333333,
+      "profit_factor": 0.8119622888790243,
+      "quarter": "2021Q4",
+      "variant": "PRIMARY_STRICT",
+      "winrate_active_days": 0.5714285714285714
+    },
+    {
+      "component_trades": 9,
+      "evaluation_days": 53,
+      "model": "TOM_RTH",
+      "net_atr": 1.3427436641781805,
+      "net_points": 162.225,
+      "profit_factor": 4.961538461538462,
+      "quarter": "2019Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.7777777777777778
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -0.9542220960077326,
+      "net_points": -76.19999999999999,
+      "profit_factor": 0.75065445026178,
+      "quarter": "2019Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -3.776283381216812,
+      "net_points": -324.475,
+      "profit_factor": 0.3449250492101145,
+      "quarter": "2019Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.36363636363636365
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": -1.4111871697823377,
+      "net_points": -124.72499999999997,
+      "profit_factor": 0.6177890140197657,
+      "quarter": "2019Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.36363636363636365
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 57,
+      "model": "TOM_RTH",
+      "net_atr": 4.683915325234218,
+      "net_points": 593.7999999999998,
+      "profit_factor": 1.9509929532351056,
+      "quarter": "2020Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": 2.1773451897677374,
+      "net_points": 472.80000000000007,
+      "profit_factor": 2.6211212069261105,
+      "quarter": "2020Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 10,
+      "evaluation_days": 61,
+      "model": "TOM_RTH",
+      "net_atr": 2.449279575677511,
+      "net_points": 553.25,
+      "profit_factor": 10.588388214904679,
+      "quarter": "2020Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.8
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": 1.182169406096778,
+      "net_points": 257.30000000000007,
+      "profit_factor": 1.7631052124267816,
+      "quarter": "2020Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.75
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 61,
+      "model": "TOM_RTH",
+      "net_atr": -2.0721130243363297,
+      "net_points": -503.95000000000005,
+      "profit_factor": 0.5883097786128585,
+      "quarter": "2021Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 62,
+      "model": "TOM_RTH",
+      "net_atr": -1.9993730832989556,
+      "net_points": -327.69999999999993,
+      "profit_factor": 0.42007698093173473,
+      "quarter": "2021Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.4166666666666667
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 64,
+      "model": "TOM_RTH",
+      "net_atr": 0.7972462091467691,
+      "net_points": 80.05000000000004,
+      "profit_factor": 1.2518285489579235,
+      "quarter": "2021Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 12,
+      "evaluation_days": 63,
+      "model": "TOM_RTH",
+      "net_atr": -1.3951864886176164,
+      "net_points": -466.95000000000005,
+      "profit_factor": 0.6484802860637997,
+      "quarter": "2021Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 13,
+      "evaluation_days": 53,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.5834304260978638,
+      "net_points": -50.67499999999999,
+      "profit_factor": 0.8311255519453471,
+      "quarter": "2019Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.46153846153846156
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 1.9485213095585725,
+      "net_points": 221.25,
+      "profit_factor": 2.1657007376185455,
+      "quarter": "2019Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.6594702738445505,
+      "net_points": -69.50000000000001,
+      "profit_factor": 0.7887377460293336,
+      "quarter": "2019Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.45
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.6704531385872232,
+      "net_points": -82.74999999999997,
+      "profit_factor": 0.7760335611340415,
+      "quarter": "2019Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.45
+    },
+    {
+      "component_trades": 8,
+      "evaluation_days": 57,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.204251651474816,
+      "net_points": -169.3,
+      "profit_factor": 0.5182128628343768,
+      "quarter": "2020Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 21,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -0.2946284907780351,
+      "net_points": 110.27500000000006,
+      "profit_factor": 1.1001384821448843,
+      "quarter": "2020Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.47619047619047616
+    },
+    {
+      "component_trades": 14,
+      "evaluation_days": 61,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 2.585629018001529,
+      "net_points": 495.1,
+      "profit_factor": 2.4524385771910526,
+      "quarter": "2020Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6428571428571429
+    },
+    {
+      "component_trades": 20,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -2.0776644645815048,
+      "net_points": -505.5,
+      "profit_factor": 0.5877423695638879,
+      "quarter": "2020Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.35
+    },
+    {
+      "component_trades": 16,
+      "evaluation_days": 61,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.4042774822136375,
+      "net_points": -282.0999999999999,
+      "profit_factor": 0.7256570469961829,
+      "quarter": "2021Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.4375
+    },
+    {
+      "component_trades": 17,
+      "evaluation_days": 62,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 0.07454302076222014,
+      "net_points": -71.82499999999993,
+      "profit_factor": 0.8470181043663473,
+      "quarter": "2021Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.4117647058823529
+    },
+    {
+      "component_trades": 15,
+      "evaluation_days": 64,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": -1.63044200817582,
+      "net_points": -227.625,
+      "profit_factor": 0.5913191794963867,
+      "quarter": "2021Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.26666666666666666
+    },
+    {
+      "component_trades": 17,
+      "evaluation_days": 63,
+      "model": "COMPRESSED_BREAK5",
+      "net_atr": 0.9972732835696942,
+      "net_points": 338.92499999999995,
+      "profit_factor": 1.443691703485518,
+      "quarter": "2021Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.7058823529411765
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 53,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.8294801238021938,
+      "net_points": 79.675,
+      "profit_factor": 2.324054840049855,
+      "quarter": "2019Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5714285714285714
+    },
+    {
+      "component_trades": 3,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.012246498788610172,
+      "net_points": 27.074999999999996,
+      "profit_factor": 2.178454842219804,
+      "quarter": "2019Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 4,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.3044187549963856,
+      "net_points": 19.35,
+      "profit_factor": 1.2048160889124107,
+      "quarter": "2019Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.75
+    },
+    {
+      "component_trades": 3,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.10240468309726435,
+      "net_points": 1.5749999999999975,
+      "profit_factor": 1.0700778642936595,
+      "quarter": "2019Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6666666666666666
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 57,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -0.7578343878984537,
+      "net_points": -29.57499999999996,
+      "profit_factor": 0.8746290801186943,
+      "quarter": "2020Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.42857142857142855
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -0.9320724329931078,
+      "net_points": -222.82499999999996,
+      "profit_factor": 0.2556372139635878,
+      "quarter": "2020Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.14285714285714285
+    },
+    {
+      "component_trades": 9,
+      "evaluation_days": 61,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.8841860547759569,
+      "net_points": 179.72500000000002,
+      "profit_factor": 1.8803575802106296,
+      "quarter": "2020Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5555555555555556
+    },
+    {
+      "component_trades": 8,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.9203157131308646,
+      "net_points": 267.7,
+      "profit_factor": 4.447520927237606,
+      "quarter": "2020Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 14,
+      "evaluation_days": 61,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -3.646645739408395,
+      "net_points": -894.4,
+      "profit_factor": 0.06731320715365764,
+      "quarter": "2021Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.14285714285714285
+    },
+    {
+      "component_trades": 7,
+      "evaluation_days": 62,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 0.04553747711324868,
+      "net_points": 24.67499999999999,
+      "profit_factor": 1.145211122554068,
+      "quarter": "2021Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5714285714285714
+    },
+    {
+      "component_trades": 11,
+      "evaluation_days": 64,
+      "model": "SWEEP_REV_1200",
+      "net_atr": 1.4588248767958145,
+      "net_points": 183.52500000000003,
+      "profit_factor": 1.8816958923852989,
+      "quarter": "2021Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.6363636363636364
+    },
+    {
+      "component_trades": 10,
+      "evaluation_days": 63,
+      "model": "SWEEP_REV_1200",
+      "net_atr": -1.4796995861414588,
+      "net_points": -316.75,
+      "profit_factor": 0.14518958305221968,
+      "quarter": "2021Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.2
+    },
+    {
+      "component_trades": 29,
+      "evaluation_days": 53,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.52959778729417,
+      "net_points": 63.74166666666667,
+      "profit_factor": 1.4894420271307907,
+      "quarter": "2019Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5833333333333334
+    },
+    {
+      "component_trades": 35,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.3355152374464834,
+      "net_points": 57.37500000000001,
+      "profit_factor": 1.4806618263055014,
+      "quarter": "2019Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5517241379310345
+    },
+    {
+      "component_trades": 35,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -1.3771116333549922,
+      "net_points": -124.87500000000001,
+      "profit_factor": 0.5565124744739413,
+      "quarter": "2019Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.41379310344827586
+    },
+    {
+      "component_trades": 34,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.993078541757432,
+      "net_points": -68.63333333333334,
+      "profit_factor": 0.7067995728017089,
+      "quarter": "2019Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.4375
+    },
+    {
+      "component_trades": 27,
+      "evaluation_days": 57,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 1.2406097619536494,
+      "net_points": 131.64166666666668,
+      "profit_factor": 1.3332208323665282,
+      "quarter": "2020Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5416666666666666
+    },
+    {
+      "component_trades": 40,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.3168814219988649,
+      "net_points": 120.08333333333336,
+      "profit_factor": 1.2504344803614877,
+      "quarter": "2020Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5151515151515151
+    },
+    {
+      "component_trades": 33,
+      "evaluation_days": 61,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 1.973031549484999,
+      "net_points": 409.35833333333335,
+      "profit_factor": 3.2985821908193356,
+      "quarter": "2020Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.7037037037037037
+    },
+    {
+      "component_trades": 40,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.008273551548712545,
+      "net_points": 6.5000000000000355,
+      "profit_factor": 1.014428412874584,
+      "quarter": "2020Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 42,
+      "evaluation_days": 61,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -2.374345415319454,
+      "net_points": -560.1499999999999,
+      "profit_factor": 0.44977243705183184,
+      "quarter": "2021Q1",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.37142857142857144
+    },
+    {
+      "component_trades": 36,
+      "evaluation_days": 62,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.6264308618078289,
+      "net_points": -124.94999999999995,
+      "profit_factor": 0.6385071604223925,
+      "quarter": "2021Q2",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.43333333333333335
+    },
+    {
+      "component_trades": 38,
+      "evaluation_days": 64,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": 0.20854302592225438,
+      "net_points": 11.983333333333377,
+      "profit_factor": 1.0364798701133973,
+      "quarter": "2021Q3",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5
+    },
+    {
+      "component_trades": 39,
+      "evaluation_days": 63,
+      "model": "PORTFOLIO_EQUAL_THIRD",
+      "net_atr": -0.6258709303964606,
+      "net_points": -148.2583333333333,
+      "profit_factor": 0.8119622888790243,
+      "quarter": "2021Q4",
+      "variant": "SECONDARY_AVAILABLE",
+      "winrate_active_days": 0.5714285714285714
+    }
+  ],
+  "raw_data_public": false,
+  "release_sha256": "b2408546f4eb501f1e3a419aefe457dae5fc08f90983ad963dd49268ea53690b",
+  "sensitivity_difference": {
+    "COMPRESSED_BREAK5": {
+      "component_trades": 0,
+      "net_atr": 0.0,
+      "net_points": 0.0
+    },
+    "PORTFOLIO_EQUAL_THIRD": {
+      "component_trades": 0,
+      "net_atr": 0.0,
+      "net_points": 0.0
+    },
+    "SWEEP_REV_1200": {
+      "component_trades": 0,
+      "net_atr": 0.0,
+      "net_points": 0.0
+    },
+    "TOM_RTH": {
+      "component_trades": 0,
+      "net_atr": 0.0,
+      "net_points": 0.0
+    }
+  },
+  "sensitivity_interpretation": "All nine provisional dates already fail full-RTH evaluation or are outside the test window. Both variants keep identical indicator history; zero difference is not proof that provisional history has no indirect effect.",
+  "signals_computed": true,
+  "source_verification": {
+    "active_raw_prices_unchanged": true,
+    "calendar_v2_context_exact": true,
+    "raw_and_cached_exact": true,
+    "reconciliation": {
+      "conflicting_contract_timestamps": [],
+      "conflicting_keys": 0,
+      "duplicate_rows_removed": 22996,
+      "source_bars": 1286673,
+      "unique_contract_bars": 1263677
+    },
+    "rollover_count": 13,
+    "rollover_records_exact": true,
+    "source_files": 105,
+    "source_register_sha256": "45a02b41d1bbf529aac3174d0096674db3b3122fe26d00407cd9d6ddd35ed1bb",
+    "spread_records_exact": true
+  },
+  "status": "REGISTERED_HISTORICAL_REPLICATION_COMPLETED_WITH_ACCEPTED_SOURCE_LIMITS",
+  "technical_days": {
+    "PRIMARY_STRICT": {
+      "COMPRESSED_BREAK5": 705,
+      "SWEEP_REV_1200": 619,
+      "TOM_RTH": 733
+    },
+    "SECONDARY_AVAILABLE": {
+      "COMPRESSED_BREAK5": 705,
+      "SWEEP_REV_1200": 619,
+      "TOM_RTH": 733
+    }
+  },
+  "usable_months": 36,
+  "variants": {
+    "PRIMARY_STRICT": {
+      "COMPRESSED_BREAK5": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": -0.027860199714693293,
+            "p10": -0.5244979919678715,
+            "p25": -0.3220222793487575,
+            "p75": 0.28459487179487175,
+            "p90": 0.523157894736842,
+            "p95": 0.6915099135739705
+          },
+          "active_days": 201,
+          "component_trade_quantiles": {
+            "median": -0.027860199714693293,
+            "p10": -0.5244979919678715,
+            "p25": -0.3220222793487575,
+            "p75": 0.28459487179487175,
+            "p90": 0.523157894736842,
+            "p95": 0.6915099135739705
+          },
+          "component_trades": 201,
+          "cost_total": 1.6099690806266096,
+          "daily_close_drawdown": 5.813419433568762,
+          "mean_ci95": [
+            -0.018420668275301713,
+            0.011961225435472204
+          ],
+          "mean_familywise95_bonf4": [
+            -0.022541071189499676,
+            0.015909702213458513
+          ],
+          "mean_per_active_day": -0.014520653253041955,
+          "mean_per_evaluation_day": -0.003981788954790497,
+          "median_active_day": -0.027860199714693293,
+          "minute_close_drawdown": 6.493551634660763,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.6057394260573943,
+          "profit_factor": 0.9216793321776887,
+          "sharpe_ci95": [
+            -1.2741622596164581,
+            0.8109039100340641
+          ],
+          "sharpe_daily_annualized": -0.26917532632820734,
+          "top3_component_share_of_net": null,
+          "total": -2.9186513038614343,
+          "total_fixed_N_ci95": [
+            -13.502349845796155,
+            8.767578244201125
+          ],
+          "winrate_active_days": 0.47761194029850745,
+          "worst_day": -1.589081251229589
+        },
+        "formal_status": "NO_STATISTICAL_SUPPORT",
+        "mae_points": {
+          "median": 42.0,
+          "p10": 4.75,
+          "p25": 16.0,
+          "p75": 90.25,
+          "p90": 152.75,
+          "p95": 207.75
+        },
+        "mfe_points": {
+          "median": 38.25,
+          "p10": 6.25,
+          "p25": 14.5,
+          "p75": 80.25,
+          "p90": 149.5,
+          "p95": 191.5
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": -4.475,
+            "p10": -110.975,
+            "p25": -51.475,
+            "p75": 46.275,
+            "p90": 116.525,
+            "p95": 147.275
+          },
+          "active_days": 201,
+          "component_trade_quantiles": {
+            "median": -4.475,
+            "p10": -110.975,
+            "p25": -51.475,
+            "p75": 46.275,
+            "p90": 116.525,
+            "p95": 147.275
+          },
+          "component_trades": 201,
+          "cost_total": 246.22500000000002,
+          "daily_close_drawdown": 1214.925000000001,
+          "mean_ci95": [
+            -3.0521904843110494,
+            2.2678142525728497
+          ],
+          "mean_familywise95_bonf4": [
+            -3.8613149118777144,
+            3.0127727545294656
+          ],
+          "mean_per_active_day": -1.461318407960201,
+          "mean_per_evaluation_day": -0.40071623465211403,
+          "median_active_day": -4.475,
+          "minute_close_drawdown": 1421.875000000001,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7701229877012299,
+          "profit_factor": 0.9581982815362992,
+          "sharpe_ci95": [
+            -1.0592515532966846,
+            0.7718141293234061
+          ],
+          "sharpe_daily_annualized": -0.13198031633884302,
+          "top3_component_share_of_net": null,
+          "total": -293.72499999999957,
+          "total_fixed_N_ci95": [
+            -2237.2556249999993,
+            1662.3078471358988
+          ],
+          "winrate_active_days": 0.47761194029850745,
+          "worst_day": -288.475
+        },
+        "projectwide_reserved_Holm6_status": "NO_STATISTICAL_SUPPORT",
+        "technical_days": 705
+      },
+      "PORTFOLIO_EQUAL_THIRD": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": 0.0034626726382998513,
+            "p10": -0.2334038575520469,
+            "p25": -0.10377507959730332,
+            "p75": 0.12014711900502952,
+            "p90": 0.19623932393748209,
+            "p95": 0.258886304116647
+          },
+          "active_days": 366,
+          "component_trade_quantiles": {
+            "median": -0.0008539306978472296,
+            "p10": -0.2019858751667558,
+            "p25": -0.1027285883505273,
+            "p75": 0.10696400690106869,
+            "p90": 0.19048416276930713,
+            "p95": 0.2588540224009813
+          },
+          "component_trades": 428,
+          "cost_total": 1.1634448160775843,
+          "daily_close_drawdown": 4.289501578652653,
+          "mean_ci95": [
+            -0.011137073115011567,
+            0.008902280508492712
+          ],
+          "mean_familywise95_bonf4": [
+            -0.014116103667276432,
+            0.011399250314222729
+          ],
+          "mean_per_active_day": -0.0037824728059755023,
+          "mean_per_evaluation_day": -0.0018886562714693497,
+          "median_active_day": 0.0034626726382998513,
+          "minute_close_drawdown": 4.491776563817959,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7091290870912909,
+          "profit_factor": 0.9476022864201095,
+          "sharpe_ci95": [
+            -1.3033077319216504,
+            1.0988506325221516
+          ],
+          "sharpe_daily_annualized": -0.22487639418395938,
+          "top3_component_share_of_net": null,
+          "total": -1.3843850469870334,
+          "total_fixed_N_ci95": [
+            -8.163474593303478,
+            6.5253716127251575
+          ],
+          "winrate_active_days": 0.505464480874317,
+          "worst_day": -0.9729248494370253
+        },
+        "formal_status": "NO_STATISTICAL_SUPPORT",
+        "mae_points": null,
+        "mfe_points": null,
+        "points": {
+          "active_day_quantiles": {
+            "median": 0.42499999999999993,
+            "p10": -41.449999999999996,
+            "p25": -16.7,
+            "p75": 19.362499999999997,
+            "p90": 39.63333333333333,
+            "p95": 53.1125
+          },
+          "active_days": 366,
+          "component_trade_quantiles": {
+            "median": -0.07500000000000002,
+            "p10": -39.94999999999999,
+            "p25": -17.179166666666667,
+            "p75": 16.987499999999997,
+            "p90": 38.550000000000004,
+            "p95": 52.333333333333286
+          },
+          "component_trades": 428,
+          "cost_total": 174.76666666666665,
+          "daily_close_drawdown": 1059.9333333333334,
+          "mean_ci95": [
+            -2.0877257767441604,
+            1.732344634703197
+          ],
+          "mean_familywise95_bonf4": [
+            -2.6928549435411013,
+            2.2160537572902657
+          ],
+          "mean_per_active_day": -0.6179872495446261,
+          "mean_per_evaluation_day": -0.3085720782173712,
+          "median_active_day": 0.42499999999999993,
+          "minute_close_drawdown": 1125.1750000000002,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7532246775322468,
+          "profit_factor": 0.9523727635799566,
+          "sharpe_ci95": [
+            -1.2863771352352802,
+            1.1949883706473479
+          ],
+          "sharpe_daily_annualized": -0.19483349932345845,
+          "top3_component_share_of_net": null,
+          "total": -226.18333333333308,
+          "total_fixed_N_ci95": [
+            -1530.3029943534696,
+            1269.8086172374433
+          ],
+          "winrate_active_days": 0.505464480874317,
+          "worst_day": -155.15833333333333
+        },
+        "projectwide_reserved_Holm6_status": "NO_STATISTICAL_SUPPORT",
+        "technical_days": 733
+      },
+      "SWEEP_REV_1200": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": -0.06968014524830479,
+            "p10": -0.48939513976794125,
+            "p25": -0.2344052614877822,
+            "p75": 0.2296287727916882,
+            "p90": 0.48125457139549205,
+            "p95": 0.5669579895920931
+          },
+          "active_days": 90,
+          "component_trade_quantiles": {
+            "median": -0.06968014524830479,
+            "p10": -0.48939513976794125,
+            "p25": -0.2344052614877822,
+            "p75": 0.2296287727916882,
+            "p90": 0.48125457139549205,
+            "p95": 0.5669579895920931
+          },
+          "component_trades": 90,
+          "cost_total": 0.6917034588541994,
+          "daily_close_drawdown": 4.634694206328804,
+          "mean_ci95": [
+            -0.016122213596416777,
+            0.009008693798582141
+          ],
+          "mean_familywise95_bonf4": [
+            -0.019973007038554407,
+            0.01197790977416392
+          ],
+          "mean_per_active_day": -0.02509819959934529,
+          "mean_per_evaluation_day": -0.003081634330069681,
+          "median_active_day": -0.06968014524830479,
+          "minute_close_drawdown": 4.764780498977387,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.6262373762623737,
+          "profit_factor": 0.8428154699884296,
+          "sharpe_ci95": [
+            -1.8974591702431394,
+            1.125179989622441
+          ],
+          "sharpe_daily_annualized": -0.3786544540669522,
+          "top3_component_share_of_net": null,
+          "total": -2.258837963941076,
+          "total_fixed_N_ci95": [
+            -11.817582566173497,
+            6.60337255436071
+          ],
+          "winrate_active_days": 0.43333333333333335,
+          "worst_day": -1.0518929689723884
+        },
+        "formal_status": "NO_STATISTICAL_SUPPORT",
+        "mae_points": {
+          "median": 40.25,
+          "p10": 6.975,
+          "p25": 20.0625,
+          "p75": 86.125,
+          "p90": 146.27500000000003,
+          "p95": 151.35
+        },
+        "mfe_points": {
+          "median": 38.75,
+          "p10": 8.975,
+          "p25": 17.125,
+          "p75": 70.125,
+          "p90": 125.50000000000003,
+          "p95": 157.81249999999997
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": -11.85,
+            "p10": -95.425,
+            "p25": -46.2875,
+            "p75": 36.15,
+            "p90": 76.77500000000003,
+            "p95": 90.9
+          },
+          "active_days": 90,
+          "component_trade_quantiles": {
+            "median": -11.85,
+            "p10": -95.425,
+            "p25": -46.2875,
+            "p75": 36.15,
+            "p90": 76.77500000000003,
+            "p95": 90.9
+          },
+          "component_trades": 90,
+          "cost_total": 110.25000000000001,
+          "daily_close_drawdown": 1112.4250000000006,
+          "mean_ci95": [
+            -3.757240621763109,
+            1.514359361377506
+          ],
+          "mean_familywise95_bonf4": [
+            -4.658162883259394,
+            2.058698263349044
+          ],
+          "mean_per_active_day": -7.558333333333331,
+          "mean_per_evaluation_day": -0.9280354706684854,
+          "median_active_day": -11.85,
+          "minute_close_drawdown": 1247.3750000000007,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.49465053494650535,
+          "profit_factor": 0.7503417776105848,
+          "sharpe_ci95": [
+            -2.245841980206132,
+            1.0841592557491537
+          ],
+          "sharpe_daily_annualized": -0.6185338461031644,
+          "top3_component_share_of_net": null,
+          "total": -680.2499999999998,
+          "total_fixed_N_ci95": [
+            -2754.057375752359,
+            1110.025411889712
+          ],
+          "winrate_active_days": 0.43333333333333335,
+          "worst_day": -157.225
+        },
+        "projectwide_reserved_Holm6_status": "NO_STATISTICAL_SUPPORT",
+        "technical_days": 619
+      },
+      "TOM_RTH": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": 0.04673868897733734,
+            "p10": -0.918105113889634,
+            "p25": -0.29077649077649076,
+            "p75": 0.48055804237541033,
+            "p90": 0.7482833912996643,
+            "p95": 0.837797438840808
+          },
+          "active_days": 137,
+          "component_trade_quantiles": {
+            "median": 0.04673868897733734,
+            "p10": -0.918105113889634,
+            "p25": -0.29077649077649076,
+            "p75": 0.48055804237541033,
+            "p90": 0.7482833912996643,
+            "p95": 0.837797438840808
+          },
+          "component_trades": 137,
+          "cost_total": 1.188661908751944,
+          "daily_close_drawdown": 7.931873270722999,
+          "mean_ci95": [
+            -0.016742846694812966,
+            0.0229520689654753
+          ],
+          "mean_familywise95_bonf4": [
+            -0.022566024751291443,
+            0.027909940481740104
+          ],
+          "mean_per_active_day": 0.007476891436798612,
+          "mean_per_evaluation_day": 0.0013974544704521306,
+          "median_active_day": 0.04673868897733734,
+          "minute_close_drawdown": 8.99630680711551,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.8947105289471053,
+          "profit_factor": 1.0293596050001437,
+          "sharpe_ci95": [
+            -0.9286223205886635,
+            1.2935994009656342
+          ],
+          "sharpe_daily_annualized": 0.07647180174341306,
+          "top3_component_share_of_net": 4.639679089029947,
+          "total": 1.0243341268414117,
+          "total_fixed_N_ci95": [
+            -12.272506627297904,
+            16.823866551693396
+          ],
+          "winrate_active_days": 0.5766423357664233,
+          "worst_day": -2.0643541617169556
+        },
+        "formal_status": "NO_STATISTICAL_SUPPORT",
+        "mae_points": {
+          "median": 51.0,
+          "p10": 7.950000000000001,
+          "p25": 19.75,
+          "p75": 116.5,
+          "p90": 202.55,
+          "p95": 301.9
+        },
+        "mfe_points": {
+          "median": 60.0,
+          "p10": 7.4,
+          "p25": 24.25,
+          "p75": 114.25,
+          "p90": 191.10000000000002,
+          "p95": 212.94999999999996
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": 6.775,
+            "p10": -136.025,
+            "p25": -59.475,
+            "p75": 74.275,
+            "p90": 142.07500000000005,
+            "p95": 174.57499999999996
+          },
+          "active_days": 137,
+          "component_trade_quantiles": {
+            "median": 6.775,
+            "p10": -136.025,
+            "p25": -59.475,
+            "p75": 74.275,
+            "p90": 142.07500000000005,
+            "p95": 174.57499999999996
+          },
+          "component_trades": 137,
+          "cost_total": 167.82500000000002,
+          "daily_close_drawdown": 1218.5499999999993,
+          "mean_ci95": [
+            -2.291760833471,
+            4.094809311177802
+          ],
+          "mean_familywise95_bonf4": [
+            -3.192652136755566,
+            5.001239235438897
+          ],
+          "mean_per_active_day": 2.156386861313869,
+          "mean_per_evaluation_day": 0.4030354706684858,
+          "median_active_day": 6.775,
+          "minute_close_drawdown": 1391.3999999999994,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.8118188181181882,
+          "profit_factor": 1.0499488549424716,
+          "sharpe_ci95": [
+            -0.713937314095028,
+            1.358679650121034
+          ],
+          "sharpe_daily_annualized": 0.1232124454827566,
+          "top3_component_share_of_net": 2.818227976643817,
+          "total": 295.42500000000007,
+          "total_fixed_N_ci95": [
+            -1679.860690934243,
+            3001.4952250933293
+          ],
+          "winrate_active_days": 0.5766423357664233,
+          "worst_day": -465.475
+        },
+        "projectwide_reserved_Holm6_status": "NO_STATISTICAL_SUPPORT",
+        "technical_days": 733
+      }
+    },
+    "SECONDARY_AVAILABLE": {
+      "COMPRESSED_BREAK5": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": -0.027860199714693293,
+            "p10": -0.5244979919678715,
+            "p25": -0.3220222793487575,
+            "p75": 0.28459487179487175,
+            "p90": 0.523157894736842,
+            "p95": 0.6915099135739705
+          },
+          "active_days": 201,
+          "component_trade_quantiles": {
+            "median": -0.027860199714693293,
+            "p10": -0.5244979919678715,
+            "p25": -0.3220222793487575,
+            "p75": 0.28459487179487175,
+            "p90": 0.523157894736842,
+            "p95": 0.6915099135739705
+          },
+          "component_trades": 201,
+          "cost_total": 1.6099690806266096,
+          "daily_close_drawdown": 5.813419433568762,
+          "mean_ci95": [
+            -0.018420668275301713,
+            0.011961225435472204
+          ],
+          "mean_familywise95_bonf4": [
+            -0.022541071189499676,
+            0.015909702213458513
+          ],
+          "mean_per_active_day": -0.014520653253041955,
+          "mean_per_evaluation_day": -0.003981788954790497,
+          "median_active_day": -0.027860199714693293,
+          "minute_close_drawdown": 6.493551634660763,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.6057394260573943,
+          "profit_factor": 0.9216793321776887,
+          "sharpe_ci95": [
+            -1.2741622596164581,
+            0.8109039100340641
+          ],
+          "sharpe_daily_annualized": -0.26917532632820734,
+          "top3_component_share_of_net": null,
+          "total": -2.9186513038614343,
+          "total_fixed_N_ci95": [
+            -13.502349845796155,
+            8.767578244201125
+          ],
+          "winrate_active_days": 0.47761194029850745,
+          "worst_day": -1.589081251229589
+        },
+        "formal_status": "DESCRIPTIVE_SENSITIVITY_ONLY",
+        "mae_points": {
+          "median": 42.0,
+          "p10": 4.75,
+          "p25": 16.0,
+          "p75": 90.25,
+          "p90": 152.75,
+          "p95": 207.75
+        },
+        "mfe_points": {
+          "median": 38.25,
+          "p10": 6.25,
+          "p25": 14.5,
+          "p75": 80.25,
+          "p90": 149.5,
+          "p95": 191.5
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": -4.475,
+            "p10": -110.975,
+            "p25": -51.475,
+            "p75": 46.275,
+            "p90": 116.525,
+            "p95": 147.275
+          },
+          "active_days": 201,
+          "component_trade_quantiles": {
+            "median": -4.475,
+            "p10": -110.975,
+            "p25": -51.475,
+            "p75": 46.275,
+            "p90": 116.525,
+            "p95": 147.275
+          },
+          "component_trades": 201,
+          "cost_total": 246.22500000000002,
+          "daily_close_drawdown": 1214.925000000001,
+          "mean_ci95": [
+            -3.0521904843110494,
+            2.2678142525728497
+          ],
+          "mean_familywise95_bonf4": [
+            -3.8613149118777144,
+            3.0127727545294656
+          ],
+          "mean_per_active_day": -1.461318407960201,
+          "mean_per_evaluation_day": -0.40071623465211403,
+          "median_active_day": -4.475,
+          "minute_close_drawdown": 1421.875000000001,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7701229877012299,
+          "profit_factor": 0.9581982815362992,
+          "sharpe_ci95": [
+            -1.0592515532966846,
+            0.7718141293234061
+          ],
+          "sharpe_daily_annualized": -0.13198031633884302,
+          "top3_component_share_of_net": null,
+          "total": -293.72499999999957,
+          "total_fixed_N_ci95": [
+            -2237.2556249999993,
+            1662.3078471358988
+          ],
+          "winrate_active_days": 0.47761194029850745,
+          "worst_day": -288.475
+        },
+        "technical_days": 705
+      },
+      "PORTFOLIO_EQUAL_THIRD": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": 0.0034626726382998513,
+            "p10": -0.2334038575520469,
+            "p25": -0.10377507959730332,
+            "p75": 0.12014711900502952,
+            "p90": 0.19623932393748209,
+            "p95": 0.258886304116647
+          },
+          "active_days": 366,
+          "component_trade_quantiles": {
+            "median": -0.0008539306978472296,
+            "p10": -0.2019858751667558,
+            "p25": -0.1027285883505273,
+            "p75": 0.10696400690106869,
+            "p90": 0.19048416276930713,
+            "p95": 0.2588540224009813
+          },
+          "component_trades": 428,
+          "cost_total": 1.1634448160775843,
+          "daily_close_drawdown": 4.289501578652653,
+          "mean_ci95": [
+            -0.011137073115011567,
+            0.008902280508492712
+          ],
+          "mean_familywise95_bonf4": [
+            -0.014116103667276432,
+            0.011399250314222729
+          ],
+          "mean_per_active_day": -0.0037824728059755023,
+          "mean_per_evaluation_day": -0.0018886562714693497,
+          "median_active_day": 0.0034626726382998513,
+          "minute_close_drawdown": 4.491776563817959,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7091290870912909,
+          "profit_factor": 0.9476022864201095,
+          "sharpe_ci95": [
+            -1.3033077319216504,
+            1.0988506325221516
+          ],
+          "sharpe_daily_annualized": -0.22487639418395938,
+          "top3_component_share_of_net": null,
+          "total": -1.3843850469870334,
+          "total_fixed_N_ci95": [
+            -8.163474593303478,
+            6.5253716127251575
+          ],
+          "winrate_active_days": 0.505464480874317,
+          "worst_day": -0.9729248494370253
+        },
+        "formal_status": "DESCRIPTIVE_SENSITIVITY_ONLY",
+        "mae_points": null,
+        "mfe_points": null,
+        "points": {
+          "active_day_quantiles": {
+            "median": 0.42499999999999993,
+            "p10": -41.449999999999996,
+            "p25": -16.7,
+            "p75": 19.362499999999997,
+            "p90": 39.63333333333333,
+            "p95": 53.1125
+          },
+          "active_days": 366,
+          "component_trade_quantiles": {
+            "median": -0.07500000000000002,
+            "p10": -39.94999999999999,
+            "p25": -17.179166666666667,
+            "p75": 16.987499999999997,
+            "p90": 38.550000000000004,
+            "p95": 52.333333333333286
+          },
+          "component_trades": 428,
+          "cost_total": 174.76666666666665,
+          "daily_close_drawdown": 1059.9333333333334,
+          "mean_ci95": [
+            -2.0877257767441604,
+            1.732344634703197
+          ],
+          "mean_familywise95_bonf4": [
+            -2.6928549435411013,
+            2.2160537572902657
+          ],
+          "mean_per_active_day": -0.6179872495446261,
+          "mean_per_evaluation_day": -0.3085720782173712,
+          "median_active_day": 0.42499999999999993,
+          "minute_close_drawdown": 1125.1750000000002,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.7532246775322468,
+          "profit_factor": 0.9523727635799566,
+          "sharpe_ci95": [
+            -1.2863771352352802,
+            1.1949883706473479
+          ],
+          "sharpe_daily_annualized": -0.19483349932345845,
+          "top3_component_share_of_net": null,
+          "total": -226.18333333333308,
+          "total_fixed_N_ci95": [
+            -1530.3029943534696,
+            1269.8086172374433
+          ],
+          "winrate_active_days": 0.505464480874317,
+          "worst_day": -155.15833333333333
+        },
+        "technical_days": 733
+      },
+      "SWEEP_REV_1200": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": -0.06968014524830479,
+            "p10": -0.48939513976794125,
+            "p25": -0.2344052614877822,
+            "p75": 0.2296287727916882,
+            "p90": 0.48125457139549205,
+            "p95": 0.5669579895920931
+          },
+          "active_days": 90,
+          "component_trade_quantiles": {
+            "median": -0.06968014524830479,
+            "p10": -0.48939513976794125,
+            "p25": -0.2344052614877822,
+            "p75": 0.2296287727916882,
+            "p90": 0.48125457139549205,
+            "p95": 0.5669579895920931
+          },
+          "component_trades": 90,
+          "cost_total": 0.6917034588541994,
+          "daily_close_drawdown": 4.634694206328804,
+          "mean_ci95": [
+            -0.016122213596416777,
+            0.009008693798582141
+          ],
+          "mean_familywise95_bonf4": [
+            -0.019973007038554407,
+            0.01197790977416392
+          ],
+          "mean_per_active_day": -0.02509819959934529,
+          "mean_per_evaluation_day": -0.003081634330069681,
+          "median_active_day": -0.06968014524830479,
+          "minute_close_drawdown": 4.764780498977387,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.6262373762623737,
+          "profit_factor": 0.8428154699884296,
+          "sharpe_ci95": [
+            -1.8974591702431394,
+            1.125179989622441
+          ],
+          "sharpe_daily_annualized": -0.3786544540669522,
+          "top3_component_share_of_net": null,
+          "total": -2.258837963941076,
+          "total_fixed_N_ci95": [
+            -11.817582566173497,
+            6.60337255436071
+          ],
+          "winrate_active_days": 0.43333333333333335,
+          "worst_day": -1.0518929689723884
+        },
+        "formal_status": "DESCRIPTIVE_SENSITIVITY_ONLY",
+        "mae_points": {
+          "median": 40.25,
+          "p10": 6.975,
+          "p25": 20.0625,
+          "p75": 86.125,
+          "p90": 146.27500000000003,
+          "p95": 151.35
+        },
+        "mfe_points": {
+          "median": 38.75,
+          "p10": 8.975,
+          "p25": 17.125,
+          "p75": 70.125,
+          "p90": 125.50000000000003,
+          "p95": 157.81249999999997
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": -11.85,
+            "p10": -95.425,
+            "p25": -46.2875,
+            "p75": 36.15,
+            "p90": 76.77500000000003,
+            "p95": 90.9
+          },
+          "active_days": 90,
+          "component_trade_quantiles": {
+            "median": -11.85,
+            "p10": -95.425,
+            "p25": -46.2875,
+            "p75": 36.15,
+            "p90": 76.77500000000003,
+            "p95": 90.9
+          },
+          "component_trades": 90,
+          "cost_total": 110.25000000000001,
+          "daily_close_drawdown": 1112.4250000000006,
+          "mean_ci95": [
+            -3.757240621763109,
+            1.514359361377506
+          ],
+          "mean_familywise95_bonf4": [
+            -4.658162883259394,
+            2.058698263349044
+          ],
+          "mean_per_active_day": -7.558333333333331,
+          "mean_per_evaluation_day": -0.9280354706684854,
+          "median_active_day": -11.85,
+          "minute_close_drawdown": 1247.3750000000007,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.49465053494650535,
+          "profit_factor": 0.7503417776105848,
+          "sharpe_ci95": [
+            -2.245841980206132,
+            1.0841592557491537
+          ],
+          "sharpe_daily_annualized": -0.6185338461031644,
+          "top3_component_share_of_net": null,
+          "total": -680.2499999999998,
+          "total_fixed_N_ci95": [
+            -2754.057375752359,
+            1110.025411889712
+          ],
+          "winrate_active_days": 0.43333333333333335,
+          "worst_day": -157.225
+        },
+        "technical_days": 619
+      },
+      "TOM_RTH": {
+        "atr": {
+          "active_day_quantiles": {
+            "median": 0.04673868897733734,
+            "p10": -0.918105113889634,
+            "p25": -0.29077649077649076,
+            "p75": 0.48055804237541033,
+            "p90": 0.7482833912996643,
+            "p95": 0.837797438840808
+          },
+          "active_days": 137,
+          "component_trade_quantiles": {
+            "median": 0.04673868897733734,
+            "p10": -0.918105113889634,
+            "p25": -0.29077649077649076,
+            "p75": 0.48055804237541033,
+            "p90": 0.7482833912996643,
+            "p95": 0.837797438840808
+          },
+          "component_trades": 137,
+          "cost_total": 1.188661908751944,
+          "daily_close_drawdown": 7.931873270722999,
+          "mean_ci95": [
+            -0.016742846694812966,
+            0.0229520689654753
+          ],
+          "mean_familywise95_bonf4": [
+            -0.022566024751291443,
+            0.027909940481740104
+          ],
+          "mean_per_active_day": 0.007476891436798612,
+          "mean_per_evaluation_day": 0.0013974544704521306,
+          "median_active_day": 0.04673868897733734,
+          "minute_close_drawdown": 8.99630680711551,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.8947105289471053,
+          "profit_factor": 1.0293596050001437,
+          "sharpe_ci95": [
+            -0.9286223205886635,
+            1.2935994009656342
+          ],
+          "sharpe_daily_annualized": 0.07647180174341306,
+          "top3_component_share_of_net": 4.639679089029947,
+          "total": 1.0243341268414117,
+          "total_fixed_N_ci95": [
+            -12.272506627297904,
+            16.823866551693396
+          ],
+          "winrate_active_days": 0.5766423357664233,
+          "worst_day": -2.0643541617169556
+        },
+        "formal_status": "DESCRIPTIVE_SENSITIVITY_ONLY",
+        "mae_points": {
+          "median": 51.0,
+          "p10": 7.950000000000001,
+          "p25": 19.75,
+          "p75": 116.5,
+          "p90": 202.55,
+          "p95": 301.9
+        },
+        "mfe_points": {
+          "median": 60.0,
+          "p10": 7.4,
+          "p25": 24.25,
+          "p75": 114.25,
+          "p90": 191.10000000000002,
+          "p95": 212.94999999999996
+        },
+        "points": {
+          "active_day_quantiles": {
+            "median": 6.775,
+            "p10": -136.025,
+            "p25": -59.475,
+            "p75": 74.275,
+            "p90": 142.07500000000005,
+            "p95": 174.57499999999996
+          },
+          "active_days": 137,
+          "component_trade_quantiles": {
+            "median": 6.775,
+            "p10": -136.025,
+            "p25": -59.475,
+            "p75": 74.275,
+            "p90": 142.07500000000005,
+            "p95": 174.57499999999996
+          },
+          "component_trades": 137,
+          "cost_total": 167.82500000000002,
+          "daily_close_drawdown": 1218.5499999999993,
+          "mean_ci95": [
+            -2.291760833471,
+            4.094809311177802
+          ],
+          "mean_familywise95_bonf4": [
+            -3.192652136755566,
+            5.001239235438897
+          ],
+          "mean_per_active_day": 2.156386861313869,
+          "mean_per_evaluation_day": 0.4030354706684858,
+          "median_active_day": 6.775,
+          "minute_close_drawdown": 1391.3999999999994,
+          "p_holm4": 1.0,
+          "p_holm6_reserved": 1.0,
+          "p_raw": 0.8118188181181882,
+          "profit_factor": 1.0499488549424716,
+          "sharpe_ci95": [
+            -0.713937314095028,
+            1.358679650121034
+          ],
+          "sharpe_daily_annualized": 0.1232124454827566,
+          "top3_component_share_of_net": 2.818227976643817,
+          "total": 295.42500000000007,
+          "total_fixed_N_ci95": [
+            -1679.860690934243,
+            3001.4952250933293
+          ],
+          "winrate_active_days": 0.5766423357664233,
+          "worst_day": -465.475
+        },
+        "technical_days": 733
+      }
+    }
+  },
+  "window": [
+    "2019-01-14",
+    "2021-12-31"
+  ]
+}

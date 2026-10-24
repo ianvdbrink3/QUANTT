@@ -1,0 +1,28 @@
+{
+  "files_sha256": {
+    "artifacts/historical-evidence/all-overlap-session-comparisons.json": "a47fcd2e0766706c644a10ab843d1a0796feaa516f53a717fa65f33817ae0d7f",
+    "artifacts/historical-evidence/context-impact.json": "7a7623b182a55580f3fc0f54837b44f739af7f97528e5291c00acbd1b3bea8f8",
+    "artifacts/historical-evidence/daily-comparison-NQH20-NQM20.json": "6c64d42a4c93ac83061db6f1d3466b09896ff27d32eee25804e48ccb0e4cd850",
+    "artifacts/historical-evidence/daily-comparison-NQM19-NQU19.json": "4db72a10e9ab1459ece1b9cfe271b131ecde0149cab5adfcf028d76c14598a75",
+    "docs/HISTORICAL_VOLUME_CALENDAR_EVIDENCE.md": "9e6a28912b68197b3c7c5479bf8918859d8c0cdec84f14d0cbf217e058111490",
+    "public/data/historical-evidence-audit.json": "e88107ab90d312bb1fec99b69c7d0a827dd49bac8227121424bdca44fd744ae4",
+    "public/reports/HISTORICAL_VOLUME_CALENDAR_EVIDENCE.md": "9e6a28912b68197b3c7c5479bf8918859d8c0cdec84f14d0cbf217e058111490",
+    "research/historical-calendar-evidence.csv": "4722d3fd3a00d215573104319fbdd75a085cc05a31e43a78d40e4eeaaaa4ff98",
+    "research/historical-evidence-audit.json": "e88107ab90d312bb1fec99b69c7d0a827dd49bac8227121424bdca44fd744ae4",
+    "research/historical-rollover-evidence.csv": "727ac6c27d12ab1808751bdf9addeb07a521f20b32e8ee44c88a0882059e1903"
+  },
+  "holdout_executed": false,
+  "integrity": {
+    "all_preexisting_tracked_files_unchanged": 572,
+    "holdout_executed": false,
+    "new_signals_computed": false,
+    "old_freeze": {
+      "outcome_release": false,
+      "previous_freeze_files": 517,
+      "protected_files": 550
+    },
+    "private_preparation_outputs_unchanged": 7
+  },
+  "signals_computed": false,
+  "status": "BYTE_IDENTICAL_QUALITY_EVIDENCE_REPLAY"
+}

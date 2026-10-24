@@ -1,0 +1,1618 @@
+{
+  "DST_checks": [
+    {
+      "day": "2019-03-08",
+      "open_bar_present": true,
+      "open_utc": "2019-03-08T14:30:00+00:00",
+      "transition": "2019-03-10"
+    },
+    {
+      "day": "2019-03-11",
+      "open_bar_present": true,
+      "open_utc": "2019-03-11T13:30:00+00:00",
+      "transition": "2019-03-10"
+    },
+    {
+      "day": "2019-11-01",
+      "open_bar_present": true,
+      "open_utc": "2019-11-01T13:30:00+00:00",
+      "transition": "2019-11-03"
+    },
+    {
+      "day": "2019-11-04",
+      "open_bar_present": true,
+      "open_utc": "2019-11-04T14:30:00+00:00",
+      "transition": "2019-11-03"
+    },
+    {
+      "day": "2020-03-06",
+      "open_bar_present": true,
+      "open_utc": "2020-03-06T14:30:00+00:00",
+      "transition": "2020-03-08"
+    },
+    {
+      "day": "2020-03-09",
+      "open_bar_present": true,
+      "open_utc": "2020-03-09T13:30:00+00:00",
+      "transition": "2020-03-08"
+    },
+    {
+      "day": "2020-10-30",
+      "open_bar_present": true,
+      "open_utc": "2020-10-30T13:30:00+00:00",
+      "transition": "2020-11-01"
+    },
+    {
+      "day": "2020-11-02",
+      "open_bar_present": true,
+      "open_utc": "2020-11-02T14:30:00+00:00",
+      "transition": "2020-11-01"
+    },
+    {
+      "day": "2021-03-12",
+      "open_bar_present": true,
+      "open_utc": "2021-03-12T14:30:00+00:00",
+      "transition": "2021-03-14"
+    },
+    {
+      "day": "2021-03-15",
+      "open_bar_present": true,
+      "open_utc": "2021-03-15T13:30:00+00:00",
+      "transition": "2021-03-14"
+    },
+    {
+      "day": "2021-11-05",
+      "open_bar_present": true,
+      "open_utc": "2021-11-05T13:30:00+00:00",
+      "transition": "2021-11-07"
+    },
+    {
+      "day": "2021-11-08",
+      "open_bar_present": true,
+      "open_utc": "2021-11-08T14:30:00+00:00",
+      "transition": "2021-11-07"
+    }
+  ],
+  "active_bars_unchanged": true,
+  "calendar_cases": 38,
+  "code_sha256": "eb7b50b56b41b08bf65553976ec2cec98ac2e65b517236172dfc57d28307e5d2",
+  "context_changed": [
+    {
+      "day": "2021-04-05",
+      "fields": [
+        "PDH",
+        "PDL"
+      ]
+    },
+    {
+      "day": "2021-04-06",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-07",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-08",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-09",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-12",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-13",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-14",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-15",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-16",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-19",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-20",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-21",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-22",
+      "fields": [
+        "atr14_prior"
+      ]
+    },
+    {
+      "day": "2021-04-23",
+      "fields": [
+        "atr14_prior"
+      ]
+    }
+  ],
+  "cutoff_checks": [
+    {
+      "context_identical": true,
+      "cutoff_utc": "2018-12-17T14:30:00+00:00",
+      "day": "2018-12-17",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-03-08T14:30:00+00:00",
+      "day": "2019-03-08",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-03-11T13:30:00+00:00",
+      "day": "2019-03-11",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-06-17T13:30:00+00:00",
+      "day": "2019-06-17",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-09-16T13:30:00+00:00",
+      "day": "2019-09-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-11-01T13:30:00+00:00",
+      "day": "2019-11-01",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-11-04T14:30:00+00:00",
+      "day": "2019-11-04",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2019-12-16T14:30:00+00:00",
+      "day": "2019-12-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-06T14:30:00+00:00",
+      "day": "2020-03-06",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-09T13:30:00+00:00",
+      "day": "2020-03-09",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-12T13:30:00+00:00",
+      "day": "2020-03-12",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-16T13:30:00+00:00",
+      "day": "2020-03-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-17T13:30:00+00:00",
+      "day": "2020-03-17",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-03-18T13:30:00+00:00",
+      "day": "2020-03-18",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-06-16T13:30:00+00:00",
+      "day": "2020-06-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-09-15T13:30:00+00:00",
+      "day": "2020-09-15",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-10-30T13:30:00+00:00",
+      "day": "2020-10-30",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-11-02T14:30:00+00:00",
+      "day": "2020-11-02",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2020-12-15T14:30:00+00:00",
+      "day": "2020-12-15",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-03-12T14:30:00+00:00",
+      "day": "2021-03-12",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-03-15T13:30:00+00:00",
+      "day": "2021-03-15",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-03-16T13:30:00+00:00",
+      "day": "2021-03-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-02T13:30:00+00:00",
+      "day": "2021-04-02",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-05T13:30:00+00:00",
+      "day": "2021-04-05",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-06T13:30:00+00:00",
+      "day": "2021-04-06",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-07T13:30:00+00:00",
+      "day": "2021-04-07",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-08T13:30:00+00:00",
+      "day": "2021-04-08",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-09T13:30:00+00:00",
+      "day": "2021-04-09",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-12T13:30:00+00:00",
+      "day": "2021-04-12",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-13T13:30:00+00:00",
+      "day": "2021-04-13",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-14T13:30:00+00:00",
+      "day": "2021-04-14",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-15T13:30:00+00:00",
+      "day": "2021-04-15",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-16T13:30:00+00:00",
+      "day": "2021-04-16",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-19T13:30:00+00:00",
+      "day": "2021-04-19",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-20T13:30:00+00:00",
+      "day": "2021-04-20",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-21T13:30:00+00:00",
+      "day": "2021-04-21",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-22T13:30:00+00:00",
+      "day": "2021-04-22",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-04-23T13:30:00+00:00",
+      "day": "2021-04-23",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-06-15T13:30:00+00:00",
+      "day": "2021-06-15",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-09-14T13:30:00+00:00",
+      "day": "2021-09-14",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-11-05T13:30:00+00:00",
+      "day": "2021-11-05",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-11-08T14:30:00+00:00",
+      "day": "2021-11-08",
+      "future_removed": true
+    },
+    {
+      "context_identical": true,
+      "cutoff_utc": "2021-12-13T14:30:00+00:00",
+      "day": "2021-12-13",
+      "future_removed": true
+    }
+  ],
+  "exceptions": [
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2018-11-22",
+      "day": "2018-11-22",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2018-11-21T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2018-11-22T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2018-11-22; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/thanksgiving-holiday-trading-schedule-2018",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/US%20Holiday%20Trading%20Hours%20-%20Thanksgiving%20-%202018.png",
+      "source_sha256": "26742e94839ce243a67e5007a0589067a2ea3f5717f5d3e094c927cc8c162765",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2018-11-23",
+      "day": "2018-11-23",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2018-11-22T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2018-11-23T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2018-11-23; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 3,
+      "observed_bars": 1152,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/thanksgiving-holiday-trading-schedule-2018",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/US%20Holiday%20Trading%20Hours%20-%20Thanksgiving%20-%202018.png",
+      "source_sha256": "26742e94839ce243a67e5007a0589067a2ea3f5717f5d3e094c927cc8c162765",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "08:30",
+      "close_ny": "09:30",
+      "date_scope": "2018-12-05",
+      "day": "2018-12-05",
+      "expected_minutes": 930,
+      "first_observed_ny": "2018-12-04T18:00:00-05:00",
+      "grade": "PREVIOUSLY_REVIEWED_PRIMARY_NOTICE",
+      "last_observed_ny": "2018-12-05T09:29:00-05:00",
+      "locator": "SER-8289, US Equity Index futures/options halt; prior audit reference, no new local PDF receipt",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 930,
+      "old_expected_minutes": 930,
+      "product": "US Equity Index futures",
+      "reopen_ct": "17:00",
+      "source": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2018/12/SER-8289.pdf",
+      "source_sha256": null,
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2018-12-24",
+      "day": "2018-12-24",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2018-12-23T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2018-12-24T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2018-12-24; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-new-years-2018",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Holiday%20Trading%20Schedule%20-%20Christmas%202018.png",
+      "source_sha256": "b993db18d6a4f8c888165009178d521ad77e936f3235469101ae0871dae19302",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2018-12-25",
+      "day": "2018-12-25",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2018-12-25; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-new-years-2018",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Holiday%20Trading%20Schedule%20-%20Christmas%202018.png",
+      "source_sha256": "b993db18d6a4f8c888165009178d521ad77e936f3235469101ae0871dae19302",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2019-01-01",
+      "day": "2019-01-01",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2019-01-01; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-new-years-2018",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hs-fs/hubfs/CME%20Group%20Holiday%20Trading%20Schedule%20-%20New%20Years%20December%2031%2c%202018%20-%20January%202%2c%202019.png?width=1186&name=CME%20Group%20Holiday%20Trading%20Schedule%20-%20New%20Years%20December%2031%2c%202018%20-%20January%202%2c%202019.png",
+      "source_sha256": "fb5b25ecbadae3dbaa31a9bf01da6bdb4a0cff758f43d875f15b2bf860dfb418",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2019-01-21",
+      "day": "2019-01-21",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-01-20T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2019-01-21T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2019-01-21; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-mlk-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Martin%20Luther%20King%20Holiday%20Schedule%20-%202019.png",
+      "source_sha256": "5d7a5a4d3b7564c85d7e00d7d7b03526f8afbe9b9599601c96318e18a5ef65c2",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2019-02-18",
+      "day": "2019-02-18",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-02-17T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2019-02-18T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2019-02-18; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-us-presidents-day-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20%7C%20Presidents%20Day%20Holiday%20Trading%20Schedule%20-%20February%2015%20-%2019%2c%202019.png",
+      "source_sha256": "8886283d8b92a49eb006ae6e865c95303ad534fb37df94f1917af99c343e60fd",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2019-04-19",
+      "day": "2019-04-19",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2019-04-19; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.cannontrading.com/tools/support-resistance-levels/good-friday-2019-holiday-schedule-cme-globex-ice-exchange/",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.cannontrading.com/tools/support-resistance-levels/wp-content/uploads/2019/04/goodFriday2019.gif",
+      "source_sha256": "cfe6604f11ecc43935f836fb9902ee93cb495ffeaf01411fb1f896eeeae1acec",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2019-05-27",
+      "day": "2019-05-27",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-05-26T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2019-05-27T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2019-05-27; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 1,
+      "observed_bars": 1139,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-us-memorial-day-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/US%20Memorial%20Day%20Holiday%20Trading%20Hours%20-%202019.png",
+      "source_sha256": "d049c10294a501f817e6d56f89115bdab36a1052e84d2f5621985a715bb0356f",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2019-07-03",
+      "day": "2019-07-03",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2019-07-02T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2019-07-03T13:14:00-04:00",
+      "locator": "Equity row; calendar date 2019-07-03; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-us-independence-day-july-4th-2019",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/US%20Independence%20Day%20on%204th%20July%20-%20Holiday%20Trading%20Schedule%20-%202019.png",
+      "source_sha256": "a6abb3e926b059f93d683f7a7b5eabaa52c715162d76163c0a4d03b4bc4db46f",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2019-07-04",
+      "day": "2019-07-04",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-07-03T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2019-07-04T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2019-07-04; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 2,
+      "observed_bars": 1138,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-us-independence-day-july-4th-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/US%20Independence%20Day%20on%204th%20July%20-%20Holiday%20Trading%20Schedule%20-%202019.png",
+      "source_sha256": "a6abb3e926b059f93d683f7a7b5eabaa52c715162d76163c0a4d03b4bc4db46f",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2019-09-02",
+      "day": "2019-09-02",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-09-01T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2019-09-02T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2019-09-02; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-us-labor-day-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Labor%20Day%20Holiday%20Schedule%20-%202019.png",
+      "source_sha256": "50c795fbf9589c5ec7fc838caa310309eaf124cb2eb30a6b1041b3e52bc117cf",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "corroborating_table": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2027%20-29%2c%202019.png",
+      "date_scope": "2019-11-28",
+      "day": "2019-11-28",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2019-11-27T18:00:00-05:00",
+      "grade": "DIRECT_CME_XLS_VERIFIED",
+      "last_observed_ny": "2019-11-28T12:59:00-05:00",
+      "locator": "Thanksgiving sheet, [4, 11] zero-based cell, Equity Products; Halt 12:00 CT",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 1,
+      "observed_bars": 1139,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-thanksgiving-2019",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "source_sha256": "b125e5c52f76df0cf418a2329710099a1a48ac197770e0d2ccb082c7c5b3c3c5",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "corroborating_table": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2027%20-29%2c%202019.png",
+      "date_scope": "2019-11-29",
+      "day": "2019-11-29",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2019-11-28T18:00:00-05:00",
+      "grade": "DIRECT_CME_XLS_VERIFIED",
+      "last_observed_ny": "2019-11-29T13:14:00-05:00",
+      "locator": "Thanksgiving sheet, [4, 19] zero-based cell, Equity Products; Close 12:15 CT",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-thanksgiving-2019",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "source_sha256": "b125e5c52f76df0cf418a2329710099a1a48ac197770e0d2ccb082c7c5b3c3c5",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2019-12-24",
+      "day": "2019-12-24",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2019-12-23T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2019-12-24T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2019-12-24; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 4,
+      "observed_bars": 1151,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-2019",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/Christmas%20-%20Holiday%20Trading%20Schedule%20-%202019.png",
+      "source_sha256": "4ab6a8b8bc6e1b43204d8d389e289731c93533cac6ddd5f63a856f0e6bd817a6",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2019-12-25",
+      "day": "2019-12-25",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2019-12-25; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-2019",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/Christmas%20-%20Holiday%20Trading%20Schedule%20-%202019.png",
+      "source_sha256": "4ab6a8b8bc6e1b43204d8d389e289731c93533cac6ddd5f63a856f0e6bd817a6",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2020-01-01",
+      "day": "2020-01-01",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2020-01-01; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-new-year-2020",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/New%20Year%20-%20Holiday%20Trading%20Schedule%20-%20CME%20-%202019-2020.png",
+      "source_sha256": "208178c980e3138248de3e4ccc7abacadce32e424bbdceb33818c7fe1e85cf2b",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-01-20",
+      "day": "2020-01-20",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-01-19T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2020-01-20T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2020-01-20; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 6,
+      "observed_bars": 1134,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-mlk-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Martin%20Luther%20King%20Day%20Holiday%20Schedule%20-%202020.png",
+      "source_sha256": "606731c842adee88e669c3b2cbb7ff62073e0addbe3af8dbdeea773185cc3ff6",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-02-17",
+      "day": "2020-02-17",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-02-16T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2020-02-17T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2020-02-17; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 1,
+      "observed_bars": 1139,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-presidents-day-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Presidents%20Day%20Holiday%20Schedule%20-%202020.png",
+      "source_sha256": "64914be30ba1f6dc0b3a19fff528d8dc10dce1aba750bd5e54844598bcfac360",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2020-04-10",
+      "day": "2020-04-10",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2020-04-10; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-good-friday-2020",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Good%20Friday%20Holiday%20Schedule%20-%20April%209%2c2020%20to%20April%2013%2c%202020.png",
+      "source_sha256": "12e80188c4656080b5061f5652bb97a8ab7deb4e0f273a29bd5279a8251ea104",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-05-25",
+      "day": "2020-05-25",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-05-24T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-05-25T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2020-05-25; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-memorial-day-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-Memorial%20Day%20Holiday%20Schedule%20May%2024-26%2c%202020.png",
+      "source_sha256": "07ad8ccef097dfd22a89e0f65000424354e32e9dc03d653f11c19f056da0cff4",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-07-03",
+      "day": "2020-07-03",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-07-02T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-07-03T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2020-07-03; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-independence-day-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Independence%20Day%20Holiday%20Schedule%20-%20July%202%20to%20July%206%2c%202020.png",
+      "source_sha256": "92cba459bf154921742a382fbb48504bd8a012a0c383268ceabb498f286f9d5b",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-09-07",
+      "day": "2020-09-07",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-09-06T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-09-07T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2020-09-07; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-labor-day-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Labor%20Day%20Holiday%20Schedule%20-%20September%202020.png",
+      "source_sha256": "9331125e0464e573b6cf3b7cfc34bf9274a2e606a1f1243ede10391f23f9b8fa",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2020-11-26",
+      "day": "2020-11-26",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2020-11-25T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-11-26T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2020-11-26; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-thanksgiving-2020",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Thanksgiving%20Holiday%20Schedule%20-%20%20November%202020.png",
+      "source_sha256": "9d1d1a3cd22ffb246779ee5b3aa68c7843329cedbad6a75274d0466366a540f4",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2020-11-27",
+      "day": "2020-11-27",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2020-11-26T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-11-27T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2020-11-27; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-thanksgiving-2020",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Thanksgiving%20Holiday%20Schedule%20-%20%20November%202020.png",
+      "source_sha256": "9d1d1a3cd22ffb246779ee5b3aa68c7843329cedbad6a75274d0466366a540f4",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2020-12-24",
+      "day": "2020-12-24",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2020-12-23T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2020-12-24T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2020-12-24; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-2020",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Christmas%20Holiday%20Schedule%20December%2024%20-%2028%2c%202020.png",
+      "source_sha256": "cc97df26768e47ffec573643bbb8b42f671842f98d62825f2f5bbf8ef3c28642",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2020-12-25",
+      "day": "2020-12-25",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2020-12-25; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-christmas-2020",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Christmas%20Holiday%20Schedule%20December%2024%20-%2028%2c%202020.png",
+      "source_sha256": "cc97df26768e47ffec573643bbb8b42f671842f98d62825f2f5bbf8ef3c28642",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2021-01-01",
+      "day": "2021-01-01",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2021-01-01; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-new-years-2020-2021",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20New%20Years%20Holiday%20Schedule%20-%20December%2031%2c%202020%20-%20January%204%2c%202021.png",
+      "source_sha256": "f881d32c6028ab0de993ec5b7c3ea7e7b2fcf75bc2ed8697c8400f6b91bc8c60",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-01-18",
+      "day": "2021-01-18",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-01-17T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2021-01-18T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2021-01-18; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-martin-luther-king-day-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Martin%20Luther%20King%20Day%20Holiday%20Schedule%20-%20January%2015%20-%2019%2c%202021.png",
+      "source_sha256": "a48a3832982dcdf13a01b2f9f823def0b8958b5af6a620651eb239fb80efb792",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-02-15",
+      "day": "2021-02-15",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-02-14T18:00:00-05:00",
+      "grade": "CROPPED_ATTRIBUTED",
+      "last_observed_ny": "2021-02-15T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2021-02-15; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 1,
+      "observed_bars": 1139,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-presidents-day-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Martin%20Luther%20King%20Day%20Holiday%20Schedule%20January%2015%20-%2019%2c%202021.png",
+      "source_sha256": "6718f9bb6e0f7c91aae63acc0a8ea9837ffe0ef914cdb5675bbcb2460978969f",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": false
+    },
+    {
+      "changed_grid": true,
+      "close_ct": "08:15",
+      "close_ny": "09:15",
+      "corroborating_table": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Good%20Friday%20Holiday%20Schedule%20April%201-5%2c%202021.png",
+      "date_scope": "2021-04-02",
+      "day": "2021-04-02",
+      "expected_minutes": 915,
+      "first_observed_ny": "2021-04-01T18:00:00-04:00",
+      "grade": "DIRECT_CME_XLS_VERIFIED",
+      "last_observed_ny": "2021-04-02T09:14:00-04:00",
+      "locator": "Good Fri. sheet, [4, 9] zero-based cell, Equity Products; Close 08:15 CT",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 5,
+      "observed_bars": 910,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-good-friday-2021",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls",
+      "source_sha256": "0bb04c395a8b5facff8c285405df3b65cc269d0ccc48f26a62b0f9c5886124f6",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-05-31",
+      "day": "2021-05-31",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-05-30T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2021-05-31T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2021-05-31; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 4,
+      "observed_bars": 1136,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-memorial-day-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Memorial%20Day%20Holiday%20Schedule%20-%20May%2028%2c%202021%20-%20June%201st%2c%202021-1.png",
+      "source_sha256": "57b1670760a203d2b5457cd00f5a2e0593b6361dcd3a611706a338a9a87aad76",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-07-05",
+      "day": "2021-07-05",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-07-04T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2021-07-05T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2021-07-05; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-independence-day-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hs-fs/hubfs/CME%20-%20Independence%20Day%20Holiday%20Schedule%20-%20July%202%20-%206%2c%202021.png?width=683&name=CME%20-%20Independence%20Day%20Holiday%20Schedule%20-%20July%202%20-%206%2c%202021.png",
+      "source_sha256": "7b1cb2ac2756bc2e3d9a5970d3b917b41b18971adbb87d6d5592ca1d0bc1c0d1",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-09-06",
+      "day": "2021-09-06",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-09-05T18:00:00-04:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2021-09-06T12:59:00-04:00",
+      "locator": "Equity row; calendar date 2021-09-06; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 4,
+      "observed_bars": 1136,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/holiday-trading-schedule-labor-day-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20Globex%20Labor%20Day%20Holiday%20Schedule%20-%20September%205%20-%207%2c%202021.png",
+      "source_sha256": "8839abb5737b37511dce937d0437724af88ff9b36214306676a9c47a427f43f8",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "date_scope": "2021-11-25",
+      "day": "2021-11-25",
+      "expected_minutes": 1140,
+      "first_observed_ny": "2021-11-24T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2021-11-25T12:59:00-05:00",
+      "locator": "Equity row; calendar date 2021-11-25; HALT column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1140,
+      "old_expected_minutes": 1140,
+      "parent": "https://www.ampfutures.com/news/thanksgiving-holiday-trading-schedule-2021",
+      "product": "Equity",
+      "reopen_ct": "17:00",
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hs-fs/hubfs/CME%20Group%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2024%20-%2026%2c%202021.png?width=740&name=CME%20Group%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2024%20-%2026%2c%202021.png",
+      "source_sha256": "d4d1e8e58ee077b09de243c5b0c6e715db233f998f42164db57c4bec6ad6078d",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "date_scope": "2021-11-26",
+      "day": "2021-11-26",
+      "expected_minutes": 1155,
+      "first_observed_ny": "2021-11-25T18:00:00-05:00",
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": "2021-11-26T13:14:00-05:00",
+      "locator": "Equity row; calendar date 2021-11-26; CLOSE column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 1155,
+      "old_expected_minutes": 1155,
+      "parent": "https://www.ampfutures.com/news/thanksgiving-holiday-trading-schedule-2021",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hs-fs/hubfs/CME%20Group%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2024%20-%2026%2c%202021.png?width=740&name=CME%20Group%20-%20Thanksgiving%20Holiday%20Schedule%20-%20November%2024%20-%2026%2c%202021.png",
+      "source_sha256": "d4d1e8e58ee077b09de243c5b0c6e715db233f998f42164db57c4bec6ad6078d",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    },
+    {
+      "changed_grid": false,
+      "close_ct": null,
+      "close_ny": null,
+      "date_scope": "2021-12-24",
+      "day": "2021-12-24",
+      "expected_minutes": 0,
+      "first_observed_ny": null,
+      "grade": "CME_LABELED_PRESERVED",
+      "last_observed_ny": null,
+      "locator": "Equity row; calendar date 2021-12-24; CLOSED column",
+      "missing_minute_meaning": "UNKNOWN_NOT_ZERO_NOT_AUTOMATIC_CORRUPTION",
+      "missing_minutes": 0,
+      "observed_bars": 0,
+      "old_expected_minutes": 0,
+      "parent": "https://www.ampfutures.com/news/christmas-holiday-trading-schedule-2021",
+      "product": "Equity",
+      "reopen_ct": null,
+      "reopen_scope": "Same civil evening only for HALT; not inferred for full/early closures.",
+      "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20Christmas%20Holiday%20Trading%20Schedule%20-%20December%2023%20-%2027%2c%202021.png",
+      "source_sha256": "7ea0018ef909b2ebd968722c8b9ed1b349d934df6a6f565923338799f66e325c",
+      "transcription": "MANUAL_VISUAL_REVIEW_NOT_OCR",
+      "unexpected_minutes": 0,
+      "year_visible_in_table": true
+    }
+  ],
+  "groups_after": {
+    "FULL_2019_2021": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 757,
+      "clean_full_RTH": 741,
+      "normal_cash_sessions": 751,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 713,
+        "SWEEP_REV_1200": 627,
+        "TOM_RTH": 741
+      }
+    },
+    "REGISTERED_REMAINDER": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 749,
+      "clean_full_RTH": 733,
+      "normal_cash_sessions": 743,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 705,
+        "SWEEP_REV_1200": 619,
+        "TOM_RTH": 733
+      }
+    }
+  },
+  "groups_before": {
+    "FULL_2019_2021": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 757,
+      "clean_full_RTH": 741,
+      "missing_standard_days": [
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-09",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-12",
+          "missing": 13
+        },
+        {
+          "classification": "COMPLETE",
+          "day": "2020-03-13",
+          "missing": 0
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-16",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-18",
+          "missing": 13
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-06-16",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-07-31",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-03",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-08",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2021-05-06",
+          "missing": 4
+        }
+      ],
+      "normal_cash_sessions": 751,
+      "prior_ATR_ready_clean": 741,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 714,
+        "SWEEP_REV_1200": 627,
+        "TOM_RTH": 741
+      },
+      "usable_months": 36
+    },
+    "REGISTERED_REMAINDER": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 749,
+      "clean_full_RTH": 733,
+      "missing_standard_days": [
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-09",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-12",
+          "missing": 13
+        },
+        {
+          "classification": "COMPLETE",
+          "day": "2020-03-13",
+          "missing": 0
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-16",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-18",
+          "missing": 13
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-06-16",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-07-31",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-03",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-08",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2021-05-06",
+          "missing": 4
+        }
+      ],
+      "normal_cash_sessions": 743,
+      "prior_ATR_ready_clean": 733,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 706,
+        "SWEEP_REV_1200": 619,
+        "TOM_RTH": 733
+      },
+      "usable_months": 36
+    }
+  },
+  "holdout_executed": false,
+  "integrity": {
+    "prior_freeze": {
+      "outcome_release": false,
+      "previous_freeze_files": 517,
+      "protected_files": 550
+    },
+    "private_inputs": 13,
+    "protected_files": 585,
+    "signals_computed": false,
+    "source_documents": 65
+  },
+  "method": {
+    "changes": {
+      "2021-04-02": "09:15 America/New_York, not closed"
+    },
+    "context": "Frozen sequential true-range algorithm, 14 prior valid observations. A short/incomplete scheduled session clears previous RTH context; the following complete RTH does not add a TR without a previous complete RTH. No fallback range-only TR.",
+    "date": "2026-10-23",
+    "eligibility": "390 complete RTH minutes, 09:29 boundary and prior positive ATR; compression also prior PDH/PDL; sweep also all 930 overnight minutes. No actual candidate conditions evaluated.",
+    "missing_minutes_are_zero": false,
+    "outcome_release": false,
+    "publication": "LOCAL_ONLY_NO_PUSH_NO_DEPLOY",
+    "rollovers": "All 13 original decisions, effective dates and joint-close spreads unchanged.",
+    "source_policy": "Direct CME XLS cells strongest. Explicitly dated CME-labeled tables preserved by a broker are document-supported, not independently authenticated originals. Cropped attributed copies remain provisional. No product/year extrapolation.",
+    "version": "HISTORICAL_CALENDAR_V2_2026_10_23"
+  },
+  "no_backtest_run": true,
+  "normal_year_end": {
+    "close_ct": "16:00",
+    "close_ny": "17:00",
+    "day": "2021-12-31",
+    "grade": "CME_LABELED_PRESERVED",
+    "locator": "CME-labeled New Years Dec30 2021\u2013Jan3 2022, Equity row Dec31 regular close; cash open.",
+    "source": "https://www.ampfutures.com/hubfs/CME%20Group%20-%20New%20Years%20Holiday%20Trading%20Schedule%20-%20December%2030%2c%202021%20-%20January%203%2c%202022.png",
+    "source_sha256": "8e491220da89606c0ecc5ece31d52c16c50ca7f43853682a1e61d31da2b5196d"
+  },
+  "publication": "LOCAL_ONLY_NO_PUSH_NO_DEPLOY",
+  "raw_data_public": false,
+  "raw_to_cached_exact": true,
+  "reconciliation": {
+    "conflicting_contract_timestamps": [],
+    "conflicting_keys": 0,
+    "duplicate_rows_removed": 22996,
+    "source_bars": 1286673,
+    "unique_contract_bars": 1263677
+  },
+  "release_approved": false,
+  "remaining_blockers": [
+    "CROPPED_TABLES_REQUIRE_FULL_PRIMARY_PROVENANCE",
+    "NQ_HALT_SECONDS_NOT_INDEPENDENTLY_CERTIFIED",
+    "VENDOR_MISSING_MINUTE_SEMANTICS_AND_VOLUME_UNIVERSE_UNRESOLVED",
+    "EARLIEST_TRUE_VOLUME_CROSSOVER_NOT_CERTIFIED",
+    "LICENSE_AND_TICK_FILL_VALIDATION_UNCONFIRMED",
+    "EXPLICIT_OUTCOME_RELEASE_REQUIRED"
+  ],
+  "remaining_provisional_dates": [
+    "2018-11-22",
+    "2018-11-23",
+    "2019-01-21",
+    "2019-02-18",
+    "2020-01-20",
+    "2020-02-17",
+    "2020-04-10",
+    "2021-01-18",
+    "2021-02-15"
+  ],
+  "rollovers_unchanged": 13,
+  "signals_computed": false,
+  "source_catalog_sha256": "4f47cc2b1ac3cfdbd669e910e02754c04507c425fbfc5f3d0e6f9e5cfa9834d6",
+  "source_files_verified": 105,
+  "source_grades": {
+    "CME_LABELED_PRESERVED": 25,
+    "CROPPED_ATTRIBUTED": 9,
+    "DIRECT_CME_XLS_VERIFIED": 3,
+    "PREVIOUSLY_REVIEWED_PRIMARY_NOTICE": 1
+  },
+  "spreads_unchanged": true,
+  "status": "CALENDAR_V2_COMPLETE_CONDITIONAL_NOT_RELEASED"
+}

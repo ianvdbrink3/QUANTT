@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-24",
+  "independently_recomputed_files": 7,
+  "no_private_arrays": true,
+  "previous_state_preserved": true,
+  "published_files": {
+    "docs/HISTORICAL_VALIDATION_2019_2021.md": "c436e540d6d0cdb4cbfbde1b8eeebd6bc93857e088e945da9103d2e005bbd3a3",
+    "public/data/historical-validation.json": "faf9308b3a6769ec3f59104c7b9ca7a25d220396bd5349a575563af571fcfad9",
+    "public/reports/HISTORICAL_VALIDATION_2019_2021.md": "c436e540d6d0cdb4cbfbde1b8eeebd6bc93857e088e945da9103d2e005bbd3a3",
+    "public/reports/HISTORICAL_VALIDATION_QUARTERS.csv": "75fc97778cf43c19855c942cc6534e173541a5cbf266149ef33a8f8b8df2bfb5",
+    "research/historical-validation-results.json": "faf9308b3a6769ec3f59104c7b9ca7a25d220396bd5349a575563af571fcfad9"
+  },
+  "release_sha256": "b2408546f4eb501f1e3a419aefe457dae5fc08f90983ad963dd49268ea53690b",
+  "source_files": 105,
+  "status": "BYTE_IDENTICAL_RELEASED_HISTORICAL_REPLICATION"
+}

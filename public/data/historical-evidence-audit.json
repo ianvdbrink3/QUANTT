@@ -1,0 +1,1404 @@
+{
+  "additional_source_receipts": [
+    {
+      "actual_first": "2019-06-03",
+      "actual_last": "2019-06-14",
+      "bytes": 777,
+      "contract": "NQM19",
+      "filename": "nqm19_daily_historical-data-10-23-2026.csv",
+      "independent": false,
+      "original_and_copy_identical": true,
+      "private_copy": "data/raw/historical-evidence/nqm19_daily_historical-data-10-23-2026.csv",
+      "requested_end": "2019-06-14",
+      "requested_start": "2019-06-03",
+      "sha256": "893d7e728754617d9940b05eec508546b9a49682fb82a340466a4c796077b69d",
+      "type": "VENDOR_DAILY_AUDIT_ONLY"
+    },
+    {
+      "actual_first": "2019-06-03",
+      "actual_last": "2019-06-14",
+      "bytes": 753,
+      "contract": "NQU19",
+      "filename": "nqu19_daily_historical-data-10-23-2026.csv",
+      "independent": false,
+      "original_and_copy_identical": true,
+      "private_copy": "data/raw/historical-evidence/nqu19_daily_historical-data-10-23-2026.csv",
+      "requested_end": "2019-06-14",
+      "requested_start": "2019-06-03",
+      "sha256": "5ca0b7e76ea3dcd7ecf3900b602b2c1644e998a56b3c08d12f541697ab99f760",
+      "type": "VENDOR_DAILY_AUDIT_ONLY"
+    },
+    {
+      "actual_first": "2019-06-14",
+      "actual_last": "2020-03-16",
+      "bytes": 11611,
+      "contract": "NQH20",
+      "filename": "nqh20_daily_historical-data-10-23-2026.csv",
+      "independent": false,
+      "original_and_copy_identical": true,
+      "private_copy": "data/raw/historical-evidence/nqh20_daily_historical-data-10-23-2026.csv",
+      "requested_end": "2020-03-16",
+      "requested_start": "2019-06-14",
+      "sha256": "1b58a03871266f4d1497d9e347dd403de8f3d39ba88eed2c8915596224deebac",
+      "type": "VENDOR_DAILY_AUDIT_ONLY"
+    },
+    {
+      "actual_first": "2020-03-02",
+      "actual_last": "2020-03-16",
+      "bytes": 821,
+      "contract": "NQM20",
+      "filename": "nqm20_daily_historical-data-10-23-2026.csv",
+      "independent": false,
+      "original_and_copy_identical": true,
+      "private_copy": "data/raw/historical-evidence/nqm20_daily_historical-data-10-23-2026.csv",
+      "requested_end": "2020-03-16",
+      "requested_start": "2020-03-02",
+      "sha256": "ef80d4c2c49c4f84f1408320d73f3e86f92167a35492d41593203040a4787dcc",
+      "type": "VENDOR_DAILY_AUDIT_ONLY"
+    },
+    {
+      "bytes": 106496,
+      "filename": "2019-thanksgiving-schedule.xls",
+      "original_and_copy_identical": true,
+      "parser": "xlrd 2.0.2",
+      "private_copy": "data/raw/historical-evidence/2019-thanksgiving-schedule.xls",
+      "sha256": "b125e5c52f76df0cf418a2329710099a1a48ac197770e0d2ccb082c7c5b3c3c5",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls"
+    },
+    {
+      "bytes": 83456,
+      "filename": "2021-good-friday-holiday-schedule.xls",
+      "original_and_copy_identical": true,
+      "parser": "xlrd 2.0.2",
+      "private_copy": "data/raw/historical-evidence/2021-good-friday-holiday-schedule.xls",
+      "sha256": "0bb04c395a8b5facff8c285405df3b65cc269d0ccc48f26a62b0f9c5886124f6",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls"
+    }
+  ],
+  "audit_code_sha256": "8a25f73e565aafb0e7b29644935859c5bd8736e8ef6598578fc6d41bfb000379",
+  "baseline_counts_unchanged": {
+    "FULL_2019_2021": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 757,
+      "clean_full_RTH": 741,
+      "missing_standard_days": [
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-09",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-12",
+          "missing": 13
+        },
+        {
+          "classification": "COMPLETE",
+          "day": "2020-03-13",
+          "missing": 0
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-16",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-18",
+          "missing": 13
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-06-16",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-07-31",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-03",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-08",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2021-05-06",
+          "missing": 4
+        }
+      ],
+      "normal_cash_sessions": 751,
+      "prior_ATR_ready_clean": 741,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 714,
+        "SWEEP_REV_1200": 627,
+        "TOM_RTH": 741
+      },
+      "usable_months": 36
+    },
+    "REGISTERED_REMAINDER": {
+      "cash_half_sessions": 6,
+      "cash_sessions": 749,
+      "clean_full_RTH": 733,
+      "missing_standard_days": [
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-09",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-12",
+          "missing": 13
+        },
+        {
+          "classification": "COMPLETE",
+          "day": "2020-03-13",
+          "missing": 0
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-16",
+          "missing": 14
+        },
+        {
+          "classification": "DOCUMENTED_CASH_HALT_DATE_EXACT_FUTURES_MINUTES_UNCERTIFIED",
+          "day": "2020-03-18",
+          "missing": 13
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-06-16",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-07-31",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-03",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2020-09-08",
+          "missing": 1
+        },
+        {
+          "classification": "UNEXPLAINED_MISSING_MINUTES_NOT_AUTOMATICALLY_CORRUPT",
+          "day": "2021-05-06",
+          "missing": 4
+        }
+      ],
+      "normal_cash_sessions": 743,
+      "prior_ATR_ready_clean": 733,
+      "technical_by_model": {
+        "COMPRESSED_BREAK5": 706,
+        "SWEEP_REV_1200": 619,
+        "TOM_RTH": 733
+      },
+      "usable_months": 36
+    }
+  },
+  "blockers": [
+    "INTRADAY_VS_DAILY_VOLUME_ORDER_DISAGREEMENT",
+    "VENDOR_MISSING_MINUTE_SEMANTICS_UNPROVEN",
+    "EARLIEST_TRUE_CROSSOVER_NOT_CERTIFIED",
+    "FULL_DATE_SPECIFIC_CME_MATRIX_UNCERTIFIED",
+    "DOCUMENTED_CALENDAR_OVERLAY_NOT_YET_RELEASED_IN_EXECUTION_ROUTE"
+  ],
+  "calendar_context_impact": {
+    "applied_to_frozen_route": false,
+    "april5_prefix_test": true,
+    "calendar_overlay": {
+      "2021-04-02": "09:15 NY, not fully closed"
+    },
+    "context_changed": [
+      {
+        "day": "2021-04-05",
+        "fields": [
+          "PDH",
+          "PDL"
+        ]
+      },
+      {
+        "day": "2021-04-06",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-07",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-08",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-09",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-12",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-13",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-14",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-15",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-16",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-19",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-20",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-21",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-22",
+        "fields": [
+          "atr14_prior"
+        ]
+      },
+      {
+        "day": "2021-04-23",
+        "fields": [
+          "atr14_prior"
+        ]
+      }
+    ],
+    "no_candidate_selection": true,
+    "spreads_and_rollovers_unchanged": true,
+    "technical_day_counts": {
+      "FULL_2019_2021": {
+        "COMPRESSED_BREAK5": 713,
+        "SWEEP_REV_1200": 627,
+        "TOM_RTH": 741
+      },
+      "REGISTERED_REMAINDER": {
+        "COMPRESSED_BREAK5": 705,
+        "SWEEP_REV_1200": 619,
+        "TOM_RTH": 733
+      }
+    }
+  },
+  "calendar_exceptions": [
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2018-11-22",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2018-11-21T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2018-11-22T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2018-11-23",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2018-11-22T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2018-11-23T13:14:00-05:00",
+      "observed_bars": 1152,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2018-12-05",
+      "evidence": "CME_MOURNING_NOTICE",
+      "expected_minutes_frozen": 930,
+      "first_bar_ny": "2018-12-04T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2018-12-05T09:29:00-05:00",
+      "observed_bars": 930,
+      "observed_rth_bars": 0,
+      "source": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2018/12/SER-8289.pdf",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2018-12-24",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2018-12-23T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2018-12-24T13:14:00-05:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2018-12-25",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-01-01",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-01-21",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-01-20T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-01-21T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-02-18",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-02-17T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-02-18T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-04-19",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-05-27",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-05-26T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-05-27T12:59:00-04:00",
+      "observed_bars": 1139,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2019-07-03",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2019-07-02T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-07-03T13:14:00-04:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-07-04",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-07-03T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-07-04T12:59:00-04:00",
+      "observed_bars": 1138,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-09-02",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-09-01T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-09-02T12:59:00-04:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-11-28",
+      "evidence": "CME_XLS_CELLS_VERIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2019-11-27T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-11-28T12:59:00-05:00",
+      "observed_bars": 1139,
+      "observed_rth_bars": 210,
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": "13:00"
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2019-11-29",
+      "evidence": "CME_XLS_CELLS_VERIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2019-11-28T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-11-29T13:14:00-05:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": "13:15"
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2019-12-24",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2019-12-23T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2019-12-24T13:14:00-05:00",
+      "observed_bars": 1151,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2019-12-25",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-01-01",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-01-20",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-01-19T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-01-20T12:59:00-05:00",
+      "observed_bars": 1134,
+      "observed_rth_bars": 209,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-02-17",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-02-16T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-02-17T12:59:00-05:00",
+      "observed_bars": 1139,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-04-10",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-05-25",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-05-24T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-05-25T12:59:00-04:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-07-03",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-07-02T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-07-03T12:59:00-04:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-09-07",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-09-06T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-09-07T12:59:00-04:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-11-26",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2020-11-25T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-11-26T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2020-11-27",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2020-11-26T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-11-27T13:14:00-05:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2020-12-24",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2020-12-23T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2020-12-24T13:14:00-05:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2020-12-25",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-01-01",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-01-18",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-01-17T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-01-18T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-02-15",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-02-14T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-02-15T12:59:00-05:00",
+      "observed_bars": 1139,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-04-02",
+      "evidence": "CME_XLS_CELLS_VERIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": "2021-04-01T18:00:00-04:00",
+      "frozen_calendar_contradicted": true,
+      "last_bar_ny": "2021-04-02T09:14:00-04:00",
+      "observed_bars": 910,
+      "observed_rth_bars": 0,
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls",
+      "unexpected_vs_frozen_grid": 910,
+      "verified_close_ny": "09:15"
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-05-31",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-05-30T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-05-31T12:59:00-04:00",
+      "observed_bars": 1136,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-07-05",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-07-04T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-07-05T12:59:00-04:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-09-06",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-09-05T18:00:00-04:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-09-06T12:59:00-04:00",
+      "observed_bars": 1136,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-11-25",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1140,
+      "first_bar_ny": "2021-11-24T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-11-25T12:59:00-05:00",
+      "observed_bars": 1140,
+      "observed_rth_bars": 210,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": false,
+      "cash_half": true,
+      "day": "2021-11-26",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 1155,
+      "first_bar_ny": "2021-11-25T18:00:00-05:00",
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": "2021-11-26T13:14:00-05:00",
+      "observed_bars": 1155,
+      "observed_rth_bars": 225,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    },
+    {
+      "cash_closed": true,
+      "cash_half": false,
+      "day": "2021-12-24",
+      "evidence": "CASH_CALENDAR_ONLY_FUTURES_HOURS_UNCERTIFIED",
+      "expected_minutes_frozen": 0,
+      "first_bar_ny": null,
+      "frozen_calendar_contradicted": false,
+      "last_bar_ny": null,
+      "observed_bars": 0,
+      "observed_rth_bars": 0,
+      "source": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+      "unexpected_vs_frozen_grid": 0,
+      "verified_close_ny": null
+    }
+  ],
+  "daily_order_disagreements": 1,
+  "date": "2026-10-23",
+  "decision_days_with_two_complete_grids": 3,
+  "duplicate_quality_rechecked": {
+    "conflicting_contract_timestamps": [],
+    "conflicting_keys": 0,
+    "duplicate_rows_removed": 22996,
+    "source_bars": 1286673,
+    "unique_contract_bars": 1263677
+  },
+  "expiry_checks": [
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQH19",
+      "nominal_expiry": "2019-03-15"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQH20",
+      "nominal_expiry": "2020-03-20"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQH21",
+      "nominal_expiry": "2021-03-19"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQH22",
+      "nominal_expiry": "2022-03-18"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQM19",
+      "nominal_expiry": "2019-06-21"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQM20",
+      "nominal_expiry": "2020-06-19"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQM21",
+      "nominal_expiry": "2021-06-18"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQU19",
+      "nominal_expiry": "2019-09-20"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQU20",
+      "nominal_expiry": "2020-09-18"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQU21",
+      "nominal_expiry": "2021-09-17"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQZ18",
+      "nominal_expiry": "2018-12-21"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQZ19",
+      "nominal_expiry": "2019-12-20"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQZ20",
+      "nominal_expiry": "2020-12-18"
+    },
+    {
+      "active_bars_at_or_after_expiry_open": 0,
+      "contract": "NQZ21",
+      "nominal_expiry": "2021-12-17"
+    }
+  ],
+  "holdout_executed": false,
+  "independently_certified_rollovers": 0,
+  "integrity": {
+    "all_preexisting_tracked_files_unchanged": 572,
+    "holdout_executed": false,
+    "new_signals_computed": false,
+    "old_freeze": {
+      "outcome_release": false,
+      "previous_freeze_files": 517,
+      "protected_files": 550
+    },
+    "private_preparation_outputs_unchanged": 7
+  },
+  "original_sources_hash_verified": 105,
+  "protocol_sha256": "d08ddb7b4afa493aa4ad5f2f41b2122bb2685f2e344ff99689b188b2a860ab65",
+  "publication": "LOCAL_ONLY_NO_PUSH_OR_DEPLOY",
+  "raw_data_public": false,
+  "raw_to_cached_contract_bars_exact": true,
+  "release_approved": false,
+  "separate_not_audited": [
+    "license_and_redistribution",
+    "independent_tick_fill_evidence",
+    "formal_outcome_release"
+  ],
+  "signals_computed": false,
+  "sources": {
+    "barchart_csv_help": "https://www.barchart.com/futures/quotes/NQM19/historical-download",
+    "cash_calendar": "https://ir.theice.com/press/news-details/2018/NYSE-Group-Announces-2019-2020-and-2021-Holiday-and-Early-Closings-Calendar/default.aspx",
+    "cash_halts_and_futures_coordination": "https://www.sec.gov/files/rules/sro/nyse/2021/34-92428-ex3.pdf",
+    "cme_bulletin_definitions_and_availability": "https://www.cmegroup.com/market-data/daily-bulletin.html",
+    "cme_bulletin_volume_universe": "https://www.cmegroup.com/daily_bulletin/current/Section11_Equity_And_Index_Futures.pdf",
+    "good_friday_2021": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls",
+    "historical_NQ_expiry_chapter_359": "https://www.cmegroup.com/market-regulation/files/16-081R_EXHA.pdf",
+    "mourning_2018": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2018/12/SER-8289.pdf",
+    "pause_removal": "https://www.cmegroup.com/content/dam/cmegroup/notices/ser/2021/06/SER-8788.pdf",
+    "thanksgiving_2019": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls"
+  },
+  "status": "AUDIT_COMPLETE_RELEASE_NOT_APPROVED",
+  "vendor_findings": {
+    "daily_contract_volume": "Total Volume and Open Interest unchecked selects the individual contract. Daily and intraday volumes are not documented as identical universes.",
+    "daily_volume_available_before_roll_activation_proven": false,
+    "independent_vendor": false,
+    "intraday_trade_filter": "Only qualifying last-price transactions; excludes blocks and other types included in daily volume. Not a proof of missing-minute semantics.",
+    "observed_date": "2026-10-23",
+    "observed_in_logged_in_csv_page_help": true,
+    "timezone": "Futures CSV intraday labels are Chicago central civil time. This does not independently certify interval endpoints."
+  },
+  "verified_CME_calendar_cells": [
+    {
+      "action": "Halt",
+      "cell": [
+        4,
+        11
+      ],
+      "close_ct": "12:00",
+      "close_ny": "13:00",
+      "day": "2019-11-28",
+      "header_cell": [
+        3,
+        11
+      ],
+      "product": "Equity Products",
+      "sheet": "Thanksgiving",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "source_sha256": "b125e5c52f76df0cf418a2329710099a1a48ac197770e0d2ccb082c7c5b3c3c5",
+      "verified": true
+    },
+    {
+      "action": "Close",
+      "cell": [
+        4,
+        19
+      ],
+      "close_ct": "12:15",
+      "close_ny": "13:15",
+      "day": "2019-11-29",
+      "header_cell": [
+        3,
+        19
+      ],
+      "product": "Equity Products",
+      "sheet": "Thanksgiving",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2019-thanksgiving-schedule.xls",
+      "source_sha256": "b125e5c52f76df0cf418a2329710099a1a48ac197770e0d2ccb082c7c5b3c3c5",
+      "verified": true
+    },
+    {
+      "action": "Close",
+      "cell": [
+        4,
+        9
+      ],
+      "close_ct": "08:15",
+      "close_ny": "09:15",
+      "day": "2021-04-02",
+      "header_cell": [
+        3,
+        9
+      ],
+      "product": "Equity Products",
+      "sheet": "Good Fri.",
+      "source": "https://www.cmegroup.com/tools-information/holiday-calendar/files/2021-good-friday-holiday-schedule.xls",
+      "source_sha256": "0bb04c395a8b5facff8c285405df3b65cc269d0ccc48f26a62b0f9c5886124f6",
+      "verified": true
+    }
+  ],
+  "volume_rollovers": [
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 1,
+      "decision_missing_old": 0,
+      "decision_new_volume": 431734,
+      "decision_observed_margin": 134689,
+      "decision_old_volume": 297045,
+      "decision_session": "2018-12-14",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2018-12-17",
+      "new": "NQH19",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQZ18",
+      "overlap_days_checked": 10,
+      "overlap_first": "2018-12-03",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 2,
+      "decision_missing_old": 1,
+      "decision_new_volume": 326619,
+      "decision_observed_margin": 68380,
+      "decision_old_volume": 258239,
+      "decision_session": "2019-03-08",
+      "earlier_endpoint_rejected": 2,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2019-03-11",
+      "new": "NQM19",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQH19",
+      "overlap_days_checked": 10,
+      "overlap_first": "2019-02-25",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": {
+        "audit_only_not_used_to_set_roll": true,
+        "comparable_transaction_universe_proven": false,
+        "decision_day": {
+          "day": "2019-06-14",
+          "difference": -1653,
+          "new": 253169,
+          "old": 254822
+        },
+        "first_daily_new_greater_in_observed_overlap": null,
+        "independent_vendor": false,
+        "same_decision_sign": false
+      },
+      "decision_missing_new": 9,
+      "decision_missing_old": 1,
+      "decision_new_volume": 207874,
+      "decision_observed_margin": 2055,
+      "decision_old_volume": 205819,
+      "decision_session": "2019-06-14",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2019-06-17",
+      "new": "NQU19",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQM19",
+      "overlap_days_checked": 10,
+      "overlap_first": "2019-06-03",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 0,
+      "decision_missing_old": 3,
+      "decision_new_volume": 264713,
+      "decision_observed_margin": 74661,
+      "decision_old_volume": 190052,
+      "decision_session": "2019-09-13",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2019-09-16",
+      "new": "NQZ19",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQU19",
+      "overlap_days_checked": 10,
+      "overlap_first": "2019-09-02",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 0,
+      "decision_missing_old": 4,
+      "decision_new_volume": 377305,
+      "decision_observed_margin": 110159,
+      "decision_old_volume": 267146,
+      "decision_session": "2019-12-13",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2019-12-16",
+      "new": "NQH20",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQZ19",
+      "overlap_days_checked": 10,
+      "overlap_first": "2019-12-02",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": {
+        "audit_only_not_used_to_set_roll": true,
+        "comparable_transaction_universe_proven": false,
+        "decision_day": {
+          "day": "2020-03-16",
+          "difference": 117492,
+          "new": 424860,
+          "old": 307368
+        },
+        "first_daily_new_greater_in_observed_overlap": "2020-03-16",
+        "independent_vendor": false,
+        "same_decision_sign": true
+      },
+      "decision_missing_new": 804,
+      "decision_missing_old": 776,
+      "decision_new_volume": 338800,
+      "decision_observed_margin": 122796,
+      "decision_old_volume": 216004,
+      "decision_session": "2020-03-16",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 10,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2020-03-17",
+      "new": "NQM20",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQH20",
+      "overlap_days_checked": 11,
+      "overlap_first": "2020-03-02",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 2,
+      "decision_missing_old": 0,
+      "decision_new_volume": 340396,
+      "decision_observed_margin": 104585,
+      "decision_old_volume": 235811,
+      "decision_session": "2020-06-15",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2020-06-16",
+      "new": "NQU20",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQM20",
+      "overlap_days_checked": 11,
+      "overlap_first": "2020-06-01",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": true,
+      "daily_crosscheck": null,
+      "decision_missing_new": 0,
+      "decision_missing_old": 0,
+      "decision_new_volume": 437507,
+      "decision_observed_margin": 232936,
+      "decision_old_volume": 204571,
+      "decision_session": "2020-09-14",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 10,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2020-09-15",
+      "new": "NQZ20",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQU20",
+      "overlap_days_checked": 11,
+      "overlap_first": "2020-08-31",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 6,
+      "decision_missing_old": 0,
+      "decision_new_volume": 339461,
+      "decision_observed_margin": 131637,
+      "decision_old_volume": 207824,
+      "decision_session": "2020-12-14",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 10,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2020-12-15",
+      "new": "NQH21",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQZ20",
+      "overlap_days_checked": 11,
+      "overlap_first": "2020-11-30",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": true,
+      "daily_crosscheck": null,
+      "decision_missing_new": 0,
+      "decision_missing_old": 0,
+      "decision_new_volume": 311534,
+      "decision_observed_margin": 91420,
+      "decision_old_volume": 220114,
+      "decision_session": "2021-03-15",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2021-03-16",
+      "new": "NQM21",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQH21",
+      "overlap_days_checked": 11,
+      "overlap_first": "2021-03-01",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 2,
+      "decision_missing_old": 8,
+      "decision_new_volume": 292920,
+      "decision_observed_margin": 150324,
+      "decision_old_volume": 142596,
+      "decision_session": "2021-06-14",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 10,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2021-06-15",
+      "new": "NQU21",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQM21",
+      "overlap_days_checked": 11,
+      "overlap_first": "2021-05-31",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": true,
+      "daily_crosscheck": null,
+      "decision_missing_new": 0,
+      "decision_missing_old": 0,
+      "decision_new_volume": 473089,
+      "decision_observed_margin": 209371,
+      "decision_old_volume": 263718,
+      "decision_session": "2021-09-13",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 10,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2021-09-14",
+      "new": "NQZ21",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQU21",
+      "overlap_days_checked": 11,
+      "overlap_first": "2021-08-30",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    },
+    {
+      "before_overlap_dominance_proven": false,
+      "complete_decision_grid": false,
+      "daily_crosscheck": null,
+      "decision_missing_new": 1,
+      "decision_missing_old": 1,
+      "decision_new_volume": 360583,
+      "decision_observed_margin": 28147,
+      "decision_old_volume": 332436,
+      "decision_session": "2021-12-10",
+      "earlier_endpoint_rejected": 1,
+      "earlier_incomplete_comparisons": 9,
+      "earliest_true_exchange_crossover_proven": false,
+      "effective_session": "2021-12-13",
+      "new": "NQH22",
+      "observed_rule_reproduced": true,
+      "official_same_universe_totals_available_before_activation_proven": false,
+      "old": "NQZ21",
+      "overlap_days_checked": 10,
+      "overlap_first": "2021-11-29",
+      "status": "OBSERVED_RULE_ONLY_NOT_CERTIFIED"
+    }
+  ]
+}
