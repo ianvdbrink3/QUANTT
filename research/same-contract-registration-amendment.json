@@ -1,0 +1,23 @@
+{
+  "after_files": {
+    "docs/REGIME_CONSOLIDATION_STATISTICS.md": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773",
+    "research/regime-consolidation-results.json": "31e2c9c18047acec8f667ef257ad74580825c4bf7ac4a65b7237be780df68297",
+    "research/regime-consolidation-verification.json": "0e911d0253002d6c6c8a7592a444cb1e40f42296c4e0d40d1c7d9bad7082e074",
+    "scripts/same_contract/__init__.py": "74b237588c881a52ac9107843e5980ea6bd5e5fd45dd561de3c1b8a2b566e146",
+    "scripts/same_contract/__main__.py": "0b028faf2088168f4b095ce30baa7fc8adbde187b936489967c8712c3dfd556b",
+    "scripts/same_contract/core.py": "54f6fd55715884b64dcace9cdcb79ab53789c393348bf096784cdf4f7af115cb",
+    "tests/test_same_contract.py": "0873072b5688209e9d7d1187817cb2ac14b7faa1461d3ee04e334322a065a179"
+  },
+  "before_lock_sha256": "650cdaa5d45d9b2af4029183cd354923f1bcd0249234f2af12dc36f3747a1d67",
+  "outcome_files_written": false,
+  "previous_files": {
+    "docs/REGIME_CONSOLIDATION_STATISTICS.md": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773",
+    "research/regime-consolidation-results.json": "31e2c9c18047acec8f667ef257ad74580825c4bf7ac4a65b7237be780df68297",
+    "research/regime-consolidation-verification.json": "0e911d0253002d6c6c8a7592a444cb1e40f42296c4e0d40d1c7d9bad7082e074",
+    "scripts/same_contract/__init__.py": "74b237588c881a52ac9107843e5980ea6bd5e5fd45dd561de3c1b8a2b566e146",
+    "scripts/same_contract/__main__.py": "00cc2b7ec9989425044a1a38839d2c5b9ae967755287328ce451f023950d1ac7",
+    "scripts/same_contract/core.py": "8e47b04404697a8d18ef7fab26de3dab1300f96407a676c227fd6f5d7412fb13",
+    "tests/test_same_contract.py": "0873072b5688209e9d7d1187817cb2ac14b7faa1461d3ee04e334322a065a179"
+  },
+  "reason": "Source adapter schema correction before any result files: year rollover register contains a rollovers key; recent load_csv validates numerics without numeric_valid column. No strategy, contract-choice or inference change."
+}

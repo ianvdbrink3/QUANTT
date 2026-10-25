@@ -42,7 +42,7 @@ def test_no_private_series_or_ledger_exported():
 def test_complete_original_report_and_playbook_byte_identical():
     for name in ('OPERATIONAL_TRADING_PLAYBOOK.md','REGIME_CONSOLIDATION_STATISTICS.md'):
         assert (p.ROOT/'docs'/name).read_bytes()==(p.ROOT/'public/reports'/name).read_bytes()
-    assert (p.source.OUT/'run1/performance-inference.csv').read_bytes()==(p.ROOT/'public/reports/REGIME_CONSOLIDATION_PERFORMANCE.csv').read_bytes()
+    assert (p.source.archive.OUT/'run1/performance-inference.csv').read_bytes()==(p.ROOT/'public/reports/REGIME_CONSOLIDATION_PERFORMANCE.csv').read_bytes()
 
 
 def test_public_manifest_and_all_prior_freezes_verified():
@@ -54,7 +54,7 @@ def test_public_manifest_and_all_prior_freezes_verified():
 
 def test_all_nineteen_focus_quarters_and_totals_present():
     public=json.loads(p.PUBLIC.read_text())
-    rows=list(csv.DictReader((p.ROOT/'public/reports/REGIME_CONSOLIDATION_QUARTERS.csv').open()))
+    rows=list(csv.DictReader((p.ROOT/'public/reports/SAME_CONTRACT_QUARTERS.csv').open()))
     for model in ('S1_SELECTIVE','S2_BROAD_NO_STOP'):
         x=public['samples']['OBSERVED_PATH']['COMBINED'][model]
         q=[r for r in rows if r['sample']=='OBSERVED_PATH' and r['period']=='COMBINED' and r['model']==model]
@@ -68,8 +68,8 @@ def test_playbook_explains_actual_indicator_and_execution_limits():
     text=p.PLAYBOOK.read_text()
     for term in ('geen Wilder-ATR','SMA20_prior','SMA20_terminal','15:55-open','16:00-minuutopen',
                  'q_ATR = floor(K / (2 * A))','q_stop = floor(K / (2*d + c_MNQ))',
-                 'Voor S2-overnight is q_stop niet gedefinieerd','ROLLOVER_SKIP_TIMING_NOT_LIVE_CERTIFIED',
-                 'geen aaneengesloten vijfjarige trackrecord','99 holdingpaden','96 stopuitkomsten'):
+                 'Voor S2-overnight is q_stop niet gedefinieerd','PREOPEN_ROUTE_SAME_CONTRACT_TO_NEXT_CASH_OPEN',
+                 'geen aaneengesloten vijfjarige trackrecord','MNQM25','geen achteraf-uitsluiting'):
         assert term in text
 
 
@@ -150,3 +150,17 @@ def test_clean_release_allows_frontend_and_aggregate_reports():
                  'lib/operational-sizing.mjs','public/data/operational-consolidation.json',
                  'public/reports/REGIME_CONSOLIDATION_PERFORMANCE.csv','package.json','vercel.json']:
         assert release.allowed(name)
+
+
+def test_previous_publication_archive_matches_previous_commit_exactly():
+    for old,new in [('docs/OPERATIONAL_TRADING_PLAYBOOK.md','docs/OPERATIONAL_TRADING_PLAYBOOK_PRE_CAUSAL_ARCHIVE.md'),('public/data/operational-consolidation.json','public/data/operational-consolidation-archive.json')]:
+        prior=subprocess.check_output(['git','show','426d8a91ddc60d0650d83231a62e809c61b05d66:'+old],cwd=p.ROOT)
+        assert (p.ROOT/new).read_bytes()==prior
+
+
+def test_new_public_causal_report_and_performance_copy_exact():
+    assert p.source.REPORT.read_bytes()==(p.ROOT/'public/reports/SAME_CONTRACT_CAUSAL_EXECUTION.md').read_bytes()
+    assert (p.source.OUT/'run1/performance-inference.csv').read_bytes()==(p.ROOT/'public/reports/SAME_CONTRACT_PERFORMANCE.csv').read_bytes()
+    data=json.loads(p.PUBLIC.read_text())
+    assert data['rollover_timing_status']=='PREOPEN_ROUTE_SAME_CONTRACT_TO_NEXT_CASH_OPEN'
+    assert len(data['comparison'])==15

@@ -2,13 +2,13 @@
 
 Versie: 25 oktober 2026. Status: `EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED`.
 
-Dit is de uitvoeringsspecificatie voor reproductie en paperuitvoering van twee geselecteerde ontwikkelingsmodellen. Het document plaatst geen orders en promoveert de modellen niet tot bewezen winstsystemen. Alle genoemde regels zijn afkomstig uit de bestaande berekeningscode; er is geen nieuwe backtest, parameterkeuze of risicofilter toegevoegd.
+Dit is de uitvoeringsspecificatie voor reproductie en paperuitvoering van twee geselecteerde ontwikkelingsmodellen. Het document plaatst geen orders en promoveert de modellen niet tot bewezen winstsystemen. Alle genoemde regels zijn afkomstig uit de bestaande berekeningscode; de overnight-route is apart herberekend met causale same-contract uitvoering. Strategieparameters blijven ongewijzigd; de oude resultaten en het oude playbook zijn als archief bewaard.
 
 **S1 — selectief met overnight-stop:** sterke-trenddag-overnight met vaste 0,50 ATR-stop, plus intraday pullback B. In de onderzochte data is de waargenomen drawdown lager dan bij S2.
 
 **S2 — breed zonder overnight-stop:** bull-overnight na slot boven SMA20, plus exact dezelfde intraday pullback B. Dit heeft het hoogste totale netto R van de vijf consolidatievarianten op deze ontwikkelingspool.
 
-Beide perioden zijn al gebruikt bij selectie: 2019–2021 en het afzonderlijke blok eind 2024–september 2026. De berekening bevat 1.151 technisch geschikte instapsessies, 1.171 cashsessies voor de dagelijkse boekhouding en 19 kwartalen. Er is geen aaneengesloten vijfjarige trackrecord; 2022–2024 wordt niet overbrugd. De 3,443R van S1 is gemeten drawdown, geen toekomstige verlieslimiet.
+Beide perioden zijn al gebruikt bij selectie: 2019–2021 en het afzonderlijke blok eind 2024–september 2026. De berekening bevat 1.151 technisch geschikte instapsessies, 1.171 cashsessies voor de dagelijkse boekhouding en 19 kwartalen. Er is geen aaneengesloten vijfjarige trackrecord; 2022–2024 wordt niet overbrugd. Een gemeten drawdown is geen toekomstige verlieslimiet.
 
 ## 1. Tijd, prijzen en dagelijkse voorbereiding
 
@@ -59,7 +59,7 @@ Alle 20 closes moeten beschikbaar zijn. Met `C*_j = C_raw,j - O_j` wordt de SMA 
 
 `SMA20_terminal(d) = mean(19 vorige cashsessie-closes + de zojuist voltooide close_d)`
 
-Gebruik dezelfde point-in-time basisomrekening. Deze SMA is pas na de 15:59-bar definitief. Voor de brede S2-populatie moet daarnaast de SMA20 vóór 09:30 beschikbaar zijn, precies zoals in de 723 onderzochte bull-nachten. S1-A vereist de terminale SMA maar geen preopen bull-status. Dit verklaart waarom één oorspronkelijke A-dag buiten de vooraf bekende SMA20-benchmarkpopulatie valt; voeg geen uitzonderingsdatum als handelsregel toe.
+Gebruik dezelfde point-in-time basisomrekening. Deze SMA is pas na de 15:59-bar definitief. Voor de brede S2-populatie moet daarnaast de SMA20 vóór 09:30 beschikbaar zijn, precies zoals in de oorspronkelijke 723 bull-nachten uit het archief. S1-A vereist de terminale SMA maar geen preopen bull-status. Dit verklaart waarom één oorspronkelijke A-dag buiten de vooraf bekende SMA20-benchmarkpopulatie valt; voeg geen uitzonderingsdatum als handelsregel toe.
 
 ## 4. Pijler B — trend-aligned intraday pullback
 
@@ -121,9 +121,15 @@ De gebruikte volume-route zoekt de eerste gezamenlijk waargenomen sessie waarin 
 
 De indicator-spread is `close_nieuw - close_oud` op de laatste gezamenlijke voltooide 15:59-bar vóór activatie, beschikbaar na die minuut. Pas alleen indicatorcoördinaten aan. Bewaar uitvoering, stops en targets in de ruwe basis van het actieve contract.
 
-**Overnight-regel:** sla de entry over wanneer het actieve contract tijdens het beoogde 16:00–volgende-09:30-traject wisselt. Houd niet ongemerkt een ander contract aan en boek geen contractspread als winst. Geen nieuwe overnight-rolltransactie toevoegen aan het bevroren model. B handelt alleen het op die RTH-dag actieve contract. Gebruik een actuele vooraf vastgestelde kalender voor een toekomstig papertraject; verleng een oud kalender- of rolloverregister niet zonder bewijs.
+**Bindende contractkeuze — `PREOPEN_ROUTE_SAME_CONTRACT_TO_NEXT_CASH_OPEN`:**
 
-**Timinggrens van deze replayregel:** de volume-route gebruikt afgerond futures-sessievolume, dat doorgaans later dan 16:00 definitief is. Het historische overslaan van een nacht vanwege de reeds vastgelegde volgende contractwissel is daarom geen bewijs dat dat overslaan om 16:00 destijds al kenbaar was. Status: `ROLLOVER_SKIP_TIMING_NOT_LIVE_CERTIFIED`. Voor forward paperuitvoering mag alleen een vóór de beslissing bekende contractplanning worden gebruikt, met het bekendmakingstijdstip opgeslagen. Is die planning om 16:00 niet bekend, registreer dan een onbesliste paperorder en geen fictieve backtestfill. Een andere vooraf vastgelegde rollplanning is een afzonderlijke uitvoeringsvariant; de hier gepubliceerde performance is daarvoor niet opnieuw berekend. Dit playbook maakt de grens zichtbaar en verandert de bevroren route niet.
+1. Vóór 09:30 wordt het reeds voor de huidige RTH-sessie geactiveerde kwartaalcontract X vastgezet. Alleen een volume-besluit uit een eerdere afgesloten futures-sessie met activatie uiterlijk vóór de huidige 09:30 mag worden gebruikt. Het afgeronde volume van vandaag en het actieve contract van morgen mogen de keuze van vandaag niet veranderen.
+2. Controleer dan al de bekende expiratiekalender en de eerstvolgende echte cashsessie. Als de geplande volgende 09:30 op of ná de derde-vrijdag-expiratie van X ligt, kies vóór de huidige RTH het volgende kwartaalcontract (H→M→U→Z→H). Dus uiterlijk de dag vóór expiratie het nieuwe contract, ook bij een tussenliggende cashfeestdag. Alle RTH-signalen en indicatoren moeten dezelfde gekozen basis hebben; zonder die vooraf beschikbare historie is er geen complete beslissing. Nooit na entry de contractbasis repareren. In deze dataset zijn nul kalenderoverrides nodig: alle geregistreerde RTH-rollovers liggen al vóór deze grens.
+3. Leg om 15:55 X expliciet vast bij de beslissing, inclusief selectietijd, expiratie en het beschikbare vorige routebesluit. De MNQ-order krijgt exact dezelfde maand/jaar als NQ-X (bijvoorbeeld NQM25 → MNQM25); geen automatisch doorlopend symbool gebruiken. Dit is een contractspecificatie, geen bewijs van MNQ-fills.
+4. Bevestig na de 15:59-bar de overnight-voorwaarden op X. De onderzoeksentry is de 16:00-open van X. Alle stops en de volgende daadwerkelijke cash-09:30-exit gebruiken uitsluitend X. Een latere volume-switch of indicatorroll om 18:00 verandert de bestaande positie niet. De volgende RTH kan het nieuwe contract gebruiken nadat X om 09:30 is gesloten; B start pas vanaf 09:45.
+5. Rollover-nachten blijven meetellen wanneer beide ankers in X aanwezig zijn. Geen contractspread in handels-P&L, geen overboeking, geen achteraf-uitsluiting op basis van morgen. Een ontbrekend anker wordt als onbekend bronresultaat gemeld: niet nul, geen vervangende prijs uit het nieuwe contract en geen live voorspelbaar kwaliteitsfilter. De contractkeuze zelf hangt nooit van de aanwezigheid of uitkomst van de toekomstige exit af.
+
+De bronreplay bewijst deze informatievolgorde en bewaart de keuze vóór het uitlezen van de holdingprijzen. Dit certificeert de contractlogica onder de bestaande bron- en kalenderaannames; het levert geen onafhankelijk bewijs van historische publicatietijdstippen, quote-spreads of exacte first-print fills.
 
 ## 8. Uitvoeringsaannames, kwaliteit en administratie
 
@@ -131,7 +137,7 @@ Stopverlies krijgt voorrang wanneer een minuutbar zowel stop als target kan rake
 
 Backtestfrictie is totaal **$24,50 per NQ-roundtrip = 1,225 NQ-punt**, ook bij een stop. Twee opeenvolgende pijlers betalen twee volledige roundtrips; geen kostennetting. Deze NQ-aanname is geen daadwerkelijke MNQ-brokerquote en mag niet door tien worden gedeeld om MNQ-kosten te bepalen.
 
-Bewaar per paperbeslissing lokaal: tijdstip, contract, bronstatus, vooraf vastgezette ATR, beide SMA-momenten, alleen toen bekende setupwaarden, geplande/feitelijke orderprijzen, feitelijke kosten, filltijden en afwijkingen. Dag-/tradeledgers en minuutbars blijven privé. Bij datagaten geen verdwenen stop aannemen. Van de 723 bull-nachten zijn 99 holdingpaden onvolledig en zijn 96 stopuitkomsten niet volledig identificeerbaar; een CI over gesimuleerde P&L modelleert deze brononzekerheid niet.
+Bewaar per paperbeslissing lokaal: tijdstip, contract, bronstatus, vooraf vastgezette ATR, beide SMA-momenten, alleen toen bekende setupwaarden, geplande/feitelijke orderprijzen, feitelijke kosten, filltijden en afwijkingen. Dag-/tradeledgers en minuutbars blijven privé. Bij datagaten geen verdwenen stop aannemen. De actuele aantallen onvolledige holdingpaden en niet-identificeerbare stopuitkomsten staan per periode in het causale rapport en op het dashboard; de historische aantallen blijven in het archiefrapport. Een CI over gesimuleerde P&L modelleert deze brononzekerheid niet.
 
 Portefeuilleposities worden op tijdstempels op niet-overlap gecontroleerd. Dag-P&L wordt vóór de volgende 16:00-boundary geboekt: overnight op de volgende cashsessie, B op de huidige sessie. Gebruik ook vlakke cashdagen voor Sharpe. R is genormaliseerde P&L; de gepubliceerde punten zijn daarnaast 1 NQ per uitvoering. Dit is geen account-ROI.
 
@@ -173,8 +179,8 @@ Rekenvoorbeeld, geen account- of brokeradvies: K=$1.000 en A=200 geven q_ATR=2. 
 
 ## 10. Wat deze publicatie wel vastlegt
 
-S1 heeft gecombineerd +13,656632R, 249 uitvoeringen, gemeten DD 3,443226R en een nominaal positief gecombineerd interval; historisch bevat het interval nul. S2 zonder overnight-stop heeft +36,786981R, 872 uitvoeringen en Holm15 p=0,023999 gecombineerd; recent bevat het interval nul. Geen variant heeft in beide deelperioden én gecombineerd een nominaal 95%-interval geheel boven nul. De uitkomsten zijn geselecteerd op bekeken ontwikkelingsdata en zijn geen onafhankelijke live-goedkeuring.
+De actuele cijfers staan in `SAME_CONTRACT_CAUSAL_EXECUTION.md`, inclusief de volledige vergelijking met het onveranderde `REGIME_CONSOLIDATION_STATISTICS.md`. Alle bestaande trades moeten exact dezelfde prijzen en netto-uitkomst houden; alleen extra same-contract nachten kunnen verschillen veroorzaken. De twee bronreconstructies moeten byte-identieke uitvoer opleveren.
 
-Reproductie: `python -m scripts.regime_consolidation verify`; volledige herberekening wordt uitgevoerd door `python -m scripts.regime_consolidation replay` wanneer nog geen geverifieerde replay bestaat. De onderliggende volledige bronreplays en hun hashes blijven bewaard. Publicatie kopieert rapporten en geaggregeerde resultaten; zij wijzigt geen signalen of parameters.
+Reproductie: `python -m scripts.same_contract verify`. Volledige replay: `python -m scripts.same_contract replay` (idempotent na bestaande verificatie); twee onafhankelijke herberekeningen worden bij de eerste replay opgeslagen. `python -m scripts.same_contract register` legt methode en code vóór de uitkomsten vast. Publicatie: `python -m scripts.publish_operational_playbook`. De resultaten blijven ontwikkelingsonderzoek, geen onafhankelijke validatie of live-goedkeuring.
 
-Exacte code: `scripts/price_volume/core.py` en `__main__.py`, `scripts/two_pillar/core.py`, `scripts/regime_consolidation/core.py`, `inference.py` en `__main__.py`. Ruwe CSV's en private ledgers blijven buiten Git-updates en productie-upload.
+Exacte nieuwe uitvoeringsroute: `scripts/same_contract/core.py` en `__main__.py`. Bevroren onderliggende code: `scripts/price_volume/core.py` en `__main__.py`, `scripts/two_pillar/core.py`, `scripts/regime_consolidation/core.py`, `inference.py` en `__main__.py`. Ruwe CSV's en private ledgers blijven buiten Git-updates en productie-upload.

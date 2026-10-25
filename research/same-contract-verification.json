@@ -1,0 +1,29 @@
+{
+  "files": {
+    "artifacts/same-contract/run1/S1_SELECTIVE-trades.json": "ee3ea081a684978d84246ce09a66b62abecfd3c1b4fac521d25db5c6eb2230d3",
+    "artifacts/same-contract/run1/S2_BROAD_NO_STOP-trades.json": "435a6f8d51cfe3361fec197d1657673bdd85270262340eedeb55a35bd06f36f6",
+    "artifacts/same-contract/run1/S2_BROAD_STOP-trades.json": "2c1d9155d4fc10abe592c5d7c2d11ccf1a4ffe36076402b65c05d1cecae5c575",
+    "artifacts/same-contract/run1/S3_BASE_1X-trades.json": "c4617614ea543026b10078e4aeceb81c3e5df4aff576de62331fcb6bd541d243",
+    "artifacts/same-contract/run1/S3_NONHOT_1X-trades.json": "217100e376d0b8bc8e5a66e0a278a9944e1a688555541596494c582afe4dc1bf",
+    "artifacts/same-contract/run1/complete-day-exclusions.json": "e3133e37c80252143fcaa19eddc0917746d0df607e45bfca6d03fdab7bb37d2d",
+    "artifacts/same-contract/run1/contract-decisions.json": "9cefdd650e88bd193a159ad18e93f6522ae583ceee1e10886059b901c9871f1a",
+    "artifacts/same-contract/run1/daily-panels.json": "262cf97f3d9b6600c3f765d078da35bf6219ce77d55c4c1745b82a47012fa6ca",
+    "artifacts/same-contract/run1/performance-inference.csv": "e43a3a3d8230303a9b2a56d9854f4cc3e83d3974fb7c225293e00db65b0d9a28",
+    "artifacts/same-contract/run1/report.md": "fa2f972f21f7db374227d1f3850f4d5a8dee2bee3a35708a2e5ccbeff90e4078",
+    "artifacts/same-contract/run1/summary.json": "d19db593bb754d4187f1bd7a4da53c724252300834f2bac260858190bb65c138",
+    "artifacts/same-contract/run2/S1_SELECTIVE-trades.json": "ee3ea081a684978d84246ce09a66b62abecfd3c1b4fac521d25db5c6eb2230d3",
+    "artifacts/same-contract/run2/S2_BROAD_NO_STOP-trades.json": "435a6f8d51cfe3361fec197d1657673bdd85270262340eedeb55a35bd06f36f6",
+    "artifacts/same-contract/run2/S2_BROAD_STOP-trades.json": "2c1d9155d4fc10abe592c5d7c2d11ccf1a4ffe36076402b65c05d1cecae5c575",
+    "artifacts/same-contract/run2/S3_BASE_1X-trades.json": "c4617614ea543026b10078e4aeceb81c3e5df4aff576de62331fcb6bd541d243",
+    "artifacts/same-contract/run2/S3_NONHOT_1X-trades.json": "217100e376d0b8bc8e5a66e0a278a9944e1a688555541596494c582afe4dc1bf",
+    "artifacts/same-contract/run2/complete-day-exclusions.json": "e3133e37c80252143fcaa19eddc0917746d0df607e45bfca6d03fdab7bb37d2d",
+    "artifacts/same-contract/run2/contract-decisions.json": "9cefdd650e88bd193a159ad18e93f6522ae583ceee1e10886059b901c9871f1a",
+    "artifacts/same-contract/run2/daily-panels.json": "262cf97f3d9b6600c3f765d078da35bf6219ce77d55c4c1745b82a47012fa6ca",
+    "artifacts/same-contract/run2/performance-inference.csv": "e43a3a3d8230303a9b2a56d9854f4cc3e83d3974fb7c225293e00db65b0d9a28",
+    "artifacts/same-contract/run2/report.md": "fa2f972f21f7db374227d1f3850f4d5a8dee2bee3a35708a2e5ccbeff90e4078",
+    "artifacts/same-contract/run2/summary.json": "d19db593bb754d4187f1bd7a4da53c724252300834f2bac260858190bb65c138",
+    "docs/SAME_CONTRACT_CAUSAL_EXECUTION.md": "fa2f972f21f7db374227d1f3850f4d5a8dee2bee3a35708a2e5ccbeff90e4078",
+    "research/same-contract-results.json": "d19db593bb754d4187f1bd7a4da53c724252300834f2bac260858190bb65c138"
+  },
+  "status": "BYTE_IDENTICAL_SAME_CONTRACT_REPLAYS"
+}

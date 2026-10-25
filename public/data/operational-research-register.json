@@ -3,7 +3,15 @@
   "entries": [
     {
       "data": "/data/operational-consolidation.json",
-      "id": "NQ-S1-S2-CONSOLIDATION-20261025",
+      "id": "NQ-SAME-CONTRACT-20261025",
+      "independent_validation": false,
+      "report": "/reports/SAME_CONTRACT_CAUSAL_EXECUTION.md",
+      "status": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+      "title": "Causale contractcorrectie en vergelijking met archief"
+    },
+    {
+      "data": "/data/operational-consolidation-archive.json",
+      "id": "NQ-S1-S2-CONSOLIDATION-ARCHIVE-20261025",
       "independent_validation": false,
       "report": "/reports/REGIME_CONSOLIDATION_STATISTICS.md",
       "status": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",

@@ -1,0 +1,47 @@
+{
+  "anchor_commit": "426d8a91ddc60d0650d83231a62e809c61b05d66",
+  "files": {
+    "docs/REGIME_CONSOLIDATION_STATISTICS.md": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773",
+    "research/regime-consolidation-results.json": "31e2c9c18047acec8f667ef257ad74580825c4bf7ac4a65b7237be780df68297",
+    "research/regime-consolidation-verification.json": "0e911d0253002d6c6c8a7592a444cb1e40f42296c4e0d40d1c7d9bad7082e074",
+    "scripts/same_contract/__init__.py": "74b237588c881a52ac9107843e5980ea6bd5e5fd45dd561de3c1b8a2b566e146",
+    "scripts/same_contract/__main__.py": "0b028faf2088168f4b095ce30baa7fc8adbde187b936489967c8712c3dfd556b",
+    "scripts/same_contract/core.py": "54f6fd55715884b64dcace9cdcb79ab53789c393348bf096784cdf4f7af115cb",
+    "tests/test_same_contract.py": "0873072b5688209e9d7d1187817cb2ac14b7faa1461d3ee04e334322a065a179"
+  },
+  "method": {
+    "accounting": "Same749/422 full cash calendars, flat days included. Overnight PnL assigned next cash16:00boundary; B to current cash day. Assert non-overlap chronologically; minuteopen/close+knownfill DD with fees atentry. PF per execution in netR, dailyPF in JSON; Sharpe sqrt252 dailymeanR/SD, not accountROI; +quarters from netR cash-boundary attribution.",
+    "date": "2026-10-25",
+    "execution": "Frozen two_pillar.core.night and price_volume G1_ATR select/execute/marks, unchanged. Entry16:00open to next cash09:30open, stop active fromentry, tick-rounded towardentry, adverse gap open fills. No new stop-distance, clock, target or volume search. All variants one full ATR-normalized position at a time. Rawpoints1NQ/trade; 1.225pt($24.50)RT per executed leg without netting.",
+    "holding": "16:00open through next actual cash09:30open in SAME contract even if the active indicator route changes at18:00. No rollover transaction/spread PnL, no hindsight switch exclusion, no alternate contract chosen by endpoint availability. Missing same-contract endpoints remain unscored data limitations, not zero PnL.",
+    "inference": {
+      "assumptions": "Approximate dependent bootstrap; only36historical/21recent months and potential nonstationarity. Noncircular endpoints underrepresented, explicitly reported. No selected blocklength, no alternative method chosen after seeing pvalues. Raw and adjusted p both reported.",
+      "block_months": 2,
+      "method": "Joint moving blocks of two consecutive calendar months within each era, same draws across all5objects. Reuse earlier noncircular block-index scheme and trim to original monthcount; sampled daycount handles unequal/partial months. No block crosses era gap. Combined mean uses fixed original749:422 cash-day era weights.",
+      "multiple": "15 PRIMARY tests=5uniquevariants x3periods, Holm15 p-values. Also basic Bonferroni15 simultaneous95% interval set (99.6667%marginal). Duplicate bull-stop label is not a new test. Corrections apply only this round; cannot undo earlier strategy selection or all historical mining.",
+      "objects": [
+        "S1_SELECTIVE",
+        "S2_BROAD_NO_STOP",
+        "S2_BROAD_STOP",
+        "S3_BASE_1X",
+        "S3_NONHOT_1X"
+      ],
+      "replications": 20000,
+      "seed": 2026102507,
+      "sensitivity": "Complete-day sensitivity reuses identical bootstrap seeds/method as diagnostic. Its nominalCIs are separately identified; not a second confirmatory family or rescue decision. No sensitivity p-values used for promotion.",
+      "target": "Mean netR per full cash session including zero-position days. Nominal95% BASIC bootstrap CI:observedmean minus97.5/2.5percentiles of centered bootstrap mean errors. Approximate two-sided equal-tail centered-null bootstrap p, plus-one correction. Expected-total-R CI=meanCI times fixed original cash-day count, not uncertainty about already realized PnL."
+    },
+    "missing": "Observed-path stop outcomes conditional on no hidden earlier trigger in missing minutes. Report each pillar incomplete/unknown count. Strict COMMON complete-day sensitivity drops entire cash-boundary day (including B that day) whenever any qualifying bull or originalA night has a missing scheduled minute anywhere in original holdingwindow. Filter by data coverage only, not stop exit or PnL. Excluded days/trades saved privately; no bar filling.",
+    "preservation": "Original consolidated result/report/code and all earlier protected research bytes preserved. B149 unchanged. Previously executable overnight rows must match numerically; only newly admitted same-contract nights can add PnL. No search or independent validation claim.",
+    "reproduction": "Two independent raw CSV source reconstructions with hashes and deterministic byte-identical outputs; inspect future-cutoff contract selection and same-contract endpoints.",
+    "selection": "At09:30 freeze the already effective RTH contract; reconfirm15:55. Only prior-session volume route activations effective before09:30 are allowed. Do not inspect tomorrow route or current finalized futures-session volume. Calendar expiry guard chooses quarterly successor if next cash09:30 is at/after expiry09:30. Guard must be resolved before RTH with matching raw contract features; never patch after entry.",
+    "status": "CAUSAL_CONTRACT_CORRECTION_ON_CONSUMED_DEVELOPMENT_DATA",
+    "strategies": {
+      "S1_SELECTIVE": "Original A100 with fixed0.50priorATR catastrophe-stop plus unchanged B149(P/+1ATR).",
+      "S2_BROAD_NO_STOP": "Original bull723:current RTHclose>terminalSMA20 at16:00, no overnight stop, plus B149.",
+      "S2_BROAD_STOP": "Same bull723 with fixed0.50priorATR catastrophe-stop, plus B149.",
+      "S3_BASE_1X": "One bull overnight position with fixed stop, including strong trenddays at SAME1x size. No added A leg and no B leg. This is also the bull-stop pillar in question2; counted once.",
+      "S3_NONHOT_1X": "One bull overnight position with fixed stop ONLY if current completed RTHrange/priorATR<=0.85 (exclude strict>0.85 regardless close location). No B leg, no short and no increased sizing."
+    }
+  }
+}
