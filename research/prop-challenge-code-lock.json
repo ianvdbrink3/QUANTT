@@ -1,0 +1,22 @@
+{
+  "status": "CODE_CAPTURE_BEFORE_COMPLETE_RANKING",
+  "files": {
+    "scripts/prop_challenge/__init__.py": "b4c6c1ead5bf1a4bf22a1905b56dcf1e9b41fa6de75b04157d9ddb2e7ba4d4ae",
+    "scripts/prop_challenge/core.py": "dc5e7171f6346b42162a50cffa5ed0cc75c465528d537aeafa0c2306c4c5b604",
+    "scripts/prop_challenge/data.py": "1caec3d9b69de65a0cca3a26adf882997c0304bb2d9345cb1cd731569f029e1a",
+    "scripts/prop_challenge/__main__.py": "9a9f149c939a89cd54d9fabf669c6acba55e35cd58547a94a77a8c61028bf4b6",
+    "scripts/verify-prop-challenge": "e4d19f020d339198d74e86b4b6418d731e46ebd2b841eaca5cdeb27c0dbab102"
+  },
+  "previous_storage_code": {
+    "scripts/prop_challenge/__init__.py": "b4c6c1ead5bf1a4bf22a1905b56dcf1e9b41fa6de75b04157d9ddb2e7ba4d4ae",
+    "scripts/prop_challenge/core.py": "dc5e7171f6346b42162a50cffa5ed0cc75c465528d537aeafa0c2306c4c5b604",
+    "scripts/prop_challenge/data.py": "1caec3d9b69de65a0cca3a26adf882997c0304bb2d9345cb1cd731569f029e1a",
+    "scripts/prop_challenge/__main__.py": "dd6787780ef7f50f03a7e729de8ad21776c29be2f6941069c8563fc122f8d733",
+    "scripts/verify-prop-challenge": "e4d19f020d339198d74e86b4b6418d731e46ebd2b841eaca5cdeb27c0dbab102"
+  },
+  "amendment": "Storage only: deterministic typed binary+gzip replaces redundant JSON dates and repeated field names after measured disk exhaustion. No model, sizing, execution, ranking, or cost parameter changed; no ranking inspected.",
+  "verification_only_hardening": {
+    "before": "8fd59df54b74972e8b3331fd4915ad8bef515facd8313194d1fc3d8f43c12545",
+    "note": "After two byte-identical numerical runs: verify now also enforces the separate code-hash registry. No signal, account, sizing, cost, ranking or numerical output changed."
+  }
+}
