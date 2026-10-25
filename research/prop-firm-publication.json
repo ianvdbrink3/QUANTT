@@ -1,0 +1,23 @@
+{
+  "baseline_preserved": true,
+  "files_sha256": {
+    "app/research/prop-firm/page.tsx": "3b210dac882c361704f9448bc3a05607356df733ad3ae6173065cc316bf9fada",
+    "docs/OPERATIONAL_TRADING_PLAYBOOK_V3.md": "fa9df6e907e35b6ff7da1ee34225d3ed4065557c1a24014aea37d8ba8843cf64",
+    "docs/PROP_FIRM_AND_AUTOMATION_GUIDE.md": "2f2f1ae71b6fa1a4952aae2ed77ddfd54eadec98d25c4c67b8e762036ac1fdb2",
+    "proxy.ts": "fcab0331c0276d943c363da76ec218020aaa373e787704f34f1bf6fe116ff3c3",
+    "public/data/ict-prop-research-register.json": "acc11baa41d3524cbbf22058bac392bbab37e455519d3048188a3b27e9483f6f",
+    "public/data/prop-firm.json": "05ba490431063ba90608d8f03dc047d8a270992ddf55f96716f7a9f0b612b179",
+    "public/reports/OPERATIONAL_TRADING_PLAYBOOK_V3.md": "fa9df6e907e35b6ff7da1ee34225d3ed4065557c1a24014aea37d8ba8843cf64",
+    "public/reports/PROP_ACCOUNT_CHECKS.csv": "ac1d43f38583eb834db14d432233815dba3168f7dbf5c16690cab2b1fd75ea57",
+    "public/reports/PROP_FIRM_AND_AUTOMATION_GUIDE.md": "2f2f1ae71b6fa1a4952aae2ed77ddfd54eadec98d25c4c67b8e762036ac1fdb2",
+    "public/reports/PROP_FIRM_FEASIBILITY_REPORT.md": "be8370dc53003c644a0c8422cdab5176f98a4c8b9b7295c9db3dd62e0c50c8a0",
+    "public/reports/PROP_MNQ_STRESS.csv": "9f5eb549642318b896ccf33759a65a82b62e7b90ba9590f8ea38dc97721447a2",
+    "public/reports/PROP_PORTFOLIO_PERFORMANCE.csv": "231f4270e1a4dbe010cdf87af0ce1ddd2377569517de459c21b0bd424f2738f8",
+    "scripts/build_prop_frontend.py": "19ac8c4010e4a35c3415765dc3fde07248a0be83eecb703e8350a5aaea2852fc",
+    "scripts/publish_prop_firm.py": "26ca0b0c0e3d04ff02445bfe6031172a2c8b5a0f4c7a6494b372f25ce713ec38",
+    "tests/test_prop_publication.py": "15f3bd4856155d402e58da67f3584bad45469b8f3a609c5da7c63919cf8fcb46"
+  },
+  "raw_data_published": false,
+  "status": "VERIFIED_AGGREGATE_PUBLICATION_READY",
+  "verification_sha256": "91b21e518ae07ede6dcda99bd660f57245cdfff570970fffe08116f79784f9a0"
+}

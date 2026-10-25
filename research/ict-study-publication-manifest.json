@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "app/research/ict/page.tsx": "1855139941c9c01b954b1f168c350955ef62d5604ddd854d6d6b8460dcb9aec8",
+    "components/ICTStudyTable.tsx": "93a3295c4b4ab68e6cd40ea8271ee73906eb497e9476e467b51940e1ae26fa26",
+    "docs/ICT_COMPARISON_WITH_BENCHMARKS.md": "557ad32458f840751e9cc3ab3858502bd3f7974d384e1c2a531dc6d880fff9ba",
+    "public/data/ict-study.json": "d1e8eb2a26e8c63468c33c34c15302b93c6e2aa9e91d691d50483b6786eb3d1d",
+    "public/reports/ICT_CAUSAL_DEVELOPMENT_STUDY.md": "606822e50c723c3c7346177fcc45bb5e8c2a773f91ad0dd103dc5d6093d8e73a",
+    "public/reports/ICT_COMPARISON_WITH_BENCHMARKS.md": "557ad32458f840751e9cc3ab3858502bd3f7974d384e1c2a531dc6d880fff9ba",
+    "public/reports/ICT_PERFORMANCE.csv": "0178ffc85074a8fbcf77d21cb01cddf6cbff1ad2d95c1faa9295df0a00503f28",
+    "public/reports/ICT_QUARTERS.csv": "a2fa48a39f03ded5448379f542fd1f1700ffbf93f31954b25f3c681e4fcb69d5",
+    "public/reports/ICT_STUDY_FINDINGS.md": "8f8334d728336c72a23e3cb2f6c3597a756bc9aab93f1d5b72f2d0eae9514a60",
+    "research/ict-study-assessment.json": "cb952a17c91a64cfa662f67ecdc0500cb66071255d4c41d16aea51fbc15bffc0",
+    "scripts/publish_ict_study.py": "c469bceea99e5423ab774d0d5cd4161a0f6fab194dffbb9f738efef450b2cecf"
+  },
+  "raw_data_published": false,
+  "source_verification_sha256": "7dea0e4ce0eb89e905de5c0604d3a20d48eb90a3c5abceb6c96339a0079e0e4a",
+  "status": "LOCAL_ICT_DASHBOARD_EXPORT_READY_BENCHMARK_UNCHANGED"
+}

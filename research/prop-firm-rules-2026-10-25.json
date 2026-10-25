@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-10-25",
+  "historical_application": "Current rules applied retrospectively to NQ proxy data; not actual historical prop-account results.",
+  "sources": {
+    "topstep_hours": "https://help.topstep.com/en/articles/8284206-when-and-what-products-can-i-trade",
+    "topstep_mll": "https://help.topstep.com/en/articles/8284204-what-is-the-maximum-loss-limit",
+    "topstep_dll": "https://help.topstep.com/en/articles/10490293-daily-loss-limit-in-the-trading-combine-and-express-funded-account",
+    "topstep_consistency": "https://help.topstep.com/en/articles/8284208-consistency-at-topstep",
+    "topstep_xfa": "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
+    "topstep_api": "https://help.topstep.com/en/articles/11187768-topstepx-api-access",
+    "topstep_mnq_fees": "https://help.topstep.com/en/articles/8284213-topstepx-commissions-and-fees",
+    "mffu_hours": "https://help.myfundedfutures.com/en/articles/9558251-permitted-times-to-trade",
+    "mffu_automation": "https://help.myfundedfutures.com/en/articles/8444599-fair-play-and-prohibited-trading-practices",
+    "mffu_eod": "https://help.myfundedfutures.com/en/articles/8348565-end-of-day-eod-drawdown-explained",
+    "mffu_rapid_eod50": "https://help.myfundedfutures.com/en/articles/16158363-rapid-eod-50k-a-comprehensive-look",
+    "mffu_rapid100": "https://help.myfundedfutures.com/en/articles/13286542-rapid-plan-100k-a-comprehensive-look",
+    "mffu_builder50": "https://help.myfundedfutures.com/en/articles/14290805-builder-plan-50k-a-comprehensive-guide",
+    "mffu_builder100": "https://help.myfundedfutures.com/en/articles/17005296-builder-plan-100k-comprehensive-guide",
+    "mffu_consistency": "https://help.myfundedfutures.com/en/articles/11994562-consistency-rule-at-my-fundedfutures",
+    "mffu_platforms": "https://help.myfundedfutures.com/en/articles/8528335-overview-of-supported-platforms-at-mffu",
+    "projectx": "https://gateway.docs.projectx.com/docs/intro/"
+  },
+  "costs_usd_per_MNQ_roundtrip": [3.22, 6.5, 9.5],
+  "cost_labels": {
+    "3.22": "Topstep published1.22 commission/fees plus assumed2.00 slippage (2ticks perleg).",
+    "6.5": "Explicit provisional MFFU/all-firm stress assumption, not a confirmed broker quote.",
+    "9.5": "Fixed higher-cost stress, not an optimized scenario."
+  },
+  "profiles": [
+    {"id":"TOPSTEP_TC_50K","drawdown":2000,"lock":0,"dll":null,"target":3000,"consistency":0.55,"min_days":2,"inactivity_days":null,"news_gate":false},
+    {"id":"TOPSTEP_TC_100K","drawdown":3000,"lock":0,"dll":null,"target":6000,"consistency":0.55,"min_days":2,"inactivity_days":null,"news_gate":false},
+    {"id":"TOPSTEP_TC_50K_OPTIONAL_DLL","drawdown":2000,"lock":0,"dll":1000,"target":3000,"consistency":0.55,"min_days":2,"inactivity_days":null,"news_gate":false},
+    {"id":"TOPSTEP_TC_100K_OPTIONAL_DLL","drawdown":3000,"lock":0,"dll":2000,"target":6000,"consistency":0.55,"min_days":2,"inactivity_days":null,"news_gate":false},
+    {"id":"MFFU_RAPID_EOD_50K_EVAL","drawdown":2000,"lock":100,"dll":null,"target":3000,"consistency":0.30,"min_days":4,"inactivity_days":7,"news_gate":false},
+    {"id":"MFFU_RAPID_100K_EVAL","drawdown":3000,"lock":100,"dll":null,"target":6000,"consistency":0.50,"min_days":2,"inactivity_days":null,"news_gate":false},
+    {"id":"MFFU_BUILDER_50K_EVAL","drawdown":2000,"lock":100,"dll":1000,"target":3000,"consistency":null,"min_days":1,"inactivity_days":null,"news_gate":false},
+    {"id":"MFFU_BUILDER_100K_EVAL","drawdown":3000,"lock":100,"dll":1750,"target":6000,"consistency":null,"min_days":1,"inactivity_days":null,"news_gate":false},
+    {"id":"MFFU_RAPID_EOD_50K_SIM","drawdown":2000,"lock":100,"dll":null,"target":null,"consistency":null,"min_days":null,"inactivity_days":7,"news_gate":true},
+    {"id":"MFFU_BUILDER_50K_SIM","drawdown":2000,"lock":100,"dll":1000,"target":null,"consistency":0.50,"min_days":null,"inactivity_days":7,"news_gate":false},
+    {"id":"MFFU_BUILDER_100K_SIM","drawdown":3000,"lock":100,"dll":1750,"target":null,"consistency":0.50,"min_days":null,"inactivity_days":7,"news_gate":false},
+    {"id":"TOPSTEP_XFA_50K_STANDARD","drawdown":2000,"lock":0,"dll":null,"target":null,"consistency":null,"min_days":null,"inactivity_days":31,"news_gate":false},
+    {"id":"TOPSTEP_XFA_100K_STANDARD","drawdown":3000,"lock":0,"dll":null,"target":null,"consistency":null,"min_days":null,"inactivity_days":31,"news_gate":false}
+  ],
+  "scope_notes": [
+    "No Rapid EOD100K advertised in inspected official EOD plan table: Rapid100K eval is EOD but its funded stage is intraday trailing and is NOT modeled as EOD.",
+    "MFFU Rapid EOD funded T1-news restrictions need a verified event calendar; no funded-compliance certification from hours/DD alone.",
+    "Topstep XFA payout winning-day and withdrawal mechanics are not simulated; no payout guarantee.",
+    "MFFU7day inactivity timing uses calendar gap between active CME dates as conservative diagnostic; exact platform activation timestamp not available.",
+    "Topstep API route only supported simulated environment, personaldevice; no VPS/VPN/remote order relay. API subscription required; none purchased.",
+    "MFFU allows own non-exploitative automation; manual Tradovate OCO is a choice, not a loophole around a general bot ban."
+  ]
+}

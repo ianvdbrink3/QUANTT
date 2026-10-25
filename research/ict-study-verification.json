@@ -1,0 +1,21 @@
+{
+  "files": {
+    "artifacts/ict-study/run1/TOUCH-daily-panels.json": "fd6165369df32dc83843ec8617a57592a111c146f08ba3e6d98eee6af43d7826",
+    "artifacts/ict-study/run1/TRADE_THROUGH-daily-panels.json": "b8f5996ac4ac58d9969dd525c8064c644655446d51ef0930fbb8f7a4719ac64d",
+    "artifacts/ict-study/run1/orders-and-ledgers.json": "387054c53747762268c16444f9e2a3feb371e8082f46ea74a21764c43ba54024",
+    "artifacts/ict-study/run1/performance.csv": "0178ffc85074a8fbcf77d21cb01cddf6cbff1ad2d95c1faa9295df0a00503f28",
+    "artifacts/ict-study/run1/report.md": "606822e50c723c3c7346177fcc45bb5e8c2a773f91ad0dd103dc5d6093d8e73a",
+    "artifacts/ict-study/run1/status-counts.json": "750499bc93ebae6c5e34a599fa41a8de4b8d92aa24b5079594804e5ff5def377",
+    "artifacts/ict-study/run1/summary.json": "db78b1a72f2e34498dacbccffb0b7005dfebce085012d46ac7bb1ad4a254325d",
+    "artifacts/ict-study/run2/TOUCH-daily-panels.json": "fd6165369df32dc83843ec8617a57592a111c146f08ba3e6d98eee6af43d7826",
+    "artifacts/ict-study/run2/TRADE_THROUGH-daily-panels.json": "b8f5996ac4ac58d9969dd525c8064c644655446d51ef0930fbb8f7a4719ac64d",
+    "artifacts/ict-study/run2/orders-and-ledgers.json": "387054c53747762268c16444f9e2a3feb371e8082f46ea74a21764c43ba54024",
+    "artifacts/ict-study/run2/performance.csv": "0178ffc85074a8fbcf77d21cb01cddf6cbff1ad2d95c1faa9295df0a00503f28",
+    "artifacts/ict-study/run2/report.md": "606822e50c723c3c7346177fcc45bb5e8c2a773f91ad0dd103dc5d6093d8e73a",
+    "artifacts/ict-study/run2/status-counts.json": "750499bc93ebae6c5e34a599fa41a8de4b8d92aa24b5079594804e5ff5def377",
+    "artifacts/ict-study/run2/summary.json": "db78b1a72f2e34498dacbccffb0b7005dfebce085012d46ac7bb1ad4a254325d",
+    "docs/ICT_CAUSAL_DEVELOPMENT_STUDY.md": "606822e50c723c3c7346177fcc45bb5e8c2a773f91ad0dd103dc5d6093d8e73a",
+    "research/ict-study-results.json": "db78b1a72f2e34498dacbccffb0b7005dfebce085012d46ac7bb1ad4a254325d"
+  },
+  "status": "BYTE_IDENTICAL_ICT_SOURCE_REPLAYS"
+}

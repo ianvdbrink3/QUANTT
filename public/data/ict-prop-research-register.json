@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "2ec3a07",
+  "entries": [
+    {
+      "id": "baseline-2ec3a07",
+      "page": "/research/operational",
+      "report": "/reports/OPERATIONAL_TRADING_PLAYBOOK.md",
+      "status": "FROZEN_DEVELOPMENT_REFERENCE"
+    },
+    {
+      "id": "ict-80",
+      "page": "/research/ict",
+      "performance_rows": 480,
+      "report": "/reports/ICT_CAUSAL_DEVELOPMENT_STUDY.md",
+      "status": "EXPLORATORY_SELECTED_ON_DEVELOPMENT_POOL"
+    },
+    {
+      "id": "judas-seven-and-replacement",
+      "page": "/research/judas-replacement",
+      "report": "/reports/JUDAS_ONE_FOR_ONE_REPLACEMENT.md",
+      "selected_variants": 7,
+      "status": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED"
+    },
+    {
+      "MNQ_stress_rows": 108,
+      "account_checks": 936,
+      "id": "prop-hours-feasibility",
+      "page": "/research/prop-firm",
+      "performance_rows": 36,
+      "report": "/reports/PROP_FIRM_FEASIBILITY_REPORT.md",
+      "status": "RETROSPECTIVE_FEASIBILITY_NOT_ACCOUNT_OR_PROFITABILITY_CERTIFICATION"
+    },
+    {
+      "guide": "/reports/PROP_FIRM_AND_AUTOMATION_GUIDE.md",
+      "id": "playbook-v3",
+      "report": "/reports/OPERATIONAL_TRADING_PLAYBOOK_V3.md",
+      "status": "DESIGN_ONLY_NO_BROKER_INTEGRATION_ACTIVE"
+    }
+  ],
+  "private_market_data_published": false
+}

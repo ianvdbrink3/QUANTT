@@ -1,0 +1,21 @@
+import Link from 'next/link';
+import ICTStudyTable from '@/components/ICTStudyTable';
+import data from '@/public/data/ict-study.json';
+import '../operational/operational.css';
+
+export const metadata={title:'QUANT — causale ICT-verkenning',description:'Alle 80 vooraf vastgelegde ICT-varianten, beide perioden, fillgevoeligheid en ongewijzigde S1/S2-benchmarks.'};
+const n=(x:number|null)=>x==null?'n.v.t.':x.toLocaleString('nl-NL',{maximumFractionDigits:3});
+
+export default function ICTPage(){
+  const tableRows=data.rows.map(({quarterly,direction,portfolio,...row})=>row);
+  return <main lang="nl" className="operational-page">
+    <nav aria-label="Onderzoeksbestanden"><Link href="/research/operational">Ongewijzigde S1/S2-benchmark</Link><a href={data.reports.findings}>Feitelijke conclusie</a><a href={data.reports.full}>Volledig ICT-rapport</a><a href={data.reports.comparison}>Vergelijking met B/S1/S2</a><a href={data.reports.performance}>Alle 480 resultaatrijen als CSV</a><a href={data.reports.quarters}>Alle kwartalen</a></nav>
+    <header><p className="op-eyebrow">QUANT · APARTE VERKENNING · 80 VASTE VARIANTEN</p><h1>Sweep → displacement/MSS → FVG-retest.</h1><p className="op-lead">1.171 cashsessies, waarvan 1.151 ATR-ready instapsessies. Signalen op 1m en 5m; uitvoering op ruwe minuutbars. De bestaande benchmark van commit 2ec3a07 is byte-identiek behouden.</p><p className="op-status">Ontwikkelingsdata · geen onafhankelijke bevestiging · {data.future_cutoff_checks.toLocaleString('nl-NL')} afknipcontroles · twee byte-identieke bronreplays</p><p>Een ICT-label bewijst geen institutionele oorzaak. Alle thresholds en vensters zijn vóór deze uitkomsten vastgelegd. De mechanische definities staan volledig in het rapport.</p></header>
+    <section><h2>Vergelijkbare risicomaten</h2><p><strong>StopR</strong> deelt elke trade door zijn initiële stopafstand. <strong>ATR-R</strong> deelt door de vóór de sessie bekende ATR14 en sluit aan bij S1/S2. Een grote stopR-score mag niet rechtstreeks met de ATR-R-benchmark worden vergeleken.</p><p>Aanrakingsfills zijn de gevraagde primaire aanname; de vaste trade-throughcontrole vereist één tick méér. Beide blijven minutenmodellen zonder queue- of tickfillbewijs. De laatste uitvoerbare tijdsexit is de 15:55-open.</p></section>
+    <section><h2>Vaste beschrijvende controles</h2><ul><li>Positief in beide perioden onder beide fillaannames: {data.assessment.counts.positive_both_eras_both_fills}/80.</li><li>Hoger rendement, PF en Sharpe dan B in beide perioden bij touchfills: {data.assessment.counts.touch_exceeds_B_return_PF_sharpe_both_eras}/80.</li><li>Vaste 50/50-sleevecontrole gunstig bij beide baselines en perioden: {data.assessment.counts.descriptive_portfolio_condition}/80.</li><li>Positieve incrementele verwachting versus B met Holm480 in alle perioden: {data.assessment.counts.incremental_holm480_all_periods}/80.</li></ul><p>De 50/50-controle gebruikt aparte sleeves, evenredige frictie en cashdag-slot-DD. Gelijktijdige posities worden geteld. Dit wijzigt geen B-trades en is geen gehele-MNQ-simulatie.</p></section>
+    <section><h2>Bevroren gecombineerde benchmarks</h2><div className="op-table" role="region" tabIndex={0} aria-label="Benchmarks"><table><thead><tr><th>Model</th><th>N</th><th>Netto ATR-R</th><th>Netto punten</th><th>PF ATR</th><th>Sharpe ATR</th><th>DD ATR</th></tr></thead><tbody>{Object.entries(data.benchmarks.COMBINED).map(([name,x])=><tr key={name}><th scope="row">{name}</th><td>{x.N}</td><td>{n(x.net_R)}</td><td>{n(x.net_points)}</td><td>{n(x.trade_PF_R)}</td><td>{n(x.sharpe_daily_R)}</td><td>{n(x.max_marked_drawdown_R)}</td></tr>)}</tbody></table></div></section>
+    <ICTStudyTable rows={tableRows}/>
+    <section><h2>Methode en dekking</h2>{Object.entries(data.method).map(([name,value])=><details key={name}><summary>{name}</summary><div className="op-document">{typeof value==='string'?value:JSON.stringify(value,null,2)}</div></details>)}</section>
+    <footer><p>De correctie omvat 80 varianten × 3 perioden × 2 contrasten: nulverwachting en meerwaarde boven B. Dit corrigeert deze scan, niet de eerdere selectie op bekeken data. Ruwe CSV’s, orders, dagreeksen en private ledgers zijn niet geëxporteerd.</p></footer>
+  </main>;
+}

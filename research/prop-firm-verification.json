@@ -1,0 +1,21 @@
+{
+  "files": {
+    "artifacts/prop-firm/run1/account-checks.csv": "ac1d43f38583eb834db14d432233815dba3168f7dbf5c16690cab2b1fd75ea57",
+    "artifacts/prop-firm/run1/daily-dollar-panels.json": "25192e6135e2afeb306de3121e2ba7da4251d02629080c93d72dd2385dd0d438",
+    "artifacts/prop-firm/run1/ledgers.json": "42cf0419230d6e9bb79015e056e3dfe5cc902055eb61aef9f9eaed5070251f7f",
+    "artifacts/prop-firm/run1/mnq-stress.csv": "9f5eb549642318b896ccf33759a65a82b62e7b90ba9590f8ea38dc97721447a2",
+    "artifacts/prop-firm/run1/portfolio-performance.csv": "231f4270e1a4dbe010cdf87af0ce1ddd2377569517de459c21b0bd424f2738f8",
+    "artifacts/prop-firm/run1/report.md": "be8370dc53003c644a0c8422cdab5176f98a4c8b9b7295c9db3dd62e0c50c8a0",
+    "artifacts/prop-firm/run1/summary.json": "6247a5ad45e975f6fbb4e83fd1bcd7a023dbf2de269dc0351189cd53b47159bf",
+    "artifacts/prop-firm/run2/account-checks.csv": "ac1d43f38583eb834db14d432233815dba3168f7dbf5c16690cab2b1fd75ea57",
+    "artifacts/prop-firm/run2/daily-dollar-panels.json": "25192e6135e2afeb306de3121e2ba7da4251d02629080c93d72dd2385dd0d438",
+    "artifacts/prop-firm/run2/ledgers.json": "42cf0419230d6e9bb79015e056e3dfe5cc902055eb61aef9f9eaed5070251f7f",
+    "artifacts/prop-firm/run2/mnq-stress.csv": "9f5eb549642318b896ccf33759a65a82b62e7b90ba9590f8ea38dc97721447a2",
+    "artifacts/prop-firm/run2/portfolio-performance.csv": "231f4270e1a4dbe010cdf87af0ce1ddd2377569517de459c21b0bd424f2738f8",
+    "artifacts/prop-firm/run2/report.md": "be8370dc53003c644a0c8422cdab5176f98a4c8b9b7295c9db3dd62e0c50c8a0",
+    "artifacts/prop-firm/run2/summary.json": "6247a5ad45e975f6fbb4e83fd1bcd7a023dbf2de269dc0351189cd53b47159bf",
+    "docs/PROP_FIRM_FEASIBILITY_REPORT.md": "be8370dc53003c644a0c8422cdab5176f98a4c8b9b7295c9db3dd62e0c50c8a0",
+    "research/prop-firm-results.json": "6247a5ad45e975f6fbb4e83fd1bcd7a023dbf2de269dc0351189cd53b47159bf"
+  },
+  "status": "BYTE_IDENTICAL_PROP_FIRM_REPLAYS"
+}

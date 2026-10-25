@@ -1,0 +1,2144 @@
+{
+  "baseline_commit": "2ec3a07adcf2f1bc0301c267a4f410ce44b69905",
+  "bootstrap": {
+    "block_months": 2,
+    "combined_fixed_era_weights": [
+      0.6396242527754057,
+      0.36037574722459437
+    ],
+    "cross_era_blocks": false,
+    "eras": {
+      "2019_2021": {
+        "block_months": 2,
+        "days": 749,
+        "first_month_inclusion": 0.51565,
+        "last_month_inclusion": 0.51395,
+        "months": [
+          "2019-01",
+          "2019-02",
+          "2019-03",
+          "2019-04",
+          "2019-05",
+          "2019-06",
+          "2019-07",
+          "2019-08",
+          "2019-09",
+          "2019-10",
+          "2019-11",
+          "2019-12",
+          "2020-01",
+          "2020-02",
+          "2020-03",
+          "2020-04",
+          "2020-05",
+          "2020-06",
+          "2020-07",
+          "2020-08",
+          "2020-09",
+          "2020-10",
+          "2020-11",
+          "2020-12",
+          "2021-01",
+          "2021-02",
+          "2021-03",
+          "2021-04",
+          "2021-05",
+          "2021-06",
+          "2021-07",
+          "2021-08",
+          "2021-09",
+          "2021-10",
+          "2021-11",
+          "2021-12"
+        ],
+        "replications": 20000
+      },
+      "2024_2026": {
+        "block_months": 2,
+        "days": 422,
+        "first_month_inclusion": 0.54795,
+        "last_month_inclusion": 0.50685,
+        "months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "replications": 20000
+      }
+    },
+    "paired_differences_identical": true,
+    "replications": 20000,
+    "seeds": [
+      2026102511,
+      2026102512
+    ],
+    "unique_tests": 9
+  },
+  "cash_sessions": 1171,
+  "independent_validation": false,
+  "inference": {
+    "2019_2021": {
+      "JUDAS_MINUS_B": {
+        "expected_total_ATR_R_ci95": [
+          -6.041814907570345,
+          11.060277759948734
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -9.553574291135716,
+          14.166379568312472
+        ],
+        "mean_ATR_R_per_cash_day": 0.004016548125900894,
+        "mean_ci95": [
+          -0.008066508554833571,
+          0.014766725981239966
+        ],
+        "p_holm9": 1.0,
+        "p_raw_two_sided": 0.5207739613019349,
+        "prior_ICT_scan_p_holm480": 1.0
+      },
+      "S1_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          -2.5088972861847463,
+          16.64175002957044
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -7.708287983933725,
+          19.427932568817386
+        ],
+        "mean_ATR_R_per_cash_day": 0.011450492879762885,
+        "mean_ci95": [
+          -0.0033496625983774984,
+          0.022218624872590704
+        ],
+        "p_holm9": 0.5799710014499275,
+        "p_raw_two_sided": 0.1159942002899855
+      },
+      "S2_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          15.697308895336342,
+          38.20854958222461
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          10.194577642012092,
+          42.4526797187096
+        ],
+        "mean_ATR_R_per_cash_day": 0.03724022589838571,
+        "mean_ci95": [
+          0.020957688778820215,
+          0.05101274977600082
+        ],
+        "p_holm9": 0.0008999550022498875,
+        "p_raw_two_sided": 9.99950002499875e-05
+      }
+    },
+    "2024_2026": {
+      "JUDAS_MINUS_B": {
+        "expected_total_ATR_R_ci95": [
+          -6.122943453993872,
+          6.194294609117097
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -9.213106002218105,
+          7.9654211660039556
+        ],
+        "mean_ATR_R_per_cash_day": 0.001458774728395753,
+        "mean_ci95": [
+          -0.014509344677710596,
+          0.014678423244353311
+        ],
+        "p_holm9": 1.0,
+        "p_raw_two_sided": 0.847457627118644,
+        "prior_ICT_scan_p_holm480": 1.0
+      },
+      "S1_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          0.7268169859675991,
+          17.97449382036426
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -2.5668826787909813,
+          21.169413976345414
+        ],
+        "mean_ATR_R_per_cash_day": 0.022831156276833263,
+        "mean_ci95": [
+          0.0017223151326246425,
+          0.04259358725204801
+        ],
+        "p_holm9": 0.20098995050247487,
+        "p_raw_two_sided": 0.03349832508374581
+      },
+      "S2_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          -4.276337712202213,
+          33.03934773453041
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -12.903927940087422,
+          39.15766094710025
+        ],
+        "mean_ATR_R_per_cash_day": 0.034442098076075435,
+        "mean_ci95": [
+          -0.01013350168768297,
+          0.0782922932097877
+        ],
+        "p_holm9": 0.5799710014499275,
+        "p_raw_two_sided": 0.1318934053297335
+      }
+    },
+    "COMBINED": {
+      "JUDAS_MINUS_B": {
+        "expected_total_ATR_R_ci95": [
+          -7.559243761919627,
+          13.388416791942062
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -12.413657921540437,
+          17.355421861885745
+        ],
+        "mean_ATR_R_per_cash_day": 0.0030947886265437884,
+        "mean_ci95": [
+          -0.006455374689939904,
+          0.011433319207465467
+        ],
+        "p_holm9": 1.0,
+        "p_raw_two_sided": 0.5428728563571822,
+        "prior_ICT_scan_p_holm480": 1.0
+      },
+      "S1_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          4.11569255207289,
+          29.70890126908817
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          -2.073407477949344,
+          34.54811946970142
+        ],
+        "mean_ATR_R_per_cash_day": 0.015551807955393713,
+        "mean_ci95": [
+          0.003514681940284278,
+          0.02537053908547239
+        ],
+        "p_holm9": 0.09729513524323784,
+        "p_raw_two_sided": 0.013899305034748262
+      },
+      "S2_JUDAS": {
+        "expected_total_ATR_R_ci95": [
+          19.81172999129939,
+          63.17096371703231
+        ],
+        "expected_total_ATR_R_familywise95_bonf9": [
+          10.766347741507415,
+          71.29750638634569
+        ],
+        "mean_ATR_R_per_cash_day": 0.03623184849359072,
+        "mean_ci95": [
+          0.016918642178735604,
+          0.053946168844604875
+        ],
+        "p_holm9": 0.0008999550022498875,
+        "p_raw_two_sided": 9.99950002499875e-05
+      }
+    }
+  },
+  "method": {
+    "baseline_commit": "2ec3a07adcf2f1bc0301c267a4f410ce44b69905",
+    "chronology": "Verify actual interval intersections for A and Judas, not only nominal RTH windows. Assert zero-overlap before summing at full size. All cash days749+422 included, zeros included, overnight assigned next cashdate, Judas samecashday. Report marked minuteopen/close DD plus fills, not unobservable tick-DD.",
+    "date": "2026-10-25",
+    "inference": "20000 joint moving2calendar-month blocks, same fixed seeds as ICT scan2026102511/+1. Separate36old/21recent months; no era-gap blocks. Basic95%CIs and centered equal-tail two-sided p. Absolute S1-Judas andS2-Judas per3periods=6tests plus UNIQUE paired Judas-minus-B difference per3periods=3tests:Holm9. Also Bonferroni9 simultaneous95%totalR intervals. Delta exactly same for both portfolios and matches prior frozen ICT paired inference. Prior Holm480 and selection caveats remain; new Holm9 does not erase earlier scan.",
+    "outputs": "Append-only new code/report/aggregateCSV/JSON/local dashboard. ALL existing tracked and untracked research and benchmark files hash-preserved. No new strategy/signals/grid/exit optimization and no independent confirmation claim.",
+    "reconstruction": "Twice reconstruct sources, frozen B selectors, exact chosen Judas chain/strict fills, and same-held-contract overnight paths. Match every frozen ledger execution and original S1/S2 full stats incl marked DD. Complete-path/stop-identification limits carried, not changed or silently dropped.",
+    "rules": "Exactly selected ICT3_5m_BOTH_OPEN0830_JUDAS_2R, frozen one-tick trade-through entry, unchanged targets/stop/fee. S1-Judas=all original selective stopped A plus Judas; S2-Judas=all original broad unstopped bull nights plus Judas. Remove exactly original B149. No50/50 allocation or netting; each sequential position full original ATR exposure.",
+    "status": "EXPLORATORY_POST_SELECTION_REPLACEMENT_NOT_INDEPENDENT_VALIDATION",
+    "strict_scope": "Trade-through means one tick beyond the entry limit. Targets retain the frozen ICT touch/causal-order rules; it is not a tick-level or queue certificate. Overnight source/fill limitations remain identical to baseline.",
+    "units": "PortfolioR=netpoints/priorATR14. Standalone ICT initialStopR uses initial stopdistance and is separately reported; NEVER sum initialStopR with overnight ATR-R. NQpoints1contract/execution; total1.225point($24.50)friction per executed leg; no MNQ-cost assumption.",
+    "winner_check": "Recheck ALL80 frozen variants in each era and both fill modes: total netATR-R,tradePF_ATR anddailySharpe must each be strictly greater than B. Never assume the earlier touch-only label alone proves this. Report all actual qualifying variants and both-fill metrics."
+  },
+  "overlap": {
+    "S1": {
+      "overlap_minutes": 0,
+      "overlap_pairs": 0
+    },
+    "S2": {
+      "overlap_minutes": 0,
+      "overlap_pairs": 0
+    }
+  },
+  "performance": {
+    "2019_2021": {
+      "S1_JUDAS": {
+        "N": 143,
+        "calendar_quarters": 12,
+        "cash_days": 749,
+        "max_marked_drawdown_R": 2.9029433891162792,
+        "max_marked_drawdown_points": 434.87499999999955,
+        "net_R": 8.5764191669424,
+        "net_points": 1177.3250000000025,
+        "positive_quarters_R": 8,
+        "quarterly": [
+          {
+            "N": 7,
+            "net_R": 0.12331123383581888,
+            "net_points": 9.424999999999992,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 11,
+            "net_R": -0.22098177572828975,
+            "net_points": 11.274999999999997,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 11,
+            "net_R": -1.251106851048814,
+            "net_points": -136.97500000000002,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 11,
+            "net_R": 0.9965615945202604,
+            "net_points": 36.02499999999999,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 17,
+            "net_R": 4.262194608125258,
+            "net_points": 380.425,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 10,
+            "net_R": -0.1276038861734486,
+            "net_points": -2.7499999999999787,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 5,
+            "net_R": 1.098306410386719,
+            "net_points": 251.12500000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 14,
+            "net_R": 0.5542547384178586,
+            "net_points": 145.60000000000002,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 11,
+            "net_R": 0.7594482977338037,
+            "net_points": 215.27500000000003,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 12,
+            "net_R": 0.8722525463663694,
+            "net_points": 129.3,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 17,
+            "net_R": 1.712728901465451,
+            "net_points": 323.925,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 17,
+            "net_R": -0.20294665095858105,
+            "net_points": -185.32499999999996,
+            "quarter": "2021Q4"
+          }
+        ],
+        "sharpe_daily_R": 0.9686466278017165,
+        "trade_PF_R": 1.3902311581604982,
+        "winrate": 0.5174825174825175
+      },
+      "S1_ORIGINAL": {
+        "N": 172,
+        "calendar_quarters": 12,
+        "cash_days": 749,
+        "max_marked_drawdown_R": 3.5447288956264886,
+        "max_marked_drawdown_points": 625.1000000000008,
+        "net_R": 5.568024620642631,
+        "net_points": 951.7999999999981,
+        "positive_quarters_R": 7,
+        "quarterly": [
+          {
+            "N": 11,
+            "net_R": -1.0250570606796041,
+            "net_points": -94.47500000000001,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 17,
+            "net_R": -1.1428583022003236,
+            "net_points": -92.82500000000002,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 16,
+            "net_R": -0.7202411209541307,
+            "net_points": -59.100000000000016,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 11,
+            "net_R": 2.02995748505469,
+            "net_points": 141.27499999999998,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 18,
+            "net_R": 2.1436894771512205,
+            "net_points": 213.95000000000002,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 10,
+            "net_R": 1.4854414369369375,
+            "net_points": 301.5,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 6,
+            "net_R": 1.110872824982014,
+            "net_points": 253.90000000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 14,
+            "net_R": 0.9364565809260071,
+            "net_points": 113.85000000000001,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 15,
+            "net_R": -1.031613659635765,
+            "net_points": -203.87499999999994,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 17,
+            "net_R": -1.314249659222565,
+            "net_points": -214.325,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 24,
+            "net_R": 1.2492175594113897,
+            "net_points": 230.35000000000002,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 13,
+            "net_R": 1.8464090588727595,
+            "net_points": 361.57500000000005,
+            "quarter": "2021Q4"
+          }
+        ],
+        "sharpe_daily_R": 0.6314040377344211,
+        "trade_PF_R": 1.2267656132154956,
+        "winrate": 0.5
+      },
+      "S2_JUDAS": {
+        "N": 556,
+        "calendar_quarters": 12,
+        "cash_days": 749,
+        "max_marked_drawdown_R": 5.335828378143084,
+        "max_marked_drawdown_points": 811.9999999999995,
+        "net_R": 27.8929291978909,
+        "net_points": 4259.900000000006,
+        "positive_quarters_R": 12,
+        "quarterly": [
+          {
+            "N": 53,
+            "net_R": 3.000456214185406,
+            "net_points": 271.575,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 4.652310105702571,
+            "net_points": 504.875,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 45,
+            "net_R": 1.069706227376772,
+            "net_points": 72.62499999999997,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 58,
+            "net_R": 4.193731510626101,
+            "net_points": 327.95,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 43,
+            "net_R": 0.26358867832843347,
+            "net_points": -89.42499999999998,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 3.527247318687592,
+            "net_points": 786.8750000000001,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 13,
+            "net_R": 0.1188669363501389,
+            "net_points": 29.57500000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 59,
+            "net_R": 3.67388813257679,
+            "net_points": 1027.2250000000001,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 45,
+            "net_R": 0.5511564831713519,
+            "net_points": 167.3750000000001,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 4.042858980787683,
+            "net_points": 818.1250000000001,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 55,
+            "net_R": 2.241177266948808,
+            "net_points": 384.375,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 50,
+            "net_R": 0.557941343149209,
+            "net_points": -41.24999999999993,
+            "quarter": "2021Q4"
+          }
+        ],
+        "sharpe_daily_R": 1.5338022264241917,
+        "trade_PF_R": 1.3487592817290435,
+        "winrate": 0.5899280575539568
+      },
+      "S2_ORIGINAL": {
+        "N": 585,
+        "calendar_quarters": 12,
+        "cash_days": 749,
+        "max_marked_drawdown_R": 5.76934658339103,
+        "max_marked_drawdown_points": 745.7749999999992,
+        "net_R": 24.88453465159112,
+        "net_points": 4034.37500000003,
+        "positive_quarters_R": 10,
+        "quarterly": [
+          {
+            "N": 57,
+            "net_R": 1.8520879196699829,
+            "net_points": 167.67499999999995,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 51,
+            "net_R": 3.730433579230538,
+            "net_points": 400.77500000000003,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 50,
+            "net_R": 1.600571957471455,
+            "net_points": 150.49999999999997,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 58,
+            "net_R": 5.227127401160531,
+            "net_points": 433.19999999999993,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 44,
+            "net_R": -1.8549164526456041,
+            "net_points": -255.89999999999998,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 5.140292641797978,
+            "net_points": 1091.125,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 14,
+            "net_R": 0.13143335094543374,
+            "net_points": 32.35000000000004,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 59,
+            "net_R": 4.056089975084938,
+            "net_points": 995.475,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 49,
+            "net_R": -1.239905474198217,
+            "net_points": -251.7749999999999,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 50,
+            "net_R": 1.8563567751987486,
+            "net_points": 474.50000000000006,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 62,
+            "net_R": 1.7776659248947468,
+            "net_points": 290.80000000000007,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 46,
+            "net_R": 2.6072970529805493,
+            "net_points": 505.65000000000003,
+            "quarter": "2021Q4"
+          }
+        ],
+        "sharpe_daily_R": 1.3598378058840714,
+        "trade_PF_R": 1.301433783262057,
+        "winrate": 0.5811965811965812
+      }
+    },
+    "2024_2026": {
+      "S1_JUDAS": {
+        "N": 59,
+        "calendar_quarters": 7,
+        "cash_days": 422,
+        "max_marked_drawdown_R": 2.8147501944893074,
+        "max_marked_drawdown_points": 1071.5249999999992,
+        "net_R": 9.634747948823637,
+        "net_points": 3290.4750000000045,
+        "positive_quarters_R": 4,
+        "quarterly": [
+          {
+            "N": 2,
+            "net_R": 0.6155955620682437,
+            "net_points": 210.05,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 7,
+            "net_R": 2.4655302057695687,
+            "net_points": 1001.425,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 12,
+            "net_R": 4.769677684422098,
+            "net_points": 1124.55,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 8,
+            "net_R": -0.6184550473353507,
+            "net_points": -347.04999999999995,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 5,
+            "net_R": -0.7174299911655094,
+            "net_points": -234.375,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 15,
+            "net_R": 3.8316789750400697,
+            "net_points": 1798.125,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 10,
+            "net_R": -0.7118494399754847,
+            "net_points": -262.24999999999994,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 2.097581372172687,
+        "trade_PF_R": 2.814106741349199,
+        "winrate": 0.5932203389830508
+      },
+      "S1_ORIGINAL": {
+        "N": 79,
+        "calendar_quarters": 7,
+        "cash_days": 422,
+        "max_marked_drawdown_R": 1.6818779272947815,
+        "max_marked_drawdown_points": 677.4499999999998,
+        "net_R": 9.01914501344063,
+        "net_points": 2724.225000000004,
+        "positive_quarters_R": 6,
+        "quarterly": [
+          {
+            "N": 5,
+            "net_R": 0.7797601991161058,
+            "net_points": 272.125,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 11,
+            "net_R": 0.6583097644933379,
+            "net_points": 343.525,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 24,
+            "net_R": 4.956828173725915,
+            "net_points": 1194.6000000000001,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 8,
+            "net_R": 0.4932548927567994,
+            "net_points": 40.2,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 6,
+            "net_R": 0.15105843025731513,
+            "net_points": 102.40000000000003,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 14,
+            "net_R": 2.236580397054295,
+            "net_points": 892.1,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 11,
+            "net_R": -0.25664684396313736,
+            "net_points": -120.72499999999998,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.9520988559952868,
+        "trade_PF_R": 2.2988464207562163,
+        "winrate": 0.6075949367088608
+      },
+      "S2_JUDAS": {
+        "N": 279,
+        "calendar_quarters": 7,
+        "cash_days": 422,
+        "max_marked_drawdown_R": 5.41355547277977,
+        "max_marked_drawdown_points": 2397.324999999998,
+        "net_R": 14.53456538810384,
+        "net_points": 3689.7249999999954,
+        "positive_quarters_R": 4,
+        "quarterly": [
+          {
+            "N": 17,
+            "net_R": -0.717019287976015,
+            "net_points": -290.075,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 47,
+            "net_R": 5.2259116415366,
+            "net_points": 1783.175,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 56,
+            "net_R": 7.429056559674439,
+            "net_points": 1703.15,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 48,
+            "net_R": 0.17215654874118286,
+            "net_points": 3.450000000000027,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 18,
+            "net_R": -0.4302335835680002,
+            "net_points": -150.04999999999998,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 56,
+            "net_R": 4.155494935408409,
+            "net_points": 1641.6499999999999,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 37,
+            "net_R": -1.3008014257127771,
+            "net_points": -1001.575,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.5171270035135342,
+        "trade_PF_R": 1.385165537528786,
+        "winrate": 0.5734767025089605
+      },
+      "S2_ORIGINAL": {
+        "N": 299,
+        "calendar_quarters": 7,
+        "cash_days": 422,
+        "max_marked_drawdown_R": 6.055708569892738,
+        "max_marked_drawdown_points": 3461.7250000000067,
+        "net_R": 13.918962452720814,
+        "net_points": 3123.4749999999963,
+        "positive_quarters_R": 5,
+        "quarterly": [
+          {
+            "N": 20,
+            "net_R": -0.5528546509281529,
+            "net_points": -228.0,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 51,
+            "net_R": 3.4186912002603687,
+            "net_points": 1125.2749999999999,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 68,
+            "net_R": 7.616207048978257,
+            "net_points": 1773.2,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 48,
+            "net_R": 1.2838664888333329,
+            "net_points": 390.7,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 19,
+            "net_R": 0.4382548378548242,
+            "net_points": 186.72500000000005,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 55,
+            "net_R": 2.560396357422635,
+            "net_points": 735.625,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 38,
+            "net_R": -0.8455988297004301,
+            "net_points": -860.0500000000001,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.4970045504147147,
+        "trade_PF_R": 1.3535527391844304,
+        "winrate": 0.5785953177257525
+      }
+    },
+    "COMBINED": {
+      "S1_JUDAS": {
+        "N": 202,
+        "calendar_quarters": 19,
+        "cash_days": 1171,
+        "max_marked_drawdown_R": 2.9029433891162792,
+        "max_marked_drawdown_points": 1071.5249999999992,
+        "net_R": 18.211167115766028,
+        "net_points": 4467.800000000003,
+        "positive_quarters_R": 12,
+        "quarterly": [
+          {
+            "N": 7,
+            "net_R": 0.12331123383581888,
+            "net_points": 9.424999999999992,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 11,
+            "net_R": -0.22098177572828975,
+            "net_points": 11.274999999999997,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 11,
+            "net_R": -1.251106851048814,
+            "net_points": -136.97500000000002,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 11,
+            "net_R": 0.9965615945202604,
+            "net_points": 36.02499999999999,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 17,
+            "net_R": 4.262194608125258,
+            "net_points": 380.425,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 10,
+            "net_R": -0.1276038861734486,
+            "net_points": -2.7499999999999787,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 5,
+            "net_R": 1.098306410386719,
+            "net_points": 251.12500000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 14,
+            "net_R": 0.5542547384178586,
+            "net_points": 145.60000000000002,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 11,
+            "net_R": 0.7594482977338037,
+            "net_points": 215.27500000000003,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 12,
+            "net_R": 0.8722525463663694,
+            "net_points": 129.3,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 17,
+            "net_R": 1.712728901465451,
+            "net_points": 323.925,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 17,
+            "net_R": -0.20294665095858105,
+            "net_points": -185.32499999999996,
+            "quarter": "2021Q4"
+          },
+          {
+            "N": 2,
+            "net_R": 0.6155955620682437,
+            "net_points": 210.05,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 7,
+            "net_R": 2.4655302057695687,
+            "net_points": 1001.425,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 12,
+            "net_R": 4.769677684422098,
+            "net_points": 1124.55,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 8,
+            "net_R": -0.6184550473353507,
+            "net_points": -347.04999999999995,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 5,
+            "net_R": -0.7174299911655094,
+            "net_points": -234.375,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 15,
+            "net_R": 3.8316789750400697,
+            "net_points": 1798.125,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 10,
+            "net_R": -0.7118494399754847,
+            "net_points": -262.24999999999994,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.35317095415326,
+        "trade_PF_R": 1.6673493376903108,
+        "winrate": 0.5396039603960396
+      },
+      "S1_ORIGINAL": {
+        "N": 251,
+        "calendar_quarters": 19,
+        "cash_days": 1171,
+        "max_marked_drawdown_R": 3.5447288956264886,
+        "max_marked_drawdown_points": 677.4499999999998,
+        "net_R": 14.587169634083258,
+        "net_points": 3676.0250000000046,
+        "positive_quarters_R": 13,
+        "quarterly": [
+          {
+            "N": 11,
+            "net_R": -1.0250570606796041,
+            "net_points": -94.47500000000001,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 17,
+            "net_R": -1.1428583022003236,
+            "net_points": -92.82500000000002,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 16,
+            "net_R": -0.7202411209541307,
+            "net_points": -59.100000000000016,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 11,
+            "net_R": 2.02995748505469,
+            "net_points": 141.27499999999998,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 18,
+            "net_R": 2.1436894771512205,
+            "net_points": 213.95000000000002,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 10,
+            "net_R": 1.4854414369369375,
+            "net_points": 301.5,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 6,
+            "net_R": 1.110872824982014,
+            "net_points": 253.90000000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 14,
+            "net_R": 0.9364565809260071,
+            "net_points": 113.85000000000001,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 15,
+            "net_R": -1.031613659635765,
+            "net_points": -203.87499999999994,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 17,
+            "net_R": -1.314249659222565,
+            "net_points": -214.325,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 24,
+            "net_R": 1.2492175594113897,
+            "net_points": 230.35000000000002,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 13,
+            "net_R": 1.8464090588727595,
+            "net_points": 361.57500000000005,
+            "quarter": "2021Q4"
+          },
+          {
+            "N": 5,
+            "net_R": 0.7797601991161058,
+            "net_points": 272.125,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 11,
+            "net_R": 0.6583097644933379,
+            "net_points": 343.525,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 24,
+            "net_R": 4.956828173725915,
+            "net_points": 1194.6000000000001,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 8,
+            "net_R": 0.4932548927567994,
+            "net_points": 40.2,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 6,
+            "net_R": 0.15105843025731513,
+            "net_points": 102.40000000000003,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 14,
+            "net_R": 2.236580397054295,
+            "net_points": 892.1,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 11,
+            "net_R": -0.25664684396313736,
+            "net_points": -120.72499999999998,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.0845263459341754,
+        "trade_PF_R": 1.4631132480059632,
+        "winrate": 0.5338645418326693
+      },
+      "S2_JUDAS": {
+        "N": 835,
+        "calendar_quarters": 19,
+        "cash_days": 1171,
+        "max_marked_drawdown_R": 5.413555472779748,
+        "max_marked_drawdown_points": 2397.3250000000135,
+        "net_R": 42.427494585994765,
+        "net_points": 7949.6249999999145,
+        "positive_quarters_R": 16,
+        "quarterly": [
+          {
+            "N": 53,
+            "net_R": 3.000456214185406,
+            "net_points": 271.575,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 4.652310105702571,
+            "net_points": 504.875,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 45,
+            "net_R": 1.069706227376772,
+            "net_points": 72.62499999999997,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 58,
+            "net_R": 4.193731510626101,
+            "net_points": 327.95,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 43,
+            "net_R": 0.26358867832843347,
+            "net_points": -89.42499999999998,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 3.527247318687592,
+            "net_points": 786.8750000000001,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 13,
+            "net_R": 0.1188669363501389,
+            "net_points": 29.57500000000003,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 59,
+            "net_R": 3.67388813257679,
+            "net_points": 1027.2250000000001,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 45,
+            "net_R": 0.5511564831713519,
+            "net_points": 167.3750000000001,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 4.042858980787683,
+            "net_points": 818.1250000000001,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 55,
+            "net_R": 2.241177266948808,
+            "net_points": 384.375,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 50,
+            "net_R": 0.557941343149209,
+            "net_points": -41.24999999999993,
+            "quarter": "2021Q4"
+          },
+          {
+            "N": 17,
+            "net_R": -0.717019287976015,
+            "net_points": -290.075,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 47,
+            "net_R": 5.2259116415366,
+            "net_points": 1783.175,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 56,
+            "net_R": 7.429056559674439,
+            "net_points": 1703.15,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 48,
+            "net_R": 0.17215654874118286,
+            "net_points": 3.450000000000027,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 18,
+            "net_R": -0.4302335835680002,
+            "net_points": -150.04999999999998,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 56,
+            "net_R": 4.155494935408409,
+            "net_points": 1641.6499999999999,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 37,
+            "net_R": -1.3008014257127771,
+            "net_points": -1001.575,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.527889025564599,
+        "trade_PF_R": 1.3604301834103456,
+        "winrate": 0.5844311377245509
+      },
+      "S2_ORIGINAL": {
+        "N": 884,
+        "calendar_quarters": 19,
+        "cash_days": 1171,
+        "max_marked_drawdown_R": 6.0557085698927295,
+        "max_marked_drawdown_points": 3461.7250000000113,
+        "net_R": 38.80349710431198,
+        "net_points": 7157.8499999999385,
+        "positive_quarters_R": 15,
+        "quarterly": [
+          {
+            "N": 57,
+            "net_R": 1.8520879196699829,
+            "net_points": 167.67499999999995,
+            "quarter": "2019Q1"
+          },
+          {
+            "N": 51,
+            "net_R": 3.730433579230538,
+            "net_points": 400.77500000000003,
+            "quarter": "2019Q2"
+          },
+          {
+            "N": 50,
+            "net_R": 1.600571957471455,
+            "net_points": 150.49999999999997,
+            "quarter": "2019Q3"
+          },
+          {
+            "N": 58,
+            "net_R": 5.227127401160531,
+            "net_points": 433.19999999999993,
+            "quarter": "2019Q4"
+          },
+          {
+            "N": 44,
+            "net_R": -1.8549164526456041,
+            "net_points": -255.89999999999998,
+            "quarter": "2020Q1"
+          },
+          {
+            "N": 45,
+            "net_R": 5.140292641797978,
+            "net_points": 1091.125,
+            "quarter": "2020Q2"
+          },
+          {
+            "N": 14,
+            "net_R": 0.13143335094543374,
+            "net_points": 32.35000000000004,
+            "quarter": "2020Q3"
+          },
+          {
+            "N": 59,
+            "net_R": 4.056089975084938,
+            "net_points": 995.475,
+            "quarter": "2020Q4"
+          },
+          {
+            "N": 49,
+            "net_R": -1.239905474198217,
+            "net_points": -251.7749999999999,
+            "quarter": "2021Q1"
+          },
+          {
+            "N": 50,
+            "net_R": 1.8563567751987486,
+            "net_points": 474.50000000000006,
+            "quarter": "2021Q2"
+          },
+          {
+            "N": 62,
+            "net_R": 1.7776659248947468,
+            "net_points": 290.80000000000007,
+            "quarter": "2021Q3"
+          },
+          {
+            "N": 46,
+            "net_R": 2.6072970529805493,
+            "net_points": 505.65000000000003,
+            "quarter": "2021Q4"
+          },
+          {
+            "N": 20,
+            "net_R": -0.5528546509281529,
+            "net_points": -228.0,
+            "quarter": "2025Q1"
+          },
+          {
+            "N": 51,
+            "net_R": 3.4186912002603687,
+            "net_points": 1125.2749999999999,
+            "quarter": "2025Q2"
+          },
+          {
+            "N": 68,
+            "net_R": 7.616207048978257,
+            "net_points": 1773.2,
+            "quarter": "2025Q3"
+          },
+          {
+            "N": 48,
+            "net_R": 1.2838664888333329,
+            "net_points": 390.7,
+            "quarter": "2025Q4"
+          },
+          {
+            "N": 19,
+            "net_R": 0.4382548378548242,
+            "net_points": 186.72500000000005,
+            "quarter": "2026Q1"
+          },
+          {
+            "N": 55,
+            "net_R": 2.560396357422635,
+            "net_points": 735.625,
+            "quarter": "2026Q2"
+          },
+          {
+            "N": 38,
+            "net_R": -0.8455988297004301,
+            "net_points": -860.0500000000001,
+            "quarter": "2026Q3"
+          }
+        ],
+        "sharpe_daily_R": 1.404941102348657,
+        "trade_PF_R": 1.3182629895743736,
+        "winrate": 0.580316742081448
+      }
+    }
+  },
+  "quality": {
+    "S1": {
+      "2019_2021": {
+        "N": 75,
+        "incomplete_paths": 14,
+        "unidentified_stop_paths": 14
+      },
+      "2024_2026": {
+        "N": 27,
+        "incomplete_paths": 1,
+        "unidentified_stop_paths": 1
+      }
+    },
+    "S2": {
+      "2019_2021": {
+        "N": 488,
+        "incomplete_paths": 91,
+        "unidentified_stop_paths": null
+      },
+      "2024_2026": {
+        "N": 247,
+        "incomplete_paths": 17,
+        "unidentified_stop_paths": null
+      }
+    }
+  },
+  "raw_data_published": false,
+  "reports": {
+    "full": "/reports/JUDAS_ONE_FOR_ONE_REPLACEMENT.md",
+    "inference": "/reports/JUDAS_REPLACEMENT_INFERENCE.csv",
+    "portfolios": "/reports/JUDAS_PORTFOLIO_PERFORMANCE.csv",
+    "winners": "/reports/SEVEN_ICT_VARIANTS.csv"
+  },
+  "selected_Judas": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+  "status": "EXPLORATORY_POST_SELECTION_REPLACEMENT_NOT_INDEPENDENT_VALIDATION",
+  "winner_names": [
+    "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+    "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+    "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+    "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+    "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+    "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+    "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME"
+  ],
+  "winner_rows": [
+    {
+      "N": 69,
+      "PF_ATR_R": 1.1391957066726688,
+      "PF_stop_R": 1.2610034773942325,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.933408929618293,
+      "max_marked_drawdown_stop_R": 8.239992292951964,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 1.5677861785749145,
+      "net_points": 356.7249999999998,
+      "net_stop_R": 10.455127587717245,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 8,
+      "sharpe_ATR_R": 0.27158025244187156,
+      "sharpe_stop_R": 0.44258927852576135,
+      "winrate": 0.4057971014492754
+    },
+    {
+      "N": 22,
+      "PF_ATR_R": 1.97736043274838,
+      "PF_stop_R": 2.0996376732697155,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.0561228528457214,
+      "max_marked_drawdown_stop_R": 5.024575474058138,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 2.5597090820551,
+      "net_points": 765.5499999999997,
+      "net_stop_R": 11.314898246269207,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.9975242366569974,
+      "sharpe_stop_R": 0.9996762617538555,
+      "winrate": 0.5
+    },
+    {
+      "N": 91,
+      "PF_ATR_R": 1.2973232501957792,
+      "PF_stop_R": 1.4323989172890086,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.933408929618293,
+      "max_marked_drawdown_stop_R": 8.239992292951964,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 4.127495260630015,
+      "net_points": 1122.275,
+      "net_stop_R": 21.770025833986455,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 12,
+      "sharpe_ATR_R": 0.4921347264990406,
+      "sharpe_stop_R": 0.6214504374992986,
+      "winrate": 0.42857142857142855
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.1918342763303846,
+      "PF_stop_R": 1.2870119525772796,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.586533853294258,
+      "max_marked_drawdown_stop_R": 8.239992292951964,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 2.0652359088348455,
+      "net_points": 392.9499999999998,
+      "net_stop_R": 11.264624794421154,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 8,
+      "sharpe_ATR_R": 0.3618108168585303,
+      "sharpe_stop_R": 0.47772261853834963,
+      "winrate": 0.4117647058823529
+    },
+    {
+      "N": 22,
+      "PF_ATR_R": 1.97736043274838,
+      "PF_stop_R": 2.0996376732697155,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.0561228528457214,
+      "max_marked_drawdown_stop_R": 5.024575474058138,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 2.5597090820551,
+      "net_points": 765.5499999999997,
+      "net_stop_R": 11.314898246269207,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.9975242366569974,
+      "sharpe_stop_R": 0.9996762617538555,
+      "winrate": 0.5
+    },
+    {
+      "N": 90,
+      "PF_ATR_R": 1.3455388679719962,
+      "PF_stop_R": 1.4558058478895195,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.586533853294258,
+      "max_marked_drawdown_stop_R": 8.239992292951964,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 4.624944990889945,
+      "net_points": 1158.5000000000002,
+      "net_stop_R": 22.579523040690365,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 12,
+      "sharpe_ATR_R": 0.5560841244951613,
+      "sharpe_stop_R": 0.6453979097842607,
+      "winrate": 0.43333333333333335
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.4153161324637464,
+      "PF_stop_R": 1.2045694163861858,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.581508727677271,
+      "max_marked_drawdown_stop_R": 8.436815380567257,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 4.440879273818849,
+      "net_points": 376.6999999999997,
+      "net_stop_R": 6.970989887487519,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.6977276331411834,
+      "sharpe_stop_R": 0.4016878173815565,
+      "winrate": 0.47058823529411764
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.5372674758404212,
+      "PF_stop_R": 1.3067644700845684,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.372631698169334,
+      "max_marked_drawdown_stop_R": 8.664283852614723,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 2.2287094893215422,
+      "net_points": 830.7999999999997,
+      "net_stop_R": 4.7050725987461295,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.7431026449338558,
+      "sharpe_stop_R": 0.525021013764718,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.4494029420470953,
+      "PF_stop_R": 1.2362899080615635,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.581508727677271,
+      "max_marked_drawdown_stop_R": 8.664283852614723,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 6.669588763140392,
+      "net_points": 1207.5000000000002,
+      "net_stop_R": 11.676062486233649,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.7100640731507205,
+      "sharpe_stop_R": 0.4434890802438657,
+      "winrate": 0.46
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.4153161324637464,
+      "PF_stop_R": 1.2045694163861858,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.581508727677271,
+      "max_marked_drawdown_stop_R": 8.436815380567257,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 4.440879273818849,
+      "net_points": 376.6999999999997,
+      "net_stop_R": 6.970989887487519,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.6977276331411834,
+      "sharpe_stop_R": 0.4016878173815565,
+      "winrate": 0.47058823529411764
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.5372674758404212,
+      "PF_stop_R": 1.3067644700845684,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.372631698169334,
+      "max_marked_drawdown_stop_R": 8.664283852614723,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 2.2287094893215422,
+      "net_points": 830.7999999999997,
+      "net_stop_R": 4.7050725987461295,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.7431026449338558,
+      "sharpe_stop_R": 0.525021013764718,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.4494029420470953,
+      "PF_stop_R": 1.2362899080615635,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.581508727677271,
+      "max_marked_drawdown_stop_R": 8.664283852614723,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "net_ATR_R": 6.669588763140392,
+      "net_points": 1207.5000000000002,
+      "net_stop_R": 11.676062486233649,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.7100640731507205,
+      "sharpe_stop_R": 0.4434890802438657,
+      "winrate": 0.46
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.2724097147591915,
+      "PF_stop_R": 1.049758148220914,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 3.036418414784877,
+      "net_points": 114.45000000000007,
+      "net_stop_R": 1.77139134927303,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.4677841127862338,
+      "sharpe_stop_R": 0.10234381251690851,
+      "winrate": 0.4411764705882353
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.8079426384930264,
+      "PF_stop_R": 1.5058444198278984,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.4342962582827044,
+      "max_marked_drawdown_stop_R": 8.910010348341217,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 3.351532534926284,
+      "net_points": 1339.0500000000002,
+      "net_stop_R": 7.7585084032213825,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.9046667940490475,
+      "sharpe_stop_R": 0.7542649982450748,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.4176566180642882,
+      "PF_stop_R": 1.1870890940397054,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 6.38795094971116,
+      "net_points": 1453.5000000000005,
+      "net_stop_R": 9.529899752494414,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.6267292649962553,
+      "sharpe_stop_R": 0.3453201293292334,
+      "winrate": 0.44
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.2724097147591915,
+      "PF_stop_R": 1.049758148220914,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 3.036418414784877,
+      "net_points": 114.45000000000007,
+      "net_stop_R": 1.77139134927303,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.4677841127862338,
+      "sharpe_stop_R": 0.10234381251690851,
+      "winrate": 0.4411764705882353
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.8079426384930264,
+      "PF_stop_R": 1.5058444198278984,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.4342962582827044,
+      "max_marked_drawdown_stop_R": 8.910010348341217,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 3.351532534926284,
+      "net_points": 1339.0500000000002,
+      "net_stop_R": 7.7585084032213825,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.9046667940490475,
+      "sharpe_stop_R": 0.7542649982450748,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.4176566180642882,
+      "PF_stop_R": 1.1870890940397054,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "net_ATR_R": 6.38795094971116,
+      "net_points": 1453.5000000000005,
+      "net_stop_R": 9.529899752494414,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.6267292649962553,
+      "sharpe_stop_R": 0.3453201293292334,
+      "winrate": 0.44
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.273650293904957,
+      "PF_stop_R": 1.059866157108845,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 3.050246546305554,
+      "net_points": 111.45000000000007,
+      "net_stop_R": 2.131236724204611,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.4730827193728053,
+      "sharpe_stop_R": 0.12155184909904561,
+      "winrate": 0.4411764705882353
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.5130433956925184,
+      "PF_stop_R": 1.3359459951783839,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.4342962582827044,
+      "max_marked_drawdown_stop_R": 8.910010348341219,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 2.1282224140314088,
+      "net_points": 730.2999999999997,
+      "net_stop_R": 5.152651140259371,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.7430867902687124,
+      "sharpe_stop_R": 0.5587969132875067,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.338578340652885,
+      "PF_stop_R": 1.1429958359522807,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 5.178468960336963,
+      "net_points": 841.75,
+      "net_stop_R": 7.283887864463983,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.5530002543658825,
+      "sharpe_stop_R": 0.2721938681442909,
+      "winrate": 0.44
+    },
+    {
+      "N": 68,
+      "PF_ATR_R": 1.273650293904957,
+      "PF_stop_R": 1.059866157108845,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 3.050246546305554,
+      "net_points": 111.45000000000007,
+      "net_stop_R": 2.131236724204611,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.4730827193728053,
+      "sharpe_stop_R": 0.12155184909904561,
+      "winrate": 0.4411764705882353
+    },
+    {
+      "N": 32,
+      "PF_ATR_R": 1.5130433956925184,
+      "PF_stop_R": 1.3359459951783839,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.4342962582827044,
+      "max_marked_drawdown_stop_R": 8.910010348341219,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 2.1282224140314088,
+      "net_points": 730.2999999999997,
+      "net_stop_R": 5.152651140259371,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.7430867902687124,
+      "sharpe_stop_R": 0.5587969132875067,
+      "winrate": 0.4375
+    },
+    {
+      "N": 100,
+      "PF_ATR_R": 1.338578340652885,
+      "PF_stop_R": 1.1429958359522807,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 2.7912834435063623,
+      "max_marked_drawdown_stop_R": 9.004944001315565,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "net_ATR_R": 5.178468960336963,
+      "net_points": 841.75,
+      "net_stop_R": 7.283887864463983,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 11,
+      "sharpe_ATR_R": 0.5530002543658825,
+      "sharpe_stop_R": 0.2721938681442909,
+      "winrate": 0.44
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3698974069853327,
+      "PF_stop_R": 1.4260991318010805,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7128467071287812,
+      "max_marked_drawdown_stop_R": 5.172941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 2.101103105535544,
+      "net_points": 23.724999999999966,
+      "net_stop_R": 7.056310996345817,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 5,
+      "sharpe_ATR_R": 0.48866081570278336,
+      "sharpe_stop_R": 0.5682748693191791,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.1485992016086146,
+      "PF_stop_R": 1.9723930936664589,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179295,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 1.9121057210089196,
+      "net_points": 497.19999999999993,
+      "net_stop_R": 6.136040893462692,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.0676522678431235,
+      "sharpe_stop_R": 0.9444000765979308,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.546389439453019,
+      "PF_stop_R": 1.5768282106096414,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7128467071287812,
+      "max_marked_drawdown_stop_R": 5.172941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 4.013208826544464,
+      "net_points": 520.9249999999998,
+      "net_stop_R": 13.19235188980851,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 8,
+      "sharpe_ATR_R": 0.652916998603872,
+      "sharpe_stop_R": 0.697302031925415,
+      "winrate": 0.543859649122807
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3698974069853327,
+      "PF_stop_R": 1.4260991318010805,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7128467071287812,
+      "max_marked_drawdown_stop_R": 5.172941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 2.101103105535544,
+      "net_points": 23.724999999999966,
+      "net_stop_R": 7.056310996345817,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 5,
+      "sharpe_ATR_R": 0.48866081570278336,
+      "sharpe_stop_R": 0.5682748693191791,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.1485992016086146,
+      "PF_stop_R": 1.9723930936664589,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179295,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 1.9121057210089196,
+      "net_points": 497.19999999999993,
+      "net_stop_R": 6.136040893462692,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.0676522678431235,
+      "sharpe_stop_R": 0.9444000765979308,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.546389439453019,
+      "PF_stop_R": 1.5768282106096414,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7128467071287812,
+      "max_marked_drawdown_stop_R": 5.172941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "net_ATR_R": 4.013208826544464,
+      "net_points": 520.9249999999998,
+      "net_stop_R": 13.19235188980851,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 8,
+      "sharpe_ATR_R": 0.652916998603872,
+      "sharpe_stop_R": 0.697302031925415,
+      "winrate": 0.543859649122807
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3239712498328227,
+      "PF_stop_R": 1.3579535000022596,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 1.840231875848125,
+      "net_points": -12.02499999999992,
+      "net_stop_R": 5.927801841721582,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.4327052101679905,
+      "sharpe_stop_R": 0.4918551639515425,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.3068231514902906,
+      "PF_stop_R": 2.1427237398251666,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179297,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 2.175505625297267,
+      "net_points": 554.9499999999998,
+      "net_stop_R": 7.2108693934255434,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.126195329571591,
+      "sharpe_stop_R": 1.009949781667013,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.546733712865512,
+      "PF_stop_R": 1.574481053997135,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 4.015737501145392,
+      "net_points": 542.925,
+      "net_stop_R": 13.138671235147129,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.646258038347565,
+      "sharpe_stop_R": 0.6846011022361878,
+      "winrate": 0.543859649122807
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3239712498328227,
+      "PF_stop_R": 1.3579535000022596,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 1.840231875848125,
+      "net_points": -12.02499999999992,
+      "net_stop_R": 5.927801841721582,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.4327052101679905,
+      "sharpe_stop_R": 0.4918551639515425,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.3068231514902906,
+      "PF_stop_R": 2.1427237398251666,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179297,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 2.175505625297267,
+      "net_points": 554.9499999999998,
+      "net_stop_R": 7.2108693934255434,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.126195329571591,
+      "sharpe_stop_R": 1.009949781667013,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.546733712865512,
+      "PF_stop_R": 1.574481053997135,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "net_ATR_R": 4.015737501145392,
+      "net_points": 542.925,
+      "net_stop_R": 13.138671235147129,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.646258038347565,
+      "sharpe_stop_R": 0.6846011022361878,
+      "winrate": 0.543859649122807
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3239712498328227,
+      "PF_stop_R": 1.3579535000022596,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 1.840231875848125,
+      "net_points": -12.02499999999992,
+      "net_stop_R": 5.927801841721582,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.4327052101679905,
+      "sharpe_stop_R": 0.4918551639515425,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.2714850292257642,
+      "PF_stop_R": 2.104053442581621,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179302,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 2.116677249257059,
+      "net_points": 542.1999999999998,
+      "net_stop_R": 6.966850254669563,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.1161025788525942,
+      "sharpe_stop_R": 0.9988128270275876,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.538724360549745,
+      "PF_stop_R": 1.5638114535848038,
+      "fill": "TOUCH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 3.9569091251051853,
+      "net_points": 530.175,
+      "net_stop_R": 12.894652096391145,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.6399032391849149,
+      "sharpe_stop_R": 0.6778513586390491,
+      "winrate": 0.543859649122807
+    },
+    {
+      "N": 39,
+      "PF_ATR_R": 1.3239712498328227,
+      "PF_stop_R": 1.3579535000022596,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 1.840231875848125,
+      "net_points": -12.02499999999992,
+      "net_stop_R": 5.927801841721582,
+      "period": "2019_2021",
+      "positive_quarters_ATR_R": 4,
+      "sharpe_ATR_R": 0.4327052101679905,
+      "sharpe_stop_R": 0.4918551639515425,
+      "winrate": 0.5384615384615384
+    },
+    {
+      "N": 18,
+      "PF_ATR_R": 2.2714850292257642,
+      "PF_stop_R": 2.104053442581621,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.2125387615179302,
+      "max_marked_drawdown_stop_R": 4.764219473693803,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 2.116677249257059,
+      "net_points": 542.1999999999998,
+      "net_stop_R": 6.966850254669563,
+      "period": "2024_2026",
+      "positive_quarters_ATR_R": 3,
+      "sharpe_ATR_R": 1.1161025788525942,
+      "sharpe_stop_R": 0.9988128270275876,
+      "winrate": 0.5555555555555556
+    },
+    {
+      "N": 57,
+      "PF_ATR_R": 1.538724360549745,
+      "PF_stop_R": 1.5638114535848038,
+      "fill": "TRADE_THROUGH",
+      "max_marked_drawdown_ATR_R": 1.7645418957861292,
+      "max_marked_drawdown_stop_R": 6.040941613308588,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "net_ATR_R": 3.9569091251051853,
+      "net_points": 530.175,
+      "net_stop_R": 12.894652096391145,
+      "period": "COMBINED",
+      "positive_quarters_ATR_R": 7,
+      "sharpe_ATR_R": 0.6399032391849149,
+      "sharpe_stop_R": 0.6778513586390491,
+      "winrate": 0.543859649122807
+    }
+  ]
+}

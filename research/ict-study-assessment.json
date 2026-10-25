@@ -1,0 +1,737 @@
+{
+  "counts": {
+    "descriptive_portfolio_condition": 11,
+    "incremental_holm480_all_periods": 0,
+    "positive_both_eras_both_fills": 26,
+    "touch_exceeds_B_return_PF_sharpe_both_eras": 7
+  },
+  "criteria": {
+    "candidate": "Positive net ATR-R in BOTH eras with touch AND one-tick trade-through; combinedN>=30 reported as descriptive sample-size label, not tuned exclusion.",
+    "dominates_B": "For each era: greater total net ATR-R AND higher trade PF_ATR_R AND higher daily Sharpe_ATR_R than frozen B. DD is reported as a separate tradeoff; no claim of general dominance if worse DD.",
+    "portfolio": "For BOTH eras and BOTH S1/S2 baselines: equal0.5/0.5 separate sleeves improve daily Sharpe and do not increase DAILY close DD, plus positive standalone in both eras under bothfill assumptions. Diagnostic only; no third-pillar promotion.",
+    "significance": "All Holm480 tests remain reported. Already-consumed development pool and selection cannot provide independent validation, even when p passes."
+  },
+  "records": [
+    {
+      "combined_ATR_R": 5.961307714417779,
+      "combined_N": 433,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_ON_REVERSAL_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 7.519032169189271,
+      "combined_N": 433,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_ON_REVERSAL_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 6.176018593485134,
+      "combined_N": 429,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_ON_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -8.776533665127806,
+      "combined_N": 706,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_PRE_REVERSAL_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -4.856495482894167,
+      "combined_N": 706,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_PRE_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -3.789069793636983,
+      "combined_N": 585,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BOTH_PRE_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -7.217318285037451,
+      "combined_N": 449,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_AM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -7.08012972342725,
+      "combined_N": 449,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_AM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.895653361948945,
+      "combined_N": 283,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_AM_CONTINUE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.31310071877707896,
+      "combined_N": 283,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_AM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -2.035118556039424,
+      "combined_N": 216,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_PM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.7464181569261585,
+      "combined_N": 216,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_PM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.546683503570234,
+      "combined_N": 137,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_PM_CONTINUE_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.28111487552312114,
+      "combined_N": 137,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BOTH_PM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.8415182963498705,
+      "combined_N": 140,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0930_JUDAS_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 3.4574283198473594,
+      "combined_N": 140,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0930_JUDAS_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 4.154576913310769,
+      "combined_N": 140,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0930_JUDAS_TIME",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.17670476405526414,
+      "combined_N": 164,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0830_JUDAS_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 2.3826086685244956,
+      "combined_N": 164,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0830_JUDAS_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.4003534736165488,
+      "combined_N": 164,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BOTH_OPEN0830_JUDAS_TIME",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.3386601045825095,
+      "combined_N": 129,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_ON_REVERSAL_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.3645079953434764,
+      "combined_N": 129,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_ON_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.6047618201500227,
+      "combined_N": 128,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_ON_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -5.987341465720194,
+      "combined_N": 286,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_PRE_REVERSAL_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -6.626458454157647,
+      "combined_N": 286,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_PRE_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -5.349276013119421,
+      "combined_N": 233,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_1m_BULL_LONG_PRE_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -4.782785458411128,
+      "combined_N": 150,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_AM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -3.639056174055009,
+      "combined_N": 150,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_AM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.20922990893508855,
+      "combined_N": 66,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_AM_CONTINUE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.35808979643393507,
+      "combined_N": 66,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_AM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.2390140400316523,
+      "combined_N": 64,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_PM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.4795155659076549,
+      "combined_N": 64,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_PM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.7777791235849508,
+      "combined_N": 44,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_PM_CONTINUE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.02866903120794359,
+      "combined_N": 44,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_1m_BULL_LONG_PM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 2.446810799648945,
+      "combined_N": 91,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 3.8720413209812237,
+      "combined_N": 91,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 4.127495260630015,
+      "combined_N": 91,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 0.24777321363600846,
+      "combined_N": 107,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0830_JUDAS_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.9025098251397734,
+      "combined_N": 107,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0830_JUDAS_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.310103118402201,
+      "combined_N": 107,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_1m_BULL_LONG_OPEN0830_JUDAS_TIME",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 8.249554228307764,
+      "combined_N": 158,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_ON_REVERSAL_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 6.811025429925988,
+      "combined_N": 158,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_ON_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 7.124334309401371,
+      "combined_N": 154,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_ON_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.8573649621532309,
+      "combined_N": 269,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_PRE_REVERSAL_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.3455964296652732,
+      "combined_N": 269,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_PRE_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.1835543430965918,
+      "combined_N": 203,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BOTH_PRE_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.3239248133524513,
+      "combined_N": 162,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_AM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.783538287302115,
+      "combined_N": 162,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_AM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.3243743483160982,
+      "combined_N": 91,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_AM_CONTINUE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.9062257122875654,
+      "combined_N": 91,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_AM_CONTINUE_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -3.1635258365546557,
+      "combined_N": 99,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_PM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -4.089575511631223,
+      "combined_N": 99,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_PM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.96836839278989,
+      "combined_N": 72,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_PM_CONTINUE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -1.3758972480378282,
+      "combined_N": 72,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BOTH_PM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 3.6311510696501124,
+      "combined_N": 76,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0930_JUDAS_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 5.574498994102844,
+      "combined_N": 76,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0930_JUDAS_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 4.9817871181607165,
+      "combined_N": 76,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0930_JUDAS_TIME",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 6.669588763140392,
+      "combined_N": 100,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 6.38795094971116,
+      "combined_N": 100,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 5.178468960336963,
+      "combined_N": 100,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BOTH_OPEN0830_JUDAS_TIME",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 3.999813107382903,
+      "combined_N": 39,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_ON_REVERSAL_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 2.2571278192457345,
+      "combined_N": 39,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_ON_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 2.0100583946449317,
+      "combined_N": 38,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_ON_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 2.130820617268433,
+      "combined_N": 88,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_PRE_REVERSAL_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": -0.016035829171580807,
+      "combined_N": 88,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_PRE_REVERSAL_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.4540169539210679,
+      "combined_N": 60,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT1_5m_BULL_LONG_PRE_REVERSAL_OPPOSITE_ON",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.8067857633702054,
+      "combined_N": 49,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_AM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.9073576224725382,
+      "combined_N": 49,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_AM_FADE_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.6538872622378276,
+      "combined_N": 26,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_AM_CONTINUE_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.09956056670228586,
+      "combined_N": 26,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_AM_CONTINUE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.21230573122391505,
+      "combined_N": 32,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_PM_FADE_2R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.24449471416628865,
+      "combined_N": 32,
+      "descriptive_portfolio_condition": false,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_PM_FADE_3R",
+      "positive_both_eras_both_fills": false,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 0.9568001349393795,
+      "combined_N": 23,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_PM_CONTINUE_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 1.1039788977301674,
+      "combined_N": 23,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT2_5m_BULL_LONG_PM_CONTINUE_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 4.013208826544464,
+      "combined_N": 57,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 4.015737501145392,
+      "combined_N": 57,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 3.9569091251051853,
+      "combined_N": 57,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0930_JUDAS_TIME",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": true
+    },
+    {
+      "combined_ATR_R": 5.337572835814244,
+      "combined_N": 73,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0830_JUDAS_2R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 5.171717093968802,
+      "combined_N": 73,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0830_JUDAS_3R",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    },
+    {
+      "combined_ATR_R": 5.284796474742011,
+      "combined_N": 73,
+      "descriptive_portfolio_condition": true,
+      "incremental_holm480_all_periods": false,
+      "model": "ICT3_5m_BULL_LONG_OPEN0830_JUDAS_TIME",
+      "positive_both_eras_both_fills": true,
+      "touch_exceeds_B_return_PF_sharpe_both_eras": false
+    }
+  ],
+  "status": "EXPLORATORY_CONSUMED_DEVELOPMENT_POOL_NOT_INDEPENDENT_VALIDATION"
+}

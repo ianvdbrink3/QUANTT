@@ -1,0 +1,14 @@
+{
+  "files_sha256": {
+    "app/research/judas-replacement/page.tsx": "af921bea6bb014053f8da719b35f566d7f06593950a9ccc5c972e4c5db4d4517",
+    "public/data/judas-replacement.json": "42d60796b2b0914ffc4420c72ec0e55bc2f1f0a9d0f659c579b9264de88fa0d7",
+    "public/reports/JUDAS_ONE_FOR_ONE_REPLACEMENT.md": "a14218a736998830b46fe69f5db3c4f9522e77a17413a8012a409bd92fefbe25",
+    "public/reports/JUDAS_PORTFOLIO_PERFORMANCE.csv": "f88ae0da006fa794aadc45ad80fb1376c94e6f48af42a34deb8e799b82c25a09",
+    "public/reports/JUDAS_REPLACEMENT_INFERENCE.csv": "62ba0dc6b6a8a327fe1db9cd30ea0471d0976b9fac0af776945b63a2eba625f5",
+    "public/reports/SEVEN_ICT_VARIANTS.csv": "c9e5899a59edd87753f74a0b0cb4482d1ec0976a182c760cd96864f3cf411055",
+    "scripts/publish_judas_replacement.py": "8f6ece4e616fa1b06e73c5c061d4947087db0fb593bf59c1790c87eced77869c"
+  },
+  "prior_files_unchanged": true,
+  "source_verification_sha256": "64a2dfa71387b009ca044c722245c5ffa573002dec5aee51085b9e2a21d87812",
+  "status": "LOCAL_APPEND_ONLY_JUDAS_COMPARISON_READY"
+}
