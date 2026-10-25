@@ -1,0 +1,21 @@
+{
+  "files_sha256": {
+    "public/data/operational-consolidation.json": "eeca7b6585a7aa7f90b21eb18dddce51cb60894c8ded49cc1c0e0f78628e316b",
+    "public/data/operational-research-register.json": "4f12a7f95addb4a5ecf5dcd7607ab307d32ca8c3e31985f247568e6165611db3",
+    "public/reports/OPERATIONAL_TRADING_PLAYBOOK.md": "aefeb448f327c8d66e8bc92e9935c3bf4fd226783569b6474d906263b33bb8c2",
+    "public/reports/REGIME_CONSOLIDATION_PERFORMANCE.csv": "95bce5910939a84accd35144dd176bf53488405aff1772df35dbeef2f56f71cc",
+    "public/reports/REGIME_CONSOLIDATION_QUARTERS.csv": "5b2f8523fdff4c17e41848638113ee1ce3ae5458ff8e141295d05f6d61ba6e31",
+    "public/reports/REGIME_CONSOLIDATION_STATISTICS.md": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773"
+  },
+  "new_signals_computed": false,
+  "raw_data_published": false,
+  "source_files_sha256": {
+    "docs/OPERATIONAL_TRADING_PLAYBOOK.md": "aefeb448f327c8d66e8bc92e9935c3bf4fd226783569b6474d906263b33bb8c2",
+    "docs/REGIME_CONSOLIDATION_STATISTICS.md": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773",
+    "research/regime-consolidation-results.json": "31e2c9c18047acec8f667ef257ad74580825c4bf7ac4a65b7237be780df68297",
+    "research/regime-consolidation-verification.json": "0e911d0253002d6c6c8a7592a444cb1e40f42296c4e0d40d1c7d9bad7082e074"
+  },
+  "source_report_sha256": "897d4c27050d0b096938b7637c2a454b98d4fb1448ea115798e3298d99c18773",
+  "source_verification_sha256": "0e911d0253002d6c6c8a7592a444cb1e40f42296c4e0d40d1c7d9bad7082e074",
+  "status": "PUBLIC_AGGREGATES_AND_RESEARCH_PLAYBOOK_READY"
+}

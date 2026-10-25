@@ -1,0 +1,24 @@
+.operational-page{max-width:1480px;margin:auto;padding:30px 32px 60px;color:#e3edf2;line-height:1.65}
+.operational-page a{color:#a3e4d4;text-decoration:underline;text-underline-offset:4px}
+.operational-page nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.operational-page header{padding:42px 0 24px;max-width:1120px}.op-eyebrow{color:#9cb8b6;font-size:11px;letter-spacing:.12em}
+.operational-page h1{font-size:clamp(30px,4vw,50px);line-height:1.15;letter-spacing:-.035em;margin:15px 0 22px}.op-lead{font-size:17px;color:#bdcfd8}
+.op-status{display:inline-block;color:#e6cda3;border:1px solid #756142;border-radius:5px;padding:7px 12px;background:#25211b;font-size:13px}
+.op-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.op-actions a{padding:10px 15px;border:1px solid #3d6869;border-radius:6px;background:#12292c}
+.op-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.op-cards article{padding:25px;background:#0d1d27;border:1px solid #30464f;border-radius:9px}
+.op-cards h2{font-size:19px;margin:8px 0}.op-big{font-size:39px;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:#ccf3df;margin:12px 0}
+.op-cards dl{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.op-cards dt{font-size:12px;color:#9eb3c2}.op-cards dd{margin:2px 0;font-size:19px;font-variant-numeric:tabular-nums}
+.operational-page section{margin-top:35px;padding-top:25px;border-top:1px solid #293d47;min-width:0}.operational-page h2{letter-spacing:-.02em;font-size:24px}.operational-page h3{font-size:18px;margin:24px 0 10px}
+.operational-page section>p{max-width:1130px;color:#b6c8d3}.op-note{font-size:12px;color:#a1b6c4}.op-limit{border-left:3px solid #bd9c65;padding:12px 18px;background:#20221f;color:#e0c8a1!important}
+.op-timeline{list-style:none;counter-reset:step;padding:0;display:grid;gap:10px}.op-timeline li{display:grid;grid-template-columns:185px 1fr;gap:15px;padding:15px 18px;background:#101e29;border:1px solid #253d49;border-radius:6px}.op-timeline span{color:#bfd0dc}
+.op-table{max-width:100%;overflow-x:auto;border:1px solid #30434d;border-radius:6px;margin:12px 0;background:#0d1822}
+.operational-page table{width:100%;border-collapse:collapse;font-size:12px}.operational-page caption{padding:13px 16px;text-align:left;color:#9fb8c8;font-size:11px}
+.operational-page th,.operational-page td{padding:11px 13px;border-top:1px solid #263b47;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;vertical-align:top}
+.operational-page thead th{font-weight:500;background:#172935;color:#d0e1ea}.operational-page th[scope=row]{text-align:left;font-weight:500}.operational-page tbody tr:hover{background:#132632}
+.operational-page details{border:1px solid #30424b;border-radius:6px;padding:15px 18px;margin:12px 0}.operational-page summary{cursor:pointer;color:#c8e4e3;font-weight:600}.operational-page details[open]>summary{margin-bottom:15px}
+.op-document{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.8;color:#c3d2dc;max-width:1050px;margin-top:20px}
+.op-inputs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0}.op-inputs label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#b7cbd6}.op-inputs input,.op-inputs select{width:100%;background:#0b1720;border:1px solid #45606d;padding:11px;color:#ecf8f6;border-radius:5px;font-size:16px}.op-inputs input:disabled{opacity:.45}
+.op-sizing-result{padding:12px 18px;background:#112c2c;border:1px solid #3d6464;border-radius:6px}.operational-page footer{border-top:1px solid #30444e;margin-top:35px;padding-top:22px;font-size:12px;color:#9eb5c1}
+.operational-page a:focus-visible,.op-table:focus-visible,.operational-page summary:focus-visible,.op-inputs input:focus-visible{outline:2px solid #7ae0c1;outline-offset:4px}
+@media(max-width:850px){.op-inputs{grid-template-columns:repeat(2,minmax(0,1fr))}.op-timeline li{grid-template-columns:1fr;gap:6px}}
+@media(max-width:650px){.operational-page{padding:22px 16px 40px}.op-cards,.op-inputs{grid-template-columns:1fr}.operational-page header{padding-top:30px}.op-lead{font-size:15px}.op-big{font-size:34px}.op-cards article{padding:20px}}

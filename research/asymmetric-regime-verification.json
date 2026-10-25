@@ -1,0 +1,23 @@
+{
+  "files": {
+    "artifacts/asymmetric-regime/run1/A_BREAKEVEN-trades.json": "47b89061911687ce07013e2bc425200a0ca971502c59228b29321d5f9a23ae40",
+    "artifacts/asymmetric-regime/run1/A_BREAKEVEN_PLUS_B-trades.json": "09ac2d42adf989fecb5055eab0cbd602a3f2245daa89eb52a7fee5a16c68670d",
+    "artifacts/asymmetric-regime/run1/A_FIXED-trades.json": "c30dd3475da49f0f66c85faea32df0c2a0acd06a7e3f8850af40d6f7419ef34b",
+    "artifacts/asymmetric-regime/run1/A_FIXED_PLUS_B-trades.json": "695d95cbbfa107d319a4e5073bb30605990dda077ea5034bd61e502d664a483a",
+    "artifacts/asymmetric-regime/run1/B_FADE-trades.json": "486b6de7d3f3caf65e0c417589149dbed0d40ca3cc11c9848e7ce0e800227115",
+    "artifacts/asymmetric-regime/run1/regime-labels.json": "8d9b73982dcd5580b4dd34bec2ac5c947341751c42812b31f3b3d1d3d346f29a",
+    "artifacts/asymmetric-regime/run1/report.md": "ab8f24d6f73fc2653ca7f73350e217a76f607b22c9163b126e83a0c05a41eb89",
+    "artifacts/asymmetric-regime/run1/summary.json": "3bfb238f6b8c82e7633443b0d5f84bcf2cff0fc5ceca9439324f1f5962177242",
+    "artifacts/asymmetric-regime/run2/A_BREAKEVEN-trades.json": "47b89061911687ce07013e2bc425200a0ca971502c59228b29321d5f9a23ae40",
+    "artifacts/asymmetric-regime/run2/A_BREAKEVEN_PLUS_B-trades.json": "09ac2d42adf989fecb5055eab0cbd602a3f2245daa89eb52a7fee5a16c68670d",
+    "artifacts/asymmetric-regime/run2/A_FIXED-trades.json": "c30dd3475da49f0f66c85faea32df0c2a0acd06a7e3f8850af40d6f7419ef34b",
+    "artifacts/asymmetric-regime/run2/A_FIXED_PLUS_B-trades.json": "695d95cbbfa107d319a4e5073bb30605990dda077ea5034bd61e502d664a483a",
+    "artifacts/asymmetric-regime/run2/B_FADE-trades.json": "486b6de7d3f3caf65e0c417589149dbed0d40ca3cc11c9848e7ce0e800227115",
+    "artifacts/asymmetric-regime/run2/regime-labels.json": "8d9b73982dcd5580b4dd34bec2ac5c947341751c42812b31f3b3d1d3d346f29a",
+    "artifacts/asymmetric-regime/run2/report.md": "ab8f24d6f73fc2653ca7f73350e217a76f607b22c9163b126e83a0c05a41eb89",
+    "artifacts/asymmetric-regime/run2/summary.json": "3bfb238f6b8c82e7633443b0d5f84bcf2cff0fc5ceca9439324f1f5962177242",
+    "docs/ASYMMETRIC_REGIME_EXPLORATION.md": "ab8f24d6f73fc2653ca7f73350e217a76f607b22c9163b126e83a0c05a41eb89",
+    "research/asymmetric-regime-results.json": "3bfb238f6b8c82e7633443b0d5f84bcf2cff0fc5ceca9439324f1f5962177242"
+  },
+  "status": "BYTE_IDENTICAL_EXPLORATORY_REGIME_REPLAY"
+}

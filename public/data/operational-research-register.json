@@ -1,0 +1,23 @@
+{
+  "dashboard": "/research/operational",
+  "entries": [
+    {
+      "data": "/data/operational-consolidation.json",
+      "id": "NQ-S1-S2-CONSOLIDATION-20261025",
+      "independent_validation": false,
+      "report": "/reports/REGIME_CONSOLIDATION_STATISTICS.md",
+      "status": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+      "title": "S1 en S2: consolidatie, onzekerheid en alle kwartalen"
+    },
+    {
+      "id": "NQ-OPERATIONAL-PLAYBOOK-20261025",
+      "independent_validation": false,
+      "report": "/reports/OPERATIONAL_TRADING_PLAYBOOK.md",
+      "status": "RESEARCH_AND_PAPER_EXECUTION_SPECIFICATION",
+      "title": "Dagelijkse regels en MNQ-sizing-playbook"
+    }
+  ],
+  "previous_register": "/data/research-register.json",
+  "raw_data_published": false,
+  "status": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED"
+}

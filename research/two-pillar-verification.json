@@ -1,0 +1,29 @@
+{
+  "files": {
+    "artifacts/two-pillar/run1/A-normalized-trades.csv": "2b4f0a5ba06305c9eaafd6b7024dff68b222894da499d713f13559a24e18d838",
+    "artifacts/two-pillar/run1/A-trades.json": "e9385242c9d2f4598916c4e5ee0cab22560c3ea70a998e7d722ecfb2de6ebd88",
+    "artifacts/two-pillar/run1/A_STOP-trades.json": "879ca1505bd48a120fffb93d44902f31cfcadf5279ee1af86270544a89aa4efa",
+    "artifacts/two-pillar/run1/B-trades.json": "ef3c26d6b0a4cd185f36a3407ca33d0b45db8526df302e91b640694365d00170",
+    "artifacts/two-pillar/run1/BENCH_ALL-trades.json": "c24a35d245906bbfd9bc5d8ba7032cdfd930f55a5b677bddc1faa3fbc57fed41",
+    "artifacts/two-pillar/run1/BENCH_A_MATCHED-trades.json": "6534b2b6a3acacfe69fe8d3d93822c3fec393d525676071727ad4e924ed473e4",
+    "artifacts/two-pillar/run1/BENCH_A_ORIGINAL-trades.json": "e9385242c9d2f4598916c4e5ee0cab22560c3ea70a998e7d722ecfb2de6ebd88",
+    "artifacts/two-pillar/run1/BENCH_BULL-trades.json": "e9966777464323767498c7c8fb276c53078f52b49c08a0dcb086d8298ab36cf3",
+    "artifacts/two-pillar/run1/cohorts.json": "97267d9764e0dec3bd53f647f2fc67fea9e48f16c592db4bda6bcc7cfde33bc8",
+    "artifacts/two-pillar/run1/report.md": "c394b34b9ab35923d9ec22d22d9481d2a541cdf1ab4fc14223d283f492f3ffac",
+    "artifacts/two-pillar/run1/summary.json": "8e4252d033c3aa08b9e980016f9b3ac79b9d268489920fb69cc651d3ecbcd2b8",
+    "artifacts/two-pillar/run2/A-normalized-trades.csv": "2b4f0a5ba06305c9eaafd6b7024dff68b222894da499d713f13559a24e18d838",
+    "artifacts/two-pillar/run2/A-trades.json": "e9385242c9d2f4598916c4e5ee0cab22560c3ea70a998e7d722ecfb2de6ebd88",
+    "artifacts/two-pillar/run2/A_STOP-trades.json": "879ca1505bd48a120fffb93d44902f31cfcadf5279ee1af86270544a89aa4efa",
+    "artifacts/two-pillar/run2/B-trades.json": "ef3c26d6b0a4cd185f36a3407ca33d0b45db8526df302e91b640694365d00170",
+    "artifacts/two-pillar/run2/BENCH_ALL-trades.json": "c24a35d245906bbfd9bc5d8ba7032cdfd930f55a5b677bddc1faa3fbc57fed41",
+    "artifacts/two-pillar/run2/BENCH_A_MATCHED-trades.json": "6534b2b6a3acacfe69fe8d3d93822c3fec393d525676071727ad4e924ed473e4",
+    "artifacts/two-pillar/run2/BENCH_A_ORIGINAL-trades.json": "e9385242c9d2f4598916c4e5ee0cab22560c3ea70a998e7d722ecfb2de6ebd88",
+    "artifacts/two-pillar/run2/BENCH_BULL-trades.json": "e9966777464323767498c7c8fb276c53078f52b49c08a0dcb086d8298ab36cf3",
+    "artifacts/two-pillar/run2/cohorts.json": "97267d9764e0dec3bd53f647f2fc67fea9e48f16c592db4bda6bcc7cfde33bc8",
+    "artifacts/two-pillar/run2/report.md": "c394b34b9ab35923d9ec22d22d9481d2a541cdf1ab4fc14223d283f492f3ffac",
+    "artifacts/two-pillar/run2/summary.json": "8e4252d033c3aa08b9e980016f9b3ac79b9d268489920fb69cc651d3ecbcd2b8",
+    "docs/TWO_PILLAR_BENCHMARK_RISK_PORTFOLIO.md": "c394b34b9ab35923d9ec22d22d9481d2a541cdf1ab4fc14223d283f492f3ffac",
+    "research/two-pillar-results.json": "8e4252d033c3aa08b9e980016f9b3ac79b9d268489920fb69cc651d3ecbcd2b8"
+  },
+  "status": "BYTE_IDENTICAL_BENCHMARK_STOP_PORTFOLIO_REPLAYS"
+}

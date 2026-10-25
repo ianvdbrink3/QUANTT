@@ -1,0 +1,717 @@
+{
+  "ambiguous_OCO_dates": [
+    "2021-08-27"
+  ],
+  "atr_ready_sessions": 1151,
+  "full_pool_B_PnL_identifiable": false,
+  "method": {
+    "A": "Enter10:00open, stop0.5ATR, exit15:45open. Separately registered alternative moves stop to entry after completed bar reaches+1.0ATR; activation next bar only, initial stop takes priority in activation bar.",
+    "B": "From10:00 resting OCO sell limit H30 or buy limit L30; first identifiable side only, max1trade/day, stop0.35ATR from fill, target09:30open, unfilled orders canceled/position flat15:45open.",
+    "ambiguity": "UNKNOWN_FIRST_OCO days are explicitly unavailable for B and combined models, not zero-return trades. Report their count and exclude from simulated P&L; full-pool performance would remain unidentified if any occur.",
+    "conflicts": "Position at bar open: adverse stop before target if both reachable. Intrabar limit-entry bar: stop counts; target only if entry established at open or closing beyond target proves post-entry crossing. Otherwise do not credit unproven target in entry bar.",
+    "costs": "Fixed$24.50NQ RT=1.225points per filled trade, no additional slippage subtraction or netting credits.",
+    "date": "2026-10-24",
+    "limits": "Require1tick trade-through to certify resting entry/target fill, no favorable price improvement. An order marketable at minute open is filled conservatively at its limit. If both OCO entries first cross inside the same minute with neither established at open, mark UNKNOWN_FIRST_OCO and leave its P&L unavailable, never choose a future-profitable side.",
+    "regime": "At10:00, only completed09:30..09:59 bars plus prior-knownATR14. A: range30>0.60ATR and09:59close strictly outside first15range, direction outward. B: range30<0.40ATR. Boundaries and intermediate regimes idle.",
+    "reporting": "Only pooled performance, N=filled trades, gross/netpoints, net winrate/PF, maximum marked drawdown and every quarter. DD on chronological minute opens/closes and known stop/target fills; not worst-tick DD. A+B is regime switching with1contract, not optimized weights.",
+    "restrictions": "No optimization, pvalue fishing, new independent-validation claim, purchases, Git commit/push or deployment. Preserve all earlier bytes.",
+    "risk": "1NQ/filled trade. 1R=initial entry-stop distance, not account-risk budget. Stops rounded toward entry to0.25tick, trigger+ATR rounded away from entry; gap-through stop at adverse bar open can lose more than1R. No artificial loss cap.",
+    "sample": "Exactly previously released733 historical sessions2019Jan14-2021Dec31 plus435 complete recent sessions2024Dec30-2026Sep30; no2022-24 generic source and no first8 historical dates added.",
+    "status": "EXPLORATORY_CONSUMED_DEVELOPMENT_POOL"
+  },
+  "missing_ATR_dates": [
+    "2024-12-30",
+    "2024-12-31",
+    "2025-01-02",
+    "2025-01-03",
+    "2025-01-06",
+    "2025-01-07",
+    "2025-01-08",
+    "2025-01-10",
+    "2025-01-13",
+    "2025-01-14",
+    "2025-01-15",
+    "2025-01-16",
+    "2025-01-17",
+    "2025-01-21",
+    "2025-01-22",
+    "2025-01-23",
+    "2025-01-24"
+  ],
+  "old_files_unchanged": true,
+  "performance": {
+    "A_BREAKEVEN": {
+      "N": 99,
+      "gross_points": -1625.0,
+      "max_marked_drawdown": 3073.9249999999993,
+      "net_points": -1746.275,
+      "positive_traded_quarters": 7,
+      "profit_factor": 0.7104285678752351,
+      "quarterly": [
+        {
+          "gross_points": 232.75,
+          "net_points": 226.625,
+          "quarter": "2019Q1",
+          "trades": 5
+        },
+        {
+          "gross_points": 202.0,
+          "net_points": 193.425,
+          "quarter": "2019Q2",
+          "trades": 7
+        },
+        {
+          "gross_points": -111.25,
+          "net_points": -116.15,
+          "quarter": "2019Q3",
+          "trades": 4
+        },
+        {
+          "gross_points": -34.0,
+          "net_points": -38.900000000000006,
+          "quarter": "2019Q4",
+          "trades": 4
+        },
+        {
+          "gross_points": 51.5,
+          "net_points": 40.47500000000004,
+          "quarter": "2020Q1",
+          "trades": 9
+        },
+        {
+          "gross_points": -28.25,
+          "net_points": -30.69999999999999,
+          "quarter": "2020Q2",
+          "trades": 2
+        },
+        {
+          "gross_points": -124.75,
+          "net_points": -132.09999999999997,
+          "quarter": "2020Q3",
+          "trades": 6
+        },
+        {
+          "gross_points": 137.0,
+          "net_points": 134.55,
+          "quarter": "2020Q4",
+          "trades": 2
+        },
+        {
+          "gross_points": -331.0,
+          "net_points": -337.125,
+          "quarter": "2021Q1",
+          "trades": 5
+        },
+        {
+          "gross_points": 42.75,
+          "net_points": 36.62500000000002,
+          "quarter": "2021Q2",
+          "trades": 5
+        },
+        {
+          "gross_points": 30.5,
+          "net_points": 24.37500000000002,
+          "quarter": "2021Q3",
+          "trades": 5
+        },
+        {
+          "gross_points": -57.75,
+          "net_points": -63.87499999999998,
+          "quarter": "2021Q4",
+          "trades": 5
+        },
+        {
+          "gross_points": 0,
+          "net_points": 0,
+          "quarter": "2024Q4",
+          "trades": 0
+        },
+        {
+          "gross_points": 212.25,
+          "net_points": 204.9,
+          "quarter": "2025Q1",
+          "trades": 6
+        },
+        {
+          "gross_points": -135.25,
+          "net_points": -137.7,
+          "quarter": "2025Q2",
+          "trades": 2
+        },
+        {
+          "gross_points": -632.75,
+          "net_points": -643.775,
+          "quarter": "2025Q3",
+          "trades": 9
+        },
+        {
+          "gross_points": -477.25,
+          "net_points": -483.375,
+          "quarter": "2025Q4",
+          "trades": 5
+        },
+        {
+          "gross_points": -120.5,
+          "net_points": -129.07499999999996,
+          "quarter": "2026Q1",
+          "trades": 7
+        },
+        {
+          "gross_points": -138.5,
+          "net_points": -147.07500000000005,
+          "quarter": "2026Q2",
+          "trades": 7
+        },
+        {
+          "gross_points": -342.5,
+          "net_points": -347.40000000000003,
+          "quarter": "2026Q3",
+          "trades": 4
+        }
+      ],
+      "traded_quarters": 19,
+      "winrate": 0.41414141414141414
+    },
+    "A_BREAKEVEN_PLUS_B": {
+      "N": 762,
+      "gross_points": -1723.25,
+      "max_marked_drawdown": 4360.974999999964,
+      "net_points": -2656.7,
+      "positive_traded_quarters": 6,
+      "profit_factor": 0.8824562645453016,
+      "quarterly": [
+        {
+          "gross_points": 42.5,
+          "net_points": -6.500000000000011,
+          "quarter": "2019Q1",
+          "trades": 40
+        },
+        {
+          "gross_points": 237.5,
+          "net_points": 183.6,
+          "quarter": "2019Q2",
+          "trades": 44
+        },
+        {
+          "gross_points": -429.5,
+          "net_points": -480.95000000000005,
+          "quarter": "2019Q3",
+          "trades": 42
+        },
+        {
+          "gross_points": -148.5,
+          "net_points": -203.62500000000003,
+          "quarter": "2019Q4",
+          "trades": 45
+        },
+        {
+          "gross_points": 155.0,
+          "net_points": 114.57500000000005,
+          "quarter": "2020Q1",
+          "trades": 33
+        },
+        {
+          "gross_points": -611.0,
+          "net_points": -671.025,
+          "quarter": "2020Q2",
+          "trades": 49
+        },
+        {
+          "gross_points": -113.25,
+          "net_points": -165.92499999999995,
+          "quarter": "2020Q3",
+          "trades": 43
+        },
+        {
+          "gross_points": -305.0,
+          "net_points": -353.99999999999994,
+          "quarter": "2020Q4",
+          "trades": 40
+        },
+        {
+          "gross_points": -242.5,
+          "net_points": -296.3999999999999,
+          "quarter": "2021Q1",
+          "trades": 44
+        },
+        {
+          "gross_points": -147.5,
+          "net_points": -200.17499999999995,
+          "quarter": "2021Q2",
+          "trades": 43
+        },
+        {
+          "gross_points": -22.5,
+          "net_points": -59.24999999999999,
+          "quarter": "2021Q3",
+          "trades": 30
+        },
+        {
+          "gross_points": -165.25,
+          "net_points": -213.02499999999992,
+          "quarter": "2021Q4",
+          "trades": 39
+        },
+        {
+          "gross_points": 0,
+          "net_points": 0,
+          "quarter": "2024Q4",
+          "trades": 0
+        },
+        {
+          "gross_points": -122.5,
+          "net_points": -164.14999999999995,
+          "quarter": "2025Q1",
+          "trades": 34
+        },
+        {
+          "gross_points": 570.5,
+          "net_points": 510.4750000000001,
+          "quarter": "2025Q2",
+          "trades": 49
+        },
+        {
+          "gross_points": -967.25,
+          "net_points": -1016.2499999999999,
+          "quarter": "2025Q3",
+          "trades": 40
+        },
+        {
+          "gross_points": -522.0,
+          "net_points": -570.9999999999999,
+          "quarter": "2025Q4",
+          "trades": 40
+        },
+        {
+          "gross_points": 71.0,
+          "net_points": 37.92500000000007,
+          "quarter": "2026Q1",
+          "trades": 27
+        },
+        {
+          "gross_points": 225.0,
+          "net_points": 173.55000000000004,
+          "quarter": "2026Q2",
+          "trades": 42
+        },
+        {
+          "gross_points": 772.0,
+          "net_points": 725.45,
+          "quarter": "2026Q3",
+          "trades": 38
+        }
+      ],
+      "traded_quarters": 19,
+      "winrate": 0.6089238845144357
+    },
+    "A_FIXED": {
+      "N": 99,
+      "gross_points": -1606.25,
+      "max_marked_drawdown": 2943.424999999999,
+      "net_points": -1727.525,
+      "positive_traded_quarters": 8,
+      "profit_factor": 0.7219991631933828,
+      "quarterly": [
+        {
+          "gross_points": 232.75,
+          "net_points": 226.625,
+          "quarter": "2019Q1",
+          "trades": 5
+        },
+        {
+          "gross_points": 202.0,
+          "net_points": 193.425,
+          "quarter": "2019Q2",
+          "trades": 7
+        },
+        {
+          "gross_points": -153.5,
+          "net_points": -158.4,
+          "quarter": "2019Q3",
+          "trades": 4
+        },
+        {
+          "gross_points": -34.0,
+          "net_points": -38.900000000000006,
+          "quarter": "2019Q4",
+          "trades": 4
+        },
+        {
+          "gross_points": 51.5,
+          "net_points": 40.47500000000004,
+          "quarter": "2020Q1",
+          "trades": 9
+        },
+        {
+          "gross_points": -28.25,
+          "net_points": -30.69999999999999,
+          "quarter": "2020Q2",
+          "trades": 2
+        },
+        {
+          "gross_points": -211.5,
+          "net_points": -218.84999999999997,
+          "quarter": "2020Q3",
+          "trades": 6
+        },
+        {
+          "gross_points": 137.0,
+          "net_points": 134.55,
+          "quarter": "2020Q4",
+          "trades": 2
+        },
+        {
+          "gross_points": -313.75,
+          "net_points": -319.875,
+          "quarter": "2021Q1",
+          "trades": 5
+        },
+        {
+          "gross_points": 42.75,
+          "net_points": 36.62500000000002,
+          "quarter": "2021Q2",
+          "trades": 5
+        },
+        {
+          "gross_points": 30.5,
+          "net_points": 24.37500000000002,
+          "quarter": "2021Q3",
+          "trades": 5
+        },
+        {
+          "gross_points": -57.75,
+          "net_points": -63.87499999999998,
+          "quarter": "2021Q4",
+          "trades": 5
+        },
+        {
+          "gross_points": 0,
+          "net_points": 0,
+          "quarter": "2024Q4",
+          "trades": 0
+        },
+        {
+          "gross_points": 212.25,
+          "net_points": 204.9,
+          "quarter": "2025Q1",
+          "trades": 6
+        },
+        {
+          "gross_points": 52.25,
+          "net_points": 49.80000000000001,
+          "quarter": "2025Q2",
+          "trades": 2
+        },
+        {
+          "gross_points": -632.75,
+          "net_points": -643.775,
+          "quarter": "2025Q3",
+          "trades": 9
+        },
+        {
+          "gross_points": -477.25,
+          "net_points": -483.375,
+          "quarter": "2025Q4",
+          "trades": 5
+        },
+        {
+          "gross_points": -177.5,
+          "net_points": -186.07499999999996,
+          "quarter": "2026Q1",
+          "trades": 7
+        },
+        {
+          "gross_points": -138.5,
+          "net_points": -147.07500000000005,
+          "quarter": "2026Q2",
+          "trades": 7
+        },
+        {
+          "gross_points": -342.5,
+          "net_points": -347.40000000000003,
+          "quarter": "2026Q3",
+          "trades": 4
+        }
+      ],
+      "traded_quarters": 19,
+      "winrate": 0.43434343434343436
+    },
+    "A_FIXED_PLUS_B": {
+      "N": 762,
+      "gross_points": -1704.5,
+      "max_marked_drawdown": 4342.224999999964,
+      "net_points": -2637.9500000000003,
+      "positive_traded_quarters": 5,
+      "profit_factor": 0.8842260487550113,
+      "quarterly": [
+        {
+          "gross_points": 42.5,
+          "net_points": -6.500000000000011,
+          "quarter": "2019Q1",
+          "trades": 40
+        },
+        {
+          "gross_points": 237.5,
+          "net_points": 183.6,
+          "quarter": "2019Q2",
+          "trades": 44
+        },
+        {
+          "gross_points": -471.75,
+          "net_points": -523.2,
+          "quarter": "2019Q3",
+          "trades": 42
+        },
+        {
+          "gross_points": -148.5,
+          "net_points": -203.62500000000003,
+          "quarter": "2019Q4",
+          "trades": 45
+        },
+        {
+          "gross_points": 155.0,
+          "net_points": 114.57500000000005,
+          "quarter": "2020Q1",
+          "trades": 33
+        },
+        {
+          "gross_points": -611.0,
+          "net_points": -671.025,
+          "quarter": "2020Q2",
+          "trades": 49
+        },
+        {
+          "gross_points": -200.0,
+          "net_points": -252.67499999999993,
+          "quarter": "2020Q3",
+          "trades": 43
+        },
+        {
+          "gross_points": -305.0,
+          "net_points": -353.99999999999994,
+          "quarter": "2020Q4",
+          "trades": 40
+        },
+        {
+          "gross_points": -225.25,
+          "net_points": -279.1499999999999,
+          "quarter": "2021Q1",
+          "trades": 44
+        },
+        {
+          "gross_points": -147.5,
+          "net_points": -200.17499999999995,
+          "quarter": "2021Q2",
+          "trades": 43
+        },
+        {
+          "gross_points": -22.5,
+          "net_points": -59.24999999999999,
+          "quarter": "2021Q3",
+          "trades": 30
+        },
+        {
+          "gross_points": -165.25,
+          "net_points": -213.02499999999992,
+          "quarter": "2021Q4",
+          "trades": 39
+        },
+        {
+          "gross_points": 0,
+          "net_points": 0,
+          "quarter": "2024Q4",
+          "trades": 0
+        },
+        {
+          "gross_points": -122.5,
+          "net_points": -164.14999999999995,
+          "quarter": "2025Q1",
+          "trades": 34
+        },
+        {
+          "gross_points": 758.0,
+          "net_points": 697.9750000000001,
+          "quarter": "2025Q2",
+          "trades": 49
+        },
+        {
+          "gross_points": -967.25,
+          "net_points": -1016.2499999999999,
+          "quarter": "2025Q3",
+          "trades": 40
+        },
+        {
+          "gross_points": -522.0,
+          "net_points": -570.9999999999999,
+          "quarter": "2025Q4",
+          "trades": 40
+        },
+        {
+          "gross_points": 14.0,
+          "net_points": -19.074999999999935,
+          "quarter": "2026Q1",
+          "trades": 27
+        },
+        {
+          "gross_points": 225.0,
+          "net_points": 173.55000000000004,
+          "quarter": "2026Q2",
+          "trades": 42
+        },
+        {
+          "gross_points": 772.0,
+          "net_points": 725.45,
+          "quarter": "2026Q3",
+          "trades": 38
+        }
+      ],
+      "traded_quarters": 19,
+      "winrate": 0.6115485564304461
+    },
+    "B_FADE": {
+      "N": 663,
+      "gross_points": -98.25,
+      "max_marked_drawdown": 2877.199999999967,
+      "net_points": -910.4249999999986,
+      "positive_traded_quarters": 6,
+      "profit_factor": 0.9450599683186239,
+      "quarterly": [
+        {
+          "gross_points": -190.25,
+          "net_points": -233.12500000000003,
+          "quarter": "2019Q1",
+          "trades": 35
+        },
+        {
+          "gross_points": 35.5,
+          "net_points": -9.825000000000017,
+          "quarter": "2019Q2",
+          "trades": 37
+        },
+        {
+          "gross_points": -318.25,
+          "net_points": -364.8,
+          "quarter": "2019Q3",
+          "trades": 38
+        },
+        {
+          "gross_points": -114.5,
+          "net_points": -164.72500000000002,
+          "quarter": "2019Q4",
+          "trades": 41
+        },
+        {
+          "gross_points": 103.5,
+          "net_points": 74.10000000000001,
+          "quarter": "2020Q1",
+          "trades": 24
+        },
+        {
+          "gross_points": -582.75,
+          "net_points": -640.3249999999999,
+          "quarter": "2020Q2",
+          "trades": 47
+        },
+        {
+          "gross_points": 11.5,
+          "net_points": -33.82499999999997,
+          "quarter": "2020Q3",
+          "trades": 37
+        },
+        {
+          "gross_points": -442.0,
+          "net_points": -488.54999999999995,
+          "quarter": "2020Q4",
+          "trades": 38
+        },
+        {
+          "gross_points": 88.5,
+          "net_points": 40.725000000000044,
+          "quarter": "2021Q1",
+          "trades": 39
+        },
+        {
+          "gross_points": -190.25,
+          "net_points": -236.79999999999998,
+          "quarter": "2021Q2",
+          "trades": 38
+        },
+        {
+          "gross_points": -53.0,
+          "net_points": -83.62500000000001,
+          "quarter": "2021Q3",
+          "trades": 25
+        },
+        {
+          "gross_points": -107.5,
+          "net_points": -149.14999999999995,
+          "quarter": "2021Q4",
+          "trades": 34
+        },
+        {
+          "gross_points": 0,
+          "net_points": 0,
+          "quarter": "2024Q4",
+          "trades": 0
+        },
+        {
+          "gross_points": -334.75,
+          "net_points": -369.04999999999995,
+          "quarter": "2025Q1",
+          "trades": 28
+        },
+        {
+          "gross_points": 705.75,
+          "net_points": 648.1750000000001,
+          "quarter": "2025Q2",
+          "trades": 47
+        },
+        {
+          "gross_points": -334.5,
+          "net_points": -372.4749999999999,
+          "quarter": "2025Q3",
+          "trades": 31
+        },
+        {
+          "gross_points": -44.75,
+          "net_points": -87.6249999999999,
+          "quarter": "2025Q4",
+          "trades": 35
+        },
+        {
+          "gross_points": 191.5,
+          "net_points": 167.00000000000003,
+          "quarter": "2026Q1",
+          "trades": 20
+        },
+        {
+          "gross_points": 363.5,
+          "net_points": 320.62500000000006,
+          "quarter": "2026Q2",
+          "trades": 35
+        },
+        {
+          "gross_points": 1114.5,
+          "net_points": 1072.8500000000001,
+          "quarter": "2026Q3",
+          "trades": 34
+        }
+      ],
+      "traded_quarters": 19,
+      "winrate": 0.6380090497737556
+    }
+  },
+  "pool_sessions": 1168,
+  "protocol_sha256": "f60ce57e58c140d38ff9059b0fd44f7369f6e120b7d74659435b4075ee09fb9a",
+  "regime_counts": {
+    "A": 99,
+    "B": 666,
+    "IDLE": 386,
+    "MISSING_PRIOR_ATR": 17
+  },
+  "status": "EXPLORATORY_DEVELOPMENT_NOT_INDEPENDENT_VALIDATION",
+  "unfilled_limit_dates": [
+    "2019-06-24",
+    "2019-12-17"
+  ]
+}
