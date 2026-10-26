@@ -1,0 +1,6 @@
+{
+  "status": "IMPLEMENTATION_REPAIR_BEFORE_FIRST_ACCOUNT_REPLAY",
+  "original_registration_sha256": "834b834050dd30787d37999ebff55835673a1c3196b3494c178c2cb28fc27a36",
+  "reason": "Sunday stop path uses the already registered next cash-day calendar label, not the civil exit date; add conservative finite-horizon cash identification bounds when missing paths prevent point EV. No signal, sizing, account-rule or payout-policy changes; no account outcomes had been calculated.",
+  "updated_registration_sha256": "c3ba70f0baf8b238bef21ffe838121d426ffcfeab21d74160a31d6a79589b77c"
+}
