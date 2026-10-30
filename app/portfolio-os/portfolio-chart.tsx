@@ -68,7 +68,9 @@ function TradingView({ asset }: { asset: "QQQ" | "TQQQ" }) {
   }, [asset]);
   return (
     <div className="human-tv">
-      <div ref={container} className="human-tv-frame" />
+      <div className="human-tv-frame">
+        <div ref={container} className="tradingview-widget-container" style={{ height: "100%", width: "100%" }} />
+      </div>
       {failed && (
         <div className="human-chart-error">
           TradingView kon niet laden. Controleer je internetverbinding.
