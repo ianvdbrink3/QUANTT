@@ -54,7 +54,8 @@ def assess(c,market,snapshot,quotes,store,now,*,real_demo=False,reconciled=False
         except (KeyError,TypeError,ValueError):quote_ok=False
     add('EXECUTION_QUOTES',quote_ok,'Werkelijke bid/ask-feed met herkomst, juiste notering en maximaal twee seconden oud')
     add('PERSISTENT_ORDER_STATE',not store.unresolved() and not store.get('halt'),'Geen onzekere orders of blijvende risicoblokkade')
-    add('DEMO_RELEASE',c['mode']=='DEMO' and c['demo_orders_enabled'],'Afzonderlijke lokale vrijgave voor uitsluitend demo-orders')
+    add('BROKER_AUTOMATION_POLICY',False,'Trading 212 verbiedt algoritmische handel via de API; toepassing op demo en eigen interface moet de broker verduidelijken')
+    add('DEMO_RELEASE',False,'Er is geen vrijgegeven route voor automatische demo-orders bij Trading 212')
     technical=all(v['passed'] for v in checks if v['code']!='DEMO_RELEASE')
     ready=all(v['passed'] for v in checks)
     # Quotes are mandatory during the actual order window and while orders work.

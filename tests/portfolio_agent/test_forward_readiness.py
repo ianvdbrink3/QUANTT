@@ -87,11 +87,12 @@ def test_execution_quotes_not_required_after_close_but_mandatory_at_order_time(t
     c,s,q,store=full_check(tmp_path)
     try:
         market=dict(status='CURRENT',independent_check='MATCHED',source_day='2026-10-29')
-        assert assess(c,market,s,q,store,now(),real_demo=True,reconciled=True)['ready_to_start']
+        r=assess(c,market,s,q,store,now(),real_demo=True,reconciled=True)
+        assert not r['ready_to_start'] and 'BROKER_AUTOMATION_POLICY' in r['blocker_codes']
         assert not assess(c,market,s,{},store,now(),real_demo=True,reconciled=True)['observation_ready']
         at=ny_stamp('2026-10-30','16:10');s['observed_at']=at.isoformat();market['source_day']='2026-10-30'
         r=assess(c,market,s,{},store,at,real_demo=True,reconciled=True)
-        assert r['observation_ready'] and not r['quote_required_now'] and not r['ready_to_start']
+        assert not r['observation_ready'] and not r['quote_required_now'] and not r['ready_to_start']
     finally:store.close()
 
 
@@ -100,6 +101,36 @@ def test_readonly_rest_client_rejects_mutations_even_with_broad_api_rights():
     with pytest.raises(BrokerFailure,match='READ_ONLY'):client.submit_limit(dict(ticker='QQQ_US_EQ',quantity=1,limitPrice=100))
     with pytest.raises(BrokerFailure,match='READ_ONLY'):client.cancel('901')
     assert tr.calls==[]
+
+
+def test_official_network_client_cannot_be_armed_by_configuration(monkeypatch):
+    from portfolio_agent.forward import broker
+    class NetworkSpy:
+        trust_env=True
+        def __init__(self):self.calls=[]
+        def mount(self,*args):pass
+        def request(self,*args,**kwargs):self.calls.append((args,kwargs));raise AssertionError('NETWORK_MUTATION_ATTEMPTED')
+    spy=NetworkSpy();monkeypatch.setattr(broker.requests,'Session',lambda:spy)
+    client=Trading212Demo('dummy','dummy',allow_mutations=True)
+    with pytest.raises(BrokerFailure,match='READ_ONLY'):client.submit_limit(dict(ticker='QQQ_US_EQ',quantity=1,limitPrice=100))
+    with pytest.raises(BrokerFailure,match='READ_ONLY'):client.cancel('901')
+    assert spy.calls==[]
+
+
+def test_default_observer_does_not_read_credentials_or_contact_broker_even_when_armed(tmp_path,monkeypatch):
+    from portfolio_agent.forward import agent
+    monkeypatch.setattr(agent,'ROOT',tmp_path)
+    monkeypatch.setattr(agent,'read_credentials',lambda *args:pytest.fail('BROKER_CREDENTIALS_READ'))
+    monkeypatch.setattr(agent,'Trading212Demo',lambda *args,**kwargs:pytest.fail('BROKER_API_CONTACTED'))
+    body=json.loads((ROOT/'config/portfolio-forward.json').read_text())
+    body.update(mode='DEMO',demo_orders_enabled=True)
+    p=tmp_path/'c.json';p.write_text(json.dumps(body))
+    def unavailable(*args):raise ValueError('MARKET_UNAVAILABLE')
+    state=agent.tick(p,now=now(),acquirer=unavailable)
+    assert state['broker']['status']=='DEMO_API_PAUSED_TERMS_REVIEW'
+    assert not state['broker']['connected'] and not state['broker']['orders_enabled']
+    assert 'BROKER_AUTOMATION_POLICY' in state['readiness']['blocker_codes']
+    assert state['orders']['total']==0 and state['trial']['qualified_sessions']==0
 
 
 def transaction(ref,day,amount=1):return dict(reference=ref,dateTime=day,currency='USD',type='DEPOSIT',amount=amount)
@@ -284,3 +315,5 @@ def test_preflight_probe_cannot_send_or_score_even_if_config_is_armed(tmp_path,m
         assert store.db.execute('SELECT count(*) FROM observations WHERE kind="BROKER_DEMO_FORWARD"').fetchone()[0]==0
         assert store.get('coverage:2026-10-30:'+config(p)['hash']) is None
     finally:store.close()
+    out=agent.tick(p,now=now(),client=client,acquirer=acquire,probe_only=False)
+    assert out['broker']['orders_enabled'] is False and transport.calls==[] and out['orders']['total']==0

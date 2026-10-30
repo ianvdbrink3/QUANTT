@@ -1,12 +1,11 @@
 {
   "baseline_research_changed": false,
   "broker": {
-    "catalog_instruments": 17144,
-    "metadata_sha256": "0361d85cc72fc636bb3c0c486d6600f4d3284d97953745ae75fce2908f2a3767",
-    "real_demo_read_verified": true,
-    "reconciled": true
+    "real_demo_read_verified": false,
+    "reconciled": false,
+    "status": "DEMO_API_PAUSED_TERMS_REVIEW"
   },
-  "checked_at": "2026-10-30T21:18:18.440386+00:00",
+  "checked_at": "2026-10-30T21:31:02.048781+00:00",
   "costs": {
     "new_paid_accounts": 0,
     "new_purchases": 0
@@ -125,7 +124,7 @@
     "status": "NO_VERIFIED_FRESH_BID_ASK_PROVIDER",
     "trading212_public_api_quote_endpoint": false
   },
-  "implementation_hash": "b010226498d91803a614f70f1799f11c1639eecbc5fde6637df2ab8dee0aad74",
+  "implementation_hash": "4a5f75c043a128c106c050cb7086c0778fac37c1f4e7d657f55f0273b0acbcdf",
   "independent_past_day_proof": [
     {
       "checked_at": "2026-10-30T20:47:55.814490+00:00",
@@ -150,61 +149,61 @@
   ],
   "live_locked": true,
   "orders_enabled": false,
-  "policy_hash": "ef0915b5982b18d72ae9dbb29e7f88dc052843212de733e2ebde3291e98657a3",
+  "policy_hash": "84a7909f31dffbeb6cc1227712b8eaaceae8b870815f882b3991c140c6fd64c5",
   "private_ledgers_published": false,
   "product_review": [
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE0032077012",
       "issuer": "https://www.invesco.com/uk/en/financial-products/etfs/invesco-eqqq-nasdaq-100-ucits-etf-dist.html",
       "legal_structure": "UCITS_DISTRIBUTING_ETF",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "QQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "EQQQm_EQ"
     },
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE00BMFKG444",
       "issuer": "https://etf.dws.com/en-gb/IE00BMFKG444-nasdaq-100-ucits-etf-1c/",
       "legal_structure": "UCITS_ACCUMULATING_ETF",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "QQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "XNASd_EQ"
     },
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE00BLRPRL42",
       "issuer": "https://www.wisdomtree.eu/en-ie/etps/equities/wisdomtree-nasdaq-100-3x-daily-leveraged",
       "legal_structure": "COLLATERALISED_SWAP_DEBT_ETP_NOT_TQQQ",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "TQQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "QQQ3m_EQ"
     }
   ],
@@ -221,16 +220,19 @@
   "schema": 1,
   "start_checks": {
     "blocker_codes": [
+      "DEMO_ACCOUNT",
       "DAILY_INDEPENDENT",
+      "ACCOUNT_RECONCILIATION",
       "PRODUCT_BINDINGS",
       "EXECUTION_QUOTES",
+      "BROKER_AUTOMATION_POLICY",
       "DEMO_RELEASE"
     ],
     "checks": [
       {
         "code": "DEMO_ACCOUNT",
         "message": "Echte demo-authenticatie en actuele rekeningcontrole",
-        "passed": true
+        "passed": false
       },
       {
         "code": "DAILY_PRIMARY",
@@ -245,7 +247,7 @@
       {
         "code": "ACCOUNT_RECONCILIATION",
         "message": "Posities, orders en cash sluiten aan",
-        "passed": true
+        "passed": false
       },
       {
         "code": "PRODUCT_BINDINGS",
@@ -263,8 +265,13 @@
         "passed": true
       },
       {
+        "code": "BROKER_AUTOMATION_POLICY",
+        "message": "Trading 212 verbiedt algoritmische handel via de API; toepassing op demo en eigen interface moet de broker verduidelijken",
+        "passed": false
+      },
+      {
         "code": "DEMO_RELEASE",
-        "message": "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+        "message": "Er is geen vrijgegeven route voor automatische demo-orders bij Trading 212",
         "passed": false
       }
     ],

@@ -173,13 +173,13 @@ def tick(path=None,refresh=False,now=None,acquirer=acquire,client=None,confirmer
                 cache['confirmations']=confirmer(frames,now,root);cache['secondary_checked_at']=now.isoformat()
                 with store.transaction():store.set('market_cache',cache)
         independent=bool(data_current and len(cache.get('confirmations',[]))==2 and {v.get('symbol') for v in cache['confirmations']}=={'QQQ','TQQQ'} and all(v.get('day')==wanted and v.get('status')=='MATCHED' for v in cache['confirmations']))
-        broker_status='DEMO_ACCOUNT_NOT_CONFIGURED';snapshot=None;planning=dict(status='WAITING_FOR_DEMO_ACCOUNT',orders=[]);risk=None;reconciled=False;quotes={};real_demo=False
-        try:keys=read_credentials(root)
-        except Exception:
-            keys=('','');broker_status='DEMO_SECRET_FILE_PERMISSIONS_OR_SCHEMA_INVALID'
-        if client or all(keys):
+        # Keep the market observer running, but suspend all actual broker API
+        # access pending clarification of the current custom-interface terms.
+        # Injected clients exist only for offline simulation and tests.
+        broker_status='DEMO_API_PAUSED_TERMS_REVIEW';snapshot=None;planning=dict(status='BROKER_POLICY_REVIEW',orders=[]);risk=None;reconciled=False;quotes={};real_demo=False
+        if client is not None:
             try:
-                client=client or Trading212Demo(*keys,allow_mutations=not probe_only and c['mode']=='DEMO' and c['demo_orders_enabled']);meta=store.get('broker_metadata')
+                meta=store.get('broker_metadata')
                 metadata=meta['value'] if meta and (now-stamp(meta['at'])).total_seconds()<3600 else None
                 snapshot=broker_snapshot(client,now,independent,metadata,store)
                 real_demo=not injected_client
@@ -191,7 +191,7 @@ def tick(path=None,refresh=False,now=None,acquirer=acquire,client=None,confirmer
                     if row['status'] in ACTIVE and row['broker_id']:
                         executor.sync(row['id'])
                         row=store.order(row['id']);intent=json.loads(row['payload'])
-                        if not probe_only and c['mode']=='DEMO' and c['demo_orders_enabled'] and row['status'] in ('ACKED','PARTIAL') and now>stamp(intent['expires_at']):executor.cancel(row['id'])
+                        # Existing fixture orders may be inspected, never cancelled automatically.
                 reconciled=account_reconciled(store,snapshot)
                 if not snapshot['cash_history_complete']:
                     broker_status='DEMO_CASH_HISTORY_PAGINATION_PENDING'
@@ -215,16 +215,8 @@ def tick(path=None,refresh=False,now=None,acquirer=acquire,client=None,confirmer
                     previous=dict(store.get('executed_context',{}),attempted_ids=[r['id'] for r in store.orders()])
                     planning=plan_targets(current,WEIGHTS[c['profile']],snapshot,c['bindings'],quotes,
                         previous,now,c['hash'])
-                    if not probe_only and c['mode']=='DEMO' and c['demo_orders_enabled']:
-                        for intent in planning['orders']:
-                            # Missing independent data blocks buys, not verified exits.
-                            from .common import dec
-                            if dec(intent['quantity'])>0 and not independent:continue
-                            binding=next(b for b in c['bindings'] if b['ticker']==intent['ticker'])
-                            executor.send(intent,quotes[intent['ticker']],snapshot,binding,utcnow() if client is not None else now)
-                        # Do not mark a target executed until account reconciliation sees its fills.
-                        if planning['status']=='HOLD' and not any(r['status'] in ACTIVE for r in store.orders()):
-                            with store.transaction():store.set('executed_context',dict(targets=planning['targets'],month=planning['month']))
+                    # Planning output is informational. There is no automatic
+                    # order placement or context advancement in this observer.
             except (ValueError,BrokerFailure) as e:
                 broker_status=e.code if isinstance(e,BrokerFailure) else (str(e) if str(e).isupper() and len(str(e))<90 else 'DEMO_CHECK_FAILED')
                 with store.transaction():store.alert(broker_status,now.astimezone(NY).date().isoformat())
@@ -243,8 +235,8 @@ def tick(path=None,refresh=False,now=None,acquirer=acquire,client=None,confirmer
         orders=store.orders();halt=store.get('halt');trial=store.trial(c['hash'])
         state=dict(schema=1,kind='LOCAL_FORWARD_ADVICE_NOT_LIVE_TRADING',checked_at=now.isoformat(),
             mode=c['mode'],live_locked=True,s1_enabled=False,profile=c['profile'],policy_hash=c['hash'],probe_only=probe_only,
-            market=market,readiness=readiness,product_review=review_products(snapshot,wanted) if snapshot else [],
-            profiles=all_advice,broker=dict(status=broker_status,connected=snapshot is not None,orders_enabled=c['demo_orders_enabled'] and not probe_only,
+            market=market,readiness=readiness,product_review=review_products(snapshot or {},wanted),
+            profiles=all_advice,broker=dict(status=broker_status,connected=snapshot is not None,orders_enabled=False,
                 bindings=len(c['bindings']),execution_status=planning['status'],evidence_kind='REAL_DEMO_REST' if real_demo else 'FIXTURE_OR_NOT_CONNECTED',reconciled=reconciled),
             orders=dict(total=len(orders),working=sum(r['status'] in ACTIVE for r in orders),unknown=sum(r['status'] in ('SENT_UNKNOWN','CANCEL_UNKNOWN') for r in orders),filled=sum(r['status']=='FILLED' for r in orders)),
             halt=halt,risk=risk,trial=trial,alert_count=store.db.execute('SELECT count(*) FROM alerts').fetchone()[0],
@@ -281,14 +273,14 @@ def public_readiness(path=None):
         demo_account_verified=real,forward_trial=dict(qualified_sessions=count,required_sessions=20,status='WAITING_FOR_REAL_DEMO_OBSERVATIONS' if real else 'WAITING_FOR_DEMO_ACCOUNT'),
         market={k:s.get('market',{}).get(k) for k in ('status','source_day','expected_day','independent_check')},last_local_check=s.get('checked_at'),
         advice_preview={p:{k:v.get(k) for k in ('state','state_code','core_weight','trend_weight','signal_day')} for p,v in s.get('profiles',{}).items()},
-        broker_status='DEMO_READ_VERIFIED_AT_PUBLICATION' if real else 'ACCOUNT_NOT_VERIFIED_AT_PUBLICATION',orders_enabled=c['demo_orders_enabled'],
+        broker_status='DEMO_READ_VERIFIED_AT_PUBLICATION' if real else 'DEMO_API_PAUSED_TERMS_REVIEW',orders_enabled=False,
         readiness=dict(status=r.get('status','NOT_READY_FOR_DEMO_TRADING'),ready_to_start=ready,checks=checks,blocker_codes=[v['code'] for v in checks if not v['passed']]),
         product_review=[{k:p.get(k) for k in ('ticker','isin','role','currency','legal_structure','issuer','catalog_identity_verified','account_currency_matches','next_execution_at_ny','next_execution_market_open','actual_fractional_permission_verified','actual_tick_size_verified','actual_minimum_notional_verified','historical_execution_parity_verified','backtest_performance_inherited','status')} for p in s.get('product_review',[])],
-        steps=[dict(number=1,label='Productidentiteit',status='CATALOG_REVIEWED_BINDINGS_PENDING' if s.get('product_review') else 'ACCOUNT_CATALOG_PENDING'),
+        steps=[dict(number=1,label='Productidentiteit',status='CATALOG_REVIEWED_BINDINGS_PENDING' if any(p.get('catalog_identity_verified') for p in s.get('product_review',[])) else 'ACCOUNT_CATALOG_PENDING'),
             dict(number=2,label='Dagelijkse lokale agent',status='BUILT_ADVICE_ONLY'),
             dict(number=3,label='Orderopslag en herstart',status='TESTED_WITH_FIXTURES_NOT_BROKER'),
             dict(number=4,label='Controlekamer',status='BUILT'),
-            dict(number=5,label='Trading 212-demo',status='REAL_DEMO_READ_VERIFIED' if real else 'CLIENT_BUILT_ACCOUNT_NOT_CONNECTED'),
+            dict(number=5,label='Trading 212-demo',status='REAL_DEMO_READ_VERIFIED' if real else 'PAUSED_POLICY_REVIEW'),
             dict(number=6,label='Twintig beursdagen proef',status='READY_TO_START' if ready else 'BLOCKED_BY_START_CHECKS')],
         blockers=blockers,
         note='Gedateerde publicatiestand. Een geverifieerde demolezing is geen ordervrijgave. Actuele heartbeat en privé-orderstatus staan alleen op je Mac.')

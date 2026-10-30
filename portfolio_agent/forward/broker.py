@@ -28,7 +28,10 @@ class Trading212Demo:
         key=os.environ.get('QUANT_T212_DEMO_KEY','') if key is None else key
         secret=os.environ.get('QUANT_T212_DEMO_SECRET','') if secret is None else secret
         if not key or not secret:raise BrokerFailure('DEMO_CREDENTIALS_MISSING')
-        self._allow_mutations=allow_mutations is True
+        # The broker's current API terms prohibit algorithmic trading.  A
+        # production network client therefore cannot send or cancel orders;
+        # explicitly injected transports remain available for offline tests.
+        self._allow_mutations=allow_mutations is True and transport is not None
         self._auth='Basic '+base64.b64encode((key+':'+secret).encode()).decode()
         self._transport=transport or requests.Session();self._clock=clock;self._next={};self._lock=threading.Lock()
         if transport is None:

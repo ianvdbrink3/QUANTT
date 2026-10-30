@@ -23,22 +23,25 @@
     }
   },
   "blockers": [
+    "Echte demo-authenticatie en actuele rekeningcontrole",
     "Dezelfde slotdatum onafhankelijk bevestigd",
+    "Posities, orders en cash sluiten aan",
     "Exacte producten, valuta, fracties, prijstik, minimum en producthistorie bevestigd",
     "Werkelijke bid/ask-feed met herkomst, juiste notering en maximaal twee seconden oud",
-    "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+    "Trading 212 verbiedt algoritmische handel via de API; toepassing op demo en eigen interface moet de broker verduidelijken",
+    "Er is geen vrijgegeven route voor automatische demo-orders bij Trading 212",
     "Twintig echte volledige demo-observatiedagen ontbreken"
   ],
-  "broker_status": "DEMO_READ_VERIFIED_AT_PUBLICATION",
+  "broker_status": "DEMO_API_PAUSED_TERMS_REVIEW",
   "broker_target": "Trading 212 demo",
-  "demo_account_verified": true,
+  "demo_account_verified": false,
   "forward_trial": {
     "qualified_sessions": 0,
     "required_sessions": 20,
-    "status": "WAITING_FOR_REAL_DEMO_OBSERVATIONS"
+    "status": "WAITING_FOR_DEMO_ACCOUNT"
   },
   "kind": "PUBLIC_SETUP_SNAPSHOT_NOT_A_LIVE_MAC_CONNECTION",
-  "last_local_check": "2026-10-30T21:09:46.743740+00:00",
+  "last_local_check": "2026-10-30T21:30:47.276945+00:00",
   "live_locked": true,
   "market": {
     "expected_day": "2026-10-30",
@@ -51,73 +54,76 @@
   "orders_enabled": false,
   "product_review": [
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE0032077012",
       "issuer": "https://www.invesco.com/uk/en/financial-products/etfs/invesco-eqqq-nasdaq-100-ucits-etf-dist.html",
       "legal_structure": "UCITS_DISTRIBUTING_ETF",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "QQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "EQQQm_EQ"
     },
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE00BMFKG444",
       "issuer": "https://etf.dws.com/en-gb/IE00BMFKG444-nasdaq-100-ucits-etf-1c/",
       "legal_structure": "UCITS_ACCUMULATING_ETF",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "QQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "XNASd_EQ"
     },
     {
-      "account_currency_matches": true,
+      "account_currency_matches": false,
       "actual_fractional_permission_verified": false,
       "actual_minimum_notional_verified": false,
       "actual_tick_size_verified": false,
       "backtest_performance_inherited": false,
-      "catalog_identity_verified": true,
+      "catalog_identity_verified": false,
       "currency": "EUR",
       "historical_execution_parity_verified": false,
       "isin": "IE00BLRPRL42",
       "issuer": "https://www.wisdomtree.eu/en-ie/etps/equities/wisdomtree-nasdaq-100-3x-daily-leveraged",
       "legal_structure": "COLLATERALISED_SWAP_DEBT_ETP_NOT_TQQQ",
       "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
-      "next_execution_market_open": true,
+      "next_execution_market_open": false,
       "role": "TQQQ",
-      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "status": "NOT_VERIFIED",
       "ticker": "QQQ3m_EQ"
     }
   ],
-  "published_at": "2026-10-30T21:10:22.366261+00:00",
+  "published_at": "2026-10-30T21:31:00.513505+00:00",
   "readiness": {
     "blocker_codes": [
+      "DEMO_ACCOUNT",
       "DAILY_INDEPENDENT",
+      "ACCOUNT_RECONCILIATION",
       "PRODUCT_BINDINGS",
       "EXECUTION_QUOTES",
+      "BROKER_AUTOMATION_POLICY",
       "DEMO_RELEASE"
     ],
     "checks": [
       {
         "code": "DEMO_ACCOUNT",
         "message": "Echte demo-authenticatie en actuele rekeningcontrole",
-        "passed": true
+        "passed": false
       },
       {
         "code": "DAILY_PRIMARY",
@@ -132,7 +138,7 @@
       {
         "code": "ACCOUNT_RECONCILIATION",
         "message": "Posities, orders en cash sluiten aan",
-        "passed": true
+        "passed": false
       },
       {
         "code": "PRODUCT_BINDINGS",
@@ -150,8 +156,13 @@
         "passed": true
       },
       {
+        "code": "BROKER_AUTOMATION_POLICY",
+        "message": "Trading 212 verbiedt algoritmische handel via de API; toepassing op demo en eigen interface moet de broker verduidelijken",
+        "passed": false
+      },
+      {
         "code": "DEMO_RELEASE",
-        "message": "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+        "message": "Er is geen vrijgegeven route voor automatische demo-orders bij Trading 212",
         "passed": false
       }
     ],
@@ -163,7 +174,7 @@
     {
       "label": "Productidentiteit",
       "number": 1,
-      "status": "CATALOG_REVIEWED_BINDINGS_PENDING"
+      "status": "ACCOUNT_CATALOG_PENDING"
     },
     {
       "label": "Dagelijkse lokale agent",
@@ -183,7 +194,7 @@
     {
       "label": "Trading 212-demo",
       "number": 5,
-      "status": "REAL_DEMO_READ_VERIFIED"
+      "status": "PAUSED_POLICY_REVIEW"
     },
     {
       "label": "Twintig beursdagen proef",

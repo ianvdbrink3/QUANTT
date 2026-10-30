@@ -35,6 +35,8 @@ test('published account verification cannot imply permission for orders or a com
   assert.equal(typeof data.demo_account_verified,'boolean');assert.equal(data.forward_trial.qualified_sessions,0);
   if(data.demo_account_verified) assert.equal(data.broker_status,'DEMO_READ_VERIFIED_AT_PUBLICATION');
   assert.equal(data.readiness.ready_to_start,false);
+  assert.equal(data.broker_status,'DEMO_API_PAUSED_TERMS_REVIEW');
+  assert.ok(data.readiness.blocker_codes.includes('BROKER_AUTOMATION_POLICY'));
   assert.ok(data.readiness.blocker_codes.includes('PRODUCT_BINDINGS'));
   assert.ok(data.readiness.blocker_codes.includes('EXECUTION_QUOTES'));
   assert.equal(data.steps.length,6);
@@ -42,6 +44,7 @@ test('published account verification cannot imply permission for orders or a com
   const ui=read('app/portfolio-os/agent-control.tsx');
   assert.ok(ui.includes('geen live verbinding met je Mac'));
   assert.ok(ui.includes('Alleen echte, volledige demo-observatiedagen tellen'));
+  assert.ok(ui.includes('Trading 212: automatische API-handel is geblokkeerd'));
   assert.ok(ui.includes('/reports/LOCAL_AGENT_EXECUTION_GUIDE_2026-10-30.md'));
   assert.ok(!ui.includes('method: "POST"'));
 });

@@ -1,16 +1,16 @@
 # QUANT lokale agent — huidige aansluitgids
 
-Bijgewerkt op 30 oktober 2026. De echte Trading 212 Invest-demo is lokaal gekoppeld en alleen-lezen geverifieerd. De sleutels zijn opgeslagen; je hoeft ze niet opnieuw in te voeren. Er zijn nul orders geplaatst. Echte handel blijft technisch uitgesloten.
+Bijgewerkt op 30 oktober 2026. De Trading 212 Invest-demo is eerder alleen-lezen geverifieerd. De brokerverbinding is nu uit voorzorg gepauzeerd. De sleutels zijn opgeslagen; je hoeft ze niet opnieuw in te voeren. Er zijn nul orders geplaatst. Echte handel blijft technisch uitgesloten.
 
 De huidige complete productcontrole, bewijsstukken en resterende afhankelijkheden staan in [Trading 212: startcontrole en demo-protocol](TRADING212_DEMO_READINESS_2026-10-30.md). De openbare website toont een gedateerde publicatiestand; de actuele lokale heartbeat en privé-administratie blijven op de Mac.
 
 ## Wat nu draait
 
-De macOS-adviesdienst controleert iedere minuut de nieuwe afgeronde QQQ/TQQQ-dagdata, de vaste signaalkernel en de demo-administratie. De onafhankelijke Nasdaq-slotprijscontrole probeert een ontbrekende datum iedere 15 minuten opnieuw. Weekenden, US-feestdagen, vroege sluitingen en tijdzones worden verwerkt. S1 blijft uit. Er is geen betaalde LLM-aanroep nodig voor deze controle.
+De macOS-adviesdienst controleert iedere minuut de nieuwe afgeronde QQQ/TQQQ-dagdata, en de vaste signaalkernel. De Trading 212-API en demo-administratie worden momenteel niet opgevraagd. De onafhankelijke Nasdaq-slotprijscontrole probeert een ontbrekende datum iedere 15 minuten opnieuw. Weekenden, US-feestdagen, vroege sluitingen en tijdzones worden verwerkt. S1 blijft uit. Er is geen betaalde LLM-aanroep nodig voor deze controle.
 
 De Mac moet ingeschakeld en wakker zijn. De dienst start bij login en herstart na een crash. Er zijn geen slaap- of beveiligingsinstellingen veranderd. Het dagboek en de bronbestanden blijven bewaard bij stoppen of herstarten.
 
-De configuratie staat op **ADVICE_ONLY**, met demo_orders_enabled=false. Bovendien weigert de werkelijk gebruikte REST-client POST en DELETE. De brede rechten van de demosleutel veranderen die softwareblokkade niet.
+De configuratie staat op **ADVICE_ONLY**, met demo_orders_enabled=false. De standaard netwerkclient weigert POST en DELETE, ook als iemand de demo-configuratie zou inschakelen. De brede rechten van de demosleutel veranderen die softwareblokkade niet.
 
 ## Status bekijken
 
@@ -23,7 +23,7 @@ Vanuit de projectmap:
 .venv/bin/python -m portfolio_agent.forward preflight
 ```
 
-De startcontrole kan ook buiten het vijfminutenordervenster aangeven waarom uitvoering nog niet mag. Een succesvolle API-verbinding is geen vrijgave.
+De startcontrole kan ook buiten het vijfminutenordervenster aangeven waarom uitvoering nog niet mag. De preflight werkt nu zonder brokerverkeer. Een eerdere succesvolle API-verbinding is geen vrijgave.
 
 ## Starten en stoppen
 
@@ -41,7 +41,7 @@ De dubbelklikbestanden `tools/start-portfolio-advice.command` en `tools/stop-por
 - De actuele slotdatum moet onafhankelijk zijn bevestigd; een eerder bevestigde datum telt niet als de nieuwe datum.
 - De exacte brokerproducten, fractierechten, minimale orderwaarde, prijstik en productdata moeten zijn vrijgegeven. De gecontroleerde EUR-catalogus bevat EQQQm_EQ, XNASd_EQ en QQQ3m_EQ. Catalogusvermelding is geen bewijs van uitvoerbaarheid. QQQ3 is een schuld-ETP en geen TQQQ.
 - Er is nog geen geverifieerde verse bid/ask-provider gekoppeld. Het openbare Milanese boek is 15 minuten vertraagd; dat voldoet niet aan maximaal twee seconden.
-- Pas na deze technische controles volgt een expliciete lokale demo-orderstart. Er is geen LIVE-modus en de website heeft geen orderknoppen.
+- De actuele [API-voorwaarden](https://www.trading212.com/legal-documentation/API-Terms_EN.pdf) verbieden algoritmisch handelen. Trading 212 moet de reikwijdte voor demo en een eigen interface verduidelijken; voor automatische handel is een geschikte alternatieve broker een onderzoeksspoor. Er is geen LIVE-modus en de website heeft geen orderknoppen.
 
 De huidige proefstand blijft **0/20 echte volledige demo-sessies**. Historische replays, geïnjecteerde testclients en losse sluitingspolls tellen niet. De policyhash omvat zowel de configuratie als de uitvoeringscode. Het gedetailleerde protocol en het theoretische startrooster staan in het actuele rapport.
 

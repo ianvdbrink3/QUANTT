@@ -1,12 +1,20 @@
 # Trading 212: feitelijke startcontrole en demo-protocol
 
-30 oktober 2026. Status: **NOT_READY_FOR_DEMO_TRADING**. De echte Invest-demo is lokaal alleen-lezen gekoppeld; nul orders. De software is verder uitgewerkt, maar een volledige orderproef mag pas starten wanneer de nog ontbrekende product- en koersbewijzen aanwezig zijn. Geen historische prestaties worden aan andere fondsen toegeschreven.
+30 oktober 2026. Status: **NOT_READY_FOR_DEMO_TRADING**. De Invest-demo is eerder lokaal alleen-lezen geverifieerd; nul orders. De brokerverbinding is nu uit voorzorg gepauzeerd en automatische API-orders zijn geblokkeerd. Naast technische beperkingen verhinderen de actuele brokervoorwaarden een onbevestigde automatische handelsproef. Geen historische prestaties worden aan andere fondsen toegeschreven.
+
+## Actuele API-voorwaarden: koerswijziging
+
+De door Trading 212 vanuit zijn [actuele API-documentatie](https://docs.trading212.com/api/section/authentication) gelinkte [API-voorwaarden](https://www.trading212.com/legal-documentation/API-Terms_EN.pdf) zijn volgens het document op 17 oktober 2025 bijgewerkt en noemen ook Trading 212 EU GmbH. Artikel 4.2(a) verbiedt algoritmische handel via de API; artikel 11 definieert die onder meer aan de hand van automatisch bepaalde orderparameters bij beperkte of geen menselijke tussenkomst. Onze voorgestelde automatische strategie lijkt onder die definitie te vallen. De documentatie biedt een demo voor applicatietesten, maar verduidelijkt in deze passages niet apart of deze verbodsbepaling ook demo-orders omvat. Artikel 6.7 noemt schriftelijke toestemming voor gebruik van een aangepaste interface; de reikwijdte voor deze alleen-lezen toepassing moet de broker bevestigen. Artikel 7.1(b) vermeldt dat API-marktdata niet realtime is.
+
+Eerder is ten onrechte alleen verwezen naar een oudere versie uit 2023, die via een verouderde zoekindex op hetzelfde adres werd weergegeven. De documenten van 2025 zijn rechtstreeks gevolgd vanaf de actuele help- en API-pagina. De voorgestelde automatische uitvoering bij Trading 212 kan op basis van deze voorwaarden niet worden vrijgegeven. De routine brokerverbinding is uit voorzorg gepauzeerd; de lokale berekening blijft zelfstandig bruikbaar. Testcases met nepclients en een lokale server blijven simulaties.
+
+[IBKR beschrijft](https://www.interactivebrokers.com/en/trading/ib-api.php) een API voor geautomatiseerde strategieën. [IBKR vermeldt](https://www.interactivebrokers.com/docs/tws-api/doc/md/introduction) dat voor live-API-koersen normaal een betaald marktdatasubscriptie nodig is. Dat is een onderzoeksspoor, geen aangemaakte rekening of gratis oplossing. Beschikbaarheid van de gewenste EUR-producten, de vereiste kosten en de demo-toegang blijven te controleren.
 
 ## Wat daadwerkelijk is vastgesteld
 
 De officiële demo-REST-API accepteert de lokaal ingevoerde sleutels. Rekeningoverzicht, posities, openstaande orders, instrumentcatalogus, beursroosters, transacties en dividenden zijn uitgelezen. De administratie sluit aan. De sleutel heeft brede rechten, maar de lokale configuratie staat op ADVICE_ONLY en de daadwerkelijk gebruikte REST-client weigert POST en DELETE. Er worden dus ook geen oude orders stilzwijgend geannuleerd terwijl de agent alleen-lezen staat.
 
-De dienst draait via macOS launchd en controleert iedere minuut. Slaapstand en netwerkuitval kunnen deze werking onderbreken. De dienst past geen energie- of beveiligingsinstellingen aan. Een heartbeatgat tijdens de vereiste sessie wordt geregistreerd; een gemist ordermoment levert geen inhaalorder op.
+De lokale marktonderzoeksdienst draait via macOS launchd en controleert iedere minuut. Zij leest op dit moment geen Trading 212-API of sleutels uit. Slaapstand en netwerkuitval kunnen deze werking onderbreken. De dienst past geen energie- of beveiligingsinstellingen aan. Een heartbeatgat tijdens de vereiste sessie wordt geregistreerd; een gemist ordermoment levert geen inhaalorder op.
 
 Het rekeningbudget voor de strategie blijft maximaal 1.000, met de bestaande reserve van max(10, 1%). Extra virtueel demogeld telt niet als ongemelde positieruimte. S1 blijft uit. De bestaande signaalkernel, profielgewichten en historische prestatiebestanden worden niet gewijzigd.
 
@@ -18,7 +26,7 @@ Het rekeningbudget voor de strategie blijft maximaal 1.000, met de bestaande res
 | 2 Dagelijkse agent | Nieuwe onveranderlijke Yahoo-bronnen, dezelfde vaste berekeningen, onafhankelijke Nasdaq-controle en hercontrole iedere 15 minuten bij publicatievertraging | De slotdatum moet daadwerkelijk bij beide bronnen gepubliceerd zijn |
 | 3 Administratie | Duurzame outbox, geen blinde POST-herhaling, gedeeltelijke/late fills, cashpaginering en bron-/codebinding van proefdagen | Werkelijke demo-fills moeten na expliciete start nog worden waargenomen |
 | 4 Controlekamer | Actuele lokale status plus gedateerde openbare publicatiestand, volledige startcheck en productoverzicht | Openbare website is geen brokerverbinding en heeft geen orderknoppen |
-| 5 Brokerclient | Echte demo-authenticatie en alleen-lezen aansluiting bewezen | Exacte verse uitvoeringsquotes en vrijgegeven productbindingen |
+| 5 Brokerclient | Eerdere demo-authenticatie en alleen-lezen aansluiting bewezen | Verbinding gepauzeerd; broker moet voorwaarden voor eigen interface en demo verduidelijken |
 | 6 Twintig sessies | Vast protocol, kalender, kwalificatie en storingsproeven | **0/20 echte gekwalificeerde sessies**; geen fixture of replay wordt als echte demodag geteld |
 
 ## Exacte productinventarisatie
@@ -61,6 +69,8 @@ Stooq gaf bij deze controle HTML met een browserverificatie terug. Dat is geen k
 
 ## Uitvoeringsquotes: de materiële resterende afhankelijkheid
 
+Artikel 3.4 van de actuele API-voorwaarden zegt dat API-orders door de systematic internaliser van Trading 212 worden verwerkt. De beurs van de notering is daarom op zichzelf geen bewijs van de werkelijke uitvoeringsplaats of uitvoeringsquote.
+
 De op 30 oktober opgehaalde officiële [Trading212 OpenAPI-specificatie](https://docs.trading212.com/_bundle/api.json?download=) heeft 17 paden. Er is geen daarin bevestigde bid-/laatkoersfeed. Een position.currentPrice wordt niet als een twee seconden verse uitvoeringsquote opgevoerd.
 
 De officiële openbare [Milanese boekpagina van QQQ3](https://www.borsaitaliana.it/borsa/etc-etn/dettaglio.html?isin=IE00BLRPRL42&lang=it&mic=ETFP) en [die van EQQQ](https://www.borsaitaliana.it/borsa/etf/dettaglio.html?isin=IE0032077012&lang=it&mic=ETFP) vermelden expliciet 15 minuten vertraging. Daarmee is die bron ongeschikt voor de vastgelegde twee-secondenpoort. Een verse downloadtijd verandert de ouderdom van de beurskoers niet.
@@ -75,11 +85,14 @@ Trading212 publiceert [prijsafhankelijke hoeveelheidsprecisie](https://helpcentr
 
 De transacties en dividenden worden met een duurzame pagineringscursor verzameld. Een ontbrekende pagina telt niet als nul. Identieke referenties worden gededupliceerd; gewijzigde inhoud onder dezelfde referentie blokkeert reconciliatie. De geverifieerde historie kan bij een nieuwe, chronologisch gecontroleerde kop aansluiten. Bij onvolledige historie wacht de engine; hij verklaart niet na twee verwachte pagineringspolls ten onrechte de rekening corrupt.
 
-Rente op vrij geld en uitleenrente tellen als opbrengst, niet als een nieuwe storting. Deposits veranderen de risicounits; dividend en rente niet. Onzekere orders blokkeren nieuwe aankopen ook na herstart. De transportclient heeft daarnaast een onafhankelijke alleen-lezenblokkade. Een verkoop met bevestigde hoeveelheid en verse quote kan in expliciet vrijgegeven DEMO-modus risicoreductie uitvoeren, ook wanneer nieuwe aankopen door ontbrekende dagbevestiging worden geweigerd.
+Rente op vrij geld en uitleenrente tellen als opbrengst, niet als een nieuwe storting. Deposits veranderen de risicounits; dividend en rente niet. Onzekere orders blokkeren nieuwe aankopen ook na herstart. De transportclient heeft daarnaast een onafhankelijke alleen-lezenblokkade. De standaard netwerkclient weigert ook bij een ingeschakelde configuratie alle orderverzoeken. Een testtransport kan uitsluitend voor offline fixtures worden geïnjecteerd. Bestaande handmatige orders moeten zo nodig via de brokerapp worden beheerd.
 
-## Protocol voor twintig echte sessies
+## Eerder demo-protocol: voorlopig niet vrijgegeven
 
-1. Begin uitsluitend met dezelfde expliciet vrijgegeven demo-configuratie, bron- en productdefinitie. Er bestaat geen LIVE-host of LIVE-modus.
+Dit bevroren meetplan beschrijft het eerder beoogde experiment. Het verleent geen toestemming om de automatische Trading 212-API-uitvoering te starten. Een eventuele nieuwe broker vereist een eigen vooraf vastgelegd en getoetst uitvoeringsprotocol.
+
+
+1. Een toekomstige proef kan pas starten als de gebruikte broker en productdefinitie de beoogde uitvoering aantoonbaar toestaan. Er bestaat geen LIVE-host of LIVE-modus in deze adapter.
 2. De policyhash omvat ook de uitvoeringscode en gedeelde signaalkernel. Een code- of regelwijziging begint een nieuwe bewijsreeks; oude waarnemingen blijven bewaard.
 3. Start de controle uiterlijk 09:20 New York. Van dat moment tot het officiële RTH-slot moet elke vereiste controle slagen, zonder gat groter dan driemaal het pollinterval.
 4. Tijdens 09:31–09:36 en zolang orders werken zijn werkelijke verse uitvoeringsquotes verplicht. Normale beursstilte na sluiting van een Europese beurs wordt niet als een ontbrekende realtimequote voor een al voorbij ordervenster behandeld.
@@ -88,7 +101,7 @@ Rente op vrij geld en uitleenrente tellen als opbrengst, niet als een nieuwe sto
 7. Een geïnjecteerde testclient, replay of losse poll bij het slot kan geen echte proefdag scoren. De dag moet zijn gestart met werkelijke officiële demo-authenticatie en alle uitvoeringseisen.
 8. Nul trades op een geldig gecontroleerde dag is toegestaan als de bevroren regels geen order vereisen. Niet-uitgevoerde orders worden niet als fills geboekt.
 
-Als alle ontbrekende voorwaarden vóór maandag 2 november vervuld zijn, is 30 november 2026 theoretisch de twintigste US-beurssessie. Thanksgiving 26 november is gesloten; 27 november heeft een vroege sluiting. Dit rooster is geen ingeplande order, starttoezegging of voltooid bewijs. De huidige teller blijft **0/20**.
+Als een geschikte broker en alle ontbrekende voorwaarden vóór maandag 2 november beschikbaar zouden zijn, is 30 november 2026 theoretisch de twintigste US-beurssessie. Thanksgiving 26 november is gesloten; 27 november heeft een vroege sluiting. Dit rooster is geen ingeplande order, starttoezegging of voltooid bewijs. De huidige teller blijft **0/20**.
 
 ## Reproduceerbare controle en vrijgavemoment
 
@@ -98,4 +111,4 @@ Als alle ontbrekende voorwaarden vóór maandag 2 november vervuld zijn, is 30 n
 - `node --test tests/portfolio-public.test.mjs tests/portfolio-forward.test.mjs`: publieke inhoud en privacygrenzen.
 - `npm run typecheck` en `npm run build`: dashboardcontrole; bouw in een afzonderlijke checkout als een ontwikkelserver draait.
 
-Voor vrijgave ontbreken nu: dezelfde actuele dag bij de onafhankelijke bron, concrete productspecifieke uitvoeringsbewijzen, een geverifieerde verse quoteprovider en daarna de expliciete lokale demo-orderstart. Er wordt geen toestemming gevraagd zolang die technische afhankelijkheden niet concreet zijn opgelost. De startcontrole maakt deze ontbrekende bewijzen zichtbaar; ze vult ze niet zelf met aannames in.
+Voor een toekomstig passend traject ontbreken nu: duidelijkheid van Trading 212 over de eigen interface en demo, dezelfde actuele dag bij de onafhankelijke bron, productspecifieke uitvoeringsbewijzen en een geverifieerde verse quoteprovider. Voor volledig automatische handel is een broker nodig die de beoogde uitvoering toestaat; een eigen vrijgave kan Trading 212-voorwaarden niet opzijzetten. Er wordt geen toestemming gevraagd zolang die technische afhankelijkheden niet concreet zijn opgelost. De startcontrole maakt deze ontbrekende bewijzen zichtbaar; ze vult ze niet zelf met aannames in.

@@ -39,17 +39,13 @@ def build():
         if hashlib.sha256(raw).hexdigest()!=probe['sha256']:raise ValueError('AUDIT_SOURCE_HASH_MISMATCH')
         out=audit_daily(json.loads(raw));out.update(source_sha256=probe['sha256'],received_at=probe['at']);data.append(out)
     atomic(folder/'european-daily-audit.json',data)
-    s=status();store=Store(root/'forward.sqlite3')
-    try:
-        meta=store.get('broker_metadata',{}).get('value',{});catalog=meta.get('instruments',[])
-        broker_metadata_hash=hashlib.sha256(json.dumps(meta,sort_keys=True).encode()).hexdigest()
-    finally:store.close()
+    s=status()
     dates=[d for d in pd.date_range('2026-11-02','2026-12-10').strftime('%Y-%m-%d') if is_session(d)][:20]
     safe_data=[{k:v for k,v in item.items() if k!='invalid_dates'} for item in data]
     report=dict(schema=1,checked_at=utcnow().isoformat(),status='NOT_READY_FOR_DEMO_TRADING',
-        policy_hash=c['hash'],implementation_hash=c['implementation_hash'],orders_enabled=c['demo_orders_enabled'],live_locked=True,
+        policy_hash=c['hash'],implementation_hash=c['implementation_hash'],orders_enabled=False,live_locked=True,
         broker=dict(real_demo_read_verified=s.get('broker',{}).get('evidence_kind')=='REAL_DEMO_REST' and s.get('broker',{}).get('connected') is True,
-            reconciled=s.get('broker',{}).get('reconciled',False),catalog_instruments=len(catalog),metadata_sha256=broker_metadata_hash),
+            reconciled=s.get('broker',{}).get('reconciled',False),status=s.get('broker',{}).get('status')),
         start_checks=s.get('readiness',{}),product_review=s.get('product_review',[]),european_daily_data=safe_data,
         independent_past_day_proof=json.loads((folder/'nasdaq-independent-past-day-proof.json').read_text()),
         public_product_page=dict(url='https://www.trading212.com/nl/trading-instruments/invest/QQQ3.IT',

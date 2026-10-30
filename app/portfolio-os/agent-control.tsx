@@ -13,6 +13,7 @@ type AgentState = {
   live_locked: boolean;
   mode: string;
   demo_account_verified?: boolean;
+  broker_status?: string;
   readiness?: { status: string; ready_to_start: boolean; checks: {code:string;passed:boolean;message:string}[]; blocker_codes:string[] };
   product_review?: {ticker:string;isin:string;currency:string;legal_structure:string;catalog_identity_verified:boolean;backtest_performance_inherited:boolean}[];
   checked_at?: string;
@@ -139,6 +140,7 @@ export default function AgentControl() {
   const local = state?.kind === "LOCAL_FORWARD_STATUS";
   const trial = state?.trial ?? state?.forward_trial;
   const connected = local ? state?.broker?.connected === true : state?.demo_account_verified === true;
+  const brokerPaused = (local ? state?.broker?.status : state?.broker_status) === "DEMO_API_PAUSED_TERMS_REVIEW";
   return (
     <section
       className="human-panel agent-control"
@@ -161,6 +163,14 @@ export default function AgentControl() {
         Dezelfde vaste signalen. S1 staat uit. De agent beslist niet met een LLM
         en verandert geen strategieparameters.
       </p>
+      <div className="agent-warning">
+        <AlertTriangle size={17} />
+        <div>
+          <strong>Trading 212: automatische API-handel is geblokkeerd</strong>
+          <p>De actuele API-voorwaarden verbieden algoritmische handel. De toepassing op demo en de eigen interface moet de broker verduidelijken; de lokale marktcontrole blijft beschikbaar.</p>
+          <a href="https://www.trading212.com/legal-documentation/API-Terms_EN.pdf" target="_blank" rel="noopener noreferrer">Lees de API-voorwaarden</a>
+        </div>
+      </div>
       {error ? (
         <p role="alert" className="agent-warning">
           {error}
@@ -189,12 +199,12 @@ export default function AgentControl() {
               <strong>
                 {connected
                   ? local ? "Trading 212-demo uitgelezen" : "Demoverbinding geverifieerd bij publicatie"
-                  : "Wacht op demo-account"}
+                  : brokerPaused ? "Brokerverbinding gepauzeerd" : "Wacht op demo-account"}
               </strong>
               <p>
                 {connected
                   ? "Een gelezen rekening is nog geen bewezen orderuitvoering."
-                  : "Er is nog geen actuele, geverifieerde demolezing. Bekijk de startcontrole hieronder."}
+                  : brokerPaused ? "De demo was eerder alleen-lezen gekoppeld. Er is geen actuele brokercontrole." : "Er is nog geen actuele, geverifieerde demolezing. Bekijk de startcontrole hieronder."}
               </p>
             </div>
             <div>
@@ -248,7 +258,9 @@ export default function AgentControl() {
                     {s.number}. {s.label}
                   </strong>
                   <span>
-                    {s.status === "REAL_DEMO_READ_VERIFIED"
+                    {s.status === "PAUSED_POLICY_REVIEW"
+                      ? "Brokerverbinding gepauzeerd; voorwaarden te verduidelijken"
+                      : s.status === "REAL_DEMO_READ_VERIFIED"
                       ? "Echte demo alleen-lezen gecontroleerd"
                       : s.status === "CATALOG_REVIEWED_BINDINGS_PENDING"
                         ? "Catalogus gecontroleerd; productvrijgave ontbreekt"
@@ -273,7 +285,7 @@ export default function AgentControl() {
               <ul>
                 {state.readiness.checks.map(c=><li key={c.code} className={c.passed?"passed":"pending"}>
                   {c.passed?<CheckCircle2 size={16}/>:<AlertTriangle size={16}/>}
-                  <span>{c.message}</span><strong>{c.passed?"Bevestigd":"Nog te bevestigen"}</strong>
+                  <span>{c.message}</span><strong>{c.passed?"Bevestigd":c.code==="BROKER_AUTOMATION_POLICY"?"Geblokkeerd":"Nog te bevestigen"}</strong>
                 </li>)}
               </ul>
             </div>
@@ -346,13 +358,16 @@ export default function AgentControl() {
             </div>
           </div>
           <p className="agent-intro">
-            Lokale automatisering vraagt een ingeschakelde, wakkere Mac. Bij
-            gemiste ordermomenten volgt een melding; de agent verzint geen
-            eerdere fill en stuurt geen inhaalorder. Een brokerbevestiging geldt
-            pas als uitvoering nadat de werkelijke fill is uitgelezen.
+            De lokale marktcontrole vraagt een ingeschakelde, wakkere Mac. De
+            brokerverbinding is gepauzeerd en de agent plaatst geen orders.
+            Historische signalen zijn geen bewijs van Europese uitvoering.
           </p>
           <a className="agent-guide" href="/reports/TRADING212_DEMO_READINESS_2026-10-30.md" target="_blank" rel="noopener noreferrer">
             Lees de volledige product- en startcontrole →
+          </a>
+          <br />
+          <a className="agent-guide" href="/reports/BROKER_ROUTES_AND_API_POLICY_2026-10-30.md" target="_blank" rel="noopener noreferrer">
+            Vergelijk de twee brokerroutes en kosten →
           </a>
           <br />
           <a
