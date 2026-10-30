@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-29",
+  "files": [
+    {
+      "dividend_events": 39,
+      "first": "2017-01-03",
+      "last": "2026-10-28",
+      "params": {
+        "events": "div,splits,capitalGains",
+        "includeAdjustedClose": "true",
+        "interval": "1d",
+        "period1": 1483228800,
+        "period2": 1793232000
+      },
+      "path": "data/raw/etf-empirical-2026-10-29/QQQ_yahoo_daily_2017-01-01_2026-10-28.json",
+      "rows": 2469,
+      "sha256": "b6071049cb7bd602a7b19709bbf62270daa094e0ddb674bc31260decededb646",
+      "split_events": 0,
+      "status": "DOWNLOADED_PUBLIC_SOURCE",
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ"
+    },
+    {
+      "dividend_events": 19,
+      "first": "2017-01-03",
+      "last": "2026-10-28",
+      "params": {
+        "events": "div,splits,capitalGains",
+        "includeAdjustedClose": "true",
+        "interval": "1d",
+        "period1": 1483228800,
+        "period2": 1793232000
+      },
+      "path": "data/raw/etf-empirical-2026-10-29/TQQQ_yahoo_daily_2017-01-01_2026-10-28.json",
+      "rows": 2469,
+      "sha256": "37c5d177655bfe62ca0e39d35d5df17721bcc10760a87b1486c2c96ff1dac371",
+      "split_events": 5,
+      "status": "DOWNLOADED_PUBLIC_SOURCE",
+      "symbol": "TQQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TQQQ"
+    },
+    {
+      "dividend_events": 39,
+      "first": "2017-01-03",
+      "last": "2026-10-28",
+      "params": {
+        "events": "div,splits,capitalGains",
+        "includeAdjustedClose": "true",
+        "interval": "1d",
+        "period1": 1483228800,
+        "period2": 1793232000
+      },
+      "path": "data/raw/etf-empirical-2026-10-29/SPY_yahoo_daily_2017-01-01_2026-10-28.json",
+      "rows": 2469,
+      "sha256": "1ec87182dfef93744870e67fb6e6a700f99794a894b7e022e1ad20b875823a83",
+      "split_events": 0,
+      "status": "DOWNLOADED_PUBLIC_SOURCE",
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY"
+    },
+    {
+      "dividend_events": 28,
+      "first": "2017-01-03",
+      "last": "2026-10-28",
+      "params": {
+        "events": "div,splits,capitalGains",
+        "includeAdjustedClose": "true",
+        "interval": "1d",
+        "period1": 1483228800,
+        "period2": 1793232000
+      },
+      "path": "data/raw/etf-empirical-2026-10-29/UPRO_yahoo_daily_2017-01-01_2026-10-28.json",
+      "rows": 2469,
+      "sha256": "a04b7d872478cfb5eb20db327a155482590994ad3fb89f1517a19e0eeb4b507b",
+      "split_events": 2,
+      "status": "DOWNLOADED_PUBLIC_SOURCE",
+      "symbol": "UPRO",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/UPRO"
+    }
+  ],
+  "minute_sources": [],
+  "price_adjustment": "Vendor quote OHLC are split-adjusted. Adjusted close additionally incorporates distributions; corporate actions retained. Verify factors before returns.",
+  "status": "IMMUTABLE_ETF_DAILY_SOURCES_CORPORATE_ACTIONS_INCLUDED"
+}

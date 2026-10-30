@@ -1,0 +1,21 @@
+{
+  "status": "ACTIVE_HISTORICAL_DATA_REPLACES_FIXED_PROFILE_PROJECTIONS",
+  "tests": 1758,
+  "public_tests": 14,
+  "source_prices_published": false,
+  "private_ledgers_published": false,
+  "period": [
+    "2019-01-02",
+    "2026-10-28"
+  ],
+  "sessions": 1967,
+  "continuous_crash_years": [
+    2020,
+    2022
+  ],
+  "reproduction": "two fresh source reloads produce byte-identical output",
+  "s1_full_profiles": "CENSORED_UNKNOWN_S1_PATHS; no complete NAV claimed",
+  "old_scenarios": "ARCHIVED_REFERENCE_ONLY; no longer read by UI",
+  "growth_ui": "derived historical curves, user-set future simulation starts0percent",
+  "output_sha256": "f322a77c21e432755eea48bd5446960a79d8a8e7054452e5c1a0b860190b4de5"
+}

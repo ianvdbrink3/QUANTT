@@ -107,3 +107,37 @@ test('public chart defaults to TradingView and never requests the private histor
   assert.ok(chart.includes('length: 20')&&chart.includes('length: 200'));
   assert.equal(existsSync(new URL('../public/data/portfolio-os/chart_daily.json',import.meta.url)),false);
 });
+
+const benchmark=read('profile-benchmark');
+test('historical comparison covers continuous2019-2026 and both crashes; no fabricated S1 results',()=>{
+  assert.equal(benchmark.days.length,1967);
+  assert.equal(benchmark.first,'2019-01-02'); assert.equal(benchmark.last,'2026-10-28');
+  assert.equal(benchmark.days.filter(d=>d.startsWith('2022-')).length,251);
+  assert.equal(benchmark.days.filter(d=>d.startsWith('2020-')).length,253);
+  for(const [key,curve] of Object.entries(benchmark.curves)){
+    assert.equal(curve.length,benchmark.days.length); assert.ok(curve.every(v=>Number.isFinite(v)&&v>0));
+    const [currency,cost,monthly,model]=key.split('|');
+    const r=benchmark.rows.find(r=>r.currency===currency&&r.RT_bp===+cost&&r.monthly===+monthly&&r.model===model&&r.period==='FULL');
+    assert.ok(Math.abs(r.ending-curve.at(-1))<.00001);
+    assert.equal(r.contributions,+monthly?10300:1000);
+  }
+  assert.equal(benchmark.s1.status,'CENSORED_UNKNOWN_S1_PATHS');
+  for(const r of Object.values(benchmark.unscored_profiles)){assert.equal(r.ending,null);assert.equal(r.CAGR_pct,null);}
+});
+test('new primary historical data is byte-locked and contains no source OHLC or ledger',()=>{
+  const reg=JSON.parse(readFileSync(new URL('../research/profile-benchmark-register-2026-10-30.json',import.meta.url)));
+  const raw=readFileSync(new URL('../public/data/portfolio-os/profile-benchmark.json',import.meta.url));
+  assert.equal(reg.public_output_sha256,createHash('sha256').update(raw).digest('hex'));
+  assert.equal(reg.independent_reload_byte_identical,true);
+  assert.ok(!raw.toString().includes('/Users/')); assert.ok(!raw.toString().includes('filled_qty'));
+  assert.ok(!('audit' in benchmark));assert.ok(!('daily_ohlc' in benchmark));
+  assert.deepEqual(benchmark.archived_zero_flow_parity_max_error,{balanced:0,defensive:0,offensive:0});
+});
+test('historical UI has explicit user-set simulator instead of fixed profile forecasts',()=>{
+  const src=readFileSync(new URL('../app/portfolio-os/performance-comparison.tsx',import.meta.url),'utf8');
+  assert.ok(src.includes('useState(0)'));assert.ok(src.includes('Rekensimulatie'));
+  assert.ok(src.includes('qqq_buyhold'));assert.ok(src.includes('S1-reserve in cash'));
+  assert.ok(!src.includes('0.06'));assert.ok(!src.includes('0.08'));
+  const parent=readFileSync(new URL('../app/portfolio-os/portfolio-os.tsx',import.meta.url),'utf8');
+  assert.ok(parent.includes('<PerformanceComparison profile={profile} />'));assert.ok(!parent.includes('function Growth('));
+});

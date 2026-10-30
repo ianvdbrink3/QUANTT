@@ -32,12 +32,9 @@ import {
   publicCostRoutes,
   terminalClockContext,
 } from "@/lib/portfolio-public.mjs";
-import {
-  dutchDate,
-  growthPoints,
-  marketCopy,
-} from "@/lib/portfolio-friendly.mjs";
+import { dutchDate, marketCopy } from "@/lib/portfolio-friendly.mjs";
 import PortfolioChart from "./portfolio-chart";
+import PerformanceComparison from "./performance-comparison";
 
 const tabs = [
   "Overzicht",
@@ -49,11 +46,6 @@ const profiles: Record<Profile, string> = {
   defensive: "Voorzichtig",
   balanced: "Gebalanceerd",
   offensive: "Aanvallend",
-};
-const planNames: Record<Profile, string> = {
-  defensive: "Defensief",
-  balanced: "Gebalanceerd",
-  offensive: "Offensief",
 };
 const brokerNames: Record<string, string> = {
   trading212: "Trading 212",
@@ -316,7 +308,7 @@ function Allocation({
         <span style={{ width: `${Math.min(100, (dd / limit) * 100)}%` }} />
       </div>
       <label className="human-deposit">
-        Maandelijkse inleg voor je groeiscenario
+        Maandinleg voor de kosten- en spaarcheck
         <select
           aria-label="Scenario maandinleg"
           value={deposit}
@@ -499,170 +491,6 @@ function NightScanner({ state }: { state: OSState }) {
         Daarnaast moet de markt in de groeistand staan:{" "}
         <b>{state.regime.state_code === 2 ? "ja" : "nee"}</b>. Alle nachtorders
         blijven uit totdat productrechten en bescherming zijn bevestigd.
-      </p>
-    </section>
-  );
-}
-
-function Growth({
-  state,
-  profile,
-  deposit,
-}: {
-  state: OSState;
-  profile: Profile;
-  deposit: number;
-}) {
-  const [years, setYears] = useState(10),
-    [hover, setHover] = useState<number | null>(null),
-    annual =
-      profile === "defensive" ? 0.06 : profile === "balanced" ? 0.08 : 0.1;
-  const points = growthPoints(1000, deposit, years, annual),
-    last = points.at(-1)!,
-    selected = points[Math.min(hover ?? points.length - 1, points.length - 1)];
-  const w = 1000,
-    h = 205,
-    l = 18,
-    r = 80,
-    b = 30,
-    t = 12,
-    max = last.value * 1.08,
-    x = (m: number) => l + ((w - l - r) * m) / (years * 12),
-    y = (v: number) => h - b - ((h - b - t) * v) / max;
-  const line = (k: "value" | "contributions") =>
-    points.map((p, i) => `${i ? "L" : "M"}${x(p.month)},${y(p[k])}`).join(" ");
-  const saved = state.scenarios.find(
-    (s) =>
-      s.profile === planNames[profile] &&
-      Number(s.monthly_eur) === deposit &&
-      Number(s.years) === years,
-  );
-  return (
-    <section className="human-panel human-growth">
-      <Title
-        eyebrow="JE GELD OP LANGE TERMIJN"
-        title="Wat als je elke maand blijft inleggen?"
-        help="Een rekenvoorbeeld met vast rendement, geen verwachting uit een backtest. Belastingen, inflatie en echte euro-wisselkoersen zijn niet inbegrepen."
-      >
-        <div className="human-segment">
-          {[5, 10].map((v) => (
-            <button
-              key={v}
-              className={years === v ? "selected" : ""}
-              aria-pressed={years === v}
-              onClick={() => {
-                setYears(v);
-                setHover(null);
-              }}
-            >
-              {v} jaar
-            </button>
-          ))}
-        </div>
-      </Title>
-      <div className="human-growth-stats">
-        <div>
-          <span>
-            <i className="legend-contribution" />
-            Je eigen inleg
-          </span>
-          <strong>{eur(selected.contributions)}</strong>
-        </div>
-        <div>
-          <span>
-            <i className="legend-growth" />
-            Rekenvoorbeeld bij {num(annual * 100, 0)}% per jaar
-          </span>
-          <strong className="text-green">{eur(selected.value)}</strong>
-        </div>
-        <p>
-          Start met €1.000
-          <br />
-          en {eur(deposit)} per maand.
-        </p>
-      </div>
-      <svg
-        viewBox={`0 0 ${w} ${h}`}
-        role="img"
-        aria-label={`Groeiscenario ${years} jaar, eigen inleg ${eur(last.contributions)}, rekenvoorbeeld ${eur(last.value)}`}
-        onPointerMove={(e) => {
-          const box = e.currentTarget.getBoundingClientRect();
-          setHover(
-            Math.max(
-              0,
-              Math.min(
-                points.length - 1,
-                Math.round(
-                  ((((e.clientX - box.left) / box.width) * w - l) /
-                    (w - l - r)) *
-                    (years * 12),
-                ),
-              ),
-            ),
-          );
-        }}
-        onPointerLeave={() => setHover(null)}
-      >
-        {[0, 1, 2, 3].map((i) => {
-          const val = (max * i) / 3;
-          return (
-            <g key={i}>
-              <line
-                x1={l}
-                x2={w - r}
-                y1={y(val)}
-                y2={y(val)}
-                className="chart-grid"
-              />
-              <text x={w - r + 12} y={y(val) + 4} className="chart-axis">
-                €{num(val, 0)}
-              </text>
-            </g>
-          );
-        })}
-        <path
-          d={`${line("value")}L${x(years * 12)},${h - b}L${l},${h - b}Z`}
-          fill="#10b981"
-          fillOpacity=".07"
-        />
-        <path d={line("contributions")} className="chart-contributions" />
-        <path d={line("value")} className="chart-growth" />
-        {hover !== null && (
-          <line
-            x1={x(hover)}
-            x2={x(hover)}
-            y1={t}
-            y2={h - b}
-            className="chart-crosshair"
-          />
-        )}
-        {[0, years / 2, years].map((v) => (
-          <text
-            key={v}
-            x={x(v * 12)}
-            y={h - 6}
-            className="chart-axis"
-            textAnchor={v === 0 ? "start" : v === years ? "end" : "middle"}
-          >
-            {v === 0 ? "Vandaag" : `Na ${num(v, 1)} jaar`}
-          </text>
-        ))}
-      </svg>
-      <div className="human-growth-foot">
-        <span>
-          Na {years} jaar:{" "}
-          <b>{eur(Number(saved?.planning_central_eur ?? last.value))}</b> in het
-          vaste rekenscenario.
-        </span>
-        <span>
-          Bij −5% per jaar:{" "}
-          <b>{eur(Number(saved?.adverse_minus5pct_pa_eur ?? 0))}</b>.
-        </span>
-      </div>
-      <p className="human-note">
-        Dit is geen belofte. De gekleurde groei is een aanname van{" "}
-        {num(annual * 100, 0)}% per jaar, geen gemeten modelrendement. De
-        actieve portefeuille wordt hierdoor niet aangepast.
       </p>
     </section>
   );
@@ -1288,7 +1116,7 @@ export default function PortfolioOS() {
               <Indicators state={state} />
               <NightScanner state={state} />
             </div>
-            <Growth state={state} profile={profile} deposit={deposit} />
+            <PerformanceComparison profile={profile} />
             <CostCheck {...costs} />
           </>
         ) : tab === 2 ? (
@@ -1310,7 +1138,7 @@ export default function PortfolioOS() {
                 deposit={deposit}
                 setDeposit={setDeposit}
               />
-              <Growth state={state} profile={profile} deposit={deposit} />
+              <PerformanceComparison profile={profile} />
             </div>
           </>
         ) : (
@@ -1324,8 +1152,8 @@ export default function PortfolioOS() {
             opbrengst
           </span>
           <span>
-            Marktprijzen in dollars · referentie-euro’s zonder
-            wisselkoerscorrectie
+            Rekeningpreview: FX=1 · historische vergelijking: euro met
+            ECB-referentie
           </span>
         </footer>
       </main>
