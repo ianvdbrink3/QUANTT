@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "files": {
+    "current.json": {
+      "sha256": "50bfc8cf6486859457ef6c77ed6790061c6d6e370dd205027058c9f1a4ab0dec",
+      "days": 60,
+      "asof": "2026-10-28"
+    },
+    "60d_recent.json": {
+      "sha256": "30d64e8c6edda53f726dc71e578f46c672cf364c15bbbc17d2df92d41e94f83a",
+      "days": 60,
+      "asof": "2026-10-28"
+    },
+    "60d_complete.json": {
+      "sha256": "6167e16f9c65e160b40f9a4d41d168d2109d28e88d0c96296db33b76c5e61906",
+      "days": 60,
+      "asof": "2026-09-30"
+    },
+    "60d_daily.json": {
+      "sha256": "3709995bfdb06f46e036ecf92418c2b4a11788b86f3a42425e4bb9aa77194191",
+      "days": 60,
+      "asof": "2026-10-28"
+    }
+  },
+  "raw_sources_included": false
+}
