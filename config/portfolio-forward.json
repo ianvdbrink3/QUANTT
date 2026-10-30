@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "mode": "ADVICE_ONLY",
+  "profile": "defensive",
+  "broker": "TRADING212_DEMO",
+  "demo_orders_enabled": false,
+  "s1_enabled": false,
+  "account_currency": "EUR",
+  "max_roundtrip_bp": "5",
+  "max_order_value": "1000",
+  "strategy_initial_capital": "1000",
+  "max_quote_age_seconds": 2,
+  "poll_seconds": 60,
+  "root": "artifacts/portfolio_agent/forward",
+  "bindings": []
+}

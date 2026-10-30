@@ -1,0 +1,85 @@
+{
+  "advice_preview": {
+    "balanced": {
+      "core_weight": "0.60",
+      "signal_day": "2026-10-29",
+      "state": "PULLBACK",
+      "state_code": 1,
+      "trend_weight": "0.15"
+    },
+    "defensive": {
+      "core_weight": "0.50",
+      "signal_day": "2026-10-29",
+      "state": "PULLBACK",
+      "state_code": 1,
+      "trend_weight": "0.00"
+    },
+    "offensive": {
+      "core_weight": "0.00",
+      "signal_day": "2026-10-29",
+      "state": "PULLBACK",
+      "state_code": 1,
+      "trend_weight": "0.50"
+    }
+  },
+  "blockers": [
+    "Nog geen demo-account of API-sleutels",
+    "Product, beursuren en beschikbare fracties moeten in jouw rekening worden gecontroleerd",
+    "Een actuele uitvoeringsquote-feed is nog niet bevestigd",
+    "Twintig echte demo-observatiedagen ontbreken"
+  ],
+  "broker_status": "ACCOUNT_NOT_CONFIGURED",
+  "broker_target": "Trading 212 demo",
+  "demo_account_verified": false,
+  "forward_trial": {
+    "qualified_sessions": 0,
+    "required_sessions": 20,
+    "status": "WAITING_FOR_DEMO_ACCOUNT"
+  },
+  "kind": "PUBLIC_SETUP_SNAPSHOT_NOT_A_LIVE_MAC_CONNECTION",
+  "last_local_check": "2026-10-30T18:09:31.578950+00:00",
+  "live_locked": true,
+  "market": {
+    "expected_day": "2026-10-29",
+    "independent_check": "NOT_CONFIRMED",
+    "source_day": "2026-10-29",
+    "status": "CURRENT"
+  },
+  "mode": "ADVICE_ONLY",
+  "note": "Dit is de gepubliceerde bouwstatus. Actuele lokale heartbeat en priv\u00e9-orderstatus zijn alleen op je Mac zichtbaar.",
+  "orders_enabled": false,
+  "published_at": "2026-10-30T18:10:01.182192+00:00",
+  "schema": 1,
+  "steps": [
+    {
+      "label": "Productidentiteit",
+      "number": 1,
+      "status": "ACCOUNT_CATALOG_PENDING"
+    },
+    {
+      "label": "Dagelijkse lokale agent",
+      "number": 2,
+      "status": "BUILT_ADVICE_ONLY"
+    },
+    {
+      "label": "Orderopslag en herstart",
+      "number": 3,
+      "status": "TESTED_WITH_FIXTURES_NOT_BROKER"
+    },
+    {
+      "label": "Controlekamer",
+      "number": 4,
+      "status": "BUILT"
+    },
+    {
+      "label": "Trading 212-demo",
+      "number": 5,
+      "status": "CLIENT_BUILT_ACCOUNT_NOT_CONNECTED"
+    },
+    {
+      "label": "Twintig beursdagen proef",
+      "number": 6,
+      "status": "NOT_STARTED"
+    }
+  ]
+}

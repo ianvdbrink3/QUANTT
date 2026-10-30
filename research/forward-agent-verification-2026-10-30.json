@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "status": "ADVICE_SERVICE_RUNNING_DEMO_NOT_CONNECTED",
+  "checked_at": "2026-10-30T18:12:18.617815+00:00",
+  "baseline_commit": "0719a8b7b25c65a5062615fcc3f51803f18ee095",
+  "tests": {
+    "python_passed": 1818,
+    "new_forward_tests": 60,
+    "node_passed": 17,
+    "typecheck": "PASSED",
+    "production_build": "PASSED"
+  },
+  "protections": {
+    "local_files": 846,
+    "release_files": 209,
+    "all_byte_identical": true
+  },
+  "official_api": {
+    "url": "https://docs.trading212.com/_bundle/api.json?download=",
+    "sha256": "a272f70a713fa9f2f906e9b4be12136c9d5d63d7f9f48562e939aa35c4fc041d",
+    "bytes": 77378
+  },
+  "local_service": {
+    "installed": true,
+    "label": "com.quantt.portfolio-advice",
+    "restart_pid_changed": true,
+    "mode": "ADVICE_ONLY",
+    "orders_enabled": false,
+    "orders": {
+      "filled": 0,
+      "total": 0,
+      "unknown": 0,
+      "working": 0
+    }
+  },
+  "privacy": {
+    "production_private_route_http_status": 403,
+    "private_broker_data_published": false,
+    "private_sources_published": false,
+    "credentials_published": false
+  },
+  "actual_demo_sessions": 0,
+  "required_demo_sessions": 20,
+  "remaining": [
+    "Actual demo account and permissions",
+    "Exact instrument and currency validation",
+    "Independent same-day data confirmation",
+    "Verified fresh execution quote feed",
+    "20 actual full demo observation sessions"
+  ],
+  "implementation_sha256": {
+    "app/portfolio-os/agent-control.tsx": "d22b527d1d1ea20895c4f2d6b1578190f12550b33af078f15deef190f9bf08e2",
+    "app/portfolio-os/portfolio-os.css": "428f2de608ff49b689c8213ec7bd8f73e6dbad4506ef21bf5fc0ce911aba429a",
+    "app/portfolio-os/portfolio-os.tsx": "ce672659313298f96918e51cf39660cc1e394b2f652599b78617cac3d2ce4dbb",
+    "config/portfolio-forward.json": "7f078a5054da572146960622f372c32c2ceb565f7fb977b8222291cd5c64f4b3",
+    "lib/portfolio-forward-local.mjs": "d7642120625492e49d87e35ee24a4eeb1583f0f262f1e456b151e713a469acb0",
+    "portfolio_agent/agent_advisor.py": "f59e520887c0ccc51bb4c6c636ae929bf6ed481d2a78bdfcd528d4088a411b2d",
+    "portfolio_agent/forward/__init__.py": "f6cd3845ccf4e66cbe2abf1eec2d4be9b4a7a8e4905603be3e8c6e6579463268",
+    "portfolio_agent/forward/__main__.py": "51b2eaec2b965f3128a106a3859180cfe429f374047131938b7f1a45baf21739",
+    "portfolio_agent/forward/agent.py": "d33fc0bc9f4f7d50fc437cacfba433faa75c79cfdea89c5dd7e39f01b5b1ddb4",
+    "portfolio_agent/forward/broker.py": "9d0d44d5f9902ab3ec3ed1c6fd2ff65feb4fac77b40a5852028b74dad28159a1",
+    "portfolio_agent/forward/common.py": "0566636a5005c99179b4dde1de7bd640445cd35696775a048f9cb8acad8b25fc",
+    "portfolio_agent/forward/market.py": "9c74f2acc6195ebbf683c32a0e41598d76a9a5eb9742202b56ad3f944be5827b",
+    "portfolio_agent/forward/orders.py": "63b19d589c3b34a2ec1850a6691cbfebab79429190c4f7d1cdcf5270ba5009ad",
+    "portfolio_agent/forward/products.py": "a31288587e626743dc42afe34dba929b0da5c2be05169b057b9d22f1a4333740",
+    "portfolio_agent/forward/quotes.py": "159170a59f1a4ea44c931818a2f987504f009024e9d9e9a049011d14ad9bbe20",
+    "portfolio_agent/forward/risk.py": "f4cc2882dca41921af3c253bf78c51d9def95abd99f25fc4c2c291eb920dd274",
+    "portfolio_agent/forward/secrets.py": "2d5c54b3f8152ec597db329d0dd29255601d37fe4e127c36b6a40f733125c732",
+    "portfolio_agent/forward/service.py": "b00aeb10227bd27c46842a65a2d7d486c54f6d4624f5fcc63906527a44692862",
+    "portfolio_agent/forward/store.py": "2f5f9de82cfa6ccd513340cfafeb62e23b9af6bb004e5ad3aa8b69556267b10d",
+    "public/data/portfolio-os/agent-readiness.json": "633c9e00bb1059be61901b5326e5fdf0bd07a1f54bed613e086665cad950e2e3",
+    "tests/portfolio-forward.test.mjs": "f48f9737395ee7eaef48f66ace556bbadc84ef1207a431222907a01dea03d7c7",
+    "tests/portfolio_agent/test_forward.py": "5eac74cdcba0290088ba0476fea1160acc7d4918a8b9d40554d132568975a5f8",
+    "tools/start-portfolio-advice.command": "1ab42a5f426a566f8a336052f1765b587b27e9f96ebbb334ce8bebc13fd644d1",
+    "tools/stop-portfolio-advice.command": "22d537f19022fb827378ffa14b92d7cc99ab938417319854b866bdde5b3e99dc"
+  }
+}

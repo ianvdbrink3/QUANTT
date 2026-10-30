@@ -35,6 +35,7 @@ import {
 import { dutchDate, marketCopy } from "@/lib/portfolio-friendly.mjs";
 import PortfolioChart from "./portfolio-chart";
 import PerformanceComparison from "./performance-comparison";
+import AgentControl from "./agent-control";
 
 const tabs = [
   "Overzicht",
@@ -1117,6 +1118,7 @@ export default function PortfolioOS() {
               <NightScanner state={state} />
             </div>
             <PerformanceComparison profile={profile} />
+            <AgentControl />
             <CostCheck {...costs} />
           </>
         ) : tab === 2 ? (
