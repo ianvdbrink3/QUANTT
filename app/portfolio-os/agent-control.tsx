@@ -370,6 +370,10 @@ export default function AgentControl() {
             Vergelijk de twee brokerroutes en kosten →
           </a>
           <br />
+          <a className="agent-guide" href="/reports/EUROPEAN_PRICE_DATA_AUDIT_2026-10-30.md" target="_blank" rel="noopener noreferrer">
+            Controle van Europese producthistorie →
+          </a>
+          <br />
           <a
             className="agent-guide"
             href="/reports/LOCAL_AGENT_EXECUTION_GUIDE_2026-10-30.md"

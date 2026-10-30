@@ -31,6 +31,20 @@ def audit_daily(body):
         minute_execution_parity_verified=False,historical_performance_inherited=False)
 
 
+def audit_price_fields(body, start='2019-01-01', end='2026-10-30'):
+    """Count field inconsistencies without treating missing rows as valid prices."""
+    result=body['chart']['result'][0];meta=result['meta']
+    dates=pd.to_datetime(result['timestamp'],unit='s',utc=True).tz_convert(meta['exchangeTimezoneName']).strftime('%Y-%m-%d')
+    frame=pd.DataFrame(result['indicators']['quote'][0],index=dates)[['open','high','low','close','volume']].astype(float)
+    frame=frame.loc[(frame.index>=start)&(frame.index<=end)]
+    finite=np.isfinite(frame).all(axis=1)
+    f=frame[finite]
+    return dict(symbol=meta['symbol'],start=start,end=end,rows=len(frame),nonfinite=int((~finite).sum()),
+        finite_rows=len(f),close_above_high=int((f.close>f.high).sum()),close_below_low=int((f.close<f.low).sum()),
+        open_above_high=int((f.open>f.high).sum()),open_below_low=int((f.open<f.low).sum()),
+        high_below_low=int((f.high<f.low).sum()))
+
+
 def build():
     c=config();root=ROOT/c['root'];folder=root/'readiness';probes=json.loads((folder/'source-probes.json').read_text());data=[]
     for probe in probes:

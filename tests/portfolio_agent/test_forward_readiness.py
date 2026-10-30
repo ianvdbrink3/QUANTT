@@ -283,6 +283,18 @@ def test_product_source_audit_distinguishes_nan_from_incoherent_ohlc():
     assert a['historical_performance_inherited'] is False
 
 
+def test_field_audit_counts_violations_only_on_complete_rows():
+    from scripts.audit_trading212_readiness import audit_price_fields
+    b=market_fixture(); r=b['chart']['result'][0]
+    r['meta'].update(symbol='EQQQ.MI',exchangeTimezoneName='Europe/Rome')
+    q=r['indicators']['quote'][0]
+    q['close'][500]=q['high'][500]+1
+    q['open'][600]=None
+    a=audit_price_fields(b,start='2000-01-01',end='2100-01-01')
+    assert a['close_above_high']==1 and a['nonfinite']==1
+    assert a['finite_rows']+a['nonfinite']==a['rows']
+
+
 def test_nasdaq_request_uses_nonzero_iso_range_but_only_accepts_requested_day(tmp_path):
     from portfolio_agent.forward.market import fetch_nasdaq
     class Vendor:
