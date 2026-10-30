@@ -42,6 +42,16 @@ Voor de genoemde 0,05% per kant is de commissie over twee kanten alleen al minim
 
 IBKR ondersteunt [fractionele handel in bepaalde producten](https://www.interactivebrokers.com/en/general/about/ibkr-fact-sheet.php); dit bevestigt niet dat juist deze Europese ETP en notering fractioneel, per API en voor dit rekeningtype verhandelbaar zijn. [IBKR wijst erop](https://www.interactivebrokers.com/campus/trading-lessons/trading-overseas-with-ibkr/) dat voor veel Amerikaanse ETF's een Europees essentieel-informatiedocument ontbreekt en retailtoegang daardoor beperkt kan zijn. Verander een Europees product niet stilzwijgend terug in QQQ/TQQQ.
 
+### Aanvullende kandidaat: Saxo OpenAPI
+
+[Saxo beschrijft](https://developer.saxobank.com/openapi/learn/writing-an-openapi-application) een eigen applicatie voor particuliere klanten en een SIM-omgeving. Voor een live-app moet een klant een aanvraag doen; [de aanvraaginstructies](https://developer.saxobank.com/openapi/learn/direct-clients-request-for-openapi-application-credentials-for-the-live-environ) vereisen een gevulde live-rekening en een eerder gemaakte SIM-app. Een aanvraag kan aan beoordeling onderhevig zijn. Het bestaan van de API is geen bewijs dat de concrete toepassing, instrumenten, datagebruiksrechten of deze gebruiker zijn goedgekeurd. Er is geen rekening geopend of aanvraag gedaan.
+
+Volgens [Saxo's Nederlandse ETF-pagina](https://www.home.saxo/nl-nl/products/etf) beginnen transactiekosten op Euronext Amsterdam bij €2 per transactie en op Xetra bij €3 per transactie. Als een geschikt product en tarief daadwerkelijk daaronder vallen, zijn twee transacties van €100 dus ten minste €4 respectievelijk €6, oftewel 4% respectievelijk 6% van de orderwaarde, vóór spread en eventuele overige kosten. Dit is een illustratie voor die beurs en dit algemene tarief, geen offerte en geen vaststelling dat QQQ3 daar onder deze voorwaarden verhandelbaar is. [Saxo noemt ook een service fee](https://www.home.saxo/nl-nl/campaigns/invest-for-less) en specifieke voorwaarden voor eventueel transactietegoed. De informatie over realtime koersen op het platform bewijst nog niet de juiste API-rechten of een quote jonger dan twee seconden voor het exacte instrument.
+
+### Afbakening Alpaca
+
+[Alpaca's documentatie voor individuele accounts](https://docs.alpaca.markets/us/docs/account-plans) beschrijft automatische handel en noemt op die pagina Amerikaanse beursgenoteerde aandelen en bepaalde crypto als ondersteunde markten. [De Europese documentatie](https://docs.alpaca.markets/eu/docs/getting-started) richt zich op zakelijke fintechpartners en noemt Europese aandelen als onderdeel van een toekomstige roadmap. Dit bewijst daarom niet dat onze Europese ETP voor een Nederlandse particuliere rekening beschikbaar is. Amerikaanse QQQ/TQQQ, EUR-noteringen en juridische producttoegang mogen niet als uitwisselbaar worden behandeld.
+
 ## Volgorde om daadwerkelijk verder te kunnen
 
 1. Houd de Trading 212-verbinding gepauzeerd totdat de broker de toepassing van de voorwaarden op de eigen alleen-lezenclient en een eventuele demo bevestigt. Neem voor vragen zelf contact op; QUANT verstuurt niets namens de gebruiker.
