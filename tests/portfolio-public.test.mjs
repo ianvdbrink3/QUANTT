@@ -32,7 +32,8 @@ test('public exports exclude raw source bars, ledger payloads, identifiers and p
       assert.match(i.id,/^[a-f0-9]{64}$/);
     }
   }
-  assert.equal(existsSync(new URL('../app/api/portfolio-os',import.meta.url)),false);
+  const route=new URL('../app/api/portfolio-os/route.ts',import.meta.url);
+  if(existsSync(route)) assert.ok(readFileSync(route,'utf8').includes("process.env.NODE_ENV === 'production'"));
 });
 
 test('public cost calculator reproduces frozen conditional rates and permission lock',()=>{
@@ -77,7 +78,32 @@ test('public UI fetches static summaries in production and keeps historical evid
   const src=readFileSync(new URL('../app/portfolio-os/portfolio-os.tsx',import.meta.url),'utf8');
   assert.ok(src.includes('process.env.NODE_ENV !== "production"'));
   assert.ok(src.includes('/data/portfolio-os/${dataset}.json'));
-  assert.ok(src.includes('PUBLIC_SNAPSHOT / LIVE_LOCKED'));
+  assert.ok(src.includes('Geen live-orders'));
   assert.ok(src.includes('REPLAY_ONLY'));
   assert.ok(!src.includes('http://127.0.0.1:3013'));
+});
+
+test('human growth curve preserves every published scenario endpoint',async()=>{
+  const {growthPoints}=await import('../lib/portfolio-friendly.mjs');
+  for(const s of read('current').scenarios){
+    const rate=s.profile==='Defensief'?.06:s.profile==='Gebalanceerd'?.08:.1;
+    const last=growthPoints(1000,+s.monthly_eur,+s.years,rate).at(-1);
+    assert.equal(last.contributions,+s.total_contributions_eur);
+    assert.ok(Math.abs(last.value- +s.planning_central_eur)<.0051);
+  }
+});
+
+test('historical chart candidates cannot become invented public fills',async()=>{
+  const {executedMarkers,chartPeriod}=await import('../lib/portfolio-friendly.mjs');
+  assert.deepEqual(executedMarkers(read('current'),'QQQ'),[]);
+  const days=[{day:'2022-06-01'},{day:'2022-12-30'},{day:'2026-10-28'}];
+  assert.deepEqual(chartPeriod(days,'all','2022-12-30'),days.slice(0,2));
+});
+
+test('public chart defaults to TradingView and never requests the private history',()=>{
+  const chart=readFileSync(new URL('../app/portfolio-os/portfolio-chart.tsx',import.meta.url),'utf8');
+  assert.match(chart,/useState\(\s*process\.env\.NODE_ENV === "production" \? "live" : "strategy"/);
+  assert.ok(chart.includes('De volledige lokale koershistorie wordt niet openbaar meegestuurd.'));
+  assert.ok(chart.includes('length: 20')&&chart.includes('length: 200'));
+  assert.equal(existsSync(new URL('../public/data/portfolio-os/chart_daily.json',import.meta.url)),false);
 });

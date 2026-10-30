@@ -14,8 +14,8 @@ De kostencalculator werkt in de browser met dezelfde conditionele formules. Veri
 
 - `npm run typecheck`
 - `npm run build`
-- `node --test tests/portfolio-public.test.mjs`: acht tests voor hashes, privacy, dekking, kosten, DST, previews en filters.
-- De bestaande lokale onderzoeks- en engine-suite is apart gedraaid: 1.740 tests groen; vier bestaande NumPy-waarschuwingen.
+- `node --test tests/portfolio-public.test.mjs`: elf tests voor hashes, privacy, dekking, kosten, DST, previews, filters en de nieuwe grafiekweergave.
+- De bestaande lokale onderzoeks- en engine-suite is apart gedraaid: 1.747 tests groen; vier bestaande NumPy-waarschuwingen.
 - De openbare productiebuild is vóór publicatie in de browser getest, inclusief budgetwijziging, profielpreview, filters en ordermetadata.
 
 ## Exports vernieuwen
@@ -28,3 +28,7 @@ node --test tests/portfolio-public.test.mjs
 ```
 
 Review alleen de allowlisted exports en commit die expliciet. De manifestatie bevat de SHA-256-hash van elk JSON-bestand. Publiceer nooit de lokale datamap of database. De export start geen backtest, signaalberekening of brokeractie.
+
+## Mensvriendelijke versie
+
+De openbare pagina opent standaard de externe TradingView-grafiek met gemiddelden van 20 en 200 dagen. Deze feed kan vertraagd zijn en staat los van de gedateerde modelsamenvatting. De volledige lokale historie, 2022-strategie-chart en originele fill-ledger worden niet openbaar meegestuurd. Zie `PORTFOLIO_HUMAN_UI_2026-10-30.md` voor de verschillen en controles.

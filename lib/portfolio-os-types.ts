@@ -114,6 +114,7 @@ export type OSState = {
     timing: string;
   }[];
   audit: {
+    fills?: { intent_id: string; price: string; id: string }[];
     days: Day[];
     intents: Intent[];
     meta: Record<string, string>;
