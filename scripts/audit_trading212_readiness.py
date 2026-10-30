@@ -55,6 +55,7 @@ def build():
         public_product_page=dict(url='https://www.trading212.com/nl/trading-instruments/invest/QQQ3.IT',
             isin='IE00BLRPRL42',ticker='QQQ3m_EQ',currency='EUR',venue='Borsa Italiana',
             opened_in_safari=True,account_order_permissions_verified=False),
+        demo_ticket_inspection=json.loads((folder/'qqq3-empty-ticket-observation.json').read_text()),
         execution_feed=dict(status='NO_VERIFIED_FRESH_BID_ASK_PROVIDER',required_max_age_seconds=2,
             trading212_public_api_quote_endpoint=False,borsa_italiana_public_book_delay_minutes=15,
             source='https://www.borsaitaliana.it/borsa/etc-etn/dettaglio.html?isin=IE00BLRPRL42&lang=it&mic=ETFP'),

@@ -6,10 +6,22 @@
     "real_demo_read_verified": true,
     "reconciled": true
   },
-  "checked_at": "2026-10-30T21:10:23.914580+00:00",
+  "checked_at": "2026-10-30T21:18:18.440386+00:00",
   "costs": {
     "new_paid_accounts": 0,
     "new_purchases": 0
+  },
+  "demo_ticket_inspection": {
+    "currency": "EUR",
+    "empty_ticket_seen": true,
+    "minimum_notional_verified": false,
+    "observed_at": "2026-10-30T21:17:28.411Z",
+    "order_fields_entered": false,
+    "practice_banner_seen": true,
+    "product": "QQQ3 \u00b7 MIL",
+    "product_name": "WisdomTree NASDAQ 100 3x Daily Leveraged",
+    "review_or_submit_clicked": false,
+    "tick_size_verified": false
   },
   "european_daily_data": [
     {
