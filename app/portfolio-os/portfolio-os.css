@@ -2113,3 +2113,14 @@
 .agent-advice { margin-top: 24px; font-size: 13px; }
 .agent-advice > p { color: #91a4be; line-height: 1.6; }
 .agent-advice .agent-steps > div { border-bottom: 1px solid #2a3b53; padding: 12px 0; }
+.agent-readiness, .agent-product-review { margin-top: 24px; font-size: 13px; }
+.agent-readiness h3, .agent-product-review h3 { font-size: 16px; color: #e6edf7; }
+.agent-readiness > p, .agent-product-review > p { color: #9daec4; line-height: 1.65; }
+.agent-readiness ul { padding: 0; list-style: none; border-top: 1px solid #2a3b53; }
+.agent-readiness li { display: grid; grid-template-columns: 18px 1fr auto; align-items: start; gap: 10px; padding: 12px 0; border-bottom: 1px solid #2a3b53; }
+.agent-readiness li svg { margin-top: 2px; }
+.agent-readiness .passed > svg, .agent-readiness .passed > strong { color: #7cc4ac; }
+.agent-readiness .pending > svg, .agent-readiness .pending > strong { color: #dfc18a; }
+.agent-readiness li strong { font-size: 11px; font-weight: 500; white-space: nowrap; }
+.agent-product-review .agent-steps > div { border-bottom: 1px solid #2a3b53; padding: 12px 0; }
+@media(max-width:700px) { .agent-readiness li {grid-template-columns: 18px 1fr;} .agent-readiness li strong { grid-column: 2; } }

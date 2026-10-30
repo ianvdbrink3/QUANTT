@@ -67,19 +67,58 @@ def fetch_secondary(symbol,day,session=None):
     return float(found.Close.iloc[0]),hashlib.sha256(r.content).hexdigest()
 
 
+def parse_nasdaq(body,symbol,day):
+    """An HTTP200 or yesterday's row never confirms today's cash close."""
+    if body.get('status',{}).get('rCode')!=200:raise ValueError('SECONDARY_VENDOR_RESPONSE_INVALID')
+    data=body.get('data') or {}
+    if data.get('symbol')!=symbol:raise ValueError('SECONDARY_SYMBOL_MISMATCH')
+    rows=(data.get('tradesTable') or {}).get('rows') or []
+    found=[r for r in rows if pd.Timestamp(r.get('date')).strftime('%Y-%m-%d')==day]
+    if len(found)!=1:raise ValueError('SECONDARY_EXACT_DAY_NOT_YET_PUBLISHED')
+    close=float(str(found[0]['close']).replace('$','').replace(',','').strip())
+    if not np.isfinite(close) or close<=0:raise ValueError('SECONDARY_PRICE_INVALID')
+    return close
+
+
+def fetch_nasdaq(symbol,day,now,root,session=None):
+    if symbol not in ('QQQ','TQQQ'):raise ValueError('SYMBOL_NOT_ALLOWLISTED')
+    day=pd.Timestamp(day).strftime('%Y-%m-%d');http=session or requests.Session()
+    first=(pd.Timestamp(day)-pd.Timedelta(days=7)).strftime('%Y-%m-%d')
+    last=stamp(now).astimezone(NY).date().isoformat()
+    if day>last:raise ValueError('SECONDARY_FUTURE_DATE_REJECTED')
+    r=http.get('https://api.nasdaq.com/api/quote/'+symbol+'/historical',
+        params={'assetclass':'etf','fromdate':first,'todate':last,'limit':10},
+        headers={'User-Agent':'QUANT-research/1.0','Accept':'application/json'},timeout=(5,15),allow_redirects=False)
+    sha=hashlib.sha256(r.content).hexdigest()
+    target=root/'sources'/f'Nasdaq-{symbol}-{sha}.json'
+    if not target.exists():atomic_bytes(target,r.content)
+    if r.status_code!=200:raise ValueError('SECONDARY_VENDOR_UNAVAILABLE')
+    close=parse_nasdaq(r.json(),symbol,day)
+    return close,sha
+
+
+def confirm_sources(frames,now,root,fetcher=fetch_nasdaq):
+    """Separate publication cadence from the immutable primary input snapshot."""
+    day=frames['QQQ'].index[-1];rows=[]
+    for symbol in ('QQQ','TQQQ'):
+        row=dict(provider='Nasdaq',symbol=symbol,day=day,checked_at=stamp(now).isoformat())
+        try:
+            price,sha=fetcher(symbol,day,now,root)
+            delta=abs(price/float(frames[symbol].close.iloc[-1])-1)*10000
+            row.update(sha256=sha,difference_bp=delta,status='MATCHED' if delta<=10 else 'PRICE_CONFLICT',price_basis='REGULAR_SESSION_HISTORICAL_CLOSE')
+        except Exception as e:
+            reason=str(e) if isinstance(e,ValueError) and str(e).isupper() and len(str(e))<90 else 'SECONDARY_VENDOR_UNAVAILABLE'
+            row.update(status='NOT_YET_PUBLISHED' if reason=='SECONDARY_EXACT_DAY_NOT_YET_PUBLISHED' else 'UNAVAILABLE',reason=reason)
+        rows.append(row)
+    return rows
+
+
 def acquire(now,root):
     with ThreadPoolExecutor(max_workers=2) as pool:
         values=list(pool.map(lambda s:fetch_yahoo(s,now,root),('QQQ','TQQQ')))
     frames={s:v[0] for s,v in zip(('QQQ','TQQQ'),values)};sources=[v[1] for v in values]
     if not frames['QQQ'].index.equals(frames['TQQQ'].index):raise ValueError('RESEARCH_CALENDAR_MISMATCH')
-    day=frames['QQQ'].index[-1]
-    confirmations=[]
-    for symbol in ('QQQ','TQQQ'):
-        try:
-            price,sha=fetch_secondary(symbol,day)
-            delta=abs(price/float(frames[symbol].close.iloc[-1])-1)*10000
-            confirmations.append(dict(provider='Stooq',symbol=symbol,day=day,sha256=sha,difference_bp=delta,status='MATCHED' if delta<=10 else 'PRICE_CONFLICT'))
-        except Exception:confirmations.append(dict(provider='Stooq',symbol=symbol,day=day,status='UNAVAILABLE'))
+    confirmations=confirm_sources(frames,now,root)
     return frames,sources,confirmations
 
 

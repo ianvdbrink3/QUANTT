@@ -23,11 +23,12 @@ class BrokerFailure(RuntimeError):
 
 class Trading212Demo:
     live_enabled=False
-    def __init__(self,key=None,secret=None,base_url=BASE,transport=None,clock=time.monotonic):
+    def __init__(self,key=None,secret=None,base_url=BASE,transport=None,clock=time.monotonic,allow_mutations=True):
         if base_url!=BASE:raise ValueError('ONLY_OFFICIAL_DEMO_HOST_ALLOWED')
         key=os.environ.get('QUANT_T212_DEMO_KEY','') if key is None else key
         secret=os.environ.get('QUANT_T212_DEMO_SECRET','') if secret is None else secret
         if not key or not secret:raise BrokerFailure('DEMO_CREDENTIALS_MISSING')
+        self._allow_mutations=allow_mutations is True
         self._auth='Basic '+base64.b64encode((key+':'+secret).encode()).decode()
         self._transport=transport or requests.Session();self._clock=clock;self._next={};self._lock=threading.Lock()
         if transport is None:
@@ -35,6 +36,7 @@ class Trading212Demo:
             self._transport.mount('https://',HTTPAdapter(max_retries=0))
 
     def _request(self,method,path,payload=None):
+        if method!='GET' and not self._allow_mutations:raise BrokerFailure('DEMO_MUTATIONS_DISABLED_READ_ONLY')
         parsed=urlparse(path);query=parse_qs(parsed.query)
         if parsed.scheme or parsed.netloc or parsed.fragment or '..' in path:raise ValueError('BROKER_PATH_NOT_ALLOWLISTED')
         resource=parsed.path

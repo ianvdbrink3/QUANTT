@@ -2,59 +2,168 @@
   "advice_preview": {
     "balanced": {
       "core_weight": "0.60",
-      "signal_day": "2026-10-29",
+      "signal_day": "2026-10-30",
       "state": "PULLBACK",
       "state_code": 1,
-      "trend_weight": "0.15"
+      "trend_weight": "0.00"
     },
     "defensive": {
       "core_weight": "0.50",
-      "signal_day": "2026-10-29",
+      "signal_day": "2026-10-30",
       "state": "PULLBACK",
       "state_code": 1,
       "trend_weight": "0.00"
     },
     "offensive": {
       "core_weight": "0.00",
-      "signal_day": "2026-10-29",
+      "signal_day": "2026-10-30",
       "state": "PULLBACK",
       "state_code": 1,
-      "trend_weight": "0.50"
+      "trend_weight": "0.00"
     }
   },
   "blockers": [
-    "Nog geen demo-account of API-sleutels",
-    "Product, beursuren en beschikbare fracties moeten in jouw rekening worden gecontroleerd",
-    "Een actuele uitvoeringsquote-feed is nog niet bevestigd",
-    "Twintig echte demo-observatiedagen ontbreken"
+    "Dezelfde slotdatum onafhankelijk bevestigd",
+    "Exacte producten, valuta, fracties, prijstik, minimum en producthistorie bevestigd",
+    "Werkelijke bid/ask-feed met herkomst, juiste notering en maximaal twee seconden oud",
+    "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+    "Twintig echte volledige demo-observatiedagen ontbreken"
   ],
-  "broker_status": "ACCOUNT_NOT_CONFIGURED",
+  "broker_status": "DEMO_READ_VERIFIED_AT_PUBLICATION",
   "broker_target": "Trading 212 demo",
-  "demo_account_verified": false,
+  "demo_account_verified": true,
   "forward_trial": {
     "qualified_sessions": 0,
     "required_sessions": 20,
-    "status": "WAITING_FOR_DEMO_ACCOUNT"
+    "status": "WAITING_FOR_REAL_DEMO_OBSERVATIONS"
   },
   "kind": "PUBLIC_SETUP_SNAPSHOT_NOT_A_LIVE_MAC_CONNECTION",
-  "last_local_check": "2026-10-30T18:09:31.578950+00:00",
+  "last_local_check": "2026-10-30T21:09:46.743740+00:00",
   "live_locked": true,
   "market": {
-    "expected_day": "2026-10-29",
+    "expected_day": "2026-10-30",
     "independent_check": "NOT_CONFIRMED",
-    "source_day": "2026-10-29",
+    "source_day": "2026-10-30",
     "status": "CURRENT"
   },
   "mode": "ADVICE_ONLY",
-  "note": "Dit is de gepubliceerde bouwstatus. Actuele lokale heartbeat en priv\u00e9-orderstatus zijn alleen op je Mac zichtbaar.",
+  "note": "Gedateerde publicatiestand. Een geverifieerde demolezing is geen ordervrijgave. Actuele heartbeat en priv\u00e9-orderstatus staan alleen op je Mac.",
   "orders_enabled": false,
-  "published_at": "2026-10-30T18:10:01.182192+00:00",
+  "product_review": [
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE0032077012",
+      "issuer": "https://www.invesco.com/uk/en/financial-products/etfs/invesco-eqqq-nasdaq-100-ucits-etf-dist.html",
+      "legal_structure": "UCITS_DISTRIBUTING_ETF",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "QQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "EQQQm_EQ"
+    },
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE00BMFKG444",
+      "issuer": "https://etf.dws.com/en-gb/IE00BMFKG444-nasdaq-100-ucits-etf-1c/",
+      "legal_structure": "UCITS_ACCUMULATING_ETF",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "QQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "XNASd_EQ"
+    },
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE00BLRPRL42",
+      "issuer": "https://www.wisdomtree.eu/en-ie/etps/equities/wisdomtree-nasdaq-100-3x-daily-leveraged",
+      "legal_structure": "COLLATERALISED_SWAP_DEBT_ETP_NOT_TQQQ",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "TQQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "QQQ3m_EQ"
+    }
+  ],
+  "published_at": "2026-10-30T21:10:22.366261+00:00",
+  "readiness": {
+    "blocker_codes": [
+      "DAILY_INDEPENDENT",
+      "PRODUCT_BINDINGS",
+      "EXECUTION_QUOTES",
+      "DEMO_RELEASE"
+    ],
+    "checks": [
+      {
+        "code": "DEMO_ACCOUNT",
+        "message": "Echte demo-authenticatie en actuele rekeningcontrole",
+        "passed": true
+      },
+      {
+        "code": "DAILY_PRIMARY",
+        "message": "Voltooide US-dagdata en volledige indicatoropwarming",
+        "passed": true
+      },
+      {
+        "code": "DAILY_INDEPENDENT",
+        "message": "Dezelfde slotdatum onafhankelijk bevestigd",
+        "passed": false
+      },
+      {
+        "code": "ACCOUNT_RECONCILIATION",
+        "message": "Posities, orders en cash sluiten aan",
+        "passed": true
+      },
+      {
+        "code": "PRODUCT_BINDINGS",
+        "message": "Exacte producten, valuta, fracties, prijstik, minimum en producthistorie bevestigd",
+        "passed": false
+      },
+      {
+        "code": "EXECUTION_QUOTES",
+        "message": "Werkelijke bid/ask-feed met herkomst, juiste notering en maximaal twee seconden oud",
+        "passed": false
+      },
+      {
+        "code": "PERSISTENT_ORDER_STATE",
+        "message": "Geen onzekere orders of blijvende risicoblokkade",
+        "passed": true
+      },
+      {
+        "code": "DEMO_RELEASE",
+        "message": "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+        "passed": false
+      }
+    ],
+    "ready_to_start": false,
+    "status": "NOT_READY_FOR_DEMO_TRADING"
+  },
   "schema": 1,
   "steps": [
     {
       "label": "Productidentiteit",
       "number": 1,
-      "status": "ACCOUNT_CATALOG_PENDING"
+      "status": "CATALOG_REVIEWED_BINDINGS_PENDING"
     },
     {
       "label": "Dagelijkse lokale agent",
@@ -74,12 +183,12 @@
     {
       "label": "Trading 212-demo",
       "number": 5,
-      "status": "CLIENT_BUILT_ACCOUNT_NOT_CONNECTED"
+      "status": "REAL_DEMO_READ_VERIFIED"
     },
     {
       "label": "Twintig beursdagen proef",
       "number": 6,
-      "status": "NOT_STARTED"
+      "status": "BLOCKED_BY_START_CHECKS"
     }
   ]
 }

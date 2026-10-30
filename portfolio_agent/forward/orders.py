@@ -4,7 +4,7 @@ from decimal import ROUND_FLOOR,ROUND_CEILING
 import json
 from .common import dec,digest,stamp
 from .broker import BrokerFailure
-from .products import validate_binding,session_open
+from .products import validate_binding,session_open,quantity_step
 from .store import ACTIVE
 from portfolio_agent.calendars import NY,next_session,stamp as ny_stamp
 
@@ -36,6 +36,7 @@ def plan_targets(advice,profile_weights,snapshot,bindings,quotes,previous,now,po
         if not quote:return dict(status='FRESH_EXECUTION_QUOTE_MISSING',orders=[])
         ask,bid=dec(quote['ask']),dec(quote['bid']);lot=dec(binding['lot']);tick=dec(binding['price_tick'])
         if ask<=0 or bid<=0 or ask<bid or lot<=0 or tick<=0:return dict(status='INVALID_QUOTE_OR_LOT',orders=[])
+        lot=max(lot,quantity_step(bid),quantity_step(ask))
         found=[p for p in positions if p['instrument']['ticker']==ticker]
         if len(found)>1:return dict(status='DUPLICATE_ACCOUNT_POSITION',orders=[])
         have=dec(found[0]['quantity']) if found else dec(0)
@@ -80,7 +81,8 @@ def authorize(c,intent,quote,snapshot,binding,store,now):
     if not session_open(schedule,now):raise ValueError('BROKER_MARKET_NOT_OPEN')
     bid,ask=dec(quote['bid']),dec(quote['ask']);qty,price=dec(intent['quantity']),dec(intent['limitPrice'])
     if bid<=0 or ask<bid or not qty or price<=0:raise ValueError('INVALID_QUOTE_OR_ORDER')
-    if qty%dec(binding['lot']) or price%dec(binding['price_tick']):raise ValueError('LOT_OR_TICK_MISMATCH')
+    step=max(dec(binding['lot']),quantity_step(bid),quantity_step(ask))
+    if qty%step or price%dec(binding['price_tick']):raise ValueError('LOT_OR_TICK_MISMATCH')
     if quote.get('currency')!=binding['currency']:raise ValueError('QUOTE_CURRENCY_MISMATCH')
     current_units=sum((dec(p['quantity']) for p in snapshot['positions'] if p['instrument']['ticker']==intent['ticker']),dec(0))
     if current_units+qty<0 or current_units+qty>dec(item['maxOpenQuantity']):raise ValueError('BROKER_QUANTITY_LIMIT')

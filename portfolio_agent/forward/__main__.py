@@ -7,7 +7,7 @@ from .common import ROOT,config,atomic
 
 def main():
     parser=argparse.ArgumentParser(description='QUANT lokale adviesagent; echte orders zijn onmogelijk.')
-    parser.add_argument('command',choices=['once','watch','status','publish-readiness','setup-demo-secrets','service-render','service-install','service-stop'])
+    parser.add_argument('command',choices=['once','watch','status','preflight','publish-readiness','setup-demo-secrets','service-render','service-install','service-stop'])
     parser.add_argument('--config',default=str(ROOT/'config/portfolio-forward.json'));parser.add_argument('--refresh',action='store_true')
     a=parser.parse_args()
     try:
@@ -22,6 +22,11 @@ def main():
         elif a.command=='status':
             from .agent import status
             result=status(a.config)
+        elif a.command=='preflight':
+            from .agent import tick
+            s=tick(a.config,a.refresh,probe_only=True)
+            result={k:s[k] for k in ('checked_at','mode','live_locked','market','broker','readiness','product_review','orders','trial')}
+            atomic(ROOT/config(a.config)['root']/'preflight.json',result)
         elif a.command=='publish-readiness':
             from .agent import public_readiness
             result=public_readiness(a.config);atomic(ROOT/'public/data/portfolio-os/agent-readiness.json',result)

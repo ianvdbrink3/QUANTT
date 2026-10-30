@@ -41,3 +41,16 @@ def session_open(schedule,now):
     # Do not extrapolate an old session indefinitely into another day.
     future_close=any(at>now and kind in ('CLOSE','BREAK_START') for at,kind in events)
     return seen and state and future_close
+
+
+def quantity_step(price):
+    """Current published Trading212 quantity precision; not a guessed1e-6 lot.
+
+    https://helpcentre.trading212.com/hc/en-us/articles/9511997937437
+    Product fractional eligibility remains an independent binding requirement.
+    """
+    p=dec(price)
+    if p<=0:raise ValueError('INVALID_QUANTITY_REFERENCE_PRICE')
+    for ceiling,step in [('.1','1'),('1','.1'),('10','.01'),('100','.001'),('1000','.0001'),('10000','.00001'),('100000','.000001')]:
+        if p<dec(ceiling):return dec(step)
+    return dec('.0000001')

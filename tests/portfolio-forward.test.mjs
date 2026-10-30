@@ -28,11 +28,15 @@ test('local forward status is an allowlist and heartbeat cannot hide stale servi
   assert.throws(()=>forwardView({...raw,live_locked:false}));
 });
 
-test('published readiness never claims account, fills or twenty actual sessions',()=>{
+test('published account verification cannot imply permission for orders or a completed trial',()=>{
   const data=JSON.parse(read('public/data/portfolio-os/agent-readiness.json'));
   assert.equal(data.kind,'PUBLIC_SETUP_SNAPSHOT_NOT_A_LIVE_MAC_CONNECTION');
   assert.equal(data.live_locked,true);assert.equal(data.orders_enabled,false);
-  assert.equal(data.demo_account_verified,false);assert.equal(data.forward_trial.qualified_sessions,0);
+  assert.equal(typeof data.demo_account_verified,'boolean');assert.equal(data.forward_trial.qualified_sessions,0);
+  if(data.demo_account_verified) assert.equal(data.broker_status,'DEMO_READ_VERIFIED_AT_PUBLICATION');
+  assert.equal(data.readiness.ready_to_start,false);
+  assert.ok(data.readiness.blocker_codes.includes('PRODUCT_BINDINGS'));
+  assert.ok(data.readiness.blocker_codes.includes('EXECUTION_QUOTES'));
   assert.equal(data.steps.length,6);
   for(const forbidden of ['QUANT_T212_DEMO_KEY','account_id','limitPrice','/Users/','walletImpact']) assert.ok(!JSON.stringify(data).includes(forbidden));
   const ui=read('app/portfolio-os/agent-control.tsx');
@@ -40,4 +44,13 @@ test('published readiness never claims account, fills or twenty actual sessions'
   assert.ok(ui.includes('Alleen echte, volledige demo-observatiedagen tellen'));
   assert.ok(ui.includes('/reports/LOCAL_AGENT_EXECUTION_GUIDE_2026-10-30.md'));
   assert.ok(!ui.includes('method: "POST"'));
+});
+
+test('new public checks expose no private broker or history payloads',()=>{
+  const data=JSON.parse(read('public/data/portfolio-os/agent-readiness.json'));
+  assert.ok(data.readiness.checks.length>=8);
+  assert.ok(data.product_review.length>=3);
+  assert.ok(data.product_review.every(p=>p.backtest_performance_inherited===false));
+  assert.ok(data.product_review.some(p=>p.legal_structure.includes('DEBT_ETP')));
+  for(const forbidden of ['availableToTrade','totalValue','dateTime','reservedForOrders','demo-credentials','cash_baseline','broker_id','Authorization']) assert.ok(!JSON.stringify(data).includes(forbidden));
 });

@@ -1,0 +1,277 @@
+{
+  "baseline_research_changed": false,
+  "broker": {
+    "catalog_instruments": 17144,
+    "metadata_sha256": "0361d85cc72fc636bb3c0c486d6600f4d3284d97953745ae75fce2908f2a3767",
+    "real_demo_read_verified": true,
+    "reconciled": true
+  },
+  "checked_at": "2026-10-30T21:10:23.914580+00:00",
+  "costs": {
+    "new_paid_accounts": 0,
+    "new_purchases": 0
+  },
+  "european_daily_data": [
+    {
+      "currency": "EUR",
+      "dividends": 39,
+      "duplicate_dates": 0,
+      "exchange": "Milan",
+      "first": "2017-01-02",
+      "historical_performance_inherited": false,
+      "invalid_total": 77,
+      "last": "2026-10-30",
+      "minute_execution_parity_verified": false,
+      "missing_or_nonfinite_bars": 2,
+      "nonpositive_price_bars": 0,
+      "ohlc_inconsistent_above_one_cent": 75,
+      "ohlc_inconsistent_bars": 75,
+      "received_at": "2026-10-30T20:24:41.266695+00:00",
+      "rows": 2497,
+      "source_sha256": "1d6785c1334fed309d2fb3107913f23f6d19f0142bc64d253978c173fd37e90d",
+      "splits": 0,
+      "symbol": "EQQQ.MI",
+      "timezone": "Europe/Rome",
+      "year_counts": {
+        "2019": 252,
+        "2020": 255,
+        "2021": 256,
+        "2022": 256,
+        "2023": 254,
+        "2024": 253,
+        "2025": 252,
+        "2026": 213
+      }
+    },
+    {
+      "currency": "EUR",
+      "dividends": 0,
+      "duplicate_dates": 0,
+      "exchange": "XETRA",
+      "first": "2021-01-27",
+      "historical_performance_inherited": false,
+      "invalid_total": 2,
+      "last": "2026-10-30",
+      "minute_execution_parity_verified": false,
+      "missing_or_nonfinite_bars": 2,
+      "nonpositive_price_bars": 0,
+      "ohlc_inconsistent_above_one_cent": 0,
+      "ohlc_inconsistent_bars": 0,
+      "received_at": "2026-10-30T20:24:41.213568+00:00",
+      "rows": 1470,
+      "source_sha256": "4a2d2d680e74d6b1e91a6d5c348365582a1e8a25260f4cdc39d4f24a696e1990",
+      "splits": 0,
+      "symbol": "XNAS.DE",
+      "timezone": "Europe/Berlin",
+      "year_counts": {
+        "2019": 0,
+        "2020": 0,
+        "2021": 238,
+        "2022": 257,
+        "2023": 255,
+        "2024": 254,
+        "2025": 253,
+        "2026": 213
+      }
+    },
+    {
+      "currency": "EUR",
+      "dividends": 0,
+      "duplicate_dates": 0,
+      "exchange": "Milan",
+      "first": "2017-01-02",
+      "historical_performance_inherited": false,
+      "invalid_total": 144,
+      "last": "2026-10-30",
+      "minute_execution_parity_verified": false,
+      "missing_or_nonfinite_bars": 2,
+      "nonpositive_price_bars": 0,
+      "ohlc_inconsistent_above_one_cent": 121,
+      "ohlc_inconsistent_bars": 142,
+      "received_at": "2026-10-30T20:24:41.594498+00:00",
+      "rows": 2497,
+      "source_sha256": "f55f25bbb83b6715d89d352b7ec64733614e4e7256de57d2c3a63139226a0b5f",
+      "splits": 0,
+      "symbol": "QQQ3.MI",
+      "timezone": "Europe/Rome",
+      "year_counts": {
+        "2019": 252,
+        "2020": 255,
+        "2021": 256,
+        "2022": 256,
+        "2023": 254,
+        "2024": 253,
+        "2025": 252,
+        "2026": 213
+      }
+    }
+  ],
+  "execution_feed": {
+    "borsa_italiana_public_book_delay_minutes": 15,
+    "required_max_age_seconds": 2,
+    "source": "https://www.borsaitaliana.it/borsa/etc-etn/dettaglio.html?isin=IE00BLRPRL42&lang=it&mic=ETFP",
+    "status": "NO_VERIFIED_FRESH_BID_ASK_PROVIDER",
+    "trading212_public_api_quote_endpoint": false
+  },
+  "implementation_hash": "b010226498d91803a614f70f1799f11c1639eecbc5fde6637df2ab8dee0aad74",
+  "independent_past_day_proof": [
+    {
+      "checked_at": "2026-10-30T20:47:55.814490+00:00",
+      "day": "2026-10-29",
+      "difference_bp": 0.00037542242425914196,
+      "price_basis": "REGULAR_SESSION_HISTORICAL_CLOSE",
+      "provider": "Nasdaq",
+      "sha256": "beb969d23afeeb6bb8efc2cd8faef6878be9214421ca57ef599b4fc3dd67ad5f",
+      "status": "MATCHED",
+      "symbol": "QQQ"
+    },
+    {
+      "checked_at": "2026-10-30T20:47:55.814490+00:00",
+      "day": "2026-10-29",
+      "difference_bp": 0.00030843638421096387,
+      "price_basis": "REGULAR_SESSION_HISTORICAL_CLOSE",
+      "provider": "Nasdaq",
+      "sha256": "d8e7a7c206e3bda23bef56682e3227709a26793430082228894542adfa1da1a7",
+      "status": "MATCHED",
+      "symbol": "TQQQ"
+    }
+  ],
+  "live_locked": true,
+  "orders_enabled": false,
+  "policy_hash": "ef0915b5982b18d72ae9dbb29e7f88dc052843212de733e2ebde3291e98657a3",
+  "private_ledgers_published": false,
+  "product_review": [
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE0032077012",
+      "issuer": "https://www.invesco.com/uk/en/financial-products/etfs/invesco-eqqq-nasdaq-100-ucits-etf-dist.html",
+      "legal_structure": "UCITS_DISTRIBUTING_ETF",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "QQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "EQQQm_EQ"
+    },
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE00BMFKG444",
+      "issuer": "https://etf.dws.com/en-gb/IE00BMFKG444-nasdaq-100-ucits-etf-1c/",
+      "legal_structure": "UCITS_ACCUMULATING_ETF",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "QQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "XNASd_EQ"
+    },
+    {
+      "account_currency_matches": true,
+      "actual_fractional_permission_verified": false,
+      "actual_minimum_notional_verified": false,
+      "actual_tick_size_verified": false,
+      "backtest_performance_inherited": false,
+      "catalog_identity_verified": true,
+      "currency": "EUR",
+      "historical_execution_parity_verified": false,
+      "isin": "IE00BLRPRL42",
+      "issuer": "https://www.wisdomtree.eu/en-ie/etps/equities/wisdomtree-nasdaq-100-3x-daily-leveraged",
+      "legal_structure": "COLLATERALISED_SWAP_DEBT_ETP_NOT_TQQQ",
+      "next_execution_at_ny": "2026-11-02T09:31:00-05:00",
+      "next_execution_market_open": true,
+      "role": "TQQQ",
+      "status": "CATALOG_AND_ISSUER_REVIEWED_NOT_ORDER_APPROVED",
+      "ticker": "QQQ3m_EQ"
+    }
+  ],
+  "public_product_page": {
+    "account_order_permissions_verified": false,
+    "currency": "EUR",
+    "isin": "IE00BLRPRL42",
+    "opened_in_safari": true,
+    "ticker": "QQQ3m_EQ",
+    "url": "https://www.trading212.com/nl/trading-instruments/invest/QQQ3.IT",
+    "venue": "Borsa Italiana"
+  },
+  "raw_prices_published": false,
+  "schema": 1,
+  "start_checks": {
+    "blocker_codes": [
+      "DAILY_INDEPENDENT",
+      "PRODUCT_BINDINGS",
+      "EXECUTION_QUOTES",
+      "DEMO_RELEASE"
+    ],
+    "checks": [
+      {
+        "code": "DEMO_ACCOUNT",
+        "message": "Echte demo-authenticatie en actuele rekeningcontrole",
+        "passed": true
+      },
+      {
+        "code": "DAILY_PRIMARY",
+        "message": "Voltooide US-dagdata en volledige indicatoropwarming",
+        "passed": true
+      },
+      {
+        "code": "DAILY_INDEPENDENT",
+        "message": "Dezelfde slotdatum onafhankelijk bevestigd",
+        "passed": false
+      },
+      {
+        "code": "ACCOUNT_RECONCILIATION",
+        "message": "Posities, orders en cash sluiten aan",
+        "passed": true
+      },
+      {
+        "code": "PRODUCT_BINDINGS",
+        "message": "Exacte producten, valuta, fracties, prijstik, minimum en producthistorie bevestigd",
+        "passed": false
+      },
+      {
+        "code": "EXECUTION_QUOTES",
+        "message": "Werkelijke bid/ask-feed met herkomst, juiste notering en maximaal twee seconden oud",
+        "passed": false
+      },
+      {
+        "code": "PERSISTENT_ORDER_STATE",
+        "message": "Geen onzekere orders of blijvende risicoblokkade",
+        "passed": true
+      },
+      {
+        "code": "DEMO_RELEASE",
+        "message": "Afzonderlijke lokale vrijgave voor uitsluitend demo-orders",
+        "passed": false
+      }
+    ],
+    "live_locked": true,
+    "observation_ready": false,
+    "quote_required_now": false,
+    "ready_to_start": false,
+    "required_observation_sessions": 20,
+    "status": "NOT_READY_FOR_DEMO_TRADING",
+    "technical_checks_passed": false
+  },
+  "status": "NOT_READY_FOR_DEMO_TRADING",
+  "trial": {
+    "actual_sessions": 0,
+    "next_order_nl": "2026-11-02T15:31:00+01:00",
+    "next_order_ny": "2026-11-02T09:31:00-05:00",
+    "note": "Theoretisch rooster, geen ingeplande order of begonnen proef",
+    "required_sessions": 20,
+    "theoretical_first_date_if_ready": "2026-11-02",
+    "theoretical_twentieth_date_if_ready": "2026-11-30"
+  }
+}

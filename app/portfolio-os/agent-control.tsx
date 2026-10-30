@@ -12,6 +12,9 @@ type AgentState = {
   kind: string;
   live_locked: boolean;
   mode: string;
+  demo_account_verified?: boolean;
+  readiness?: { status: string; ready_to_start: boolean; checks: {code:string;passed:boolean;message:string}[]; blocker_codes:string[] };
+  product_review?: {ticker:string;isin:string;currency:string;legal_structure:string;catalog_identity_verified:boolean;backtest_performance_inherited:boolean}[];
   checked_at?: string;
   published_at?: string;
   market?: {
@@ -135,7 +138,7 @@ export default function AgentControl() {
   }, []);
   const local = state?.kind === "LOCAL_FORWARD_STATUS";
   const trial = state?.trial ?? state?.forward_trial;
-  const connected = local && state?.broker?.connected === true;
+  const connected = local ? state?.broker?.connected === true : state?.demo_account_verified === true;
   return (
     <section
       className="human-panel agent-control"
@@ -185,13 +188,13 @@ export default function AgentControl() {
               <span>Verbinding</span>
               <strong>
                 {connected
-                  ? "Trading 212-demo uitgelezen"
+                  ? local ? "Trading 212-demo uitgelezen" : "Demoverbinding geverifieerd bij publicatie"
                   : "Wacht op demo-account"}
               </strong>
               <p>
                 {connected
                   ? "Een gelezen rekening is nog geen bewezen orderuitvoering."
-                  : "Je hebt nog geen rekening of demo-sleutels gekoppeld."}
+                  : "Er is nog geen actuele, geverifieerde demolezing. Bekijk de startcontrole hieronder."}
               </p>
             </div>
             <div>
@@ -245,7 +248,11 @@ export default function AgentControl() {
                     {s.number}. {s.label}
                   </strong>
                   <span>
-                    {s.number === 1
+                    {s.status === "REAL_DEMO_READ_VERIFIED"
+                      ? "Echte demo alleen-lezen gecontroleerd"
+                      : s.status === "CATALOG_REVIEWED_BINDINGS_PENDING"
+                        ? "Catalogus gecontroleerd; productvrijgave ontbreekt"
+                        : s.number === 1
                       ? "Exact brokerproduct nog te bevestigen"
                       : s.number === 5
                         ? "Client gebouwd; nog niet verbonden"
@@ -258,6 +265,28 @@ export default function AgentControl() {
                 </li>
               ))}
             </ol>
+          )}
+          {state.readiness && (
+            <div className="agent-readiness">
+              <h3>{state.readiness.ready_to_start ? "Startcontrole geslaagd voor de demo" : "Startcontrole: nog geen vrijgave voor demo-orders"}</h3>
+              <p>{state.readiness.checks.filter(c=>c.passed).length} van {state.readiness.checks.length} controles geslaagd. Een werkende verbinding is één onderdeel van deze controle.</p>
+              <ul>
+                {state.readiness.checks.map(c=><li key={c.code} className={c.passed?"passed":"pending"}>
+                  {c.passed?<CheckCircle2 size={16}/>:<AlertTriangle size={16}/>}
+                  <span>{c.message}</span><strong>{c.passed?"Bevestigd":"Nog te bevestigen"}</strong>
+                </li>)}
+              </ul>
+            </div>
+          )}
+          {state.product_review && state.product_review.length>0 && (
+            <div className="agent-product-review">
+              <h3>Producten in de gecontroleerde democatalogus</h3>
+              <p>Catalogusvermelding is geen bewijs van fractierechten of uitvoerbaarheid. De Amerikaanse QQQ/TQQQ-prestaties worden niet overgenomen.</p>
+              <div className="agent-steps">{state.product_review.map(p=><div key={p.ticker}>
+                <strong>{p.ticker} · {p.currency}</strong><span>{p.isin}</span>
+                <span>{p.legal_structure.includes("DEBT")?"Schuld-ETP met dagelijkse 3× hefboom; afzonderlijk te toetsen":p.legal_structure.includes("DISTRIBUTING")?"UCITS ETF · uitkerend":"UCITS ETF · herbeleggend"}</span>
+              </div>)}</div>
+            </div>
           )}
           {Object.keys(state.profiles ?? state.advice_preview ?? {}).length >
             0 && (
@@ -322,6 +351,10 @@ export default function AgentControl() {
             eerdere fill en stuurt geen inhaalorder. Een brokerbevestiging geldt
             pas als uitvoering nadat de werkelijke fill is uitgelezen.
           </p>
+          <a className="agent-guide" href="/reports/TRADING212_DEMO_READINESS_2026-10-30.md" target="_blank" rel="noopener noreferrer">
+            Lees de volledige product- en startcontrole →
+          </a>
+          <br />
           <a
             className="agent-guide"
             href="/reports/LOCAL_AGENT_EXECUTION_GUIDE_2026-10-30.md"

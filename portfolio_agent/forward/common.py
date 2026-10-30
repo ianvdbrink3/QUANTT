@@ -61,5 +61,8 @@ def config(path=None):
     p=Path(c['root'])
     if p.is_absolute() or '..' in p.parts or p.parts[:3]!=('artifacts','portfolio_agent','forward'):raise ValueError('PRIVATE_OUTPUT_ONLY')
     if not isinstance(c['bindings'],list):raise ValueError('INVALID_BINDINGS')
+    files=sorted((ROOT/'portfolio_agent/forward').glob('*.py'))+[ROOT/'portfolio_agent'/f for f in ('signal_engine.py','agent_advisor.py','regime.py','calendars.py')]
+    implementation=digest({str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
+    c['implementation_hash']=implementation
     c['hash']=digest(c)
     return c
